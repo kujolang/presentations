@@ -1,10 +1,41 @@
-/* Progressive enhancement: ordinary navigation remains native static links.
- * Only fullscreen swaps a server-generated <main>, to retain browser fullscreen. */
+/* Static links are enhanced only for optional transitions or fullscreen. */
 (() => {
   'use strict';
   const viewer = () => document.querySelector('.p-viewer');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const moduleURL = new URL('./motion/motion-mini.js', document.currentScript.src).href;
+  const preferenceKey = 'presentation-motion:' + new URL('../', location.href).pathname;
+  let disabled = false, motionModule, activeAnimation, enhancedHistory = false;
+  try { disabled = sessionStorage.getItem(preferenceKey) === 'off'; } catch {}
+  const wantsMotion = () => Boolean(viewer()?.dataset.motion) && !disabled && !reduced.matches;
+  const finishAnimation = () => { activeAnimation?.complete(); };
+  async function animateSlide(main, entering, direction) {
+    if (!wantsMotion()) return;
+    try {
+      motionModule ||= import(moduleURL);
+      const { animate } = await motionModule;
+      if (!wantsMotion()) return;
+      const frame = main.querySelector('.p-frame');
+      const effect = main.dataset.motion;
+      const transform = effect === 'slide' ? `translateX(${(entering ? 1 : -1) * direction * 5}%)` : 'scale(0.96)';
+      const keyframes = { opacity: entering ? [0, 1] : [1, 0] };
+      if (effect !== 'fade') keyframes.transform = entering ? [transform, 'none'] : ['none', transform];
+      activeAnimation = animate(frame, keyframes, { duration: Number(main.dataset.duration) / 2, ease: main.dataset.easing });
+      await activeAnimation;
+      frame.style.removeProperty('opacity');
+      frame.style.removeProperty('transform');
+    } catch { /* A blocked optional module never prevents navigation. */ }
+    finally { activeAnimation = null; }
+  }
   const status = message => { const node = document.querySelector('[data-status]'); if (node) node.textContent = message; };
   const enhance = () => {
+    const toggle = document.querySelector('[data-motion-toggle]');
+    if (toggle) {
+      toggle.hidden = !viewer()?.dataset.motion;
+      toggle.disabled = reduced.matches;
+      toggle.textContent = reduced.matches ? 'Reduced motion' : `Transitions: ${disabled ? 'off' : 'on'}`;
+      toggle.setAttribute('aria-pressed', String(wantsMotion()));
+    }
     const button = document.querySelector('[data-fullscreen]');
     if (button && document.fullscreenEnabled) {
       button.hidden = false;
@@ -12,10 +43,10 @@
       button.setAttribute('aria-pressed', String(Boolean(document.fullscreenElement)));
     }
   };
-  let busy = false;
+  let busy = false, pendingNavigation;
   async function navigate(href, push = true) {
-    if (!document.fullscreenElement) { location.assign(href); return; }
-    if (busy) return;
+    if (!document.fullscreenElement && !wantsMotion() && push) { location.assign(href); return; }
+    if (busy) { pendingNavigation = {href, push}; return; }
     busy = true;
     const url = new URL(href, location.href);
     try {
@@ -28,7 +59,12 @@
       for (const node of main.querySelectorAll('[src],[href]')) {
         for (const attr of ['src', 'href']) if (node.hasAttribute(attr)) node.setAttribute(attr, new URL(node.getAttribute(attr), url).href);
       }
+      if (!main || !viewer()) { location.assign(url); return; }
+      const direction = Number(main.dataset.slide) >= Number(viewer().dataset.slide) ? 1 : -1;
+      await animateSlide(viewer(), false, direction);
       viewer().replaceWith(main);
+      await animateSlide(main, true, direction);
+      enhancedHistory = true;
       document.title = next.title;
       const canonical = document.querySelector('link[rel="canonical"]');
       if (canonical) canonical.href = next.querySelector('link[rel="canonical"]')?.href || url.href;
@@ -38,7 +74,13 @@
       main.focus({ preventScroll: true });
       status(`Slide ${main.dataset.slide} of ${main.dataset.count}`);
     } catch { location.assign(url); }
-    finally { busy = false; }
+    finally {
+      busy = false;
+      if (pendingNavigation) {
+        const pending = pendingNavigation; pendingNavigation = null;
+        if (new URL(pending.href, location.href).href !== location.href) navigate(pending.href, pending.push);
+      }
+    }
   }
   async function fullscreen() {
     try {
@@ -47,9 +89,14 @@
     } catch { status('Fullscreen is unavailable. You can continue with the normal viewer.'); }
   }
   document.addEventListener('click', event => {
+    if (event.target.closest('[data-motion-toggle]')) {
+      disabled = !disabled;
+      try { sessionStorage.setItem(preferenceKey, disabled ? 'off' : 'on'); } catch {}
+      finishAnimation(); enhance(); return;
+    }
     if (event.target.closest('[data-fullscreen]')) { fullscreen(); return; }
     const link = event.target.closest('a[data-nav]');
-    if (link && document.fullscreenElement && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && event.button === 0) {
+    if (link && (document.fullscreenElement || wantsMotion()) && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && event.button === 0) {
       event.preventDefault(); navigate(link.href);
     }
   });
@@ -68,7 +115,8 @@
     else if (event.key === 'Escape' && document.fullscreenElement) { document.exitFullscreen().catch(() => {}); return; }
     if (href) { event.preventDefault(); navigate(href); }
   });
-  window.addEventListener('popstate', () => { if (document.fullscreenElement) navigate(location.href, false); });
+  window.addEventListener('popstate', () => { if (busy) { location.reload(); return; } if (document.fullscreenElement || enhancedHistory) navigate(location.href, false); });
+  reduced.addEventListener('change', () => { finishAnimation(); enhance(); });
   document.addEventListener('fullscreenchange', enhance);
   enhance();
 })();

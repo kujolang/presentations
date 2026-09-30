@@ -1,4 +1,4 @@
-from src.model import fail, validate, text
+from src.model import fail, validate, text, field
 from src.render import overview, viewer, reading
 
 func option(argv, name, fallback) {
@@ -62,6 +62,9 @@ if path_exists(stage) { run(["rm", "-rf", "--", stage], root) }
 create_dir(stage + "/content/pages")
 create_dir(stage + "/templates")
 copy_tree("assets", stage + "/assets/presentation")
+if field(field(deck, "transitions", {}), "enabled", false) {
+    copy_tree("vendor/motion", stage + "/assets/presentation/motion")
+}
 copy_tree(sitekit, stage + "/assets/sitekit")
 copy_tree(deck_dir + "/assets", stage + "/assets/deck")
 # Offline SSG font fallback files; the presentation theme chooses its own typography.

@@ -9,10 +9,13 @@
     "test:browser": "playwright test",
     "preview": "kujo serve output --port 8086",
     "deck": "node scripts/deck.mjs",
-    "build:starters": "node scripts/build-starters.mjs"
+    "build:starters": "node scripts/build-starters.mjs",
+    "bundle:motion": "node scripts/bundle-motion.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.12.1",
-    "@playwright/test": "1.62.1"
+    "@playwright/test": "1.62.1",
+    "esbuild": "0.25.12",
+    "motion": "13.4.6"
   }
 }

@@ -29,6 +29,36 @@
       "minLength": 1,
       "maxLength": 100
     },
+    "transitions": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "effect": {
+          "enum": [
+            "fade",
+            "slide",
+            "zoom"
+          ]
+        },
+        "duration": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 2
+        },
+        "easing": {
+          "enum": [
+            "linear",
+            "easeIn",
+            "easeOut",
+            "easeInOut"
+          ]
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
     "slides": {
       "type": "array",
       "items": {

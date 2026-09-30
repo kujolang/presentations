@@ -15,7 +15,7 @@ public_api = true
 minimum_version = "1.5.0"
 entry = "build.kujo"
 sources = ["src"]
-includes = ["assets", "layouts", "examples", "docs", "README.md", "dependencies.json", "starters", "scripts", "tests", "CREATE_A_DECK.md", "AGENTS.md", "deck.schema.json", "package.json", "package-lock.json", "playwright.config.js"]
+includes = ["vendor", "assets", "layouts", "examples", "docs", "README.md", "dependencies.json", "starters", "scripts", "tests", "CREATE_A_DECK.md", "AGENTS.md", "deck.schema.json", "package.json", "package-lock.json", "playwright.config.js"]
 excludes = [".git", ".build", "output", "node_modules", "test-results", ".deps", "decks"]
 
 [scripts]

@@ -16,5 +16,5 @@ const variants=readdirSync('layouts').filter(n=>n.endsWith('.json')).sort().map(
   if(name==='market') properties.chart.minItems=1;
   return {properties,...(name==='market'?{required:['chart']}:{})};
 });
-const schema={$schema:'https://json-schema.org/draft/2020-12/schema',title:'Kujo Presentations deck',...object({id:{...text(60),pattern:'^[a-z0-9][a-z0-9-]*$'},title:text(160),brand:text(50),description:text(400),footer:text(100),slides:{...array({...object(fields,['layout','title']),oneOf:variants}),minItems:1}},['id','title','brand','description','slides'])};
+const schema={$schema:'https://json-schema.org/draft/2020-12/schema',title:'Kujo Presentations deck',...object({id:{...text(60),pattern:'^[a-z0-9][a-z0-9-]*$'},title:text(160),brand:text(50),description:text(400),footer:text(100),transitions:{...object({enabled:{type:'boolean'},effect:{enum:['fade','slide','zoom']},duration:{type:'number',minimum:0.1,maximum:2},easing:{enum:['linear','easeIn','easeOut','easeInOut']}},[] )},slides:{...array({...object(fields,['layout','title']),oneOf:variants}),minItems:1}},['id','title','brand','description','slides'])};
 writeFileSync('deck.schema.json',JSON.stringify(schema,null,2)+'\n');
