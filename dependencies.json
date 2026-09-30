@@ -1,0 +1,12 @@
+{
+  "ssg": {
+    "repository": "https://github.com/kujolang/ssg",
+    "commit": "a33489848209316c8e3ad68f0d89f3c8581256dd",
+    "contract": "build.kujo CLI, page-*.html, layout.html, assets"
+  },
+  "sitekit": {
+    "repository": "https://github.com/kujolang/site-kit",
+    "commit": "4a28746e952273ab671fd600403382e9b523b192",
+    "contract": "dist/ copied whole, CSS tokens and semantic utilities"
+  }
+}

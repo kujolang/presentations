@@ -1,0 +1,11 @@
+{
+  "limits": {
+    "images": 0,
+    "metrics": 1,
+    "features": 0,
+    "chart": 6
+  },
+  "titleMax": 80,
+  "copyMax": 240,
+  "featureCopyMax": 160
+}

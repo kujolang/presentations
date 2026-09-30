@@ -1,0 +1,92 @@
+from src.model import field, text, fail
+
+export func metrics(slide) {
+    html := "<dl class=\"p-metrics\">"
+    for metric in field(slide, "metrics", []) {
+        html = html + "<div class=\"p-metric\"><dt>" + text(metric["label"]) + "</dt><dd>" + text(metric["value"]) + "</dd></div>"
+    }
+    return html + "</dl>"
+}
+export func features(slide) {
+    html := "<ol class=\"p-features\">"
+    i := 1
+    for feature in field(slide, "features", []) {
+        html = html + "<li><span class=\"p-feature-number\">0" + to_string(i) + "</span><div><h2>" + text(feature["title"]) + "</h2><p>" + text(feature["copy"]) + "</p></div></li>"
+        i = i + 1
+    }
+    return html + "</ol>"
+}
+export func images(slide, prefix, lazy) {
+    html := "<div class=\"p-images\">"
+    i := 0
+    loading := "eager"
+    if lazy { loading = "lazy" }
+    for img in field(slide, "images", []) {
+        html = html + "<figure class=\"sk-image p-image p-image-" + to_string(i) + "\"><img src=\"" + prefix + "assets/deck/" + text(img["src"]) + "\" alt=\"" + text(img["alt"]) + "\" loading=\"" + loading + "\" decoding=\"async\" style=\"object-position:" + to_string(field(img, "x", 50)) + "% " + to_string(field(img, "y", 50)) + "%\"></figure>"
+        i = i + 1
+    }
+    return html + "</div>"
+}
+export func chart(slide) {
+    points := field(slide, "chart", [])
+    if len(points) == 0 { return "" }
+    html := "<figure class=\"p-chart\"><svg viewBox=\"0 0 600 260\" role=\"img\" aria-label=\"" + text(field(slide, "chartLabel", "Comparison, values in percent")) + "\"><path class=\"p-chart-rule\" d=\"M0 210H600 M0 110H600 M0 10H600\"/>"
+    width := 600 / len(points)
+    i := 0
+    for point in points {
+        height := point["value"] * 2
+        x := i * width + width * 0.2
+        html = html + "<rect x=\"" + to_string(x) + "\" y=\"" + to_string(210 - height) + "\" width=\"" + to_string(width * 0.6) + "\" height=\"" + to_string(height) + "\"/><text x=\"" + to_string(x) + "\" y=\"245\">" + text(point["label"]) + "</text><text x=\"" + to_string(x) + "\" y=\"" + to_string(200 - height) + "\">" + to_string(point["value"]) + "%</text>"
+        i = i + 1
+    }
+    return html + "</svg><figcaption>" + text(field(slide, "chartLabel", "Comparison, values in percent")) + "</figcaption></figure>"
+}
+export func slide_html(deck, slide, number, prefix, thumbnail) {
+    layout := read_file("layouts/" + slide["layout"] + ".html")
+    # Only replace explicit slots once: content cannot introduce template instructions.
+    slots := {"title": text(slide["title"]), "copy": text(field(slide, "copy", "")), "eyebrow": text(field(slide, "eyebrow", "")), "metrics": metrics(slide), "features": features(slide), "images": images(slide, prefix, thumbnail), "chart": chart(slide), "note": text(field(slide, "note", ""))}
+    parts := split(layout, "{{")
+    body := parts[0]
+    i := 1
+    while i < len(parts) {
+        pair := split(parts[i], "}}")
+        if has_key(slots, pair[0]) { body = body + slots[pair[0]] } else { fail("Unknown layout slot: " + pair[0]) }
+        body = body + join(slice(pair, 1, len(pair)), "}}")
+        i = i + 1
+    }
+    tone := ""
+    if field(slide, "inverse", false) == true { tone = " p-inverse" }
+    hidden := ""
+    if thumbnail { hidden = " aria-hidden=\"true\"" }
+    return "<div class=\"p-frame\"" + hidden + "><article class=\"p-canvas p-layout-" + slide["layout"] + tone + "\"><header class=\"p-header\"><span>" + text(deck["brand"]) + "</span><span>" + text(field(slide, "eyebrow", deck["title"])) + "</span><span>" + to_string(number) + " / " + to_string(len(deck["slides"])) + "</span></header>" + body + "<footer class=\"p-footer\"><span>" + text(field(deck, "footer", deck["brand"])) + "</span><span>" + text(field(slide, "note", "")) + "</span><span>" + to_string(number) + "</span></footer></article></div>"
+}
+export func control(href, label, key, enabled) {
+    if !enabled { return "<span class=\"p-disabled\" aria-disabled=\"true\">" + label + "</span>" }
+    return "<a class=\"sk-button\" data-variant=\"ghost\" data-nav=\"" + key + "\" href=\"" + href + "\">" + label + "</a>"
+}
+export func viewer(deck, slide, number) {
+    count := len(deck["slides"])
+    return "<main id=\"main-content\" class=\"p-viewer\" data-slide=\"" + to_string(number) + "\" data-count=\"" + to_string(count) + "\"><div class=\"p-stage\">" + slide_html(deck, slide, number, "../", false) + "</div><nav class=\"p-nav sk-cluster\" aria-label=\"Presentation controls\">" + control("../" + to_string(number - 1) + "/", "← Previous", "previous", number > 1) + "<span class=\"p-counter\">" + to_string(number) + " / " + to_string(count) + "</span>" + control("../" + to_string(number + 1) + "/", "Next →", "next", number < count) + "<a class=\"sk-button\" data-variant=\"ghost\" href=\"../\">Overview</a><a class=\"sk-button\" data-variant=\"ghost\" href=\"../reading/#slide-" + to_string(number) + "\">Read text</a><button class=\"sk-button\" data-variant=\"ghost\" data-fullscreen hidden type=\"button\">Fullscreen</button></nav><progress class=\"p-progress\" max=\"" + to_string(count) + "\" value=\"" + to_string(number) + "\" aria-label=\"Presentation progress\"></progress><p class=\"p-help\">← → Navigate · Space Next · Home / End · F Fullscreen</p><p class=\"sk-sr-only\" data-status role=\"status\"></p></main><script src=\"../assets/presentation/viewer.js\" defer></script>"
+}
+export func overview(deck) {
+    html := "<main id=\"main-content\" class=\"p-overview sk-container\"><header class=\"p-overview-header\"><div><p class=\"p-kicker\">" + text(deck["brand"]) + " / " + to_string(len(deck["slides"])) + " slides</p><h1>" + text(deck["title"]) + "</h1><p>" + text(deck["description"]) + "</p></div><a class=\"sk-button\" href=\"1/\">Start presentation ↗</a></header><div class=\"p-thumbnails sk-grid\">"
+    i := 1
+    for slide in deck["slides"] {
+        html = html + "<a class=\"p-thumbnail\" href=\"" + to_string(i) + "/\">" + slide_html(deck, slide, i, "./", true) + "<span class=\"p-thumbnail-label\"><span>" + to_string(i) + "</span> " + text(slide["title"]) + "</span></a>"
+        i = i + 1
+    }
+    return html + "</div><footer class=\"p-overview-footer\"><span>" + text(field(deck, "footer", deck["brand"])) + "</span><a href=\"reading/\">Read the complete deck as text →</a></footer></main>"
+}
+export func reading(deck) {
+    html := "<main id=\"main-content\" class=\"p-reading sk-container sk-stack\"><a href=\"../\">← Overview</a><h1>" + text(deck["title"]) + "</h1><p>" + text(deck["description"]) + "</p>"
+    i := 1
+    for slide in deck["slides"] {
+        html = html + "<section id=\"slide-" + to_string(i) + "\"><h2><a href=\"../" + to_string(i) + "/\">" + to_string(i) + ". " + text(slide["title"]) + "</a></h2><p>" + text(field(slide, "copy", "")) + "</p>" + metrics(slide) + replace(replace(features(slide), "<h2>", "<h3>"), "</h2>", "</h3>")
+        for point in field(slide, "chart", []) { html = html + "<p>" + text(point["label"]) + ": " + to_string(point["value"]) + "%</p>" }
+        html = html + "<p>" + text(field(slide, "chartLabel", "")) + "</p>"
+        for img in field(slide, "images", []) { html = html + "<p>Image: " + text(img["alt"]) + "</p>" }
+        html = html + "</section>"
+        i = i + 1
+    }
+    return html + "</main>"
+}

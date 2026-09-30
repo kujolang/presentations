@@ -1,0 +1,24 @@
+[package]
+name = "presentations"
+version = "0.1.0"
+description = "Optional static presentation composition and viewer for Kujo SSG and SiteKit."
+license = "MIT"
+readme = "README.md"
+
+[package.status]
+stage = "preview"
+stability = "experimental"
+public_api = true
+
+[kujo]
+minimum_version = "1.5.0"
+entry = "build.kujo"
+sources = ["src"]
+includes = ["assets", "layouts", "examples", "docs", "README.md", "dependencies.json"]
+excludes = [".git", ".build", "output", "node_modules", "test-results"]
+
+[scripts]
+test = "npm test"
+
+[package.exports]
+render = "src/render.kujo"

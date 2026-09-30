@@ -1,0 +1,67 @@
+# Content is data; layout HTML and theme CSS are trusted developer source.
+export func fail(message) { print("Presentation error: " + message); exit(1) }
+export func field(data, key, fallback) {
+    if has_key(data, key) { return data[key] }
+    return fallback
+}
+export func text(value) { return replace(replace(escape_xml(to_string(value)), "{", "&#123;"), "}", "&#125;") }
+export func need_text(data, key, maximum) {
+    if type(data) != "dict" { fail("Expected an object containing " + key) }
+    if has_key(data, key) == 0 { fail("Missing field: " + key) }
+    value := data[key]
+    if type(value) != "string" { fail(key + " must be text") }
+    if len(trim(value)) == 0 || len(value) > maximum { fail(key + " is empty or exceeds " + to_string(maximum) + " characters") }
+}
+export func safe_name(value) {
+    return type(value) == "string" && len(value) > 0 && regex_replace(value, "^[a-z0-9][a-z0-9-]*$", "") == ""
+}
+export func safe_asset(value) {
+    if type(value) != "string" || len(value) == 0 { return false }
+    if starts_with(value, "/") || contains(value, "..") || contains(value, "\\") { return false }
+    return regex_replace(value, "^[a-zA-Z0-9_/-]+\\.[a-zA-Z0-9]+$", "") == ""
+}
+export func validate(deck, deck_dir) {
+    if type(deck) != "dict" { fail("Deck must be an object") }
+    need_text(deck, "id", 60)
+    if !safe_name(deck["id"]) { fail("id must be a lowercase slug") }
+    need_text(deck, "title", 160)
+    need_text(deck, "brand", 50)
+    need_text(deck, "description", 400)
+    if has_key(deck, "slides") == 0 || type(deck["slides"]) != "array" || len(deck["slides"]) == 0 { fail("slides must be a non-empty array") }
+    if has_key(deck, "footer") { need_text(deck, "footer", 100) }
+    if !path_is_file(deck_dir + "/assets/theme.css") { fail("Deck assets/theme.css is required") }
+    for slide in deck["slides"] {
+        if type(slide) != "dict" { fail("Each slide must be an object") }
+        need_text(slide, "title", 110)
+        need_text(slide, "layout", 60)
+        if !safe_name(slide["layout"]) || !path_is_file("layouts/" + slide["layout"] + ".html") { fail("Unknown layout: " + to_string(slide["layout"])) }
+        if !path_is_file("layouts/" + slide["layout"] + ".json") { fail("Layout requires a .json capacity contract") }
+        contract := parse_json(read_file("layouts/" + slide["layout"] + ".json"))
+        need_text(slide, "title", contract["titleMax"])
+        if has_key(slide, "copy") { need_text(slide, "copy", contract["copyMax"]) }
+        for key in ["eyebrow", "copy", "note"] {
+            if has_key(slide, key) { need_text(slide, key, 600) }
+        }
+        for key in ["images", "features", "metrics", "chart"] {
+            if has_key(slide, key) && type(slide[key]) != "array" { fail(key + " must be an array") }
+            if len(field(slide, key, [])) > contract["limits"][key] { fail(slide["layout"] + " exceeds " + key + " capacity") }
+        }
+        if has_key(slide, "chartLabel") { need_text(slide, "chartLabel", 180) }
+        for img in field(slide, "images", []) {
+            need_text(img, "src", 180)
+            need_text(img, "alt", 300)
+            if !safe_asset(img["src"]) || !path_is_file(deck_dir + "/assets/" + img["src"]) { fail("Missing or unsafe local image: " + img["src"]) }
+            for axis in ["x", "y"] {
+                pos := field(img, axis, 50)
+                if (type(pos) != "int" && type(pos) != "float") || pos < 0 || pos > 100 { fail("Image position must be 0–100") }
+            }
+        }
+        for feature in field(slide, "features", []) { need_text(feature, "title", 70); need_text(feature, "copy", contract["featureCopyMax"]) }
+        for metric in field(slide, "metrics", []) { need_text(metric, "value", 16); need_text(metric, "label", 100) }
+        for point in field(slide, "chart", []) {
+            need_text(point, "label", 40)
+            if has_key(point, "value") == 0 || (type(point["value"]) != "int" && type(point["value"]) != "float") || point["value"] < 0 || point["value"] > 100 { fail("Chart values must be numbers from 0 to 100") }
+        }
+        if slide["layout"] == "market" && len(field(slide, "chart", [])) == 0 { fail("market requires chart data") }
+    }
+}
