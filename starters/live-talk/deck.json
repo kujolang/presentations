@@ -1,0 +1,106 @@
+{
+  "id": "live-talk",
+  "title": "Live talk",
+  "brand": "[Your organization]",
+  "description": "A seven-slide teaching arc with a clear takeaway and discussion close.",
+  "footer": "Working draft / Replace bracketed content",
+  "slides": [
+    {
+      "layout": "statement",
+      "title": "[Talk title]",
+      "copy": "[Speaker name, event, and date.]",
+      "eyebrow": "A conversation worth having"
+    },
+    {
+      "layout": "statement",
+      "title": "One question to start",
+      "copy": "[A question or observation that connects the topic to the audience.]"
+    },
+    {
+      "layout": "index",
+      "title": "What you will take away",
+      "copy": "[State the promise of the talk.]",
+      "features": [
+        {
+          "title": "Understand",
+          "copy": "[The first idea.]"
+        },
+        {
+          "title": "Recognize",
+          "copy": "[The second idea.]"
+        },
+        {
+          "title": "Try",
+          "copy": "[A practical action.]"
+        }
+      ]
+    },
+    {
+      "layout": "problem",
+      "title": "The familiar mistake",
+      "copy": "[Describe a real tension, not an invented anecdote.]",
+      "features": [
+        {
+          "title": "What happens",
+          "copy": "[Observed behavior.]"
+        },
+        {
+          "title": "Why it happens",
+          "copy": "[The underlying cause.]"
+        },
+        {
+          "title": "What it costs",
+          "copy": "[A supported consequence.]"
+        }
+      ]
+    },
+    {
+      "layout": "editorial",
+      "title": "A different approach",
+      "copy": "[Explain an approach with a concrete example or demonstration.]",
+      "features": [
+        {
+          "title": "First",
+          "copy": "[A useful step.]"
+        },
+        {
+          "title": "Then",
+          "copy": "[What changes.]"
+        },
+        {
+          "title": "Notice",
+          "copy": "[The outcome to look for.]"
+        }
+      ]
+    },
+    {
+      "layout": "value",
+      "title": "Put it into practice",
+      "copy": "[Give the audience a small set of actions they can use immediately.]",
+      "features": [
+        {
+          "title": "Observe",
+          "copy": "[What to look for.]"
+        },
+        {
+          "title": "Choose",
+          "copy": "[A decision to make.]"
+        },
+        {
+          "title": "Try",
+          "copy": "[A small experiment.]"
+        },
+        {
+          "title": "Reflect",
+          "copy": "[How to learn from the result.]"
+        }
+      ]
+    },
+    {
+      "layout": "statement",
+      "title": "[Your closing takeaway]",
+      "copy": "[One memorable sentence, a next step, and an invitation for questions.]",
+      "eyebrow": "Discussion"
+    }
+  ]
+}

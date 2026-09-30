@@ -1,0 +1,120 @@
+{
+  "id": "sales",
+  "title": "Sales proposal",
+  "brand": "[Your organization]",
+  "description": "A seven-slide buyer-centered proposal ending with a clear next step.",
+  "footer": "Working draft / Replace bracketed content",
+  "slides": [
+    {
+      "layout": "statement",
+      "title": "[A better outcome for the buyer]",
+      "copy": "[Your company, customer, and proposal date.]",
+      "eyebrow": "A proposal for [customer]"
+    },
+    {
+      "layout": "problem",
+      "title": "What needs to change",
+      "copy": "[Reflect the buyer\u2019s confirmed situation.]",
+      "features": [
+        {
+          "title": "Today",
+          "copy": "[Current process and limitations.]"
+        },
+        {
+          "title": "Impact",
+          "copy": "[Supported cost, risk, or lost opportunity.]"
+        },
+        {
+          "title": "Desired outcome",
+          "copy": "[What success means to this buyer.]"
+        }
+      ]
+    },
+    {
+      "layout": "editorial",
+      "title": "How we can help",
+      "copy": "[Connect the offering to the buyer\u2019s needs. Use a local product image if available.]",
+      "features": [
+        {
+          "title": "Capability",
+          "copy": "[What the product or service does.]"
+        },
+        {
+          "title": "Workflow",
+          "copy": "[How it fits the buyer\u2019s process.]"
+        },
+        {
+          "title": "Outcome",
+          "copy": "[A measurable result without an unsupported guarantee.]"
+        }
+      ]
+    },
+    {
+      "layout": "value",
+      "title": "The difference in practice",
+      "copy": "[Use buyer-relevant differentiators.]",
+      "features": [
+        {
+          "title": "Fit",
+          "copy": "[Why this is appropriate.]"
+        },
+        {
+          "title": "Confidence",
+          "copy": "[Verified evidence or approved reference.]"
+        },
+        {
+          "title": "Adoption",
+          "copy": "[How users get started.]"
+        },
+        {
+          "title": "Support",
+          "copy": "[What ongoing help is included.]"
+        }
+      ]
+    },
+    {
+      "layout": "index",
+      "title": "A practical delivery plan",
+      "copy": "[Confirm scope, owners, and dates before treating this as a commitment.]",
+      "features": [
+        {
+          "title": "Discover",
+          "copy": "[Inputs and decision owners.]"
+        },
+        {
+          "title": "Implement",
+          "copy": "[Scope and dependencies.]"
+        },
+        {
+          "title": "Review",
+          "copy": "[Acceptance criteria and measurement.]"
+        }
+      ]
+    },
+    {
+      "layout": "business",
+      "title": "A clear investment",
+      "copy": "[Insert approved pricing, currency, terms, and exclusions.]",
+      "features": [
+        {
+          "title": "Included",
+          "copy": "[Deliverables and service scope.]"
+        },
+        {
+          "title": "Investment",
+          "copy": "[Price and billing terms.]"
+        },
+        {
+          "title": "Success",
+          "copy": "[How both sides will assess the outcome.]"
+        }
+      ]
+    },
+    {
+      "layout": "statement",
+      "title": "Agree the next step",
+      "copy": "[A concrete action, owner, proposed date, and contact.]",
+      "eyebrow": "Move forward together"
+    }
+  ]
+}

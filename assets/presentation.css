@@ -150,3 +150,18 @@ a:not(.sk-button) { color: inherit; }
 @media (max-width: 540px) { .p-thumbnails { grid-template-columns: 1fr; } .p-overview { --sk-space-4: 18px; padding-top: 24px; } .p-viewer { padding: 12px 8px; } .p-stage .p-frame { width: min(100%,calc((100dvh - 218px) * 16 / 9)); } .p-nav { gap: 2px; } .p-overview-footer { flex-direction: column; } }
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
 @media print { .p-nav,.p-help,.p-progress,.p-skip { display: none; } .p-viewer { padding: 0; } .p-stage .p-frame { width: 100%; } .p-reading section { break-inside: avoid; } }
+
+/* A reusable title, section break, or closing takeaway. */
+.p-layout-statement h1 { position: absolute; left: 4cqw; top: 17cqw; width: 83cqw; font-size: 7cqw; }
+.p-layout-statement .p-intro { position: absolute; left: 4cqw; top: 36cqw; width: 65cqw; font-size: 1.5cqw; }
+/* Optional images should not leave an empty reserved photograph area. */
+.p-layout-problem:not(:has(.p-image)) h1 { left: 4cqw; top: 12cqw; width: 42cqw; }
+.p-layout-problem:not(:has(.p-image)) .p-intro { left: 4cqw; top: 28cqw; width: 38cqw; }
+.p-layout-problem:not(:has(.p-image)) .p-features { top: 12cqw; left: 54cqw; }
+.p-layout-problem:not(:has(.p-image)) .p-accent { left: 4cqw; top: 42cqw; width: 5cqw; height: 5cqw; font-size: 4cqw; }
+.p-layout-editorial:not(:has(.p-image)) h1 { top: 12cqw; bottom: auto; width: 49cqw; font-size: 5.8cqw; }
+.p-layout-business:not(:has(.p-image)) h1 { left: 4cqw; top: 12cqw; width: 49cqw; }
+.p-layout-business:not(:has(.p-image)) .p-intro { top: 13cqw; }
+.p-layout-business:not(:has(.p-image)) .p-accent { left: 4cqw; top: 26cqw; width: 6cqw; height: 6cqw; font-size: 5cqw; }
+.p-layout-hero:not(:has(.p-image)) .p-heading { width: 86cqw; }
+.p-layout-hero:not(:has(.p-image)) .p-heading p { width: 65cqw; }

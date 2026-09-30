@@ -1,0 +1,158 @@
+{
+  "id": "investor",
+  "title": "Investor pitch",
+  "brand": "[Your organization]",
+  "description": "A nine-slide narrative from customer problem to funding ask.",
+  "footer": "Working draft / Replace bracketed content",
+  "slides": [
+    {
+      "layout": "statement",
+      "title": "[Company name]",
+      "copy": "[One sentence: who you help, what you change, and why it matters.]",
+      "eyebrow": "Investor presentation"
+    },
+    {
+      "layout": "problem",
+      "title": "A problem worth solving",
+      "copy": "[Describe the specific customer and costly problem.]",
+      "features": [
+        {
+          "title": "Customer pain",
+          "copy": "[Evidence from interviews or observed behavior.]"
+        },
+        {
+          "title": "Current alternatives",
+          "copy": "[How people solve this today and where it falls short.]"
+        },
+        {
+          "title": "Why now",
+          "copy": "[A verifiable change that makes this moment different.]"
+        }
+      ]
+    },
+    {
+      "layout": "editorial",
+      "title": "A better way forward",
+      "copy": "[Explain the product in plain language. Add a local product image if available.]",
+      "features": [
+        {
+          "title": "What it does",
+          "copy": "[The core workflow or outcome.]"
+        },
+        {
+          "title": "Who benefits",
+          "copy": "[The buyer and end user.]"
+        },
+        {
+          "title": "Why it works",
+          "copy": "[Your evidence or product demonstration.]"
+        }
+      ]
+    },
+    {
+      "layout": "index",
+      "title": "The opportunity",
+      "copy": "[Describe market boundaries and sizing assumptions. Cite evidence in BRIEF.md.]",
+      "features": [
+        {
+          "title": "Target customer",
+          "copy": "[A focused initial segment.]"
+        },
+        {
+          "title": "Market size",
+          "copy": "[Sourced estimate, date, currency, and methodology.]"
+        },
+        {
+          "title": "First market",
+          "copy": "[Your practical route to initial adoption.]"
+        }
+      ]
+    },
+    {
+      "layout": "hero",
+      "title": "Evidence of demand",
+      "copy": "[Use verified traction, with time periods and definitions. Remove unsupported metrics.]",
+      "metrics": [
+        {
+          "value": "TBD",
+          "label": "[Customer metric]"
+        },
+        {
+          "value": "TBD",
+          "label": "[Usage metric]"
+        },
+        {
+          "value": "TBD",
+          "label": "[Revenue metric]"
+        }
+      ]
+    },
+    {
+      "layout": "business",
+      "title": "How we earn",
+      "copy": "[Explain the economic model without inventing projections.]",
+      "features": [
+        {
+          "title": "Customer",
+          "copy": "[Who pays and why.]"
+        },
+        {
+          "title": "Pricing",
+          "copy": "[Price, unit, and billing period.]"
+        },
+        {
+          "title": "Distribution",
+          "copy": "[How you acquire and retain customers.]"
+        }
+      ]
+    },
+    {
+      "layout": "value",
+      "title": "Why this team wins",
+      "copy": "[State the defensible difference and evidence.]",
+      "features": [
+        {
+          "title": "Product",
+          "copy": "[Distinctive capability.]"
+        },
+        {
+          "title": "Insight",
+          "copy": "[What you understand unusually well.]"
+        },
+        {
+          "title": "Access",
+          "copy": "[Relevant relationships or distribution.]"
+        },
+        {
+          "title": "Execution",
+          "copy": "[A demonstrated track record.]"
+        }
+      ]
+    },
+    {
+      "layout": "index",
+      "title": "The people behind it",
+      "copy": "[Add names, roles, and relevant credentials supplied by the team.]",
+      "features": [
+        {
+          "title": "[Name / role]",
+          "copy": "[Relevant experience and contribution.]"
+        },
+        {
+          "title": "[Name / role]",
+          "copy": "[Relevant experience and contribution.]"
+        },
+        {
+          "title": "[Name / role]",
+          "copy": "[Relevant experience and contribution.]"
+        }
+      ]
+    },
+    {
+      "layout": "statement",
+      "title": "Build the next chapter",
+      "copy": "[Funding amount, instrument if supplied, intended milestones, runway assumptions, and contact.]",
+      "eyebrow": "The ask"
+    }
+  ]
+}

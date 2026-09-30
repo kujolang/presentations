@@ -26,6 +26,7 @@ Metrics accept formatted strings such as `80k+`, `98%`, or `$2m`.
 
 | Layout | Images | Metrics | Features | Chart points |
 | --- | ---: | ---: | ---: | ---: |
+| statement | 0 | 0 | 0 | 0 |
 | hero | 2 | 3 | 0 | 0 |
 | index | 0 | 0 | 6 | 0 |
 | problem | 1 | 0 | 3 | 0 |
@@ -36,7 +37,8 @@ Metrics accept formatted strings such as `80k+`, `98%`, or `$2m`.
 | curation | 2 | 1 | 2 | 0 |
 | offerings | 2 | 2 | 1 | 0 |
 
-These are maxima; omit optional sections as needed. Capacity contracts live next
+These are maxima; omit optional sections as needed. Hero, problem, editorial, and
+business layouts use a text-only arrangement when images are omitted. Capacity contracts live next
 to the templates. Text limits reject obvious overfill but do not guarantee fit:
 font choice and word lengths matter. Review the overview after content changes.
 Use concise titles (80 characters maximum for bundled layouts), supporting copy
@@ -72,7 +74,8 @@ Retain original licenses/credits with the deck.
    `{{images}}`, `{{metrics}}`, `{{features}}`, `{{chart}}`, `{{note}}`.
 3. Add geometry under `.p-layout-your-layout` in the presentation CSS (or
    consumer theme CSS for a private layout). Preserve header/footer space.
-4. Set a slide's `layout` to `your-layout` and run validation/browser checks.
+4. Run `node scripts/write-schema.mjs` to update the agent-facing schema.
+5. Set a slide's `layout` to `your-layout` and run validation/browser checks.
 
 Use the source of `layouts/business.html` and its JSON contract as the simplest
 example. When a repeated structure truly needs a new primitive, add a pure
