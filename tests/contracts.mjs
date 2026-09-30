@@ -23,6 +23,10 @@ assert(!existsSync('output/field-notes/assets/presentation/motion/motion-mini.js
 const tmp='.build/contract-fixture'; mkdirSync(tmp,{recursive:true}); cpSync('examples/reference/assets',`${tmp}/assets`,{recursive:true});
 const base=JSON.parse(read('examples/reference/deck.json'));
 const cases=[
+  ['invalid motion intensity',d=>d.transitions={intensity:4},false],
+  ['invalid slide motion',d=>d.slides[0].transitions={effect:'spin'},false],
+  ['invalid stagger',d=>d.transitions={stagger:-1},false],
+  ['cinematic slide override',d=>d.slides[0].transitions={effect:'focus',intensity:0.5},true],
   ['invalid motion enabled',d=>d.transitions={enabled:'yes'},false],
   ['invalid motion effect',d=>d.transitions={effect:'spin'},false],
   ['invalid motion duration',d=>d.transitions={duration:10},false],

@@ -78,4 +78,4 @@ and generated JSON Schema make the authoring contract discoverable. Starter
 briefs preserve source facts and unresolved questions. Authored decks are separate
 from shared examples; creating a deck refuses to overwrite an existing directory.
 
-Opt-in transitions use a locally bundled Motion mini module. The viewer enhances static navigation only when enabled or in fullscreen; disabled decks do not copy or load Motion. See transitions.md.
+Opt-in transitions use locally bundled Motion modules: mini for baseline transitions and the hybrid API for optional content choreography. The viewer enhances static navigation only when enabled or in fullscreen; disabled decks do not copy or load Motion. See transitions.md.

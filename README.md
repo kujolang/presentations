@@ -156,3 +156,7 @@ MIT. Preview version 0.1.0; the content and extension API may evolve.
 
 Optional [Motion transitions](docs/transitions.md) are configured in `deck.json`: enable/disable, effect, duration, and easing.
 Respect the author’s motion preference; reduced-motion settings always take precedence.
+
+For more expressive decks, Editorial, Focus, and Kinetic presets choreograph
+headlines, image reveals, feature cards, metrics, and charts. Adjust intensity
+and stagger, override individual slides, and audition with Replay entrance.

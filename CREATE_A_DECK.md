@@ -66,3 +66,7 @@ it does not add presenter notes, a presenter console, or a timer.
 
 Optional [Motion transitions](docs/transitions.md) are configured in `deck.json`: enable/disable, effect, duration, and easing.
 Respect the author’s motion preference; reduced-motion settings always take precedence.
+
+For cinematic motion, use editorial/focus/kinetic, adjust intensity and stagger,
+and add slide-level transitions overrides. Use Replay entrance to inspect each
+sequence. Keep slide data factual; never animate a statistic by changing its meaning.

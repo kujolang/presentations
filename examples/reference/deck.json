@@ -38,7 +38,10 @@
           "x": 40,
           "y": 50
         }
-      ]
+      ],
+      "transitions": {
+        "effect": "editorial"
+      }
     },
     {
       "layout": "index",
@@ -70,7 +73,10 @@
           "title": "What comes next",
           "copy": "Content for every viewer, everywhere."
         }
-      ]
+      ],
+      "transitions": {
+        "effect": "kinetic"
+      }
     },
     {
       "layout": "problem",
@@ -98,7 +104,10 @@
           "title": "One size does not fit all",
           "copy": "Different communities deserve stories that reflect their lives."
         }
-      ]
+      ],
+      "transitions": {
+        "effect": "focus"
+      }
     },
     {
       "layout": "editorial",
@@ -126,7 +135,10 @@
           "title": "Learn and improve",
           "copy": "Use audience feedback to inform the next story, not to repeat the last one."
         }
-      ]
+      ],
+      "transitions": {
+        "effect": "editorial"
+      }
     },
     {
       "layout": "market",
@@ -157,7 +169,10 @@
           "value": 88
         }
       ],
-      "chartLabel": "Illustrative audience interest by format \u00b7 Demo data, not research"
+      "chartLabel": "Illustrative audience interest by format \u00b7 Demo data, not research",
+      "transitions": {
+        "effect": "kinetic"
+      }
     },
     {
       "layout": "value",
@@ -181,7 +196,10 @@
           "title": "Lasting relevance",
           "copy": "Careful craft and a clear point of view give our work a longer life."
         }
-      ]
+      ],
+      "transitions": {
+        "effect": "kinetic"
+      }
     },
     {
       "layout": "business",
@@ -209,7 +227,10 @@
           "title": "Licensing & distribution",
           "copy": "Original formats and stories that travel to new audiences and platforms."
         }
-      ]
+      ],
+      "transitions": {
+        "effect": "focus"
+      }
     },
     {
       "layout": "curation",
@@ -245,7 +266,10 @@
           "title": "Room for discovery",
           "copy": "Find a new voice beyond the familiar."
         }
-      ]
+      ],
+      "transitions": {
+        "effect": "editorial"
+      }
     },
     {
       "layout": "offerings",
@@ -281,13 +305,18 @@
           "title": "One perspective.\nMany possibilities.",
           "copy": "A connected world of ideas, open to everyone."
         }
-      ]
+      ],
+      "transitions": {
+        "effect": "focus"
+      }
     }
   ],
   "transitions": {
     "enabled": true,
-    "effect": "slide",
-    "duration": 0.35,
-    "easing": "easeOut"
+    "effect": "editorial",
+    "duration": 1.1,
+    "easing": "easeOut",
+    "intensity": 1,
+    "stagger": 0.06
   }
 }

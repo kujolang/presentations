@@ -45,3 +45,47 @@ test('reduced motion, disabled decks and failed optional module preserve navigat
   await expect(page).toHaveURL(/\/reference\/2\/$/);await expect(page.locator('.p-counter')).toHaveText('2 / 9');
   await expect(page.locator('.p-frame')).toHaveCSS('opacity','1');
 });
+
+test('cinematic presets choreograph content and restore authored markup',async({page})=>{
+  for(const effect of ['editorial','focus','kinetic']) {
+    await page.goto('/reference/1/');
+    await page.evaluate(effect=>{
+      const main=document.querySelector('.p-viewer');main.dataset.motion=effect;main.dataset.duration='1.2';main.dataset.intensity='1.4';
+      window.before=document.querySelector('.p-canvas').innerHTML;window.poses=[];
+      window.observer=new MutationObserver(records=>records.forEach(r=>window.poses.push({tag:r.target.tagName,css:r.target.getAttribute('style')})));
+      window.observer.observe(document.querySelector('.p-canvas'),{subtree:true,attributes:true,attributeFilter:['style']});
+    },effect);
+    await page.getByRole('button',{name:'Replay entrance'}).click();
+    await expect(page.locator('html')).toHaveAttribute('data-transitioning','true');
+    await expect(page.locator('html')).not.toHaveAttribute('data-transitioning','true');
+    const result=await page.evaluate(()=>{window.observer.disconnect();return {before:window.before,after:document.querySelector('.p-canvas').innerHTML,poses:window.poses};});
+    expect(result.after).toBe(result.before);
+    expect(result.poses.some(p=>p.tag==='H1'&&p.css?.includes('transform'))).toBe(true);
+    expect(result.poses.some(p=>p.tag==='IMG'&&p.css?.includes('scale'))).toBe(true);
+    expect(JSON.stringify(result.poses)).toContain(effect==='editorial'?'clip-path':effect==='focus'?'blur':'rotate');
+    await expect(page.locator('.p-canvas h1')).toBeVisible();
+  }
+  await page.goto('/reference/5/');
+  await page.evaluate(()=>{window.poses=[];new MutationObserver(rs=>rs.forEach(r=>window.poses.push(r.target.getAttribute('style')))).observe(document.querySelector('.p-chart'),{subtree:true,attributes:true});});
+  await page.getByRole('button',{name:'Replay entrance'}).click();
+  await expect(page.locator('html')).not.toHaveAttribute('data-transitioning','true');
+  expect(await page.evaluate(()=>window.poses.some(p=>p?.includes('scaleY')))).toBe(true);
+});
+
+test('cinematic entrances finish cleanly when motion is disabled mid-flight',async({page})=>{
+  await page.goto('/reference/1/');
+  await page.evaluate(()=>{document.querySelector('.p-viewer').dataset.duration='2';window.before=document.querySelector('.p-canvas').innerHTML;});
+  await page.getByRole('button',{name:'Replay entrance'}).click();
+  await expect(page.locator('html')).toHaveAttribute('data-transitioning','true');
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await expect(page.locator('html')).not.toHaveAttribute('data-transitioning','true');
+  await expect(page.locator('[data-replay]')).toBeDisabled();
+  expect((await page.locator('.p-canvas').innerHTML()).replaceAll(' style=""','')).toBe((await page.evaluate(()=>window.before)).replaceAll(' style=""',''));
+  await page.emulateMedia({reducedMotion:'no-preference'});
+  await page.route('**/motion/motion-hybrid.js',route=>route.abort());
+  await page.reload();
+  await page.getByRole('button',{name:'Replay entrance'}).click();
+  await expect(page.locator('html')).not.toHaveAttribute('data-transitioning','true');
+  await expect(page.locator('h1')).toBeVisible();
+  await page.getByRole('link',{name:'Next →'}).click();await expect(page).toHaveURL(/\/2\/$/);
+});
