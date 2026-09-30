@@ -20,6 +20,21 @@ export func safe_asset(value) {
     if starts_with(value, "/") || contains(value, "..") || contains(value, "\\") { return false }
     return regex_replace(value, "^[a-zA-Z0-9_/-]+\\.[a-zA-Z0-9]+$", "") == ""
 }
+export func validate_motion(motion) {
+    if type(motion) != "dict" { fail("transitions must be an object") }
+    if type(field(motion, "enabled", false)) != "bool" { fail("transitions.enabled must be boolean") }
+    if !contains(["fade", "slide", "zoom", "editorial", "focus", "kinetic"], field(motion, "effect", "fade")) { fail("Unknown transitions.effect") }
+    duration := field(motion, "duration", 0.35)
+    if (type(duration) != "int" && type(duration) != "float") || duration < 0.1 || duration > 2 { fail("transitions.duration must be 0.1–2 seconds") }
+    if !contains(["linear", "easeIn", "easeOut", "easeInOut"], field(motion, "easing", "easeOut")) { fail("Unknown transitions.easing") }
+    for key in ["intensity", "stagger"] {
+        value := field(motion, key, 1)
+        minimum := 0.25
+        maximum := 2
+        if key == "stagger" { minimum = 0; maximum = 0.2; value = field(motion, key, 0.06) }
+        if (type(value) != "int" && type(value) != "float") || value < minimum || value > maximum { fail("Invalid transitions." + key) }
+    }
+}
 export func validate(deck, deck_dir) {
     if type(deck) != "dict" { fail("Deck must be an object") }
     need_text(deck, "id", 60)
@@ -30,17 +45,10 @@ export func validate(deck, deck_dir) {
     if has_key(deck, "slides") == 0 || type(deck["slides"]) != "array" || len(deck["slides"]) == 0 { fail("slides must be a non-empty array") }
     if has_key(deck, "footer") { need_text(deck, "footer", 100) }
     if !path_is_file(deck_dir + "/assets/theme.css") { fail("Deck assets/theme.css is required") }
-    if has_key(deck, "transitions") {
-        motion := deck["transitions"]
-        if type(motion) != "dict" { fail("transitions must be an object") }
-        if type(field(motion, "enabled", false)) != "bool" { fail("transitions.enabled must be boolean") }
-        if !contains(["fade", "slide", "zoom"], field(motion, "effect", "fade")) { fail("Unknown transitions.effect") }
-        duration := field(motion, "duration", 0.35)
-        if (type(duration) != "int" && type(duration) != "float") || duration < 0.1 || duration > 2 { fail("transitions.duration must be 0.1–2 seconds") }
-        if !contains(["linear", "easeIn", "easeOut", "easeInOut"], field(motion, "easing", "easeOut")) { fail("Unknown transitions.easing") }
-    }
+    if has_key(deck, "transitions") { validate_motion(deck["transitions"]) }
     for slide in deck["slides"] {
         if type(slide) != "dict" { fail("Each slide must be an object") }
+        if has_key(slide, "transitions") { validate_motion(slide["transitions"]) }
         need_text(slide, "title", 110)
         need_text(slide, "layout", 60)
         if !safe_name(slide["layout"]) || !path_is_file("layouts/" + slide["layout"] + ".html") { fail("Unknown layout: " + to_string(slide["layout"])) }

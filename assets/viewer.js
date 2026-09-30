@@ -4,6 +4,9 @@
   const viewer = () => document.querySelector('.p-viewer');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const moduleURL = new URL('./motion/motion-mini.js', document.currentScript.src).href;
+  const presetURL = new URL('./motion-presets.js', document.currentScript.src).href;
+  const cinematic = effect => ['editorial', 'focus', 'kinetic'].includes(effect);
+  let choreographyModule;
   const preferenceKey = 'presentation-motion:' + new URL('../', location.href).pathname;
   let disabled = false, motionModule, activeAnimation, enhancedHistory = false;
   try { disabled = sessionStorage.getItem(preferenceKey) === 'off'; } catch {}
@@ -11,24 +14,38 @@
   const finishAnimation = () => { activeAnimation?.complete(); };
   async function animateSlide(main, entering, direction) {
     if (!wantsMotion()) return;
+    let cleanup = () => {};
     try {
+      const effect = main.dataset.motion;
+      if (entering && cinematic(effect)) {
+        choreographyModule ||= import(presetURL);
+        const { choreograph } = await choreographyModule;
+        if (!wantsMotion()) return;
+        const result = choreograph(main, {effect, direction, duration: Number(main.dataset.duration) * 0.8,
+          intensity: Number(main.dataset.intensity), spacing: Number(main.dataset.stagger), easing: main.dataset.easing});
+        cleanup = result.cleanup;
+        activeAnimation = result.controls;
+        await activeAnimation;
+        return;
+      }
       motionModule ||= import(moduleURL);
       const { animate } = await motionModule;
       if (!wantsMotion()) return;
       const frame = main.querySelector('.p-frame');
-      const effect = main.dataset.motion;
       const transform = effect === 'slide' ? `translateX(${(entering ? 1 : -1) * direction * 5}%)` : 'scale(0.96)';
       const keyframes = { opacity: entering ? [0, 1] : [1, 0] };
-      if (effect !== 'fade') keyframes.transform = entering ? [transform, 'none'] : ['none', transform];
-      activeAnimation = animate(frame, keyframes, { duration: Number(main.dataset.duration) / 2, ease: main.dataset.easing });
+      if (effect !== 'fade' && !cinematic(effect)) keyframes.transform = entering ? [transform, 'none'] : ['none', transform];
+      activeAnimation = animate(frame, keyframes, { duration: Number(main.dataset.duration) * (cinematic(effect) ? 0.2 : 0.5), ease: main.dataset.easing });
       await activeAnimation;
       frame.style.removeProperty('opacity');
       frame.style.removeProperty('transform');
     } catch { /* A blocked optional module never prevents navigation. */ }
-    finally { activeAnimation = null; }
+    finally { await cleanup(); activeAnimation = null; }
   }
   const status = message => { const node = document.querySelector('[data-status]'); if (node) node.textContent = message; };
   const enhance = () => {
+    const replay = document.querySelector('[data-replay]');
+    if (replay) { replay.hidden = !viewer()?.dataset.motion; replay.disabled = !wantsMotion() || busy; }
     const toggle = document.querySelector('[data-motion-toggle]');
     if (toggle) {
       toggle.hidden = !viewer()?.dataset.motion;
@@ -48,6 +65,8 @@
     if (!document.fullscreenElement && !wantsMotion() && push) { location.assign(href); return; }
     if (busy) { pendingNavigation = {href, push}; return; }
     busy = true;
+    document.documentElement.dataset.transitioning = 'true';
+    enhance();
     const url = new URL(href, location.href);
     try {
       const response = await fetch(url, { signal: AbortSignal.timeout(8000) });
@@ -63,6 +82,7 @@
       const direction = Number(main.dataset.slide) >= Number(viewer().dataset.slide) ? 1 : -1;
       await animateSlide(viewer(), false, direction);
       viewer().replaceWith(main);
+      enhance();
       await animateSlide(main, true, direction);
       enhancedHistory = true;
       document.title = next.title;
@@ -74,13 +94,22 @@
       main.focus({ preventScroll: true });
       status(`Slide ${main.dataset.slide} of ${main.dataset.count}`);
     } catch { location.assign(url); }
-    finally {
-      busy = false;
-      if (pendingNavigation) {
-        const pending = pendingNavigation; pendingNavigation = null;
-        if (new URL(pending.href, location.href).href !== location.href) navigate(pending.href, pending.push);
-      }
+    finally { releaseNavigation(); }
+  }
+  function releaseNavigation() {
+    busy = false;
+    delete document.documentElement.dataset.transitioning;
+    enhance();
+    if (pendingNavigation) {
+      const pending = pendingNavigation; pendingNavigation = null;
+      if (new URL(pending.href, location.href).href !== location.href) navigate(pending.href, pending.push);
     }
+  }
+  async function replay() {
+    if (busy || !wantsMotion()) return;
+    busy = true; document.documentElement.dataset.transitioning = 'true'; enhance();
+    try { await animateSlide(viewer(), true, 1); }
+    finally { releaseNavigation(); }
   }
   async function fullscreen() {
     try {
@@ -89,6 +118,7 @@
     } catch { status('Fullscreen is unavailable. You can continue with the normal viewer.'); }
   }
   document.addEventListener('click', event => {
+    if (event.target.closest('[data-replay]')) { replay(); return; }
     if (event.target.closest('[data-motion-toggle]')) {
       disabled = !disabled;
       try { sessionStorage.setItem(preferenceKey, disabled ? 'off' : 'on'); } catch {}

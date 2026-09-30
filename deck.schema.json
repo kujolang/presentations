@@ -39,7 +39,10 @@
           "enum": [
             "fade",
             "slide",
-            "zoom"
+            "zoom",
+            "editorial",
+            "focus",
+            "kinetic"
           ]
         },
         "duration": {
@@ -54,6 +57,16 @@
             "easeOut",
             "easeInOut"
           ]
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 0.25,
+          "maximum": 2
+        },
+        "stagger": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.2
         }
       },
       "required": [],
@@ -64,6 +77,49 @@
       "items": {
         "type": "object",
         "properties": {
+          "transitions": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean"
+              },
+              "effect": {
+                "enum": [
+                  "fade",
+                  "slide",
+                  "zoom",
+                  "editorial",
+                  "focus",
+                  "kinetic"
+                ]
+              },
+              "duration": {
+                "type": "number",
+                "minimum": 0.1,
+                "maximum": 2
+              },
+              "easing": {
+                "enum": [
+                  "linear",
+                  "easeIn",
+                  "easeOut",
+                  "easeInOut"
+                ]
+              },
+              "intensity": {
+                "type": "number",
+                "minimum": 0.25,
+                "maximum": 2
+              },
+              "stagger": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 0.2
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          },
           "layout": {
             "type": "string",
             "minLength": 1,
