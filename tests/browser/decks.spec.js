@@ -35,7 +35,9 @@ test('overview, all direct routes, local assets, canvas geometry and accessible 
 test('native keyboard navigation, reload, history, endpoints and focus guards', async ({page}) => {
   await page.goto('/reference/1/');
   for (const [key,n] of [['ArrowRight',2],[' ',3],['ArrowLeft',2],['End',9],['Home',1]]) {
+    await page.waitForLoadState('load');
     await page.keyboard.press(key); await expect(page).toHaveURL(new RegExp(`/reference/${n}/$`));
+    await page.waitForLoadState('load');
   }
   await page.keyboard.press('ArrowLeft'); await expect(page).toHaveURL(/\/1\/$/);
   await page.locator('[data-nav="next"]').focus();
@@ -52,7 +54,7 @@ test('native keyboard navigation, reload, history, endpoints and focus guards', 
 test('fixed composition on small screens; readable transcript and no JavaScript', async ({browser}) => {
   for (const size of [{width:390,height:844},{width:844,height:390},{width:768,height:1024}]) {
     const context=await browser.newContext({viewport:size,javaScriptEnabled:false});
-    const page=await context.newPage(); await page.goto('/reference/');
+    const page=await context.newPage(); await page.goto('/reference/',{waitUntil:'domcontentloaded'});
     await page.locator('.p-thumbnail').nth(5).click();
     await expect(page).toHaveURL(/\/6\/$/);
     const box=await page.locator('.p-canvas').boundingBox(); expect(box.width/box.height).toBeCloseTo(16/9,2);
@@ -84,3 +86,20 @@ test('overview visual artifact and reduced motion',async ({page},testInfo)=>{
   await page.screenshot({path:testInfo.outputPath('reference-overview.png'),fullPage:true});
   await page.goto('/field-notes/');await page.evaluate(async()=>{await Promise.all([...document.images].map(i=>{i.loading='eager';return i.decode();}));});await page.screenshot({path:testInfo.outputPath('field-notes-overview.png'),fullPage:true});
 });
+
+for(const [deck,count] of [['investor',9],['live-talk',7],['sales',7]]) {
+  test(`${deck} purpose starter fits and stays accessible`,async({page},testInfo)=>{
+    for(let n=1;n<=count;n++) {
+      await page.goto(`/${deck}/${n}/`);
+      await page.evaluate(()=>document.fonts.ready);
+      await expect(page.locator('.p-counter')).toHaveText(`${n} / ${count}`);
+      const overlaps=await page.locator('.p-canvas').evaluate(c=>{
+        const box=c.getBoundingClientRect(),h=c.querySelector('h1').getBoundingClientRect(),p=c.querySelector('.p-intro')?.getBoundingClientRect();
+        return {outside:[...c.querySelectorAll('h1,h2,p,.p-features')].some(e=>{const r=e.getBoundingClientRect();return r.right>box.right+1||r.bottom>box.bottom+1;}),text:Boolean(p&&h.left<p.right&&h.right>p.left&&h.top<p.bottom&&h.bottom>p.top)};
+      });
+      expect(overlaps).toEqual({outside:false,text:false});
+      expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
+    }
+    await page.goto(`/${deck}/`);await page.screenshot({path:testInfo.outputPath(`${deck}-overview.png`),fullPage:true});
+  });
+}

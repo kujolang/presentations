@@ -24,7 +24,7 @@ metrics/features are not frontmatter template objects. The adapter resolves thos
 small content structures into page templates before invoking the public SSG CLI.
 It does not implement routing, rewrite SSG outputs, fork SSG, or call its private
 functions. Per-slide generated templates are build artifacts, not nine authored
-one-off pages. The nine layout implementations are shared by all decks.
+one-off pages. The reusable layout implementations are shared by all decks.
 
 SSG's page slugs are flat; numbered `/1/` routes beneath a deck's deployment root
 use that contract directly. The overview is SSG's home template. `--no-aux`,
@@ -68,3 +68,12 @@ shared writable staging directory. Output names come from validated slugs.
 The manifest in dependencies.json records tested revisions, not a fake Kennel
 library dependency: SSG is invoked as a tool and SiteKit's supported distribution
 is copied whole with its font relationship and license files preserved.
+
+# Agent-led onboarding
+
+The optional Node command in scripts/deck.mjs orchestrates prerequisite checks,
+pinned dependency setup, starter copying, native builds, preview and inspection.
+It does not render slides. CREATE_A_DECK.md is the agent entry point; the catalog
+and generated JSON Schema make the authoring contract discoverable. Starter
+briefs preserve source facts and unresolved questions. Authored decks are separate
+from shared examples; creating a deck refuses to overwrite an existing directory.

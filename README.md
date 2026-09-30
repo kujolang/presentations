@@ -2,15 +2,30 @@
 
 An optional, Kujo-native presentation layer built **on top of Kujo SSG and SiteKit**.
 It turns editable deck data into static HTML slides, an overview, and a readable
-text edition. Nine reusable layouts ship with an editorial media example and a
-separate garden-planning example. No changes to SSG or SiteKit are required.
+text edition. Ten reusable layouts ship with investor, live-talk and sales starters, an editorial
+media example, and a separate garden-planning example. No changes to SSG or SiteKit are required.
 
 ![Rendered nine-slide example](docs/images/reference-overview.png)
+
+## Start with your purpose
+
+With Git, Node 20+, and Kujo 1.5+ installed:
+
+```sh
+npm run deck -- start investor my-pitch --title "My company"
+```
+
+This creates a draft, sets up pinned dependencies, builds, and serves it. Choose
+`investor`, `live-talk`, or `sales`. Give your agent [CREATE_A_DECK.md](CREATE_A_DECK.md)
+plus your data to customize the narrative, branding, and slides. The agent can
+use the JSON catalog, content schema, readiness check, and browser inspection.
+See [getting started](docs/getting-started.md) for the clone-to-preview walkthrough.
 
 ## Run locally
 
 Requirements: Kujo 1.5+, a Kujo SSG checkout, and a built SiteKit `dist/`.
-Node is needed only for SiteKit's build and this project's browser tests.
+Node powers the optional onboarding/inspection commands, SiteKit's build, and
+browser tests. The presentation build itself remains native Kujo.
 Tested upstream revisions are recorded in `dependencies.json`.
 
 With sibling `ssg/` and `site-kit/` repositories:
