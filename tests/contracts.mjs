@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync, mkdirSync, writeFileSync, cpSync, rmSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync, mkdirSync, writeFileSync, cpSync, rmSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 const read=p=>readFileSync(p,'utf8');
 for (const [deck,count] of [['reference',9],['field-notes',3]]) {
@@ -18,9 +18,16 @@ for (const [deck,count] of [['reference',9],['field-notes',3]]) {
 for(const file of readdirSync('src')) assert(!/FORM \/ MEDIA|ff4b23|Innovating media/.test(read(`src/${file}`)),'reference data leaked into engine');
 assert(!read('assets/presentation.css').includes('#ff4b23'));
 assert(!read('output/field-notes/index.html').includes('FORM / MEDIA'));
+assert(existsSync('output/reference/assets/presentation/motion/motion-mini.js'));
+assert(!existsSync('output/field-notes/assets/presentation/motion/motion-mini.js'));
 const tmp='.build/contract-fixture'; mkdirSync(tmp,{recursive:true}); cpSync('examples/reference/assets',`${tmp}/assets`,{recursive:true});
 const base=JSON.parse(read('examples/reference/deck.json'));
 const cases=[
+  ['invalid motion enabled',d=>d.transitions={enabled:'yes'},false],
+  ['invalid motion effect',d=>d.transitions={effect:'spin'},false],
+  ['invalid motion duration',d=>d.transitions={duration:10},false],
+  ['invalid motion easing',d=>d.transitions={easing:'surprise'},false],
+  ['disabled motion',d=>d.transitions={enabled:false},true],
   ['empty deck',d=>d.slides=[],false],
   ['unsafe id',d=>d.id='../escape',false],
   ['unknown layout',d=>d.slides[0].layout='not-a-layout',false],

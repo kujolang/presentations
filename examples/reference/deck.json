@@ -283,5 +283,11 @@
         }
       ]
     }
-  ]
+  ],
+  "transitions": {
+    "enabled": true,
+    "effect": "slide",
+    "duration": 0.35,
+    "easing": "easeOut"
+  }
 }

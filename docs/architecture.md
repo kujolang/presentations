@@ -46,8 +46,8 @@ cases, ownership, and compatibility before implementation.
 # Runtime and accessibility
 
 Most content is static HTML, CSS, local images and SVG. Overview and reading pages
-load zero JavaScript. Only viewer pages load viewer.js. Fullscreen enhancement
-keeps a real URL and replaces the generated main landmark; history and fallback
+load zero JavaScript. Only viewer pages load viewer.js. Fullscreen and optional transition enhancement
+keep a real URL and replaces the generated main landmark; history and fallback
 navigation retain the static document as the authority.
 
 The canvas's typography necessarily shrinks on narrow screens. The text edition
@@ -77,3 +77,5 @@ It does not render slides. CREATE_A_DECK.md is the agent entry point; the catalo
 and generated JSON Schema make the authoring contract discoverable. Starter
 briefs preserve source facts and unresolved questions. Authored decks are separate
 from shared examples; creating a deck refuses to overwrite an existing directory.
+
+Opt-in transitions use a locally bundled Motion mini module. The viewer enhances static navigation only when enabled or in fullscreen; disabled decks do not copy or load Motion. See transitions.md.

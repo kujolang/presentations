@@ -105,9 +105,9 @@ building. See [authoring](docs/authoring.md) for fields, capacities, and extensi
 Keyboard shortcuts leave inputs, editable content, modifier shortcuts, and
 Space activation on links/buttons alone. Controls are native links and buttons.
 Navigation and overview work without JavaScript. The viewer's small optional
-script provides shortcuts and fullscreen. During fullscreen only, it fetches
-another generated page to preserve fullscreen across slides; normal navigation
-uses native page loads. Fetch failures fall back to ordinary navigation.
+script provides shortcuts, fullscreen, and optional Motion transitions. When
+fullscreen or transitions are enabled, it fetches another generated page;
+otherwise navigation uses native page loads. Fetch failures fall back to ordinary navigation.
 
 ## Architecture
 
@@ -153,3 +153,6 @@ Photography comes from the local SSG demo corpus, never a hotlink or slide scree
 [Asset provenance](examples/reference/ASSETS.md) records the source files.
 
 MIT. Preview version 0.1.0; the content and extension API may evolve.
+
+Optional [Motion transitions](docs/transitions.md) are configured in `deck.json`: enable/disable, effect, duration, and easing.
+Respect the author’s motion preference; reduced-motion settings always take precedence.

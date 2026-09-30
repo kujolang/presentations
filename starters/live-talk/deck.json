@@ -102,5 +102,11 @@
       "copy": "[One memorable sentence, a next step, and an invitation for questions.]",
       "eyebrow": "Discussion"
     }
-  ]
+  ],
+  "transitions": {
+    "enabled": true,
+    "effect": "slide",
+    "duration": 0.35,
+    "easing": "easeOut"
+  }
 }

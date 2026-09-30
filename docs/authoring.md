@@ -82,3 +82,6 @@ example. When a repeated structure truly needs a new primitive, add a pure
 render function and explicit slot in `src/render.kujo`. Keep content out of it.
 Do not add trivial components for every wrapper or move presentation concepts
 into SiteKit. Themes/templates are trusted source and must be reviewed as code.
+
+Optional [Motion transitions](transitions.md) are configured in `deck.json`: enable/disable, effect, duration, and easing.
+Respect the author’s motion preference; reduced-motion settings always take precedence.

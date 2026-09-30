@@ -63,3 +63,6 @@ facts needed to make the deck truthful or for a material decision you cannot inf
 Investor, live-talk, and sales starters are copyable narrative templates, not
 claims about a real company or audience. A live-talk starter supplies a story arc;
 it does not add presenter notes, a presenter console, or a timer.
+
+Optional [Motion transitions](docs/transitions.md) are configured in `deck.json`: enable/disable, effect, duration, and easing.
+Respect the author’s motion preference; reduced-motion settings always take precedence.
