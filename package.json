@@ -1,0 +1,16 @@
+{
+  "name": "kujo-presentations",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "kujo run build.kujo && kujo run build.kujo -- --deck examples/field-notes",
+    "test": "npm run build && node tests/contracts.mjs && playwright test",
+    "test:browser": "playwright test",
+    "preview": "kujo serve output --port 8086"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
+    "@playwright/test": "1.62.1"
+  }
+}

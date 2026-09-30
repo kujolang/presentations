@@ -5,6 +5,8 @@ It turns editable deck data into static HTML slides, an overview, and a readable
 text edition. Nine reusable layouts ship with an editorial media example and a
 separate garden-planning example. No changes to SSG or SiteKit are required.
 
+![Rendered nine-slide example](docs/images/reference-overview.png)
+
 ## Run locally
 
 Requirements: Kujo 1.5+, a Kujo SSG checkout, and a built SiteKit `dist/`.

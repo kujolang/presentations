@@ -1,0 +1,287 @@
+{
+  "id": "reference",
+  "title": "A new perspective on media",
+  "brand": "FORM / MEDIA",
+  "description": "An editorial presentation about the future of independent media. Nine compositions, one point of view.",
+  "footer": "Form Media / Strategy & vision / Demo edition",
+  "slides": [
+    {
+      "layout": "hero",
+      "title": "Innovating media\nfor a digital age",
+      "eyebrow": "A new perspective",
+      "copy": "We connect bold ideas with curious audiences. Independent thinking. Meaningful stories. Made for the way the world moves.",
+      "inverse": true,
+      "metrics": [
+        {
+          "value": "150+",
+          "label": "Original stories every month"
+        },
+        {
+          "value": "78",
+          "label": "Creative collaborators"
+        },
+        {
+          "value": "80k",
+          "label": "People in our community"
+        }
+      ],
+      "images": [
+        {
+          "src": "city.jpg",
+          "alt": "People and taxis moving along a dense city avenue",
+          "x": 50,
+          "y": 55
+        },
+        {
+          "src": "collaboration.jpg",
+          "alt": "An editorial team discussing ideas around a shared table",
+          "x": 40,
+          "y": 50
+        }
+      ]
+    },
+    {
+      "layout": "index",
+      "title": "Presentation\ncontent index",
+      "eyebrow": "The bigger picture",
+      "copy": "From a shared challenge to a lasting impact. A closer look at the ideas, people and possibilities shaping our next chapter.",
+      "features": [
+        {
+          "title": "The challenge",
+          "copy": "Understanding a changing media landscape."
+        },
+        {
+          "title": "Our approach",
+          "copy": "A considered response. A clear direction."
+        },
+        {
+          "title": "The opportunity",
+          "copy": "Meeting audiences where they are."
+        },
+        {
+          "title": "Our difference",
+          "copy": "Independent ideas that move culture."
+        },
+        {
+          "title": "How we grow",
+          "copy": "A sustainable model for meaningful work."
+        },
+        {
+          "title": "What comes next",
+          "copy": "Content for every viewer, everywhere."
+        }
+      ]
+    },
+    {
+      "layout": "problem",
+      "title": "Problem\nstatement",
+      "eyebrow": "01 / The challenge",
+      "copy": "More content. Less connection. The media landscape has never been louder\u2014or harder to navigate.",
+      "images": [
+        {
+          "src": "city.jpg",
+          "alt": "People and taxis moving along a dense city avenue",
+          "x": 50,
+          "y": 55
+        }
+      ],
+      "features": [
+        {
+          "title": "Attention is fragmented",
+          "copy": "Audiences move between platforms, while stories struggle to travel with them."
+        },
+        {
+          "title": "Trust needs to be earned",
+          "copy": "Consistency, context and a human point of view matter more than volume."
+        },
+        {
+          "title": "One size does not fit all",
+          "copy": "Different communities deserve stories that reflect their lives."
+        }
+      ]
+    },
+    {
+      "layout": "editorial",
+      "title": "Our solutions for\nlasting impact",
+      "eyebrow": "02 / Our approach",
+      "copy": "Build with intention. We bring editorial care and creative experimentation together to make work that stays with people.",
+      "images": [
+        {
+          "src": "workshop.jpg",
+          "alt": "A workshop leader organizing ideas with her team",
+          "x": 52,
+          "y": 50
+        }
+      ],
+      "features": [
+        {
+          "title": "Start with people",
+          "copy": "Listen closely. Understand what a community needs before making something for it."
+        },
+        {
+          "title": "Make every format count",
+          "copy": "Translate a strong idea across film, audio and digital experiences."
+        },
+        {
+          "title": "Learn and improve",
+          "copy": "Use audience feedback to inform the next story, not to repeat the last one."
+        }
+      ]
+    },
+    {
+      "layout": "market",
+      "title": "Market opportunity",
+      "eyebrow": "03 / The opportunity",
+      "copy": "A connected generation is choosing media on its own terms. There is room for a more thoughtful kind of publisher.",
+      "metrics": [
+        {
+          "value": "98%",
+          "label": "of our demo audience wants more relevant stories"
+        }
+      ],
+      "chart": [
+        {
+          "label": "Video",
+          "value": 74
+        },
+        {
+          "label": "Audio",
+          "value": 48
+        },
+        {
+          "label": "Editorial",
+          "value": 62
+        },
+        {
+          "label": "Community",
+          "value": 88
+        }
+      ],
+      "chartLabel": "Illustrative audience interest by format \u00b7 Demo data, not research"
+    },
+    {
+      "layout": "value",
+      "title": "Unique value\nproposition",
+      "eyebrow": "04 / Our difference",
+      "copy": "Independent perspective. Connected thinking. A creative partner that sees the whole picture and cares about every detail.",
+      "features": [
+        {
+          "title": "Human by design",
+          "copy": "Stories built around real people, meaningful questions and lived experience."
+        },
+        {
+          "title": "Culture in context",
+          "copy": "We make room for nuance and bring fresh perspectives to familiar subjects."
+        },
+        {
+          "title": "Built to connect",
+          "copy": "Each format opens a different door into the same compelling idea."
+        },
+        {
+          "title": "Lasting relevance",
+          "copy": "Careful craft and a clear point of view give our work a longer life."
+        }
+      ]
+    },
+    {
+      "layout": "business",
+      "title": "Business\nmodel",
+      "eyebrow": "05 / How we grow",
+      "copy": "A balanced model that supports independent creativity and shared, sustainable growth.",
+      "images": [
+        {
+          "src": "collaboration.jpg",
+          "alt": "An editorial team discussing ideas around a shared table",
+          "x": 40,
+          "y": 50
+        }
+      ],
+      "features": [
+        {
+          "title": "Membership",
+          "copy": "A closer connection through exclusive stories, conversations and experiences."
+        },
+        {
+          "title": "Creative partnerships",
+          "copy": "Collaborative campaigns for brands that share our curiosity and values."
+        },
+        {
+          "title": "Licensing & distribution",
+          "copy": "Original formats and stories that travel to new audiences and platforms."
+        }
+      ]
+    },
+    {
+      "layout": "curation",
+      "title": "Curating content\nfor every viewer",
+      "eyebrow": "06 / People first",
+      "copy": "The right story, in the right format, at the right moment. Discover something that feels made for you.",
+      "images": [
+        {
+          "src": "workshop.jpg",
+          "alt": "A workshop leader organizing ideas with her team",
+          "x": 52,
+          "y": 50
+        },
+        {
+          "src": "digital.jpg",
+          "alt": "Web markup on a computer screen",
+          "x": 45,
+          "y": 50
+        }
+      ],
+      "metrics": [
+        {
+          "value": "80k+",
+          "label": "curious minds, one growing community"
+        }
+      ],
+      "features": [
+        {
+          "title": "Personal relevance",
+          "copy": "Explore subjects that connect with your interests."
+        },
+        {
+          "title": "Room for discovery",
+          "copy": "Find a new voice beyond the familiar."
+        }
+      ]
+    },
+    {
+      "layout": "offerings",
+      "title": "Diverse media\nofferings",
+      "eyebrow": "07 / Many ways in",
+      "copy": "Watch. Listen. Read. Participate. Different ways to experience the stories that bring us together.",
+      "images": [
+        {
+          "src": "city.jpg",
+          "alt": "People and taxis moving along a dense city avenue",
+          "x": 50,
+          "y": 55
+        },
+        {
+          "src": "collaboration.jpg",
+          "alt": "An editorial team discussing ideas around a shared table",
+          "x": 40,
+          "y": 50
+        }
+      ],
+      "metrics": [
+        {
+          "value": "12",
+          "label": "Original editorial formats"
+        },
+        {
+          "value": "40+",
+          "label": "Creative voices"
+        }
+      ],
+      "features": [
+        {
+          "title": "One perspective.\nMany possibilities.",
+          "copy": "A connected world of ideas, open to everyone."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+name: Presentation contracts
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          repository: kujolang/kujo
+          ref: 83fbdd4f39db68c5bc2196318e993e0ff202d514
+          path: .deps/kujo
+      - name: Build Kujo 1.5.0
+        run: |
+          cargo build --manifest-path .deps/kujo/Cargo.toml --release --locked
+          echo "$GITHUB_WORKSPACE/.deps/kujo/target/release" >> "$GITHUB_PATH"
+      - run: node scripts/setup-dependencies.mjs
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: npm test
+      - run: git diff --check
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: presentation-browser-evidence
+          path: test-results/
+          if-no-files-found: warn

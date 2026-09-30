@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Optional static presentation composition and viewer for Kujo SSG and SiteKit."
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/kujolang/presentations"
 
 [package.status]
 stage = "preview"

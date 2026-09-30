@@ -1,0 +1,79 @@
+{
+  "id": "field-notes",
+  "title": "A season of small changes",
+  "brand": "Field Notes / Community garden",
+  "description": "A second, unrelated deck: different content, different theme, the same presentation layer.",
+  "footer": "Field Notes / Illustrative community project",
+  "slides": [
+    {
+      "layout": "index",
+      "title": "Growing together",
+      "copy": "A practical plan for a shared garden, shaped by the people who use it.",
+      "features": [
+        {
+          "title": "Listen",
+          "copy": "Make space for every neighbor."
+        },
+        {
+          "title": "Plant",
+          "copy": "Choose useful, resilient varieties."
+        },
+        {
+          "title": "Share",
+          "copy": "Open the harvest to everyone."
+        }
+      ]
+    },
+    {
+      "layout": "market",
+      "title": "Room to grow",
+      "copy": "Small improvements add up over a season.",
+      "metrics": [
+        {
+          "value": "64%",
+          "label": "of planned beds prepared"
+        }
+      ],
+      "chart": [
+        {
+          "label": "Spring",
+          "value": 25
+        },
+        {
+          "label": "Summer",
+          "value": 64
+        },
+        {
+          "label": "Autumn",
+          "value": 90
+        }
+      ],
+      "chartLabel": "Illustrative plan completion by season"
+    },
+    {
+      "layout": "business",
+      "title": "A shared\ncommitment",
+      "copy": "Build a sustainable garden with clear responsibilities.",
+      "features": [
+        {
+          "title": "Time",
+          "copy": "Weekly volunteer sessions."
+        },
+        {
+          "title": "Tools",
+          "copy": "A shared store and repair fund."
+        },
+        {
+          "title": "Knowledge",
+          "copy": "Open workshops for new growers."
+        }
+      ],
+      "images": [
+        {
+          "src": "garden.svg",
+          "alt": "Line drawing of three plants growing in a community garden"
+        }
+      ]
+    }
+  ]
+}
