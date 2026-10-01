@@ -20,8 +20,9 @@ jobs:
           repository: kujolang/kujo
           ref: 83fbdd4f39db68c5bc2196318e993e0ff202d514
           path: .deps/kujo
-      - name: Cache pinned Kujo build
-        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830
+      - name: Restore pinned Kujo build
+        id: kujo-cache
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
         with:
           path: |
             ~/.cargo/registry
@@ -32,6 +33,15 @@ jobs:
         run: |
           cargo build --manifest-path .deps/kujo/Cargo.toml --release --locked
           echo "$GITHUB_WORKSPACE/.deps/kujo/target/release" >> "$GITHUB_PATH"
+      - name: Save successful Kujo build
+        if: steps.kujo-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            .deps/kujo/target
+          key: ${{ steps.kujo-cache.outputs.cache-primary-key }}
       - run: node scripts/setup-dependencies.mjs
       - run: npm ci
       - run: npx playwright install --with-deps chromium firefox webkit
