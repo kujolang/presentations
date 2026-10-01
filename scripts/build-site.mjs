@@ -30,6 +30,9 @@ cpSync('deployment/site.css', `${target}/assets/site.css`);
 cpSync('deployment/_headers', `${target}/_headers`);
 cpSync('videos/kujo-presentations-promo/assets/generated/kujo-logomark.svg', `${target}/assets/kujo-logomark.svg`);
 cpSync('.deps/site-kit/dist/fonts/DepartureMono-Regular.woff2', `${target}/assets/fonts/DepartureMono-Regular.woff2`);
+cpSync('videos/kujo-presentations-promo/assets/fonts/captured-inter-latin-400.woff2', `${target}/assets/fonts/inter-latin-400.woff2`);
+cpSync('videos/kujo-presentations-promo/assets/fonts/captured-inter-latin-700.woff2', `${target}/assets/fonts/inter-latin-700.woff2`);
+cpSync('examples/reference/assets/fonts/oswald-700.woff2', `${target}/assets/fonts/oswald-700.woff2`);
 
 for (const deck of decks) {
   cpSync(`output/${deck.id}`, `${target}/${deck.route}`, { recursive: true });
