@@ -73,3 +73,37 @@ PRESENTATION_TEST_HOST=kujo npx playwright test decks.spec.js motion.spec.js --p
 ```
 
 The mounted-host test targets the fixture and is not part of this command.
+
+## Public reference site
+
+The reference deck is served at <https://presentations.robertdevore.com/> by an
+assets-only Cloudflare Worker. With Kujo, the pinned upstream dependencies, and
+authorized Cloudflare Wrangler access installed, run:
+
+```sh
+npm run deploy:site
+```
+
+This builds with the production canonical origin, stages only the generated
+reference deck in `.build/public-site/`, and deploys through pinned Wrangler
+4.129.0. `wrangler.jsonc` binds the custom domain. Source files, repository
+history, private notes, and audit receipts are outside the published directory.
+Use `npm run build:site` to prepare the same artifact without deploying.
+
+The builder supplies canonical links, social text metadata, WebPage JSON-LD,
+robots.txt, and a sitemap. The sitemap includes the overview, numbered slides,
+and reading edition. Print, presenter, and error pages use `noindex,follow`.
+Set `--site-url` to the full deployment base, including a subdirectory when
+needed; the default example.com URL is for local development only.
+
+The reference host enforces the policy in `deployment/_headers`, supports real
+404 responses, and redirects directory routes to their trailing-slash form.
+Verify each deployment with:
+
+```sh
+npm run verify:host -- https://presentations.robertdevore.com/
+```
+
+See the [2026-10-01 audit](../seo-audit/2026-10-01/executive-summary.md) for crawl
+evidence and measurement limits. Search indexing and AI citations require
+subsequent observations; deployment does not guarantee either.
