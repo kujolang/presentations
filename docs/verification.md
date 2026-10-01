@@ -120,3 +120,23 @@ The end-to-end fixture checks quoted frontmatter, escaped literal title and
 metadata, a subdirectory canonical URL, `fr-CA` document language, reading notes,
 basic-only Motion distribution, and rejection of duplicate native options.
 See [the readiness review](readiness-review.md) for remaining work and scope limits.
+
+## Build safety and static hosting follow-up
+
+On 2026-09-30, `npm test` passed with Kujo 1.5.0 on macOS: both examples,
+all three starters, static contracts, seven Node tests, native preview smoke,
+and 37 browser cases in Chromium/Firefox/WebKit. Two headless fullscreen cases
+were intentionally skipped; no browser retries were used. The browser phase took
+5.2 minutes on this run; this is a test duration, not a performance benchmark.
+
+New tests reject symlinks (file, external, directory/cycle, dangling, and asset
+root), hidden files, FIFOs, and overly deep trees. They exercise competing builds,
+failed SSG generation, interrupted publication state, recovery, and successful
+replacement. The depth fixture exposed Kujo's 32-call stack limit; the explicit
+asset depth limit is 16 so rejection happens before reaching it.
+
+The browser matrix now uses a separate static-host fixture. Added checks cover
+mounted routes, refresh, MIME types, cache revalidation, and an enforced CSP.
+Native preview transport remains separately reproducible; this pass does not
+resolve the Firefox CI stalls seen with native preview in run36801899062.
+See [release status](release.md) and [next priorities](next-session-build-safety.md).

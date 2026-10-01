@@ -147,7 +147,8 @@ See [architecture](docs/architecture.md) for the boundaries and build process.
 The root entry point, manifests, schema, license, and agent instructions remain
 where the CLI and package tools expect them. Generated output stays ignored.
 Use trusted asset trees: every file under a deck's `assets/` is published in its
-output. See [deployment guidance](docs/deployment.md) for hosting and access.
+output. Validation rejects hidden entries, symlinks, and special files. Failed
+builds preserve the last successful deck; same-ID builds are locked. See [deployment guidance](docs/deployment.md) for hosting and access.
 
 ## Verify
 
@@ -173,7 +174,8 @@ local SSG demo assets; see [asset sources](examples/reference/ASSETS.md).
 - [Content, themes, and layouts](docs/authoring.md)
 - [Motion settings](docs/transitions.md)
 - [Release status and checks](docs/release.md)
-- [Readiness review and next-session work](docs/readiness-review.md)
+- [Readiness review](docs/readiness-review.md)
+- [Build-safety follow-up and next priorities](docs/next-session-build-safety.md)
 - [Static hosting and access](docs/deployment.md)
 - [Changelog](CHANGELOG.md)
 

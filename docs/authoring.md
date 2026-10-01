@@ -91,7 +91,10 @@ adding them; the current adapter copies local assets through SSG and does not
 process collage images with SSG's frontmatter featured-image converter.
 Retain original licenses/credits with the deck. All files under `assets/` are
 copied to public output, including files the deck does not reference. Do not put
-private source material there. Themes, templates, and asset trees must be trusted.
+private source material there. Hidden entries, symlinks, special files, and trees
+deeper than 16 directory levels fail validation. Use real copies of assets.
+Themes, templates, and asset trees must be trusted. See [build recovery](deployment.md#build-recovery)
+for concurrent builds and interrupted builds.
 
 ## Add a layout without modifying the renderer
 

@@ -6,12 +6,20 @@ package files; they do not claim a stable release.
 
 ## Current review verification
 
-The readiness review passed `npm test` locally on macOS with Kujo 1.5.0:
-all native builds, static contracts, five build/onboarding tests, and the real
-preview smoke passed. The browser matrix finished with **34 passed, two
-intentional headless fullscreen skips, and zero failures**. No retries were used.
-The reference overview was visually reviewed; documentation links and examples
-also passed checks. Remote CI on the release commit remains required.
+The build-safety follow-up passed `npm test` locally on macOS with Kujo 1.5.0:
+both examples, all three starters, static contracts, **seven Node tests**, and
+the real native preview smoke passed. The browser matrix finished with **37
+passed, two intentional headless fullscreen skips, and zero failures**, without
+retries. Browser tests used the separate static-host fixture; native preview is
+covered by its HTTP smoke test, not by that browser result. Markdown links and
+`git diff --check` also passed.
+
+The previous exact-commit CI run
+[36801899062](https://github.com/kujolang/presentations/actions/runs/36801899062)
+failed two Firefox navigations before document commit. The new revision still
+requires its own passing CI result before release. The
+[build-safety follow-up](next-session-build-safety.md) records the implementation,
+transport limitation, and next priorities. Reference-photo rights remain open.
 
 ## Release gate from the previous revision
 

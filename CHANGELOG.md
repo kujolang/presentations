@@ -2,6 +2,11 @@
 
 ## Unreleased — 0.1.0 preview
 
+- Reject hidden assets, symlinks, special files, and overly deep asset trees.
+- Lock same-ID builds, stage output, and recover interrupted replacement.
+- Test static hosting with MIME types, cache revalidation, CSP, and mounted routes.
+- Save successful compiler caches even when later CI tests fail.
+
 - Keep the public build command while moving its implementation into `src/`.
 - Quote frontmatter and escape document metadata before SSG template processing.
 - Reject unknown content fields, invalid inverse values, and repeated CLI flags.
@@ -9,7 +14,6 @@
 - Align dependency selection and omit unused cinematic bundles from basic decks.
 - Check browser resource readiness explicitly and retain failure traces.
 - Cache the pinned Kujo CI build and document deployment limits and follow-up work.
-
 
 - Add an optional presentation package built on Kujo SSG and SiteKit.
 - Add ten reusable layouts, deck JSON validation, themes, and local media.

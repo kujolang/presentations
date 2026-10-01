@@ -42,6 +42,10 @@ layouts, content, tests, and documentation keep their separate directories.
 
 ## Prioritized work for the next session
 
+The [build-safety follow-up](next-session-build-safety.md) records the next batch:
+asset checks, build locking/recovery, and a separate static-host browser fixture.
+It also records the remaining release gates.
+
 These are scoped follow-ups, not promises that every feature will be added.
 Start with the release gates, then choose the improvements needed by real users.
 
@@ -49,8 +53,8 @@ Start with the release gates, then choose the improvements needed by real users.
 | --- | --- | --- |
 | P0 | Verify the exact release commit in CI; prior Firefox load waits failed in runs `36792293889` and local diagnostics (`tests/browser/`) | The full native, onboarding, build-regression, and browser pipeline passes without retries; any remaining exclusions are named |
 | P0 | Confirm rights to demo photographs (`examples/reference/ASSETS.md`) | Each distributed photograph has documented source/permission, or is replaced with an asset whose rights are clear |
-| P1 | Define and enforce asset-tree containment (`src/build.kujo:copy_tree`) | File and directory symlinks, cycles, hidden/private files, and external targets have an explicit policy and tests; failures occur before publication |
-| P1 | Make same-ID builds safe and recoverable (`src/build.kujo`) | A lock or isolated staging strategy rejects concurrent conflicts; a failed build preserves the last good output; failure and interruption tests pass |
+| Done | Define and enforce asset-tree containment (`src/build.kujo:copy_tree`) | File and directory symlinks, cycles, hidden/private files, and external targets have an explicit policy and tests; failures occur before publication |
+| Done | Make same-ID builds safe and recoverable (`src/build.kujo`) | A lock or isolated staging strategy rejects concurrent conflicts; a failed build preserves the last good output; failure and interruption tests pass |
 | P1 | Measure large decks before optimizing (`src/render.kujo`, overview CSS) | Reproducible 10/100/500-slide fixtures record build time, memory, output bytes, browser readiness, and overview scrolling; agreed budgets run in CI |
 | P1 | Add a release supply-chain check (`dependencies.json`, setup script, lockfile) | Release builds verify dependency revisions, regenerate/compare Motion bundles, check advisories, and retain a dependency/license inventory |
 | P1 | Test static-host deployment settings (`docs/deployment.md`) | A host fixture checks MIME types, direct URLs, subdirectory hosting, caching, optional-motion fetches, and an appropriate CSP; confidential-deck authentication is tested at the host |
