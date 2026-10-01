@@ -34,7 +34,8 @@ remain optional. Private notes are distinct from public slide annotations.
    console is English; Windows native tooling is unsupported. See the support matrix.
 4. **Repository history:** replacement photographs fix the current tree, but old
    Git revisions retain the previous images. Review rights before exposing private
-   history. No history rewrite or visibility change was authorized or performed.
+   history. The repository remains private pending that review; no history rewrite
+   has been authorized or performed.
 5. **Release verification:** the owner has requested v0.2.0 and public source
    availability. Verify the exact tagged revision; resolve the asset-history
    decision before changing visibility. No npm publication or deck deployment
