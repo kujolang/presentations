@@ -101,6 +101,9 @@ for concurrent builds and interrupted builds.
 1. Add `layouts/your-layout.html` and a matching JSON capacity contract.
 2. Compose the existing slots: `{{title}}`, `{{copy}}`, `{{eyebrow}}`,
    `{{images}}`, `{{metrics}}`, `{{features}}`, `{{chart}}`, `{{note}}`.
+   Decorative accents can use `{{iconArrowUpRight}}` or `{{iconPlus}}`; these
+   render local Tabler SVGs hidden from assistive technology. Place them inside
+   `.p-accent` so their size and color follow the slide theme.
 3. Add geometry under `.p-layout-your-layout` in the presentation CSS (or
    consumer theme CSS for a private layout). Preserve header/footer space.
 4. Run `node scripts/write-schema.mjs` to update the agent-facing schema.
