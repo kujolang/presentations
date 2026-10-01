@@ -98,3 +98,25 @@ loading `/investor/1/` in `tests/browser/decks.spec.js:93`. This matches one of 
 failures in [CI run 36792293889](https://github.com/kujolang/presentations/actions/runs/36792293889).
 The interrupted-motion case passed locally. The cause of the page-load stalls
 remains unconfirmed; this run does not establish release readiness.
+
+## Readiness review
+
+The subsequent review fixed metadata handling and tightened the native content
+contract, moved the implementation behind the stable root build command, added
+language/reading support, and reduced basic-motion output by 55,335 bytes.
+The full local `npm test` invocation passed: native example/starter builds,
+static contracts, five build/onboarding tests, preview smoke, and **34 browser
+passes with two intentional fullscreen skips and no failures or retries**.
+The reference overview was visually reviewed and its composition was preserved.
+
+A diagnostic run before the test-readiness change reproduced a Firefox stall on
+`/sales/1/`. Its trace recorded successful HTML, stylesheet, and viewer-script
+responses; the failure screenshot showed the rendered slide. Waiting for the
+browser-wide `load` event still timed out. The revised checks explicitly wait for
+styles, viewer initialization, fonts, and image decoding. This removes that test
+lifecycle dependency without claiming an upstream browser/server root cause.
+
+The end-to-end fixture checks quoted frontmatter, escaped literal title and
+metadata, a subdirectory canonical URL, `fr-CA` document language, reading notes,
+basic-only Motion distribution, and rejection of duplicate native options.
+See [the readiness review](readiness-review.md) for remaining work and scope limits.

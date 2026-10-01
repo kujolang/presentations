@@ -2,6 +2,10 @@
 
 `deck.json` requires `id` (lowercase slug), `title`, `brand`, `description`, and a
 nonempty `slides` array. Optional `footer` supplies the repeated footer text.
+Set `lang` to the content language, such as `en`, `fr`, or `pt-BR`; it defaults to
+`en`. This sets the document language for assistive technology. Viewer labels
+remain English; right-to-left layouts and font coverage still need theme work.
+Unknown fields and non-boolean `inverse` values are rejected, matching the schema.
 Each deck must have `assets/theme.css`; an empty file uses the default theme.
 Image paths resolve beneath `assets/`. Slide content is plain text, not HTML.
 Use `\n` inside a title string to add a line break.
@@ -85,7 +89,9 @@ For image replacements, keep the same asset filename or change `src` in data.
 `x: 20, y: 50` places the crop toward the left. Optimize source images before
 adding them; the current adapter copies local assets through SSG and does not
 process collage images with SSG's frontmatter featured-image converter.
-Retain original licenses/credits with the deck.
+Retain original licenses/credits with the deck. All files under `assets/` are
+copied to public output, including files the deck does not reference. Do not put
+private source material there. Themes, templates, and asset trees must be trusted.
 
 ## Add a layout without modifying the renderer
 

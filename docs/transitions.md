@@ -37,7 +37,8 @@ The adapter uses Motion's documented [animate API](https://motion.dev/docs/anima
 mini for baseline transitions, the full JavaScript API for cinematic sequences,
 staggering, and springs. Both bundles are pinned under `vendor/motion/`. No CDN
 or network service is needed at runtime. Only decks with transitions enabled
-copy the bundles into output. The required bundle loads lazily on the first
+copy Motion into output. Basic-only decks omit the hybrid bundle. The required
+bundle loads lazily on the first
 animated navigation or replay. Basic effects do not import
 the larger hybrid bundle. SSG and SiteKit know nothing about it.
 To refresh the committed bundle after an intentional dependency update, run

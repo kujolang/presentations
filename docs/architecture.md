@@ -8,8 +8,10 @@ belong in this optional package.
 
 `src/model.kujo` validates `deck.json`. `src/render.kujo` fills reusable HTML
 layouts with escaped text, metrics, features, images, and SVG charts.
-`build.kujo` writes page templates and frontmatter to `.build/<deck-id>/`, then
-calls SSG's public CLI. SSG generates the pages and copies local assets to
+The root `build.kujo` delegates to `src/build.kujo`, which writes page templates and frontmatter to `.build/<deck-id>/`, then
+calls SSG's public CLI. Document titles and descriptions are escaped before
+template processing; generated frontmatter strings use JSON quoting, which YAML
+accepts. The SSG layout passes through the generated document. SSG generates the pages and copies local assets to
 `output/<deck-id>/`.
 
 The generated templates are build artifacts. Authors edit slide data and shared
@@ -33,7 +35,9 @@ hosted deck. Its home template provides the overview. The build uses `--no-aux`,
 standard favicon and a 404 page with presentation-specific content.
 
 [dependencies.json](../dependencies.json) pins the tested SSG and SiteKit
-revisions. SiteKit's distribution is copied with its fonts and licenses; its
+revisions. Native and Node entry points prefer `.deps/` when installed, then
+fall back to sibling checkouts; explicit native flags override these defaults.
+Ordinary builds do not verify checkout pins. SiteKit's distribution is copied with its fonts and licenses; its
 optional JavaScript is not loaded.
 
 ## Browser behavior
@@ -45,7 +49,8 @@ replaces the main element. URLs and history still identify real static pages.
 Failed fetches fall back to normal navigation.
 
 Motion's mini bundle handles basic transitions. The hybrid bundle loads only for
-content sequences. Both are local files; disabled decks do not include Motion.
+content sequences. Both are local files; disabled decks do not include Motion. Basic-only decks
+omit the hybrid file, saving 55,335 bytes with the current pinned bundle.
 See [transitions](transitions.md) for settings and failure behavior.
 
 The 16:9 canvas scales as a unit. It does not rearrange its content on small
@@ -63,7 +68,10 @@ JSON Schema describe the agent workflow. Creating a deck never overwrites an
 existing directory. Briefs retain sources and missing facts.
 
 Deck text is escaped, including braces that SSG could otherwise treat as template
-syntax. Image paths must be local and cannot traverse directories. Output names
+syntax. Image references must be local and cannot contain lexical traversal.
+The build copies the entire trusted asset directory, including unused files;
+keep private files elsewhere. Physical symlink containment is not enforced by
+the presentation layer. Output names
 come from validated slugs. Themes and templates are trusted code: review them
 before building, and do not use a shared writable staging directory for
 untrusted projects.

@@ -4,7 +4,16 @@ The package version is **0.1.0**, with preview status. The content and extension
 APIs may change. README badges match the version and MIT license recorded in the
 package files; they do not claim a stable release.
 
-## Remaining release gate
+## Current review verification
+
+The readiness review passed `npm test` locally on macOS with Kujo 1.5.0:
+all native builds, static contracts, five build/onboarding tests, and the real
+preview smoke passed. The browser matrix finished with **34 passed, two
+intentional headless fullscreen skips, and zero failures**. No retries were used.
+The reference overview was visually reviewed; documentation links and examples
+also passed checks. Remote CI on the release commit remains required.
+
+## Release gate from the previous revision
 
 The latest inspected CI run for `789e838` failed on two Firefox page-load
 waits: the investor starter check and the interrupted-motion check.
@@ -15,6 +24,10 @@ timeout locally: 33 browser cases passed, two fullscreen cases were intentionall
 skipped, and one failed. Builds, static contracts, onboarding, preview smoke,
 and the Departure Mono rendering check passed. See the
 [verification record](verification.md#documentation-and-font-review).
+
+The [readiness review](readiness-review.md) records the corrective work and
+prioritized follow-ups. Its test-readiness changes do not certify a browser or
+server root cause. Release status follows the exact commit's verification.
 
 ## Before publishing
 

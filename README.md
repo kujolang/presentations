@@ -9,7 +9,8 @@ content, and generate static slides, an overview, and a readable text edition.
 
 Presentations is an optional package. It adds no code or dependencies to SSG or
 SiteKit. Version 0.1.0 is a preview; the content and extension APIs may change.
-See [release status](docs/release.md) before distributing it.
+See [release status](docs/release.md) before distributing it, and the
+[readiness review and next steps](docs/readiness-review.md) for known limits.
 
 ![Nine-slide media example](docs/images/reference-overview.png)
 
@@ -85,7 +86,8 @@ failed fetches fall back to normal navigation.
 
 ## Build and host
 
-With sibling `ssg/` and built `site-kit/` checkouts, run from this repository:
+With dependencies installed under `.deps/`, or sibling `ssg/` and built
+`site-kit/` checkouts, run from this repository:
 
 ```sh
 kujo run build.kujo
@@ -104,7 +106,8 @@ kujo run build.kujo -- --deck /path/to/my-deck \
 
 `npm run deck -- setup` installs the pinned versions in [dependencies.json](dependencies.json)
 under `.deps/`. Pass `--ssg .deps/ssg --sitekit .deps/site-kit/dist` to use those
-paths with the native builder. The Node CLI handles setup and review; Kujo renders
+paths explicitly with the native builder. Both entry points prefer `.deps/`
+when available and otherwise use siblings. The Node CLI handles setup and review; Kujo renders
 the deck.
 
 Deploy `output/<deck-id>/` to a static host with directory-index support. Each
@@ -128,6 +131,23 @@ controls, and motion. SSG generates pages and copies assets. SiteKit supplies
 controls, layout utilities, focus styles, and default tokens. Decks own content,
 images, and themes. Neither upstream project depends on Presentations.
 See [architecture](docs/architecture.md) for the boundaries and build process.
+
+## Repository layout
+
+| Path | Purpose |
+| --- | --- |
+| `build.kujo` | Stable public command; delegates to `src/build.kujo` |
+| `src/` | Native build, validation, and rendering implementation |
+| `assets/`, `layouts/` | Browser behavior, CSS, and reusable compositions |
+| `scripts/` | Setup, authoring, bundling, and inspection tools |
+| `examples/`, `starters/` | Separate content, themes, and starting points |
+| `tests/`, `docs/` | Verification and author/maintainer guides |
+| Root manifests and schema | Package metadata, pinned dependencies, and editor discovery |
+
+The root entry point, manifests, schema, license, and agent instructions remain
+where the CLI and package tools expect them. Generated output stays ignored.
+Use trusted asset trees: every file under a deck's `assets/` is published in its
+output. See [deployment guidance](docs/deployment.md) for hosting and access.
 
 ## Verify
 
@@ -153,6 +173,8 @@ local SSG demo assets; see [asset sources](examples/reference/ASSETS.md).
 - [Content, themes, and layouts](docs/authoring.md)
 - [Motion settings](docs/transitions.md)
 - [Release status and checks](docs/release.md)
+- [Readiness review and next-session work](docs/readiness-review.md)
+- [Static hosting and access](docs/deployment.md)
 - [Changelog](CHANGELOG.md)
 
 Released under the [MIT license](LICENSE).

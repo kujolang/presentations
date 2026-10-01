@@ -2,6 +2,15 @@
 
 ## Unreleased — 0.1.0 preview
 
+- Keep the public build command while moving its implementation into `src/`.
+- Quote frontmatter and escape document metadata before SSG template processing.
+- Reject unknown content fields, invalid inverse values, and repeated CLI flags.
+- Add content language tags and include eyebrow/note text in the reading edition.
+- Align dependency selection and omit unused cinematic bundles from basic decks.
+- Check browser resource readiness explicitly and retain failure traces.
+- Cache the pinned Kujo CI build and document deployment limits and follow-up work.
+
+
 - Add an optional presentation package built on Kujo SSG and SiteKit.
 - Add ten reusable layouts, deck JSON validation, themes, and local media.
 - Generate static slide URLs, an overview, and a readable text edition.
