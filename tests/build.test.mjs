@@ -11,7 +11,7 @@ test('native build preserves plain text, language and reading notes; ships only 
   writeFileSync(`${source}/speaker-notes.private.json`, 'PRIVATE-NOTES-SENTINEL');
   const title = 'Literal <b> "quotes" & {{content}} : #';
   const deck = {id, title, brand:'Review', description:'Plain <text> & "quotes" {{content}}', lang:'fr-CA',
-    transitions:{enabled:true,effect:'fade'}, slides:[{layout:'statement',title,eyebrow:'Context',note:'Source: review'}]};
+    transitions:{enabled:true,effect:'fade'}, slides:[{layout:'statement',title,copy:'Plain <text> & "quotes" {{content}}',eyebrow:'Context',note:'Source: review'}]};
   writeFileSync(`${source}/deck.json`, JSON.stringify(deck));
   try {
     const result = spawnSync(process.env.KUJO_BIN || 'kujo', ['run','build.kujo','--','--deck',source,'--site-url','https://example.com/talk/'], {encoding:'utf8'});
@@ -29,6 +29,9 @@ test('native build preserves plain text, language and reading notes; ships only 
     assert(heading.includes('&#123;&#123;content&#125;&#125;'), 'body slots must encode template-shaped text');
     const pageTitle=html.match(/<title>(.*?)<\/title>/s)?.[1];
     assert(pageTitle.includes('Literal &lt;b&gt; &quot;quotes&quot; &amp; &#123;&#123;content&#125;&#125; : #'), `metadata must preserve literal text: ${pageTitle}`);
+    const structured=JSON.parse(html.match(/type="application\/ld\+json">(.*?)<\/script>/s)[1]);
+    assert.equal(structured.description,deck.slides[0].copy);
+    assert.equal(structured.name,title+' — '+title);
     const reading=readFileSync(`output/${id}/reading/index.html`,'utf8');
     assert(reading.includes('Context') && reading.includes('Source: review'));
     assert(existsSync(`output/${id}/assets/presentation/motion/motion-mini.js`));
@@ -39,10 +42,13 @@ test('native build preserves plain text, language and reading notes; ships only 
     assert.equal(parity.status,0,parity.stdout+parity.stderr);
     const files=(path)=>readdirSync(path,{recursive:true}).filter(name=>statSync(`${path}/${name}`).isFile()).sort();
     const expected=files(`output/${id}`), actual=files(`.build/${id}/parity-site`);
-    assert.deepEqual(actual,expected);
+    // Compare the SSG-owned output; presentation postprocessing removes the blog
+    // archive and adds robots/sitemap after either SSG execution mode completes.
+    const ssgFiles=names=>names.filter(name=>!name.startsWith('blog/')&&!["robots.txt","sitemap.xml"].includes(name));
+    assert.deepEqual(ssgFiles(actual),ssgFiles(expected));
     assert(!expected.some(file=>file.includes('private')));
     for(const file of expected.filter(file=>file.endsWith('.html')))assert(!readFileSync(`output/${id}/${file}`,'utf8').includes('PRIVATE-NOTES-SENTINEL'));
-    for(const file of expected) assert(readFileSync(`output/${id}/${file}`).equals(readFileSync(`.build/${id}/parity-site/${file}`)),`SSG execution-mode mismatch: ${file}`);
+    for(const file of ssgFiles(expected)) assert(readFileSync(`output/${id}/${file}`).equals(readFileSync(`.build/${id}/parity-site/${file}`)),`SSG execution-mode mismatch: ${file}`);
     const duplicate=spawnSync(process.env.KUJO_BIN || 'kujo',['run','build.kujo','--','--deck',source,'--deck',source,'--check'],{encoding:'utf8'});
     assert.notEqual(duplicate.status,0);assert(duplicate.stdout.includes('Repeated option'));
   } finally {

@@ -40,9 +40,28 @@ func page(stage, slug, title, html, deck, site_url) {
     write_file(stage + "/templates/" + template + "-" + slug + ".html", document_html(deck, title, html, "../", site_url + "/" + slug + "/"))
 }
 func document_html(deck, title, content, prefix, url) {
+    description := deck["description"]
+    slide_index := 1
+    for slide in deck["slides"] {
+        if ends_with(url, "/" + to_string(slide_index) + "/") { description = field(slide, "copy", slide["title"]); title = title + " — " + deck["title"] }
+        slide_index = slide_index + 1
+    }
+    utility := ends_with(url, "/print/") || ends_with(url, "/presenter/") || len(url) == 0
+    if ends_with(url, "/reading/") { description = "Read the complete presentation: " + deck["description"] }
+    if ends_with(url, "/print/") { title = deck["title"] + " — Print"; description = "Printable slides for " + deck["title"] }
+    if ends_with(url, "/presenter/") { title = deck["title"] + " — Presenter"; description = "Presenter controls for " + deck["title"] }
+    if len(url) == 0 { description = "This page was not found. Open the presentation overview to choose a slide." }
+    metadata := "<meta property=\"og:type\" content=\"website\"><meta property=\"og:title\" content=\"" + text(title) + "\"><meta property=\"og:description\" content=\"" + text(description) + "\"><meta name=\"twitter:card\" content=\"summary\">"
+    if utility { metadata = metadata + "<meta name=\"robots\" content=\"noindex,follow\">" }
+    if len(url) > 0 {
+        metadata = metadata + "<meta property=\"og:url\" content=\"" + text(url) + "\">"
+        data := to_json({"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": description, "url": url, "inLanguage": field(deck, "lang", "en")})
+        data = replace(replace(data, "<", "\\u003c"), "{{", "\\u007b\\u007b")
+        metadata = metadata + "<script type=\"application/ld+json\">" + data + "</script>"
+    }
     canonical := ""
     if len(url) > 0 { canonical = "<link rel=\"canonical\" href=\"" + text(url) + "\">" }
-    return "<!doctype html><html lang=\"" + text(field(deck, "lang", "en")) + "\" dir=\"" + text(field(deck, "dir", "ltr")) + "\" data-theme=\"kujo-light\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>" + text(title) + "</title><meta name=\"description\" content=\"" + text(deck["description"]) + "\">" + canonical + "<link rel=\"stylesheet\" href=\"" + prefix + "assets/sitekit/sitekit.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/presentation/presentation.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/deck/theme.css\"></head><body><a class=\"p-skip\" href=\"#main-content\">" + text(label(deck, "skip")) + "</a>" + content + "</body></html>"
+    return "<!doctype html><html lang=\"" + text(field(deck, "lang", "en")) + "\" dir=\"" + text(field(deck, "dir", "ltr")) + "\" data-theme=\"kujo-light\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>" + text(title) + "</title><meta name=\"description\" content=\"" + text(description) + "\">" + canonical + metadata + "<link rel=\"stylesheet\" href=\"" + prefix + "assets/sitekit/sitekit.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/presentation/presentation.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/deck/theme.css\"></head><body><a class=\"p-skip\" href=\"#main-content\">" + text(label(deck, "skip")) + "</a>" + content + "</body></html>"
 }
 export func build(argv) {
     arg_index := 0
@@ -109,7 +128,7 @@ export func build(argv) {
     write_file(stage + "/templates/layout.html", "{{content}}")
     write_file(stage + "/templates/page-home.html", document_html(deck, deck["title"], overview(deck), "./", site_url + "/"))
     write_file(stage + "/templates/page-blog.html", document_html(deck, deck["title"], overview(deck), "./", site_url + "/"))
-    write_file(stage + "/templates/404.html", document_html(deck, "Slide not found", "<main id=\"main-content\" class=\"p-reading sk-container\"><h1>Slide not found</h1><p>Open the deck overview to choose a slide.</p><a href=\"./\">Overview</a></main>", "./", ""))
+    write_file(stage + "/templates/404.html", document_html(deck, "Slide not found", "<main id=\"main-content\" class=\"p-reading sk-container\"><h1>Slide not found</h1><p>Open the deck overview to choose a slide.</p><a href=\"" + text(site_url) + "/\">Overview</a></main>", site_url + "/", ""))
     i := 1
     for slide in deck["slides"] { page(stage, to_string(i), slide["title"], viewer(deck, slide, i), deck, site_url); i = i + 1 }
     page(stage, "print", deck["title"], print_deck(deck), deck, site_url)
@@ -117,6 +136,14 @@ export func build(argv) {
     page(stage, "reading", deck["title"] + " — Read text", reading(deck), deck, site_url)
     write_file(stage + "/kujo-ssg.json", to_json({"site_url": site_url, "site_title": deck["title"], "site_tagline": deck["description"], "content": "content", "templates": "templates", "assets": "assets", "output": stage + "/site", "fonts": ["Bree Serif", "Inter"], "webmcp": false, "minify": false, "no_aux": true, "posts_at_root": true, "posts_per_page": len(deck["slides"])}))
     print(run(["kujo", "run", "--interpreter", ssg + "/build.kujo", "--", "--no-aux", "--no-aliases", "--no-webmcp"], stage))
+    # The SSG blog archive has no role in a deck; remove it before publication.
+    run(["rm", "-rf", "--", stage + "/site/blog"], root)
+    sitemap := "<?xml version=\"1.0\" encoding=\"UTF-8\"?><urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"><url><loc>" + text(site_url) + "/</loc></url>"
+    i = 1
+    for slide in deck["slides"] { sitemap = sitemap + "<url><loc>" + text(site_url) + "/" + to_string(i) + "/</loc></url>"; i = i + 1 }
+    sitemap = sitemap + "<url><loc>" + text(site_url) + "/reading/</loc></url></urlset>"
+    write_file(stage + "/site/sitemap.xml", sitemap)
+    write_file(stage + "/site/robots.txt", "User-agent: *\nDisallow:\nSitemap: " + site_url + "/sitemap.xml\n")
 
 }
 
