@@ -15,22 +15,27 @@ voice: "ElevenLabs Liam (TX3LPaxmHKxFdv7VOQHJ)"
 ## Intent
 
 Promote Kujo Presentations on social media as a new way to build polished,
-browser-native slide decks. Feature every slide from the live reference deck in
-a fast, premium sequence framed inside a believable desktop monitor. The piece
-should create curiosity and make viewers want to visit the linked product page.
+browser-native slide decks. Deliver four separate demos—investor pitch, sales
+proposal, live talk, and custom editorial—with nine original slides in each.
+Each demo uses a distinct theme and a matching promo accent so the former orange
+reference styling is not presented as the product default. The slides stay
+framed inside a believable desktop monitor and remain free of viewer controls.
 
 ## Assets
 
-- https://presentations.robertdevore.com/ — live reference deck and visual source of truth.
-- ../../docs/images/reference-overview.webp — repository overview image for corroborating the full deck.
+- ../../decks/kujo-demo-investor/ — fictional cyan investor deck.
+- ../../decks/kujo-demo-sales/ — fictional magenta sales proposal.
+- ../../decks/kujo-demo-talk/ — fictional violet live talk.
+- ../../decks/kujo-demo-editorial/ — fictional acid-yellow and hot-pink editorial story.
 
 ## Customizations
 
-- Show the real slides, not invented substitutes.
+- Show the four purpose-built demo decks, not the old orange reference example.
 - Use a custom-generated desktop/computer-screen surround as the recurring stage.
 - Use ElevenLabs Liam, selected from the configured account because its catalog description targets energetic, warm reels and shorts.
 - Keep the mix narration-first; omit background music if it would compete with the rapid slide sequence.
 - Use captions that remain readable in the X feed.
+- Keep the shared Kujo lockup, Departure Mono wordmark, K mark, timing, captions, and narration consistent across variants.
 
 ## Notes
 

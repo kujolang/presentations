@@ -16,7 +16,7 @@ colors:
   cream: "#F4F2EC"
   tile: "#E8E7E5"
   tile-strong: "#C5C3BC"
-  coral: "#FF4B23"
+  accent: "Variant-specific: cyan, magenta, violet, or hot pink"
   navy: "#181615"
   navy-soft: "#1F1C1B"
   navy-elev: "#252120"
