@@ -77,7 +77,7 @@ The mounted-host test targets the fixture and is not part of this command.
 ## Public showcase site
 
 Four complete demonstration decks are served from
-<https://presentations.robertdevore.com/> by an assets-only Cloudflare Worker.
+<https://presentations.kujolang.ai/> by an assets-only Cloudflare Worker.
 The root is a collection page linking to `/investor/`, `/sales/`, `/live-talk/`,
 and `/editorial/`. With Kujo, the pinned upstream dependencies, and authorized
 Cloudflare Wrangler access installed, run:
@@ -104,7 +104,7 @@ The reference host enforces the policy in `deployment/_headers`, supports real
 Verify each deployment with:
 
 ```sh
-npm run verify:site -- https://presentations.robertdevore.com/
+npm run verify:site -- https://presentations.kujolang.ai/
 ```
 
 See the [2026-10-01 audit](../seo-audit/2026-10-01/executive-summary.md) for crawl

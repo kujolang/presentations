@@ -1,7 +1,7 @@
 // Read-only production verification. Run after build:site and deployment.
 import assert from 'node:assert/strict';
 import {readFileSync, readdirSync, writeFileSync} from 'node:fs';
-const origin='https://presentations.robertdevore.com';
+const origin='https://presentations.kujolang.ai';
 const root='.build/public-site';
 const receipts=[];
 const paths=readdirSync(root,{recursive:true}).filter(p=>p.endsWith('.html')).map(p=>p.endsWith('index.html')?'/'+p.slice(0,-10):'/'+p);

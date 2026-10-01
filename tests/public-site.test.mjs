@@ -12,7 +12,7 @@ test('public showcase stages four complete decks behind a collection landing pag
     assert(existsSync(`${root}/${deck}/1/index.html`));
     assert(existsSync(`${root}/${deck}/reading/index.html`));
     assert(existsSync(`${root}/assets/previews/${deck}.png`));
-    assert(sitemap.includes(`<loc>https://presentations.robertdevore.com/${deck}/</loc>`));
+    assert(sitemap.includes(`<loc>https://presentations.kujolang.ai/${deck}/</loc>`));
     assert(!readFileSync(`${root}/${deck}/index.html`, 'utf8').includes('https://example.com/'));
   }
   assert.equal((sitemap.match(/<loc>/g) || []).length, 45);

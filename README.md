@@ -14,7 +14,7 @@ See [release status](docs/release.md) and the [support matrix](docs/support-matr
 for verified platforms and known limits. GitHub releases distribute the source;
 `package.json` keeps `private: true` to prevent accidental npm publication.
 
-[Explore the live presentation](https://presentations.robertdevore.com/).
+[Explore the live presentations](https://presentations.kujolang.ai/).
 
 ![Nine-slide media example](docs/images/reference-overview.webp)
 

@@ -9,5 +9,5 @@
     "html_handling": "force-trailing-slash",
     "not_found_handling": "404-page"
   },
-  "routes": [{ "pattern": "presentations.robertdevore.com", "custom_domain": true }]
+  "routes": [{ "pattern": "presentations.kujolang.ai", "custom_domain": true }]
 }

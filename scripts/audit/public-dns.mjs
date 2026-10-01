@@ -3,7 +3,7 @@
 import dns from 'node:dns';
 const original=dns.lookup;
 const resolver=new dns.promises.Resolver();resolver.setServers(['1.1.1.1']);
-const hostname='presentations.robertdevore.com';
+const hostname='presentations.kujolang.ai';
 const addresses=await resolver.resolve4(hostname);
 dns.lookup=function(host,options,callback){
  if(host!==hostname)return original.apply(this,arguments);

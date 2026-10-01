@@ -11,7 +11,7 @@ python3 scripts/audit/crawl.py after .build/public-site --audit seo-audit/2026-1
 node scripts/audit/verify-live.mjs
 ```
 
-The live check targets presentations.robertdevore.com and requires the matching
+The live check targets presentations.kujolang.ai and requires the matching
 .build/public-site artifact. It checks routes, redirects, missing pages, crawler
 user agents and asset sizes. It cannot establish verified crawler-IP access,
 indexing or search visibility. Change its dated receipt path for a new audit;

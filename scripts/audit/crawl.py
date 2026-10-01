@@ -3,7 +3,7 @@ import argparse, csv, hashlib, json, collections, urllib.request, urllib.error
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, unquote
 from bs4 import BeautifulSoup
-p=argparse.ArgumentParser(); p.add_argument('phase',choices=['baseline','after']); p.add_argument('root'); p.add_argument('--audit',default='seo-audit/2026-10-01'); p.add_argument('--origin',default='https://presentations.robertdevore.com'); p.add_argument('--local',required=True); a=p.parse_args()
+p=argparse.ArgumentParser(); p.add_argument('phase',choices=['baseline','after']); p.add_argument('root'); p.add_argument('--audit',default='seo-audit/2026-10-01'); p.add_argument('--origin',default='https://presentations.kujolang.ai'); p.add_argument('--local',required=True); a=p.parse_args()
 root=Path(a.root).resolve(); out=Path(a.audit); origin=a.origin.rstrip('/')
 def read_csv(name):
  with (out/name).open() as f: return list(csv.reader(f))[0]

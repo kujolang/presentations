@@ -2,7 +2,7 @@ import { cpSync, mkdirSync, rmSync, readFileSync, writeFileSync, readdirSync } f
 import { transformSync } from 'esbuild';
 import { spawnSync } from 'node:child_process';
 
-const origin = 'https://presentations.robertdevore.com';
+const origin = 'https://presentations.kujolang.ai';
 const decks = [
   { source: 'decks/kujo-demo-investor', id: 'kujo-demo-investor', route: 'investor', preview: 'investor' },
   { source: 'decks/kujo-demo-sales', id: 'kujo-demo-sales', route: 'sales', preview: 'sales' },
