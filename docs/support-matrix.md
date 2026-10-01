@@ -6,7 +6,7 @@
 | Viewer, reading and overview | Playwright Chromium, Firefox, WebKit; package-lock pins the versions | Browser emulation is not an exhaustive device matrix |
 | Fullscreen | Chromium | Firefox/WebKit headless fullscreen cases are named skips |
 | Static-host fixture | All three engines, direct/mounted routes, MIME, cache and CSP | A real host needs its own test, especially authentication |
-| Native preview | HTTP startup smoke and reproducible Firefox navigation diagnostic | Earlier CI navigation stalls have no confirmed root cause |
+| Native preview | HTTP startup smoke and Firefox feature suite on the hardened server | Tests isolate Firefox processes to avoid missing driver navigation events; see [review](firefox-fullscreen-review.md) |
 | PDF | Chromium pagination and local font/image readiness | Other print dialogs and accessible PDF tagging need separate review |
 | Arabic / RTL | Local font, translated viewer controls, geometry, axe and keyboard tests | Fluent-reader and assistive-technology acceptance still required |
 

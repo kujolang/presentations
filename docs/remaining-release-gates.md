@@ -21,11 +21,11 @@ remain optional. Private notes are distinct from public slide annotations.
 
 ## Still requires evidence
 
-1. **Native preview + Firefox:** full native-host browser runs still intermittently
-   stall before document commit. The lightweight 120-navigation probe passed, and
-   a Node-host experiment with COOP also passed; neither isolates the cause.
-   Preserve a failing Playwright trace with the command below and investigate the
-   server/browser interaction. Do not interpret the static-host CI result as a fix.
+1. **Firefox driver limitation (mitigated):** the protocol trace shows a missing
+   navigation-committed event after a successful document response. Native tests
+   now isolate Firefox processes, keeping all assertions and hardened headers.
+   See the [diagnosis and verification](firefox-fullscreen-review.md). This is a
+   local harness fix, not a claim that the upstream driver bug was repaired.
 2. **Deployment:** no real host URL, provider, or access policy was supplied.
    Run the documented host checker against the intended deployment, including
    unauthenticated denial for confidential decks. Do not publish merely to fill this gap.
@@ -39,12 +39,12 @@ remain optional. Private notes are distinct from public slide annotations.
    versioning/publication. No release tag or package publication is created here.
 
 ```sh
-PRESENTATION_TEST_HOST=kujo PRESENTATION_TEST_PORT=8095 npx playwright test decks.spec.js motion.spec.js --project=firefox --output .build/native-browser-results
+npm run test:native
 ```
 
-This diagnostic remains separate from the static hosting contract suite. Its
-failures remain release evidence, even when `npm test` passes. It is not retried
-or marked as an expected pass. Keep traces outside `test-results` when running
+The native feature suite runs in CI as well as the static hosting contract suite.
+Its failures remain release evidence, even when `npm test` passes. It is not
+retried or marked as an expected pass. Keep traces outside `test-results` when running
 another Playwright process so one run cannot erase the other run's artifacts.
 
 See [release status](release.md), [feature contracts](presentation-features.md),

@@ -1,7 +1,7 @@
 import { expect } from '@playwright/test';
 
-// Check the resources we use rather than a browser-wide load event. Firefox can
-// leave that event pending after the document, styles and deferred viewer arrive.
+// Assert document commit plus every resource the layout needs. Firefox process
+// isolation is handled in fixtures.js; navigation errors are never swallowed.
 export async function openPage(page, url) {
   await page.goto(url, { waitUntil: 'commit' });
   await expect(page.locator('main')).toBeVisible();

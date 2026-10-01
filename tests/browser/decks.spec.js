@@ -1,5 +1,5 @@
 import { openPage } from './helpers.js';
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures.js';
 import AxeBuilder from '@axe-core/playwright';
 
 test('overview, all direct routes, local assets, canvas geometry and accessible semantics', async ({ page }) => {
@@ -52,33 +52,57 @@ test('native keyboard navigation, reload, history, endpoints and focus guards', 
   await page.keyboard.press('f'); await expect(page.locator('input')).toHaveValue('f');
 });
 
-test('fixed composition on small screens; readable transcript and no JavaScript', async ({browser}) => {
-  for (const size of [{width:390,height:844},{width:844,height:390},{width:768,height:1024}]) {
-    const context=await browser.newContext({viewport:size,javaScriptEnabled:false});
-    const page=await context.newPage(); await page.goto('/reference/',{waitUntil:'domcontentloaded'});
-    await page.locator('.p-thumbnail').nth(5).click();
-    await expect(page).toHaveURL(/\/6\/$/);
-    const box=await page.locator('.p-canvas').boundingBox(); expect(box.width/box.height).toBeCloseTo(16/9,2);
-    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-    await page.getByRole('link',{name:'Next →'}).click(); await expect(page).toHaveURL(/\/7\/$/);
-    await page.getByRole('link',{name:'Read text'}).click(); await expect(page.locator('section')).toHaveCount(9);
-    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-    await context.close();
-  }
-});
+for (const size of [{width:390,height:844},{width:844,height:390},{width:768,height:1024}]) {
+  test.describe(`no JavaScript ${size.width}x${size.height}`,()=>{
+    test.use({viewport:size, javaScriptEnabled:false});
+    test('fixed composition, readable transcript and navigation', async ({page}) => {
+      await page.goto('/reference/',{waitUntil:'domcontentloaded'});
+      await page.locator('.p-thumbnail').nth(5).click();
+      await expect(page).toHaveURL(/\/6\/$/);
+      const box=await page.locator('.p-canvas').boundingBox(); expect(box.width/box.height).toBeCloseTo(16/9,2);
+      expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+      await page.getByRole('link',{name:'Next →'}).click(); await expect(page).toHaveURL(/\/7\/$/);
+      await page.getByRole('link',{name:'Read text'}).click(); await expect(page.locator('section')).toHaveCount(9);
+      expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    });
+  });
+}
 
-test('fullscreen keeps the slide, navigation, and browser history together',async ({page,browserName})=>{
+test('fullscreen keeps the slide, navigation, and browser history together',async ({page,browserName},testInfo)=>{
   test.skip(browserName!=='chromium','Fullscreen browser support is exercised in Chromium; native behavior varies in headless WebKit/Firefox.');
   await openPage(page, '/reference/1/');
   await page.getByRole('button',{name:'Fullscreen',exact:true}).click();
   await expect.poll(()=>page.evaluate(()=>Boolean(document.fullscreenElement))).toBe(true);
   await page.keyboard.press('ArrowRight'); await expect(page).toHaveURL(/\/2\/$/);
   await expect.poll(()=>page.evaluate(()=>Boolean(document.fullscreenElement))).toBe(true);
-  await page.getByRole('link',{name:'Next →'}).click(); await expect(page).toHaveURL(/\/3\/$/);
+  await expect(page.locator('.p-nav')).toBeHidden();
+  await expect(page.locator('.p-help')).toBeHidden();
+  await expect(page.locator('.p-progress')).toBeHidden();
+  const geometry = await page.locator('.p-frame').evaluate(node => {
+    const r=node.getBoundingClientRect();return {width:r.width,height:r.height,x:r.x,y:r.y,vw:innerWidth,vh:innerHeight};
+  });
+  expect(geometry.width / geometry.height).toBeCloseTo(16 / 9, 2);
+  expect(Math.min(geometry.vw-geometry.width,geometry.vh-geometry.height)).toBeLessThan(2);
+  expect(geometry.x).toBeCloseTo((geometry.vw-geometry.width)/2, 0);
+  expect(geometry.y).toBeCloseTo((geometry.vh-geometry.height)/2, 0);
+  await page.screenshot({path:testInfo.outputPath('slide-only-fullscreen.png')});
+  await page.keyboard.press('ArrowLeft'); await expect(page).toHaveURL(/\/1\/$/);
+  await page.keyboard.press('ArrowRight'); await expect(page).toHaveURL(/\/2\/$/);
+  await page.keyboard.press('ArrowRight'); await expect(page).toHaveURL(/\/3\/$/);
   await page.goBack(); await expect(page.locator('.p-counter')).toHaveText('2 / 9');
   await page.goForward(); await expect(page.locator('.p-counter')).toHaveText('3 / 9');
   await page.keyboard.press('Escape');
   await expect.poll(()=>page.evaluate(()=>Boolean(document.fullscreenElement))).toBe(false);
+  await expect(page.locator('.p-nav')).toBeVisible();
+  await expect(page.locator('[data-fullscreen]')).toBeFocused();
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await page.keyboard.press('f');
+  await expect(page.locator('.p-nav')).toBeHidden();
+  await page.keyboard.press('End'); await expect(page).toHaveURL(/\/9\/$/);
+  await page.keyboard.press('Home'); await expect(page).toHaveURL(/\/1\/$/);
+  await expect.poll(()=>page.evaluate(()=>Boolean(document.fullscreenElement))).toBe(true);
+  await page.keyboard.press('f');
+  await expect(page.locator('.p-nav')).toBeVisible();
 });
 
 test('overview visual artifact and reduced motion',async ({page},testInfo)=>{

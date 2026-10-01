@@ -1,5 +1,5 @@
 import { openPage } from './helpers.js';
-import {test,expect} from '@playwright/test';
+import {test,expect} from './fixtures.js';
 
 test('Motion presets animate static slides; toggle, reload and history stay usable',async({page})=>{
   const requests=[];page.on('request',r=>{if(r.url().includes('motion-mini'))requests.push(r.url());});

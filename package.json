@@ -15,7 +15,8 @@
     "benchmark": "node scripts/benchmark.mjs",
     "diagnose:preview": "node scripts/diagnose-preview.mjs",
     "export:pdf": "node scripts/export-pdf.mjs",
-    "verify:host": "node scripts/verify-host.mjs"
+    "verify:host": "node scripts/verify-host.mjs",
+    "test:native": "PRESENTATION_TEST_HOST=kujo playwright test decks.spec.js motion.spec.js extended.spec.js --project=firefox --output .build/native-browser-results"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.12.1",

@@ -2,6 +2,10 @@
 
 ## Unreleased — 0.1.0 preview
 
+- Isolate Firefox test processes and gate native-server behavior in CI; retain all navigation assertions and hardened headers.
+- Fill fullscreen with the slide and hide viewer controls; keep keyboard navigation and restore focus on exit.
+- Leave room between three-line problem titles and supporting copy; fix reading-list logical padding.
+
 - Add translated viewer controls, RTL decks, and a self-hosted Arabic example.
 - Add a presenter console, local private notes, timer, and full-deck print/PDF export.
 - Replace reference photography with credited NASA assets and verified hashes.
