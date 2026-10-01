@@ -85,31 +85,6 @@
       opacity:0;
       transform-origin:left center;
     }
-    #hf-02-nine-real-slides-chip-stack{
-      position:absolute;
-      right:8.35cqw;
-      top:7.25cqh;
-      width:34cqw;
-      height:5.1cqh;
-      overflow:hidden;
-      text-align:right;
-    }
-    .\30 2-nine-real-slides-chip{
-      position:absolute;
-      right:0;
-      top:0;
-      padding:1.15cqh 1.55cqw;
-      border:1px solid rgba(244,242,236,.28);
-      border-radius:9999px;
-      background:#252120;
-      color:#F4F2EC;
-      font-family:"Departure Mono";
-      font-size:1.45cqw;
-      letter-spacing:.06em;
-      line-height:1;
-      white-space:nowrap;
-      opacity:0;
-    }
     #hf-02-nine-real-slides-title{
       position:absolute;
       left:8.8cqw;
@@ -161,12 +136,6 @@
     <div data-hf-id="hf-7sru" id="hf-02-nine-real-slides-stage" class="clip" data-start="0" data-duration="10.445" data-track-index="1">
       <div data-hf-id="hf-3u2p" id="hf-02-nine-real-slides-eyebrow"><span data-hf-id="hf-ltm4" id="hf-02-nine-real-slides-spike">✱</span><span data-hf-id="hf-cot2">AUTHORED CONTENT</span></div>
 
-      <div data-hf-id="hf-x9zq" id="hf-02-nine-real-slides-chip-stack" data-layout-allow-overflow="">
-        <div data-hf-id="hf-idzv" id="hf-02-nine-real-slides-chip-motion" class="02-nine-real-slides-chip" data-layout-allow-overlap="">MOTION BUILT IN</div>
-        <div data-hf-id="hf-py4k" id="hf-02-nine-real-slides-chip-keyboard" class="02-nine-real-slides-chip" data-layout-allow-overlap="">KEYBOARD + FULLSCREEN</div>
-        <div data-hf-id="hf-ghty" id="hf-02-nine-real-slides-chip-overview" class="02-nine-real-slides-chip" data-layout-allow-overlap="">OVERVIEW</div>
-      </div>
-
       <div data-hf-id="hf-5vnf" id="hf-02-nine-real-slides-monitor-wrap">
         <div data-hf-id="hf-fr84" id="hf-02-nine-real-slides-screen">
           <div data-hf-id="hf-34m9" id="hf-02-nine-real-slides-slides" data-layout-allow-overflow="">
@@ -217,25 +186,14 @@
           { opacity: 1, x: 0, duration: .5, stagger: .09, ease: 'power4.out' }, .56)
 
         .to('#hf-02-nine-real-slides-slides', { xPercent: -25, duration: .58, ease: 'power4.inOut' }, 2.02)
-        .fromTo('#hf-02-nine-real-slides-chip-motion',
-          { opacity: .35, y: 34 },
-          { opacity: 1, y: 0, duration: .42, ease: 'power4.out' }, 2.18)
 
         .to('#hf-02-nine-real-slides-slides', { xPercent: -50, duration: .58, ease: 'power4.inOut' }, 4.02)
-        .to('#hf-02-nine-real-slides-chip-motion', { opacity: 0, y: -34, duration: .24, ease: 'power4.in' }, 4.0)
-        .fromTo('#hf-02-nine-real-slides-chip-keyboard',
-          { opacity: .35, y: 34 },
-          { opacity: 1, y: 0, duration: .42, ease: 'power4.out' }, 4.24)
         .fromTo('#hf-02-nine-real-slides-streak',
           { opacity: 0, scaleX: .08, x: 210 },
           { opacity: .72, scaleX: 1, x: 0, duration: .16, ease: 'power4.in' }, 4.0)
         .to('#hf-02-nine-real-slides-streak', { opacity: 0, scaleX: .22, x: -210, duration: .32, ease: 'power4.out' }, 4.16)
 
         .to('#hf-02-nine-real-slides-slides', { xPercent: -75, duration: .58, ease: 'power4.inOut' }, 5.92)
-        .to('#hf-02-nine-real-slides-chip-keyboard', { opacity: 0, y: -34, duration: .24, ease: 'power4.in' }, 5.9)
-        .fromTo('#hf-02-nine-real-slides-chip-overview',
-          { opacity: .35, y: 34 },
-          { opacity: 1, y: 0, duration: .42, ease: 'power4.out' }, 6.14)
 
         .fromTo('#hf-02-nine-real-slides-footer-rule',
           { opacity: 0, scaleX: 0 },

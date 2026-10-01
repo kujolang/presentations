@@ -73,21 +73,6 @@
       object-position: center;
     }
 
-    [class~="03-one-story-index"] {
-      position: absolute;
-      z-index: 4;
-      top: 5.8%;
-      right: 7.6%;
-      padding: 0.7cqh 1.1cqw;
-      border-radius: 9999px;
-      background: rgba(24, 22, 21, 0.86);
-      border: 1px solid rgba(244, 242, 236, 0.14);
-      color: #F4F2EC;
-      font-family: "Departure Mono", monospace;
-      font-size: 1.3cqw;
-      letter-spacing: 0.08em;
-    }
-
     [class~="03-one-story-rail"] {
       position: absolute;
       left: 6.5cqw;
@@ -199,7 +184,6 @@
           <img data-hf-id="hf-gb18" class="03-one-story-slide 03-one-story-slide-08" src="assets/slides/slide-08.png" alt="">
           <img data-hf-id="hf-0hti" class="03-one-story-slide 03-one-story-slide-09" src="assets/slides/slide-09.png" alt="">
         </div>
-        <div data-hf-id="hf-viyj" class="03-one-story-index">06 / 09</div>
       </div>
 
       <div data-hf-id="hf-ypmp" class="03-one-story-rail">
@@ -234,14 +218,12 @@
 
         .fromTo('[class~="03-one-story-slide-07"]', { xPercent: 100, opacity: 1 }, { xPercent: 0, opacity: 1, duration: 0.55, ease: "power2.inOut" }, 1.4)
         .to('[class~="03-one-story-slide-06"]', { xPercent: -22, opacity: 0, duration: 0.5, ease: "power2.inOut" }, 1.4)
-        .to('[class~="03-one-story-index"]', { textContent: "07 / 09", duration: 0.01 }, 1.68)
         .to('[class~="03-one-story-starters"]', { y: -28, opacity: 0, duration: 0.3, ease: "power2.in" }, 1.54)
         .to('[class~="03-one-story-voltage"]', { width: "82.2cqw", duration: 0.48, ease: "power2.inOut" }, 1.62)
         .fromTo('[class~="03-one-story-write-once"]', { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 1.82)
 
         .fromTo('[class~="03-one-story-slide-08"]', { xPercent: 100, opacity: 1 }, { xPercent: 0, opacity: 1, duration: 0.55, ease: "power2.inOut" }, 2.8)
         .to('[class~="03-one-story-slide-07"]', { xPercent: -22, opacity: 0, duration: 0.5, ease: "power2.inOut" }, 2.8)
-        .to('[class~="03-one-story-index"]', { textContent: "08 / 09", duration: 0.01 }, 3.08)
         .to('[class~="03-one-story-write-once"]', { y: -24, opacity: 0, duration: 0.28, ease: "power2.in" }, 2.9)
         .to('[class~="03-one-story-voltage"]', { y: -20, scaleX: 0.94, opacity: 0, duration: 0.42, ease: "power2.inOut" }, 2.95)
         .fromTo('[class~="03-one-story-output"]:nth-child(1)', { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.32, ease: "power2.out" }, 3.12)
@@ -251,7 +233,6 @@
 
         .fromTo('[class~="03-one-story-slide-09"]', { xPercent: 100, opacity: 1 }, { xPercent: 0, opacity: 1, duration: 0.55, ease: "power2.inOut" }, 4.5)
         .to('[class~="03-one-story-slide-08"]', { xPercent: -22, opacity: 0, duration: 0.5, ease: "power2.inOut" }, 4.5)
-        .to('[class~="03-one-story-index"]', { textContent: "09 / 09", duration: 0.01 }, 4.78)
         .fromTo('[class~="03-one-story-output-presenter"]', { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1, duration: 0.62, ease: "power2.out" }, 4.72)
 
         .to('[class~="03-one-story-monitor"]', { y: -4, duration: 0.7, ease: "power1.out" }, 5.8)

@@ -53,9 +53,9 @@ Scene 3 (1.7–2.926s): real slide 01 wipes left-to-right into the monitor openi
 Adapt: keep the held device-surface signature; the surface never moves while four captured slides translate horizontally behind its screen opening.
 
 Scene 1 (0.0–2.0s): monitor holds centered on a deep ink canvas; slide 02 is already seated. “AUTHORED CONTENT” appears as a small mono eyebrow above, then “POLISHED SLIDES” waterfall-enters below the screen on the phrase “turns authored content.”
-Scene 2 (2.0–4.0s): slide 03 nudges in from the right, pushing slide 02 left in one shared motion. A compact accent chip lands at upper-right: “MOTION BUILT IN.”
-Scene 3 (4.0–5.9s): slide 04 slides through with a brief directional streak that resolves clean; the chip swaps in place to “KEYBOARD + FULLSCREEN.”
-Scene 4 (5.9–7.8s): slide 05 arrives and the chip swaps to “OVERVIEW.” The screen remains the fixed anchor; only slide content and the chip change.
+Scene 2 (2.0–4.0s): slide 03 nudges in from the right, pushing slide 02 left in one shared motion. The upper-right remains clear so the slide stays unobstructed.
+Scene 3 (4.0–5.9s): slide 04 slides through with a brief directional streak that resolves clean.
+Scene 4 (5.9–7.8s): slide 05 arrives. The screen remains the fixed anchor and only the slide content changes.
 Scene 5 (7.8–9.845s): slide 05 holds while a thin footer rail types “READABLE TEXT EDITION.” Finish fully still for the read.
 
 ## Frame 3 — One story, every format
@@ -78,7 +78,7 @@ Scene 5 (7.8–9.845s): slide 05 holds while a thin footer rail types “READABL
 
 Adapt: keep the cursorless end-to-end device flow, replacing app setup screens with the real final slides and an output rail that makes the build-once benefit explicit.
 
-Scene 1 (0.0–1.4s): slide 06 sits in the monitor; a three-item starter rail assembles beneath it: “INVESTOR / LIVE TALK / SALES,” with INVESTOR selected in orange on “purpose-built starter.”
+Scene 1 (0.0–1.4s): slide 06 sits unobstructed in the monitor; a three-item starter rail assembles beneath it: “INVESTOR / LIVE TALK / SALES,” with INVESTOR selected in orange on “purpose-built starter.”
 Scene 2 (1.4–2.8s): slide 07 pushes in from the right; the starter rail collapses to one bold line: “WRITE ONCE.”
 Scene 3 (2.8–4.5s): slide 08 glides in; four output words waterfall into the lower rail one at a time with the VO: “PRESENT · SHARE · PRINT · READ.”
 Scene 4 (4.5–5.8s): slide 09 slides in and the final output word “PRESENTER VIEW” expands from the right edge, using the same shared motion so no seam separates.
