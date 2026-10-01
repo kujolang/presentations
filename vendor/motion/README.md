@@ -1,14 +1,18 @@
-# Motion mini browser bundle
+# Local Motion bundles
 
-Generated from `motion@13.4.6` through the public `motion/mini` and `motion` exports with
-`esbuild@0.25.12`. Exact transitive versions are recorded in package-lock.json.
-Run `npm ci && npm run bundle:motion` from the repository root to reproduce it.
+Generated from `motion@13.4.6` through its public `motion/mini` and `motion`
+exports with `esbuild@0.25.12`. `package-lock.json` records transitive versions.
+To rebuild from the repository root, run:
 
-Source/API: https://motion.dev/docs/animate
-Motion, motion-dom, and motion-utils use LICENSE.md. Included framer-motion
-code uses LICENSE-framer-motion.md. Both are MIT licensed.
+```sh
+npm ci && npm run bundle:motion
+```
 
-This directory is copied only when a deck opts into transitions. It is served
-locally and imported lazily; no CDN connection is required.
+The [animate API documentation](https://motion.dev/docs/animate) describes the
+public API. Motion, motion-dom, and motion-utils use `LICENSE.md`. Included
+framer-motion code uses `LICENSE-framer-motion.md`. Both licenses are MIT.
 
-The hybrid bundle supplies animate, stagger, and frame for optional content choreography; baseline effects load only the mini bundle.
+Only decks with transitions enabled copy these bundles into their output.
+The browser imports them from local files when needed; no CDN is required.
+Baseline effects load the mini bundle. Coordinated content animations use the
+hybrid bundle's `animate`, `stagger`, and `frame` exports.

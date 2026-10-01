@@ -1,5 +1,8 @@
 # Starter onboarding verification — 2026-09-30
 
+This records the starter milestone. See [release status](release.md) for the
+current release gate.
+
 The onboarding milestone adds investor (9 slides), live-talk (7), and sales (7)
 starters alongside the existing reference and field-notes examples. All use the
 same native Kujo builder and optional viewer. SSG and SiteKit remain unchanged.
@@ -32,8 +35,7 @@ DOMContentLoaded before exercising visible native links;
 image decoding, font readiness, and asset checks remain covered in the
 JavaScript-enabled cases. Waiting on document.fonts.ready also stalled in the
 Firefox context with page JavaScript disabled, so the native-link test avoids
-that unrelated promise. The full browser
-matrix was rerun after this test-only change.
+that unrelated promise. The full browser matrix was rerun after this test-only change.
 
 Limits: these are editable drafts with explicit factual placeholders. Readiness
 checks do not verify facts or narrative quality; screenshots still need review

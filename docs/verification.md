@@ -1,4 +1,7 @@
-# Verification record — 2026-09-30
+# Engine verification — 2026-09-30
+
+This records the initial engine milestone. See [release status](release.md) for
+the current release gate.
 
 The package was built with Kujo 1.5.0 on macOS. Both existing sibling dependencies
 and fresh isolated clones at the revisions in dependencies.json were used. The
@@ -46,8 +49,7 @@ fullscreen control had focus.
 
 Limitations: the original reference image was never attached, so pixel-level
 reference fidelity could not be assessed. Demo copy and metrics are fictional.
-Automated axe checks do not substitute for a screen-reader/user study. The CI
-workflow is supplied but local results do not imply a completed remote CI run.
+Automated axe checks do not substitute for a screen-reader/user study. These local results do not establish the status of later remote CI runs.
 
 Final results: the full matrix returned 12 passed, two intentional fullscreen skips,
 and one Firefox overview-capture load timeout. The identical Firefox capture test
@@ -56,3 +58,43 @@ then passed in isolation (6.5 seconds; command `npx playwright test
 cases therefore passed across the full run and targeted rerun. No functional or
 accessibility failures remained. This records the transient capture timeout
 rather than claiming an entirely green single invocation.
+
+## Motion milestones
+
+### Baseline (2026-09-30)
+
+`npm test` passed the native builds, static contracts (including invalid motion
+settings and omission of the bundle from disabled decks), four onboarding tests,
+and real preview smoke. The browser matrix returned 28 passed and two intentional
+headless fullscreen skips. All three engines exercised actual Motion animations,
+presets, lazy loading, preference persistence, history, reduced-motion behavior,
+disabled decks, and a blocked module. The reference preview was rebuilt with the
+redistribution licenses. No upstream repository was changed.
+
+### Choreography (2026-09-30)
+
+The native builds, static contracts, four onboarding checks, and real preview
+smoke passed. The full browser run had 33 passes, two intentional fullscreen
+skips, and one Firefox comparison mismatch for empty style attributes. After
+normalizing empty attributes on both sides of that comparison, all 12 motion
+cases passed across Chromium, Firefox, and WebKit. Together these runs verify
+all 34 applicable browser cases. The tests exercise content-level animation,
+chart builds, replay, original-style restoration, reduced motion mid-sequence,
+and missing hybrid-module fallback. Mid-animation and settled screenshots of
+Editorial, Focus, and Kinetic were visually reviewed under `.build/motion-review/`.
+
+## Documentation and font review
+
+The reference overview title uses SiteKit's `--sk-font-mono` token at weight
+400. Chromium confirmed that Departure Mono loaded for “A new perspective on
+media.” The updated overview screenshot was visually reviewed and saved under
+`docs/images/`. Documentation links, code fences, the minimal JSON example, and
+version badges passed checks.
+
+`npm test` passed the native builds, static contracts, four onboarding tests,
+and preview smoke. The browser run finished with **33 passed, two intentional
+fullscreen skips, and one failure**. Firefox timed out after 120 seconds while
+loading `/investor/1/` in `tests/browser/decks.spec.js:93`. This matches one of the
+failures in [CI run 36792293889](https://github.com/kujolang/presentations/actions/runs/36792293889).
+The interrupted-motion case passed locally. The cause of the page-load stalls
+remains unconfirmed; this run does not establish release readiness.

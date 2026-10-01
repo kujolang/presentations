@@ -1,7 +1,7 @@
 # From clone to custom presentation
 
-The tested build hosts are macOS and Linux. Install Git, Node 20+, and Kujo 1.5+ on PATH. Kujo installation instructions are
-in the [Kujo repository](https://github.com/kujolang/kujo). This project does not
+Builds have been tested on macOS and Linux. Install Git, Node 20+, and Kujo 1.5+
+and make them available on PATH. Follow the installation instructions in the [Kujo repository](https://github.com/kujolang/kujo). This project does not
 silently install system tools. No global npm package is needed.
 
 ```sh
@@ -15,8 +15,8 @@ builds static pages with native Kujo, and starts a local preview at
 `http://127.0.0.1:8086/`. Setup needs network access the first time; cached setup is
 reused without reinstalling packages. Ctrl+C stops the server. Use `--port 8087`
 if another preview already occupies the port. The first view is a **draft with
-placeholders**, ready for your data or your agent. The repository currently
-requires GitHub access; making it publicly distributable is a separate release decision.
+placeholders**, ready for your data or your agent. Cloning requires access to the GitHub repository. See [release status](release.md)
+for distribution requirements.
 
 | Starter | Use it for |
 | --- | --- |
@@ -24,7 +24,7 @@ requires GitHub access; making it publicly distributable is a separate release d
 | live-talk | Hook → learning promise → tension → example → action → discussion |
 | sales | Buyer need → solution → evidence → delivery → investment → next step |
 
-For hands-free customization, point your agent at [CREATE_A_DECK.md](../CREATE_A_DECK.md)
+For agent-led customization, point your agent at [CREATE_A_DECK.md](../CREATE_A_DECK.md)
 and supply your data. `--brief ./my-brief.md` preserves a copy of your source brief
 inside the new deck. Starter files are copied, never linked back to a shared example.
 
@@ -53,8 +53,8 @@ npm run deck -- inspect --deck decks/my-pitch
 
 Inspection checks generated pages in Chromium, runs accessibility and geometry
 checks, and captures every slide plus its overview under `.build/<id>/review/`.
-Read the report and images; automated geometry cannot judge narrative or every
-intentional overlap. This is optional tooling, not a browser runtime dependency.
+Read the report and images; automated checks cannot judge the story or distinguish every
+intentional overlap from a mistake. This is optional tooling, not a browser runtime dependency.
 
 ## Troubleshooting
 

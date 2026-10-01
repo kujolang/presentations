@@ -1,34 +1,91 @@
 # Presentations
 
-An optional, Kujo-native presentation layer built **on top of Kujo SSG and SiteKit**.
-It turns editable deck data into static HTML slides, an overview, and a readable
-text edition. Ten reusable layouts ship with investor, live-talk and sales starters, an editorial
-media example, and a separate garden-planning example. No changes to SSG or SiteKit are required.
+[![Version](https://img.shields.io/badge/version-0.1.0-black)](https://github.com/kujolang/presentations)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
+[![built with Kujo](https://img.shields.io/badge/built%20with-Kujo-white.svg)](https://github.com/kujolang/kujo)
 
-![Rendered nine-slide example](docs/images/reference-overview.png)
+Build browser presentations with Kujo SSG and SiteKit. Choose a starter, add your
+content, and generate static slides, an overview, and a readable text edition.
 
-## Start with your purpose
+Presentations is an optional package. It adds no code or dependencies to SSG or
+SiteKit. Version 0.1.0 is a preview; the content and extension APIs may change.
+See [release status](docs/release.md) before distributing it.
 
-With Git, Node 20+, and Kujo 1.5+ installed:
+![Nine-slide media example](docs/images/reference-overview.png)
+
+## Quick start
+
+Install Git, Node 20+, and [Kujo 1.5+](https://github.com/kujolang/kujo), then run:
 
 ```sh
+git clone https://github.com/kujolang/presentations.git
+cd presentations
 npm run deck -- start investor my-pitch --title "My company"
 ```
 
-This creates a draft, sets up pinned dependencies, builds, and serves it. Choose
-`investor`, `live-talk`, or `sales`. Give your agent [CREATE_A_DECK.md](CREATE_A_DECK.md)
-plus your data to customize the narrative, branding, and slides. The agent can
-use the JSON catalog, content schema, readiness check, and browser inspection.
-See [getting started](docs/getting-started.md) for the clone-to-preview walkthrough.
+This copies a starter to `decks/my-pitch/`, installs pinned SSG and SiteKit
+versions, builds the deck, and serves it at `http://127.0.0.1:8086/`.
+Press Ctrl+C to stop. Use `--port 8087` if the port is busy.
+The draft contains placeholders for your facts and images.
 
-## Run locally
+| Starter | Purpose |
+| --- | --- |
+| `investor` | Explain the problem, product, market, traction, team, and funding ask |
+| `live-talk` | Teach an idea through a hook, example, practical steps, and discussion |
+| `sales` | Connect a buyer's needs to your offer, delivery plan, price, and next step |
 
-Requirements: Kujo 1.5+, a Kujo SSG checkout, and a built SiteKit `dist/`.
-Node powers the optional onboarding/inspection commands, SiteKit's build, and
-browser tests. The presentation build itself remains native Kujo.
-Tested upstream revisions are recorded in `dependencies.json`.
+For an agent-led workflow, give your agent [CREATE_A_DECK.md](CREATE_A_DECK.md)
+and your brief. The catalog, JSON Schema, and layout limits describe what it can
+build. See [getting started](docs/getting-started.md) for setup and troubleshooting.
 
-With sibling `ssg/` and `site-kit/` repositories:
+## Edit and review
+
+Edit `decks/my-pitch/deck.json` for content and order, `assets/theme.css` inside
+that deck for its appearance, and `BRIEF.md` for sources and decisions.
+Then run:
+
+```sh
+npm run deck -- check --deck decks/my-pitch --ready
+npm run deck -- build --deck decks/my-pitch
+npm run deck -- preview --deck decks/my-pitch
+```
+
+`check --ready` rejects unfinished placeholders. It does not verify facts or
+visual fit. Review every slide before presenting. Changes require a rebuild;
+the preview does not watch files.
+
+Ten reusable layouts cover titles, indexes, images, metrics, features, business
+models, and percentage charts. The canvas keeps its 16:9 composition as the
+browser resizes. The overview, controls, and text edition adapt to the viewport.
+See [authoring](docs/authoring.md) for fields, themes, and custom layouts.
+
+## Motion and controls
+
+Optional Motion presets range from fade, slide, and zoom to coordinated
+headline, image, card, and chart animations. Editorial, Focus, and Kinetic
+presets support per-slide settings, intensity, timing, and stagger.
+Use **Replay entrance** to review an effect.
+
+Motion loads from local files only when needed. Viewers can turn it off, and
+system reduced-motion preferences always take precedence.
+See [transitions](docs/transitions.md) for configuration.
+
+| Control | Action |
+| --- | --- |
+| Left / Right | Previous / next slide |
+| Space | Next slide; keeps normal behavior on buttons and links |
+| Home / End | First / last slide |
+| F / Escape | Toggle / exit fullscreen where supported |
+| Overview | View linked thumbnails of all slides |
+| Read text | Read the deck, chart values, and image descriptions as a normal page |
+
+Shortcuts leave text inputs and browser modifier keys alone. Native links work
+without JavaScript. Fullscreen and enabled transitions fetch generated pages;
+failed fetches fall back to normal navigation.
+
+## Build and host
+
+With sibling `ssg/` and built `site-kit/` checkouts, run from this repository:
 
 ```sh
 kujo run build.kujo
@@ -37,10 +94,7 @@ kujo serve output --port 8086
 ```
 
 Open `http://127.0.0.1:8086/reference/` or `/field-notes/`.
-Each deck has `/1/`, `/2/`, … and `/reading/` beneath its output root.
-Run commands from the Presentations repository root.
-
-For checkouts elsewhere:
+For dependencies elsewhere:
 
 ```sh
 kujo run build.kujo -- --deck /path/to/my-deck \
@@ -48,90 +102,34 @@ kujo run build.kujo -- --deck /path/to/my-deck \
   --site-url https://example.com/my-deck
 ```
 
-To obtain the tested dependencies in an isolated clone:
+`npm run deck -- setup` installs the pinned versions in [dependencies.json](dependencies.json)
+under `.deps/`. Pass `--ssg .deps/ssg --sitekit .deps/site-kit/dist` to use those
+paths with the native builder. The Node CLI handles setup and review; Kujo renders
+the deck.
 
-```sh
-node scripts/setup-dependencies.mjs
-kujo run build.kujo -- --ssg .deps/ssg --sitekit .deps/site-kit/dist
-```
+Deploy `output/<deck-id>/` to a static host with directory-index support. Each
+slide has a numbered URL, such as `/1/`, plus `/reading/` for the text edition.
+Direct links and refresh need no rewrite rules. Relative links support hosting
+under a subdirectory. Use HTTP for local previews; `file://` is not supported.
 
-`output/<deck-id>/` is the deployable static site. Serve that directory at the
-chosen site URL, with normal directory-index handling. Refresh, direct links,
-and browser history need no rewrite rules. Assets and links are relative, so
-subdirectory hosting works. Opening clean directory URLs with `file://` is not
-supported; use a static HTTP server. The build replaces only its generated
-`.build/<deck-id>/` and `output/<deck-id>/` directories. Do not put authored files
-there. Never run two builds for the same deck ID concurrently.
-
-## Make the next deck
-
-Copy `examples/field-notes` to your own directory, change `id`, title, content,
-and `assets/theme.css`, then run `--deck your-directory`.
-
-```json
-{
-  "id": "next-quarter",
-  "title": "Our next chapter",
-  "brand": "Your organization",
-  "description": "A plan for the coming quarter.",
-  "slides": [{
-    "layout": "business",
-    "title": "A model for growth",
-    "copy": "Three complementary ways to move forward.",
-    "features": [
-      {"title": "Services", "copy": "Expertise with a clear outcome."},
-      {"title": "Products", "copy": "Useful tools for recurring needs."},
-      {"title": "Partners", "copy": "Better work through collaboration."}
-    ]
-  }]
-}
-```
-
-Every deck must have `assets/theme.css`; an empty file uses SiteKit-derived
-defaults. Slide content is plain text, never executable HTML. Use `\n` for an
-intentional title break. Layouts and theme CSS are trusted developer source.
-Keep titles and copy concise: these are compositions, not scrolling web pages.
-Use `kujo run build.kujo -- --deck your-directory --check` to validate without
-building. See [authoring](docs/authoring.md) for fields, capacities, and extensions.
-
-## Controls
-
-- Left / Right: previous / next. Space: next.
-- Home / End: first / last slide. Endpoints do not wrap.
-- F: toggle fullscreen where supported. Escape exits fullscreen.
-- Overview: all slides as linked thumbnails. Read text: a responsive, zoomable
-  edition of the whole deck, including chart values and image descriptions.
-
-Keyboard shortcuts leave inputs, editable content, modifier shortcuts, and
-Space activation on links/buttons alone. Controls are native links and buttons.
-Navigation and overview work without JavaScript. The viewer's small optional
-script provides shortcuts, fullscreen, and optional Motion transitions. When
-fullscreen or transitions are enabled, it fetches another generated page;
-otherwise navigation uses native page loads. Fetch failures fall back to ordinary navigation.
+The build replaces `.build/<deck-id>/` and `output/<deck-id>/`. Keep authored
+files elsewhere, and never run two builds for the same deck ID at once.
 
 ## Architecture
 
 ```text
-Kujo SSG ─── public CLI + templates ──┐
-                                    ├── Presentations ── individual decks
-SiteKit ─── vendored dist + tokens ──┘
+Kujo SSG ─── CLI and templates ──┐
+                               ├── Presentations ── individual decks
+SiteKit ─── CSS and tokens ─────┘
 ```
 
-`src/model.kujo` validates content; `src/render.kujo` supplies small presentation
-primitives; `layouts/` owns reusable compositions; `assets/` owns canvas geometry
-and viewer behavior. `build.kujo` adapts deck JSON into SSG page/template inputs.
-SSG generates the routes, documents, metadata, and asset output. SiteKit supplies
-semantic controls, layout utilities, reset, focus styles, and default tokens.
-Its optional JavaScript is not loaded. Engine defaults alias SiteKit tokens;
-all black/off-white/orange styling and media content live in `examples/reference`.
+The presentation package owns layouts, content validation, canvas geometry,
+controls, and motion. SSG generates pages and copies assets. SiteKit supplies
+controls, layout utilities, focus styles, and default tokens. Decks own content,
+images, and themes. Neither upstream project depends on Presentations.
+See [architecture](docs/architecture.md) for the boundaries and build process.
 
-The canvas preserves a 16:9 composition using CSS container-relative units.
-Only the overview, viewer controls, and text edition reflow. There is no framework,
-client rendering library, router dependency, chart dependency, or upstream plugin.
-Remove this repository and no ordinary SSG/SiteKit consumer changes.
-See [the ecosystem inspection](docs/architecture.md).
-
-## Verification
+## Verify
 
 ```sh
 npm ci
@@ -139,24 +137,22 @@ npx playwright install chromium firefox webkit
 npm test
 ```
 
-Tests cover generated routes, content validation, escaping, variable deck length,
-local assets, keyboard/history behavior, fullscreen, fixed geometry, mobile and
-no-JavaScript use, and axe accessibility checks. Overview screenshots are written
-to `test-results/`. Font rendering varies by operating system; images are decoded
-before visual capture. [Verification notes](docs/verification.md) record the
-completed run and its limits. These tests are not a blanket accessibility certification.
+Tests cover content validation, routes, assets, keyboard controls, history,
+fullscreen, canvas layout, no-JavaScript navigation, motion, and axe accessibility
+checks. Browser screenshots go to `test-results/`. Automated checks do not replace
+visual, factual, or accessibility review.
 
-The reference screenshot was **not attached to the request**. The nine-slide demo
-implements the supplied written descriptions and visual language; it is not a
-verified pixel match. Text and statistics are editable fictional demo content.
-Photography comes from the local SSG demo corpus, never a hotlink or slide screenshot.
-[Asset provenance](examples/reference/ASSETS.md) records the source files.
+The media example uses fictional copy and metrics and follows a written design
+brief. It is not a verified pixel match to a source image. Photography comes from
+local SSG demo assets; see [asset sources](examples/reference/ASSETS.md).
 
-MIT. Preview version 0.1.0; the content and extension API may evolve.
+## Documentation
 
-Optional [Motion transitions](docs/transitions.md) are configured in `deck.json`: enable/disable, effect, duration, and easing.
-Respect the author’s motion preference; reduced-motion settings always take precedence.
+- [Getting started](docs/getting-started.md)
+- [Agent workflow](CREATE_A_DECK.md)
+- [Content, themes, and layouts](docs/authoring.md)
+- [Motion settings](docs/transitions.md)
+- [Release status and checks](docs/release.md)
+- [Changelog](CHANGELOG.md)
 
-For more expressive decks, Editorial, Focus, and Kinetic presets choreograph
-headlines, image reveals, feature cards, metrics, and charts. Adjust intensity
-and stagger, override individual slides, and audition with Replay entrance.
+Released under the [MIT license](LICENSE).

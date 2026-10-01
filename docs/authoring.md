@@ -2,7 +2,25 @@
 
 `deck.json` requires `id` (lowercase slug), `title`, `brand`, `description`, and a
 nonempty `slides` array. Optional `footer` supplies the repeated footer text.
-Each deck has `assets/theme.css`; image paths resolve beneath `assets/`.
+Each deck must have `assets/theme.css`; an empty file uses the default theme.
+Image paths resolve beneath `assets/`. Slide content is plain text, not HTML.
+Use `\n` inside a title string to add a line break.
+
+A minimal deck looks like this:
+
+```json
+{
+  "id": "next-quarter",
+  "title": "Our next chapter",
+  "brand": "Your organization",
+  "description": "A plan for the coming quarter.",
+  "slides": [{
+    "layout": "statement",
+    "title": "Our next chapter",
+    "copy": "A focused plan for the coming quarter."
+  }]
+}
+```
 
 A slide requires `layout` and `title`. Optional fields:
 
@@ -16,7 +34,8 @@ A slide requires `layout` and `title`. Optional fields:
 | metrics | Objects with string `value` and `label` |
 | features | Objects with `title` and `copy` |
 | chart | Objects with `label` and numeric `value` from 0 to 100 |
-| chartLabel | Accessible/chart caption describing the data and units |
+| chartLabel | Chart caption describing the data and units |
+| transitions | Per-slide [motion settings](transitions.md) |
 
 Chart values are percentages on a fixed zero-to-100 scale. The text edition
 lists each value explicitly. Do not use this chart for non-percentage quantities.
@@ -38,9 +57,10 @@ Metrics accept formatted strings such as `80k+`, `98%`, or `$2m`.
 | offerings | 2 | 2 | 1 | 0 |
 
 These are maxima; omit optional sections as needed. Hero, problem, editorial, and
-business layouts use a text-only arrangement when images are omitted. Capacity contracts live next
-to the templates. Text limits reject obvious overfill but do not guarantee fit:
-font choice and word lengths matter. Review the overview after content changes.
+business layouts use a text-only arrangement when images are omitted. The JSON
+files beside the templates define these limits. Text limits reject obvious
+overfill but do not guarantee fit:
+font choice and word lengths matter. Review every slide after changing its content.
 Use concise titles (80 characters maximum for bundled layouts), supporting copy
 (up to 240), and feature descriptions (up to 160). A slide count is never hardcoded
 in the engine; the overview, navigation, totals and progress derive from the array.
@@ -64,7 +84,7 @@ SiteKit sizes rather than scaling with the canvas.
 For image replacements, keep the same asset filename or change `src` in data.
 `x: 20, y: 50` places the crop toward the left. Optimize source images before
 adding them; the current adapter copies local assets through SSG and does not
-claim its nested collage images use SSG's frontmatter featured-image converter.
+process collage images with SSG's frontmatter featured-image converter.
 Retain original licenses/credits with the deck.
 
 ## Add a layout without modifying the renderer
@@ -83,5 +103,6 @@ render function and explicit slot in `src/render.kujo`. Keep content out of it.
 Do not add trivial components for every wrapper or move presentation concepts
 into SiteKit. Themes/templates are trusted source and must be reviewed as code.
 
-Optional [Motion transitions](transitions.md) are configured in `deck.json`: enable/disable, effect, duration, and easing.
-Respect the author’s motion preference; reduced-motion settings always take precedence.
+Configure optional [Motion transitions](transitions.md) in `deck.json`. Choose
+an effect, timing, intensity, and stagger for the deck or individual slides.
+Viewers can turn motion off; system reduced-motion preferences take precedence.

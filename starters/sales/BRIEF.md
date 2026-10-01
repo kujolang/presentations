@@ -8,8 +8,8 @@ Brand: [Name, colors, fonts, and supplied local assets.]
 ## Inputs to collect
 
 - Buyer, audience, and buying decision
-- Confirmed pain points and desired outcomes
-- Offering and demonstrable capabilities
+- Confirmed customer problems and desired results
+- What you offer and what it can do
 - Approved customer evidence or references
 - Pricing, scope, timeline, and proposed next step
 

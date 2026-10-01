@@ -1,6 +1,6 @@
 # Reference example provenance
 
-No reference image was attached. Compositions derive from the user's written
+No reference image was attached. The layouts follow the user's written
 nine-slide description. Copy, brand, and metrics were authored as fictional demo
 content on 2026-09-30. No screenshot crops or rasterized text are used.
 
@@ -14,13 +14,13 @@ commit `a33489848209316c8e3ad68f0d89f3c8581256dd`:
 | assets/workshop.jpg | assets/images/post-starter-site.jpg |
 | assets/digital.jpg | assets/images/post-taxonomy-strategy.jpg |
 
-Upstream repository: https://github.com/kujolang/ssg (MIT LICENSE retained at
-this repository's root). No original photographer attribution is recorded in the
-inspected SSG source. These are local demo substitutions, not the reference deck's
-photographs. Consumers can replace them independently of templates and content.
+The [SSG repository](https://github.com/kujolang/ssg) uses the MIT license,
+retained at this repository's root. No original photographer attribution is
+recorded in the inspected SSG source. These are local demo substitutions, not the reference deck's
+photographs. Replace them in the deck assets without changing the layout templates.
 
-The reference theme requests SSG's local Inter 400/700 files. SiteKit is vendored
-whole at build time, including its Departure Mono and Tabler license files.
+The reference theme requests SSG's local Inter 400/700 files. The build copies
+the SiteKit distribution, including its Departure Mono and Tabler license files.
 The field-notes garden SVG is original example artwork authored in this project.
 
 Font license copies are included in `assets/licenses/` and copied to the generated

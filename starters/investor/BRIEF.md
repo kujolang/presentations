@@ -7,11 +7,11 @@ Brand: [Name, colors, fonts, and supplied local assets.]
 
 ## Inputs to collect
 
-- Company and one-sentence value proposition
+- Company and what it offers, in one sentence
 - Customer problem and evidence
 - Product, differentiation and business model
 - Traction with dates and sources
-- Market sizing methodology
+- Market estimates and how they were calculated
 - Team credentials and funding ask
 
 ## Source material
