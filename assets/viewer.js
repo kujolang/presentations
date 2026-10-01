@@ -61,10 +61,11 @@
       button.setAttribute('aria-pressed', String(Boolean(document.fullscreenElement)));
     }
   };
-  let busy = false, pendingNavigation;
+  let busy = false, pendingNavigation, renderedURL = location.href;
   async function navigate(href, push = true) {
     if (!document.fullscreenElement && !wantsMotion() && push) { location.assign(href); return; }
     if (busy) { pendingNavigation = {href, push}; return; }
+    const wasFullscreen = Boolean(document.fullscreenElement);
     busy = true;
     document.documentElement.dataset.transitioning = 'true';
     enhance();
@@ -83,16 +84,20 @@
       const direction = Number(main.dataset.slide) >= Number(viewer().dataset.slide) ? 1 : -1;
       await animateSlide(viewer(), false, direction);
       viewer().replaceWith(main);
+      renderedURL = url.href;
       enhance();
       await animateSlide(main, true, direction);
       enhancedHistory = true;
       document.title = next.title;
       const canonical = document.querySelector('link[rel="canonical"]');
       if (canonical) canonical.href = next.querySelector('link[rel="canonical"]')?.href || url.href;
-      if (push) history.pushState(null, '', url);
+      // A browser history action during animation owns the URL. Finish the
+      // current frame, then render that history destination without a reload.
+      if (push && pendingNavigation?.push !== false) history.pushState(null, '', url);
       enhance();
       main.tabIndex = -1;
-      main.focus({ preventScroll: true });
+      const focusTarget = wasFullscreen && !document.fullscreenElement ? main.querySelector('[data-fullscreen]') : main;
+      (focusTarget || main).focus({ preventScroll: true });
       status(label('slideStatus').replace('{slide}', main.dataset.slide).replace('{count}', main.dataset.count));
     } catch { location.assign(url); }
     finally { releaseNavigation(); }
@@ -103,7 +108,7 @@
     enhance();
     if (pendingNavigation) {
       const pending = pendingNavigation; pendingNavigation = null;
-      if (new URL(pending.href, location.href).href !== location.href) navigate(pending.href, pending.push);
+      if (new URL(pending.href, location.href).href !== renderedURL) navigate(pending.href, pending.push);
     }
   }
   async function replay() {
@@ -146,9 +151,14 @@
     else if (event.key === 'Escape' && document.fullscreenElement) { document.exitFullscreen().catch(() => {}); return; }
     if (href) { event.preventDefault(); navigate(href); }
   });
-  window.addEventListener('popstate', () => { if (busy) { location.reload(); return; } if (document.fullscreenElement || enhancedHistory) navigate(location.href, false); });
+  window.addEventListener('popstate', () => { if (busy || document.fullscreenElement || enhancedHistory) navigate(location.href, false); });
   reduced.addEventListener('change', () => { finishAnimation(); enhance(); });
-  document.addEventListener('fullscreenchange', enhance);
+  document.addEventListener('fullscreenchange', () => {
+    enhance();
+    // Do not leave focus on controls hidden by fullscreen styling.
+    const target = document.fullscreenElement ? viewer() : document.querySelector('[data-fullscreen]');
+    if (target) { if (document.fullscreenElement) target.tabIndex = -1; target.focus({ preventScroll: true }); }
+  });
   enhance();
   document.documentElement.dataset.viewerReady = 'true';
 })();

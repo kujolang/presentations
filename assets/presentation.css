@@ -139,7 +139,7 @@ a:not(.sk-button) { color: inherit; }
 .p-overview-footer { display: flex; justify-content: space-between; gap: 24px; margin-top: 40px; border-top: 1px solid var(--p-border); padding-top: 20px; font-size: 12px; }
 .p-reading { max-width: 850px; padding-block: 40px; line-height: 1.65; }
 .p-reading section { border-top: 1px solid var(--p-border); padding: 24px 0; scroll-margin-top: 24px; }
-.p-reading .p-features { display: block; padding-inset-inline-start: 24px; list-style: decimal; }
+.p-reading .p-features { display: block; padding-inline-start: 24px; list-style: decimal; }
 .p-reading .p-features li { display: list-item; border: 0; padding: 0; }
 .p-reading .p-feature-number { display: none; }
 .p-reading .p-features p,.p-reading .p-metric dt { font-size: 1rem; max-width: none; }
@@ -156,7 +156,7 @@ a:not(.sk-button) { color: inherit; }
 .p-layout-statement .p-intro { position: absolute; inset-inline-start: 4cqw; top: 36cqw; width: 65cqw; font-size: 1.5cqw; }
 /* Optional images should not leave an empty reserved photograph area. */
 .p-layout-problem:not(:has(.p-image)) h1 { inset-inline-start: 4cqw; top: 12cqw; width: 42cqw; }
-.p-layout-problem:not(:has(.p-image)) .p-intro { inset-inline-start: 4cqw; top: 28cqw; width: 38cqw; }
+.p-layout-problem:not(:has(.p-image)) .p-intro { inset-inline-start: 4cqw; top: 30cqw; width: 38cqw; }
 .p-layout-problem:not(:has(.p-image)) .p-features { top: 12cqw; inset-inline-start: 54cqw; }
 .p-layout-problem:not(:has(.p-image)) .p-accent { inset-inline-start: 4cqw; top: 42cqw; width: 5cqw; height: 5cqw; font-size: 4cqw; }
 .p-layout-editorial:not(:has(.p-image)) h1 { top: 12cqw; bottom: auto; width: 49cqw; font-size: 5.8cqw; }
@@ -182,3 +182,11 @@ a:not(.sk-button) { color: inherit; }
 .p-presenter pre { white-space: pre-wrap; font: inherit; }
 @page presentation { size: 320mm 180mm; margin: 0; }
 @media print { .p-print { page: presentation; } .p-print .p-frame { width: 320mm; height: 180mm; } body { print-color-adjust: exact; -webkit-print-color-adjust: exact; } }
+
+/* Keep the fullscreen root stable while navigation replaces the slide viewer. */
+:root:fullscreen { background: var(--p-fullscreen-background, #000); }
+:root:fullscreen body { background: transparent; overflow: hidden; }
+:root:fullscreen .p-viewer { height: 100dvh; min-height: 0; padding: 0; overflow: hidden; }
+:root:fullscreen .p-stage { width: 100%; height: 100%; }
+:root:fullscreen .p-stage .p-frame { width: min(100vw, calc(100dvh * 16 / 9)); }
+:root:fullscreen :is(.p-nav, .p-help, .p-progress, .p-skip) { display: none; }

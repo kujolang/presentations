@@ -1,5 +1,17 @@
 # Language, presenter tools and print
 
+## Slide-only fullscreen
+
+Click **Fullscreen** or press **F**. The slide fills the available screen while
+keeping its 16:9 shape; unused space is black. Buttons, help text, and the progress
+bar are hidden. Use **Left/Right** to move between slides, **Home/End** to jump to
+the first/last slide, and **Escape** or **F** to leave fullscreen. Keyboard
+navigation works with motion disabled. Leaving fullscreen restores the controls
+and returns focus to the fullscreen button.
+
+Themes can set `--p-fullscreen-background` to change the letterbox color.
+Fullscreen needs a supporting browser and a user action.
+
 ## Language and direction
 
 Set `lang` to the content's language tag and `dir` to `ltr` or `rtl`. Direction is

@@ -77,7 +77,7 @@ See [transitions](docs/transitions.md) for configuration.
 | Left / Right | Previous / next slide |
 | Space | Next slide; keeps normal behavior on buttons and links |
 | Home / End | First / last slide |
-| F / Escape | Toggle / exit fullscreen where supported |
+| F / Escape | Enter slide-only fullscreen / exit fullscreen |
 | Overview | View linked thumbnails of all slides |
 | Read text | Read the deck, chart values, and image descriptions as a normal page |
 
