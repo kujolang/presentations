@@ -1,8 +1,8 @@
 # Release status
 
-Version **0.1.0** remains a preview. It is not certified for every enterprise,
-host, language, or assistive technology. This review does not publish a package,
-tag, or deployment.
+Version **0.2.0** remains a preview. It is not certified for every enterprise,
+host, language, or assistive technology. GitHub releases distribute source archives. The npm package remains private to
+prevent accidental registry publication. A release does not deploy user decks.
 
 ## Verification gates
 

@@ -5,7 +5,11 @@ import {createHash} from 'node:crypto';
 import {build} from 'esbuild';
 const read=p=>JSON.parse(readFileSync(p,'utf8')),hash=b=>createHash('sha256').update(b).digest('hex');
 const run=(p,a)=>execFileSync(p,a,{encoding:'utf8'}).trim();
-const deps=read('dependencies.json'),report={dependencies:[],bundles:[],licenses:[],audit:null};
+const pkg=read('package.json'),lock=read('package-lock.json');
+const version=pkg.version,kennel=readFileSync('kennel.toml','utf8'),readme=readFileSync('README.md','utf8'),changelog=readFileSync('CHANGELOG.md','utf8');
+if(!/^\d+\.\d+\.\d+$/.test(version)||lock.version!==version||lock.packages[''].version!==version||kennel.match(/^version = "([^"]+)"/m)?.[1]!==version||!readme.includes(`version-${version}-black`)||!changelog.includes(`## ${version} — `))throw Error('Release version differs across manifests, README, or changelog');
+if(!kennel.includes('"patches"'))throw Error('Kennel package must include its pinned browser source correction');
+const deps=read('dependencies.json'),report={project:{name:pkg.name,version,tag:`v${version}`},dependencies:[],bundles:[],licenses:[],audit:null};
 for(const [name,dep] of Object.entries(deps)) {
  const path=`.deps/${name==='sitekit'?'site-kit':name}`;
  if(run('git',['-C',path,'rev-parse','HEAD'])!==dep.commit||run('git',['-C',path,'status','--porcelain'])) throw Error(`${name}: dependency revision or working tree differs`);

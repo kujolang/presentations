@@ -1,7 +1,7 @@
 # Completion record and remaining release gates
 
 Updated 2026-10-01. This record supersedes the open implementation list in the
-readiness and build-safety reviews. The package remains a 0.1.0 preview.
+readiness and build-safety reviews. The package remains a 0.2.0 preview.
 
 ## Completed
 
@@ -35,8 +35,10 @@ remain optional. Private notes are distinct from public slide annotations.
 4. **Repository history:** replacement photographs fix the current tree, but old
    Git revisions retain the previous images. Review rights before exposing private
    history. No history rewrite or visibility change was authorized or performed.
-5. **Release decision:** verify CI for the chosen release revision, then approve
-   versioning/publication. No release tag or package publication is created here.
+5. **Release verification:** the owner has requested v0.2.0 and public source
+   availability. Verify the exact tagged revision; resolve the asset-history
+   decision before changing visibility. No npm publication or deck deployment
+   is part of this release.
 
 ```sh
 npm run test:native

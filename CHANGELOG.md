@@ -1,6 +1,10 @@
 # Changelog
 
-## Unreleased — 0.1.0 preview
+## 0.2.0 — 2026-10-01
+
+First tagged preview. Includes the reusable deck system, purpose-specific starters,
+configurable Motion transitions, slide-only fullscreen, presenter tools, and the
+verified Firefox transport correction. Content and extension APIs may change.
 
 - Fix Firefox automation channel identity collisions with a verified source patch; remove ineffective per-test process isolation and test the hardened native server in CI.
 - Fill fullscreen with the slide and hide viewer controls; keep keyboard navigation and restore focus on exit.

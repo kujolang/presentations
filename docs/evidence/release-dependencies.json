@@ -1,4 +1,9 @@
 {
+  "project": {
+    "name": "kujo-presentations",
+    "version": "0.2.0",
+    "tag": "v0.2.0"
+  },
   "dependencies": [
     {
       "name": "ssg",

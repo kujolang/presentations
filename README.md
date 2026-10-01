@@ -1,6 +1,6 @@
 # Presentations
 
-[![Version](https://img.shields.io/badge/version-0.1.0-black)](https://github.com/kujolang/presentations)
+[![Version](https://img.shields.io/badge/version-0.2.0-black)](https://github.com/kujolang/presentations)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 [![built with Kujo](https://img.shields.io/badge/built%20with-Kujo-white.svg)](https://github.com/kujolang/kujo)
 
@@ -9,9 +9,10 @@ content, and generate static slides, an overview, a readable text edition, and p
 Optional presenter tools keep speaker notes local to the presenter tab.
 
 Presentations is an optional package. It adds no code or dependencies to SSG or
-SiteKit. Version 0.1.0 is a preview; the content and extension APIs may change.
-See [release status](docs/release.md) before distributing it, and the
-[readiness review and next steps](docs/readiness-review.md) for known limits.
+SiteKit. Version 0.2.0 is a preview; the content and extension APIs may change.
+See [release status](docs/release.md) and the [support matrix](docs/support-matrix.md)
+for verified platforms and known limits. GitHub releases distribute the source;
+`package.json` keeps `private: true` to prevent accidental npm publication.
 
 ![Nine-slide media example](docs/images/reference-overview.png)
 
