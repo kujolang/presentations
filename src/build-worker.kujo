@@ -1,0 +1,3 @@
+# Internal worker; use the locked root build.kujo entry point.
+from src.build import publish
+publish(args())

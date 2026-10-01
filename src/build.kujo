@@ -18,10 +18,13 @@ func run(command, cwd) {
     return result.stdout
 }
 func copy_tree(source, target) {
+    if path_is_symlink(source) { fail("Asset symlinks are not supported: " + source) }
     create_dir(target)
     for entry in list_dir(source) {
         from_path := source + "/" + entry
         to_path := target + "/" + entry
+        if path_is_symlink(from_path) { fail("Asset symlinks are not supported: " + from_path) }
+        if !path_is_dir(from_path) && !path_is_file(from_path) { fail("Asset must be a regular file or directory: " + from_path) }
         if path_is_dir(from_path) { copy_tree(from_path, to_path) } else { copy_file(from_path, to_path) }
     }
 }
@@ -35,7 +38,7 @@ func document_html(deck, title, content, prefix, url) {
     if len(url) > 0 { canonical = "<link rel=\"canonical\" href=\"" + text(url) + "\">" }
     return "<!doctype html><html lang=\"" + text(field(deck, "lang", "en")) + "\" data-theme=\"kujo-light\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>" + text(title) + "</title><meta name=\"description\" content=\"" + text(deck["description"]) + "\">" + canonical + "<link rel=\"stylesheet\" href=\"" + prefix + "assets/sitekit/sitekit.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/presentation/presentation.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/deck/theme.css\"></head><body><a class=\"p-skip\" href=\"#main-content\">Skip to content</a>" + content + "</body></html>"
 }
-export func main(argv) {
+export func build(argv) {
     arg_index := 0
     seen_options := []
     while arg_index < len(argv) {
@@ -55,6 +58,7 @@ export func main(argv) {
     deck_dir := option(argv, "--deck", "examples/reference")
     deck := parse_json(read_file(deck_dir + "/deck.json"))
     validate(deck, deck_dir)
+    check_assets(deck_dir + "/assets", 0)
     if contains(argv, "--check") { print("Valid deck: " + deck["id"]); exit(0) }
     ssg_default := ".deps/ssg"
     sitekit_default := ".deps/site-kit/dist"
@@ -102,7 +106,73 @@ export func main(argv) {
     i := 1
     for slide in deck["slides"] { page(stage, to_string(i), slide["title"], viewer(deck, slide, i), deck, site_url); i = i + 1 }
     page(stage, "reading", deck["title"] + " — Read text", reading(deck), deck, site_url)
-    write_file(stage + "/kujo-ssg.json", to_json({"site_url": site_url, "site_title": deck["title"], "site_tagline": deck["description"], "content": "content", "templates": "templates", "assets": "assets", "output": root + "/output/" + deck["id"], "fonts": ["Bree Serif", "Inter"], "webmcp": false, "minify": false, "no_aux": true}))
+    write_file(stage + "/kujo-ssg.json", to_json({"site_url": site_url, "site_title": deck["title"], "site_tagline": deck["description"], "content": "content", "templates": "templates", "assets": "assets", "output": stage + "/site", "fonts": ["Bree Serif", "Inter"], "webmcp": false, "minify": false, "no_aux": true}))
     print(run(["kujo", "run", ssg + "/build.kujo", "--", "--no-aux", "--no-aliases", "--no-webmcp"], stage))
-    print("Presentation built: output/" + deck["id"] + "/index.html")
+
+}
+
+# Validate the whole deck asset tree, including unused files, before any build writes.
+func check_assets(source, depth) {
+    if path_is_symlink(source) { fail("Asset symlinks are not supported: " + source) }
+    if depth > 16 { fail("Asset tree exceeds 16 directory levels: " + source) }
+    if !path_is_dir(source) { fail("Asset directory missing: " + source) }
+    for entry in list_dir(source) {
+        path := source + "/" + entry
+        if starts_with(entry, ".") { fail("Hidden assets cannot be published: " + path) }
+        if path_is_symlink(path) { fail("Asset symlinks are not supported: " + path) }
+        if path_is_dir(path) { check_assets(path, depth + 1) }
+        else { if !path_is_file(path) { fail("Asset must be a regular file: " + path) } }
+    }
+}
+
+export func main(argv) {
+    # The child owns fallible generation. Its exit cannot bypass parent cleanup.
+    if contains(argv, "--check") || contains(argv, "--help") { build(argv); return }
+    deck_dir := option(argv, "--deck", "examples/reference")
+    deck := parse_json(read_file(deck_dir + "/deck.json"))
+    validate(deck, deck_dir)
+    check_assets(deck_dir + "/assets", 0)
+    root := trim(run(["pwd"], "."))
+    id := deck["id"]
+    create_dir(root + "/.build/.locks")
+    create_dir(root + "/output")
+    lock := root + "/.build/.locks/" + id
+    command := ["kujo", "run", "src/build-worker.kujo"]
+    if len(argv) > 0 { command = push(command, "--") }
+    for arg in argv { command = push(command, arg) }
+    acquired := spawn_process(["mkdir", lock], {"cwd": root, "inherit_env": true})
+    if !acquired.success { fail("Build locked: " + lock + ". Stop any build for this ID before removing a stale lock.") }
+    # The worker owns generation and publication; ordinary failures release the lock.
+    result := spawn_process(command, {"cwd": root, "inherit_env": true, "timeout_ms": 1200000, "max_output_bytes": 2097152})
+    if result.timed_out || result.exitcode < 0 { fail("Build worker interrupted or timed out; stop all child builds before removing lock: " + lock) }
+    if !result.success && !path_exists(root + "/output/" + id) && path_exists(root + "/.build/" + id + ".previous") {
+        rename_file(root + "/.build/" + id + ".previous", root + "/output/" + id)
+    }
+    run(["rmdir", lock], root)
+    if !result.success { fail(result.stdout + result.stderr) }
+    print(result.stdout)
+    print("Presentation built: output/" + id + "/index.html")
+}
+
+export func publish(argv) {
+    deck := parse_json(read_file(option(argv, "--deck", "examples/reference") + "/deck.json"))
+    validate(deck, option(argv, "--deck", "examples/reference"))
+    id := deck["id"]
+    output := "output/" + id
+    backup := ".build/" + id + ".previous"
+    if (path_exists(output) && path_is_symlink(output)) || (path_exists(backup) && path_is_symlink(backup)) || (path_exists(".build/" + id) && path_is_symlink(".build/" + id)) { fail("Build paths must not be symlinks") }
+    # Recover an interrupted swap before generation can fail or clear staging.
+    if path_exists(backup) {
+        if !path_exists(output) { rename_file(backup, output) }
+        else { run(["rm", "-rf", "--", backup], ".") }
+    }
+    build(argv)
+    if path_exists(output) { rename_file(output, backup) }
+    # If interrupted here, the next locked build restores the previous output.
+    swapped := spawn_process(["mv", "--", ".build/" + id + "/site", output], {"cwd": ".", "inherit_env": true})
+    if !swapped.success {
+        if path_exists(backup) { rename_file(backup, output) }
+        fail("Could not publish deck: " + swapped.stderr)
+    }
+    if path_exists(backup) { run(["rm", "-rf", "--", backup], ".") }
 }
