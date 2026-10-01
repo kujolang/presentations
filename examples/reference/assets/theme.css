@@ -2,3 +2,5 @@
 @font-face { font-family: 'Deck Inter'; src: url('../fonts/inter-latin-400.woff2') format('woff2'); font-weight: 400; font-display: swap; }
 @font-face { font-family: 'Deck Inter'; src: url('../fonts/inter-latin-700.woff2') format('woff2'); font-weight: 700; font-display: swap; }
 :root { --p-background: #f4f2ec; --p-foreground: #171715; --p-muted: #565650; --p-border: #c5c3bc; --p-accent: #ff4b23; --p-on-accent: #171715; --p-inverse: #171715; --p-on-inverse: #f4f2ec; --p-viewer-background: #e4e2dc; --p-font: 'Deck Inter', Arial, sans-serif; --p-display: 'Deck Inter', Arial, sans-serif; --p-image-filter: grayscale(1); --sk-focus-ring: #171715; }
+/* Match the overview title to SiteKit's interface typography. */
+.p-overview-header h1 { font-family: var(--sk-font-mono); font-weight: 400; letter-spacing: 0; }
