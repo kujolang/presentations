@@ -1,0 +1,30 @@
+phase,url,page_depth,internal_inbound_links,internal_outbound_links,external_outbound_links,orphan,pages_over_three_clicks,broken_internal_links,redirect_chain,crawlable_html_links,issues
+baseline,https://presentations.robertdevore.com/1/,1,4,5,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/2/,1,5,6,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/3/,1,5,6,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/4/,1,5,6,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/404.html,,1,2,0,True,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/5/,1,5,6,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/6/,1,5,6,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/7/,1,5,6,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/8/,1,5,6,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/9/,1,4,5,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/blog/,,1,12,0,True,,11,,,canonical origin mismatch;broken internal links
+baseline,https://presentations.robertdevore.com/,0,12,12,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/presenter/,,1,1,0,True,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/print/,2,10,1,0,False,,0,,,canonical origin mismatch
+baseline,https://presentations.robertdevore.com/reading/,1,11,11,0,False,,0,,,canonical origin mismatch
+after,https://presentations.robertdevore.com/1/,1,4,5,0,False,,0,,,
+after,https://presentations.robertdevore.com/2/,1,5,6,0,False,,0,,,
+after,https://presentations.robertdevore.com/3/,1,5,6,0,False,,0,,,
+after,https://presentations.robertdevore.com/4/,1,5,6,0,False,,0,,,
+after,https://presentations.robertdevore.com/404.html,,1,2,0,True,,0,,,
+after,https://presentations.robertdevore.com/5/,1,5,6,0,False,,0,,,
+after,https://presentations.robertdevore.com/6/,1,5,6,0,False,,0,,,
+after,https://presentations.robertdevore.com/7/,1,5,6,0,False,,0,,,
+after,https://presentations.robertdevore.com/8/,1,5,6,0,False,,0,,,
+after,https://presentations.robertdevore.com/9/,1,4,5,0,False,,0,,,
+after,https://presentations.robertdevore.com/,0,12,12,0,False,,0,,,
+after,https://presentations.robertdevore.com/presenter/,,1,1,0,True,,0,,,
+after,https://presentations.robertdevore.com/print/,2,10,1,0,False,,0,,,
+after,https://presentations.robertdevore.com/reading/,1,11,11,0,False,,0,,,

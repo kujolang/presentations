@@ -1,0 +1,6 @@
+crawler,purpose,robots_access,live_status,waf_or_cdn_result,recommended_action,action_taken,evidence
+Googlebot,search,Allowed by generated default rules,200,No block on synthetic UA probe; not verified crawler IP,Review real crawler logs when available,No provider-specific policy change,raw/production-after.json; raw/production-robots.txt
+bingbot,search,Allowed by generated default rules,200,No block on synthetic UA probe; not verified crawler IP,Review real crawler logs when available,No provider-specific policy change,raw/production-after.json; raw/production-robots.txt
+OAI-SearchBot,search,Allowed by generated default rules,200,No block on synthetic UA probe; not verified crawler IP,Review real crawler logs when available,No provider-specific policy change,raw/production-after.json; raw/production-robots.txt
+ChatGPT-User,user-directed retrieval,Allowed by generated default rules,200,No block on synthetic UA probe; not verified crawler IP,Review real crawler logs when available,No provider-specific policy change,raw/production-after.json; raw/production-robots.txt
+GPTBot,training,Allowed by generated default rules,200,No block on synthetic UA probe; not verified crawler IP,Review real crawler logs when available,No provider-specific policy change,raw/production-after.json; raw/production-robots.txt

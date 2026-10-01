@@ -1,0 +1,36 @@
+{
+  "host": "https://presentations.robertdevore.com/",
+  "private": false,
+  "checks": [
+    {
+      "path": "1/",
+      "status": 200,
+      "type": "text/html",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "reading/",
+      "status": 200,
+      "type": "text/html",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "print/",
+      "status": 200,
+      "type": "text/html",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "assets/presentation/viewer.js",
+      "status": 200,
+      "type": "text/javascript",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "path": "assets/presentation/presentation.css",
+      "status": 200,
+      "type": "text/css",
+      "cache": "public, max-age=0, must-revalidate"
+    }
+  ]
+}

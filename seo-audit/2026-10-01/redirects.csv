@@ -1,0 +1,4 @@
+phase,source_url,source_variant,http_status,target_url,chain_length,final_status,canonical_target,query_preserved,verification,issues
+after,https://presentations.robertdevore.com/1?demo=1,directory/index alias with query,301,https://presentations.robertdevore.com/1/?demo=1,1,200,https://presentations.robertdevore.com/1/,True,"live HTTPS, TLS verified, public DNS",
+after,https://presentations.robertdevore.com/1/index.html?demo=1,directory/index alias with query,301,https://presentations.robertdevore.com/1/?demo=1,1,200,https://presentations.robertdevore.com/1/,True,"live HTTPS, TLS verified, public DNS",
+after,http://presentations.robertdevore.com/1/?demo=1,HTTP to HTTPS,301,https://presentations.robertdevore.com/1/?demo=1,1,200,https://presentations.robertdevore.com/1/,True,raw/http-redirect.txt; production-after.json,

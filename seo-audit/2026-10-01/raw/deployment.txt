@@ -1,0 +1,10 @@
+Cloudflare Worker: kujo-presentations
+Custom domain: presentations.robertdevore.com
+Wrangler: 4.129.0
+Final deployed version: ab20cc5a-5b15-4bca-a3e5-65404186e347
+Deployment date: 2026-10-01
+Asset directory: .build/public-site
+Build: npm run build:site
+Deploy: wrangler deploy
+Explicit permanent directory/index aliases supersede the host default 307.
+Source repository visibility and history were not changed.

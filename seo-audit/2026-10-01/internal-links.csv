@@ -1,0 +1,238 @@
+phase,source_url,destination_url,anchor_text,link_context,http_status,final_url,chain_length,verification,rel,recommended_action
+baseline,https://presentations.robertdevore.com/1/,https://presentations.robertdevore.com/1/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/1/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/1/,https://presentations.robertdevore.com/2/,Next →,nav,200,https://presentations.robertdevore.com/2/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/1/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/1/,https://presentations.robertdevore.com/reading/#slide-1,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-1,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/1/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/2/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/2/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/1/,← Previous,nav,200,https://presentations.robertdevore.com/1/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/3/,Next →,nav,200,https://presentations.robertdevore.com/3/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/reading/#slide-2,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-2,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/3/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/3/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/2/,← Previous,nav,200,https://presentations.robertdevore.com/2/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/4/,Next →,nav,200,https://presentations.robertdevore.com/4/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/reading/#slide-3,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-3,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/4/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/4/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/3/,← Previous,nav,200,https://presentations.robertdevore.com/3/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/5/,Next →,nav,200,https://presentations.robertdevore.com/5/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/reading/#slide-4,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-4,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/404.html,https://presentations.robertdevore.com/404.html#main-content,Skip to content,body,200,https://presentations.robertdevore.com/404.html#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/404.html,https://presentations.robertdevore.com/,Overview,main,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/5/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/5/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/4/,← Previous,nav,200,https://presentations.robertdevore.com/4/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/6/,Next →,nav,200,https://presentations.robertdevore.com/6/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/reading/#slide-5,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-5,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/6/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/6/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/5/,← Previous,nav,200,https://presentations.robertdevore.com/5/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/7/,Next →,nav,200,https://presentations.robertdevore.com/7/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/reading/#slide-6,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-6,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/7/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/7/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/6/,← Previous,nav,200,https://presentations.robertdevore.com/6/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/8/,Next →,nav,200,https://presentations.robertdevore.com/8/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/reading/#slide-7,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-7,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/8/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/8/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/7/,← Previous,nav,200,https://presentations.robertdevore.com/7/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/9/,Next →,nav,200,https://presentations.robertdevore.com/9/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/reading/#slide-8,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-8,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/9/,https://presentations.robertdevore.com/9/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/9/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/9/,https://presentations.robertdevore.com/8/,← Previous,nav,200,https://presentations.robertdevore.com/8/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/9/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/9/,https://presentations.robertdevore.com/reading/#slide-9,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-9,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/9/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/blog/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/1/,Start presentation ↗,header,404,https://presentations.robertdevore.com/blog/1/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/1/,"FORM / MEDIA A new perspective 1 / 9 Innovating media
+for a digital age We connect bold ideas with curious audiences. Independent thinking. Meaningful stories. Made for the way the world moves. Original stories every month 150+ Creative collaborators 78 People in our community 80k Form Media / Strategy & vision / Demo edition 1 1 Innovating media
+for a digital age",div,404,https://presentations.robertdevore.com/blog/1/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/2/,"FORM / MEDIA The bigger picture 2 / 9 Presentation
+content index From a shared challenge to a lasting impact. A closer look at the ideas, people and possibilities shaping our next chapter. 01 The challenge Understanding a changing media landscape. 02 Our approach A considered response. A clear direction. 03 The opportunity Meeting audiences where they are. 04 Our difference Independent ideas that move culture. 05 How we grow A sustainable model for meaningful work. 06 What comes next Content for every viewer, everywhere. Form Media / Strategy & vision / Demo edition 2 2 Presentation
+content index",div,404,https://presentations.robertdevore.com/blog/2/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/3/,"FORM / MEDIA 01 / The challenge 3 / 9 Problem
+statement More content. Less connection. The media landscape has never been louder—or harder to navigate. 01 Attention is fragmented Audiences move between platforms, while stories struggle to travel with them. 02 Trust needs to be earned Consistency, context and a human point of view matter more than volume. 03 One size does not fit all Different communities deserve stories that reflect their lives. Form Media / Strategy & vision / Demo edition 3 3 Problem
+statement",div,404,https://presentations.robertdevore.com/blog/3/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/4/,"FORM / MEDIA 02 / Our approach 4 / 9 Build with intention. We bring editorial care and creative experimentation together to make work that stays with people. 01 Start with people Listen closely. Understand what a community needs before making something for it. 02 Make every format count Translate a strong idea across film, audio and digital experiences. 03 Learn and improve Use audience feedback to inform the next story, not to repeat the last one. Our solutions for
+lasting impact Form Media / Strategy & vision / Demo edition 4 4 Our solutions for
+lasting impact",div,404,https://presentations.robertdevore.com/blog/4/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/5/,"FORM / MEDIA 03 / The opportunity 5 / 9 Market opportunity A connected generation is choosing media on its own terms. There is room for a more thoughtful kind of publisher. Video 74% Audio 48% Editorial 62% Community 88% Illustrative audience interest by format · Demo data, not research of our demo audience wants more relevant stories 98% Form Media / Strategy & vision / Demo edition 5 5 Market opportunity",div,404,https://presentations.robertdevore.com/blog/5/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/6/,"FORM / MEDIA 04 / Our difference 6 / 9 Unique value
+proposition Independent perspective. Connected thinking. A creative partner that sees the whole picture and cares about every detail. 01 Human by design Stories built around real people, meaningful questions and lived experience. 02 Culture in context We make room for nuance and bring fresh perspectives to familiar subjects. 03 Built to connect Each format opens a different door into the same compelling idea. 04 Lasting relevance Careful craft and a clear point of view give our work a longer life. Form Media / Strategy & vision / Demo edition 6 6 Unique value
+proposition",div,404,https://presentations.robertdevore.com/blog/6/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/7/,"FORM / MEDIA 05 / How we grow 7 / 9 Business
+model A balanced model that supports independent creativity and shared, sustainable growth. 01 Membership A closer connection through exclusive stories, conversations and experiences. 02 Creative partnerships Collaborative campaigns for brands that share our curiosity and values. 03 Licensing & distribution Original formats and stories that travel to new audiences and platforms. Form Media / Strategy & vision / Demo edition 7 7 Business
+model",div,404,https://presentations.robertdevore.com/blog/7/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/8/,"FORM / MEDIA 06 / People first 8 / 9 curious minds, one growing community 80k+ 01 Personal relevance Explore subjects that connect with your interests. 02 Room for discovery Find a new voice beyond the familiar. Curating content
+for every viewer The right story, in the right format, at the right moment. Discover something that feels made for you. Form Media / Strategy & vision / Demo edition 8 8 Curating content
+for every viewer",div,404,https://presentations.robertdevore.com/blog/8/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/9/,"FORM / MEDIA 07 / Many ways in 9 / 9 Diverse media
+offerings Watch. Listen. Read. Participate. Different ways to experience the stories that bring us together. Original editorial formats 12 Creative voices 40+ 01 One perspective.
+Many possibilities. A connected world of ideas, open to everyone. Form Media / Strategy & vision / Demo edition 9 9 Diverse media
+offerings",div,404,https://presentations.robertdevore.com/blog/9/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/blog/,https://presentations.robertdevore.com/blog/reading/,Read the complete deck as text →,footer,404,https://presentations.robertdevore.com/blog/reading/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/1/,Start presentation ↗,header,200,https://presentations.robertdevore.com/1/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/1/,"FORM / MEDIA A new perspective 1 / 9 Innovating media
+for a digital age We connect bold ideas with curious audiences. Independent thinking. Meaningful stories. Made for the way the world moves. Original stories every month 150+ Creative collaborators 78 People in our community 80k Form Media / Strategy & vision / Demo edition 1 1 Innovating media
+for a digital age",div,200,https://presentations.robertdevore.com/1/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/2/,"FORM / MEDIA The bigger picture 2 / 9 Presentation
+content index From a shared challenge to a lasting impact. A closer look at the ideas, people and possibilities shaping our next chapter. 01 The challenge Understanding a changing media landscape. 02 Our approach A considered response. A clear direction. 03 The opportunity Meeting audiences where they are. 04 Our difference Independent ideas that move culture. 05 How we grow A sustainable model for meaningful work. 06 What comes next Content for every viewer, everywhere. Form Media / Strategy & vision / Demo edition 2 2 Presentation
+content index",div,200,https://presentations.robertdevore.com/2/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/3/,"FORM / MEDIA 01 / The challenge 3 / 9 Problem
+statement More content. Less connection. The media landscape has never been louder—or harder to navigate. 01 Attention is fragmented Audiences move between platforms, while stories struggle to travel with them. 02 Trust needs to be earned Consistency, context and a human point of view matter more than volume. 03 One size does not fit all Different communities deserve stories that reflect their lives. Form Media / Strategy & vision / Demo edition 3 3 Problem
+statement",div,200,https://presentations.robertdevore.com/3/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/4/,"FORM / MEDIA 02 / Our approach 4 / 9 Build with intention. We bring editorial care and creative experimentation together to make work that stays with people. 01 Start with people Listen closely. Understand what a community needs before making something for it. 02 Make every format count Translate a strong idea across film, audio and digital experiences. 03 Learn and improve Use audience feedback to inform the next story, not to repeat the last one. Our solutions for
+lasting impact Form Media / Strategy & vision / Demo edition 4 4 Our solutions for
+lasting impact",div,200,https://presentations.robertdevore.com/4/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/5/,"FORM / MEDIA 03 / The opportunity 5 / 9 Market opportunity A connected generation is choosing media on its own terms. There is room for a more thoughtful kind of publisher. Video 74% Audio 48% Editorial 62% Community 88% Illustrative audience interest by format · Demo data, not research of our demo audience wants more relevant stories 98% Form Media / Strategy & vision / Demo edition 5 5 Market opportunity",div,200,https://presentations.robertdevore.com/5/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/6/,"FORM / MEDIA 04 / Our difference 6 / 9 Unique value
+proposition Independent perspective. Connected thinking. A creative partner that sees the whole picture and cares about every detail. 01 Human by design Stories built around real people, meaningful questions and lived experience. 02 Culture in context We make room for nuance and bring fresh perspectives to familiar subjects. 03 Built to connect Each format opens a different door into the same compelling idea. 04 Lasting relevance Careful craft and a clear point of view give our work a longer life. Form Media / Strategy & vision / Demo edition 6 6 Unique value
+proposition",div,200,https://presentations.robertdevore.com/6/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/7/,"FORM / MEDIA 05 / How we grow 7 / 9 Business
+model A balanced model that supports independent creativity and shared, sustainable growth. 01 Membership A closer connection through exclusive stories, conversations and experiences. 02 Creative partnerships Collaborative campaigns for brands that share our curiosity and values. 03 Licensing & distribution Original formats and stories that travel to new audiences and platforms. Form Media / Strategy & vision / Demo edition 7 7 Business
+model",div,200,https://presentations.robertdevore.com/7/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/8/,"FORM / MEDIA 06 / People first 8 / 9 curious minds, one growing community 80k+ 01 Personal relevance Explore subjects that connect with your interests. 02 Room for discovery Find a new voice beyond the familiar. Curating content
+for every viewer The right story, in the right format, at the right moment. Discover something that feels made for you. Form Media / Strategy & vision / Demo edition 8 8 Curating content
+for every viewer",div,200,https://presentations.robertdevore.com/8/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/9/,"FORM / MEDIA 07 / Many ways in 9 / 9 Diverse media
+offerings Watch. Listen. Read. Participate. Different ways to experience the stories that bring us together. Original editorial formats 12 Creative voices 40+ 01 One perspective.
+Many possibilities. A connected world of ideas, open to everyone. Form Media / Strategy & vision / Demo edition 9 9 Diverse media
+offerings",div,200,https://presentations.robertdevore.com/9/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/reading/,Read the complete deck as text →,footer,200,https://presentations.robertdevore.com/reading/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/presenter/,https://presentations.robertdevore.com/presenter/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/presenter/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/print/,https://presentations.robertdevore.com/print/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/print/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/reading/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/reading/#main-content,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/,Overview,main,200,https://presentations.robertdevore.com/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/1/,"1. Innovating media
+for a digital age",h2,200,https://presentations.robertdevore.com/1/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/2/,"2. Presentation
+content index",h2,200,https://presentations.robertdevore.com/2/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/3/,"3. Problem
+statement",h2,200,https://presentations.robertdevore.com/3/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/4/,"4. Our solutions for
+lasting impact",h2,200,https://presentations.robertdevore.com/4/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/5/,5. Market opportunity,h2,200,https://presentations.robertdevore.com/5/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/6/,"6. Unique value
+proposition",h2,200,https://presentations.robertdevore.com/6/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/7/,"7. Business
+model",h2,200,https://presentations.robertdevore.com/7/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/8/,"8. Curating content
+for every viewer",h2,200,https://presentations.robertdevore.com/8/,0,local HTTP,,
+baseline,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/9/,"9. Diverse media
+offerings",h2,200,https://presentations.robertdevore.com/9/,0,local HTTP,,
+after,https://presentations.robertdevore.com/1/,https://presentations.robertdevore.com/1/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/1/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/1/,https://presentations.robertdevore.com/2/,Next →,nav,200,https://presentations.robertdevore.com/2/,0,local HTTP,,
+after,https://presentations.robertdevore.com/1/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/1/,https://presentations.robertdevore.com/reading/#slide-1,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-1,0,local HTTP,,
+after,https://presentations.robertdevore.com/1/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+after,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/2/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/2/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/1/,← Previous,nav,200,https://presentations.robertdevore.com/1/,0,local HTTP,,
+after,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/3/,Next →,nav,200,https://presentations.robertdevore.com/3/,0,local HTTP,,
+after,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/reading/#slide-2,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-2,0,local HTTP,,
+after,https://presentations.robertdevore.com/2/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+after,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/3/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/3/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/2/,← Previous,nav,200,https://presentations.robertdevore.com/2/,0,local HTTP,,
+after,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/4/,Next →,nav,200,https://presentations.robertdevore.com/4/,0,local HTTP,,
+after,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/reading/#slide-3,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-3,0,local HTTP,,
+after,https://presentations.robertdevore.com/3/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+after,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/4/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/4/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/3/,← Previous,nav,200,https://presentations.robertdevore.com/3/,0,local HTTP,,
+after,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/5/,Next →,nav,200,https://presentations.robertdevore.com/5/,0,local HTTP,,
+after,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/reading/#slide-4,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-4,0,local HTTP,,
+after,https://presentations.robertdevore.com/4/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+after,https://presentations.robertdevore.com/404.html,https://presentations.robertdevore.com/404.html#main-content,Skip to content,body,200,https://presentations.robertdevore.com/404.html#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/404.html,https://presentations.robertdevore.com/,Overview,main,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/5/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/5/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/4/,← Previous,nav,200,https://presentations.robertdevore.com/4/,0,local HTTP,,
+after,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/6/,Next →,nav,200,https://presentations.robertdevore.com/6/,0,local HTTP,,
+after,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/reading/#slide-5,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-5,0,local HTTP,,
+after,https://presentations.robertdevore.com/5/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+after,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/6/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/6/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/5/,← Previous,nav,200,https://presentations.robertdevore.com/5/,0,local HTTP,,
+after,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/7/,Next →,nav,200,https://presentations.robertdevore.com/7/,0,local HTTP,,
+after,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/reading/#slide-6,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-6,0,local HTTP,,
+after,https://presentations.robertdevore.com/6/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+after,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/7/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/7/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/6/,← Previous,nav,200,https://presentations.robertdevore.com/6/,0,local HTTP,,
+after,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/8/,Next →,nav,200,https://presentations.robertdevore.com/8/,0,local HTTP,,
+after,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/reading/#slide-7,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-7,0,local HTTP,,
+after,https://presentations.robertdevore.com/7/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+after,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/8/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/8/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/7/,← Previous,nav,200,https://presentations.robertdevore.com/7/,0,local HTTP,,
+after,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/9/,Next →,nav,200,https://presentations.robertdevore.com/9/,0,local HTTP,,
+after,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/reading/#slide-8,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-8,0,local HTTP,,
+after,https://presentations.robertdevore.com/8/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+after,https://presentations.robertdevore.com/9/,https://presentations.robertdevore.com/9/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/9/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/9/,https://presentations.robertdevore.com/8/,← Previous,nav,200,https://presentations.robertdevore.com/8/,0,local HTTP,,
+after,https://presentations.robertdevore.com/9/,https://presentations.robertdevore.com/,Overview,nav,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/9/,https://presentations.robertdevore.com/reading/#slide-9,Read text,nav,200,https://presentations.robertdevore.com/reading/#slide-9,0,local HTTP,,
+after,https://presentations.robertdevore.com/9/,https://presentations.robertdevore.com/print/,Print / PDF,nav,200,https://presentations.robertdevore.com/print/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/1/,Start presentation ↗,header,200,https://presentations.robertdevore.com/1/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/1/,"FORM / MEDIA A new perspective 1 / 9 Innovating media
+for a digital age We connect bold ideas with curious audiences. Independent thinking. Meaningful stories. Made for the way the world moves. Original stories every month 150+ Creative collaborators 78 People in our community 80k Form Media / Strategy & vision / Demo edition 1 1 Innovating media
+for a digital age",div,200,https://presentations.robertdevore.com/1/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/2/,"FORM / MEDIA The bigger picture 2 / 9 Presentation
+content index From a shared challenge to a lasting impact. A closer look at the ideas, people and possibilities shaping our next chapter. 01 The challenge Understanding a changing media landscape. 02 Our approach A considered response. A clear direction. 03 The opportunity Meeting audiences where they are. 04 Our difference Independent ideas that move culture. 05 How we grow A sustainable model for meaningful work. 06 What comes next Content for every viewer, everywhere. Form Media / Strategy & vision / Demo edition 2 2 Presentation
+content index",div,200,https://presentations.robertdevore.com/2/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/3/,"FORM / MEDIA 01 / The challenge 3 / 9 Problem
+statement More content. Less connection. The media landscape has never been louder—or harder to navigate. 01 Attention is fragmented Audiences move between platforms, while stories struggle to travel with them. 02 Trust needs to be earned Consistency, context and a human point of view matter more than volume. 03 One size does not fit all Different communities deserve stories that reflect their lives. Form Media / Strategy & vision / Demo edition 3 3 Problem
+statement",div,200,https://presentations.robertdevore.com/3/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/4/,"FORM / MEDIA 02 / Our approach 4 / 9 Build with intention. We bring editorial care and creative experimentation together to make work that stays with people. 01 Start with people Listen closely. Understand what a community needs before making something for it. 02 Make every format count Translate a strong idea across film, audio and digital experiences. 03 Learn and improve Use audience feedback to inform the next story, not to repeat the last one. Our solutions for
+lasting impact Form Media / Strategy & vision / Demo edition 4 4 Our solutions for
+lasting impact",div,200,https://presentations.robertdevore.com/4/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/5/,"FORM / MEDIA 03 / The opportunity 5 / 9 Market opportunity A connected generation is choosing media on its own terms. There is room for a more thoughtful kind of publisher. Video 74% Audio 48% Editorial 62% Community 88% Illustrative audience interest by format · Demo data, not research of our demo audience wants more relevant stories 98% Form Media / Strategy & vision / Demo edition 5 5 Market opportunity",div,200,https://presentations.robertdevore.com/5/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/6/,"FORM / MEDIA 04 / Our difference 6 / 9 Unique value
+proposition Independent perspective. Connected thinking. A creative partner that sees the whole picture and cares about every detail. 01 Human by design Stories built around real people, meaningful questions and lived experience. 02 Culture in context We make room for nuance and bring fresh perspectives to familiar subjects. 03 Built to connect Each format opens a different door into the same compelling idea. 04 Lasting relevance Careful craft and a clear point of view give our work a longer life. Form Media / Strategy & vision / Demo edition 6 6 Unique value
+proposition",div,200,https://presentations.robertdevore.com/6/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/7/,"FORM / MEDIA 05 / How we grow 7 / 9 Business
+model A balanced model that supports independent creativity and shared, sustainable growth. 01 Membership A closer connection through exclusive stories, conversations and experiences. 02 Creative partnerships Collaborative campaigns for brands that share our curiosity and values. 03 Licensing & distribution Original formats and stories that travel to new audiences and platforms. Form Media / Strategy & vision / Demo edition 7 7 Business
+model",div,200,https://presentations.robertdevore.com/7/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/8/,"FORM / MEDIA 06 / People first 8 / 9 curious minds, one growing community 80k+ 01 Personal relevance Explore subjects that connect with your interests. 02 Room for discovery Find a new voice beyond the familiar. Curating content
+for every viewer The right story, in the right format, at the right moment. Discover something that feels made for you. Form Media / Strategy & vision / Demo edition 8 8 Curating content
+for every viewer",div,200,https://presentations.robertdevore.com/8/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/9/,"FORM / MEDIA 07 / Many ways in 9 / 9 Diverse media
+offerings Watch. Listen. Read. Participate. Different ways to experience the stories that bring us together. Original editorial formats 12 Creative voices 40+ 01 One perspective.
+Many possibilities. A connected world of ideas, open to everyone. Form Media / Strategy & vision / Demo edition 9 9 Diverse media
+offerings",div,200,https://presentations.robertdevore.com/9/,0,local HTTP,,
+after,https://presentations.robertdevore.com/,https://presentations.robertdevore.com/reading/,Read the complete deck as text →,footer,200,https://presentations.robertdevore.com/reading/,0,local HTTP,,
+after,https://presentations.robertdevore.com/presenter/,https://presentations.robertdevore.com/presenter/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/presenter/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/print/,https://presentations.robertdevore.com/print/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/print/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/reading/#main-content,Skip to content,body,200,https://presentations.robertdevore.com/reading/#main-content,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/,Overview,main,200,https://presentations.robertdevore.com/,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/1/,"1. Innovating media
+for a digital age",h2,200,https://presentations.robertdevore.com/1/,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/2/,"2. Presentation
+content index",h2,200,https://presentations.robertdevore.com/2/,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/3/,"3. Problem
+statement",h2,200,https://presentations.robertdevore.com/3/,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/4/,"4. Our solutions for
+lasting impact",h2,200,https://presentations.robertdevore.com/4/,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/5/,5. Market opportunity,h2,200,https://presentations.robertdevore.com/5/,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/6/,"6. Unique value
+proposition",h2,200,https://presentations.robertdevore.com/6/,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/7/,"7. Business
+model",h2,200,https://presentations.robertdevore.com/7/,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/8/,"8. Curating content
+for every viewer",h2,200,https://presentations.robertdevore.com/8/,0,local HTTP,,
+after,https://presentations.robertdevore.com/reading/,https://presentations.robertdevore.com/9/,"9. Diverse media
+offerings",h2,200,https://presentations.robertdevore.com/9/,0,local HTTP,,

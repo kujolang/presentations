@@ -1,0 +1,6 @@
+id,phase,category,severity,affected_urls,affected_count,evidence,expected_benefit,confidence,difficulty,recommended_action,owner,status
+SEO-01,baseline,production,P0,All intended routes,15,raw/production-before.txt,Reliable discovery and usable public demo,High,Low to medium,Provision the authorized hostname,Presentation maintainer,resolved by deployment
+SEO-02,baseline,canonical,P1,All eligible baseline pages,15,baseline.csv,Reliable discovery and usable public demo,High,Low to medium,Build with the production origin,Presentation maintainer,fixed
+SEO-03,baseline,architecture,P1,/blog/,1,raw/baseline-crawl.json,Reliable discovery and usable public demo,High,Low to medium,Remove unintended duplicate archive with 11 broken links and 9 broken image occurrences,Presentation maintainer,fixed
+SEO-04,baseline,metadata,P2,All pages,15,baseline.csv,Reliable discovery and usable public demo,High,Low to medium,"Derive route metadata, utility noindex and sitemap",Presentation maintainer,fixed
+SEO-05,baseline,performance,P2,/,1,raw/lighthouse-before.json,Reliable discovery and usable public demo,High,Low to medium,Minify deployment CSS; measure remaining thumbnail and stylesheet cost,Presentation maintainer,partially improved; optional follow-up documented

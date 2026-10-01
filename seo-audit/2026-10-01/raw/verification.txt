@@ -1,0 +1,20 @@
+2026-10-01
+Required command: PATH=/Users/robertdevore/.local/bin:$PATH npm test
+Result: exit 0; static contracts passed; 13/13 Node tests passed;
+native build/start HTTP smoke passed; browser suite 91 passed, 2 skipped (7.0m).
+Browser projects: Chromium, patched Playwright Firefox, WebKit.
+The 2 pre-existing headless fullscreen capability skips are Firefox and WebKit.
+First-page motion, navigation, history, accessibility and geometry tests passed.
+
+Production build: npm run build:site, exit 0.
+Wrangler 4.129.0 deploy --dry-run: exit 0.
+After crawl: 14 HTML files; 11 locally eligible discovery pages;
+0 broken internal links; 0 broken media; 0 canonical-origin mismatches.
+
+Live verification: 14 HTML routes, robots/sitemap, 2 missing routes, permanent
+directory/index redirects with query preservation, 5 crawler user agents,
+19 CSS/JS/WebP/WOFF2 assets passed. Host MIME/header/cache checks passed.
+Local negative DNS cache was bypassed only for these process-scoped probes,
+using published public DNS records; TLS validation remained enabled.
+Final Worker version: ab20cc5a-5b15-4bca-a3e5-65404186e347.
+Production metadata contract retest passed after the final deployment build.
