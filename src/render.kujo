@@ -42,10 +42,14 @@ export func chart(slide) {
     }
     return html + "</svg><figcaption>" + text(field(slide, "chartLabel", "Comparison, values in percent")) + "</figcaption></figure>"
 }
+# Sprites are local; icons decorate slides and must not enter accessible names.
+func accent_icon(source) {
+    return "<svg class=\"p-accent-icon\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"><use href=\"" + source + "\"></use></svg>"
+}
 export func slide_html(deck, slide, number, prefix, thumbnail) {
     layout := read_file("layouts/" + slide["layout"] + ".html")
     # Only replace explicit slots once: content cannot introduce template instructions.
-    slots := {"title": text(slide["title"]), "copy": text(field(slide, "copy", "")), "eyebrow": text(field(slide, "eyebrow", "")), "metrics": metrics(slide), "features": features(slide), "images": images(slide, prefix, thumbnail), "chart": chart(slide), "note": text(field(slide, "note", ""))}
+    slots := {"title": text(slide["title"]), "copy": text(field(slide, "copy", "")), "eyebrow": text(field(slide, "eyebrow", "")), "metrics": metrics(slide), "features": features(slide), "images": images(slide, prefix, thumbnail), "chart": chart(slide), "note": text(field(slide, "note", "")), "iconArrowUpRight": accent_icon(prefix + "assets/sitekit/icons/tabler.svg#arrow-up-right"), "iconPlus": accent_icon(prefix + "assets/presentation/icons/tabler.svg#plus")}
     parts := split(layout, "{{")
     body := parts[0]
     i := 1

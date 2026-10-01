@@ -42,6 +42,7 @@ a:not(.sk-button) { color: inherit; }
 .p-image img { width: 100%; height: 100%; object-fit: cover; filter: var(--p-image-filter); }
 .p-canvas .sk-image img { max-inline-size: none; block-size: 100%; }
 .p-accent { position: absolute; display: grid; place-items: center; background: var(--p-accent); color: var(--p-on-accent); font: 400 6cqw/1 var(--p-font); }
+.p-accent-icon { display: block; width: 62%; height: 62%; }
 /* Composition is fixed. All lengths derive from the slide's query container. */
 .p-layout-hero .p-heading { position: absolute; inset-inline-start: 4cqw; top: 11cqw; width: 56cqw; z-index: 2; }
 .p-layout-hero h1 { font-size: 6.25cqw; }
