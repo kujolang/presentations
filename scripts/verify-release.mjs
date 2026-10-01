@@ -41,7 +41,7 @@ for(const item of read('examples/reference/assets/media-sources.json')) {
 }
 if(mediaBytes>400*1024)throw Error('Reference artwork exceeds the combined 400 KiB budget');
 for(const [copy,source] of [['vendor/motion/LICENSE.md','node_modules/motion/LICENSE.md'],['vendor/motion/LICENSE-framer-motion.md','node_modules/framer-motion/LICENSE.md']])if(!readFileSync(copy).equals(readFileSync(source)))throw Error(`License copy differs: ${copy}`);
-report.distributedLicenseFiles=['assets/licenses/Inter-OFL.txt','assets/licenses/BreeSerif-OFL.txt','.deps/site-kit/dist/LICENSE','.deps/site-kit/dist/fonts/DepartureMono-LICENSE.txt','.deps/site-kit/dist/icons/LICENSE.txt','examples/arabic/assets/OFL.txt','vendor/motion/LICENSE.md','vendor/motion/LICENSE-framer-motion.md'].map(file=>({file,sha256:hash(readFileSync(file))}));
+report.distributedLicenseFiles=['assets/icons/LICENSE.txt','examples/reference/assets/fonts/Oswald-OFL.txt','assets/licenses/Inter-OFL.txt','assets/licenses/BreeSerif-OFL.txt','.deps/site-kit/dist/LICENSE','.deps/site-kit/dist/fonts/DepartureMono-LICENSE.txt','.deps/site-kit/dist/icons/LICENSE.txt','examples/arabic/assets/OFL.txt','vendor/motion/LICENSE.md','vendor/motion/LICENSE-framer-motion.md'].map(file=>({file,sha256:hash(readFileSync(file))}));
 const audit=spawnSync('npm',['audit','--json'],{encoding:'utf8'});
 if(audit.error)throw audit.error;
 report.audit=JSON.parse(audit.stdout);

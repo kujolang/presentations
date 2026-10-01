@@ -29,6 +29,16 @@ claim exclusive rights to AI-generated images.
 
 ## Other assets
 
+The reference uses Inter for body text and Oswald 700 for slide headings. Oswald
+is self-hosted as a 32 KiB WOFF2, converted from the [Google Fonts v57 source](https://fonts.gstatic.com/s/oswald/v57/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUE.ttf).
+Its [SIL Open Font License](assets/fonts/Oswald-OFL.txt) ships with the font.
+The overview title retains SiteKit's Departure Mono typography.
+
+Decorative arrows reuse SiteKit's Tabler `arrow-up-right` symbol. The missing
+`plus` symbol is bundled in the presentation layer from the same Tabler v3.46.0
+release, with its MIT license. No icon JavaScript or remote asset requests are
+needed. See [icon sources](../../assets/icons/README.md).
+
 Inter and Bree Serif licenses remain in `assets/licenses/` at the repository
 root and ship under `assets/presentation/licenses/`. SiteKit ships Departure Mono
 and Tabler licenses. The Arabic example bundles Noto Sans Arabic with its OFL.

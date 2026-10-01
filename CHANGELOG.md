@@ -2,6 +2,9 @@
 
 ## 0.3.0 — 2026-10-01
 
+- Use self-hosted Inter body text and Oswald slide headings in the reference theme.
+- Replace decorative arrow and plus glyphs with local Tabler SVG icons.
+
 - Replace reference photographs with four original AI-generated WebP images.
 - Record prompts, hashes, dimensions, encoding, and accurate alt text.
 - Keep the four images within a combined 400 KiB release budget.
