@@ -1,35 +1,42 @@
-# Reference example provenance
+# Reference example assets
 
-The nine compositions follow the user's written reference description. No
-reference image was attached. The text and metrics are fictional demo content.
+The nine compositions follow the user's written reference description. The text
+and metrics are fictional demo content.
 
-The four earlier SSG photographs had no recorded photographer permissions and
-have been replaced. The current local photographs come from NASA's image library:
+## Generated artwork
 
-| File | NASA record | Credit |
-| --- | --- | --- |
-| city.jpg | iss040e091231 | NASA/Reid Wiseman |
-| collaboration.jpg | iss040e033340 | NASA/Reid Wiseman |
-| workshop.jpg | s134e010062 | NASA/Greg Chamitoff |
-| digital.jpg | iss040e090323 | NASA/Steve Swanson |
+Four images were created for this project with OpenAI Create Image on 2026-10-01.
+No source photographs were supplied. The city, people, and studio scenes are
+illustrative AI-generated artwork, not documentary photographs.
 
-These are informational examples of Earth observation and space technology.
-They do not imply endorsement of the fictional media company. The source records,
-download URLs, retrieval date and SHA-256 hashes are in
-[media-sources.json](assets/media-sources.json); credits ship with the deck.
-The JPEG files are unchanged downloads; CSS controls their crops.
+| File | Scene | Dimensions | Bytes |
+| --- | --- | --- | --- |
+| city.webp | Imagined city at dusk | 1536 × 1024 | 131,616 |
+| collaboration.webp | Fictional media team planning stories | 1536 × 1024 | 91,158 |
+| workshop.webp | Cinema camera in a production studio | 1536 × 1024 | 77,908 |
+| digital.webp | Audio mixing console | 1536 × 1024 | 67,594 |
 
-[NASA's media guidelines](https://www.nasa.gov/nasa-brand-center/images-and-media/)
-explain permitted reuse and exceptions. These NASA astronaut photographs have
-no third-party copyright credit in the inspected source records. NASA media is
-not covered by the repository's MIT license. Review the guidelines for any new
-use, especially endorsements, trademarks or identifiable people.
+The four files total 368,276 bytes (360 KiB). They use WebP quality 76 with metadata
+stripped. CSS crops the full-resolution files; no image library or network service
+is needed at runtime. The release check enforces a 200 KiB per-image and 400 KiB
+combined budget for this example.
+
+[Generation prompts](IMAGE_PROMPTS.md) make the art direction editable.
+[media-sources.json](assets/media-sources.json) records dimensions, encoding,
+alt text, and SHA-256 hashes. Credits ship with the deck. The generated artwork
+is supplied under the project MIT license to the extent applicable; we do not
+claim exclusive rights to AI-generated images.
+
+## Other assets
 
 Inter and Bree Serif licenses remain in `assets/licenses/` at the repository
 root and ship under `assets/presentation/licenses/`. SiteKit ships Departure Mono
 and Tabler licenses. The Arabic example bundles Noto Sans Arabic with its OFL.
 The field-notes SVG is original project artwork. Replacements remain deck-owned.
 
-Earlier Git commits still contain the unverified source photographs. Current-tree
-release archives contain the replacements. History was not rewritten; review it
-before making a formerly private repository public.
+## Earlier versions
+
+Earlier versions used photographs, first copied from SSG without recorded
+photographer permissions and then replaced with credited NASA images. v0.3.0
+ships neither set. Replacing the current files does not remove earlier Git
+objects or CI screenshots; those must be reviewed before public visibility.

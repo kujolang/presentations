@@ -3,7 +3,7 @@ import { createServer } from 'node:http';
 import { readFile, realpath, stat } from 'node:fs/promises';
 import { resolve, sep, extname } from 'node:path';
 const root=await realpath('output');
-const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.jpg':'image/jpeg','.png':'image/png','.woff2':'font/woff2','.json':'application/json'};
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.jpg':'image/jpeg','.png':'image/png','.webp':'image/webp','.woff2':'font/woff2','.json':'application/json'};
 const server=createServer(async(req,res)=>{
   try {
     if(!['GET','HEAD'].includes(req.method)) {res.writeHead(405);res.end();return;}

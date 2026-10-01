@@ -27,15 +27,15 @@
       ],
       "images": [
         {
-          "src": "city.jpg",
-          "alt": "California city lights seen from orbit",
+          "src": "city.webp",
+          "alt": "An imagined city at dusk with illuminated windows and a red facade",
           "x": 50,
-          "y": 55
+          "y": 50
         },
         {
-          "src": "collaboration.jpg",
-          "alt": "Sunrise beyond spacecraft docked to the space station",
-          "x": 40,
+          "src": "collaboration.webp",
+          "alt": "Three fictional media producers review storyboards in a daylight studio",
+          "x": 50,
           "y": 50
         }
       ],
@@ -85,10 +85,10 @@
       "copy": "More content. Less connection. The media landscape has never been louder\u2014or harder to navigate.",
       "images": [
         {
-          "src": "city.jpg",
-          "alt": "California city lights seen from orbit",
+          "src": "city.webp",
+          "alt": "An imagined city at dusk with illuminated windows and a red facade",
           "x": 50,
-          "y": 55
+          "y": 50
         }
       ],
       "features": [
@@ -116,9 +116,9 @@
       "copy": "Build with intention. We bring editorial care and creative experimentation together to make work that stays with people.",
       "images": [
         {
-          "src": "workshop.jpg",
-          "alt": "Space station structure against the starry sky and Earth horizon",
-          "x": 52,
+          "src": "workshop.webp",
+          "alt": "A cinema camera in a production studio with a creator in the background",
+          "x": 50,
           "y": 50
         }
       ],
@@ -208,9 +208,9 @@
       "copy": "A balanced model that supports independent creativity and shared, sustainable growth.",
       "images": [
         {
-          "src": "collaboration.jpg",
-          "alt": "Sunrise beyond spacecraft docked to the space station",
-          "x": 40,
+          "src": "collaboration.webp",
+          "alt": "Three fictional media producers review storyboards in a daylight studio",
+          "x": 50,
           "y": 50
         }
       ],
@@ -239,15 +239,15 @@
       "copy": "The right story, in the right format, at the right moment. Discover something that feels made for you.",
       "images": [
         {
-          "src": "workshop.jpg",
-          "alt": "Space station structure against the starry sky and Earth horizon",
-          "x": 52,
+          "src": "workshop.webp",
+          "alt": "A cinema camera in a production studio with a creator in the background",
+          "x": 50,
           "y": 50
         },
         {
-          "src": "digital.jpg",
-          "alt": "Connected patterns of American city lights photographed from orbit",
-          "x": 45,
+          "src": "digital.webp",
+          "alt": "An audio mixing console with faders and warm indicator lights",
+          "x": 50,
           "y": 50
         }
       ],
@@ -278,15 +278,15 @@
       "copy": "Watch. Listen. Read. Participate. Different ways to experience the stories that bring us together.",
       "images": [
         {
-          "src": "city.jpg",
-          "alt": "California city lights seen from orbit",
+          "src": "city.webp",
+          "alt": "An imagined city at dusk with illuminated windows and a red facade",
           "x": 50,
-          "y": 55
+          "y": 50
         },
         {
-          "src": "collaboration.jpg",
-          "alt": "Sunrise beyond spacecraft docked to the space station",
-          "x": 40,
+          "src": "collaboration.webp",
+          "alt": "Three fictional media producers review storyboards in a daylight studio",
+          "x": 50,
           "y": 50
         }
       ],

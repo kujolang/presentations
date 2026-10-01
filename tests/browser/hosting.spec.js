@@ -9,7 +9,7 @@ test('static hosting supports a mounted deck, MIME types, revalidation and CSP',
   await expect(page).toHaveURL(/\/mounted\/reference\/2\/$/);
   await page.reload({waitUntil:'domcontentloaded'});
   await expect(page.locator('h1')).toBeVisible();
-  for(const [path,type] of [['1/','text/html'],['assets/presentation/viewer.js','text/javascript'],['assets/presentation/presentation.css','text/css'],['assets/presentation/motion/motion-mini.js','text/javascript']]) {
+  for(const [path,type] of [['1/','text/html'],['assets/deck/city.webp','image/webp'],['assets/presentation/viewer.js','text/javascript'],['assets/presentation/presentation.css','text/css'],['assets/presentation/motion/motion-mini.js','text/javascript']]) {
     const response=await request.get(`/mounted/reference/${path}`);
     expect(response.status()).toBe(200);
     expect(response.headers()['content-type']).toContain(type);
