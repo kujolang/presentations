@@ -149,4 +149,5 @@
   reduced.addEventListener('change', () => { finishAnimation(); enhance(); });
   document.addEventListener('fullscreenchange', enhance);
   enhance();
+  document.documentElement.dataset.viewerReady = 'true';
 })();
