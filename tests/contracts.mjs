@@ -23,6 +23,16 @@ assert(!existsSync('output/field-notes/assets/presentation/motion/motion-mini.js
 const tmp='.build/contract-fixture'; mkdirSync(tmp,{recursive:true}); cpSync('examples/reference/assets',`${tmp}/assets`,{recursive:true});
 const base=JSON.parse(read('examples/reference/deck.json'));
 const cases=[
+  ['unknown deck field',d=>d.typo=true,false],
+  ['unknown slide field',d=>d.slides[0].titel='Typo',false],
+  ['unknown motion field',d=>d.transitions.duraton=1,false],
+  ['unknown image field',d=>d.slides[0].images[0].position=1,false],
+  ['unknown metric field',d=>d.slides[0].metrics[0].unit='items',false],
+  ['unknown feature field',d=>d.slides[1].features[0].text='Typo',false],
+  ['unknown chart field',d=>d.slides[4].chart[0].percent=40,false],
+  ['invalid inverse',d=>d.slides[0].inverse='yes',false],
+  ['language tag',d=>d.lang='pt-BR',true],
+  ['invalid language',d=>d.lang='en" onload="bad',false],
   ['invalid motion intensity',d=>d.transitions={intensity:4},false],
   ['invalid slide motion',d=>d.slides[0].transitions={effect:'spin'},false],
   ['invalid stagger',d=>d.transitions={stagger:-1},false],

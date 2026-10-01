@@ -92,6 +92,8 @@ export func reading(deck) {
         for point in field(slide, "chart", []) { html = html + "<p>" + text(point["label"]) + ": " + to_string(point["value"]) + "%</p>" }
         html = html + "<p>" + text(field(slide, "chartLabel", "")) + "</p>"
         for img in field(slide, "images", []) { html = html + "<p>Image: " + text(img["alt"]) + "</p>" }
+        if has_key(slide, "eyebrow") { html = html + "<p>" + text(slide["eyebrow"]) + "</p>" }
+        if has_key(slide, "note") { html = html + "<p>" + text(slide["note"]) + "</p>" }
         html = html + "</section>"
         i = i + 1
     }

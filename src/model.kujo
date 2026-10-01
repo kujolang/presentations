@@ -12,6 +12,12 @@ export func need_text(data, key, maximum) {
     if type(value) != "string" { fail(key + " must be text") }
     if len(trim(value)) == 0 || len(value) > maximum { fail(key + " is empty or exceeds " + to_string(maximum) + " characters") }
 }
+export func known_fields(data, allowed, context) {
+    if type(data) != "dict" { fail(context + " must be an object") }
+    for key in keys(data) {
+        if !contains(allowed, key) { fail("Unknown " + context + " field: " + key) }
+    }
+}
 export func safe_name(value) {
     return type(value) == "string" && len(value) > 0 && regex_replace(value, "^[a-z0-9][a-z0-9-]*$", "") == ""
 }
@@ -21,7 +27,7 @@ export func safe_asset(value) {
     return regex_replace(value, "^[a-zA-Z0-9_/-]+\\.[a-zA-Z0-9]+$", "") == ""
 }
 export func validate_motion(motion) {
-    if type(motion) != "dict" { fail("transitions must be an object") }
+    known_fields(motion, ["enabled", "effect", "duration", "easing", "intensity", "stagger"], "transitions")
     if type(field(motion, "enabled", false)) != "bool" { fail("transitions.enabled must be boolean") }
     if !contains(["fade", "slide", "zoom", "editorial", "focus", "kinetic"], field(motion, "effect", "fade")) { fail("Unknown transitions.effect") }
     duration := field(motion, "duration", 0.35)
@@ -36,7 +42,9 @@ export func validate_motion(motion) {
     }
 }
 export func validate(deck, deck_dir) {
-    if type(deck) != "dict" { fail("Deck must be an object") }
+    known_fields(deck, ["id", "title", "brand", "description", "footer", "lang", "slides", "transitions"], "deck")
+    language := field(deck, "lang", "en")
+    if type(language) != "string" || regex_replace(language, "^[a-zA-Z]{2,8}(-[a-zA-Z0-9]{1,8})*$", "") != "" || len(language) > 63 { fail("lang must be a language tag such as en, fr or pt-BR") }
     need_text(deck, "id", 60)
     if !safe_name(deck["id"]) { fail("id must be a lowercase slug") }
     need_text(deck, "title", 160)
@@ -46,14 +54,17 @@ export func validate(deck, deck_dir) {
     if has_key(deck, "footer") { need_text(deck, "footer", 100) }
     if !path_is_file(deck_dir + "/assets/theme.css") { fail("Deck assets/theme.css is required") }
     if has_key(deck, "transitions") { validate_motion(deck["transitions"]) }
+    contracts := {}
     for slide in deck["slides"] {
-        if type(slide) != "dict" { fail("Each slide must be an object") }
+        known_fields(slide, ["layout", "title", "copy", "eyebrow", "note", "inverse", "images", "features", "metrics", "chart", "chartLabel", "transitions"], "slide")
+        if type(field(slide, "inverse", false)) != "bool" { fail("inverse must be boolean") }
         if has_key(slide, "transitions") { validate_motion(slide["transitions"]) }
         need_text(slide, "title", 110)
         need_text(slide, "layout", 60)
         if !safe_name(slide["layout"]) || !path_is_file("layouts/" + slide["layout"] + ".html") { fail("Unknown layout: " + to_string(slide["layout"])) }
         if !path_is_file("layouts/" + slide["layout"] + ".json") { fail("Layout requires a .json capacity contract") }
-        contract := parse_json(read_file("layouts/" + slide["layout"] + ".json"))
+        if has_key(contracts, slide["layout"]) == 0 { contracts[slide["layout"]] = parse_json(read_file("layouts/" + slide["layout"] + ".json")) }
+        contract := contracts[slide["layout"]]
         need_text(slide, "title", contract["titleMax"])
         if has_key(slide, "copy") { need_text(slide, "copy", contract["copyMax"]) }
         for key in ["eyebrow", "copy", "note"] {
@@ -65,6 +76,7 @@ export func validate(deck, deck_dir) {
         }
         if has_key(slide, "chartLabel") { need_text(slide, "chartLabel", 180) }
         for img in field(slide, "images", []) {
+            known_fields(img, ["src", "alt", "x", "y"], "image")
             need_text(img, "src", 180)
             need_text(img, "alt", 300)
             if !safe_asset(img["src"]) || !path_is_file(deck_dir + "/assets/" + img["src"]) { fail("Missing or unsafe local image: " + img["src"]) }
@@ -73,9 +85,10 @@ export func validate(deck, deck_dir) {
                 if (type(pos) != "int" && type(pos) != "float") || pos < 0 || pos > 100 { fail("Image position must be 0–100") }
             }
         }
-        for feature in field(slide, "features", []) { need_text(feature, "title", 70); need_text(feature, "copy", contract["featureCopyMax"]) }
-        for metric in field(slide, "metrics", []) { need_text(metric, "value", 16); need_text(metric, "label", 100) }
+        for feature in field(slide, "features", []) { known_fields(feature, ["title", "copy"], "feature"); need_text(feature, "title", 70); need_text(feature, "copy", contract["featureCopyMax"]) }
+        for metric in field(slide, "metrics", []) { known_fields(metric, ["value", "label"], "metric"); need_text(metric, "value", 16); need_text(metric, "label", 100) }
         for point in field(slide, "chart", []) {
+            known_fields(point, ["label", "value"], "chart point")
             need_text(point, "label", 40)
             if has_key(point, "value") == 0 || (type(point["value"]) != "int" && type(point["value"]) != "float") || point["value"] < 0 || point["value"] > 100 { fail("Chart values must be numbers from 0 to 100") }
         }

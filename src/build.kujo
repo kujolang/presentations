@@ -1,0 +1,108 @@
+from src.model import fail, validate, text, field
+from src.render import overview, viewer, reading
+
+func option(argv, name, fallback) {
+    i := 0
+    while i < len(argv) {
+        if argv[i] == name {
+            if i + 1 >= len(argv) { fail("Missing value for " + name) }
+            return argv[i + 1]
+        }
+        i = i + 1
+    }
+    return fallback
+}
+func run(command, cwd) {
+    result := spawn_process(command, {"cwd": cwd, "inherit_env": true, "timeout_ms": 600000, "max_output_bytes": 2097152})
+    if !result.success { fail(result.stdout + result.stderr) }
+    return result.stdout
+}
+func copy_tree(source, target) {
+    create_dir(target)
+    for entry in list_dir(source) {
+        from_path := source + "/" + entry
+        to_path := target + "/" + entry
+        if path_is_dir(from_path) { copy_tree(from_path, to_path) } else { copy_file(from_path, to_path) }
+    }
+}
+func page(stage, slug, title, html, deck, site_url) {
+    # HTML stays in generated SSG templates, not Markdown raw-HTML parsing.
+    write_file(stage + "/content/pages/" + slug + ".md", "---\ntitle: " + to_json(replace(replace(title, "\n", " "), "\r", " ")) + "\ntemplate: " + slug + "\n---\n")
+    write_file(stage + "/templates/page-" + slug + ".html", document_html(deck, title, html, "../", site_url + "/" + slug + "/"))
+}
+func document_html(deck, title, content, prefix, url) {
+    canonical := ""
+    if len(url) > 0 { canonical = "<link rel=\"canonical\" href=\"" + text(url) + "\">" }
+    return "<!doctype html><html lang=\"" + text(field(deck, "lang", "en")) + "\" data-theme=\"kujo-light\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>" + text(title) + "</title><meta name=\"description\" content=\"" + text(deck["description"]) + "\">" + canonical + "<link rel=\"stylesheet\" href=\"" + prefix + "assets/sitekit/sitekit.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/presentation/presentation.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/deck/theme.css\"></head><body><a class=\"p-skip\" href=\"#main-content\">Skip to content</a>" + content + "</body></html>"
+}
+export func main(argv) {
+    arg_index := 0
+    seen_options := []
+    while arg_index < len(argv) {
+        arg := argv[arg_index]
+        if contains(seen_options, arg) { fail("Repeated option: " + arg) }
+        seen_options = push(seen_options, arg)
+        if arg == "--help" || arg == "--check" { arg_index = arg_index + 1; continue }
+        if !contains(["--deck", "--ssg", "--sitekit", "--site-url"], arg) { fail("Unknown option: " + arg) }
+        if arg_index + 1 >= len(argv) || starts_with(argv[arg_index + 1], "--") { fail("Missing value for " + arg) }
+        arg_index = arg_index + 2
+    }
+    if contains(argv, "--help") {
+        print("kujo run build.kujo -- [--deck examples/reference] [--ssg ../ssg] [--sitekit ../site-kit/dist] [--site-url https://example.com] [--check]")
+        exit(0)
+    }
+    root := trim(run(["pwd"], "."))
+    deck_dir := option(argv, "--deck", "examples/reference")
+    deck := parse_json(read_file(deck_dir + "/deck.json"))
+    validate(deck, deck_dir)
+    if contains(argv, "--check") { print("Valid deck: " + deck["id"]); exit(0) }
+    ssg_default := ".deps/ssg"
+    sitekit_default := ".deps/site-kit/dist"
+    if !path_is_file(ssg_default + "/build.kujo") { ssg_default = "../ssg" }
+    if !path_is_file(sitekit_default + "/sitekit.css") { sitekit_default = "../site-kit/dist" }
+    ssg := option(argv, "--ssg", ssg_default)
+    sitekit := option(argv, "--sitekit", sitekit_default)
+    if !starts_with(ssg, "/") { ssg = root + "/" + ssg }
+    if !path_is_file(ssg + "/build.kujo") || !path_is_file(sitekit + "/sitekit.css") { fail("Provide a Kujo SSG checkout and built SiteKit dist") }
+    site_url := option(argv, "--site-url", "https://example.com")
+    if regex_replace(site_url, "^https?://[^\\s/?#]+[^\\s?#]*$", "") != "" { fail("--site-url must be an HTTP(S) URL without query or fragment") }
+    site_url = regex_replace(site_url, "/+$", "")
+    stage := root + "/.build/" + deck["id"]
+    # Only package-owned stage/output names derived from a validated slug are rebuilt.
+    if path_exists(stage) { run(["rm", "-rf", "--", stage], root) }
+    create_dir(stage + "/content/pages")
+    create_dir(stage + "/templates")
+    copy_tree("assets", stage + "/assets/presentation")
+    if field(field(deck, "transitions", {}), "enabled", false) {
+        motion_dir := stage + "/assets/presentation/motion"
+        create_dir(motion_dir)
+        for name in ["motion-mini.js", "LICENSE.md", "LICENSE-framer-motion.md", "README.md"] {
+            copy_file("vendor/motion/" + name, motion_dir + "/" + name)
+        }
+        hybrid := false
+        for slide in deck["slides"] {
+            override := field(slide, "transitions", {})
+            effect := field(override, "effect", field(deck["transitions"], "effect", "fade"))
+            if field(override, "enabled", true) && contains(["editorial", "focus", "kinetic"], effect) { hybrid = true }
+        }
+        if hybrid { copy_file("vendor/motion/motion-hybrid.js", motion_dir + "/motion-hybrid.js") }
+    }
+    copy_tree(sitekit, stage + "/assets/sitekit")
+    copy_tree(deck_dir + "/assets", stage + "/assets/deck")
+    # Offline SSG font fallback files; the presentation theme chooses its own typography.
+    create_dir(stage + "/assets/fonts")
+    for font in ["bree-serif-latin-400.woff2", "inter-latin-400.woff2", "inter-latin-700.woff2"] {
+        copy_file(ssg + "/assets/fonts/" + font, stage + "/assets/fonts/" + font)
+    }
+    # Content is a complete escaped document; SSG still owns routes and assets.
+    write_file(stage + "/templates/layout.html", "{{content}}")
+    write_file(stage + "/templates/page-home.html", document_html(deck, deck["title"], overview(deck), "./", site_url + "/"))
+    write_file(stage + "/templates/page-blog.html", document_html(deck, deck["title"], overview(deck), "./", site_url + "/"))
+    write_file(stage + "/templates/404.html", document_html(deck, "Slide not found", "<main id=\"main-content\" class=\"p-reading sk-container\"><h1>Slide not found</h1><p>Open the deck overview to choose a slide.</p><a href=\"./\">Overview</a></main>", "./", ""))
+    i := 1
+    for slide in deck["slides"] { page(stage, to_string(i), slide["title"], viewer(deck, slide, i), deck, site_url); i = i + 1 }
+    page(stage, "reading", deck["title"] + " — Read text", reading(deck), deck, site_url)
+    write_file(stage + "/kujo-ssg.json", to_json({"site_url": site_url, "site_title": deck["title"], "site_tagline": deck["description"], "content": "content", "templates": "templates", "assets": "assets", "output": root + "/output/" + deck["id"], "fonts": ["Bree Serif", "Inter"], "webmcp": false, "minify": false, "no_aux": true}))
+    print(run(["kujo", "run", ssg + "/build.kujo", "--", "--no-aux", "--no-aliases", "--no-webmcp"], stage))
+    print("Presentation built: output/" + deck["id"] + "/index.html")
+}
