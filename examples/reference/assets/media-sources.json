@@ -1,0 +1,42 @@
+[
+  {
+    "file": "city.jpg",
+    "source": "https://images.nasa.gov/details/iss040e091231",
+    "download": "https://images-assets.nasa.gov/image/iss040e091231/iss040e091231~medium.jpg",
+    "credit": "NASA/Reid Wiseman",
+    "alt": "California city lights seen from orbit",
+    "sha256": "9764e6143ef54cb8b4b31219492074c33e68d05e2ae534c6798018fb5c013f0a",
+    "retrieved": "2026-10-01",
+    "rights": "NASA media usage guidelines; NASA astronaut photography, no third-party copyright credit in source record"
+  },
+  {
+    "file": "collaboration.jpg",
+    "source": "https://images.nasa.gov/details/iss040e033340",
+    "download": "https://images-assets.nasa.gov/image/iss040e033340/iss040e033340~medium.jpg",
+    "credit": "NASA/Reid Wiseman",
+    "alt": "Sunrise beyond spacecraft docked to the space station",
+    "sha256": "7e88e14a147d55ff7350b4f29f5eea5ea4e543fc8234c8db224fe508b55b9163",
+    "retrieved": "2026-10-01",
+    "rights": "NASA media usage guidelines; NASA astronaut photography, no third-party copyright credit in source record"
+  },
+  {
+    "file": "workshop.jpg",
+    "source": "https://images.nasa.gov/details/s134e010062",
+    "download": "https://images-assets.nasa.gov/image/s134e010062/s134e010062~medium.jpg",
+    "credit": "NASA/Greg Chamitoff",
+    "alt": "Space station structure against the starry sky and Earth horizon",
+    "sha256": "5259bef1788c2fbaf2b1079ee36ac8ceba040587343bab5fcba36b5925a9daa7",
+    "retrieved": "2026-10-01",
+    "rights": "NASA media usage guidelines; NASA astronaut photography, no third-party copyright credit in source record"
+  },
+  {
+    "file": "digital.jpg",
+    "source": "https://images.nasa.gov/details/iss040e090323",
+    "download": "https://images-assets.nasa.gov/image/iss040e090323/iss040e090323~medium.jpg",
+    "credit": "NASA/Steve Swanson",
+    "alt": "Connected patterns of American city lights photographed from orbit",
+    "sha256": "ebe6a0497ede8216ddcf08406af5d8ea2676634559d74ee743878dc5d84c0296",
+    "retrieved": "2026-10-01",
+    "rights": "NASA media usage guidelines; NASA astronaut photography, no third-party copyright credit in source record"
+  }
+]

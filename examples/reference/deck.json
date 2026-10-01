@@ -28,13 +28,13 @@
       "images": [
         {
           "src": "city.jpg",
-          "alt": "People and taxis moving along a dense city avenue",
+          "alt": "California city lights seen from orbit",
           "x": 50,
           "y": 55
         },
         {
           "src": "collaboration.jpg",
-          "alt": "An editorial team discussing ideas around a shared table",
+          "alt": "Sunrise beyond spacecraft docked to the space station",
           "x": 40,
           "y": 50
         }
@@ -86,7 +86,7 @@
       "images": [
         {
           "src": "city.jpg",
-          "alt": "People and taxis moving along a dense city avenue",
+          "alt": "California city lights seen from orbit",
           "x": 50,
           "y": 55
         }
@@ -117,7 +117,7 @@
       "images": [
         {
           "src": "workshop.jpg",
-          "alt": "A workshop leader organizing ideas with her team",
+          "alt": "Space station structure against the starry sky and Earth horizon",
           "x": 52,
           "y": 50
         }
@@ -209,7 +209,7 @@
       "images": [
         {
           "src": "collaboration.jpg",
-          "alt": "An editorial team discussing ideas around a shared table",
+          "alt": "Sunrise beyond spacecraft docked to the space station",
           "x": 40,
           "y": 50
         }
@@ -240,13 +240,13 @@
       "images": [
         {
           "src": "workshop.jpg",
-          "alt": "A workshop leader organizing ideas with her team",
+          "alt": "Space station structure against the starry sky and Earth horizon",
           "x": 52,
           "y": 50
         },
         {
           "src": "digital.jpg",
-          "alt": "Web markup on a computer screen",
+          "alt": "Connected patterns of American city lights photographed from orbit",
           "x": 45,
           "y": 50
         }
@@ -279,13 +279,13 @@
       "images": [
         {
           "src": "city.jpg",
-          "alt": "People and taxis moving along a dense city avenue",
+          "alt": "California city lights seen from orbit",
           "x": 50,
           "y": 55
         },
         {
           "src": "collaboration.jpg",
-          "alt": "An editorial team discussing ideas around a shared table",
+          "alt": "Sunrise beyond spacecraft docked to the space station",
           "x": 40,
           "y": 50
         }
