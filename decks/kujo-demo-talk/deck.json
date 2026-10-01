@@ -1,0 +1,38 @@
+{
+  "id": "kujo-demo-talk",
+  "title": "The Shape of an Idea",
+  "brand": "The Shape of an Idea",
+  "description": "A fictional live-talk deck created to demonstrate Kujo Presentations.",
+  "footer": "The Shape of an Idea / Illustrative live talk",
+  "transitions": { "enabled": true, "effect": "kinetic", "duration": 0.9, "easing": "easeOut", "intensity": 0.65, "stagger": 0.05 },
+  "slides": [
+    { "layout": "statement", "title": "The Shape\nof an Idea", "copy": "How constraints turn possibility into form.", "eyebrow": "A live talk", "inverse": true },
+    { "layout": "statement", "title": "What if the blank page is not empty?", "copy": "Every project begins with boundaries: time, tools, audience, and intent." },
+    { "layout": "index", "title": "Three moves", "copy": "A simple way to make ideas concrete enough to test.", "features": [
+      { "title": "Frame", "copy": "Choose the question worth answering." },
+      { "title": "Shape", "copy": "Use constraints to reveal a direction." },
+      { "title": "Test", "copy": "Put the idea where people can respond." }
+    ], "inverse": true },
+    { "layout": "problem", "title": "More options can mean less movement", "copy": "When every direction remains possible, no direction becomes real.", "features": [
+      { "title": "Expand", "copy": "Generate enough range to see the field." },
+      { "title": "Choose", "copy": "Name what the work will refuse." },
+      { "title": "Commit", "copy": "Give one direction enough time to speak." }
+    ] },
+    { "layout": "editorial", "title": "Constraints are a creative material", "copy": "They give an idea edges, tension, and a recognizable point of view.", "features": [
+      { "title": "Time", "copy": "Decide what must be true first." },
+      { "title": "Form", "copy": "Let the medium influence the answer." },
+      { "title": "Audience", "copy": "Design for a specific moment of understanding." }
+    ], "inverse": true },
+    { "layout": "market", "title": "A useful rhythm", "copy": "Illustrative percentages show how a talk can carry a visual progression.", "metrics": [{ "value": "100%", "label": "attention on the next useful question" }], "chartLabel": "Illustrative creative cycle", "chart": [
+      { "label": "Frame", "value": 25 }, { "label": "Shape", "value": 55 }, { "label": "Test", "value": 80 }, { "label": "Learn", "value": 100 }
+    ] },
+    { "layout": "value", "title": "Try this on Monday", "copy": "Turn one vague project into a sequence of answerable questions.", "features": [
+      { "title": "Write", "copy": "State the decision in one sentence." },
+      { "title": "Limit", "copy": "Choose one constraint on purpose." },
+      { "title": "Make", "copy": "Build the smallest visible version." },
+      { "title": "Listen", "copy": "Use the response to shape the next move." }
+    ], "inverse": true },
+    { "layout": "statement", "title": "Useful ideas\nhave a shape.", "copy": "One thought to carry into the discussion." },
+    { "layout": "statement", "title": "Questions?", "copy": "Thank you for making the idea visible.", "eyebrow": "Discussion", "inverse": true }
+  ]
+}

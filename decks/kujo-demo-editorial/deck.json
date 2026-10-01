@@ -1,0 +1,37 @@
+{
+  "id": "kujo-demo-editorial",
+  "title": "Night Shift",
+  "brand": "Night Shift Journal",
+  "description": "A fictional editorial story created to demonstrate Kujo Presentations.",
+  "footer": "Night Shift Journal / Illustrative editorial demo",
+  "transitions": { "enabled": true, "effect": "editorial", "duration": 1, "easing": "easeInOut", "intensity": 0.75, "stagger": 0.06 },
+  "slides": [
+    { "layout": "statement", "title": "Night Shift", "copy": "Notes from the city after the last train.", "eyebrow": "An editorial story", "inverse": true },
+    { "layout": "statement", "title": "At midnight, the city changes authors.", "copy": "The daytime map stays put. The meaning of each place begins to move." },
+    { "layout": "index", "title": "Three hours, three moods", "copy": "A fictional field journal organized by atmosphere instead of address.", "features": [
+      { "title": "12:10", "copy": "The bright edge of closing time." },
+      { "title": "01:40", "copy": "Work continues behind unmarked doors." },
+      { "title": "03:05", "copy": "Quiet becomes the dominant architecture." }
+    ], "inverse": true },
+    { "layout": "editorial", "title": "Light becomes a landmark", "copy": "A laundromat, a loading dock, a diner window: small beacons redraw the block.", "features": [
+      { "title": "Color", "copy": "Cold streetlight meets warm interiors." },
+      { "title": "Distance", "copy": "Empty space stretches familiar routes." },
+      { "title": "Sound", "copy": "A single machine can fill the whole street." }
+    ] },
+    { "layout": "curation", "title": "Fragments from the route", "copy": "Editorial pacing gives small observations room to accumulate.", "metrics": [{ "value": "03:17", "label": "a fictional moment in the journal" }], "features": [
+      { "title": "Corner store", "copy": "One aisle lit; the rest already dreaming." },
+      { "title": "Bus shelter", "copy": "A transparent room facing an empty avenue." }
+    ], "inverse": true },
+    { "layout": "market", "title": "The city grows quiet in layers", "copy": "Illustrative values show an editorial chart used as visual rhythm, not research.", "metrics": [{ "value": "Dawn", "label": "the route ends where morning begins" }], "chartLabel": "Illustrative ambient activity", "chart": [
+      { "label": "Midnight", "value": 85 }, { "label": "One", "value": 62 }, { "label": "Two", "value": 38 }, { "label": "Three", "value": 18 }, { "label": "Dawn", "value": 44 }
+    ] },
+    { "layout": "value", "title": "What the night reveals", "copy": "A city is also the people and systems that keep it moving while most of us sleep.", "features": [
+      { "title": "Care", "copy": "Invisible routines hold public life together." },
+      { "title": "Labor", "copy": "Every quiet block contains work in progress." },
+      { "title": "Memory", "copy": "Places feel different when the crowd leaves." },
+      { "title": "Return", "copy": "Morning resets the scene, not the story." }
+    ], "inverse": true },
+    { "layout": "statement", "title": "The city never disappears.\nIt changes pace.", "copy": "An editorial close with room to linger." },
+    { "layout": "statement", "title": "Night Shift Journal", "copy": "A custom editorial demonstration made with Kujo Presentations.", "eyebrow": "End of route", "inverse": true }
+  ]
+}

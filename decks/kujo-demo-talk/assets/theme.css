@@ -1,0 +1,2 @@
+:root { --p-background: #f2ecff; --p-foreground: #24133f; --p-muted: #493465; --p-border: #9f88bf; --p-accent: #7447ff; --p-on-accent: #ffffff; --p-inverse: #24133f; --p-on-inverse: #f2ecff; --p-viewer-background: #ddd0f4; --p-font: Arial, sans-serif; --p-display: Georgia, serif; --p-heading-weight: 400; --p-letter-spacing: -.045em; }
+.p-canvas::after { background: radial-gradient(circle at 86% 14%, color-mix(in srgb, var(--p-accent) 28%, transparent) 0 9cqw, transparent 9.2cqw); content: ""; inset: 0; pointer-events: none; position: absolute; }

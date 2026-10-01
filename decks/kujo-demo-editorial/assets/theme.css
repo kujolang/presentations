@@ -1,0 +1,3 @@
+:root { --p-background: #eefc5b; --p-foreground: #101010; --p-muted: #3b3f08; --p-border: #7b811b; --p-accent: #ff3c8f; --p-on-accent: #101010; --p-inverse: #101010; --p-on-inverse: #eefc5b; --p-viewer-background: #dfe8a0; --p-font: Arial, sans-serif; --p-display: Georgia, serif; --p-heading-weight: 400; --p-letter-spacing: -.055em; --p-title-case: none; }
+.p-canvas { box-shadow: inset 0 0 0 .75cqw var(--p-accent); }
+.p-canvas::after { background: repeating-linear-gradient(90deg, transparent 0 7cqw, color-mix(in srgb, var(--p-accent) 10%, transparent) 7cqw 7.2cqw); content: ""; inset: 0; pointer-events: none; position: absolute; }

@@ -1,0 +1,48 @@
+{
+  "id": "kujo-demo-investor",
+  "title": "Signal Foundry",
+  "brand": "Signal Foundry",
+  "description": "A fictional investor narrative created to demonstrate Kujo Presentations.",
+  "footer": "Signal Foundry / Illustrative investor demo",
+  "transitions": { "enabled": true, "effect": "focus", "duration": 0.8, "easing": "easeOut", "intensity": 0.7, "stagger": 0.04 },
+  "slides": [
+    { "layout": "statement", "title": "Signal Foundry", "copy": "Turn scattered research into decisions teams can trust.", "eyebrow": "Investor presentation", "inverse": true },
+    { "layout": "problem", "title": "The signal is buried", "copy": "Research arrives across too many tools, formats, and conversations.", "features": [
+      { "title": "Fragmented", "copy": "Evidence lives far from the decisions it should inform." },
+      { "title": "Unclear", "copy": "Context disappears as findings move between teams." },
+      { "title": "Slow", "copy": "Every new question restarts the search." }
+    ] },
+    { "layout": "editorial", "title": "One living evidence layer", "copy": "Signal Foundry connects sources, themes, and decisions in a shared workspace.", "features": [
+      { "title": "Collect", "copy": "Bring research into one consistent structure." },
+      { "title": "Connect", "copy": "Trace every insight back to its source." },
+      { "title": "Decide", "copy": "Move from evidence to action without losing context." }
+    ], "inverse": true },
+    { "layout": "index", "title": "A focused first market", "copy": "Built for research-heavy product teams that need a clearer operating rhythm.", "features": [
+      { "title": "Product research", "copy": "Continuous discovery and synthesis." },
+      { "title": "Design teams", "copy": "Shared evidence behind creative decisions." },
+      { "title": "Strategy groups", "copy": "A durable record of why priorities changed." }
+    ] },
+    { "layout": "hero", "title": "Designed for momentum", "copy": "A demonstration of how an investor story can combine hierarchy, metrics, and contrast.", "metrics": [
+      { "value": "01", "label": "shared evidence layer" },
+      { "value": "03", "label": "connected workflows" },
+      { "value": "∞", "label": "questions worth exploring" }
+    ], "inverse": true },
+    { "layout": "business", "title": "Simple by design", "copy": "A fictional subscription model shown only to demonstrate the business layout.", "features": [
+      { "title": "Workspace", "copy": "A home for sources, themes, and decisions." },
+      { "title": "Teams", "copy": "Collaboration and review across disciplines." },
+      { "title": "Enterprise", "copy": "Governance for complex organizations." }
+    ] },
+    { "layout": "value", "title": "Clarity compounds", "copy": "The product becomes more useful as the evidence record grows.", "features": [
+      { "title": "Traceable", "copy": "Every conclusion keeps its source." },
+      { "title": "Reusable", "copy": "Past research answers new questions." },
+      { "title": "Shared", "copy": "Teams work from the same context." },
+      { "title": "Durable", "copy": "Decisions remain understandable later." }
+    ], "inverse": true },
+    { "layout": "index", "title": "A team built around the problem", "copy": "Fictional roles keep the demo grounded without presenting real credentials.", "features": [
+      { "title": "Product", "copy": "Turns research practice into a usable system." },
+      { "title": "Engineering", "copy": "Builds the evidence graph and collaboration layer." },
+      { "title": "Research", "copy": "Keeps the workflow honest and human." }
+    ] },
+    { "layout": "statement", "title": "Find the signal.\nKeep the context.", "copy": "A complete investor narrative, authored for the web.", "eyebrow": "The next chapter", "inverse": true }
+  ]
+}
