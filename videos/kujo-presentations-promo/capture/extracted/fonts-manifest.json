@@ -1,0 +1,107 @@
+{
+  "files": [
+    {
+      "file": "DepartureMono-Regular.woff",
+      "family": "Departure Mono",
+      "rawFamily": "Departure Mono",
+      "subfamily": "Regular",
+      "postscript": "DepartureMono-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "DepartureMono-Regular.woff2",
+      "family": "Departure Mono",
+      "rawFamily": "Departure Mono",
+      "subfamily": "Regular",
+      "postscript": "DepartureMono-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "inter-latin-400.woff2",
+      "family": "Inter",
+      "rawFamily": "Inter",
+      "subfamily": "Regular",
+      "postscript": "Inter-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "inter-latin-700.woff2",
+      "family": "Inter",
+      "rawFamily": "Inter",
+      "subfamily": "Bold",
+      "postscript": "Inter-Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "oswald-700.woff2",
+      "family": "Oswald",
+      "rawFamily": "Oswald",
+      "subfamily": "Bold",
+      "postscript": "Oswald-Bold",
+      "weight": 700,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    }
+  ],
+  "families": [
+    {
+      "family": "Departure Mono",
+      "weights": [
+        400
+      ],
+      "variable": false,
+      "fileCount": 2,
+      "files": [
+        "DepartureMono-Regular.woff",
+        "DepartureMono-Regular.woff2"
+      ]
+    },
+    {
+      "family": "Inter",
+      "weights": [
+        400,
+        700
+      ],
+      "variable": false,
+      "fileCount": 2,
+      "files": [
+        "inter-latin-400.woff2",
+        "inter-latin-700.woff2"
+      ]
+    },
+    {
+      "family": "Oswald",
+      "weights": [
+        700
+      ],
+      "variable": false,
+      "fileCount": 1,
+      "files": [
+        "oswald-700.woff2"
+      ]
+    }
+  ],
+  "unidentified": [],
+  "meta": {
+    "generatedAt": "2026-10-01T17:40:38.500Z",
+    "tool": "fontkit"
+  }
+}

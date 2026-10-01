@@ -1,0 +1,122 @@
+[
+  {
+    "text": "Koojo",
+    "start": 0.06,
+    "end": 0.32,
+    "id": "w0"
+  },
+  {
+    "text": "presentations",
+    "start": 0.32,
+    "end": 1.12,
+    "id": "w1"
+  },
+  {
+    "text": "turns",
+    "start": 1.18,
+    "end": 1.46,
+    "id": "w2"
+  },
+  {
+    "text": "authored",
+    "start": 1.56,
+    "end": 2,
+    "id": "w3"
+  },
+  {
+    "text": "content",
+    "start": 2,
+    "end": 2.48,
+    "id": "w4"
+  },
+  {
+    "text": "into",
+    "start": 2.48,
+    "end": 2.67,
+    "id": "w5"
+  },
+  {
+    "text": "polished,",
+    "start": 2.73,
+    "end": 3.55,
+    "id": "w6"
+  },
+  {
+    "text": "browser",
+    "start": 3.55,
+    "end": 3.96,
+    "id": "w7"
+  },
+  {
+    "text": "native",
+    "start": 3.96,
+    "end": 4.23,
+    "id": "w8"
+  },
+  {
+    "text": "slides,",
+    "start": 4.23,
+    "end": 5.04,
+    "id": "w9"
+  },
+  {
+    "text": "with",
+    "start": 5.11,
+    "end": 5.14,
+    "id": "w10"
+  },
+  {
+    "text": "motion,",
+    "start": 5.14,
+    "end": 5.98,
+    "id": "w11"
+  },
+  {
+    "text": "navigation,",
+    "start": 6.05,
+    "end": 6.8,
+    "id": "w12"
+  },
+  {
+    "text": "and",
+    "start": 6.8,
+    "end": 7,
+    "id": "w13"
+  },
+  {
+    "text": "overview,",
+    "start": 7,
+    "end": 7.68,
+    "id": "w14"
+  },
+  {
+    "text": "and",
+    "start": 7.68,
+    "end": 7.87,
+    "id": "w15"
+  },
+  {
+    "text": "a",
+    "start": 7.87,
+    "end": 7.88,
+    "id": "w16"
+  },
+  {
+    "text": "readable",
+    "start": 7.95,
+    "end": 8.49,
+    "id": "w17"
+  },
+  {
+    "text": "text",
+    "start": 8.49,
+    "end": 8.75,
+    "id": "w18"
+  },
+  {
+    "text": "edition.",
+    "start": 8.75,
+    "end": 9.52,
+    "id": "w19"
+  }
+]

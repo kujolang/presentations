@@ -1,0 +1,80 @@
+[
+  {
+    "text": "A",
+    "start": 0.05,
+    "end": 0.1,
+    "id": "w0"
+  },
+  {
+    "text": "new",
+    "start": 0.1,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "way",
+    "start": 0.4,
+    "end": 0.7,
+    "id": "w2"
+  },
+  {
+    "text": "to",
+    "start": 0.7,
+    "end": 0.9,
+    "id": "w3"
+  },
+  {
+    "text": "build",
+    "start": 0.9,
+    "end": 1.37,
+    "id": "w4"
+  },
+  {
+    "text": "slides,",
+    "start": 1.38,
+    "end": 2.2,
+    "id": "w5"
+  },
+  {
+    "text": "open,",
+    "start": 2.2,
+    "end": 2.81,
+    "id": "w6"
+  },
+  {
+    "text": "fast,",
+    "start": 2.81,
+    "end": 3.44,
+    "id": "w7"
+  },
+  {
+    "text": "and",
+    "start": 3.49,
+    "end": 3.65,
+    "id": "w8"
+  },
+  {
+    "text": "made",
+    "start": 3.65,
+    "end": 3.89,
+    "id": "w9"
+  },
+  {
+    "text": "for",
+    "start": 3.98,
+    "end": 4.13,
+    "id": "w10"
+  },
+  {
+    "text": "the",
+    "start": 4.13,
+    "end": 4.34,
+    "id": "w11"
+  },
+  {
+    "text": "web.",
+    "start": 4.34,
+    "end": 4.58,
+    "id": "w12"
+  }
+]

@@ -1,0 +1,264 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Deck Inter";
+      src: url("assets/fonts/captured-inter-latin-400.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "Departure Mono";
+      src: url("assets/fonts/captured-DepartureMono-Regular.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    #root {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      container-type: size;
+      color: #171715;
+      font-family: "Deck Inter", sans-serif;
+    }
+
+    [class~="03-one-story-ground"] {
+      position: absolute;
+      inset: 0;
+      background: #F4F2EC;
+    }
+
+    [class~="03-one-story-stage"] {
+      position: absolute;
+      inset: 0;
+    }
+
+    [class~="03-one-story-monitor"] {
+      position: absolute;
+      left: 8.3cqw;
+      top: 3.7cqh;
+      width: 83.4cqw;
+      height: 55.6cqh;
+    }
+
+    [class~="03-one-story-monitor-shell"] {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: 2;
+    }
+
+    [class~="03-one-story-screen"] {
+      position: absolute;
+      z-index: 3;
+      left: 6.5%;
+      top: 7.4%;
+      width: 87%;
+      height: 65.1%;
+      overflow: hidden;
+      background: #181615;
+      border: 1px solid rgba(244, 242, 236, 0.14);
+    }
+
+    [class~="03-one-story-slide"] {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    [class~="03-one-story-index"] {
+      position: absolute;
+      z-index: 4;
+      top: 5.8%;
+      right: 7.6%;
+      padding: 0.7cqh 1.1cqw;
+      border-radius: 9999px;
+      background: rgba(24, 22, 21, 0.86);
+      border: 1px solid rgba(244, 242, 236, 0.14);
+      color: #F4F2EC;
+      font-family: "Departure Mono", monospace;
+      font-size: 1.3cqw;
+      letter-spacing: 0.08em;
+    }
+
+    [class~="03-one-story-rail"] {
+      position: absolute;
+      left: 6.5cqw;
+      top: 62.5cqh;
+      width: 87cqw;
+      height: 18.8cqh;
+      overflow: hidden;
+      border: 1px solid rgba(23, 23, 21, 0.12);
+      border-radius: 12px;
+      background: #E8E7E5;
+      box-shadow: 0 1px 3px rgba(23, 23, 21, 0.08), 0 4px 16px rgba(23, 23, 21, 0.04);
+    }
+
+    [class~="03-one-story-voltage"] {
+      position: absolute;
+      left: 2.4cqw;
+      top: 2.4cqh;
+      width: 24.3cqw;
+      height: 5.8cqh;
+      border-radius: 8px;
+      background: #FF4B23;
+      transform-origin: left center;
+    }
+
+    [class~="03-one-story-starters"] {
+      position: absolute;
+      inset: 2.4cqh 2.4cqw auto;
+      height: 5.8cqh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2cqw;
+    }
+
+    [class~="03-one-story-starter"] {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      border: 1px solid rgba(23, 23, 21, 0.16);
+      color: #171715;
+      font-family: "Departure Mono", monospace;
+      font-size: 1.55cqw;
+      letter-spacing: 0.12em;
+    }
+
+    [class~="03-one-story-starter"]:first-child {
+      border-color: transparent;
+      color: #F4F2EC;
+    }
+
+    [class~="03-one-story-write-once"] {
+      position: absolute;
+      z-index: 3;
+      left: 2.4cqw;
+      top: 2.4cqh;
+      height: 5.8cqh;
+      display: flex;
+      align-items: center;
+      padding: 0 2.5cqw;
+      color: #F4F2EC;
+      font-family: "Departure Mono", monospace;
+      font-size: 2.15cqw;
+      letter-spacing: 0.14em;
+      white-space: nowrap;
+    }
+
+    [class~="03-one-story-outputs"] {
+      position: absolute;
+      z-index: 4;
+      inset: 1.7cqh 2.2cqw;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 6.5cqh);
+      gap: 1.1cqw;
+    }
+
+    [class~="03-one-story-output"] {
+      display: grid;
+      place-items: center;
+      min-width: 0;
+      border-bottom: 1px solid rgba(23, 23, 21, 0.2);
+      color: #171715;
+      font-family: "Departure Mono", monospace;
+      font-size: 1.62cqw;
+      letter-spacing: 0.09em;
+      white-space: nowrap;
+    }
+
+    [class~="03-one-story-output-presenter"] {
+      grid-column: 1 / 5;
+      justify-self: end;
+      width: 100%;
+      border: 1px solid rgba(23, 23, 21, 0.2);
+      border-radius: 8px;
+      font-size: 1.72cqw;
+    }
+  </style>
+
+  <div id="root" data-composition-id="03-one-story" data-width="1080" data-height="1080" data-duration="7.28">
+    <div class="clip 03-one-story-ground" data-start="0" data-duration="7.28" data-track-index="0"></div>
+
+    <div class="clip 03-one-story-stage" data-start="0" data-duration="7.28" data-track-index="1">
+      <div class="03-one-story-monitor">
+        <img class="03-one-story-monitor-shell" src="assets/generated/desktop-monitor-frame.png" alt="">
+        <div class="03-one-story-screen" data-layout-allow-overflow>
+          <img class="03-one-story-slide 03-one-story-slide-06" src="assets/slides/slide-06.png" alt="">
+          <img class="03-one-story-slide 03-one-story-slide-07" src="assets/slides/slide-07.png" alt="">
+          <img class="03-one-story-slide 03-one-story-slide-08" src="assets/slides/slide-08.png" alt="">
+          <img class="03-one-story-slide 03-one-story-slide-09" src="assets/slides/slide-09.png" alt="">
+        </div>
+        <div class="03-one-story-index">06 / 09</div>
+      </div>
+
+      <div class="03-one-story-rail">
+        <div class="03-one-story-voltage"></div>
+        <div class="03-one-story-starters">
+          <div class="03-one-story-starter">INVESTOR</div>
+          <div class="03-one-story-starter">LIVE TALK</div>
+          <div class="03-one-story-starter">SALES</div>
+        </div>
+        <div class="03-one-story-write-once">WRITE ONCE</div>
+        <div class="03-one-story-outputs">
+          <div class="03-one-story-output">PRESENT</div>
+          <div class="03-one-story-output">SHARE</div>
+          <div class="03-one-story-output">PRINT</div>
+          <div class="03-one-story-output">READ</div>
+          <div class="03-one-story-output 03-one-story-output-presenter">PRESENTER VIEW</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+
+      tl.fromTo('[class~="03-one-story-monitor"]', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 0)
+        .fromTo('[class~="03-one-story-slide-06"]', { opacity: 0, scale: 1.035 }, { opacity: 1, scale: 1, duration: 0.48, ease: "power2.out" }, 0.05)
+        .fromTo('[class~="03-one-story-rail"]', { y: 24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.42, ease: "power2.out" }, 0.28)
+        .fromTo('[class~="03-one-story-voltage"]', { scaleX: 0 }, { scaleX: 1, duration: 0.36, ease: "power2.out" }, 0.42)
+        .fromTo('[class~="03-one-story-starter"]', { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.34, stagger: 0.16, ease: "power2.out" }, 0.54)
+
+        .fromTo('[class~="03-one-story-slide-07"]', { xPercent: 100, opacity: 1 }, { xPercent: 0, opacity: 1, duration: 0.55, ease: "power2.inOut" }, 1.4)
+        .to('[class~="03-one-story-slide-06"]', { xPercent: -22, opacity: 0, duration: 0.5, ease: "power2.inOut" }, 1.4)
+        .to('[class~="03-one-story-index"]', { textContent: "07 / 09", duration: 0.01 }, 1.68)
+        .to('[class~="03-one-story-starters"]', { y: -28, opacity: 0, duration: 0.3, ease: "power2.in" }, 1.54)
+        .to('[class~="03-one-story-voltage"]', { width: "82.2cqw", duration: 0.48, ease: "power2.inOut" }, 1.62)
+        .fromTo('[class~="03-one-story-write-once"]', { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 1.82)
+
+        .fromTo('[class~="03-one-story-slide-08"]', { xPercent: 100, opacity: 1 }, { xPercent: 0, opacity: 1, duration: 0.55, ease: "power2.inOut" }, 2.8)
+        .to('[class~="03-one-story-slide-07"]', { xPercent: -22, opacity: 0, duration: 0.5, ease: "power2.inOut" }, 2.8)
+        .to('[class~="03-one-story-index"]', { textContent: "08 / 09", duration: 0.01 }, 3.08)
+        .to('[class~="03-one-story-write-once"]', { y: -24, opacity: 0, duration: 0.28, ease: "power2.in" }, 2.9)
+        .to('[class~="03-one-story-voltage"]', { y: -20, scaleX: 0.94, opacity: 0, duration: 0.42, ease: "power2.inOut" }, 2.95)
+        .fromTo('[class~="03-one-story-output"]:nth-child(1)', { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.32, ease: "power2.out" }, 3.12)
+        .fromTo('[class~="03-one-story-output"]:nth-child(2)', { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.32, ease: "power2.out" }, 3.46)
+        .fromTo('[class~="03-one-story-output"]:nth-child(3)', { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.32, ease: "power2.out" }, 3.8)
+        .fromTo('[class~="03-one-story-output"]:nth-child(4)', { y: -34, opacity: 0 }, { y: 0, opacity: 1, duration: 0.32, ease: "power2.out" }, 4.14)
+
+        .fromTo('[class~="03-one-story-slide-09"]', { xPercent: 100, opacity: 1 }, { xPercent: 0, opacity: 1, duration: 0.55, ease: "power2.inOut" }, 4.5)
+        .to('[class~="03-one-story-slide-08"]', { xPercent: -22, opacity: 0, duration: 0.5, ease: "power2.inOut" }, 4.5)
+        .to('[class~="03-one-story-index"]', { textContent: "09 / 09", duration: 0.01 }, 4.78)
+        .fromTo('[class~="03-one-story-output-presenter"]', { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1, duration: 0.62, ease: "power2.out" }, 4.72)
+
+        .to('[class~="03-one-story-monitor"]', { y: -4, duration: 0.7, ease: "power1.out" }, 5.8)
+        .to('[class~="03-one-story-outputs"]', { y: -2, duration: 0.55, ease: "power1.out" }, 5.8);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["03-one-story"] = tl;
+    })();
+  </script>
+</template>

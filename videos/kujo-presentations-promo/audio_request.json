@@ -1,0 +1,26 @@
+{
+  "provider": "elevenlabs",
+  "speed": 1,
+  "lines": [
+    {
+      "id": "01",
+      "text": "Your next deck doesn't have to be trapped in a slide app."
+    },
+    {
+      "id": "02",
+      "text": "Kujo Presentations turns authored content into polished, browser-native slides, with motion, navigation, an overview, and a readable text edition."
+    },
+    {
+      "id": "03",
+      "text": "Choose a purpose-built starter, write the story once, then present it, share it, print it, or run presenter view."
+    },
+    {
+      "id": "04",
+      "text": "A new way to build slides: open, fast, and made for the web."
+    }
+  ],
+  "bgm": {
+    "mode": "none"
+  },
+  "voice": "TX3LPaxmHKxFdv7VOQHJ"
+}

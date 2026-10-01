@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Your",
+    "start": 0.08,
+    "end": 0.23,
+    "id": "w0"
+  },
+  {
+    "text": "next",
+    "start": 0.23,
+    "end": 0.4,
+    "id": "w1"
+  },
+  {
+    "text": "deck",
+    "start": 0.46,
+    "end": 0.62,
+    "id": "w2"
+  },
+  {
+    "text": "doesn't",
+    "start": 0.72,
+    "end": 1.08,
+    "id": "w3"
+  },
+  {
+    "text": "have",
+    "start": 1.08,
+    "end": 1.31,
+    "id": "w4"
+  },
+  {
+    "text": "to",
+    "start": 1.31,
+    "end": 1.42,
+    "id": "w5"
+  },
+  {
+    "text": "be",
+    "start": 1.42,
+    "end": 1.48,
+    "id": "w6"
+  },
+  {
+    "text": "trapped",
+    "start": 1.54,
+    "end": 1.93,
+    "id": "w7"
+  },
+  {
+    "text": "in",
+    "start": 1.93,
+    "end": 2.04,
+    "id": "w8"
+  },
+  {
+    "text": "a",
+    "start": 2.04,
+    "end": 2.06,
+    "id": "w9"
+  },
+  {
+    "text": "slide",
+    "start": 2.1,
+    "end": 2.37,
+    "id": "w10"
+  },
+  {
+    "text": "app.",
+    "start": 2.37,
+    "end": 2.68,
+    "id": "w11"
+  }
+]

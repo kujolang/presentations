@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "preferences": {
+    "destination": {
+      "value": "x-feed",
+      "confirmed_in": [
+        "kujo-presentations-promo"
+      ],
+      "updated_at": "2026-10-01T17:39:24.428Z"
+    },
+    "aspect": {
+      "value": "1080x1080",
+      "confirmed_in": [
+        "kujo-presentations-promo"
+      ],
+      "updated_at": "2026-10-01T17:39:24.524Z"
+    },
+    "language": {
+      "value": "en",
+      "confirmed_in": [
+        "kujo-presentations-promo"
+      ],
+      "updated_at": "2026-10-01T17:39:24.631Z"
+    },
+    "flow": {
+      "value": "automation",
+      "confirmed_in": [
+        "kujo-presentations-promo"
+      ],
+      "updated_at": "2026-10-01T17:39:24.743Z"
+    },
+    "storyboard": {
+      "value": "no",
+      "confirmed_in": [
+        "kujo-presentations-promo"
+      ],
+      "updated_at": "2026-10-01T17:39:24.853Z"
+    },
+    "voice": {
+      "value": "ElevenLabs Liam (TX3LPaxmHKxFdv7VOQHJ)",
+      "confirmed_in": [
+        "kujo-presentations-promo"
+      ],
+      "updated_at": "2026-10-01T17:45:33.568Z"
+    },
+    "style_preset.product-launch-video": {
+      "value": "code-editorial",
+      "confirmed_in": [
+        "kujo-presentations-promo"
+      ],
+      "updated_at": "2026-10-01T17:44:39.217Z"
+    }
+  },
+  "sightings": {}
+}

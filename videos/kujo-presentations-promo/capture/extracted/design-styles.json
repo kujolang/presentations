@@ -1,0 +1,178 @@
+{
+  "typography": [
+    {
+      "role": "display",
+      "fontFamily": "Departure Mono",
+      "fontSize": "46px",
+      "fontWeight": "400",
+      "lineHeight": "50.6px",
+      "letterSpacing": "normal",
+      "color": "#171715",
+      "sampleText": "A new perspective on media"
+    },
+    {
+      "role": "link",
+      "fontFamily": "Deck Inter",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "color": "#171715",
+      "sampleText": "Skip to content"
+    },
+    {
+      "role": "body",
+      "fontFamily": "Deck Inter",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "21px",
+      "letterSpacing": "normal",
+      "color": "#171715",
+      "sampleText": "A fictional media-strategy demo built with Kujo Presentation"
+    },
+    {
+      "role": "heading",
+      "fontFamily": "Deck Oswald",
+      "fontSize": "8.27474px",
+      "fontWeight": "700",
+      "lineHeight": "9.5987px",
+      "letterSpacing": "normal",
+      "color": "#171715",
+      "sampleText": "The challenge"
+    },
+    {
+      "role": "body-small",
+      "fontFamily": "Deck Inter",
+      "fontSize": "3.9947px",
+      "fontWeight": "400",
+      "lineHeight": "5.79232px",
+      "letterSpacing": "normal",
+      "color": "#171715",
+      "sampleText": "Illustrative audience interest by format · Demo data, not re"
+    }
+  ],
+  "spacing": {
+    "observed": [
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      23,
+      24,
+      32
+    ],
+    "baseUnit": 4
+  },
+  "radius": [],
+  "shadows": [],
+  "buttons": [
+    {
+      "label": "Start presentation ↗",
+      "background": "#060606",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#FFFFFF",
+      "padding": "0px 32px",
+      "borderRadius": "0px",
+      "border": "1px solid rgb(6, 6, 6)",
+      "boxShadow": "none",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "height": "40px"
+    }
+  ],
+  "cards": [
+    {
+      "label": "card",
+      "background": "#171715",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#F4F2EC",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(244, 242, 236)",
+      "boxShadow": "none",
+      "fontSize": "6.50548px",
+      "fontWeight": "400",
+      "height": "320.984px"
+    },
+    {
+      "label": "card",
+      "background": "#F4F2EC",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#171715",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(23, 23, 21)",
+      "boxShadow": "none",
+      "fontSize": "6.50566px",
+      "fontWeight": "400",
+      "height": "321px"
+    },
+    {
+      "label": "card",
+      "background": "transparent",
+      "backgroundImage": "",
+      "backdropFilter": "",
+      "color": "#171715",
+      "padding": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(23, 23, 21)",
+      "boxShadow": "none",
+      "fontSize": "6.50566px",
+      "fontWeight": "400",
+      "height": "103.828px"
+    }
+  ],
+  "nav": {
+    "label": "navigation",
+    "background": "transparent",
+    "backgroundImage": "",
+    "backdropFilter": "",
+    "color": "#171715",
+    "padding": "0px 0px 32px",
+    "borderRadius": "0px",
+    "border": "",
+    "boxShadow": "none",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "height": "218.094px"
+  },
+  "chips": [],
+  "statCells": [
+    {
+      "background": "transparent",
+      "borderRadius": "0px",
+      "border": "0px none rgb(23, 23, 21)",
+      "boxShadow": "none",
+      "numberFontSize": "74.1873px",
+      "numberFontWeight": "700",
+      "numberColor": "#171715"
+    },
+    {
+      "background": "transparent",
+      "borderRadius": "0px",
+      "border": "0px none rgb(23, 23, 21)",
+      "boxShadow": "none",
+      "numberFontSize": "51.3605px",
+      "numberFontWeight": "700",
+      "numberColor": "#171715"
+    },
+    {
+      "background": "transparent",
+      "borderRadius": "0px",
+      "border": "0px none rgb(23, 23, 21)",
+      "boxShadow": "none",
+      "numberFontSize": "34.2403px",
+      "numberFontWeight": "700",
+      "numberColor": "#171715"
+    }
+  ],
+  "tabs": [],
+  "backgrounds": [],
+  "glass": []
+}

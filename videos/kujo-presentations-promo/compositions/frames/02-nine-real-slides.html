@@ -1,0 +1,248 @@
+<template>
+  <style>
+    @font-face{font-family:Departure Mono;src:url("assets/fonts/captured-DepartureMono-Regular.woff2") format("woff2"),url("assets/fonts/captured-DepartureMono-Regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
+    @font-face{font-family:Deck Inter;src:url("assets/fonts/captured-inter-latin-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+    @font-face{font-family:Deck Inter;src:url("assets/fonts/captured-inter-latin-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+
+    #root{
+      position:relative;
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      container-type:size;
+      color:#F4F2EC;
+      font-family:"Deck Inter";
+    }
+    #hf-02-nine-real-slides-ground{
+      position:absolute;
+      inset:0;
+      background:#171715;
+    }
+    #hf-02-nine-real-slides-stage{
+      position:absolute;
+      inset:0;
+      overflow:hidden;
+    }
+    #hf-02-nine-real-slides-eyebrow{
+      position:absolute;
+      left:8.8cqw;
+      top:6.2cqh;
+      display:flex;
+      align-items:center;
+      gap:1.2cqw;
+      font-family:"Departure Mono";
+      font-size:2.05cqw;
+      line-height:1;
+      letter-spacing:.16em;
+      white-space:nowrap;
+    }
+    #hf-02-nine-real-slides-spike{color:#FF4B23;font-size:2.6cqw;letter-spacing:0}
+    #hf-02-nine-real-slides-monitor-wrap{
+      position:absolute;
+      left:8.35cqw;
+      top:14.5cqh;
+      width:83.3cqw;
+      height:55.55cqw;
+    }
+    #hf-02-nine-real-slides-screen{
+      position:absolute;
+      left:6.45%;
+      top:7.15%;
+      width:87.15%;
+      height:64.95%;
+      overflow:hidden;
+      background:#181615;
+    }
+    #hf-02-nine-real-slides-slides{
+      display:flex;
+      width:400%;
+      height:100%;
+      will-change:transform;
+    }
+    .\30 2-nine-real-slides-slide{
+      flex:0 0 25%;
+      width:25%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+    }
+    #hf-02-nine-real-slides-monitor{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      pointer-events:none;
+    }
+    #hf-02-nine-real-slides-streak{
+      position:absolute;
+      left:8%;
+      right:8%;
+      top:49%;
+      height:1px;
+      background:#F4F2EC;
+      opacity:0;
+      transform-origin:left center;
+    }
+    #hf-02-nine-real-slides-chip-stack{
+      position:absolute;
+      right:8.35cqw;
+      top:7.25cqh;
+      width:34cqw;
+      height:5.1cqh;
+      overflow:hidden;
+      text-align:right;
+    }
+    .\30 2-nine-real-slides-chip{
+      position:absolute;
+      right:0;
+      top:0;
+      padding:1.15cqh 1.55cqw;
+      border:1px solid rgba(244,242,236,.28);
+      border-radius:9999px;
+      background:#252120;
+      color:#F4F2EC;
+      font-family:"Departure Mono";
+      font-size:1.45cqw;
+      letter-spacing:.06em;
+      line-height:1;
+      white-space:nowrap;
+      opacity:0;
+    }
+    #hf-02-nine-real-slides-title{
+      position:absolute;
+      left:8.8cqw;
+      top:70.8cqh;
+      display:flex;
+      gap:2.1cqw;
+      color:#F4F2EC;
+      font-family:"Deck Inter";
+      font-weight:400;
+      font-size:6.5cqw;
+      line-height:.94;
+      letter-spacing:-.04em;
+      white-space:nowrap;
+    }
+    .\30 2-nine-real-slides-title-word{display:inline-block}
+    #hf-02-nine-real-slides-footer{
+      position:absolute;
+      left:8.8cqw;
+      right:8.8cqw;
+      top:79.1cqh;
+      height:4.6cqh;
+      display:flex;
+      align-items:flex-end;
+      gap:1.8cqw;
+      overflow:hidden;
+    }
+    #hf-02-nine-real-slides-footer-rule{
+      flex:1 1 auto;
+      height:1px;
+      margin-bottom:1.1cqh;
+      background:rgba(244,242,236,.34);
+      transform-origin:left center;
+    }
+    #hf-02-nine-real-slides-footer-copy{
+      flex:0 0 auto;
+      display:flex;
+      color:#F4F2EC;
+      font-family:"Departure Mono";
+      font-size:1.72cqw;
+      line-height:1;
+      letter-spacing:.1em;
+      white-space:pre;
+    }
+    .\30 2-nine-real-slides-letter{display:inline-block}
+  </style>
+
+  <div id="root" data-composition-id="02-nine-real-slides" data-width="1080" data-height="1080" data-duration="10.445">
+    <div id="hf-02-nine-real-slides-ground" class="clip" data-start="0" data-duration="10.445" data-track-index="0"></div>
+    <div id="hf-02-nine-real-slides-stage" class="clip" data-start="0" data-duration="10.445" data-track-index="1">
+      <div id="hf-02-nine-real-slides-eyebrow"><span id="hf-02-nine-real-slides-spike">✱</span><span>AUTHORED CONTENT</span></div>
+
+      <div id="hf-02-nine-real-slides-chip-stack" data-layout-allow-overflow>
+        <div id="hf-02-nine-real-slides-chip-motion" class="02-nine-real-slides-chip" data-layout-allow-overlap>MOTION BUILT IN</div>
+        <div id="hf-02-nine-real-slides-chip-keyboard" class="02-nine-real-slides-chip" data-layout-allow-overlap>KEYBOARD + FULLSCREEN</div>
+        <div id="hf-02-nine-real-slides-chip-overview" class="02-nine-real-slides-chip" data-layout-allow-overlap>OVERVIEW</div>
+      </div>
+
+      <div id="hf-02-nine-real-slides-monitor-wrap">
+        <div id="hf-02-nine-real-slides-screen">
+          <div id="hf-02-nine-real-slides-slides" data-layout-allow-overflow>
+            <img class="02-nine-real-slides-slide" src="assets/slides/slide-02.png" alt="">
+            <img class="02-nine-real-slides-slide" src="assets/slides/slide-03.png" alt="">
+            <img class="02-nine-real-slides-slide" src="assets/slides/slide-04.png" alt="">
+            <img class="02-nine-real-slides-slide" src="assets/slides/slide-05.png" alt="">
+          </div>
+          <div id="hf-02-nine-real-slides-streak"></div>
+        </div>
+        <img id="hf-02-nine-real-slides-monitor" src="assets/generated/desktop-monitor-frame.png" alt="">
+      </div>
+
+      <div id="hf-02-nine-real-slides-title"><span class="02-nine-real-slides-title-word">POLISHED</span><span class="02-nine-real-slides-title-word">SLIDES</span></div>
+
+      <div id="hf-02-nine-real-slides-footer">
+        <div id="hf-02-nine-real-slides-footer-rule"></div>
+        <div id="hf-02-nine-real-slides-footer-copy" aria-label="READABLE TEXT EDITION"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script>
+    (() => {
+      const q = (selector) => document.querySelector(selector);
+      const qa = (selector) => Array.from(document.querySelectorAll(selector));
+      const footerCopy = q('#hf-02-nine-real-slides-footer-copy');
+      'READABLE TEXT EDITION'.split('').forEach((character) => {
+        const span = document.createElement('span');
+        span.className = '02-nine-real-slides-letter';
+        span.textContent = character;
+        footerCopy.appendChild(span);
+      });
+
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines['02-nine-real-slides'] = tl;
+
+      tl.fromTo('#hf-02-nine-real-slides-monitor-wrap',
+        { opacity: 0, y: 28, scale: .985 },
+        { opacity: 1, y: 0, scale: 1, duration: .5, ease: 'power3.out' }, 0)
+        .fromTo('#hf-02-nine-real-slides-eyebrow',
+          { opacity: 0, y: 18 },
+          { opacity: 1, y: 0, duration: .42, ease: 'power3.out' }, .16)
+        .fromTo('[class~="02-nine-real-slides-title-word"]',
+          { opacity: .35, x: 230 },
+          { opacity: 1, x: 0, duration: .5, stagger: .09, ease: 'power4.out' }, .56)
+
+        .to('#hf-02-nine-real-slides-slides', { xPercent: -25, duration: .58, ease: 'power4.inOut' }, 2.02)
+        .fromTo('#hf-02-nine-real-slides-chip-motion',
+          { opacity: .35, y: 34 },
+          { opacity: 1, y: 0, duration: .42, ease: 'power4.out' }, 2.18)
+
+        .to('#hf-02-nine-real-slides-slides', { xPercent: -50, duration: .58, ease: 'power4.inOut' }, 4.02)
+        .to('#hf-02-nine-real-slides-chip-motion', { opacity: 0, y: -34, duration: .24, ease: 'power4.in' }, 4.0)
+        .fromTo('#hf-02-nine-real-slides-chip-keyboard',
+          { opacity: .35, y: 34 },
+          { opacity: 1, y: 0, duration: .42, ease: 'power4.out' }, 4.24)
+        .fromTo('#hf-02-nine-real-slides-streak',
+          { opacity: 0, scaleX: .08, x: 210 },
+          { opacity: .72, scaleX: 1, x: 0, duration: .16, ease: 'power4.in' }, 4.0)
+        .to('#hf-02-nine-real-slides-streak', { opacity: 0, scaleX: .22, x: -210, duration: .32, ease: 'power4.out' }, 4.16)
+
+        .to('#hf-02-nine-real-slides-slides', { xPercent: -75, duration: .58, ease: 'power4.inOut' }, 5.92)
+        .to('#hf-02-nine-real-slides-chip-keyboard', { opacity: 0, y: -34, duration: .24, ease: 'power4.in' }, 5.9)
+        .fromTo('#hf-02-nine-real-slides-chip-overview',
+          { opacity: .35, y: 34 },
+          { opacity: 1, y: 0, duration: .42, ease: 'power4.out' }, 6.14)
+
+        .fromTo('#hf-02-nine-real-slides-footer-rule',
+          { opacity: 0, scaleX: 0 },
+          { opacity: 1, scaleX: 1, duration: .85, ease: 'power3.out' }, 7.8)
+        .fromTo('[class~="02-nine-real-slides-letter"]',
+          { opacity: 0, y: 12 },
+          { opacity: 1, y: 0, duration: .16, stagger: .045, ease: 'power2.out' }, 8.02);
+    })();
+  </script>
+</template>

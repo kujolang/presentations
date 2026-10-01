@@ -1,0 +1,152 @@
+[a] Skip to content
+[p] FORM / MEDIA / 9 slides
+[h1] A new perspective on media
+[p] A fictional media-strategy demo built with Kujo Presentations. Explore nine slides and a readable text edition. All metrics are illustrative.
+[a] Start presentation ↗
+[span] FORM / MEDIA
+[span] A new perspective
+[span] 1 / 9
+[h1] Innovating media
+for a digital age
+[p] We connect bold ideas with curious audiences. Independent thinking. Meaningful stories. Made for the way the world moves.
+[dt] Original stories every month
+[dd] 150+
+[dt] Creative collaborators
+[dt] People in our community
+[dd] 80k
+[span] Form Media / Strategy & vision / Demo edition
+[span] Innovating media
+for a digital age
+[span] FORM / MEDIA
+[span] The bigger picture
+[span] 2 / 9
+[h1] Presentation
+content index
+[p] From a shared challenge to a lasting impact. A closer look at the ideas, people and possibilities shaping our next chapter.
+[h2] The challenge
+[p] Understanding a changing media landscape.
+[h2] Our approach
+[p] A considered response. A clear direction.
+[h2] The opportunity
+[p] Meeting audiences where they are.
+[h2] Our difference
+[p] Independent ideas that move culture.
+[h2] How we grow
+[p] A sustainable model for meaningful work.
+[h2] What comes next
+[p] Content for every viewer, everywhere.
+[span] Form Media / Strategy & vision / Demo edition
+[span] Presentation
+content index
+[span] FORM / MEDIA
+[span] 01 / The challenge
+[span] 3 / 9
+[h1] Problem
+statement
+[p] More content. Less connection. The media landscape has never been louder—or harder to navigate.
+[h2] Attention is fragmented
+[p] Audiences move between platforms, while stories struggle to travel with them.
+[h2] Trust needs to be earned
+[p] Consistency, context and a human point of view matter more than volume.
+[h2] One size does not fit all
+[p] Different communities deserve stories that reflect their lives.
+[span] Form Media / Strategy & vision / Demo edition
+[span] Problem
+statement
+[span] FORM / MEDIA
+[span] 02 / Our approach
+[span] 4 / 9
+[p] Build with intention. We bring editorial care and creative experimentation together to make work that stays with people.
+[h2] Start with people
+[p] Listen closely. Understand what a community needs before making something for it.
+[h2] Make every format count
+[p] Translate a strong idea across film, audio and digital experiences.
+[h2] Learn and improve
+[p] Use audience feedback to inform the next story, not to repeat the last one.
+[h1] Our solutions for
+lasting impact
+[span] Form Media / Strategy & vision / Demo edition
+[span] Our solutions for
+lasting impact
+[span] FORM / MEDIA
+[span] 03 / The opportunity
+[span] 5 / 9
+[h1] Market opportunity
+[p] A connected generation is choosing media on its own terms. There is room for a more thoughtful kind of publisher.
+[text] Video
+[text] 74%
+[text] Audio
+[text] 48%
+[text] Editorial
+[text] 62%
+[text] Community
+[text] 88%
+[figcaption] Illustrative audience interest by format · Demo data, not research
+[dt] of our demo audience wants more relevant stories
+[dd] 98%
+[span] Form Media / Strategy & vision / Demo edition
+[span] Market opportunity
+[span] FORM / MEDIA
+[span] 04 / Our difference
+[span] 6 / 9
+[h1] Unique value
+proposition
+[p] Independent perspective. Connected thinking. A creative partner that sees the whole picture and cares about every detail.
+[h2] Human by design
+[p] Stories built around real people, meaningful questions and lived experience.
+[h2] Culture in context
+[p] We make room for nuance and bring fresh perspectives to familiar subjects.
+[h2] Built to connect
+[p] Each format opens a different door into the same compelling idea.
+[h2] Lasting relevance
+[p] Careful craft and a clear point of view give our work a longer life.
+[span] Form Media / Strategy & vision / Demo edition
+[span] Unique value
+proposition
+[span] FORM / MEDIA
+[span] 05 / How we grow
+[span] 7 / 9
+[h1] Business
+model
+[p] A balanced model that supports independent creativity and shared, sustainable growth.
+[h2] Membership
+[p] A closer connection through exclusive stories, conversations and experiences.
+[h2] Creative partnerships
+[p] Collaborative campaigns for brands that share our curiosity and values.
+[h2] Licensing & distribution
+[p] Original formats and stories that travel to new audiences and platforms.
+[span] Form Media / Strategy & vision / Demo edition
+[span] Business
+model
+[span] FORM / MEDIA
+[span] 06 / People first
+[span] 8 / 9
+[dt] curious minds, one growing community
+[dd] 80k+
+[h2] Personal relevance
+[p] Explore subjects that connect with your interests.
+[h2] Room for discovery
+[p] Find a new voice beyond the familiar.
+[h1] Curating content
+for every viewer
+[p] The right story, in the right format, at the right moment. Discover something that feels made for you.
+[span] Form Media / Strategy & vision / Demo edition
+[span] Curating content
+for every viewer
+[span] FORM / MEDIA
+[span] 07 / Many ways in
+[span] 9 / 9
+[h1] Diverse media
+offerings
+[p] Watch. Listen. Read. Participate. Different ways to experience the stories that bring us together.
+[dt] Original editorial formats
+[dt] Creative voices
+[dd] 40+
+[h2] One perspective.
+Many possibilities.
+[p] A connected world of ideas, open to everyone.
+[span] Form Media / Strategy & vision / Demo edition
+[span] Diverse media
+offerings
+[span] Form Media / Strategy & vision / Demo edition
+[a] Read the complete deck as text →

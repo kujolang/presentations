@@ -1,0 +1,323 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "Departure Mono";
+      src: url("assets/fonts/captured-DepartureMono-Regular.woff2") format("woff2"), url("assets/fonts/captured-DepartureMono-Regular.woff") format("woff");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Deck Inter";
+      src: url("assets/fonts/captured-inter-latin-400.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Deck Inter";
+      src: url("assets/fonts/captured-inter-latin-700.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    #root {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      container-type: size;
+      color: #171715;
+      font-family: "Deck Inter", sans-serif;
+    }
+
+    [class~="04-built-for-web-ground"] {
+      position: absolute;
+      inset: 0;
+      background: #F4F2EC;
+    }
+
+    [class~="04-built-for-web-stage"] {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+
+    [class~="04-built-for-web-proof-label"] {
+      position: absolute;
+      top: 5.4cqh;
+      left: 5.5cqw;
+      font-family: "Departure Mono", monospace;
+      font-size: 2.5cqw;
+      line-height: 1;
+      letter-spacing: 0.16em;
+      color: #171715;
+      white-space: nowrap;
+    }
+
+    [class~="04-built-for-web-proof-rule"] {
+      position: absolute;
+      top: 9.3cqh;
+      left: 5.5cqw;
+      width: 89cqw;
+      height: 1px;
+      background: rgba(23, 23, 21, 0.2);
+      transform-origin: left center;
+    }
+
+    [class~="04-built-for-web-grid"] {
+      position: absolute;
+      left: 5.5cqw;
+      top: 12.1cqh;
+      width: 89cqw;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.35cqw;
+    }
+
+    [class~="04-built-for-web-tile"] {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border: 1px solid rgba(23, 23, 21, 0.16);
+      border-radius: 8px;
+      background: #E8E7E5;
+      box-shadow: 0 1px 3px rgba(23, 23, 21, 0.08), 0 4px 16px rgba(23, 23, 21, 0.04);
+      transform-origin: 50% 50%;
+      will-change: transform, opacity;
+    }
+
+    [class~="04-built-for-web-tile"] img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    [class~="04-built-for-web-monitor"] {
+      position: absolute;
+      left: 17.6cqw;
+      top: 12.5cqh;
+      width: 64.8cqw;
+      height: 43.2cqh;
+      transform-origin: 50% 50%;
+      will-change: transform, opacity;
+    }
+
+    [class~="04-built-for-web-monitor-shell"] {
+      position: absolute;
+      z-index: 2;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    [class~="04-built-for-web-screen"] {
+      position: absolute;
+      z-index: 3;
+      left: 6.5%;
+      top: 7.4%;
+      width: 87%;
+      height: 65.1%;
+      overflow: hidden;
+      background: #181615;
+      border: 1px solid rgba(244, 242, 236, 0.14);
+    }
+
+    [class~="04-built-for-web-screen"] img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    [class~="04-built-for-web-value"] {
+      position: absolute;
+      top: 31.6cqh;
+      width: 15.7cqw;
+      font-size: 5.25cqw;
+      font-weight: 700;
+      line-height: 0.9;
+      letter-spacing: -0.045em;
+      color: #171715;
+      white-space: nowrap;
+      will-change: transform, opacity, filter;
+    }
+
+    [class~="04-built-for-web-open"] {
+      left: 2.8cqw;
+      text-align: left;
+    }
+
+    [class~="04-built-for-web-fast"] {
+      right: 2.8cqw;
+      text-align: right;
+    }
+
+    [class~="04-built-for-web-lockup"] {
+      position: absolute;
+      left: 5.5cqw;
+      top: 56.3cqh;
+      width: 89cqw;
+      text-align: center;
+    }
+
+    [class~="04-built-for-web-brand"] {
+      display: flex;
+      justify-content: center;
+      gap: 1.5cqw;
+      overflow: hidden;
+      font-size: 7.6cqw;
+      font-weight: 700;
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      color: #171715;
+      white-space: nowrap;
+    }
+
+    [class~="04-built-for-web-brand-word"] {
+      display: inline-block;
+      will-change: transform, opacity;
+    }
+
+    [class~="04-built-for-web-webline"] {
+      margin-top: 2.2cqh;
+      font-family: "Departure Mono", monospace;
+      font-size: 3.25cqw;
+      line-height: 1;
+      letter-spacing: 0.11em;
+      color: #FF4B23;
+      white-space: nowrap;
+      will-change: transform, opacity;
+    }
+  </style>
+
+  <div id="root" data-composition-id="04-built-for-web" data-width="1080" data-height="1080">
+    <div class="clip 04-built-for-web-ground" data-start="0" data-duration="4.83" data-track-index="0"></div>
+
+    <div class="clip 04-built-for-web-stage" data-start="0" data-duration="4.83" data-track-index="1">
+      <div class="04-built-for-web-proof-label">A NEW WAY</div>
+      <div class="04-built-for-web-proof-rule"></div>
+
+      <div class="04-built-for-web-grid">
+        <div class="04-built-for-web-tile"><img src="assets/slides/slide-01.png" alt=""></div>
+        <div class="04-built-for-web-tile"><img src="assets/slides/slide-02.png" alt=""></div>
+        <div class="04-built-for-web-tile"><img src="assets/slides/slide-03.png" alt=""></div>
+        <div class="04-built-for-web-tile"><img src="assets/slides/slide-04.png" alt=""></div>
+        <div class="04-built-for-web-tile"><img src="assets/slides/slide-05.png" alt=""></div>
+        <div class="04-built-for-web-tile"><img src="assets/slides/slide-06.png" alt=""></div>
+        <div class="04-built-for-web-tile"><img src="assets/slides/slide-07.png" alt=""></div>
+        <div class="04-built-for-web-tile"><img src="assets/slides/slide-08.png" alt=""></div>
+        <div class="04-built-for-web-tile"><img src="assets/slides/slide-09.png" alt=""></div>
+      </div>
+
+      <div class="04-built-for-web-monitor">
+        <img class="04-built-for-web-monitor-shell" src="assets/generated/desktop-monitor-frame.png" alt="">
+        <div class="04-built-for-web-screen">
+          <img src="assets/slides/slide-01.png" alt="">
+        </div>
+      </div>
+
+      <div class="04-built-for-web-value 04-built-for-web-open">OPEN.</div>
+      <div class="04-built-for-web-value 04-built-for-web-fast">FAST.</div>
+
+      <div class="04-built-for-web-lockup">
+        <div class="04-built-for-web-brand">
+          <span class="04-built-for-web-brand-word">KUJO</span>
+          <span class="04-built-for-web-brand-word">PRESENTATIONS</span>
+        </div>
+        <div class="04-built-for-web-webline">MADE FOR THE WEB.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script>
+    (() => {
+      const tl = gsap.timeline({ paused: true });
+      const tiles = gsap.utils.toArray('[class~="04-built-for-web-tile"]');
+      const centerOrder = [4, 1, 3, 5, 7, 0, 2, 6, 8];
+      const offsets = [
+        [324, 182], [0, 182], [-324, 182],
+        [324, 0], [0, 0], [-324, 0],
+        [324, -182], [0, -182], [-324, -182]
+      ];
+      const brandWords = gsap.utils.toArray('[class~="04-built-for-web-brand-word"]');
+
+      gsap.set('[class~="04-built-for-web-monitor"], [class~="04-built-for-web-value"], [class~="04-built-for-web-lockup"]', { opacity: 0 });
+
+      tl.fromTo('[class~="04-built-for-web-proof-label"]',
+          { y: 12, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.42, ease: "power3.out" },
+          0.04)
+        .fromTo('[class~="04-built-for-web-proof-rule"]',
+          { scaleX: 0 },
+          { scaleX: 1, duration: 0.56, ease: "power3.out" },
+          0.12);
+
+      centerOrder.forEach((tileIndex, orderIndex) => {
+        const tile = tiles[tileIndex];
+        const offset = offsets[tileIndex];
+        tl.fromTo(tile,
+          { x: offset[0], y: offset[1], scale: 0.18, opacity: 0 },
+          { x: 0, y: 0, scale: 1, opacity: 1, duration: 0.52, ease: "power3.out" },
+          0.08 + orderIndex * 0.055);
+      });
+
+      tiles.forEach((tile, tileIndex) => {
+        const offset = offsets[tileIndex];
+        tl.to(tile,
+          { x: offset[0], y: offset[1], scale: 0.16, opacity: 0, duration: 0.42, ease: "power4.in" },
+          1.28 + tileIndex * 0.018);
+      });
+
+      tl.to('[class~="04-built-for-web-proof-label"], [class~="04-built-for-web-proof-rule"]',
+          { y: -18, opacity: 0, duration: 0.3, ease: "power3.in" },
+          1.36)
+        .fromTo('[class~="04-built-for-web-monitor"]',
+          { scale: 0.72, opacity: 0, filter: "blur(18px)" },
+          { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "expo.out" },
+          1.48)
+        .fromTo('[class~="04-built-for-web-open"]',
+          { x: -115, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.42, ease: "expo.out" },
+          1.72)
+        .fromTo('[class~="04-built-for-web-fast"]',
+          { scale: 1.6, opacity: 0, filter: "blur(10px)" },
+          { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.48, ease: "power4.out" },
+          2.18)
+        .set('[class~="04-built-for-web-open"], [class~="04-built-for-web-fast"]', { opacity: 0 }, 2.72)
+        .to('[class~="04-built-for-web-monitor"]',
+          { scale: 0.82, y: -95, duration: 0.52, ease: "power4.out" },
+          2.68)
+        .set('[class~="04-built-for-web-lockup"]', { opacity: 1 }, 2.76)
+        .set(brandWords, { x: 230, opacity: 0 }, 0);
+
+      brandWords.forEach((word, index) => {
+        const gap = index === 0 ? 0 : 0.05;
+        tl.fromTo(word,
+          { x: 230, opacity: 0.35 },
+          { x: 0, opacity: 1, duration: 0.34, ease: "power4.out" },
+          2.86 + gap);
+      });
+
+      tl.fromTo('[class~="04-built-for-web-webline"]',
+          { y: 32, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.54, ease: "power3.out" },
+          3.48)
+        .to('[class~="04-built-for-web-monitor"]',
+          { y: -99, duration: 0.48, ease: "power1.out" },
+          4.02)
+        .to('[class~="04-built-for-web-lockup"]',
+          { y: -2, duration: 0.42, ease: "power1.out" },
+          4.08);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["04-built-for-web"] = tl;
+    })();
+  </script>
+</template>
