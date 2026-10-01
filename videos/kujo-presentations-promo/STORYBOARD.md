@@ -106,7 +106,7 @@ Adapt: keep the rapid value-phrase relay, but use the nine real slides as the ki
 
 Scene 1 (0.0–1.4s): nine slide thumbnails spring into a precise 3×3 proof wall, staggered from center; “A NEW WAY” seats above in mono chrome.
 Scene 2 (1.4–2.7s): the grid collapses toward center and resolves as slide 01 behind the monitor; “OPEN.” then “FAST.” slam in at left and right on the VO beats.
-Scene 3 (2.7–4.83s): the monitor and slide scale down slightly; “KUJO PRESENTATIONS” waterfall-enters in large Deck Inter below, followed by “MADE FOR THE WEB.” in orange. Hold the complete lockup to the final frame; no URL.
+Scene 3 (2.7–4.83s): the monitor and slide scale down slightly; the Kujo K logomark lands to the left of “Kujo Presentations” in Departure Mono, followed by “MADE FOR THE WEB.” in orange. Hold the complete lockup to the final frame; no URL.
 
 ## Video direction
 
