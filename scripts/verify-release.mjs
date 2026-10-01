@@ -29,7 +29,17 @@ for(const [path,pkg] of Object.entries(read('package-lock.json').packages)) {
  if(!license)throw Error(`Missing license declaration: ${path}`);
  report.licenses.push({path,version:pkg.version,license,integrity:pkg.integrity});
 }
-for(const item of read('examples/reference/assets/media-sources.json'))if(hash(readFileSync(`examples/reference/assets/${item.file}`))!==item.sha256)throw Error(`Media provenance mismatch: ${item.file}`);
+let mediaBytes=0;
+report.media=[];
+for(const item of read('examples/reference/assets/media-sources.json')) {
+ const data=readFileSync(`examples/reference/assets/${item.file}`);
+ if(hash(data)!==item.sha256||data.length!==item.bytes)throw Error(`Media provenance mismatch: ${item.file}`);
+ if(!item.file.endsWith('.webp')||data.toString('ascii',0,4)!=='RIFF'||data.toString('ascii',8,12)!=='WEBP')throw Error(`Reference artwork must be WebP: ${item.file}`);
+ if(data.length>200*1024)throw Error(`Reference image exceeds 200 KiB: ${item.file}`);
+ mediaBytes+=data.length;
+ report.media.push({file:item.file,bytes:data.length,sha256:item.sha256});
+}
+if(mediaBytes>400*1024)throw Error('Reference artwork exceeds the combined 400 KiB budget');
 for(const [copy,source] of [['vendor/motion/LICENSE.md','node_modules/motion/LICENSE.md'],['vendor/motion/LICENSE-framer-motion.md','node_modules/framer-motion/LICENSE.md']])if(!readFileSync(copy).equals(readFileSync(source)))throw Error(`License copy differs: ${copy}`);
 report.distributedLicenseFiles=['assets/licenses/Inter-OFL.txt','assets/licenses/BreeSerif-OFL.txt','.deps/site-kit/dist/LICENSE','.deps/site-kit/dist/fonts/DepartureMono-LICENSE.txt','.deps/site-kit/dist/icons/LICENSE.txt','examples/arabic/assets/OFL.txt','vendor/motion/LICENSE.md','vendor/motion/LICENSE-framer-motion.md'].map(file=>({file,sha256:hash(readFileSync(file))}));
 const audit=spawnSync('npm',['audit','--json'],{encoding:'utf8'});

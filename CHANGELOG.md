@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0 — 2026-10-01
+
+- Replace reference photographs with four original AI-generated WebP images.
+- Record prompts, hashes, dimensions, encoding, and accurate alt text.
+- Keep the four images within a combined 400 KiB release budget.
+- Update the README preview and verify WebP delivery through static hosting.
+
 ## 0.2.0 — 2026-10-01
 
 First tagged preview. Includes the reusable deck system, purpose-specific starters,

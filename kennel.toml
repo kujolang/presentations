@@ -1,6 +1,6 @@
 [package]
 name = "presentations"
-version = "0.2.0"
+version = "0.3.0"
 description = "Optional static presentation composition and viewer for Kujo SSG and SiteKit."
 license = "MIT"
 readme = "README.md"

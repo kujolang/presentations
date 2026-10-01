@@ -1,13 +1,13 @@
 # Completion record and remaining release gates
 
 Updated 2026-10-01. This record supersedes the open implementation list in the
-readiness and build-safety reviews. The package remains a 0.2.0 preview.
+readiness and build-safety reviews. The package remains a 0.3.0 preview.
 
 ## Completed
 
 | Work | Result |
 | --- | --- |
-| Reference photography | Four credited NASA images replace the unclear assets; source URLs, rights basis, hashes, and README preview are updated |
+| Reference photography | Four generated WebP images replace the photographs; prompts, alt text, hashes, size budgets, and README preview are updated |
 | Large decks | Deterministic 10/100/500-slide benchmarks, recorded baseline, and CI budgets; public SSG contracts and interpreter/VM byte parity |
 | Dependencies | Pin/cleanliness checks, reproducible Motion bundles, npm advisories, media hashes, and license inventory |
 | Language | English/Arabic control catalogs, custom labels, explicit RTL, local Arabic font, schema and browser tests |
@@ -32,11 +32,11 @@ remain optional. Private notes are distinct from public slide annotations.
 3. **Human acceptance:** automated axe, keyboard, geometry, fonts, RTL, and print
    checks pass. VoiceOver/NVDA and fluent Arabic review remain required. The presenter
    console is English; Windows native tooling is unsupported. See the support matrix.
-4. **Repository history:** replacement photographs fix the current tree, but old
+4. **Repository history:** generated artwork replaces photographs in the current tree, but old
    Git revisions retain the previous images. Review rights before exposing private
    history. The repository remains private pending that review; no history rewrite
    has been authorized or performed.
-5. **Release verification:** the owner has requested v0.2.0 and public source
+5. **Release verification:** the owner has requested v0.3.0 and public source
    availability. Verify the exact tagged revision; resolve the asset-history
    decision before changing visibility. No npm publication or deck deployment
    is part of this release.

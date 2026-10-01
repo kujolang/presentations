@@ -1,8 +1,8 @@
 {
   "project": {
     "name": "kujo-presentations",
-    "version": "0.2.0",
-    "tag": "v0.2.0"
+    "version": "0.3.0",
+    "tag": "v0.3.0"
   },
   "dependencies": [
     {
@@ -288,6 +288,28 @@
       }
     }
   },
+  "media": [
+    {
+      "file": "city.webp",
+      "bytes": 131616,
+      "sha256": "e57a761dede06f06e7e330ac2feac02a9da4356acd4190b0d469b2d8484dc3ec"
+    },
+    {
+      "file": "collaboration.webp",
+      "bytes": 91158,
+      "sha256": "2d80829287f9b7d8465e2060a9c82334b2ee9afd3ec83f2cb3d231739f7d8a5f"
+    },
+    {
+      "file": "workshop.webp",
+      "bytes": 77908,
+      "sha256": "54936841e5ebbae2411f5e5c5329b02bc08e0d1df0c79ce6f01c389792a19612"
+    },
+    {
+      "file": "digital.webp",
+      "bytes": 67594,
+      "sha256": "8f265bdf588fa121b46a1890cc58c0aa457d19e5cd71b75af17d60176fae0813"
+    }
+  ],
   "distributedLicenseFiles": [
     {
       "file": "assets/licenses/Inter-OFL.txt",
