@@ -42,7 +42,12 @@ export func validate_motion(motion) {
     }
 }
 export func validate(deck, deck_dir) {
-    known_fields(deck, ["id", "title", "brand", "description", "footer", "lang", "slides", "transitions"], "deck")
+    known_fields(deck, ["id", "title", "brand", "description", "footer", "lang", "dir", "labels", "slides", "transitions"], "deck")
+    if !contains(["ltr", "rtl"], field(deck, "dir", "ltr")) { fail("dir must be ltr or rtl") }
+    if has_key(deck, "labels") {
+        known_fields(deck["labels"], keys(parse_json(read_file("locales/en.json"))), "labels")
+        for key in keys(deck["labels"]) { need_text(deck["labels"], key, 240) }
+    }
     language := field(deck, "lang", "en")
     if type(language) != "string" || regex_replace(language, "^[a-zA-Z]{2,8}(-[a-zA-Z0-9]{1,8})*$", "") != "" || len(language) > 63 { fail("lang must be a language tag such as en, fr or pt-BR") }
     need_text(deck, "id", 60)

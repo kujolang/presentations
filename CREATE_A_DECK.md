@@ -74,3 +74,18 @@ deck or individual slides. Use **Replay entrance** to review each sequence.
 Respect the author's preference; viewers can turn motion off and system
 reduced-motion settings take precedence. Animation must not change what a
 statistic means.
+
+## Optional language and delivery features
+
+Ask the brief for language, reading direction, print/PDF delivery and speaker
+notes. Use `lang`, `dir` and `labels` from the schema. The Arabic example includes
+a local font and theme; do not assume the default Latin font covers every script.
+Review long text against the layout capacity and ask a fluent reader to check it.
+
+Every deck has `print/` and `presenter/` routes. Private speaker notes go in
+`speaker-notes.private.json` beside `deck.json`, never in `assets/` or `slide.note`.
+Load them through the presenter console; share only the audience window. Export
+PDF with `npm run export:pdf -- <deck-directory> <new-file.pdf>` after building.
+See [feature contracts](docs/presentation-features.md) for the notes format and
+print limitations. Verify actual hosting with the owner's URL and access policy;
+do not invent a deployment destination or treat a private URL as authentication.

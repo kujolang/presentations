@@ -1,12 +1,14 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdirSync, writeFileSync, readFileSync, existsSync, rmSync, statSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readFileSync, existsSync, rmSync, statSync, readdirSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
+import { resolve } from 'node:path';
 
 test('native build preserves plain text, language and reading notes; ships only needed motion', () => {
   const id = `review-${process.pid}`, source = `.build/source-${id}`;
   mkdirSync(`${source}/assets`, { recursive: true });
   writeFileSync(`${source}/assets/theme.css`, '');
+  writeFileSync(`${source}/speaker-notes.private.json`, 'PRIVATE-NOTES-SENTINEL');
   const title = 'Literal <b> "quotes" & {{content}} : #';
   const deck = {id, title, brand:'Review', description:'Plain <text> & "quotes" {{content}}', lang:'fr-CA',
     transitions:{enabled:true,effect:'fade'}, slides:[{layout:'statement',title,eyebrow:'Context',note:'Source: review'}]};
@@ -32,6 +34,15 @@ test('native build preserves plain text, language and reading notes; ships only 
     assert(existsSync(`output/${id}/assets/presentation/motion/motion-mini.js`));
     assert(!existsSync(`output/${id}/assets/presentation/motion/motion-hybrid.js`));
     console.log(`Basic-motion output omits ${statSync('vendor/motion/motion-hybrid.js').size} bytes of unused hybrid JavaScript.`);
+    // Keep the SSG interpreter fast path byte-identical to the default VM.
+    const parity=spawnSync(process.env.KUJO_BIN||'kujo',['run',resolve('.deps/ssg/build.kujo'),'--','--output','parity-site','--no-aux','--no-aliases','--no-webmcp'],{cwd:`.build/${id}`,encoding:'utf8',timeout:120000});
+    assert.equal(parity.status,0,parity.stdout+parity.stderr);
+    const files=(path)=>readdirSync(path,{recursive:true}).filter(name=>statSync(`${path}/${name}`).isFile()).sort();
+    const expected=files(`output/${id}`), actual=files(`.build/${id}/parity-site`);
+    assert.deepEqual(actual,expected);
+    assert(!expected.some(file=>file.includes('private')));
+    for(const file of expected.filter(file=>file.endsWith('.html')))assert(!readFileSync(`output/${id}/${file}`,'utf8').includes('PRIVATE-NOTES-SENTINEL'));
+    for(const file of expected) assert(readFileSync(`output/${id}/${file}`).equals(readFileSync(`.build/${id}/parity-site/${file}`)),`SSG execution-mode mismatch: ${file}`);
     const duplicate=spawnSync(process.env.KUJO_BIN || 'kujo',['run','build.kujo','--','--deck',source,'--deck',source,'--check'],{encoding:'utf8'});
     assert.notEqual(duplicate.status,0);assert(duplicate.stdout.includes('Repeated option'));
   } finally {

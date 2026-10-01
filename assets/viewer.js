@@ -2,6 +2,7 @@
 (() => {
   'use strict';
   const viewer = () => document.querySelector('.p-viewer');
+  const label = key => JSON.parse(viewer()?.dataset.labels || '{}')[key] || key;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const moduleURL = new URL('./motion/motion-mini.js', document.currentScript.src).href;
   const presetURL = new URL('./motion-presets.js', document.currentScript.src).href;
@@ -50,13 +51,13 @@
     if (toggle) {
       toggle.hidden = !viewer()?.dataset.motion;
       toggle.disabled = reduced.matches;
-      toggle.textContent = reduced.matches ? 'Reduced motion' : `Transitions: ${disabled ? 'off' : 'on'}`;
+      toggle.textContent = reduced.matches ? label('reducedMotion') : `${label('transitions')}: ${label(disabled ? 'off' : 'on')}`;
       toggle.setAttribute('aria-pressed', String(wantsMotion()));
     }
     const button = document.querySelector('[data-fullscreen]');
     if (button && document.fullscreenEnabled) {
       button.hidden = false;
-      button.textContent = document.fullscreenElement ? 'Exit fullscreen' : 'Fullscreen';
+      button.textContent = label(document.fullscreenElement ? 'exitFullscreen' : 'fullscreen');
       button.setAttribute('aria-pressed', String(Boolean(document.fullscreenElement)));
     }
   };
@@ -92,7 +93,7 @@
       enhance();
       main.tabIndex = -1;
       main.focus({ preventScroll: true });
-      status(`Slide ${main.dataset.slide} of ${main.dataset.count}`);
+      status(label('slideStatus').replace('{slide}', main.dataset.slide).replace('{count}', main.dataset.count));
     } catch { location.assign(url); }
     finally { releaseNavigation(); }
   }
@@ -115,7 +116,7 @@
     try {
       if (document.fullscreenElement) await document.exitFullscreen();
       else if (document.fullscreenEnabled) await document.documentElement.requestFullscreen();
-    } catch { status('Fullscreen is unavailable. You can continue with the normal viewer.'); }
+    } catch { status(label('fullscreenUnavailable')); }
   }
   document.addEventListener('click', event => {
     if (event.target.closest('[data-replay]')) { replay(); return; }

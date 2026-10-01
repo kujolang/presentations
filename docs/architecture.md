@@ -8,7 +8,7 @@ belong in this optional package.
 
 `src/model.kujo` validates `deck.json`. `src/render.kujo` fills reusable HTML
 layouts with escaped text, metrics, features, images, and SVG charts.
-The root `build.kujo` delegates to `src/build.kujo`, which writes page templates and frontmatter to `.build/<deck-id>/`, then
+The root `build.kujo` delegates to `src/build.kujo`, which writes templates and frontmatter to `.build/<deck-id>/`, then
 calls SSG's public CLI. Document titles and descriptions are escaped before
 template processing; generated frontmatter strings use JSON quoting, which YAML
 accepts. The SSG layout passes through the generated document. SSG generates the pages and copies local assets to
@@ -19,8 +19,8 @@ layouts, not separate HTML pages for each slide.
 
 | Need | Existing capability | What Presentations adds |
 | --- | --- | --- |
-| Static URLs | SSG pages with filename slugs | Numbered slide inputs |
-| Page layout | SSG layout and page templates | Canvas and slide markup |
+| Static URLs | SSG posts/pages with filename slugs | Numbered slide inputs |
+| Page layout | SSG layout and content templates | Canvas and slide markup |
 | Nested content | Kujo JSON parsing | Ordered slides, metrics, and features |
 | Assets and fonts | SSG asset copying and local fonts | Deck media and themes |
 | Layout and controls | SiteKit grid, cluster, stack, and button | Fixed canvas and navigation |
@@ -29,7 +29,7 @@ layouts, not separate HTML pages for each slide.
 | Keyboard and fullscreen | Browser APIs | Optional viewer script |
 | Animation | Local Motion bundles | Transitions and content sequences |
 
-SSG's flat page slugs provide `/1/`, `/2/`, and other slide URLs beneath each
+SSG's flat content slugs provide `/1/`, `/2/`, and other slide URLs beneath each
 hosted deck. Its home template provides the overview. The build uses `--no-aux`,
 `--no-aliases`, and `--no-webmcp` to omit unused output. SSG still supplies its
 standard favicon and a 404 page with presentation-specific content.
@@ -87,3 +87,16 @@ No upstream change was needed. SSG and SiteKit remained unchanged. Before
 proposing one, document the missing capability, existing alternatives,
 non-presentation uses, ownership, and compatibility. Presentation-specific needs
 stay here.
+
+## Large-deck adapter
+
+Numbered slide routes use SSG's public `content/posts`, `post-<slug>.html`,
+`posts_at_root` and `posts_per_page` contracts. Utility routes use pages with
+`nav_hide: true`. This keeps numbered slides out of SSG's website navigation
+records. The presentation still owns the complete escaped HTML and all controls;
+no blog cards or article metadata are inserted. The home template remains the
+overview. SSG still generates every route and copies assets. This is an adapter
+choice, not a presentation feature added to SSG.
+
+SSG runs through the public `kujo run --interpreter` mode after a byte-parity
+comparison against VM output. See [performance evidence](performance.md).

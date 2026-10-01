@@ -1,0 +1,11 @@
+from src.model import field
+english := parse_json(read_file("locales/en.json"))
+arabic := parse_json(read_file("locales/ar.json"))
+export func labels(deck) {
+    result := english
+    language := to_lower(field(deck, "lang", "en"))
+    if language == "ar" || starts_with(language, "ar-") { result = arabic }
+    for key in keys(field(deck, "labels", {})) { result[key] = deck["labels"][key] }
+    return result
+}
+export func label(deck, key) { return labels(deck)[key] }

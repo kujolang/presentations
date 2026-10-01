@@ -1,0 +1,4 @@
+@font-face { font-family: "Noto Sans Arabic"; src: url("noto-sans-arabic.ttf") format("truetype"); font-weight: 100 900; font-display: swap; }
+:root { --p-font: "Noto Sans Arabic", sans-serif; --p-display: var(--p-font); --p-title: 5cqw; }
+.p-layout-statement h1 { font-size: 5cqw; }
+.p-layout-statement .p-intro { top: 36cqw; }

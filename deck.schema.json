@@ -30,6 +30,134 @@
       "maxLength": 63,
       "pattern": "^[a-zA-Z]{2,8}(-[a-zA-Z0-9]{1,8})*$"
     },
+    "dir": {
+      "enum": [
+        "ltr",
+        "rtl"
+      ]
+    },
+    "labels": {
+      "type": "object",
+      "properties": {
+        "previous": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "next": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "overview": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "readText": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "fullscreen": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "exitFullscreen": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "transitions": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "on": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "off": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "reducedMotion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "replay": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "controls": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "progress": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "help": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "start": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "slides": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "readAll": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "image": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "skip": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "notFound": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "slideStatus": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "fullscreenUnavailable": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "print": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
     "footer": {
       "type": "string",
       "minLength": 1,

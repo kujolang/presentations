@@ -1,5 +1,6 @@
 from src.model import fail, validate, text, field
-from src.render import overview, viewer, reading
+from src.render import overview, viewer, reading, print_deck, presenter
+from src.locale import label
 
 func option(argv, name, fallback) {
     i := 0
@@ -29,14 +30,19 @@ func copy_tree(source, target) {
     }
 }
 func page(stage, slug, title, html, deck, site_url) {
+    # The public SSG post pipeline streams records; pages retain N full records.
+    # Numeric slide routes use posts-at-root, without blog UI or article markup.
+    kind := "pages"
+    template := "page"
+    if regex_replace(slug, "^[0-9]+$", "") == "" { kind = "posts"; template = "post" }
     # HTML stays in generated SSG templates, not Markdown raw-HTML parsing.
-    write_file(stage + "/content/pages/" + slug + ".md", "---\ntitle: " + to_json(replace(replace(title, "\n", " "), "\r", " ")) + "\ntemplate: " + slug + "\n---\n")
-    write_file(stage + "/templates/page-" + slug + ".html", document_html(deck, title, html, "../", site_url + "/" + slug + "/"))
+    write_file(stage + "/content/" + kind + "/" + slug + ".md", "---\ntitle: " + to_json(replace(replace(title, "\n", " "), "\r", " ")) + "\ntemplate: " + slug + "\nnav_hide: true\n---\n")
+    write_file(stage + "/templates/" + template + "-" + slug + ".html", document_html(deck, title, html, "../", site_url + "/" + slug + "/"))
 }
 func document_html(deck, title, content, prefix, url) {
     canonical := ""
     if len(url) > 0 { canonical = "<link rel=\"canonical\" href=\"" + text(url) + "\">" }
-    return "<!doctype html><html lang=\"" + text(field(deck, "lang", "en")) + "\" data-theme=\"kujo-light\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>" + text(title) + "</title><meta name=\"description\" content=\"" + text(deck["description"]) + "\">" + canonical + "<link rel=\"stylesheet\" href=\"" + prefix + "assets/sitekit/sitekit.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/presentation/presentation.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/deck/theme.css\"></head><body><a class=\"p-skip\" href=\"#main-content\">Skip to content</a>" + content + "</body></html>"
+    return "<!doctype html><html lang=\"" + text(field(deck, "lang", "en")) + "\" dir=\"" + text(field(deck, "dir", "ltr")) + "\" data-theme=\"kujo-light\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>" + text(title) + "</title><meta name=\"description\" content=\"" + text(deck["description"]) + "\">" + canonical + "<link rel=\"stylesheet\" href=\"" + prefix + "assets/sitekit/sitekit.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/presentation/presentation.css\"><link rel=\"stylesheet\" href=\"" + prefix + "assets/deck/theme.css\"></head><body><a class=\"p-skip\" href=\"#main-content\">" + text(label(deck, "skip")) + "</a>" + content + "</body></html>"
 }
 export func build(argv) {
     arg_index := 0
@@ -75,6 +81,7 @@ export func build(argv) {
     # Only package-owned stage/output names derived from a validated slug are rebuilt.
     if path_exists(stage) { run(["rm", "-rf", "--", stage], root) }
     create_dir(stage + "/content/pages")
+    create_dir(stage + "/content/posts")
     create_dir(stage + "/templates")
     copy_tree("assets", stage + "/assets/presentation")
     if field(field(deck, "transitions", {}), "enabled", false) {
@@ -105,9 +112,11 @@ export func build(argv) {
     write_file(stage + "/templates/404.html", document_html(deck, "Slide not found", "<main id=\"main-content\" class=\"p-reading sk-container\"><h1>Slide not found</h1><p>Open the deck overview to choose a slide.</p><a href=\"./\">Overview</a></main>", "./", ""))
     i := 1
     for slide in deck["slides"] { page(stage, to_string(i), slide["title"], viewer(deck, slide, i), deck, site_url); i = i + 1 }
+    page(stage, "print", deck["title"], print_deck(deck), deck, site_url)
+    page(stage, "presenter", deck["title"], presenter(deck), deck, site_url)
     page(stage, "reading", deck["title"] + " — Read text", reading(deck), deck, site_url)
-    write_file(stage + "/kujo-ssg.json", to_json({"site_url": site_url, "site_title": deck["title"], "site_tagline": deck["description"], "content": "content", "templates": "templates", "assets": "assets", "output": stage + "/site", "fonts": ["Bree Serif", "Inter"], "webmcp": false, "minify": false, "no_aux": true}))
-    print(run(["kujo", "run", ssg + "/build.kujo", "--", "--no-aux", "--no-aliases", "--no-webmcp"], stage))
+    write_file(stage + "/kujo-ssg.json", to_json({"site_url": site_url, "site_title": deck["title"], "site_tagline": deck["description"], "content": "content", "templates": "templates", "assets": "assets", "output": stage + "/site", "fonts": ["Bree Serif", "Inter"], "webmcp": false, "minify": false, "no_aux": true, "posts_at_root": true, "posts_per_page": len(deck["slides"])}))
+    print(run(["kujo", "run", "--interpreter", ssg + "/build.kujo", "--", "--no-aux", "--no-aliases", "--no-webmcp"], stage))
 
 }
 

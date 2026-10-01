@@ -1,4 +1,5 @@
 from src.model import field, text, fail
+from src.locale import label, labels
 
 export func metrics(slide) {
     html := "<dl class=\"p-metrics\">"
@@ -58,7 +59,7 @@ export func slide_html(deck, slide, number, prefix, thumbnail) {
     if field(slide, "inverse", false) == true { tone = " p-inverse" }
     hidden := ""
     if thumbnail { hidden = " aria-hidden=\"true\"" }
-    return "<div class=\"p-frame\"" + hidden + "><article class=\"p-canvas p-layout-" + slide["layout"] + tone + "\"><header class=\"p-header\"><span>" + text(deck["brand"]) + "</span><span>" + text(field(slide, "eyebrow", deck["title"])) + "</span><span>" + to_string(number) + " / " + to_string(len(deck["slides"])) + "</span></header>" + body + "<footer class=\"p-footer\"><span>" + text(field(deck, "footer", deck["brand"])) + "</span><span>" + text(field(slide, "note", "")) + "</span><span>" + to_string(number) + "</span></footer></article></div>"
+    return "<div class=\"p-frame\"" + hidden + "><article class=\"p-canvas p-layout-" + slide["layout"] + tone + "\"><header class=\"p-header\"><span>" + text(deck["brand"]) + "</span><span>" + text(field(slide, "eyebrow", deck["title"])) + "</span><span dir=\"ltr\">" + to_string(number) + " / " + to_string(len(deck["slides"])) + "</span></header>" + body + "<footer class=\"p-footer\"><span>" + text(field(deck, "footer", deck["brand"])) + "</span><span>" + text(field(slide, "note", "")) + "</span><span>" + to_string(number) + "</span></footer></article></div>"
 }
 export func control(href, label, key, enabled) {
     if !enabled { return "<span class=\"p-disabled\" aria-disabled=\"true\">" + label + "</span>" }
@@ -73,29 +74,42 @@ export func viewer(deck, slide, number) {
         settings = " data-motion=\"" + text(field(override, "effect", field(motion, "effect", "fade"))) + "\" data-duration=\"" + to_string(field(override, "duration", field(motion, "duration", 0.35))) + "\" data-easing=\"" + text(field(override, "easing", field(motion, "easing", "easeOut"))) + "\""
     }
     settings = settings + " data-intensity=\"" + to_string(field(override, "intensity", field(motion, "intensity", 1))) + "\" data-stagger=\"" + to_string(field(override, "stagger", field(motion, "stagger", 0.06))) + "\""
-    return "<main id=\"main-content\" class=\"p-viewer\"" + settings + " data-slide=\"" + to_string(number) + "\" data-count=\"" + to_string(count) + "\"><div class=\"p-stage\">" + slide_html(deck, slide, number, "../", false) + "</div><nav class=\"p-nav sk-cluster\" aria-label=\"Presentation controls\">" + control("../" + to_string(number - 1) + "/", "← Previous", "previous", number > 1) + "<span class=\"p-counter\">" + to_string(number) + " / " + to_string(count) + "</span>" + control("../" + to_string(number + 1) + "/", "Next →", "next", number < count) + "<a class=\"sk-button\" data-variant=\"ghost\" href=\"../\">Overview</a><a class=\"sk-button\" data-variant=\"ghost\" href=\"../reading/#slide-" + to_string(number) + "\">Read text</a><button class=\"sk-button\" data-variant=\"ghost\" data-fullscreen hidden type=\"button\">Fullscreen</button><button class=\"sk-button\" data-variant=\"ghost\" data-motion-toggle hidden type=\"button\">Transitions</button><button class=\"sk-button\" data-variant=\"ghost\" data-replay hidden type=\"button\">Replay entrance</button></nav><progress class=\"p-progress\" max=\"" + to_string(count) + "\" value=\"" + to_string(number) + "\" aria-label=\"Presentation progress\"></progress><p class=\"p-help\">← → Navigate · Space Next · Home / End · F Fullscreen</p><p class=\"sk-sr-only\" data-status role=\"status\"></p></main><script src=\"../assets/presentation/viewer.js\" defer></script>"
+    return "<main id=\"main-content\" class=\"p-viewer\"" + settings + " data-labels=\"" + text(to_json(labels(deck))) + "\" data-slide=\"" + to_string(number) + "\" data-count=\"" + to_string(count) + "\"><div class=\"p-stage\">" + slide_html(deck, slide, number, "../", false) + "</div><nav class=\"p-nav sk-cluster\" aria-label=\"" + text(label(deck, "controls")) + "\">" + control("../" + to_string(number - 1) + "/", "" + text(label(deck, "previous")) + "", "previous", number > 1) + "<span class=\"p-counter\" dir=\"ltr\">" + to_string(number) + " / " + to_string(count) + "</span>" + control("../" + to_string(number + 1) + "/", "" + text(label(deck, "next")) + "", "next", number < count) + "<a class=\"sk-button\" data-variant=\"ghost\" href=\"../\">" + text(label(deck, "overview")) + "</a><a class=\"sk-button\" data-variant=\"ghost\" href=\"../reading/#slide-" + to_string(number) + "\">" + text(label(deck, "readText")) + "</a><a class=\"sk-button\" data-variant=\"ghost\" href=\"../print/\">" + text(label(deck, "print")) + "</a><button class=\"sk-button\" data-variant=\"ghost\" data-fullscreen hidden type=\"button\">" + text(label(deck, "fullscreen")) + "</button><button class=\"sk-button\" data-variant=\"ghost\" data-motion-toggle hidden type=\"button\">" + text(label(deck, "transitions")) + "</button><button class=\"sk-button\" data-variant=\"ghost\" data-replay hidden type=\"button\">" + text(label(deck, "replay")) + "</button></nav><progress class=\"p-progress\" max=\"" + to_string(count) + "\" value=\"" + to_string(number) + "\" aria-label=\"" + text(label(deck, "progress")) + "\"></progress><p class=\"p-help\">" + text(label(deck, "help")) + "</p><p class=\"sk-sr-only\" data-status role=\"status\"></p></main><script src=\"../assets/presentation/viewer.js\" defer></script>"
 }
 export func overview(deck) {
-    html := "<main id=\"main-content\" class=\"p-overview sk-container\"><header class=\"p-overview-header\"><div><p class=\"p-kicker\">" + text(deck["brand"]) + " / " + to_string(len(deck["slides"])) + " slides</p><h1>" + text(deck["title"]) + "</h1><p>" + text(deck["description"]) + "</p></div><a class=\"sk-button\" href=\"1/\">Start presentation ↗</a></header><div class=\"p-thumbnails sk-grid\">"
+    html := "<main id=\"main-content\" class=\"p-overview sk-container\"><header class=\"p-overview-header\"><div><p class=\"p-kicker\">" + text(deck["brand"]) + " / " + to_string(len(deck["slides"])) + " " + text(label(deck, "slides")) + "</p><h1>" + text(deck["title"]) + "</h1><p>" + text(deck["description"]) + "</p></div><a class=\"sk-button\" href=\"1/\">" + text(label(deck, "start")) + "</a></header><div class=\"p-thumbnails sk-grid\">"
     i := 1
     for slide in deck["slides"] {
         html = html + "<a class=\"p-thumbnail\" href=\"" + to_string(i) + "/\">" + slide_html(deck, slide, i, "./", true) + "<span class=\"p-thumbnail-label\"><span>" + to_string(i) + "</span> " + text(slide["title"]) + "</span></a>"
         i = i + 1
     }
-    return html + "</div><footer class=\"p-overview-footer\"><span>" + text(field(deck, "footer", deck["brand"])) + "</span><a href=\"reading/\">Read the complete deck as text →</a></footer></main>"
+    return html + "</div><footer class=\"p-overview-footer\"><span>" + text(field(deck, "footer", deck["brand"])) + "</span><a href=\"reading/\">" + text(label(deck, "readAll")) + "</a></footer></main>"
 }
 export func reading(deck) {
-    html := "<main id=\"main-content\" class=\"p-reading sk-container sk-stack\"><a href=\"../\">← Overview</a><h1>" + text(deck["title"]) + "</h1><p>" + text(deck["description"]) + "</p>"
+    html := "<main id=\"main-content\" class=\"p-reading sk-container sk-stack\"><a href=\"../\">" + text(label(deck, "overview")) + "</a><h1>" + text(deck["title"]) + "</h1><p>" + text(deck["description"]) + "</p>"
     i := 1
     for slide in deck["slides"] {
         html = html + "<section id=\"slide-" + to_string(i) + "\"><h2><a href=\"../" + to_string(i) + "/\">" + to_string(i) + ". " + text(slide["title"]) + "</a></h2><p>" + text(field(slide, "copy", "")) + "</p>" + metrics(slide) + replace(replace(features(slide), "<h2>", "<h3>"), "</h2>", "</h3>")
         for point in field(slide, "chart", []) { html = html + "<p>" + text(point["label"]) + ": " + to_string(point["value"]) + "%</p>" }
         html = html + "<p>" + text(field(slide, "chartLabel", "")) + "</p>"
-        for img in field(slide, "images", []) { html = html + "<p>Image: " + text(img["alt"]) + "</p>" }
+        for img in field(slide, "images", []) { html = html + "<p>" + text(label(deck, "image")) + ": " + text(img["alt"]) + "</p>" }
         if has_key(slide, "eyebrow") { html = html + "<p>" + text(slide["eyebrow"]) + "</p>" }
         if has_key(slide, "note") { html = html + "<p>" + text(slide["note"]) + "</p>" }
         html = html + "</section>"
         i = i + 1
     }
     return html + "</main>"
+}
+
+export func print_deck(deck) {
+    html := "<main id=\"main-content\" class=\"p-print\">"
+    i := 1
+    for slide in deck["slides"] {
+        html = html + "<section aria-label=\"" + text(slide["title"]) + "\">" + slide_html(deck, slide, i, "../", false) + "</section>"
+        i = i + 1
+    }
+    return html + "</main>"
+}
+export func presenter(deck) {
+    return "<main id=\"main-content\" class=\"p-presenter sk-container\" data-deck=\"" + text(deck["id"]) + "\" data-count=\"" + to_string(len(deck["slides"])) + "\"><h1>Presenter console</h1><p>Share the audience window only. Notes stay in this window and are never sent to the audience.</p><nav aria-label=\"Presenter controls\"><button data-previous>Previous</button><button data-next>Next</button><button data-audience>Open audience</button><label>Slide <input data-slide type=\"number\" min=\"1\" max=\"" + to_string(len(deck["slides"])) + "\" value=\"1\"></label><output data-position aria-live=\"polite\">1</output></nav><div class=\"p-presenter-frames\"><div aria-label=\"Current slide preview\" aria-hidden=\"true\" data-current></div><div aria-label=\"Next slide preview\" aria-hidden=\"true\" data-upcoming></div></div><section><h2>Private speaker notes</h2><label>Load local notes JSON <input data-notes-file type=\"file\" accept=\"application/json,.json\"></label><button data-clear>Clear notes</button><p data-notes-status role=\"status\"></p><pre data-notes></pre></section><section><h2>Elapsed time</h2><output data-timer>00:00</output><button data-timer-toggle>Start timer</button><button data-timer-reset>Reset timer</button></section></main><script src=\"../assets/presentation/presenter.js\" defer></script>"
 }

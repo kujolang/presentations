@@ -102,7 +102,7 @@ try {
   if(!/^\d+$/.test(port)||Number(port)<1||Number(port)>65535) fail('--port must be between 1 and 65535.');
   if(command==='catalog') {
     const layouts=Object.fromEntries(readdirSync('layouts').filter(n=>n.endsWith('.json')).sort().map(file=>[file.slice(0,-5),read(`layouts/${file}`)]));
-    console.log(options.json?JSON.stringify({starters:catalog,layouts,schema:'deck.schema.json',instructions:'CREATE_A_DECK.md'},null,2):catalog.map(s=>`${s.id.padEnd(12)} ${s.slides} slides · ${s.description}`).join('\n'));
+    console.log(options.json?JSON.stringify({starters:catalog,layouts,schema:'deck.schema.json',instructions:'CREATE_A_DECK.md',capabilities:{viewerLanguages:['en','ar'],labelOverrides:true,directions:['ltr','rtl'],routes:['reading/','print/','presenter/'],privateNotes:'docs/presentation-features.md',pdf:'npm run export:pdf -- <deck-directory> <new-file.pdf>',performance:'npm run benchmark',hostCheck:'npm run verify:host -- <deck-url>'}},null,2):catalog.map(s=>`${s.id.padEnd(12)} ${s.slides} slides · ${s.description}`).join('\n'));
   } else if(command==='doctor') {
     const state=doctor();console.log(options.json?JSON.stringify(state,null,2):Object.entries(state.checks).map(([k,v])=>`${v?'OK':'MISSING'} ${k}`).join('\n')+'\n'+(state.ready?'Ready.':'Run setup for dependencies; see docs/getting-started.md for system tools.'));if(!state.ready) process.exitCode=1;
   } else if(command==='setup') setup();
