@@ -7,3 +7,11 @@ playwright-report/
 
 .deps/
 **/speaker-notes.private.json
+
+# HyperFrames local Studio and preview state
+videos/**/.hyperframes/hf-ids-stamped.json
+videos/**/.hyperframes/history-id
+videos/**/.hyperframes/history-turns.json
+videos/**/.hyperframes/preview/
+videos/**/.thumbnails/
+videos/**/.waveform-cache/
