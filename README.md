@@ -67,7 +67,8 @@ See [authoring](docs/authoring.md) for fields, themes, and custom layouts.
 Optional Motion presets range from fade, slide, and zoom to coordinated
 headline, image, card, and chart animations. Editorial, Focus, and Kinetic
 presets support per-slide settings, intensity, timing, and stagger.
-Use **Replay entrance** to review an effect.
+The configured entrance plays on the first page load and when you change slides.
+Use **Replay entrance** to review it again.
 
 Motion loads from local files only when needed. Viewers can turn it off, and
 system reduced-motion preferences always take precedence.

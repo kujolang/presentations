@@ -2,6 +2,9 @@
 
 ## 0.3.0 — 2026-10-01
 
+- Play the configured entrance on direct slide loads, honoring saved and reduced-motion preferences.
+- Align the overview start button vertically with its introduction.
+
 - Use self-hosted Inter body text and Oswald slide headings in the reference theme.
 - Replace decorative arrow and plus glyphs with local Tabler SVG icons.
 
