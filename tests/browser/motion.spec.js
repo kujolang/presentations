@@ -1,6 +1,34 @@
 import { openPage } from './helpers.js';
 import {test,expect} from '@playwright/test';
 
+test('first load plays the entrance and queues keyboard navigation without replay',async({page})=>{
+  await page.addInitScript(()=>{
+    window.entrancePoses=[];
+    new MutationObserver(records=>{
+      for(const record of records) if(record.target.matches?.('.p-canvas h1'))
+        window.entrancePoses.push(record.target.getAttribute('style'));
+    }).observe(document,{subtree:true,attributes:true,attributeFilter:['style']});
+  });
+  let releaseModule;
+  const moduleGate=new Promise(resolve=>{releaseModule=resolve;});
+  await page.route('**/motion-presets.js',async route=>{await moduleGate;await route.continue();});
+  try {
+    await page.goto('/reference/1/',{waitUntil:'commit'});
+    await expect(page.locator('html')).toHaveAttribute('data-transitioning','true');
+    await page.keyboard.press('ArrowRight');
+  } finally { releaseModule(); }
+  await expect.poll(()=>page.evaluate(()=>window.entrancePoses.some(style=>style?.includes('translateY')))).toBe(true);
+  await expect(page).toHaveURL(/\/reference\/2\/$/);
+  await expect(page.locator('html')).not.toHaveAttribute('data-transitioning','true');
+  await expect(page.locator('.p-counter')).toHaveText('2 / 9');
+  await expect(page.locator('h1')).not.toHaveAttribute('style',/opacity|transform|clip-path/);
+  // A saved off preference must prevent the automatic entrance on a reload.
+  await page.getByRole('button',{name:'Transitions: on'}).click();
+  await page.reload({waitUntil:'load'});
+  await expect(page.locator('[data-motion-toggle]')).toHaveText('Transitions: off');
+  expect(await page.evaluate(()=>window.entrancePoses)).toEqual([]);
+});
+
 test('Motion presets animate static slides; toggle, reload and history stay usable',async({page})=>{
   const requests=[];page.on('request',r=>{if(r.url().includes('motion-mini'))requests.push(r.url());});
   await page.addInitScript(()=>{

@@ -161,4 +161,7 @@
   });
   enhance();
   document.documentElement.dataset.viewerReady = 'true';
+  // Direct loads use the same entrance, preference guards, and navigation queue
+  // as replay. The overview and print pages never load this viewer script.
+  void replay();
 })();

@@ -11,6 +11,7 @@ export async function openPage(page, url) {
   )).toBe(true);
   if (await page.locator('.p-viewer').count()) {
     await expect(page.locator('html')).toHaveAttribute('data-viewer-ready', 'true');
+    await expect(page.locator('html')).not.toHaveAttribute('data-transitioning', 'true');
   }
   await page.evaluate(async () => {
     await document.fonts.ready;
