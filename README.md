@@ -157,11 +157,14 @@ builds preserve the last successful deck; same-ID builds are locked. See [deploy
 npm ci
 npx playwright install chromium firefox webkit
 npm test
+npm run test:native
 ```
 
 Tests cover content validation, routes, assets, keyboard controls, history,
 fullscreen, canvas layout, no-JavaScript navigation, motion, and axe accessibility
-checks. Browser screenshots go to `test-results/`. Automated checks do not replace
+checks. The native command runs Firefox against the hardened Kujo preview server.
+See the [Firefox and fullscreen review](docs/firefox-fullscreen-review.md) for
+process isolation and evidence. Browser screenshots go to `test-results/`. Automated checks do not replace
 visual, factual, or accessibility review.
 
 The media example uses fictional copy and metrics and follows a written design

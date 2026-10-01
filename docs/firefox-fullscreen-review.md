@@ -54,8 +54,7 @@ list uses the valid logical padding property.
 
 ## Verification
 
-Results are recorded in the release status and session handoff after the final
-runs. Historical failing traces remain under `.build/firefox-investigation`,
+Exact-commit CI artifacts and the session handoff carry the final results. Historical failing traces remain under `.build/firefox-investigation`,
 `.build/firefox-163`, and `.build/firefox-full-protocol` in the working checkout.
 CI retains new failures in its browser evidence artifact. A passing isolated
 suite does not claim the upstream shared-process driver bug is repaired.

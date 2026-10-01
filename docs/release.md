@@ -1,38 +1,46 @@
 # Release status
 
 Version **0.1.0** remains a preview. It is not certified for every enterprise,
-host, language, or assistive technology. No package, tag, or deployment has been
-published by this review.
+host, language, or assistive technology. This review does not publish a package,
+tag, or deployment.
 
-## Verification
+## Verification gates
 
-On macOS with Kujo 1.5.0, the expanded suite passed native builds for three examples
-and three starters, content contracts, **eight Node tests**, native preview HTTP
-smoke, and **43 browser checks** across Chromium, Firefox, and WebKit. Two headless
-fullscreen checks are intentionally skipped; Chromium exercises fullscreen.
-Browser integration tests use the controlled static host. Separate full Firefox
-runs against native preview still intermittently fail and remain an open gate.
+CI runs these checks on each revision:
 
-Release checks verified two dependency pins, two reproducible Motion bundles,
-39 npm package license records, distributed license files, media hashes, and zero
-reported npm advisories at check time. This is not an exhaustive security audit.
-The 10/100/500-slide benchmarks passed their budgets; machine-specific evidence
-is stored in `docs/evidence`. A nine-page reference PDF was exported locally.
+- `npm test`: native builds, content and Node contracts, preview HTTP smoke,
+  and Chromium/Firefox/WebKit checks against the static-host fixture.
+- `npm run test:native`: Firefox deck, motion, language, and presenter checks
+  against the hardened Kujo server. Firefox processes are isolated per test.
+- `npm run verify:release`: dependency revisions, reproducible Motion bundles,
+  license inventory, media hashes, and npm advisories.
+- `npm run benchmark`: the 10/100/500-slide performance budgets.
 
-The previous revision `04e231c` passed
-[CI run 36805198341](https://github.com/kujolang/presentations/actions/runs/36805198341).
-Later revisions require their own CI result. Historical failed runs remain in
-[verification](verification.md); they are not the current static-host result.
+Headless Firefox/WebKit fullscreen checks remain named skips. Chromium verifies
+slide-only fullscreen, geometry, keyboard/history navigation, reduced motion,
+and focus restoration. Automated checks do not replace human accessibility or
+language review, and dependency checks are not an exhaustive security audit.
+
+The [Firefox/fullscreen review](firefox-fullscreen-review.md) explains the missing
+automation event, process-isolation workaround, and rejected browser upgrade.
+It does not claim the upstream shared-process driver defect is repaired.
+
+Revision `6886c3e` passed
+[CI run 36809598952](https://github.com/kujolang/presentations/actions/runs/36809598952).
+Later revisions need their own result. Exact-commit CI artifacts and the session
+handoff record subsequent verification; earlier [test records](verification.md)
+and checked-in measurements describe the runs that produced them.
 
 ## Before publishing
 
-1. Check CI on the exact release revision and run `npm run verify:release`.
-2. Resolve or explicitly scope the native Firefox preview limitation.
-3. Complete the real-host and human accessibility/language checks.
+1. Check CI on the exact release revision and run the release dependency check.
+2. Retain Firefox process isolation until the underlying driver issue is fixed
+   and the shared-process diagnostic passes without retries.
+3. Complete real-host and human accessibility/language checks.
 4. Review media terms and old Git history before changing repository visibility.
-5. Confirm version/status across manifests, badges, and changelog; then make the
-   release decision separately from code verification.
+5. Confirm version/status across manifests, badges, and changelog; make the
+   publication decision separately from code verification.
 
-[Remaining release gates](remaining-release-gates.md) records the unresolved work.
-[Asset credits](../examples/reference/ASSETS.md), [feature contracts](presentation-features.md),
-and [support matrix](support-matrix.md) define the supported scope.
+[Remaining release gates](remaining-release-gates.md), [asset credits](../examples/reference/ASSETS.md),
+[feature contracts](presentation-features.md), and [support matrix](support-matrix.md)
+define the supported scope.
