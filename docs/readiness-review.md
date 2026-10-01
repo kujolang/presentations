@@ -1,5 +1,9 @@
 # Readiness review and next-session work
 
+> Historical review. The [completion record](remaining-release-gates.md) supersedes
+> the open implementation checklist below and records the remaining release gates.
+
+
 Reviewed on 2026-09-30, starting from `14cb0b0`.
 
 Presentations is a useful static presentation toolkit, but it is still a preview.

@@ -5,7 +5,8 @@
 [![built with Kujo](https://img.shields.io/badge/built%20with-Kujo-white.svg)](https://github.com/kujolang/kujo)
 
 Build browser presentations with Kujo SSG and SiteKit. Choose a starter, add your
-content, and generate static slides, an overview, and a readable text edition.
+content, and generate static slides, an overview, a readable text edition, and printable pages.
+Optional presenter tools keep speaker notes local to the presenter tab.
 
 Presentations is an optional package. It adds no code or dependencies to SSG or
 SiteKit. Version 0.1.0 is a preview; the content and extension APIs may change.
@@ -165,7 +166,7 @@ visual, factual, or accessibility review.
 
 The media example uses fictional copy and metrics and follows a written design
 brief. It is not a verified pixel match to a source image. Photography comes from
-local SSG demo assets; see [asset sources](examples/reference/ASSETS.md).
+local NASA photographs with recorded source credits; see [asset sources](examples/reference/ASSETS.md).
 
 ## Documentation
 
@@ -173,10 +174,14 @@ local SSG demo assets; see [asset sources](examples/reference/ASSETS.md).
 - [Agent workflow](CREATE_A_DECK.md)
 - [Content, themes, and layouts](docs/authoring.md)
 - [Motion settings](docs/transitions.md)
+- [Language, presenter tools, and PDF](docs/presentation-features.md)
+- [Performance measurements and budgets](docs/performance.md)
+- [Support matrix and host checks](docs/support-matrix.md)
 - [Release status and checks](docs/release.md)
 - [Readiness review](docs/readiness-review.md)
 - [Build-safety follow-up and next priorities](docs/next-session-build-safety.md)
 - [Static hosting and access](docs/deployment.md)
 - [Changelog](CHANGELOG.md)
 
-Released under the [MIT license](LICENSE).
+Project code is released under the [MIT license](LICENSE). Bundled fonts, Motion,
+and NASA photographs retain their own terms; see the asset credits and license files.

@@ -2,6 +2,15 @@
 
 ## Unreleased — 0.1.0 preview
 
+- Add translated viewer controls, RTL decks, and a self-hosted Arabic example.
+- Add a presenter console, local private notes, timer, and full-deck print/PDF export.
+- Replace reference photography with credited NASA assets and verified hashes.
+- Use public SSG post routes and its interpreter execution path; compare output with the VM.
+- Measure 10/100/500-slide decks and enforce performance budgets in CI.
+- Verify pinned dependencies, reproducible Motion bundles, licenses, and advisories.
+- Add deployment checks for MIME, CSP, caching, and optional authentication.
+- Document remaining native Firefox, human accessibility, and real-host release gates.
+
 - Reject hidden assets, symlinks, special files, and overly deep asset trees.
 - Lock same-ID builds, stage output, and recover interrupted replacement.
 - Test static hosting with MIME types, cache revalidation, CSP, and mounted routes.

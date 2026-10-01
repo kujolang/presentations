@@ -1,5 +1,9 @@
 # Build safety and hosting follow-up
 
+> Historical review. The [completion record](remaining-release-gates.md) supersedes
+> the open implementation checklist below and records the remaining release gates.
+
+
 This session takes the asset-containment and build-recovery items from the
 [readiness review](readiness-review.md). It also adds a static-host fixture to
 separate browser behavior from native preview transport.

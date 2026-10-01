@@ -18,5 +18,5 @@ const server=createServer(async(req,res)=>{
     res.end(req.method==='HEAD'?undefined:body);
   } catch {res.writeHead(404);res.end('Not found');}
 });
-server.listen(8087,'127.0.0.1');
+server.listen(Number(process.env.PORT||8087),'127.0.0.1');
 for(const signal of ['SIGINT','SIGTERM']) process.on(signal,()=>server.close(()=>process.exit(0)));

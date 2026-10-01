@@ -1,5 +1,9 @@
 # Engine verification — 2026-09-30
 
+See [current release verification](release.md) and the [completion record](remaining-release-gates.md)
+for the 2026-10-01 follow-up. Earlier results below are historical.
+
+
 This records the initial engine milestone. See [release status](release.md) for
 the current release gate.
 

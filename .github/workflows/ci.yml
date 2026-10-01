@@ -46,10 +46,16 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm test
+      - run: npm run verify:release
+      - name: Deck performance guards
+        run: npm run benchmark
       - run: git diff --check
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
           name: presentation-browser-evidence
-          path: test-results/
+          path: |
+            test-results/
+            docs/evidence/
+            .build/native-browser-results/
           if-no-files-found: warn

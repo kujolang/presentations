@@ -1,0 +1,21 @@
+{
+  "cache": "300",
+  "contexts": 30,
+  "navigations": 120,
+  "responses": 540,
+  "failures": [],
+  "kujo": "1.5.0",
+  "scope": "Local macOS diagnostic, not a root-cause diagnosis of prior Linux CI stalls",
+  "fullSuite": {
+    "host": "kujo serve output --port 8095 --access-log",
+    "browser": "Firefox / Playwright 1.62.1",
+    "result": "failed",
+    "passed": 9,
+    "skipped": 1,
+    "failed": 2,
+    "navigationFailure": "live-talk/1/: page.goto waitUntil commit timed out despite document and four resources returning HTTP 200",
+    "thumbnailFailure": "no-JavaScript landscape thumbnail click did not navigate; fixed unstable placeholder height afterward; subsequent full static suite verifies geometry",
+    "trace": ".build/native-browser-results/decks-live-talk-purpose-starter-fits-and-stays-accessible-firefox/trace.zip",
+    "coopIsolation": "Node static host plus COOP same-origin passed 11, skipped 1; no root cause established"
+  }
+}

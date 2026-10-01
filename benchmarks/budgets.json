@@ -1,0 +1,9 @@
+{
+  "buildMs": {"10": 15000, "100": 45000, "500": 240000},
+  "peakRssBytes": 268435456,
+  "baseOutputBytes": 2000000,
+  "outputBytesPerSlide": 20000,
+  "overviewReadyMs": 10000,
+  "meanScrollFrameMs": 100,
+  "maxScrollFrameMs": 1000
+}

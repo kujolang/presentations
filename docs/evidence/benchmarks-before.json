@@ -1,0 +1,29 @@
+{
+  "platform": "darwin",
+  "cpu": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+  "memoryBytes": 17179869184,
+  "fixture": "statement, text-only, no motion",
+  "results": [
+    {
+      "slides": 10,
+      "buildMs": 29984,
+      "status": 0,
+      "peakRssBytes": 57843712,
+      "outputBytes": 539140,
+      "overviewReadyMs": 138,
+      "scroll": {
+        "frames": 60,
+        "meanFrameMs": 16.593333333327124,
+        "maxFrameMs": 19.600000000558794,
+        "lastVisible": true
+      }
+    },
+    {
+      "slides": 100,
+      "buildMs": 604163,
+      "status": 1,
+      "peakRssBytes": 58392576,
+      "error": "Presentation error: Presentation error: ╔════════════════════════════════════════════════╗\n║        Kujo Static Site Generator              ║\n╚════════════════════════════════════════════════╝\n\nLoaded configuration from kujo-ssg.json\n\n\n      604.17 real       587.81 user         7.75 sys\n            58392576  maximum resident set size\n                   0  average shared memory size\n                   0  average unshared data size\n                   0  average unshared stack size\n               30537  page reclaims\n                   9  page faults\n                   0  swaps\n                   0  block input operations\n                   0  block output operations\n                   2  messages sent\n                   0  messages received\n                   0  signals received\n                 186  voluntary context switches\n              386983  involuntary context switches\n           999220641  instructions retired\n          4589335482  cycles elapsed\n             9306112  peak memory footprint\n"
+    }
+  ]
+}
