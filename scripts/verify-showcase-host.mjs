@@ -11,7 +11,7 @@ const checks = [
   ['', 'text/html'],
   ['sitemap.xml', 'xml'],
   ['assets/site.css', 'text/css'],
-  ...['investor', 'sales', 'live-talk', 'editorial'].flatMap(deck => [
+  ...['original', 'investor', 'sales', 'live-talk'].flatMap(deck => [
     [`${deck}/`, 'text/html'],
     [`${deck}/1/`, 'text/html'],
     [`${deck}/reading/`, 'text/html'],

@@ -78,8 +78,8 @@ The mounted-host test targets the fixture and is not part of this command.
 
 Four complete demonstration decks are served from
 <https://presentations.kujolang.ai/> by an assets-only Cloudflare Worker.
-The root is a collection page linking to `/investor/`, `/sales/`, `/live-talk/`,
-and `/editorial/`. With Kujo, the pinned upstream dependencies, and authorized
+The root is a collection page linking to `/original/`, `/investor/`, `/sales/`,
+and `/live-talk/`. With Kujo, the pinned upstream dependencies, and authorized
 Cloudflare Wrangler access installed, run:
 
 ```sh

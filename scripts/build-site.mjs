@@ -4,10 +4,10 @@ import { spawnSync } from 'node:child_process';
 
 const origin = 'https://presentations.kujolang.ai';
 const decks = [
+  { source: 'examples/reference', id: 'reference', route: 'original', previewSource: 'deployment/previews/original.png' },
   { source: 'decks/kujo-demo-investor', id: 'kujo-demo-investor', route: 'investor', preview: 'investor' },
   { source: 'decks/kujo-demo-sales', id: 'kujo-demo-sales', route: 'sales', preview: 'sales' },
   { source: 'decks/kujo-demo-talk', id: 'kujo-demo-talk', route: 'live-talk', preview: 'live-talk' },
-  { source: 'decks/kujo-demo-editorial', id: 'kujo-demo-editorial', route: 'editorial', preview: 'editorial' },
 ];
 
 for (const deck of decks) {
@@ -32,12 +32,11 @@ cpSync('videos/kujo-presentations-promo/assets/generated/kujo-logomark.svg', `${
 cpSync('.deps/site-kit/dist/fonts/DepartureMono-Regular.woff2', `${target}/assets/fonts/DepartureMono-Regular.woff2`);
 cpSync('videos/kujo-presentations-promo/assets/fonts/captured-inter-latin-400.woff2', `${target}/assets/fonts/inter-latin-400.woff2`);
 cpSync('videos/kujo-presentations-promo/assets/fonts/captured-inter-latin-700.woff2', `${target}/assets/fonts/inter-latin-700.woff2`);
-cpSync('examples/reference/assets/fonts/oswald-700.woff2', `${target}/assets/fonts/oswald-700.woff2`);
 
 for (const deck of decks) {
   cpSync(`output/${deck.id}`, `${target}/${deck.route}`, { recursive: true });
   cpSync(
-    `videos/kujo-presentations-promo/assets/variants/${deck.preview}/slide-01.png`,
+    deck.previewSource || `videos/kujo-presentations-promo/assets/variants/${deck.preview}/slide-01.png`,
     `${target}/assets/previews/${deck.route}.png`,
   );
 }
