@@ -2,16 +2,22 @@ import { openPage } from './helpers.js';
 import { test, expect } from './fixtures.js';
 import AxeBuilder from '@axe-core/playwright';
 
-test('overview, all direct routes, local assets, canvas geometry and accessible semantics', async ({ page }) => {
-  const errors = [], failed = [];
-  page.on('pageerror', e => errors.push(e.message));
-  page.on('response', r => { if (r.status() >= 400) failed.push(r.url()); });
-  for (const [deck,count] of [['reference',9],['field-notes',3]]) {
+for (const [deck,count] of [['reference',9],['field-notes',3]]) {
+  test(`${deck} overview has local assets and accessible semantics`, async ({page}) => {
+    const errors = [], failed = [];
+    page.on('pageerror', e => errors.push(e.message));
+    page.on('response', r => { if (r.status() >= 400) failed.push(r.url()); });
     await openPage(page, `/${deck}/`);
     await expect(page.locator('.p-thumbnail')).toHaveCount(count);
     expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
     await expect(page.locator('h1:visible').first()).toContainText(deck === 'reference' ? 'A new perspective' : 'A season');
-    for (let n=1; n<=count; n++) {
+    expect(errors).toEqual([]); expect(failed).toEqual([]);
+  });
+  for (let n=1; n<=count; n++) {
+    test(`${deck}/${n} direct route, assets, geometry and accessibility`, async ({page}) => {
+      const errors = [], failed = [];
+      page.on('pageerror', e => errors.push(e.message));
+      page.on('response', r => { if (r.status() >= 400) failed.push(r.url()); });
       await openPage(page, `/${deck}/${n}/`);
       await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.images].map(i=>i.decode())); });
       await expect(page.locator('.p-counter')).toHaveText(`${n} / ${count}`);
@@ -28,10 +34,10 @@ test('overview, all direct routes, local assets, canvas geometry and accessible 
       expect(result.images).toBe(true);
       const scan = await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();
       expect(scan.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))).toEqual([]);
-    }
+      expect(errors).toEqual([]); expect(failed).toEqual([]);
+    });
   }
-  expect(errors).toEqual([]); expect(failed).toEqual([]);
-});
+}
 
 test('native keyboard navigation, reload, history, endpoints and focus guards', async ({page}) => {
   await openPage(page, '/reference/1/');

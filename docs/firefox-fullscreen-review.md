@@ -4,8 +4,8 @@
 
 The shared-process native Firefox suite reproduced a timeout at `page.goto`,
 including with Playwright 1.63.0 / Firefox 155. Updating the browser alone did
-not fix it, and its WebKit build introduced a separate navigation stall. The
-project therefore retains Playwright 1.62.1. The protocol capture contains a `Page.navigate` result for `nav-169`
+not fix it. Both browser versions also exposed separate WebKit test stalls,
+so the project retains its existing Playwright 1.62.1 pin. The protocol capture contains a `Page.navigate` result for `nav-169`
 and an HTTP 200 document response, but no `Page.navigationCommitted` event for
 that navigation. The failure screenshot shows the rendered page. Playwright
 therefore waits for an automation event that never arrives.
@@ -20,6 +20,13 @@ Chromium and WebKit retain their shared worker browsers. Navigation, HTTP,
 geometry, accessibility, motion, and resource assertions remain in place.
 There are no retries, ignored navigation errors, or replacement HTTP responses.
 The native server keeps all of its hardened headers.
+
+Each overview and direct slide route has its own geometry and accessibility
+test. A WebKit trace showed the accessibility scanner spending 63 seconds
+closing a temporary page, exhausting the old shared budget for 14 routes.
+Separate cases retain every assertion and the existing per-test timeout,
+while identifying which route fails. Keyboard and history tests still cover
+sequential navigation within one page.
 
 `npm run test:native` runs the deck, motion, language, and presenter checks
 against Kujo's native server. CI runs it in addition to the three-engine static
