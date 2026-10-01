@@ -21,11 +21,11 @@ remain optional. Private notes are distinct from public slide annotations.
 
 ## Still requires evidence
 
-1. **Firefox driver limitation (mitigated):** the protocol trace shows a missing
-   navigation-committed event after a successful document response. Native tests
-   now isolate Firefox processes, keeping all assertions and hardened headers.
-   See the [diagnosis and verification](firefox-fullscreen-review.md). This is a
-   local harness fix, not a claim that the upstream driver bug was repaired.
+1. **Firefox source-patch maintenance:** a channel identity collision caused lost
+   commit events. A pinned source correction replaces the ineffective isolation
+   workaround. Shared-process native tests and deterministic transport regressions
+   cover it. See the [source and maintenance contract](../patches/firefox-channel-identity/README.md).
+   Upstream submission/adoption remains separate; review this pin on every upgrade.
 2. **Deployment:** no real host URL, provider, or access policy was supplied.
    Run the documented host checker against the intended deployment, including
    unauthenticated denial for confidential decks. Do not publish merely to fill this gap.

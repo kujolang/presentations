@@ -2,7 +2,7 @@
 
 ## Unreleased — 0.1.0 preview
 
-- Isolate Firefox test processes and gate native-server behavior in CI; retain all navigation assertions and hardened headers.
+- Fix Firefox automation channel identity collisions with a verified source patch; remove ineffective per-test process isolation and test the hardened native server in CI.
 - Fill fullscreen with the slide and hide viewer controls; keep keyboard navigation and restore focus on exit.
 - Leave room between three-line problem titles and supporting copy; fix reading-list logical padding.
 

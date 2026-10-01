@@ -164,7 +164,8 @@ Tests cover content validation, routes, assets, keyboard controls, history,
 fullscreen, canvas layout, no-JavaScript navigation, motion, and axe accessibility
 checks. The native command runs Firefox against the hardened Kujo preview server.
 See the [Firefox and fullscreen review](docs/firefox-fullscreen-review.md) for
-process isolation and evidence. Browser screenshots go to `test-results/`. Automated checks do not replace
+the pinned browser source correction and evidence. Browser test preparation
+requires Python 3; the test commands prepare automatically. Deck builds do not. Browser screenshots go to `test-results/`. Automated checks do not replace
 visual, factual, or accessibility review.
 
 The media example uses fictional copy and metrics and follows a written design

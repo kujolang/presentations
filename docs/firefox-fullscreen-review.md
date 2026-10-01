@@ -1,67 +1,58 @@
 # Native Firefox and slide-only fullscreen
 
-## Navigation diagnosis
+## Firefox root cause
 
-The shared-process native Firefox suite reproduced a timeout at `page.goto`,
-including with Playwright 1.63.0 / Firefox 155. Updating the browser alone did
-not fix it. Both browser versions also exposed separate WebKit test stalls,
-so the project retains its existing Playwright 1.62.1 pin. The protocol capture contains a `Page.navigate` result for `nav-169`
-and an HTTP 200 document response, but no `Page.navigationCommitted` event for
-that navigation. The failure screenshot shows the rendered page. Playwright
-therefore waits for an automation event that never arrives.
+The failure came from Firefox's Juggler automation transport. A replacement
+channel reused the process ID as its identity. The parent retained replies from
+the previous channel and could mistake a new event for an old request with the
+same numeric ID.
 
-This matches the symptoms in [Playwright issue 42183](https://github.com/microsoft/playwright/issues/42183).
-That report is supporting context, not proof that its exact internal cause is
-ours. We did not patch Firefox, Playwright, Kujo, SSG, or SiteKit.
+An instrumented run captured `pageNavigationCommitted` being discarded against
+a cached `pageNavigationStarted` reply. The document returned HTTP 200 and
+rendered, but Playwright never received the commit event. A deterministic test
+using the upstream source reproduces the same event loss.
 
-`tests/browser/fixtures.js` gives each Firefox test its own browser process.
-Each no-JavaScript viewport is a separate test, so it has the same isolation.
-Chromium and WebKit retain their shared worker browsers. Navigation, HTTP,
-geometry, accessibility, motion, and resource assertions remain in place.
-There are no retries, ignored navigation errors, or replacement HTTP responses.
-The native server keeps all of its hardened headers.
+The [source fix](../patches/firefox-channel-identity/README.md) gives each channel
+a UUID using Juggler's existing helper. It preserves the identity when the same
+channel rebinds, so legitimate duplicate suppression still works. The tests also
+cover stale asynchronous responses and preparation integrity.
 
-Each overview and direct slide route has its own geometry and accessibility
-test. A WebKit trace showed the accessibility scanner spending 63 seconds
-closing a temporary page, exhausting the old shared budget for 14 routes.
-Separate cases retain every assertion and the existing per-test timeout,
-while identifying which route fails. Keyboard and history tests still cover
-sequential navigation within one page.
+The earlier process-isolation workaround has been removed. It passed locally
+but failed native CI run 36859020025. Normal Playwright fixtures now share
+Firefox processes. Security headers, assertions, and timeouts remain in place;
+there are no retries or ignored navigation errors.
 
-`npm run test:native` runs the deck, motion, language, and presenter checks
-against Kujo's native server. CI runs it in addition to the three-engine static
-host suite. The mounted-host fixture test stays in the static suite because
-its artificial `/mounted/` mapping is a fixture feature.
+`npm run prepare:browser` creates a project-owned copy of the pinned browser and
+applies the exact source correction after version and hash checks. Python 3 is
+needed only for browser test preparation. Test commands prepare automatically.
+The installed browser and generated decks remain unchanged. The fix is maintained
+locally; it has not been submitted or released upstream.
 
-A diagnostic run with hardened headers disabled passed, but disabling security
-was rejected as a fix. The protocol evidence identifies missing automation
-notification; it does not establish a generic native HTTP server defect.
-Process isolation is a test-harness workaround for the driver limitation.
-To investigate the original shared-process behavior, opt in explicitly:
+`npm run test:native` runs deck, motion, language, and presenter checks against
+Kujo's hardened server. CI runs it alongside the three-engine static-host suite.
+The synthetic mounted-host test stays in the static suite.
+
+To reproduce the uncorrected dependency without changing files:
 
 ```sh
-PRESENTATION_SHARED_FIREFOX=1 npm run test:native
+PRESENTATION_STOCK_FIREFOX=1 npm run test:native
 ```
 
-That diagnostic can still fail. It is not the default verification path.
+Each overview and direct slide route has its own geometry/accessibility test.
+A separate WebKit trace showed an accessibility scanner taking 63 seconds to
+close a temporary page, exhausting the old shared budget for 14 routes. Separate
+cases keep every assertion and the per-test timeout. Keyboard/history tests
+still exercise sequential navigation within one page.
 
 ## Fullscreen behavior
 
-Fullscreen keeps a stable document root while slides change. It hides controls,
-help text, the skip link, and progress, removes viewer padding, and fits the
-16:9 canvas to the screen. Other screen shapes have letterboxing.
-Left/Right, Home/End, Escape, and F work without visible buttons or enabled motion.
-Focus returns to the fullscreen button on exit, including when a transition was
-still finishing. The regression checks geometry, hidden controls, history,
-keyboard navigation, reduced motion, and focus restoration.
+Fullscreen keeps a stable document root while slides change. It hides viewer
+controls, help, skip link, and progress; removes padding; and fits the 16:9 canvas
+to the screen. Other screen shapes have letterboxing. Left/Right, Home/End,
+Escape, and F work without visible buttons or enabled motion. Focus returns to
+the fullscreen button on exit, including when a transition is still finishing.
 
-The current browser also exposed a three-line title touching its supporting
-copy in the image-free problem layout. The copy now has a clear gap. The reading
-list uses the valid logical padding property.
-
-## Verification
-
-Exact-commit CI artifacts and the session handoff carry the final results. Historical failing traces remain under `.build/firefox-investigation`,
-`.build/firefox-163`, and `.build/firefox-full-protocol` in the working checkout.
-CI retains new failures in its browser evidence artifact. A passing isolated
-suite does not claim the upstream shared-process driver bug is repaired.
+The regression checks geometry, hidden controls, history, keyboard navigation,
+reduced motion, and focus restoration. Exact-commit CI artifacts and the session
+handoff record final verification; the source-fix README records maintenance
+requirements and upstream provenance.
