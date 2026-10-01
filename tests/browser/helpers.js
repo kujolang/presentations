@@ -1,7 +1,7 @@
 import { expect } from '@playwright/test';
 
-// Assert document commit plus every resource the layout needs. Firefox process
-// isolation is handled in fixtures.js; navigation errors are never swallowed.
+// Assert document commit plus every resource the layout needs. Navigation
+// failures propagate; the pinned Firefox transport source fix preserves events.
 export async function openPage(page, url) {
   await page.goto(url, { waitUntil: 'commit' });
   await expect(page.locator('main')).toBeVisible();

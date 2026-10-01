@@ -59,4 +59,5 @@ jobs:
             test-results/
             docs/evidence/
             .build/native-browser-results/
+            .build/firefox-transport/**/receipt.json
           if-no-files-found: warn

@@ -1,0 +1,5 @@
+--- a/browser_patches/firefox/juggler/content/main.js
++++ b/browser_patches/firefox/juggler/content/main.js
+@@ -64 +64 @@
+-  data.channel = new SimpleChannel('', 'process-' + Services.appinfo.processID);
++  data.channel = new SimpleChannel('', 'channel-' + helper.generateId());

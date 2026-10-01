@@ -1,5 +1,5 @@
 import { openPage } from './helpers.js';
-import { test, expect } from './fixtures.js';
+import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
 for (const [deck,count] of [['reference',9],['field-notes',3]]) {

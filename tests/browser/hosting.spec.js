@@ -1,4 +1,4 @@
-import { test, expect } from './fixtures.js';
+import { test, expect } from '@playwright/test';
 import { openPage } from './helpers.js';
 test('static hosting supports a mounted deck, MIME types, revalidation and CSP', async ({page,request})=>{
   const violations=[];

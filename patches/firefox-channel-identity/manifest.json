@@ -1,0 +1,12 @@
+{
+  "playwrightVersion": "1.62.1",
+  "firefoxRevision": "1538",
+  "sourceURL": "https://github.com/microsoft/playwright/blob/v1.62.1/browser_patches/firefox/juggler/content/main.js",
+  "member": "chrome/juggler/content/content/main.js",
+  "originalSHA256": "274efc3b6f8b97f05b4c554fc69672f7f9969e0e607d53a5e091afd3d5b5ee44",
+  "patchedSHA256": "c4e151565a274590e4157260a8675d424978a3f04dddac4f63286d056df9d274",
+  "channelMember": "chrome/juggler/content/SimpleChannel.js",
+  "channelSHA256": "2b1836efe571413a150476d0b303670e248bb3960fd534be5f7b7866205110a0",
+  "before": "'process-' + Services.appinfo.processID",
+  "after": "'channel-' + helper.generateId()"
+}

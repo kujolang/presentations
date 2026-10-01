@@ -1,0 +1,19 @@
+{
+  "scope": "Playwright 1.62.1 / Firefox revision 1538, native Kujo server, macOS",
+  "observed": "2026-10-01",
+  "failure": {
+    "event": "pageNavigationCommitted",
+    "requestId": 12,
+    "cachedResponseFor": "pageNavigationStarted",
+    "peerIdentity": "process-61589",
+    "instrumentation": "Log current method and cached response method before SimpleChannel._onMessageInternal returns its duplicate response. No event delivery logic changed.",
+    "localTrace": "/tmp/firefox-peer-debug.log",
+    "result": "Presenter navigation timed out with the page rendered."
+  },
+  "negativeControl": "tests/firefox-transport.test.mjs executes the pinned upstream SimpleChannel and initializer. Retain an old reply by dropping its acknowledgement; create a second channel in the same process; send a different event with the reused request ID. Original source loses the commit.",
+  "fix": "Unique per-channel UUID, stable across actor reattachment of the same channel.",
+  "localSourcePatch": "patches/firefox-channel-identity/fix.patch",
+  "supersedes": "Per-test process isolation: native CI run 36859020025 failed despite it.",
+  "ciFailureURL": "https://github.com/kujolang/presentations/actions/runs/36859020025",
+  "upstreamPublished": false
+}
