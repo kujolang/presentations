@@ -1,0 +1,83 @@
+{
+  "project": {
+    "name": "Kujo Presentations",
+    "tagline": "Slides, authored for the web.",
+    "url": "https://presentations.kujolang.ai/"
+  },
+  "theme": {
+    "name": "minimal",
+    "mode": "dark"
+  },
+  "cards": [
+    {
+      "id": "kujo-presentations",
+      "title": "Kujo Presentations",
+      "tagline": "One presentation layer. Infinite ways to tell the story.",
+      "file": "deployment/index.html",
+      "language": "html",
+      "concepts": ["browser-native slides", "four complete demos", "accessible reading views"],
+      "variant": "social",
+      "label": "presentation system",
+      "url": "presentations.kujolang.ai",
+      "background_image": "deployment/previews/original.png",
+      "font_file": "videos/kujo-presentations-promo/assets/fonts/captured-DepartureMono-Regular.woff2",
+      "alt": "Kujo Presentations preview over the orange and black original demo cover."
+    },
+    {
+      "id": "original",
+      "title": "A new perspective on media",
+      "tagline": "The original nine-slide editorial demo.",
+      "file": "examples/reference/deck.json",
+      "language": "json",
+      "concepts": ["editorial presentation", "web slides", "reading view"],
+      "variant": "social",
+      "label": "original demo",
+      "url": "presentations.kujolang.ai/original/",
+      "background_image": "deployment/previews/original.png",
+      "font_file": "videos/kujo-presentations-promo/assets/fonts/captured-DepartureMono-Regular.woff2",
+      "alt": "A new perspective on media presentation preview in black, paper, and orange."
+    },
+    {
+      "id": "investor",
+      "title": "Vela Investor Briefing",
+      "tagline": "A premium membership and payments investor narrative.",
+      "file": "decks/kujo-demo-investor/deck.json",
+      "language": "json",
+      "concepts": ["investor presentation", "membership model", "payments"],
+      "variant": "social",
+      "label": "investor pitch",
+      "url": "presentations.kujolang.ai/investor/",
+      "background_image": "deployment/previews/investor.png",
+      "font_file": "videos/kujo-presentations-promo/assets/fonts/captured-DepartureMono-Regular.woff2",
+      "alt": "Vela Investor Briefing presentation preview with a premium editorial design."
+    },
+    {
+      "id": "sales",
+      "title": "Springline Consumer Company Overview",
+      "tagline": "A portfolio-led consumer brand story.",
+      "file": "decks/kujo-demo-sales/deck.json",
+      "language": "json",
+      "concepts": ["company overview", "consumer portfolio", "growth strategy"],
+      "variant": "social",
+      "label": "company overview",
+      "url": "presentations.kujolang.ai/sales/",
+      "background_image": "deployment/previews/sales.png",
+      "font_file": "videos/kujo-presentations-promo/assets/fonts/captured-DepartureMono-Regular.woff2",
+      "alt": "Springline Consumer Company Overview presentation preview with a colorful consumer portfolio."
+    },
+    {
+      "id": "live-talk",
+      "title": "AI at Work: Adoption Rises, but Value Lags",
+      "tagline": "A research story about AI adoption, workflows, and agents.",
+      "file": "decks/kujo-demo-talk/deck.json",
+      "language": "json",
+      "concepts": ["AI workforce research", "enterprise adoption", "workflow redesign"],
+      "variant": "social",
+      "label": "research report",
+      "url": "presentations.kujolang.ai/live-talk/",
+      "background_image": "deployment/previews/live-talk.png",
+      "font_file": "videos/kujo-presentations-promo/assets/fonts/captured-DepartureMono-Regular.woff2",
+      "alt": "AI at Work research presentation preview in Morrow Worklab's data-report style."
+    }
+  ]
+}

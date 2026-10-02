@@ -12,7 +12,8 @@ for (const [deck,count] of [['reference',9],['field-notes',3]]) {
     assert(html.includes(`data-slide="${n}"`));
     assert(!html.includes('{{'),'unresolved template placeholder');
     assert.equal((html.match(/<h1[ >]/g)||[]).length,1);
-    assert(!/https?:\/\/[^" ]+\.(jpg|png|webp|woff2)/.test(html),'assets must be local');
+    const body=html.split('</head>')[1];
+    assert(!/https?:\/\/[^" ]+\.(jpg|png|webp|woff2)/.test(body),'rendered slide assets must be local');
   }
 }
 for(const file of readdirSync('src')) assert(!/FORM \/ MEDIA|ff4b23|Innovating media/.test(read(`src/${file}`)),'reference data leaked into engine');

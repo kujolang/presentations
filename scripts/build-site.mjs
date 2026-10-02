@@ -4,16 +4,16 @@ import { spawnSync } from 'node:child_process';
 
 const origin = 'https://presentations.kujolang.ai';
 const decks = [
-  { source: 'examples/reference', id: 'reference', route: 'original', previewSource: 'deployment/previews/original.png' },
-  { source: 'decks/kujo-demo-investor', id: 'kujo-demo-investor', route: 'investor', previewSource: 'deployment/previews/investor.png' },
-  { source: 'decks/kujo-demo-sales', id: 'kujo-demo-sales', route: 'sales', previewSource: 'deployment/previews/sales.png' },
-  { source: 'decks/kujo-demo-talk', id: 'kujo-demo-talk', route: 'live-talk', previewSource: 'deployment/previews/live-talk.png' },
+  { source: 'examples/reference', id: 'reference', route: 'original', previewSource: 'deployment/previews/original.webp' },
+  { source: 'decks/kujo-demo-investor', id: 'kujo-demo-investor', route: 'investor', previewSource: 'deployment/previews/investor.webp' },
+  { source: 'decks/kujo-demo-sales', id: 'kujo-demo-sales', route: 'sales', previewSource: 'deployment/previews/sales.webp' },
+  { source: 'decks/kujo-demo-talk', id: 'kujo-demo-talk', route: 'live-talk', previewSource: 'deployment/previews/live-talk.webp' },
 ];
 
 for (const deck of decks) {
   const result = spawnSync(
     process.env.KUJO_BIN || 'kujo',
-    ['run', 'build.kujo', '--', '--deck', deck.source, '--site-url', `${origin}/${deck.route}/`],
+    ['run', 'build.kujo', '--', '--deck', deck.source, '--site-url', `${origin}/${deck.route}/`, '--social-image', `${origin}/assets/social/${deck.route}.png`],
     { stdio: 'inherit' },
   );
   if (result.status !== 0) process.exit(result.status || 1);
@@ -23,6 +23,7 @@ const target = '.build/public-site';
 rmSync(target, { recursive: true, force: true });
 mkdirSync(`${target}/assets/previews`, { recursive: true });
 mkdirSync(`${target}/assets/fonts`, { recursive: true });
+mkdirSync(`${target}/assets/social`, { recursive: true });
 
 cpSync('deployment/index.html', `${target}/index.html`);
 cpSync('deployment/404.html', `${target}/404.html`);
@@ -32,12 +33,13 @@ cpSync('videos/kujo-presentations-promo/assets/generated/kujo-logomark.svg', `${
 cpSync('.deps/site-kit/dist/fonts/DepartureMono-Regular.woff2', `${target}/assets/fonts/DepartureMono-Regular.woff2`);
 cpSync('videos/kujo-presentations-promo/assets/fonts/captured-inter-latin-400.woff2', `${target}/assets/fonts/inter-latin-400.woff2`);
 cpSync('videos/kujo-presentations-promo/assets/fonts/captured-inter-latin-700.woff2', `${target}/assets/fonts/inter-latin-700.woff2`);
+cpSync('deployment/social', `${target}/assets/social`, { recursive: true });
 
 for (const deck of decks) {
   cpSync(`output/${deck.id}`, `${target}/${deck.route}`, { recursive: true });
   cpSync(
     deck.previewSource || `videos/kujo-presentations-promo/assets/variants/${deck.preview}/slide-01.png`,
-    `${target}/assets/previews/${deck.route}.png`,
+    `${target}/assets/previews/${deck.route}.webp`,
   );
 }
 

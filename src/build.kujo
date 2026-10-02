@@ -29,7 +29,7 @@ func copy_tree(source, target) {
         if path_is_dir(from_path) { copy_tree(from_path, to_path) } else { copy_file(from_path, to_path) }
     }
 }
-func page(stage, slug, title, html, deck, site_url) {
+func page(stage, slug, title, html, deck, site_url, social_image) {
     # The public SSG post pipeline streams records; pages retain N full records.
     # Numeric slide routes use posts-at-root, without blog UI or article markup.
     kind := "pages"
@@ -37,9 +37,9 @@ func page(stage, slug, title, html, deck, site_url) {
     if regex_replace(slug, "^[0-9]+$", "") == "" { kind = "posts"; template = "post" }
     # HTML stays in generated SSG templates, not Markdown raw-HTML parsing.
     write_file(stage + "/content/" + kind + "/" + slug + ".md", "---\ntitle: " + to_json(replace(replace(title, "\n", " "), "\r", " ")) + "\ntemplate: " + slug + "\nnav_hide: true\n---\n")
-    write_file(stage + "/templates/" + template + "-" + slug + ".html", document_html(deck, title, html, "../", site_url + "/" + slug + "/"))
+    write_file(stage + "/templates/" + template + "-" + slug + ".html", document_html(deck, title, html, "../", site_url + "/" + slug + "/", social_image))
 }
-func document_html(deck, title, content, prefix, url) {
+func document_html(deck, title, content, prefix, url, social_image) {
     description := deck["description"]
     slide_index := 1
     for slide in deck["slides"] {
@@ -51,7 +51,10 @@ func document_html(deck, title, content, prefix, url) {
     if ends_with(url, "/print/") { title = deck["title"] + " — Print"; description = "Printable slides for " + deck["title"] }
     if ends_with(url, "/presenter/") { title = deck["title"] + " — Presenter"; description = "Presenter controls for " + deck["title"] }
     if len(url) == 0 { description = "This page was not found. Open the presentation overview to choose a slide." }
-    metadata := "<meta property=\"og:type\" content=\"website\"><meta property=\"og:title\" content=\"" + text(title) + "\"><meta property=\"og:description\" content=\"" + text(description) + "\"><meta name=\"twitter:card\" content=\"summary\">"
+    twitter_card := "summary"
+    if len(social_image) > 0 { twitter_card = "summary_large_image" }
+    metadata := "<meta property=\"og:type\" content=\"website\"><meta property=\"og:title\" content=\"" + text(title) + "\"><meta property=\"og:description\" content=\"" + text(description) + "\"><meta name=\"twitter:card\" content=\"" + twitter_card + "\"><meta name=\"twitter:title\" content=\"" + text(title) + "\"><meta name=\"twitter:description\" content=\"" + text(description) + "\">"
+    if len(social_image) > 0 { metadata = metadata + "<meta property=\"og:image\" content=\"" + text(social_image) + "\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\"><meta property=\"og:image:alt\" content=\"" + text(title) + " presentation preview\"><meta name=\"twitter:image\" content=\"" + text(social_image) + "\"><meta name=\"twitter:image:alt\" content=\"" + text(title) + " presentation preview\">" }
     if utility { metadata = metadata + "<meta name=\"robots\" content=\"noindex,follow\">" }
     if len(url) > 0 {
         metadata = metadata + "<meta property=\"og:url\" content=\"" + text(url) + "\">"
@@ -71,12 +74,12 @@ export func build(argv) {
         if contains(seen_options, arg) { fail("Repeated option: " + arg) }
         seen_options = push(seen_options, arg)
         if arg == "--help" || arg == "--check" { arg_index = arg_index + 1; continue }
-        if !contains(["--deck", "--ssg", "--sitekit", "--site-url"], arg) { fail("Unknown option: " + arg) }
+        if !contains(["--deck", "--ssg", "--sitekit", "--site-url", "--social-image"], arg) { fail("Unknown option: " + arg) }
         if arg_index + 1 >= len(argv) || starts_with(argv[arg_index + 1], "--") { fail("Missing value for " + arg) }
         arg_index = arg_index + 2
     }
     if contains(argv, "--help") {
-        print("kujo run build.kujo -- [--deck examples/reference] [--ssg ../ssg] [--sitekit ../site-kit/dist] [--site-url https://example.com] [--check]")
+        print("kujo run build.kujo -- [--deck examples/reference] [--ssg ../ssg] [--sitekit ../site-kit/dist] [--site-url https://example.com] [--social-image https://example.com/social.png] [--check]")
         exit(0)
     }
     root := trim(run(["pwd"], "."))
@@ -96,6 +99,8 @@ export func build(argv) {
     site_url := option(argv, "--site-url", "https://example.com")
     if regex_replace(site_url, "^https?://[^\\s/?#]+[^\\s?#]*$", "") != "" { fail("--site-url must be an HTTP(S) URL without query or fragment") }
     site_url = regex_replace(site_url, "/+$", "")
+    social_image := option(argv, "--social-image", "")
+    if len(social_image) > 0 && regex_replace(social_image, "^https?://[^\\s/?#]+[^\\s?#]*$", "") != "" { fail("--social-image must be an absolute HTTP(S) URL without query or fragment") }
     stage := root + "/.build/" + deck["id"]
     # Only package-owned stage/output names derived from a validated slug are rebuilt.
     if path_exists(stage) { run(["rm", "-rf", "--", stage], root) }
@@ -126,14 +131,14 @@ export func build(argv) {
     }
     # Content is a complete escaped document; SSG still owns routes and assets.
     write_file(stage + "/templates/layout.html", "{{content}}")
-    write_file(stage + "/templates/page-home.html", document_html(deck, deck["title"], overview(deck), "./", site_url + "/"))
-    write_file(stage + "/templates/page-blog.html", document_html(deck, deck["title"], overview(deck), "./", site_url + "/"))
-    write_file(stage + "/templates/404.html", document_html(deck, "Slide not found", "<main id=\"main-content\" class=\"p-reading sk-container\"><h1>Slide not found</h1><p>Open the deck overview to choose a slide.</p><a href=\"" + text(site_url) + "/\">Overview</a></main>", site_url + "/", ""))
+    write_file(stage + "/templates/page-home.html", document_html(deck, deck["title"], overview(deck), "./", site_url + "/", social_image))
+    write_file(stage + "/templates/page-blog.html", document_html(deck, deck["title"], overview(deck), "./", site_url + "/", social_image))
+    write_file(stage + "/templates/404.html", document_html(deck, "Slide not found", "<main id=\"main-content\" class=\"p-reading sk-container\"><h1>Slide not found</h1><p>Open the deck overview to choose a slide.</p><a href=\"" + text(site_url) + "/\">Overview</a></main>", site_url + "/", "", ""))
     i := 1
-    for slide in deck["slides"] { page(stage, to_string(i), slide["title"], viewer(deck, slide, i), deck, site_url); i = i + 1 }
-    page(stage, "print", deck["title"], print_deck(deck), deck, site_url)
-    page(stage, "presenter", deck["title"], presenter(deck), deck, site_url)
-    page(stage, "reading", deck["title"] + " — Read text", reading(deck), deck, site_url)
+    for slide in deck["slides"] { page(stage, to_string(i), slide["title"], viewer(deck, slide, i), deck, site_url, social_image); i = i + 1 }
+    page(stage, "print", deck["title"], print_deck(deck), deck, site_url, social_image)
+    page(stage, "presenter", deck["title"], presenter(deck), deck, site_url, social_image)
+    page(stage, "reading", deck["title"] + " — Read text", reading(deck), deck, site_url, social_image)
     write_file(stage + "/kujo-ssg.json", to_json({"site_url": site_url, "site_title": deck["title"], "site_tagline": deck["description"], "content": "content", "templates": "templates", "assets": "assets", "output": stage + "/site", "fonts": ["Bree Serif", "Inter"], "webmcp": false, "minify": false, "no_aux": true, "posts_at_root": true, "posts_per_page": len(deck["slides"])}))
     print(run(["kujo", "run", "--interpreter", ssg + "/build.kujo", "--", "--no-aux", "--no-aliases", "--no-webmcp"], stage))
     # The SSG blog archive has no role in a deck; remove it before publication.
