@@ -1,38 +1,125 @@
 {
   "id": "kujo-demo-talk",
-  "title": "The Shape of an Idea",
-  "brand": "The Shape of an Idea",
-  "description": "A fictional live-talk deck created to demonstrate Kujo Presentations.",
-  "footer": "The Shape of an Idea / Illustrative live talk",
-  "transitions": { "enabled": true, "effect": "kinetic", "duration": 0.9, "easing": "easeOut", "intensity": 0.65, "stagger": 0.05 },
+  "title": "AI at Work: Adoption Rises, but Value Lags",
+  "brand": "MORROW / WORKLAB",
+  "description": "A fictional workforce research report on enterprise AI adoption, training, workflow redesign, and AI agents.",
+  "footer": "MORROW WORKLAB / FICTIONAL RESEARCH DEMO",
+  "transitions": { "enabled": true, "effect": "focus", "duration": 0.75, "easing": "easeOut", "intensity": 0.6, "stagger": 0.025 },
   "slides": [
-    { "layout": "statement", "title": "The Shape\nof an Idea", "copy": "How constraints turn possibility into form.", "eyebrow": "A live talk", "inverse": true },
-    { "layout": "statement", "title": "What if the blank page is not empty?", "copy": "Every project begins with boundaries: time, tools, audience, and intent." },
-    { "layout": "index", "title": "Three moves", "copy": "A simple way to make ideas concrete enough to test.", "features": [
-      { "title": "Frame", "copy": "Choose the question worth answering." },
-      { "title": "Shape", "copy": "Use constraints to reveal a direction." },
-      { "title": "Test", "copy": "Put the idea where people can respond." }
-    ], "inverse": true },
-    { "layout": "problem", "title": "More options can mean less movement", "copy": "When every direction remains possible, no direction becomes real.", "features": [
-      { "title": "Expand", "copy": "Generate enough range to see the field." },
-      { "title": "Choose", "copy": "Name what the work will refuse." },
-      { "title": "Commit", "copy": "Give one direction enough time to speak." }
-    ] },
-    { "layout": "editorial", "title": "Constraints are a creative material", "copy": "They give an idea edges, tension, and a recognizable point of view.", "features": [
-      { "title": "Time", "copy": "Decide what must be true first." },
-      { "title": "Form", "copy": "Let the medium influence the answer." },
-      { "title": "Audience", "copy": "Design for a specific moment of understanding." }
-    ], "inverse": true },
-    { "layout": "market", "title": "A useful rhythm", "copy": "Illustrative percentages show how a talk can carry a visual progression.", "metrics": [{ "value": "100%", "label": "attention on the next useful question" }], "chartLabel": "Illustrative creative cycle", "chart": [
-      { "label": "Frame", "value": 25 }, { "label": "Shape", "value": 55 }, { "label": "Test", "value": 80 }, { "label": "Learn", "value": 100 }
-    ] },
-    { "layout": "value", "title": "Try this on Monday", "copy": "Turn one vague project into a sequence of answerable questions.", "features": [
-      { "title": "Write", "copy": "State the decision in one sentence." },
-      { "title": "Limit", "copy": "Choose one constraint on purpose." },
-      { "title": "Make", "copy": "Build the smallest visible version." },
-      { "title": "Listen", "copy": "Use the response to shape the next move." }
-    ], "inverse": true },
-    { "layout": "statement", "title": "Useful ideas\nhave a shape.", "copy": "One thought to carry into the discussion." },
-    { "layout": "statement", "title": "Questions?", "copy": "Thank you for making the idea visible.", "eyebrow": "Discussion", "inverse": true }
+    {
+      "layout": "hero",
+      "title": "AI at Work:\nAdoption Rises,\nbut Value Lags",
+      "copy": "A fictional workforce study on the gap between access and meaningful use.",
+      "eyebrow": "Morrow Worklab / 2026",
+      "images": [{ "src": "morrow-intelligence-sphere.png", "alt": "Original luminous green particle sphere on a black background", "x": 72, "y": 50 }],
+      "inverse": true,
+      "note": "Illustrative research concept — not a real survey"
+    },
+    {
+      "layout": "index",
+      "title": "Survey parameters",
+      "copy": "A fictional cross-market sample designed to show a consulting research profile.",
+      "eyebrow": "Research design",
+      "features": [
+        { "title": "11,240", "copy": "illustrative respondents" },
+        { "title": "10", "copy": "illustrative markets" },
+        { "title": "03", "copy": "role groups" },
+        { "title": "Q2 2026", "copy": "illustrative fieldwork period" }
+      ],
+      "note": "All sample details are fictional"
+    },
+    {
+      "layout": "value",
+      "title": "Four findings from the workforce",
+      "copy": "Access has spread faster than the practices that turn AI into dependable value.",
+      "eyebrow": "Executive summary",
+      "features": [
+        { "title": "Use is common", "copy": "Regular adoption now reaches most office-based roles." },
+        { "title": "Frontline use trails", "copy": "Access and time remain uneven across roles." },
+        { "title": "Training is thin", "copy": "Many employees learn through trial and error." },
+        { "title": "Workflows lag", "copy": "Most teams add tools before changing the work." }
+      ],
+      "note": "Illustrative findings"
+    },
+    {
+      "layout": "market",
+      "title": "Adoption is high, but frontline use has stalled",
+      "copy": "Regular AI use rises with seniority, leaving the employees closest to daily operations behind.",
+      "eyebrow": "Adoption by role",
+      "chartLabel": "Illustrative share of employees using AI regularly, percent",
+      "chart": [
+        { "label": "Frontline", "value": 52 },
+        { "label": "Managers", "value": 78 },
+        { "label": "Leaders", "value": 88 }
+      ],
+      "metrics": [{ "value": "73%", "label": "illustrative overall regular use" }],
+      "note": "Illustrative survey data"
+    },
+    {
+      "layout": "market",
+      "title": "Time savings depend on the work",
+      "copy": "Employees report the largest gains in repeatable administrative tasks and the smallest gains in professional development.",
+      "eyebrow": "Reported impact",
+      "chartLabel": "Illustrative share reporting at least one hour saved on days they use AI, percent",
+      "chart": [
+        { "label": "Admin", "value": 61 },
+        { "label": "Analysis", "value": 55 },
+        { "label": "Writing", "value": 48 },
+        { "label": "Strategy", "value": 37 },
+        { "label": "Learning", "value": 29 }
+      ],
+      "metrics": [{ "value": "46%", "label": "illustrative share saving more than one hour" }],
+      "note": "Illustrative survey data"
+    },
+    {
+      "layout": "problem",
+      "title": "Three barriers shape adoption",
+      "copy": "Employees need practical instruction, approved tools, and visible support from leaders.",
+      "eyebrow": "Adoption barriers",
+      "features": [
+        { "title": "38% lack practical training", "copy": "Short sessions explain the tool but rarely change the work." },
+        { "title": "34% lack approved tools", "copy": "Employees turn to unsanctioned options when access is limited." },
+        { "title": "27% lack leadership support", "copy": "Teams hesitate when expectations and accountability stay unclear." }
+      ],
+      "note": "Illustrative survey data"
+    },
+    {
+      "layout": "hero",
+      "title": "Workflow redesign remains uneven",
+      "copy": "Most companies deploy AI inside existing processes. Fewer reshape the work or invent a different model.",
+      "eyebrow": "Operating model",
+      "metrics": [
+        { "value": "68%", "label": "deploy AI in existing workflows" },
+        { "value": "47%", "label": "reshape end-to-end processes" },
+        { "value": "19%", "label": "invent new operating models" }
+      ],
+      "note": "Illustrative survey data; categories may overlap"
+    },
+    {
+      "layout": "curation",
+      "title": "AI agents show promise, but understanding remains low",
+      "copy": "Interest is broad. Familiarity with governance, limits, and day-to-day use remains narrow.",
+      "eyebrow": "AI agents",
+      "metrics": [{ "value": "74%", "label": "see meaningful potential" }],
+      "features": [
+        { "title": "31% understand agents", "copy": "Practical familiarity remains much lower than interest." },
+        { "title": "42% worry about oversight", "copy": "Another 35% cite unclear accountability when mistakes occur." }
+      ],
+      "note": "Illustrative survey data"
+    },
+    {
+      "layout": "value",
+      "title": "Four priorities for leaders",
+      "copy": "The next phase depends on practical capability and deliberate workflow choices.",
+      "eyebrow": "Leadership agenda",
+      "features": [
+        { "title": "Train for the work", "copy": "Teach employees inside real tasks and decisions." },
+        { "title": "Measure value", "copy": "Track time, quality, satisfaction, and risk." },
+        { "title": "Redesign workflows", "copy": "Change the process when tools alone stop helping." },
+        { "title": "Test agents carefully", "copy": "Define oversight before expanding autonomy." }
+      ],
+      "inverse": true,
+      "note": "Illustrative leadership framework"
+    }
   ]
 }

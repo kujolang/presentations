@@ -1,2 +1,123 @@
-:root { --p-background: #f2ecff; --p-foreground: #24133f; --p-muted: #493465; --p-border: #9f88bf; --p-accent: #7447ff; --p-on-accent: #ffffff; --p-inverse: #24133f; --p-on-inverse: #f2ecff; --p-viewer-background: #ddd0f4; --p-font: Arial, sans-serif; --p-display: Georgia, serif; --p-heading-weight: 400; --p-letter-spacing: -.045em; }
-.p-canvas::after { background: radial-gradient(circle at 86% 14%, color-mix(in srgb, var(--p-accent) 28%, transparent) 0 9cqw, transparent 9.2cqw); content: ""; inset: 0; pointer-events: none; position: absolute; }
+:root {
+  --p-background: #f7f7f5;
+  --p-foreground: #101010;
+  --p-muted: #515151;
+  --p-border: #c9ceca;
+  --p-accent: #00a650;
+  --p-on-accent: #ffffff;
+  --p-inverse: #0a0a0a;
+  --p-on-inverse: #ffffff;
+  --p-viewer-background: #d8ded9;
+  --p-font: Arial, Helvetica, sans-serif;
+  --p-display: Arial, Helvetica, sans-serif;
+  --p-heading-weight: 800;
+  --p-letter-spacing: -.05em;
+  --p-title-case: none;
+}
+
+.p-canvas { background-image: none; }
+.p-canvas::after { content: none; }
+.p-header { border-bottom: 0; color: #555; font-weight: 700; letter-spacing: .08em; }
+.p-header span:first-child { color: #00532f; letter-spacing: .14em; }
+.p-inverse .p-header { color: #9ca3af; }
+.p-inverse .p-header span:first-child { color: #59ed76; }
+.p-footer { color: #6b6b6b; font-size: .62cqw; }
+.p-inverse .p-footer { color: #9ca3af; }
+.p-canvas h1 { line-height: 1.02; }
+.p-intro, .p-heading p { color: var(--p-muted); line-height: 1.4; }
+.p-inverse .p-intro, .p-inverse .p-heading p { color: #d2d6d3; }
+.p-accent { display: none; }
+.p-feature-number { color: #00532f; font-weight: 800; }
+
+/* 01 — dark cover with an original luminous data sphere. */
+.p-layout-hero.p-inverse:has(.p-image) { background: #0a0a0a; }
+.p-layout-hero.p-inverse:has(.p-image) .p-heading { inset-inline-start: 5cqw; top: 17cqw; width: 46cqw; }
+.p-layout-hero.p-inverse:has(.p-image) h1 { font-size: 4.9cqw; }
+.p-layout-hero.p-inverse:has(.p-image) .p-heading p { font-size: 1.15cqw; margin-top: 2cqw; width: 36cqw; }
+.p-layout-hero.p-inverse:has(.p-image) .p-images { height: 56.25cqw; inset: 0; width: 100cqw; z-index: -1; }
+.p-layout-hero.p-inverse:has(.p-image) .p-image-0 { height: 56.25cqw; inset: 0; width: 100cqw; }
+.p-layout-hero.p-inverse:has(.p-image) .p-image-0::after { background: linear-gradient(90deg, rgba(10,10,10,.18), transparent 58%); content: ""; inset: 0; position: absolute; }
+
+/* 02 — survey profile as one flat row of exhibit columns. */
+.p-layout-index h1 { inset-inline-start: 5cqw; top: 9cqw; width: 58cqw; font-size: 4cqw; }
+.p-layout-index .p-intro { inset-inline-end: 5cqw; top: 10cqw; width: 28cqw; }
+.p-layout-index .p-features { gap: 0; grid-template-columns: repeat(4, 1fr); inset-inline: 5cqw; top: 25cqw; }
+.p-layout-index .p-features li { border-left: .08cqw solid #c9ceca; border-top: .8cqw solid #00a650; display: block; min-height: 20cqw; padding: 1.5cqw; }
+.p-layout-index .p-features li:nth-child(2) { border-top-color: #007f49; }
+.p-layout-index .p-features li:nth-child(3) { border-top-color: #00532f; }
+.p-layout-index .p-features li:nth-child(4) { border-top-color: #101010; }
+.p-layout-index .p-features h2 { font-size: 3.2cqw; margin-top: 5cqw; }
+.p-layout-index .p-features p { font-size: .9cqw; }
+.p-layout-index .p-feature-number { color: #00532f; }
+
+/* 03 — four findings mirror the reference's numbered takeaway strip. */
+.p-layout-value:not(.p-inverse) h1 { inset-inline-start: 5cqw; top: 8.7cqw; width: 60cqw; font-size: 3.8cqw; }
+.p-layout-value:not(.p-inverse) .p-intro { inset-inline-end: 5cqw; top: 10cqw; width: 27cqw; }
+.p-layout-value:not(.p-inverse) .p-features { gap: 0; grid-template-columns: repeat(4, 1fr); inset-inline: 5cqw; top: 24cqw; }
+.p-layout-value:not(.p-inverse) .p-features li { background: #00753e; color: #fff; min-height: 22cqw; padding: 1.2cqw; }
+.p-layout-value:not(.p-inverse) .p-features li:nth-child(2) { background: #00683b; }
+.p-layout-value:not(.p-inverse) .p-features li:nth-child(3) { background: #075f39; }
+.p-layout-value:not(.p-inverse) .p-features li:nth-child(4) { background: #0a0a0a; }
+.p-layout-value:not(.p-inverse) .p-features li:nth-child(5) { background: #555; }
+.p-layout-value:not(.p-inverse) .p-feature-number { color: #fff; font-size: 2.2cqw; }
+.p-layout-value:not(.p-inverse) .p-features h2 { font-size: 1.25cqw; }
+.p-layout-value:not(.p-inverse) .p-features p { font-size: .86cqw; }
+
+/* 04 and 05 — white consulting exhibits with simple green bars. */
+.p-layout-market h1 { inset-inline-start: 5cqw; top: 8.5cqw; width: 82cqw; font-size: 3.65cqw; }
+.p-layout-market .p-intro { inset-inline-start: 5cqw; top: 15cqw; width: 58cqw; }
+.p-layout-market .p-chart { bottom: 7.5cqw; inset-inline-start: 23cqw; width: 53cqw; }
+.p-chart-rule { stroke: #c9ceca; }
+.p-chart rect { fill: #00a650; }
+.p-chart text { fill: #101010; font-weight: 700; }
+.p-layout-market .p-metrics { background: #0a0a0a; color: #fff; inset-inline-start: 5cqw; padding: 2cqw; top: 25cqw; width: 14cqw; }
+.p-layout-market .p-metric dd { color: #59ed76; font-size: 5.2cqw; }
+.p-layout-market .p-metric dt { font-size: .9cqw; max-width: 10cqw; }
+
+/* 06 — barrier statement on the left, three green levels on the right. */
+.p-layout-problem:not(:has(.p-image)) { background: linear-gradient(90deg, #0a0a0a 0 39%, #f7f7f5 39% 100%); }
+.p-layout-problem:not(:has(.p-image)) .p-header span:first-child { color: #59ed76; }
+.p-layout-problem:not(:has(.p-image)) h1 { color: #fff; inset-inline-start: 5cqw; top: 15cqw; width: 28cqw; }
+.p-layout-problem:not(:has(.p-image)) .p-intro { color: #515151; inset-inline-start: 42cqw; top: 9cqw; width: 48cqw; }
+.p-layout-problem:not(:has(.p-image)) .p-features { gap: 0; inset-inline-start: 39cqw; inset-inline-end: 5cqw; top: 18cqw; }
+.p-layout-problem:not(:has(.p-image)) .p-features li { background: #006f3d; border: 0; color: #fff; min-height: 9cqw; padding: 1.2cqw 1.6cqw; }
+.p-layout-problem:not(:has(.p-image)) .p-features li:nth-child(2) { background: #00643b; }
+.p-layout-problem:not(:has(.p-image)) .p-features li:nth-child(3) { background: #00532f; }
+.p-layout-problem:not(:has(.p-image)) .p-features h2 { font-size: 1.35cqw; }
+.p-layout-problem:not(:has(.p-image)) .p-features p { font-size: .88cqw; }
+.p-layout-problem:not(:has(.p-image)) .p-feature-number { color: #fff; }
+
+/* 07 — workflow maturity as three oversized adoption figures. */
+.p-layout-hero:not(.p-inverse):not(:has(.p-image)) .p-heading { inset-inline-start: 5cqw; top: 8.8cqw; width: 83cqw; }
+.p-layout-hero:not(.p-inverse):not(:has(.p-image)) h1 { font-size: 4cqw; }
+.p-layout-hero:not(.p-inverse):not(:has(.p-image)) .p-heading p { margin-top: 1.2cqw; width: 62cqw; }
+.p-layout-hero:not(.p-inverse):not(:has(.p-image)) .p-metrics { bottom: 8cqw; display: grid; gap: 0; grid-template-columns: repeat(3, 1fr); inset-inline: 5cqw; }
+.p-layout-hero:not(.p-inverse):not(:has(.p-image)) .p-metric { border-left: .08cqw solid #c9ceca; border-top: .8cqw solid #00a650; min-height: 22cqw; padding: 1.6cqw; }
+.p-layout-hero:not(.p-inverse):not(:has(.p-image)) .p-metric:nth-child(2) { border-top-color: #008853; }
+.p-layout-hero:not(.p-inverse):not(:has(.p-image)) .p-metric:nth-child(3) { border-top-color: #0a0a0a; }
+.p-layout-hero:not(.p-inverse):not(:has(.p-image)) .p-metric dd { color: #008853; font-size: 6.8cqw; margin-top: 4cqw; }
+.p-layout-hero:not(.p-inverse):not(:has(.p-image)) .p-metric dt { font-size: .95cqw; max-width: 18cqw; }
+
+/* 08 — two readiness metrics and two explicit risk findings. */
+.p-layout-curation:not(:has(.p-image)) .p-metrics { inset-inline-start: 5cqw; top: 9cqw; width: 44cqw; }
+.p-layout-curation:not(:has(.p-image)) .p-metric { background: #fff; border-left: .8cqw solid #00a650; padding: 1.4cqw; }
+.p-layout-curation:not(:has(.p-image)) .p-metric dd { color: #008853; font-size: 6cqw; }
+.p-layout-curation:not(:has(.p-image)) .p-metric dt { font-size: .9cqw; max-width: 16cqw; }
+.p-layout-curation:not(:has(.p-image)) .p-features { gap: 1cqw; grid-template-columns: repeat(2, 1fr); inset-inline: 55cqw 5cqw; top: 10cqw; }
+.p-layout-curation:not(:has(.p-image)) .p-features li { border-top: .8cqw solid #0a0a0a; min-height: 15cqw; padding: 1.4cqw; }
+.p-layout-curation:not(:has(.p-image)) .p-feature-number { color: #00532f; }
+.p-layout-curation:not(:has(.p-image)) h1 { bottom: 8cqw; font-size: 3.7cqw; inset-inline-start: 5cqw; width: 54cqw; }
+.p-layout-curation:not(:has(.p-image)) .p-intro { bottom: 9cqw; inset-inline-end: 5cqw; width: 32cqw; }
+
+/* 09 — four priorities over an original particle canopy. */
+.p-layout-value.p-inverse { background: linear-gradient(rgba(10,10,10,.55), rgba(10,10,10,.82)), url("morrow-particle-canopy.png") center / cover no-repeat; }
+.p-layout-value.p-inverse h1 { inset-inline-start: 5cqw; top: 8.7cqw; width: 62cqw; font-size: 4cqw; }
+.p-layout-value.p-inverse .p-intro { inset-inline-end: 5cqw; top: 10cqw; width: 26cqw; }
+.p-layout-value.p-inverse .p-features { gap: 0; inset-inline: 5cqw; top: 25cqw; }
+.p-layout-value.p-inverse .p-features li { background: rgba(21,191,91,.94); color: #fff; min-height: 20cqw; padding: 1.3cqw; }
+.p-layout-value.p-inverse .p-features li:nth-child(2) { background: rgba(0,136,83,.95); }
+.p-layout-value.p-inverse .p-features li:nth-child(3) { background: rgba(0,83,47,.95); }
+.p-layout-value.p-inverse .p-features li:nth-child(4) { background: rgba(10,10,10,.95); }
+.p-layout-value.p-inverse .p-feature-number { color: #fff; }
+.p-layout-value.p-inverse .p-features h2 { font-size: 1.25cqw; }
+.p-layout-value.p-inverse .p-features p { font-size: .85cqw; }
