@@ -9,6 +9,8 @@ Brand: Vela; cobalt blue, deep navy, crisp white, restrained corporate typograph
 
 The user supplied the American Express 2024 Investor Day design system on Slides.Wiki as a visual and content reference. The deck borrows broad presentation principles only: premium blue-and-white contrast, disciplined typography, generous whitespace, concise key-takeaway structures, minimal charts, and member-lifestyle imagery. It does not reuse American Express branding, logos, copy, data, charts, or photography.
 
+The slide compositions intentionally differ from the orange Form Media deck. Vela uses a type-led cover, centered financial headlines, stacked takeaway rows, compact chart fields, blue segment pillars, and restrained image-and-data splits derived from the supplied reference's presentation grammar. It does not reuse the orange deck's photo-led hero, asymmetrical editorial collage, oversized accent arrows, or orange feature-card geometry.
+
 Reference reviewed 2026-10-02:
 
 - https://slides.wiki/presentations/american-express

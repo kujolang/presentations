@@ -6,7 +6,7 @@
   "footer": "VELA / Fictional investor demo",
   "transitions": { "enabled": true, "effect": "focus", "duration": 0.75, "easing": "easeOut", "intensity": 0.55, "stagger": 0.035 },
   "slides": [
-    { "layout": "hero", "title": "2027\nInvestor Briefing", "copy": "A premium membership network built around the way people travel, dine and do business.", "eyebrow": "The membership company", "images": [{ "src": "vela-cards.png", "alt": "Two original unbranded cobalt payment cards displayed on white stone", "x": 35, "y": 50 }], "note": "Illustrative concept — not a real company or offer" },
+    { "layout": "statement", "title": "2027\nInvestor Briefing", "copy": "A premium membership network built around the way people travel, dine and do business.", "eyebrow": "The membership company", "note": "Illustrative concept — not a real company or offer" },
     { "layout": "index", "title": "Four strengths power one durable model", "copy": "Vela connects premium members and partners through products people choose to keep using.", "eyebrow": "Investment case", "features": [
       { "title": "Premium members", "copy": "A high-intent audience with global lives and businesses." },
       { "title": "Membership model", "copy": "Recurring value designed to deepen over time." },
@@ -16,7 +16,7 @@
     { "layout": "market", "title": "A large, durable runway", "copy": "Premium digital spend expands as travel returns, younger members enter the category and more commerce moves across borders.", "eyebrow": "Growth context", "chartLabel": "Illustrative premium digital spend index, 2022 through 2026 estimate", "chart": [
       { "label": "2022", "value": 48 }, { "label": "2023", "value": 57 }, { "label": "2024", "value": 68 }, { "label": "2025E", "value": 79 }, { "label": "2026E", "value": 91 }
     ], "metrics": [{ "value": "4", "label": "growth drivers working together" }], "note": "Illustrative index; not market guidance" },
-    { "layout": "editorial", "title": "Membership is the growth engine", "copy": "Useful products earn a place in everyday life. Better experiences increase engagement, which attracts stronger partners and funds the next refresh.", "eyebrow": "The Vela model", "images": [{ "src": "vela-travel.png", "alt": "Business travelers walking through an original modern airport lounge scene", "x": 66, "y": 47 }], "features": [
+    { "layout": "problem", "title": "Membership is the growth engine", "copy": "Useful products earn a place in everyday life. Better experiences increase engagement, which attracts stronger partners and funds the next refresh.", "eyebrow": "The Vela model", "images": [{ "src": "vela-travel.png", "alt": "Business travelers walking through an original modern airport lounge scene", "x": 66, "y": 47 }], "features": [
       { "title": "Acquire", "copy": "Lead with a clear premium proposition." },
       { "title": "Engage", "copy": "Make benefits useful across the member journey." },
       { "title": "Renew", "copy": "Refresh value before expectations move." }
@@ -28,8 +28,7 @@
       { "title": "Long-term", "copy": "A product ladder that grows with the member." }
     ], "note": "Illustrative positioning" },
     { "layout": "offerings", "title": "Value that travels beyond the card", "copy": "The strongest benefits solve real moments: where to stay, where to eat and who can help when plans change.", "eyebrow": "Membership services", "images": [
-      { "src": "vela-dining.png", "alt": "Friends dining in an original premium restaurant scene", "x": 38, "y": 50 },
-      { "src": "vela-travel.png", "alt": "Travelers in an original airport lounge scene", "x": 67, "y": 50 }
+      { "src": "vela-dining.png", "alt": "Friends dining in an original premium restaurant scene", "x": 38, "y": 50 }
     ], "metrics": [{ "value": "03", "label": "connected experience pillars" }, { "value": "01", "label": "member relationship" }], "features": [{ "title": "Travel · Dining · Service", "copy": "Every interaction reinforces the reason to belong." }], "note": "Illustrative product architecture" },
     { "layout": "market", "title": "A balanced revenue model", "copy": "Four complementary streams reduce dependence on any single behavior while keeping the member relationship at the center.", "eyebrow": "Economics", "chartLabel": "Illustrative revenue mix scenario, percent", "chart": [
       { "label": "Merchant", "value": 44 }, { "label": "Membership", "value": 27 }, { "label": "Lending", "value": 19 }, { "label": "Services", "value": 10 }
