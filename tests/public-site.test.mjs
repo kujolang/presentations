@@ -24,7 +24,8 @@ test('public showcase stages four complete decks behind a collection landing pag
   assert(!landing.includes('View demo'));
   assert(landing.indexOf('href="/original/"') < landing.indexOf('href="/investor/"'));
   assert(landing.includes('class="page-title"'));
-  assert(landing.includes('One presentation layer.'));
+  assert(landing.includes('One design layer.'));
+  assert(!landing.includes('One presentation layer.'));
   assert(landing.includes('Infinite ways to tell the story.'));
   assert(landing.includes('Vela Investor Briefing'));
   assert(!landing.includes('Signal Foundry'));

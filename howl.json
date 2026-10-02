@@ -12,7 +12,7 @@
     {
       "id": "kujo-presentations",
       "title": "Kujo Presentations",
-      "tagline": "One presentation layer. Infinite ways to tell the story.",
+      "tagline": "One design layer. Infinite ways to tell the story.",
       "file": "deployment/index.html",
       "language": "html",
       "concepts": ["browser-native slides", "four complete demos", "accessible reading views"],
