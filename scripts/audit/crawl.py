@@ -20,7 +20,7 @@ def path_for(url):
  try: f.resolve().relative_to(root)
  except ValueError: return None
  return f
-statuses={}
+statuses={}; production_statuses={}
 def status(path):
  if path not in statuses:
   try:
@@ -28,6 +28,14 @@ def status(path):
   except urllib.error.HTTPError as e: statuses[path]=e.code
   except Exception: statuses[path]='UNREACHABLE'
  return statuses[path]
+def production_status(path):
+ if path not in production_statuses:
+  request=urllib.request.Request(origin+path,headers={'User-Agent':'KujoPresentationsAudit/1.0'})
+  try:
+   with urllib.request.urlopen(request,timeout=20) as response: production_statuses[path]=response.status
+  except urllib.error.HTTPError as e: production_statuses[path]=e.code
+  except Exception: production_statuses[path]='UNREACHABLE'
+ return production_statuses[path]
 htmls=sorted(root.rglob('*.html')); rows=[]; metadata=[]; images=[]; links=[]; schemas=[]; graph={}; raw=[]
 sitemap=(root/'sitemap.xml').read_text() if (root/'sitemap.xml').exists() else ''
 for f in htmls:
@@ -55,7 +63,7 @@ for f in htmls:
   images.append(dict(phase=a.phase,page_url=url,image_url=dest,alt_text=img.get('alt',''),alt_present=img.has_attr('alt'),decorative=img.get('alt')=='',width=img.get('width',''),height=img.get('height',''),loading=img.get('loading','eager'),format=Path(urlsplit(dest).path).suffix,local_exists=exists,file_bytes=target.stat().st_size if exists else 0,issues='' if dimensions else 'no intrinsic dimensions; fixed canvas/crop reserves space'))
  for script in soup(['script','style']):script.decompose()
  text=soup.get_text(' ',strip=True); code=status(path); indexable=code==200 and 'noindex' not in robots.lower(); local_canonical=canonical.startswith(origin+'/'); target=path_for(canonical) if local_canonical else None
- row=dict(phase=a.phase,url=url,source_file=rel,page_type=page_type,local_status=code,production_status='DNS_NXDOMAIN' if a.phase=='baseline' else 'see production receipts',indexable=indexable,robots_directives=robots,canonical=canonical,canonical_target_status=status(urlsplit(canonical).path) if local_canonical else 'WRONG_OR_MISSING_ORIGIN',title=title,title_length=len(title),meta_description=desc,description_length=len(desc),h1=' | '.join(h1),heading_structure=json.dumps([(h.name,h.get_text(' ',strip=True)) for h in headings]),word_count=len(text.split()),lang=(soup.html or {}).get('lang',''),schema_types=json.dumps(types),internal_outbound_links=len(outbound),external_outbound_links=len(external),broken_internal_links=len(broken),broken_external_links='NOT VERIFIED',image_count=len(soup.find_all('img')),missing_alt=sum(not i.has_attr('alt') for i in soup.find_all('img')),missing_dimensions=sum(not(i.get('width') and i.get('height')) for i in soup.find_all('img')),sitemap_included=url in sitemap,content_hash=hashlib.sha256(text.encode()).hexdigest(),issues=';'.join((['canonical origin mismatch'] if not local_canonical and indexable else [])+(['missing description'] if not desc else [])+(['broken internal links'] if broken else [])))
+ row=dict(phase=a.phase,url=url,source_file=rel,page_type=page_type,local_status=code,production_status=production_status(path),indexable=indexable,robots_directives=robots,canonical=canonical,canonical_target_status=status(urlsplit(canonical).path) if local_canonical else 'WRONG_OR_MISSING_ORIGIN',title=title,title_length=len(title),meta_description=desc,description_length=len(desc),h1=' | '.join(h1),heading_structure=json.dumps([(h.name,h.get_text(' ',strip=True)) for h in headings]),word_count=len(text.split()),lang=(soup.html or {}).get('lang',''),schema_types=json.dumps(types),internal_outbound_links=len(outbound),external_outbound_links=len(external),broken_internal_links=len(broken),broken_external_links='NOT VERIFIED',image_count=len(soup.find_all('img')),missing_alt=sum(not i.has_attr('alt') for i in soup.find_all('img')),missing_dimensions=sum(not(i.get('width') and i.get('height')) for i in soup.find_all('img')),sitemap_included=url in sitemap,content_hash=hashlib.sha256(text.encode()).hexdigest(),issues=';'.join((['canonical origin mismatch'] if not local_canonical and indexable else [])+(['missing description'] if not desc else [])+(['broken internal links'] if broken else [])))
  rows.append(row); metadata.append(dict(row,og_title=prop('og:title'),og_description=prop('og:description'),og_url=prop('og:url'),og_type=prop('og:type'),og_image=prop('og:image'),twitter_card=meta('twitter:card'))); raw.append(dict(url=url,h1_count=len(h1),raw_h1_count=len(soup.find_all('h1')),json_ld_errors=errors,broken_links=broken))
 depths={origin+'/':0}; queue=collections.deque(depths)
 while queue:
@@ -70,4 +78,4 @@ for item in metadata:
 save(a.phase+'.csv',rows); save('site-inventory.csv',rows,True); save('metadata-audit.csv',metadata,True); save('image-audit.csv',images,True); save('schema-audit.csv',schemas,True); save('internal-links.csv',[r for internal,r in links if internal],True); save('external-links.csv',[r for internal,r in links if not internal],True); save('indexability.csv',rows,True); save('crawlability.csv',rows,True)
 save('broken-links.csv',[dict(r,link_type='internal',evidence='local HTTP',recommended_action='correct route or relative path') for internal,r in links if internal and isinstance(r['http_status'],int) and r['http_status']>=400],True)
 summary=dict(pages=len(rows),indexable=sum(r['indexable'] for r in rows),canonical_origin_mismatches=sum(r['indexable'] and not r['canonical'].startswith(origin+'/') for r in rows),missing_titles=sum(not r['title'] for r in rows),missing_descriptions=sum(not r['meta_description'] for r in rows),duplicate_title_pages=sum(r['duplicate_title'] for r in rows),duplicate_description_pages=sum(r['duplicate_description'] for r in rows),broken_internal_links=sum(r['broken_internal_links'] for r in rows),orphans=sum(r['orphan'] for r in rows),missing_alt=sum(r['missing_alt'] for r in rows),missing_dimensions=sum(r['missing_dimensions'] for r in rows),schema_pages=sum(bool(json.loads(r['schema_types'])) for r in rows),schema_parse_errors=sum(len(r['json_ld_errors']) for r in raw),sitemap_pages=sum(r['sitemap_included'] for r in rows),pages_over_three_clicks=sum(isinstance(r['page_depth'],int) and r['page_depth']>3 for r in rows),h1_problems=sum(r['h1_count']!=1 for r in raw),broken_media=sum(not i['local_exists'] for i in images))
-(out/(a.phase+'-summary.json')).write_text(json.dumps(summary,indent=2)+'\n'); (out/'raw'/(a.phase+'-crawl.json')).write_text(json.dumps(dict(pages=raw,http=statuses),indent=2)+'\n'); print(json.dumps(summary,indent=2))
+(out/(a.phase+'-summary.json')).write_text(json.dumps(summary,indent=2)+'\n'); (out/'raw'/(a.phase+'-crawl.json')).write_text(json.dumps(dict(pages=raw,http=statuses,production_http=production_statuses),indent=2)+'\n'); print(json.dumps(summary,indent=2))

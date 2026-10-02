@@ -1,0 +1,73 @@
+ok: howl.json is valid (5 card(s))
+kujo-presentations  —  Kujo Presentations
+    file: deployment/index.html
+    concepts: browser-native slides, four complete demos, accessible reading views
+original  —  A new perspective on media
+    file: examples/reference/deck.json
+    concepts: editorial presentation, web slides, reading view
+investor  —  Vela Investor Briefing
+    file: decks/kujo-demo-investor/deck.json
+    concepts: investor presentation, membership model, payments
+sales  —  Springline Consumer Company Overview
+    file: decks/kujo-demo-sales/deck.json
+    concepts: company overview, consumer portfolio, growth strategy
+live-talk  —  AI at Work: Adoption Rises, but Value Lags
+    file: decks/kujo-demo-talk/deck.json
+    concepts: AI workforce research, enterprise adoption, workflow redesign
+id:       kujo-presentations
+title:    Kujo Presentations
+tagline:  One presentation layer. Infinite ways to tell the story.
+file:     deployment/index.html
+language: html
+concepts: browser-native slides, four complete demos, accessible reading views
+
+--- code preview ---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kujo Presentations — Slides, authored for the web</title>
+    <meta name="description" content="Explore four complete Kujo Presentations demos: the original media deck, an investor pitch, a consumer company overview, and an AI workforce research report.">
+    <link rel="canonical" href="https://presentations.kujolang.ai/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kujo Presentations">
+    <meta property="og:description" content="Slides, authored for the web. Explore four complete presentation demos.">
+    <meta property="og:url" content="https://presentations.kujolang.ai/">
+    <meta property="og:site_name" content="Kujo Presentations">
+    <meta property="og:image" content="https://presentations.kujolang.ai/assets/social/kujo-presentations.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Kujo Presentations preview over the orange and black original demo cover.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kujo Presentations">
+    <meta name="twitter:description" content="Slides, authored for the web. Explore four complete presentation demos.">
+    <meta name="twitter:image" content="https://presentations.kujolang.ai/assets/social/kujo-presentations.png">
+    <meta name="twitter:image:alt" content="Kujo Presentations preview over the orange and black original demo cover.">
+    <link rel="preload" as="image" href="/assets/previews/original.webp" type="image/webp" fetchpriority="high">
+    <link rel="stylesheet" href="/assets/site.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://presentations.kujolang.ai/#website","url":"https://presentations.kujolang.ai/","name":"Kujo Presentations","publisher":{"@id":"https://kujolang.ai/#organization"}},{"@type":"Organization","@id":"https://kujolang.ai/#organization","name":"Kujo","url":"https://kujolang.ai/"},{"@type":"CollectionPage","@id":"https://presentations.kujolang.ai/#collection","url":"https://presentations.kujolang.ai/","name":"Kujo Presentations","description":"Four complete browser-native presentation demos.","isPartOf":{"@id":"https://presentations.kujolang.ai/#website"},"image":"https://presentations.kujolang.ai/assets/social/kujo-presentations.png"}]}</script>
+  </head>
+  <body>
+    <a class="skip" href="#demos">Skip to demos</a>
+    <header class="masthead">
+      <a class="brand" href="/" aria-label="Kujo Presentations home">
+        <img src="/assets/kujo-logomark.svg" alt="" width="29" height="29">
+        <span>Kujo Presentations</span>
+      </a>
+      <span class="edition">Form / Media / Four demos</span>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Kujo / Presentations / Four demos</p>
+        <h1 class="page-title" id="page-title"><span>One presentation layer.</span><span>Infinite ways to tell the story.</span></h1>
+        <p class="lede">Build once, then present, share, read, or print. Choose a complete demo to see how the same system adapts to a different audience and visual identity.</p>
+... (truncated)
+Kujo Presentations.
+
+One presentation layer. Infinite ways to tell the story.
+
+Kujo Presentations: Slides, authored for the web.
+rendered 5 card(s) -> /tmp/kujo-presentations-howl-rerender-20261002/ (16 files)
+Files dist/howl/kujo-presentations.html and /tmp/kujo-presentations-howl-rerender-20261002/kujo-presentations.html differ
+Files dist/howl/kujo-presentations.md and /tmp/kujo-presentations-howl-rerender-20261002/kujo-presentations.md differ

@@ -1,0 +1,4 @@
+phase,source_url,source_variant,http_status,target_url,chain_length,final_status,canonical_target,query_preserved,verification,issues
+after,https://presentations.kujolang.ai/index.html?demo=1,index or slash normalization,301,https://presentations.kujolang.ai/?demo=1,1,200,https://presentations.kujolang.ai/,True,production fetch with manual redirect handling,
+after,https://presentations.kujolang.ai/investor/1?demo=1,index or slash normalization,301,https://presentations.kujolang.ai/investor/1/?demo=1,1,200,https://presentations.kujolang.ai/investor/1/,True,production fetch with manual redirect handling,
+after,https://presentations.kujolang.ai/investor/1/index.html?demo=1,index or slash normalization,301,https://presentations.kujolang.ai/investor/1/?demo=1,1,200,https://presentations.kujolang.ai/investor/1/,True,production fetch with manual redirect handling,

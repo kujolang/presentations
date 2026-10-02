@@ -1,0 +1,19 @@
+{
+  "pages": 58,
+  "indexable": 45,
+  "canonical_origin_mismatches": 0,
+  "missing_titles": 0,
+  "missing_descriptions": 1,
+  "duplicate_title_pages": 4,
+  "duplicate_description_pages": 4,
+  "broken_internal_links": 0,
+  "orphans": 9,
+  "missing_alt": 0,
+  "missing_dimensions": 51,
+  "schema_pages": 53,
+  "schema_parse_errors": 0,
+  "sitemap_pages": 45,
+  "pages_over_three_clicks": 0,
+  "h1_problems": 4,
+  "broken_media": 0
+}
