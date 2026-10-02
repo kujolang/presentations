@@ -1,47 +1,124 @@
 {
   "id": "kujo-demo-sales",
-  "title": "Northstar Studio",
-  "brand": "Northstar Studio",
-  "description": "A fictional sales proposal created to demonstrate Kujo Presentations.",
-  "footer": "Northstar Studio / Illustrative sales demo",
-  "transitions": { "enabled": true, "effect": "slide", "duration": 0.7, "easing": "easeInOut", "intensity": 0.8, "stagger": 0.03 },
+  "title": "Springline Consumer Company Overview",
+  "brand": "SPRINGLINE",
+  "description": "A fictional consumer food and beverage company overview created to demonstrate a portfolio-led presentation system.",
+  "footer": "SPRINGLINE / Fictional consumer company demo",
+  "transitions": { "enabled": true, "effect": "slide", "duration": 0.7, "easing": "easeInOut", "intensity": 0.7, "stagger": 0.025 },
   "slides": [
-    { "layout": "statement", "title": "A clearer product story", "copy": "A proposal for Meridian Works from Northstar Studio.", "eyebrow": "Sales proposal", "inverse": true },
-    { "layout": "problem", "title": "Good work is getting lost", "copy": "The product is strong. The story changes every time it crosses a team boundary.", "features": [
-      { "title": "Today", "copy": "Teams rebuild the same explanation for every audience." },
-      { "title": "Friction", "copy": "Proof and positioning drift across channels." },
-      { "title": "Opportunity", "copy": "Create one narrative system that stays coherent." }
-    ] },
-    { "layout": "editorial", "title": "From message to momentum", "copy": "Northstar shapes the product narrative, the visual system, and the launch sequence together.", "features": [
-      { "title": "Position", "copy": "Name the sharpest reason to care." },
-      { "title": "Design", "copy": "Make the promise visible and repeatable." },
-      { "title": "Launch", "copy": "Give every channel a clear role." }
-    ], "inverse": true },
-    { "layout": "value", "title": "One system, many moments", "copy": "A proposal can show fit without relying on fabricated customer proof.", "features": [
-      { "title": "Narrative", "copy": "A story teams can actually remember." },
-      { "title": "Identity", "copy": "A visual language with a point of view." },
-      { "title": "Toolkit", "copy": "Reusable patterns for launch and beyond." },
-      { "title": "Guidance", "copy": "Clear choices when the context changes." }
-    ] },
-    { "layout": "index", "title": "A practical engagement", "copy": "Three phases keep the work focused and reviewable.", "features": [
-      { "title": "Discover", "copy": "Align on audience, proof, and constraints." },
-      { "title": "Build", "copy": "Develop the story and visual system together." },
-      { "title": "Launch", "copy": "Prepare the team and ship the core assets." }
-    ], "inverse": true },
-    { "layout": "business", "title": "A transparent scope", "copy": "This fictional scope demonstrates a commercial slide without inventing pricing.", "features": [
-      { "title": "Included", "copy": "Narrative, identity direction, and launch toolkit." },
-      { "title": "Cadence", "copy": "Weekly working sessions and async review." },
-      { "title": "Success", "copy": "A story the team can use consistently." }
-    ] },
-    { "layout": "curation", "title": "Built for the moments that matter", "copy": "Pitch, launch, sell, and explain from one coherent foundation.", "metrics": [{ "value": "04", "label": "core use cases" }], "features": [
-      { "title": "Internal", "copy": "Align teams around one product truth." },
-      { "title": "External", "copy": "Meet buyers with a focused reason to act." }
-    ], "inverse": true },
-    { "layout": "index", "title": "What happens next", "copy": "A clear close makes the proposal easy to advance.", "features": [
-      { "title": "Confirm", "copy": "Agree on the audience and desired outcome." },
-      { "title": "Gather", "copy": "Collect existing research and product proof." },
-      { "title": "Begin", "copy": "Start with a focused narrative workshop." }
-    ] },
-    { "layout": "statement", "title": "Make the value\nimpossible to miss.", "copy": "Northstar Studio / A fictional sales demonstration.", "eyebrow": "Move forward together", "inverse": true }
+    {
+      "layout": "hero",
+      "title": "Springline\nOverview",
+      "copy": "A fictional global food and beverage portfolio built around everyday occasions.",
+      "eyebrow": "Consumer company overview",
+      "images": [{ "src": "springline-gathering.png", "alt": "Friends sharing colorful drinks and snacks in a bright living room", "x": 67, "y": 48 }],
+      "inverse": true,
+      "note": "Illustrative concept — not a real company or offer"
+    },
+    {
+      "layout": "hero",
+      "title": "A broad consumer portfolio",
+      "copy": "Springline brings together convenient foods and beverages for moments throughout the day.",
+      "eyebrow": "Company profile",
+      "metrics": [
+        { "value": "$8.4B", "label": "illustrative annual revenue" },
+        { "value": "24", "label": "illustrative markets" },
+        { "value": "06", "label": "consumer categories" }
+      ],
+      "note": "Illustrative company profile; not actual results"
+    },
+    {
+      "layout": "offerings",
+      "title": "Brands built for everyday categories",
+      "copy": "A colorful portfolio spans savory snacks, sparkling drinks, functional beverages and breakfast foods.",
+      "eyebrow": "Portfolio",
+      "images": [{ "src": "springline-portfolio.png", "alt": "Original unbranded lineup of colorful snacks, beverages and breakfast foods", "x": 50, "y": 50 }],
+      "metrics": [
+        { "value": "04", "label": "convenient food platforms" },
+        { "value": "02", "label": "beverage platforms" }
+      ],
+      "features": [{ "title": "One portfolio", "copy": "Designed around taste, convenience and choice." }],
+      "note": "Illustrative portfolio architecture"
+    },
+    {
+      "layout": "market",
+      "title": "Investment strengthened the operating system",
+      "copy": "A multi-year program expands capacity, improves route planning and gives teams a sharper view of demand.",
+      "eyebrow": "Capabilities",
+      "chartLabel": "Illustrative capability investment index, 2022 through 2025 estimate",
+      "chart": [
+        { "label": "2022", "value": 42 },
+        { "label": "2023", "value": 55 },
+        { "label": "2024", "value": 69 },
+        { "label": "2025E", "value": 82 }
+      ],
+      "metrics": [{ "value": "+40%", "label": "illustrative index change since 2022" }],
+      "note": "Illustrative index; not historical or forecast data"
+    },
+    {
+      "layout": "value",
+      "title": "Consumer habits keep moving",
+      "copy": "The next generation of demand is shaped by four overlapping expectations.",
+      "eyebrow": "Growth context",
+      "features": [
+        { "title": "Value", "copy": "Worthwhile choices at every price point." },
+        { "title": "Function", "copy": "Benefits that fit daily routines." },
+        { "title": "Flavor", "copy": "Novelty without losing familiar favorites." },
+        { "title": "Convenience", "copy": "The right format for the right moment." }
+      ],
+      "note": "Illustrative consumer framework"
+    },
+    {
+      "layout": "value",
+      "title": "Four priorities guide the next chapter",
+      "copy": "A focused agenda connects the portfolio, the operating model and responsible growth.",
+      "eyebrow": "Strategic priorities",
+      "features": [
+        { "title": "Earn repeat choice", "copy": "Keep core products relevant and distinctive." },
+        { "title": "Reach new occasions", "copy": "Expand formats, channels and dayparts." },
+        { "title": "Modernize the network", "copy": "Build a faster, more flexible supply system." },
+        { "title": "Build responsibly", "copy": "Improve how ingredients and packaging move." }
+      ],
+      "note": "Illustrative strategic priorities"
+    },
+    {
+      "layout": "editorial",
+      "title": "More occasions across the day",
+      "copy": "Springline designs its portfolio for the rhythm of real life—from the first cup to the shared evening table.",
+      "eyebrow": "Occasion strategy",
+      "images": [{ "src": "springline-dayparts.png", "alt": "Four original scenes showing breakfast, midday work, an outdoor snack and dinner", "x": 50, "y": 50 }],
+      "features": [
+        { "title": "At home", "copy": "Breakfast and pantry staples." },
+        { "title": "On the move", "copy": "Portable food and drink formats." },
+        { "title": "Around the table", "copy": "Products made for sharing." }
+      ],
+      "note": "Illustrative occasion architecture"
+    },
+    {
+      "layout": "curation",
+      "title": "Progress across the responsible growth agenda",
+      "copy": "Better sourcing, smarter operations and improved packaging are designed to reinforce one another.",
+      "eyebrow": "Responsible growth",
+      "images": [{ "src": "springline-responsibility.png", "alt": "Agronomist inspecting crops near an original food production facility", "x": 66, "y": 52 }],
+      "metrics": [{ "value": "71%", "label": "illustrative recyclable or reusable packaging" }],
+      "features": [
+        { "title": "Soil health", "copy": "Support productive, resilient growing systems." },
+        { "title": "Lower-impact operations", "copy": "Use energy, water and materials more efficiently." }
+      ],
+      "note": "Illustrative sustainability scenario; not actual performance"
+    },
+    {
+      "layout": "hero",
+      "title": "Long-term growth algorithm",
+      "copy": "Innovation expands demand. Productivity funds the next wave.",
+      "eyebrow": "Financial framework",
+      "metrics": [
+        { "value": "4–6%", "label": "illustrative organic growth range" },
+        { "value": "20–30 bps", "label": "illustrative margin expansion range" },
+        { "value": "HSD%", "label": "illustrative earnings growth range" }
+      ],
+      "inverse": true,
+      "note": "Illustrative targets; not guidance"
+    }
   ]
 }
