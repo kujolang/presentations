@@ -5,7 +5,7 @@ import { spawnSync } from 'node:child_process';
 const origin = 'https://presentations.kujolang.ai';
 const decks = [
   { source: 'examples/reference', id: 'reference', route: 'original', previewSource: 'deployment/previews/original.png' },
-  { source: 'decks/kujo-demo-investor', id: 'kujo-demo-investor', route: 'investor', preview: 'investor' },
+  { source: 'decks/kujo-demo-investor', id: 'kujo-demo-investor', route: 'investor', previewSource: 'deployment/previews/investor.png' },
   { source: 'decks/kujo-demo-sales', id: 'kujo-demo-sales', route: 'sales', preview: 'sales' },
   { source: 'decks/kujo-demo-talk', id: 'kujo-demo-talk', route: 'live-talk', preview: 'live-talk' },
 ];
