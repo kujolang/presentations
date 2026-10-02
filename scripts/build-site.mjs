@@ -7,7 +7,7 @@ const decks = [
   { source: 'examples/reference', id: 'reference', route: 'original', previewSource: 'deployment/previews/original.png' },
   { source: 'decks/kujo-demo-investor', id: 'kujo-demo-investor', route: 'investor', previewSource: 'deployment/previews/investor.png' },
   { source: 'decks/kujo-demo-sales', id: 'kujo-demo-sales', route: 'sales', previewSource: 'deployment/previews/sales.png' },
-  { source: 'decks/kujo-demo-talk', id: 'kujo-demo-talk', route: 'live-talk', preview: 'live-talk' },
+  { source: 'decks/kujo-demo-talk', id: 'kujo-demo-talk', route: 'live-talk', previewSource: 'deployment/previews/live-talk.png' },
 ];
 
 for (const deck of decks) {
