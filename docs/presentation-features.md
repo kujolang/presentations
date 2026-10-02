@@ -6,8 +6,11 @@ Click **Fullscreen** or press **F**. The slide fills the available screen while
 keeping its 16:9 shape; unused space is black. Buttons, help text, and the progress
 bar are hidden. Use **Left/Right** to move between slides, **Home/End** to jump to
 the first/last slide, and **Escape** or **F** to leave fullscreen. Keyboard
-navigation works with motion disabled. Leaving fullscreen restores the controls
-and returns focus to the fullscreen button.
+navigation works with motion disabled. On a touch screen, swipe left for the next
+slide and right for the previous slide; horizontal swipes preserve fullscreen and
+run the deck's authored transitions. Vertical gestures remain available for page
+movement outside fullscreen. Leaving fullscreen restores the controls and returns
+focus to the fullscreen button.
 
 Themes can set `--p-fullscreen-background` to change the letterbox color.
 Fullscreen needs a supporting browser and a user action.

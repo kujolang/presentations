@@ -58,6 +58,32 @@ test('native keyboard navigation, reload, history, endpoints and focus guards', 
   await page.keyboard.press('f'); await expect(page.locator('input')).toHaveValue('f');
 });
 
+test.describe('touch navigation', () => {
+  test.use({ viewport: { width: 390, height: 844 }, hasTouch: true });
+  test('horizontal swipes navigate both ways with authored motion', async ({page}) => {
+    await page.addInitScript(() => {
+      window.swipePoses = [];
+      new MutationObserver(records => records.forEach(record => window.swipePoses.push(record.target.getAttribute('style'))))
+        .observe(document, { subtree: true, attributes: true, attributeFilter: ['style'] });
+    });
+    await openPage(page, '/reference/1/');
+    await expect(page.locator('html')).not.toHaveAttribute('data-transitioning', 'true');
+    await page.evaluate(() => { window.swipePoses = []; });
+    const stage = page.locator('.p-stage');
+    await stage.dispatchEvent('pointerdown', { pointerId: 7, pointerType: 'touch', button: 0, clientX: 340, clientY: 360 });
+    await stage.dispatchEvent('pointerup', { pointerId: 7, pointerType: 'touch', button: 0, clientX: 70, clientY: 370 });
+    await expect(page).toHaveURL(/\/reference\/2\/$/);
+    await expect(page.locator('html')).not.toHaveAttribute('data-transitioning', 'true');
+    expect(await page.evaluate(() => window.swipePoses.some(value => value?.includes('transform')))).toBe(true);
+    await stage.dispatchEvent('pointerdown', { pointerId: 8, pointerType: 'touch', button: 0, clientX: 70, clientY: 360 });
+    await stage.dispatchEvent('pointerup', { pointerId: 8, pointerType: 'touch', button: 0, clientX: 340, clientY: 350 });
+    await expect(page).toHaveURL(/\/reference\/1\/$/);
+    await stage.dispatchEvent('pointerdown', { pointerId: 9, pointerType: 'touch', button: 0, clientX: 200, clientY: 250 });
+    await stage.dispatchEvent('pointerup', { pointerId: 9, pointerType: 'touch', button: 0, clientX: 205, clientY: 600 });
+    await expect(page).toHaveURL(/\/reference\/1\/$/);
+  });
+});
+
 for (const size of [{width:390,height:844},{width:844,height:390},{width:768,height:1024}]) {
   test.describe(`no JavaScript ${size.width}x${size.height}`,()=>{
     test.use({viewport:size, javaScriptEnabled:false});
@@ -79,6 +105,14 @@ test('fullscreen keeps the slide, navigation, and browser history together',asyn
   await openPage(page, '/reference/1/');
   await page.getByRole('button',{name:'Fullscreen',exact:true}).click();
   await expect.poll(()=>page.evaluate(()=>Boolean(document.fullscreenElement))).toBe(true);
+  await expect(page.locator('html')).not.toHaveAttribute('data-transitioning','true');
+  const stage=page.locator('.p-stage');
+  await stage.dispatchEvent('pointerdown',{pointerId:11,pointerType:'touch',button:0,clientX:340,clientY:360});
+  await stage.dispatchEvent('pointerup',{pointerId:11,pointerType:'touch',button:0,clientX:70,clientY:370});
+  await expect(page).toHaveURL(/\/2\/$/);await expect.poll(()=>page.evaluate(()=>Boolean(document.fullscreenElement))).toBe(true);
+  await stage.dispatchEvent('pointerdown',{pointerId:12,pointerType:'touch',button:0,clientX:70,clientY:360});
+  await stage.dispatchEvent('pointerup',{pointerId:12,pointerType:'touch',button:0,clientX:340,clientY:350});
+  await expect(page).toHaveURL(/\/1\/$/);await expect.poll(()=>page.evaluate(()=>Boolean(document.fullscreenElement))).toBe(true);
   await page.keyboard.press('ArrowRight'); await expect(page).toHaveURL(/\/2\/$/);
   await expect.poll(()=>page.evaluate(()=>Boolean(document.fullscreenElement))).toBe(true);
   await expect(page.locator('.p-nav')).toBeHidden();

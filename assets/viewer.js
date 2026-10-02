@@ -151,6 +151,27 @@
     else if (event.key === 'Escape' && document.fullscreenElement) { document.exitFullscreen().catch(() => {}); return; }
     if (href) { event.preventDefault(); navigate(href); }
   });
+  let swipe;
+  const resetSwipe = () => { swipe = null; };
+  document.addEventListener('pointerdown', event => {
+    if (busy || event.pointerType === 'mouse' || event.button !== 0 || !event.target.closest('.p-stage')) return;
+    if (event.target.closest('a,button,input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="button"],[role="slider"]')) return;
+    swipe = { id: event.pointerId, x: event.clientX, y: event.clientY, time: performance.now() };
+    try { event.target.setPointerCapture?.(event.pointerId); } catch {}
+  });
+  document.addEventListener('pointerup', event => {
+    if (!swipe || event.pointerId !== swipe.id) return;
+    const dx = event.clientX - swipe.x, dy = event.clientY - swipe.y;
+    const elapsed = performance.now() - swipe.time;
+    const threshold = Math.min(96, Math.max(44, innerWidth * 0.1));
+    const velocity = Math.abs(dx) / Math.max(1, elapsed);
+    const isSwipe = elapsed < 1200 && Math.abs(dx) > Math.abs(dy) * 1.25 && (Math.abs(dx) >= threshold || (Math.abs(dx) >= 28 && velocity >= 0.45));
+    const main = viewer();
+    const href = isSwipe ? main?.querySelector(`[data-nav="${dx < 0 ? 'next' : 'previous'}"]`)?.href : null;
+    resetSwipe();
+    if (href) { event.preventDefault(); navigate(href); }
+  });
+  document.addEventListener('pointercancel', resetSwipe);
   window.addEventListener('popstate', () => { if (busy || document.fullscreenElement || enhancedHistory) navigate(location.href, false); });
   reduced.addEventListener('change', () => { finishAnimation(); enhance(); });
   document.addEventListener('fullscreenchange', () => {

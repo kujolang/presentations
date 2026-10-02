@@ -116,6 +116,7 @@ a:not(.sk-button) { color: inherit; }
 /* Viewer and overview use responsive SiteKit controls, outside the canvas. */
 .p-viewer { min-height: 100dvh; display: flex; flex-direction: column; padding: 24px 28px 14px; }
 .p-stage { flex: 1; min-height: 0; display: grid; place-items: center; }
+.p-stage { touch-action: pan-y pinch-zoom; }
 .p-stage .p-frame { width: min(100%, calc((100dvh - 156px) * 16 / 9)); }
 .p-nav { justify-content: center; gap: 8px; margin-top: 18px; }
 .p-nav .sk-button { font-family: var(--p-font); font-size: 12px; min-height: 40px; padding: 8px 14px; }
