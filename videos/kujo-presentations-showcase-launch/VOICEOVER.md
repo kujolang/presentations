@@ -8,4 +8,4 @@ Present, read, print, export.
 
 Speaker notes stay local to the presenter.
 
-Explore Presentations on Kujolang.ai.
+Open, fast, and made for the web.

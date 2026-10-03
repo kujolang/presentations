@@ -44,12 +44,11 @@
       "id": "brand",
       "start": 12.06,
       "end": 14.8,
-      "text": "Explore Presentations on Kujolang.ai.",
-      "spoken_text": "Explore Presentations on Koo-joh-lang dot A I.",
+      "text": "Open, fast, and made for the web.",
       "sourceTrimStart": 0.0,
-      "sourceTrimEnd": 3.44,
-      "tempo": 1.2554744525547443,
-      "actualEnd": 14.8009375
+      "sourceTrimEnd": 2.5378541666666665,
+      "tempo": 0.94,
+      "actualEnd": 14.742395833333333
     }
   ],
   "sampleRate": 48000,
@@ -62,16 +61,16 @@
     "duckDb": 5
   },
   "premasterLoudness": {
-    "input_i": "-18.21",
+    "input_i": "-17.94",
     "input_tp": "-4.56",
     "input_lra": "2.20",
-    "input_thresh": "-28.89",
-    "output_i": "-16.07",
+    "input_thresh": "-28.67",
+    "output_i": "-15.92",
     "output_tp": "-1.80",
     "output_lra": "1.70",
-    "output_thresh": "-26.85",
+    "output_thresh": "-26.74",
     "normalization_type": "dynamic",
-    "target_offset": "0.07"
+    "target_offset": "-0.08"
   },
   "targetLUFS": -16,
   "truePeakCeilingDBTP": -1.8,
