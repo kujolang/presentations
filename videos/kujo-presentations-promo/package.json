@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "npx --yes hyperframes@0.8.113 preview",
-    "check": "npx --yes hyperframes@0.8.113 check",
-    "render": "npx --yes hyperframes@0.8.113 render",
+    "dev": "npx --yes hyperframes@0.8.114 preview",
+    "check": "npx --yes hyperframes@0.8.114 check",
+    "render": "npx --yes hyperframes@0.8.114 render",
     "render:variants": "node render-variants.mjs",
-    "publish": "npx --yes hyperframes@0.8.113 publish"
+    "publish": "npx --yes hyperframes@0.8.114 publish"
   }
 }

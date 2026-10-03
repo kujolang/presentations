@@ -36,7 +36,7 @@ try {
       'npx',
       [
         '--yes',
-        'hyperframes@0.8.113',
+        'hyperframes@0.8.114',
         'render',
         '.',
         '--quality',
