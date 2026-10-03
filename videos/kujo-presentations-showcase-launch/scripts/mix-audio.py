@@ -33,7 +33,13 @@ for c in config['cues']:
     slot=c['end']-c['start'];duration=last-first
     rate=max(.94,duration/slot)
     if rate>1.28:raise ValueError(f"Rewrite or regenerate {c['id']}: required speed {rate:.2f}")
-    filters=f'atrim=start={first}:end={last},asetpts=PTS-STARTPTS,atempo={rate},highpass=f=65,afade=t=in:d=0.008'
+    # Clean voice chain: remove rumble/mud, add a restrained 3 kHz presence
+    # lift for articulation, then even peaks before final loudness mastering.
+    filters=(f'atrim=start={first}:end={last},asetpts=PTS-STARTPTS,atempo={rate},'
+             'highpass=f=80,equalizer=f=250:t=q:w=1.2:g=-3,'
+             'equalizer=f=3000:t=q:w=1:g=2.5,'
+             'acompressor=threshold=-18dB:ratio=2.5:attack=8:release=90:makeup=2,'
+             'alimiter=limit=0.89,afade=t=in:d=0.008')
     x=decode(raw,filters)
     if len(x)>round(slot*SR)+2400:raise ValueError('Tempo exceeded slot')
     # atempo rounding may leave a few ms: place actual speech, verify no cue overlap.

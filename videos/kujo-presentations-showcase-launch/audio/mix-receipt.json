@@ -6,9 +6,9 @@
       "end": 2.72,
       "text": "Now showcased.",
       "sourceTrimStart": 0.0,
-      "sourceTrimEnd": 1.2074583333333333,
-      "tempo": 0.9737567204301073,
-      "actualEnd": 2.701395833333333
+      "sourceTrimEnd": 1.2343958333333334,
+      "tempo": 0.9954805107526881,
+      "actualEnd": 2.711333333333333
     },
     {
       "id": "goal",
@@ -16,19 +16,19 @@
       "end": 5.25,
       "text": "Build browser-native decks from structured source.",
       "sourceTrimStart": 0.0,
-      "sourceTrimEnd": 2.3804791666666665,
-      "tempo": 1.0395105531295488,
-      "actualEnd": 5.261958333333333
+      "sourceTrimEnd": 2.8299791666666665,
+      "tempo": 1.2357987627365357,
+      "actualEnd": 5.250875
     },
     {
       "id": "loop",
       "start": 5.83,
       "end": 8.35,
-      "text": "Present, share, read, print, and export.",
-      "sourceTrimStart": 0.012854166666666667,
-      "sourceTrimEnd": 3.2043541666666666,
-      "tempo": 1.2664682539682541,
-      "actualEnd": 8.347583333333333
+      "text": "Present, read, print, export.",
+      "sourceTrimStart": 0.0,
+      "sourceTrimEnd": 2.9951875,
+      "tempo": 1.1885664682539685,
+      "actualEnd": 8.3604375
     },
     {
       "id": "proof",
@@ -36,9 +36,9 @@
       "end": 11.62,
       "text": "Speaker notes stay local to the presenter.",
       "sourceTrimStart": 0.0,
-      "sourceTrimEnd": 2.1116875,
+      "sourceTrimEnd": 2.619458333333333,
       "tempo": 0.94,
-      "actualEnd": 10.9583125
+      "actualEnd": 11.496229166666666
     },
     {
       "id": "brand",
@@ -47,9 +47,9 @@
       "text": "Explore Presentations on Kujolang.ai.",
       "spoken_text": "Explore Presentations on Koo-joh-lang dot A I.",
       "sourceTrimStart": 0.0,
-      "sourceTrimEnd": 2.7919583333333335,
-      "tempo": 1.018962895377129,
-      "actualEnd": 14.797458333333333
+      "sourceTrimEnd": 3.44,
+      "tempo": 1.2554744525547443,
+      "actualEnd": 14.8009375
     }
   ],
   "sampleRate": 48000,
@@ -62,16 +62,16 @@
     "duckDb": 5
   },
   "premasterLoudness": {
-    "input_i": "-19.50",
-    "input_tp": "-4.49",
-    "input_lra": "2.60",
-    "input_thresh": "-30.48",
-    "output_i": "-16.34",
+    "input_i": "-18.21",
+    "input_tp": "-4.56",
+    "input_lra": "2.20",
+    "input_thresh": "-28.89",
+    "output_i": "-16.07",
     "output_tp": "-1.80",
-    "output_lra": "2.50",
-    "output_thresh": "-27.29",
+    "output_lra": "1.70",
+    "output_thresh": "-26.85",
     "normalization_type": "dynamic",
-    "target_offset": "0.34"
+    "target_offset": "0.07"
   },
   "targetLUFS": -16,
   "truePeakCeilingDBTP": -1.8,

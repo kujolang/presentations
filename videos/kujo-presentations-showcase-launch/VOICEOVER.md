@@ -4,7 +4,7 @@ Now showcased.
 
 Build browser-native decks from structured source.
 
-Present, share, read, print, and export.
+Present, read, print, export.
 
 Speaker notes stay local to the presenter.
 

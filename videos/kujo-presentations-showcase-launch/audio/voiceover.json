@@ -1,12 +1,9 @@
 {
   "title": "Kujo Presentations v0.3.0",
-  "model_id": "eleven_multilingual_v2",
+  "model_id": "eleven_v4",
   "voice_settings": {
     "stability": 0.6,
-    "similarity_boost": 0.75,
-    "style": 0.12,
-    "use_speaker_boost": true,
-    "speed": 1.05
+    "similarity_boost": 0.8
   },
   "voice_id": "nPczCjzI2devNBz1zQrb",
   "task": "Build a browser-native deck",
@@ -28,7 +25,7 @@
       "id": "loop",
       "start": 5.83,
       "end": 8.35,
-      "text": "Present, share, read, print, and export."
+      "text": "Present, read, print, export."
     },
     {
       "id": "proof",

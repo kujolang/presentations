@@ -66,13 +66,10 @@
   "voice": {
     "voice_id": "nPczCjzI2devNBz1zQrb",
     "name": "Brian",
-    "model_id": "eleven_multilingual_v2",
+    "model_id": "eleven_v4",
     "settings": {
       "stability": 0.6,
-      "similarity_boost": 0.75,
-      "style": 0.12,
-      "use_speaker_boost": true,
-      "speed": 1.05
+      "similarity_boost": 0.8
     },
     "lines": {
       "speed": {
@@ -82,7 +79,7 @@
         "text": "Build browser-native decks from structured source."
       },
       "loop": {
-        "text": "Present, share, read, print, and export."
+        "text": "Present, read, print, export."
       },
       "proof": {
         "text": "Speaker notes stay local to the presenter."
