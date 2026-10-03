@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {root,run} from './common.mjs';
+const file=process.argv[2]||path.join(root,'output/release-silent.mp4');
+const probe=JSON.parse(run('ffprobe',['-v','error','-count_frames','-show_streams','-show_format','-of','json',file],{encoding:'utf8',stdio:['ignore','pipe','pipe']}));
+const v=probe.streams.find(s=>s.codec_type==='video');const audio=probe.streams.filter(s=>s.codec_type==='audio');
+assert(v);for(const [key,value] of Object.entries({codec_name:'h264',width:1920,height:1080,r_frame_rate:'24/1',avg_frame_rate:'24/1',nb_read_frames:'360',pix_fmt:'yuv420p',color_space:'bt709',color_transfer:'bt709',color_primaries:'bt709',color_range:'tv'}))assert.equal(v[key],value,key);
+assert.equal(Number(v.duration),15);assert.equal(Number(probe.format.duration),15);assert.equal(audio.length,0);
+run('ffmpeg',['-v','error','-xerror','-i',file,'-f','null','-']);
+const result={ok:true,renderSuccess:true,file:'output/release-silent.mp4',durationSeconds:15,width:1920,height:1080,fps:24,frameCount:360,videoCodec:'h264',pixelFormat:v.pix_fmt,colorSpace:'BT.709',range:'limited',audio:'silent / no audio stream',fullDecode:'passed',sha256:createHash('sha256').update(fs.readFileSync(file)).digest('hex'),bytes:fs.statSync(file).size};
+fs.writeFileSync(path.join(root,'output/verification.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));

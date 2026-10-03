@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "path": "assets/fonts/DepartureMono-LICENSE.txt",
+      "sha256": "b65e42750f3cb65437a97f4dfd781c58f199259949db2341012be60e32500e83"
+    },
+    {
+      "path": "assets/fonts/DepartureMono-Regular.woff2",
+      "sha256": "5b4fed1daa90708aa9c6ee1190abca9dc22164a1c1def0020386e46b61038cfb"
+    },
+    {
+      "path": "assets/gsap.min.js",
+      "sha256": "a992e24e9726b97cf7320b0a88d2262459c9a11cb919e6d9765dd6eb88bbeead"
+    },
+    {
+      "path": "assets/kujo-logomark.svg",
+      "sha256": "cecb66eae65116fadf29a93ce3adae28956b17cfaf1e8d9e0910c280935ef412"
+    }
+  ]
+}

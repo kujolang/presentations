@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';
+export const root=fileURLToPath(new URL('../',import.meta.url));
+export const env={...process.env,HYPERFRAMES_NO_TELEMETRY:'1',PRODUCER_FORCE_SCREENSHOT:'true',PRODUCER_EXPERIMENTAL_FAST_CAPTURE:'false'};
+const chrome='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+if(!env.HYPERFRAMES_BROWSER_PATH&&fs.existsSync(chrome))env.HYPERFRAMES_BROWSER_PATH=chrome;
+if(env.HYPERFRAMES_BROWSER_PATH)env.PRODUCER_HEADLESS_SHELL_PATH=env.HYPERFRAMES_BROWSER_PATH;
+export const run=(exe,args,options={})=>execFileSync(exe,args,{cwd:root,env,stdio:'inherit',...options});
+export const hf=(args,options)=>run(process.execPath,['node_modules/hyperframes/bin/hyperframes.mjs',...args],options);

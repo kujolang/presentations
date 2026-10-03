@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "duration": 15,
+  "screen_mode": "illustration",
+  "music_seed": 2026100303,
+  "task": "Build a browser-native deck",
+  "stages": [
+    "STRUCTURED SOURCE",
+    "STATIC SLIDES",
+    "READING EDITION",
+    "PRESENTER TOOLS",
+    "PRINT + PDF"
+  ],
+  "evidence": [
+    "Numbered slide URLs",
+    "Private local notes",
+    "Optional local motion"
+  ],
+  "fact_refs": {
+    "brand": [
+      "showcase"
+    ],
+    "hook": [
+      "showcase"
+    ],
+    "task": [
+      "static-output",
+      "authoring"
+    ],
+    "loop": [
+      "static-output",
+      "browser-features"
+    ],
+    "proof": [
+      "static-output",
+      "presenter-privacy"
+    ]
+  },
+  "copy": {
+    "tagline": "Browser-native decks. Built with Kujo.",
+    "hook_label": "NOW LIVE IN THE KUJO SHOWCASE",
+    "hook_1": "Present.",
+    "hook_2": "online",
+    "task_label": "AUTHOR ONCE. PUBLISH STATIC.",
+    "task_header": "KUJO / PRESENTATIONS v0.3.0",
+    "scope": "Slides + reading + presenter tools",
+    "stop": "Static site ready to share",
+    "task_footer": "SOURCE IN. STATIC DECK OUT.",
+    "button": "BUILD DECK",
+    "loop_label": "ONE SOURCE / EVERY SURFACE",
+    "loop_title": [
+      "Present.",
+      "Read.",
+      "Print."
+    ],
+    "loop_caption": "Static routes. Local notes.",
+    "proof_label": "SOURCE-BACKED CAPABILITIES",
+    "proof_title": [
+      "Built for",
+      "the web."
+    ],
+    "stamp": "■ SHOWCASE LIVE / v0.3.0",
+    "footer_left": "KUJO PRESENTATIONS",
+    "footer_right": "SLIDES / READING / PRINT"
+  },
+  "voice": {
+    "voice_id": "nPczCjzI2devNBz1zQrb",
+    "name": "Brian",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.6,
+      "similarity_boost": 0.75,
+      "style": 0.12,
+      "use_speaker_boost": true,
+      "speed": 1.05
+    },
+    "lines": {
+      "speed": {
+        "text": "Now showcased."
+      },
+      "goal": {
+        "text": "Build browser-native decks from structured source."
+      },
+      "loop": {
+        "text": "Present, share, read, print, and export."
+      },
+      "proof": {
+        "text": "Speaker notes stay local to the presenter."
+      },
+      "brand": {
+        "text": "Explore Presentations on Kujolang.ai.",
+        "spoken_text": "Explore Presentations on Koo-joh-lang dot A I."
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "ended": true,
+  "duration": 15,
+  "currentTime": 15,
+  "width": 1920,
+  "height": 1080,
+  "frameCallbacks": 360,
+  "quality": 360,
+  "droppedFrames": 0
+}

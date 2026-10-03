@@ -1,0 +1,243 @@
+{
+  "bpm": 96,
+  "sampleRate": 48000,
+  "duration": 15,
+  "seed": 2026100303,
+  "cues": [
+    {
+      "start": 0.09,
+      "duration": 0.65,
+      "event": "brand low pulse"
+    },
+    {
+      "start": 1.4,
+      "duration": 0.3,
+      "event": "speed cut"
+    },
+    {
+      "start": 2.68,
+      "duration": 0.26,
+      "event": "task surface"
+    },
+    {
+      "start": 3.394,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.4244615384615384,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.454923076923077,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.4853846153846155,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.515846153846154,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.5463076923076926,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.576769230769231,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.6072307692307692,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.6376923076923076,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.6681538461538463,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.6986153846153846,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.729076923076923,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.7595384615384617,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.79,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.8204615384615384,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.850923076923077,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.8813846153846154,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.9118461538461538,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.9423076923076925,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 3.972769230769231,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 4.003230769230769,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 4.0336923076923075,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 4.064153846153846,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 4.094615384615384,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 4.125076923076923,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 4.155538461538462,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 4.186,
+      "duration": 0.036,
+      "event": "typed character"
+    },
+    {
+      "start": 5.08,
+      "duration": 0.1,
+      "event": "cursor click"
+    },
+    {
+      "start": 5.53,
+      "duration": 0.25,
+      "event": "loop reveal"
+    },
+    {
+      "start": 6.05,
+      "duration": 0.19,
+      "event": "loop checkpoint"
+    },
+    {
+      "start": 6.48,
+      "duration": 0.19,
+      "event": "loop checkpoint"
+    },
+    {
+      "start": 6.91,
+      "duration": 0.19,
+      "event": "loop checkpoint"
+    },
+    {
+      "start": 7.34,
+      "duration": 0.19,
+      "event": "loop checkpoint"
+    },
+    {
+      "start": 7.77,
+      "duration": 0.19,
+      "event": "loop checkpoint"
+    },
+    {
+      "start": 8.48,
+      "duration": 0.24,
+      "event": "proof reveal"
+    },
+    {
+      "start": 9.02,
+      "duration": 0.32,
+      "event": "evidence confirmation"
+    },
+    {
+      "start": 9.52,
+      "duration": 0.32,
+      "event": "evidence confirmation"
+    },
+    {
+      "start": 10.02,
+      "duration": 0.32,
+      "event": "evidence confirmation"
+    },
+    {
+      "start": 10.62,
+      "duration": 0.25,
+      "event": "loop complete"
+    },
+    {
+      "start": 11.89,
+      "duration": 0.33,
+      "event": "closing contraction"
+    },
+    {
+      "start": 12.16,
+      "duration": 1.8,
+      "event": "brand resolution"
+    },
+    {
+      "start": 12.16,
+      "duration": 1.8,
+      "event": "brand resolution"
+    },
+    {
+      "start": 12.16,
+      "duration": 1.8,
+      "event": "brand resolution"
+    },
+    {
+      "start": 12.16,
+      "duration": 1.8,
+      "event": "brand resolution"
+    }
+  ]
+}

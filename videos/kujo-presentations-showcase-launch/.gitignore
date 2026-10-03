@@ -1,0 +1,11 @@
+node_modules/
+.hyperframes/
+.hf-*/
+output/render-*/
+output/qa-frames/
+snapshots/
+.thumbnails/
+__pycache__/
+audio/premaster.wav
+logs/
+.pipeline.lock

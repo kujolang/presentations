@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "renderSuccess": true,
+  "file": "output/release-silent.mp4",
+  "durationSeconds": 15,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "frameCount": 360,
+  "videoCodec": "h264",
+  "pixelFormat": "yuv420p",
+  "colorSpace": "BT.709",
+  "range": "limited",
+  "audio": "silent / no audio stream",
+  "fullDecode": "passed",
+  "sha256": "8c4582144ffb760a4a27806817700731aaa252a78fe56c61585f7d58b57009f6",
+  "bytes": 967327
+}

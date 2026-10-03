@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "file": "output/release-complete.mp4",
+  "duration": 15,
+  "frames": 360,
+  "pictureBitstreamIdentical": true,
+  "pictureHash": "SHA256=d9532cd419f3d190727e01b4b8eb2a0ec7978f21d321d09d360547ecafa39872",
+  "audioCodec": "AAC",
+  "sampleRate": 48000,
+  "channels": 2,
+  "integratedLUFS": -15.88,
+  "truePeakDBTP": -1.8,
+  "loudnessRangeLU": 2.6,
+  "narrationCuesVerified": 5,
+  "fullDecode": "passed",
+  "sha256": "396664fee3dd94ae9cc9184789d6f11e24cdda8054b071e79574471520cc6bcd",
+  "bytes": 1455236,
+  "subjectiveListening": "Not independently auditioned by the assistant; review the delivered video for voice preference and pronunciation."
+}

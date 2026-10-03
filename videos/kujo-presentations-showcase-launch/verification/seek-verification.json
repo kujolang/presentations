@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "forwardReverseSamples": 23,
+  "maximumDifference": 2,
+  "maximumMeanDifference": 0.000040027006172839503,
+  "pixelTolerance": "max 3/255 and mean below 0.001/255; Chromium subpixel rounding",
+  "randomSeekSamples": 7,
+  "loopBoundary": "pixel-identical source frames",
+  "font": "Departure loaded",
+  "runtimeErrors": [],
+  "chrome": "Chrome/154.0.8037.95"
+}

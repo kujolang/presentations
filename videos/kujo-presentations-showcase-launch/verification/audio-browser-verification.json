@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "ended": true,
+  "duration": 15,
+  "width": 1920,
+  "height": 1080,
+  "frames": 359,
+  "droppedFrames": 1,
+  "audioPeak": 0.8127586841583252,
+  "nonzeroAudioWindows": 300,
+  "masterDuration": 15,
+  "masterChannels": 2,
+  "masterSampleRate": 48000,
+  "method": "Browser playback and Web Audio signal analysis; output sink silenced, not a subjective listening review."
+}

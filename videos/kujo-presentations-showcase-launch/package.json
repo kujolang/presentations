@@ -1,0 +1,26 @@
+{
+  "name": "kujo-release-film",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "npm ci --ignore-scripts && node scripts/assets.mjs",
+    "dev": "hyperframes preview",
+    "preview": "hyperframes preview --background",
+    "check": "node scripts/assets.mjs && node scripts/check.mjs",
+    "render": "node scripts/render.mjs",
+    "verify": "node scripts/verify.mjs && python3 scripts/verify-audio.py",
+    "qa": "node scripts/qa.mjs",
+    "audio:synthesize": "python3 scripts/sound-design.py",
+    "audio:mix": "python3 scripts/mix-audio.py && python3 scripts/verify-audio.py",
+    "audio:qa": "node scripts/verify-audio-browser.mjs"
+  },
+  "devDependencies": {
+    "hyperframes": "0.8.116",
+    "puppeteer-core": "25.10.0",
+    "sharp": "0.35.4"
+  }
+}

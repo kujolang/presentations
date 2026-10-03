@@ -1,0 +1,708 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "negative_z_index",
+        "severity": "warning",
+        "message": "`z-index: -1` paints the element behind its nearest stacking context's own content. With no stacking-context ancestor that context is the composition root itself, so an opaque background there hides it entirely: in the DOM, laid out, and absent from the picture. A transparent root leaves it visible. Siblings at `z-index: 0` or above are unaffected.",
+        "selector": ".stage-fill",
+        "dataAttributes": {},
+        "sourceFile": "./index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Give the element's parent a stacking context - `isolation: isolate` is the cheapest, and `transform`, `filter`, `opacity` below 1, `contain: paint` and `will-change` all work too. The negative-z child then paints above that parent's background and renders normally. Or express paint order through DOM order - an earlier sibling paints behind a later one - and raise the elements that should sit in front rather than lowering this one."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"brand\"> is a timeline element that contains nested <div id=\"lockup\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#brand",
+        "dataAttributes": {},
+        "sourceFile": "./index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"brand\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"speed\"> is a timeline element that contains nested <div id=\"speed-visual\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#speed",
+        "dataAttributes": {},
+        "sourceFile": "./index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"speed\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"task\"> is a timeline element that contains nested <div id=\"task-camera\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#task",
+        "dataAttributes": {},
+        "sourceFile": "./index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"task\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"loop\"> is a timeline element that contains nested <div id=\"loop-visual\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#loop",
+        "dataAttributes": {},
+        "sourceFile": "./index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"loop\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"proof\"> is a timeline element that contains nested <div id=\"proof-visual\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#proof",
+        "dataAttributes": {},
+        "sourceFile": "./index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"proof\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 15,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 12,
+        "selector": "#tagline",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 457.69,
+          "top": 647.47,
+          "right": 1462.31,
+          "bottom": 700.34,
+          "width": 1004.62,
+          "height": 52.87
+        },
+        "containerSelector": "#receipt-2 > span:nth-of-type(1)",
+        "text": "Browser-native decks. Built with Kujo.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-ixcr"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 457.69,
+          "y": 647.47,
+          "width": 1004.62,
+          "height": 52.87
+        },
+        "firstSeen": 12,
+        "lastSeen": 12.125,
+        "occurrences": 2,
+        "heldMs": 125
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 1.5,
+        "selector": "#release-version",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 800,
+          "top": 569.99,
+          "right": 887.83,
+          "bottom": 598.99,
+          "width": 87.83,
+          "height": 29
+        },
+        "containerSelector": "#fast",
+        "text": "v0.3.0",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 800,
+          "y": 569.99,
+          "width": 87.83,
+          "height": 29
+        },
+        "firstSeen": 1.5,
+        "lastSeen": 1.5,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 1.5,
+        "selector": "#tagline",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 428,
+          "top": 626.99,
+          "right": 1492,
+          "bottom": 682.99,
+          "width": 1064,
+          "height": 56
+        },
+        "containerSelector": "#fast",
+        "text": "Browser-native decks. Built with Kujo.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-ixcr"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 428,
+          "y": 626.99,
+          "width": 1064,
+          "height": 56
+        },
+        "firstSeen": 1.5,
+        "lastSeen": 1.5,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 1.5,
+        "selector": "#url",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 872.5,
+          "top": 748.99,
+          "right": 1047.5,
+          "bottom": 780.99,
+          "width": 175,
+          "height": 32
+        },
+        "containerSelector": "#fast",
+        "text": "kujolang.ai",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-xvhp"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 872.5,
+          "y": 748.99,
+          "width": 175,
+          "height": 32
+        },
+        "firstSeen": 1.5,
+        "lastSeen": 1.5,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 1.5,
+        "selector": "#ai-moves",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 145,
+          "top": 501,
+          "right": 1131.92,
+          "bottom": 530,
+          "width": 986.92,
+          "height": 29
+        },
+        "containerSelector": "#fast",
+        "text": "Present.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-nb4d"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 145,
+          "y": 501,
+          "width": 986.92,
+          "height": 29
+        },
+        "firstSeen": 1.5,
+        "lastSeen": 1.5,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 1.8,
+        "selector": "#fast",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 174.85,
+          "top": 500,
+          "right": 1124.85,
+          "bottom": 780.5,
+          "width": 950,
+          "height": 280.5
+        },
+        "containerSelector": "div.speed-line.second",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 145,
+          "top": 500,
+          "right": 1095,
+          "bottom": 785,
+          "width": 950,
+          "height": 285
+        },
+        "overflow": {
+          "right": 29.85
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-wkuw"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 174.85,
+          "y": 500,
+          "width": 950,
+          "height": 280.5
+        },
+        "firstSeen": 1.8,
+        "lastSeen": 1.8,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 5.75,
+        "selector": "div.command-top > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1439.4,
+          "top": 255.21,
+          "right": 1465.36,
+          "bottom": 281.17,
+          "width": 25.96,
+          "height": 25.96
+        },
+        "containerSelector": "#stage-0 > span:nth-of-type(2)",
+        "text": "01",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-p81i"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1439.4,
+          "y": 255.21,
+          "width": 25.96,
+          "height": 25.96
+        },
+        "firstSeen": 5.75,
+        "lastSeen": 5.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 5.75,
+        "selector": "span.prompt-symbol",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 409.28,
+          "top": 348.39,
+          "right": 450.58,
+          "bottom": 430.91,
+          "width": 41.3,
+          "height": 82.52
+        },
+        "containerSelector": "div.loop-title",
+        "text": "›",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-ehde"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 409.28,
+          "y": 348.39,
+          "width": 41.3,
+          "height": 82.52
+        },
+        "firstSeen": 5.75,
+        "lastSeen": 5.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 5.75,
+        "selector": "#typed > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 469.13,
+          "top": 359.52,
+          "right": 499.23,
+          "bottom": 419.79,
+          "width": 30.1,
+          "height": 60.27
+        },
+        "containerSelector": "div.loop-title",
+        "text": "B",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 469.13,
+          "y": 359.52,
+          "width": 30.1,
+          "height": 60.27
+        },
+        "firstSeen": 5.75,
+        "lastSeen": 5.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 5.75,
+        "selector": "#typed > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 499.23,
+          "top": 359.52,
+          "right": 529.34,
+          "bottom": 419.79,
+          "width": 30.11,
+          "height": 60.27
+        },
+        "containerSelector": "div.loop-title",
+        "text": "u",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 499.23,
+          "y": 359.52,
+          "width": 30.11,
+          "height": 60.27
+        },
+        "firstSeen": 5.75,
+        "lastSeen": 5.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 5.75,
+        "selector": "#command > div:nth-of-type(3) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 412.06,
+          "top": 478.66,
+          "right": 479.92,
+          "bottom": 505.55,
+          "width": 67.86,
+          "height": 26.89
+        },
+        "containerSelector": "div.loop-title",
+        "text": "SCOPE",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-c4lr"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 412.06,
+          "y": 478.66,
+          "width": 67.86,
+          "height": 26.89
+        },
+        "firstSeen": 5.75,
+        "lastSeen": 5.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 5.75,
+        "selector": "#command > div:nth-of-type(4) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 412.06,
+          "top": 517.04,
+          "right": 466.34,
+          "bottom": 543.93,
+          "width": 54.28,
+          "height": 26.89
+        },
+        "containerSelector": "div.loop-title",
+        "text": "STOP",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-9bz5"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 412.06,
+          "y": 517.04,
+          "width": 54.28,
+          "height": 26.89
+        },
+        "firstSeen": 5.75,
+        "lastSeen": 5.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 8.625,
+        "selector": "div.loop-heading > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 135,
+          "top": 179.74,
+          "right": 584.09,
+          "bottom": 210.74,
+          "width": 449.09,
+          "height": 31
+        },
+        "containerSelector": "div.eyebrow.proof-label",
+        "text": "ONE SOURCE / EVERY SURFACE",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-vmq8"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 135,
+          "y": 179.74,
+          "width": 449.09,
+          "height": 31
+        },
+        "firstSeen": 8.625,
+        "lastSeen": 8.625,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 8.625,
+        "selector": "div.loop-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 135,
+          "top": 267.74,
+          "right": 566.28,
+          "bottom": 594.83,
+          "width": 431.28,
+          "height": 327.09
+        },
+        "containerSelector": "#proof-title",
+        "text": "Present. Read. Print.",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-wmja"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 135,
+          "y": 267.74,
+          "width": 431.28,
+          "height": 327.09
+        },
+        "firstSeen": 8.625,
+        "lastSeen": 8.625,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 12.125,
+        "selector": "#wordmark",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 803.94,
+          "top": 406.85,
+          "right": 1421.64,
+          "bottom": 480.98,
+          "width": 617.7,
+          "height": 74.13
+        },
+        "containerSelector": "#receipt-0 > span:nth-of-type(1)",
+        "text": "Kujo Presentations",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-k1t9"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 803.94,
+          "y": 406.85,
+          "width": 617.7,
+          "height": 74.13
+        },
+        "firstSeen": 12.125,
+        "lastSeen": 12.125,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 12.125,
+        "selector": "#url",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 874.65,
+          "top": 770.68,
+          "right": 1045.35,
+          "bottom": 801.89,
+          "width": 170.7,
+          "height": 31.21
+        },
+        "containerSelector": "#stop-stamp",
+        "text": "kujolang.ai",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-hf-id": "hf-xvhp"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 874.65,
+          "y": 770.68,
+          "width": 170.7,
+          "height": 31.21
+        },
+        "firstSeen": 12.125,
+        "lastSeen": 12.125,
+        "occurrences": 1,
+        "heldMs": 0
+      }
+    ],
+    "duration": 15,
+    "samples": [
+      0,
+      0.5,
+      1.8,
+      2.3,
+      3.2,
+      4.2,
+      5.1,
+      6.1,
+      6.6,
+      7.1,
+      7.6,
+      8.1,
+      9.1,
+      9.7,
+      10.5,
+      11.2,
+      12.6,
+      14.958
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 16,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0,
+      3.2,
+      6.6,
+      9.1,
+      14.958
+    ],
+    "checked": 52,
+    "passed": 52
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.116",
+    "latestVersion": "0.8.116",
+    "updateAvailable": false
+  }
+}

@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {root,run,hf} from './common.mjs';
+run(process.execPath,['scripts/assets.mjs']);
+run(process.execPath,['scripts/check.mjs']);
+const work=fs.mkdtempSync(path.join(root,'output/render-'));
+const frames=path.join(work,'frames');
+hf(['render','.','--fps','24','--format','png-sequence','--quality','high','--workers','2','--frames-cache-dir','off','--no-browser-gpu','--no-best-effort','--output',frames]);
+const names=fs.readdirSync(frames).filter(n=>/^frame_\d{6}\.png$/.test(n)).sort();
+if(names.length!==360||names[0]!=='frame_000001.png'||names[359]!=='frame_000360.png')throw Error('Render did not produce exactly 360 frames.');
+const mp4=path.join(work,'release-silent.mp4');
+run('ffmpeg',['-v','error','-y','-framerate','24','-start_number','1','-i',path.join(frames,'frame_%06d.png'),'-vf','scale=in_range=pc:out_range=tv:out_color_matrix=bt709,format=yuv420p','-c:v','libx264','-crf','16','-preset','medium','-x264-params','colorprim=bt709:transfer=bt709:colormatrix=bt709','-color_range','tv','-colorspace','bt709','-color_primaries','bt709','-color_trc','bt709','-an','-movflags','+faststart',mp4]);
+run(process.execPath,['scripts/verify.mjs',mp4]);
+fs.copyFileSync(mp4,path.join(root,'output/release-silent.mp4'));
+fs.rmSync(work,{recursive:true,force:true});
+run(process.execPath,['scripts/verify.mjs']);
+console.log('Rendered and verified output/release-silent.mp4');
+
+run('python3',['scripts/mix-audio.py']);
+run('python3',['scripts/verify-audio.py']);

@@ -1,0 +1,52 @@
+{
+  "facts": [
+    {
+      "id": "showcase",
+      "text": "Kujo Presentations 0.3.0 is live in the Kujolang.ai Showcase with a dedicated guide on Kujo Docs and live examples at presentations.kujolang.ai.",
+      "source": "kujolang.ai main commit 5d2db4e, content/ecosystem/58-presentations.md; docs.kujolang.ai main commit d0c1d0c, content/showcases/presentations.md; production HTTP verification on 2026-10-03"
+    },
+    {
+      "id": "static-output",
+      "text": "Presentations turns structured deck source into browser-native static sites with numbered slide URLs, an overview, a reading edition, print and PDF output, and optional presenter tools.",
+      "source": "presentations README.md at commit 5199bc3 and Kujolang.ai Presentations showcase at commit 5d2db4e"
+    },
+    {
+      "id": "authoring",
+      "text": "Authors can start from investor, live-talk, or sales starters and edit deck.json, BRIEF.md, local assets, and theme CSS.",
+      "source": "presentations README.md at commit 5199bc3; docs.kujolang.ai content/showcases/presentations.md at commit d0c1d0c"
+    },
+    {
+      "id": "browser-features",
+      "text": "Generated decks support direct static routes, keyboard and touch navigation, slide-only fullscreen, reduced-motion behavior, optional local Motion bundles, and a reflowing reading edition.",
+      "source": "presentations README.md and CHANGELOG.md at commit 5199bc3"
+    },
+    {
+      "id": "presenter-privacy",
+      "text": "Private speaker notes load from a local JSON file into the presenter tab and are not emitted into generated audience HTML, URLs, or browser storage.",
+      "source": "kujolang.ai content/ecosystem/58-presentations.md at commit 5d2db4e; presentations docs/presentation-features.md at commit 5199bc3"
+    }
+  ],
+  "scene_refs": {
+    "brand": [
+      "showcase"
+    ],
+    "hook": [
+      "showcase"
+    ],
+    "task": [
+      "static-output",
+      "authoring"
+    ],
+    "loop": [
+      "static-output",
+      "browser-features"
+    ],
+    "proof": [
+      "static-output",
+      "presenter-privacy"
+    ]
+  },
+  "screen_mode": "illustration",
+  "verification_source": null,
+  "semantic_review": "Agent must check that each citation actually supports the on-screen and spoken claim."
+}
