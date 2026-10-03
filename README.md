@@ -4,9 +4,11 @@
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 [![built with Kujo](https://img.shields.io/badge/built%20with-Kujo-white.svg)](https://github.com/kujolang/kujo)
 
-Build browser presentations with Kujo SSG and SiteKit. Choose a starter, add your
-content, and generate static slides, an overview, a readable text edition, and printable pages.
-Optional presenter tools keep speaker notes local to the presenter tab.
+Kujo Presentations builds browser-native slide decks with Kujo SSG and SiteKit.
+Each deck becomes a static website with numbered slide URLs, an overview, a
+readable text edition, print and PDF output, and optional presenter tools.
+Add Motion presets or write custom layouts and CSS without locking your content
+inside a presentation app. Speaker notes stay local to the presenter tab.
 
 Presentations is an optional package. It adds no code or dependencies to SSG or
 SiteKit. Version 0.3.0 is a preview; the content and extension APIs may change.
@@ -17,6 +19,34 @@ for verified platforms and known limits. GitHub releases distribute the source;
 [Explore the live presentations](https://presentations.kujolang.ai/).
 
 ![Nine-slide media example](docs/images/reference-overview.webp)
+
+## Download and customize the demos
+
+The repository includes the source for every demo, not just screenshots or PDF
+exports. Fork or clone it, then edit the deck's `deck.json`, `BRIEF.md`, assets,
+and theme.
+
+| Demo | Source | Live version |
+| --- | --- | --- |
+| Vela investor briefing | [`decks/kujo-demo-investor`](decks/kujo-demo-investor) | [View](https://presentations.kujolang.ai/investor/) |
+| Springline company overview | [`decks/kujo-demo-sales`](decks/kujo-demo-sales) | [View](https://presentations.kujolang.ai/sales/) |
+| Morrow AI workforce report | [`decks/kujo-demo-talk`](decks/kujo-demo-talk) | [View](https://presentations.kujolang.ai/live-talk/) |
+| Night Shift editorial story | [`decks/kujo-demo-editorial`](decks/kujo-demo-editorial) | Source included |
+| Original media presentation | [`examples/reference`](examples/reference) | [View](https://presentations.kujolang.ai/original/) |
+
+To run an included deck locally:
+
+```sh
+git clone https://github.com/kujolang/presentations.git
+cd presentations
+npm run deck -- setup
+npm run deck -- build --deck decks/kujo-demo-investor
+npm run deck -- preview --deck decks/kujo-demo-investor
+```
+
+If you copy a demo, change its `id` before you build it so its output does not
+replace another deck. See [authoring](docs/authoring.md) for layouts, themes,
+motion, and custom HTML.
 
 ## Quick start
 

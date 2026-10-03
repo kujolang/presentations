@@ -1,7 +1,15 @@
 # Changelog
 
-## 0.3.0 — 2026-10-01
+## 0.3.0 — 2026-10-02
 
+- Add four complete, editable demo decks for investor, sales, live-talk, and
+  editorial use cases.
+- Publish the four-deck showcase at `presentations.kujolang.ai` with stable deck,
+  reading, print, and presenter routes.
+- Add touch-swipe navigation for phones and tablets.
+- Add deterministic social preview images and a rendered promo video for each
+  demo style.
+- Document how to download, run, and customize every included demo.
 - Play the configured entrance on direct slide loads, honoring saved and reduced-motion preferences.
 - Align the overview start button vertically with its introduction.
 

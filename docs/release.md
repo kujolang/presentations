@@ -26,11 +26,10 @@ channel-identity collision and its source correction. The earlier process-isolat
 workaround failed CI and has been removed. The corrected browser is prepared in
 a project-owned directory; no upstream release is claimed.
 
-Revision `6886c3e` passed
-[CI run 36809598952](https://github.com/kujolang/presentations/actions/runs/36809598952).
-Later revisions need their own result. Exact-commit CI artifacts and the session
-handoff record subsequent verification; earlier [test records](verification.md)
-and checked-in measurements describe the runs that produced them.
+The `v0.3.0` release tag identifies the published source. Exact-commit CI
+artifacts and the session handoff record its verification; earlier
+[test records](verification.md) and checked-in measurements describe the runs
+that produced them.
 
 ## Before publishing
 
@@ -39,6 +38,8 @@ and checked-in measurements describe the runs that produced them.
    review upstream status and rerun the transport regressions before changing pins.
 3. Complete real-host and human accessibility/language checks.
 4. Review media terms and old Git history before changing repository visibility.
+   The owner accepted the retained history for the public v0.3.0 release; the
+   current tree uses generated artwork with recorded provenance.
 5. Confirm version/status across manifests, badges, and changelog; make the
    publication decision separately from code verification.
 

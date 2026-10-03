@@ -32,14 +32,11 @@ remain optional. Private notes are distinct from public slide annotations.
 3. **Human acceptance:** automated axe, keyboard, geometry, fonts, RTL, and print
    checks pass. VoiceOver/NVDA and fluent Arabic review remain required. The presenter
    console is English; Windows native tooling is unsupported. See the support matrix.
-4. **Repository history:** generated artwork replaces photographs in the current tree, but old
-   Git revisions retain the previous images. Review rights before exposing private
-   history. The repository remains private pending that review; no history rewrite
-   has been authorized or performed.
-5. **Release verification:** the owner has requested v0.3.0 and public source
-   availability. Verify the exact tagged revision; resolve the asset-history
-   decision before changing visibility. No npm publication or deck deployment
-   is part of this release.
+4. **Repository history:** generated artwork replaces photographs in the current
+   tree, while old revisions retain previous images. The owner accepted that
+   retained history for public release; no history rewrite was performed.
+5. **Release verification:** verify the exact v0.3.0 tag before publication. No
+   npm publication is part of this release.
 
 ```sh
 npm run test:native
