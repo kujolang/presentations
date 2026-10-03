@@ -1,28 +1,28 @@
 {
   "status": "technical_pass",
   "workspace": "/Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-presentations-showcase-launch",
-  "input_fingerprint": "f8de35a403cf3de9fd02df334c1ee0420a6c97c55e006750b639260f888510f5",
+  "input_fingerprint": "00c09b7ba1b8ffede9787044ba777ad7752484208fcbedb4ceddc2f0e183aaba",
   "output": "/Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-presentations-showcase-launch/output/release-complete.mp4",
-  "output_sha256": "64dd6507d7e8323991ab43bf524ec6942232bb27ab32f5f8e1425c2ed741205e",
+  "output_sha256": "33655bd41a2251630430bf2bc6792ea35f941b5c41d3cec19f69868b80327526",
   "verification": {
     "ok": true,
     "file": "output/release-complete.mp4",
     "duration": 15,
     "frames": 360,
     "pictureBitstreamIdentical": true,
-    "pictureHash": "SHA256=35c1a9646a698e86ac583ebce6495a3eb53cb6bb17cce7141455bf1c2e74d09e",
+    "pictureHash": "SHA256=10cfa1febf0bf034f841b647a5895802432f935464fbdcc4f549ddccfae8031c",
     "audioCodec": "AAC",
     "sampleRate": 48000,
     "channels": 2,
-    "integratedLUFS": -16.05,
-    "truePeakDBTP": -2.36,
-    "loudnessRangeLU": 2.2,
+    "integratedLUFS": -16.04,
+    "truePeakDBTP": -2.63,
+    "loudnessRangeLU": 2.3,
     "narrationCuesVerified": 5,
     "fullDecode": "passed",
-    "sha256": "64dd6507d7e8323991ab43bf524ec6942232bb27ab32f5f8e1425c2ed741205e",
-    "bytes": 1457221,
+    "sha256": "33655bd41a2251630430bf2bc6792ea35f941b5c41d3cec19f69868b80327526",
+    "bytes": 1461623,
     "subjectiveListening": "Not independently auditioned by the assistant; review the delivered video for voice preference and pronunciation."
   },
   "review": "Inspect contact sheets and audition the final MP4. Technical pass is not a semantic or listening review.",
-  "finished_at": 1791066846
+  "finished_at": 1791067746
 }
