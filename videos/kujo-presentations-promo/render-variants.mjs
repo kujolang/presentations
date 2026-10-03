@@ -3,12 +3,18 @@ import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
 
 const project = process.cwd();
-const variants = [
+const allVariants = [
   ['investor', '#00C2D7'],
   ['sales', '#B21F5B'],
   ['live-talk', '#7447FF'],
   ['editorial', '#FF3C8F'],
 ];
+const requested = new Set(process.argv.slice(2));
+const variants = requested.size
+  ? allVariants.filter(([variant]) => requested.has(variant))
+  : allVariants;
+const unknown = [...requested].filter((variant) => !allVariants.some(([name]) => name === variant));
+if (unknown.length) throw new Error(`Unknown variant(s): ${unknown.join(', ')}`);
 const slideNumbers = Array.from({ length: 9 }, (_, index) => String(index + 1).padStart(2, '0'));
 const indexPath = resolve(project, 'index.html');
 const originalIndex = await readFile(indexPath, 'utf8');
@@ -30,7 +36,7 @@ try {
       'npx',
       [
         '--yes',
-        'hyperframes@0.8.106',
+        'hyperframes@0.8.113',
         'render',
         '.',
         '--quality',
@@ -55,4 +61,4 @@ try {
   }
 }
 
-console.log(`Rendered ${variants.length} Kujo Presentations promo variants.`);
+console.log(`Rendered ${variants.length} Kujo Presentations promo variant${variants.length === 1 ? '' : 's'}.`);
