@@ -14,6 +14,6 @@ This 15-second HyperFrames film announces the Presentations 0.3.0 Showcase launc
 
 ## Verification
 
-The final build passed the bundled HyperFrames release-video checks on HyperFrames 0.8.116: 15 seconds, 360 frames, full decode, deterministic picture match, seek checks, five narration cues, browser audio playback, stereo AAC at 48 kHz, −15.88 LUFS, and −1.8 dBTP. The final SHA-256 is `396664fee3dd94ae9cc9184789d6f11e24cdda8054b071e79574471520cc6bcd`. The project dependency audit reports zero known vulnerabilities.
+The final build passed the bundled HyperFrames release-video checks on HyperFrames 0.8.116: 15 seconds, 360 frames, full decode, deterministic picture match, seek checks, five ElevenLabs v4 narration cues, browser audio playback, stereo AAC at 48 kHz, −16.05 LUFS, and −2.36 dBTP. HyperFrames reported zero runtime, layout, motion, or contrast errors and 80/80 text contrast checks passed WCAG AA. The final SHA-256 is `64dd6507d7e8323991ab43bf524ec6942232bb27ab32f5f8e1425c2ed741205e`. The project dependency audit reports zero known vulnerabilities.
 
-The contact sheet was visually reviewed for layout, clipping, copy, and scene progression. Automated signal checks passed, but the final narration was not independently auditioned in this environment; listen once for voice preference and the spoken `Kujolang.ai` pronunciation before publication.
+The contact sheet and five representative snapshots were visually reviewed for grid alignment, clipping, copy, and scene progression. Automated signal checks passed, but the final narration was not independently auditioned in this environment; listen once for voice preference and the spoken `Kujolang.ai` pronunciation before publication.
