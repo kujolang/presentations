@@ -19,45 +19,45 @@
   "results": [
     {
       "slides": 10,
-      "buildMs": 2215,
+      "buildMs": 1218,
       "status": 0,
-      "peakRssBytes": 22499328,
-      "outputBytes": 565073,
-      "overviewReadyMs": 216,
+      "peakRssBytes": 21819392,
+      "outputBytes": 576327,
+      "overviewReadyMs": 159,
       "scroll": {
         "frames": 60,
-        "meanFrameMs": 16.78833333334575,
-        "maxFrameMs": 35.40000000037253,
+        "meanFrameMs": 16.315000000099342,
+        "maxFrameMs": 17.69999998807907,
         "lastVisible": true
       },
       "budgetViolations": []
     },
     {
       "slides": 100,
-      "buildMs": 17263,
+      "buildMs": 8081,
       "status": 0,
-      "peakRssBytes": 22282240,
-      "outputBytes": 1027508,
-      "overviewReadyMs": 223,
+      "peakRssBytes": 21508096,
+      "outputBytes": 1071871,
+      "overviewReadyMs": 90,
       "scroll": {
         "frames": 60,
-        "meanFrameMs": 30.53499999999379,
-        "maxFrameMs": 241,
+        "meanFrameMs": 16.626666666567324,
+        "maxFrameMs": 17.599999994039536,
         "lastVisible": true
       },
       "budgetViolations": []
     },
     {
       "slides": 500,
-      "buildMs": 92554,
+      "buildMs": 32495,
       "status": 0,
-      "peakRssBytes": 24928256,
-      "outputBytes": 3094708,
-      "overviewReadyMs": 281,
+      "peakRssBytes": 26185728,
+      "outputBytes": 3286271,
+      "overviewReadyMs": 118,
       "scroll": {
         "frames": 60,
-        "meanFrameMs": 29.243333333327126,
-        "maxFrameMs": 140.80000000074506,
+        "meanFrameMs": 16.370000000298024,
+        "maxFrameMs": 17.599999994039536,
         "lastVisible": true
       },
       "budgetViolations": []
