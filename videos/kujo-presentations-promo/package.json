@@ -8,5 +8,8 @@
     "render": "npx --yes hyperframes@0.8.114 render",
     "render:variants": "node render-variants.mjs",
     "publish": "npx --yes hyperframes@0.8.114 publish"
+  },
+  "engines": {
+    "node": ">=22.23.4 <23 || >=24.22.1 <25 || >=26.12.1"
   }
 }

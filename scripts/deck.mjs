@@ -28,12 +28,14 @@ function doctor() {
   const match=kujo.stdout?.match(/kujo (\d+)\.(\d+)/);
   const versionOK=match && (Number(match[1])>1 || Number(match[1])===1 && Number(match[2])>=5);
   const deps=dependencies();
-  const checks={node:Number(process.versions.node.split('.')[0])>=20,git:git.status===0,kujo:kujo.status===0 && Boolean(versionOK),ssg:existsSync(`${deps.ssg}/build.kujo`),sitekit:existsSync(`${deps.sitekit}/sitekit.css`)};
+  const [major,minor,patch]=process.versions.node.split('.').map(Number);
+  const patchedNode=major===22&&(minor>23||minor===23&&patch>=4)||major===24&&(minor>22||minor===22&&patch>=1)||major===26&&(minor>12||minor===12&&patch>=1)||major>26;
+  const checks={node:patchedNode,git:git.status===0,kujo:kujo.status===0 && Boolean(versionOK),ssg:existsSync(`${deps.ssg}/build.kujo`),sitekit:existsSync(`${deps.sitekit}/sitekit.css`)};
   return {ready:Object.values(checks).every(Boolean),checks,dependencies:deps,kujoVersion:kujo.stdout?.trim()||null};
 }
 function requireTools() {
   const {checks}=doctor();
-  if(!checks.node || !checks.git || !checks.kujo) fail('Install Node 20+, Git, and Kujo 1.5+ on PATH first. See docs/getting-started.md. Then rerun this command.');
+  if(!checks.node || !checks.git || !checks.kujo) fail('Install patched Node 22.23.4+, 24.22.1+, or 26.12.1+, Git, and Kujo 1.5+ on PATH first. See docs/getting-started.md. Then rerun this command.');
 }
 function setup() {
   requireTools();
@@ -55,7 +57,9 @@ function create(starter,name,options) {
   if(options.title && (options.title.length>80 || !options.title.trim() || /[\r\n]/.test(options.title))) fail('--title must be a single line of 1–80 characters.');
   mkdirSync('decks',{recursive:true});mkdirSync(destination);
   try {
-    cpSync(entry.path,destination,{recursive:true,errorOnExist:true,force:false});
+    for (const child of readdirSync(entry.path)) {
+      cpSync(resolve(entry.path,child),resolve(destination,child),{recursive:true,errorOnExist:true,force:false});
+    }
     const deck=read(`${destination}/deck.json`);
     deck.id=name;deck.title=options.title||name.replaceAll('-',' ');
     deck.slides[0].title=options.title||'[Your presentation title]';
