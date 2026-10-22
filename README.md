@@ -1,6 +1,6 @@
 # Presentations
 
-[![Version](https://img.shields.io/badge/version-0.3.0-black)](https://github.com/kujolang/presentations)
+[![Version](https://img.shields.io/badge/version-0.3.1-black)](https://github.com/kujolang/presentations)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 [![built with Kujo](https://img.shields.io/badge/built%20with-Kujo-white.svg)](https://github.com/kujolang/kujo)
 
@@ -11,7 +11,7 @@ Add Motion presets or write custom layouts and CSS without locking your content
 inside a presentation app. Speaker notes stay local to the presenter tab.
 
 Presentations is an optional package. It adds no code or dependencies to SSG or
-SiteKit. Version 0.3.0 is a preview; the content and extension APIs may change.
+SiteKit. Version 0.3.1 is a preview; the content and extension APIs may change.
 See [release status](docs/release.md) and the [support matrix](docs/support-matrix.md)
 for verified platforms and known limits. GitHub releases distribute the source;
 `package.json` keeps `private: true` to prevent accidental npm publication.
@@ -50,7 +50,7 @@ motion, and custom HTML.
 
 ## Quick start
 
-Install Git, Node 20+, and [Kujo 1.5+](https://github.com/kujolang/kujo), then run:
+Install Git, patched Node 22.23.4+, 24.22.1+, or 26.12.1+, and [Kujo 1.5+](https://github.com/kujolang/kujo), then run:
 
 ```sh
 git clone https://github.com/kujolang/presentations.git

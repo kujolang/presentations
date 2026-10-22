@@ -1,6 +1,6 @@
 # Release status
 
-Version **0.3.0** remains a preview. It is not certified for every enterprise,
+Version **0.3.1** remains a preview. It is not certified for every enterprise,
 host, language, or assistive technology. GitHub releases distribute source archives. The npm package remains private to
 prevent accidental registry publication. A release does not deploy user decks.
 
@@ -26,7 +26,7 @@ channel-identity collision and its source correction. The earlier process-isolat
 workaround failed CI and has been removed. The corrected browser is prepared in
 a project-owned directory; no upstream release is claimed.
 
-The `v0.3.0` release tag identifies the published source. Exact-commit CI
+The `v0.3.1` release tag identifies the published source. Exact-commit CI
 artifacts and the session handoff record its verification; earlier
 [test records](verification.md) and checked-in measurements describe the runs
 that produced them.

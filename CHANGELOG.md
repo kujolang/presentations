@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 — 2026-10-22
+
+- Require patched Node.js release lines for deck builds and verification.
+- Update deployment tooling and preserve the preview API and accessibility acceptance limitations.
+
 ## 0.3.0 — 2026-10-02
 
 - Add four complete, editable demo decks for investor, sales, live-talk, and

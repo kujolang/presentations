@@ -1,6 +1,6 @@
 # From clone to custom presentation
 
-Builds have been tested on macOS and Linux. Install Git, Node 20+, and Kujo 1.5+
+Builds have been tested on macOS and Linux. Install Git, patched Node 22.23.4+, 24.22.1+, or 26.12.1+, and Kujo 1.5+
 and make them available on PATH. Follow the installation instructions in the [Kujo repository](https://github.com/kujolang/kujo). This project does not
 silently install system tools. No global npm package is needed.
 

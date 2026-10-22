@@ -1,7 +1,7 @@
 # Completion record and remaining release gates
 
 Updated 2026-10-01. This record supersedes the open implementation list in the
-readiness and build-safety reviews. The package remains a 0.3.0 preview.
+readiness and build-safety reviews. The package remains a 0.3.1 preview.
 
 ## Completed
 
@@ -35,7 +35,7 @@ remain optional. Private notes are distinct from public slide annotations.
 4. **Repository history:** generated artwork replaces photographs in the current
    tree, while old revisions retain previous images. The owner accepted that
    retained history for public release; no history rewrite was performed.
-5. **Release verification:** verify the exact v0.3.0 tag before publication. No
+5. **Release verification:** verify the exact v0.3.1 tag before publication. No
    npm publication is part of this release.
 
 ```sh

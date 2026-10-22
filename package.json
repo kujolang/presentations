@@ -1,6 +1,6 @@
 {
   "name": "kujo-presentations",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -20,7 +20,7 @@
     "test:native": "npm run prepare:browser && PRESENTATION_TEST_HOST=kujo playwright test decks.spec.js motion.spec.js extended.spec.js --project=firefox --output .build/native-browser-results",
     "prepare:browser": "node scripts/prepare-firefox.mjs",
     "build:site": "node scripts/build-site.mjs",
-    "deploy:site": "npm run build:site && npx --yes wrangler@4.129.0 deploy"
+    "deploy:site": "npm run build:site && npx --yes wrangler@4.151.3 deploy"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.12.1",

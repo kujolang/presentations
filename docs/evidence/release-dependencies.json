@@ -1,8 +1,8 @@
 {
   "project": {
     "name": "kujo-presentations",
-    "version": "0.3.0",
-    "tag": "v0.3.0"
+    "version": "0.3.1",
+    "tag": "v0.3.1"
   },
   "dependencies": [
     {
