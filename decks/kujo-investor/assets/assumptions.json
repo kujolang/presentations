@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-09",
+  "currency": "USD",
+  "status": "Illustrative assumptions, unvalidated",
+  "postMoney": 30000000,
+  "months": 24,
+  "founderAnnualBase": 150000,
+  "market": {
+    "initialOrganizations": 2000,
+    "annualContract": 24000,
+    "attainableCustomers": 100,
+    "expansionOrganizations": 10000,
+    "expansionAnnualContract": 60000
+  },
+  "scenarios": [
+    {
+      "raise": 3000000,
+      "engineering": 0.55,
+      "infrastructure": 0.1,
+      "distribution": 0.1,
+      "operations": 0.1,
+      "reserves": 0.15
+    },
+    {
+      "raise": 6000000,
+      "engineering": 0.55,
+      "infrastructure": 0.1,
+      "distribution": 0.1,
+      "operations": 0.1,
+      "reserves": 0.15
+    },
+    {
+      "raise": 8000000,
+      "engineering": 0.55,
+      "infrastructure": 0.1,
+      "distribution": 0.1,
+      "operations": 0.1,
+      "reserves": 0.15
+    },
+    {
+      "raise": 10000000,
+      "engineering": 0.55,
+      "infrastructure": 0.1,
+      "distribution": 0.1,
+      "operations": 0.1,
+      "reserves": 0.15
+    }
+  ]
+}

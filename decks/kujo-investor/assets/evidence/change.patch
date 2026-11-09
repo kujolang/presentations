@@ -1,0 +1,7 @@
+diff --git a/ownership.mjs b/ownership.mjs
+index d996849..c1faef6 100644
+--- a/ownership.mjs
++++ b/ownership.mjs
+@@ -1 +1 @@
+-export function ownership(raise, postMoney) { return raise / (postMoney + raise) * 100; }
++export function ownership(raise, postMoney) { return raise / postMoney * 100; }

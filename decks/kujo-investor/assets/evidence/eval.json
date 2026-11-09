@@ -1,0 +1,22 @@
+{
+  "name": "investor-recorded-demo",
+  "version": "1.0.0",
+  "output_dir": "eval-results",
+  "tests": [
+    {
+      "name": "post-money ownership calculation",
+      "check": "command_succeeds",
+      "params": {
+        "command": "node test.mjs"
+      }
+    },
+    {
+      "name": "fix uses post-money denominator",
+      "check": "file_contains",
+      "params": {
+        "path": "ownership.mjs",
+        "expected": "raise / postMoney * 100"
+      }
+    }
+  ]
+}

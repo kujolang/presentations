@@ -1,0 +1,8 @@
+{
+  "request": "evidence/REQUEST.md",
+  "diff": "evidence/change.patch",
+  "before": "evidence/casefile/2026-11-09-091944-before/case.json",
+  "after": "evidence/casefile/2026-11-09-091948-after/case.json",
+  "eval": "evidence/commands.json",
+  "decision": "evidence/DECISION.md"
+}

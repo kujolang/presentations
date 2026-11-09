@@ -118,3 +118,10 @@ into SiteKit. Themes/templates are trusted source and must be reviewed as code.
 Configure optional [Motion transitions](transitions.md) in `deck.json`. Choose
 an effect, timing, intensity, and stagger for the deck or individual slides.
 Viewers can turn motion off; system reduced-motion preferences take precedence.
+
+Trusted custom layouts can use `{{assetPrefix}}` to reference deck assets across
+slide, overview and print routes, for example
+`href="{{assetPrefix}}assets/deck/appendix.html"`. This is the escaped,
+builder-supplied route prefix; it is not authored HTML from deck content.
+The `ki-*` layouts support the source-backed Kujo investor deck in
+`decks/kujo-investor/`; its appendix stays outside the 18-slide navigation.
