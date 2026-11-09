@@ -1,0 +1,51 @@
+[WebServer] (node:68761) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:68801) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/browser/animation-fallback.spec.js:2:1 › a stalled optional animation releases the navigation lock (15.6s)
+
+
+  1) [chromium] › tests/browser/animation-fallback.spec.js:2:1 › a stalled optional animation releases the navigation lock 
+
+    Error: expect(locator).not.toHaveAttribute(expected) failed
+
+    Locator:  locator('html')
+    Expected: not "true"
+    Received: "true"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "not toHaveAttribute" with timeout 5000ms
+      - waiting for locator('html')
+        3 × locator resolved to <html lang="en" dir="ltr" data-theme="kujo-light" data-viewer-ready="true" data-transitioning="true">…</html>
+          - unexpected value "true"
+
+
+       8 |   await page.goto('/field-notes/1/');
+       9 |   await expect.poll(()=>page.evaluate(()=>window.stalledAnimations||0)).toBeGreaterThan(0);
+    > 10 |   await expect(page.locator('html')).not.toHaveAttribute('data-transitioning','true',{timeout:5000});
+         |                                          ^
+      11 |   await expect(page.locator('.p-frame').first()).toHaveCSS('opacity','1');
+      12 |   await page.keyboard.press('ArrowRight');
+      13 |   await expect(page).toHaveURL(/\/field-notes\/2\/$/,{timeout:6000});
+        at /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/tests/browser/animation-fallback.spec.js:10:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    .build/investor-browser-results/animation-fallback-a-stall-4dd61-eleases-the-navigation-lock-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: .build/investor-browser-results/animation-fallback-a-stall-4dd61-eleases-the-navigation-lock-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    .build/investor-browser-results/animation-fallback-a-stall-4dd61-eleases-the-navigation-lock-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace .build/investor-browser-results/animation-fallback-a-stall-4dd61-eleases-the-navigation-lock-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests/browser/animation-fallback.spec.js:2:1 › a stalled optional animation releases the navigation lock 

@@ -1,0 +1,44 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> kujo-presentations@0.3.1 build
+> kujo run build.kujo && kujo run build.kujo -- --deck examples/field-notes && kujo run build.kujo -- --deck examples/arabic
+
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 9
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/reference/site
+  Build time: 0.12725852199999999s
+
+
+Presentation built: output/reference/index.html
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 3
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/field-notes/site
+  Build time: 0.14688147499999998s
+
+
+Presentation built: output/field-notes/index.html
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 2
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/arabic/site
+  Build time: 0.066122395s
+
+
+Presentation built: output/arabic/index.html

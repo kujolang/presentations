@@ -1,0 +1,5 @@
+[
+  { viewport: 'desktop', violations: [], horizontalOverflow: false },
+  { viewport: 'mobile', violations: [], horizontalOverflow: false },
+  { route: 'overview', thumbnails: 18, nestedLinks: 0, violations: [] }
+]

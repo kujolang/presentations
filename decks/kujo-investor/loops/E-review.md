@@ -1,0 +1,8 @@
+# Loop E — technical review
+Evaluator: real Chromium/Chrome automation plus assistant inspection. Criteria: native navigation, fullscreen, notes, print/read, diagram/evidence controls, editable assumptions, reduced motion, keyboard focus, zero page/console errors, bounded geometry and axe checks.
+Repairs: corrected QA's presenter counter expectation to native "2 / 18" (test defect); repaired missing favicon requests, mobile appendix overflow and scroll focus; bounded optional animation waits and added a deliberately stalled-animation regression test.
+Evidence: qa/browser-report.json (final deck), qa/appendix-review.json, qa/lens/lens-report.json, qa/external-links.json and qa/chromium-regression.log. Failed attempts remain in separate logs rather than being labeled successes.
+Environment: full npm test was attempted. Bundled browser install hit ENOSPC; installed system Chrome showed timer-sensitive failures under concurrent load. Final native regression uses available Chromium 149 headless with one worker. Firefox/WebKit matrix is not claimed verified. This limits browser coverage, not the published component maturity claims.
+Disposition: accepted for the tested Chromium environment only when gate.py E passes. Stop: final deck report pass, no open major implementation defect; unverified engines remain disclosed.
+
+Final evidence: all 72 primary slide viewport captures reviewed through full views/contact sheets; browser-report pass, appendix axe/overflow pass, 33 Chromium regressions pass. Funding percentage rendering rounded to whole percentage after final visual review; affected interactions and appendix captures rerun.

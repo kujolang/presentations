@@ -1,0 +1,13 @@
+[
+  {
+    viewport: 'desktop',
+    violations: [ 'landmark-unique' ],
+    horizontalOverflow: false
+  },
+  {
+    viewport: 'mobile',
+    violations: [ 'landmark-unique' ],
+    horizontalOverflow: false
+  },
+  { route: 'overview', thumbnails: 18, nestedLinks: 0, violations: [] }
+]

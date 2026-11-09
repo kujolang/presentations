@@ -1,0 +1,37 @@
+PackWrite init: starting
+[1/8] Resolving mega prompt...
+[2/8] Checking output directory safety...
+[3/8] Collecting repository context...
+[4/8] Building distillation prompt...
+[5/8] Requesting model output from local/gemma4:31b-cloud...
+[6/8] Parsing and validating the returned manifest...
+[7/8] Writing pack files to agent/...
+Generated files:
+    agent/MASTER.md
+    agent/TODO.md
+    agent/HANDOFF.md
+    agent/DECISIONS.md
+    agent/REVIEW_CHECKLIST.md
+    agent/DEEPSEEK_START.md
+    agent/CODEX_REVIEW_PROMPT.md
+    agent/phases/00-project-brief.md
+    agent/phases/01-research.md
+    agent/phases/02-narrative.md
+    agent/phases/03-core-slides.md
+    agent/phases/04-appendix-financials.md
+    agent/phases/05-technical-evidence.md
+    agent/phases/06-polish.md
+    agent/phases/07-qa.md
+    agent/phases/08-delivery.md
+[8/8] Running pack validation...
+PackWrite generated an agent pack.
+
+  Output:     agent/
+  Provider:   local
+  Model:      gemma4:31b-cloud
+  Files:      16
+  Phases:     9
+  Validation: passed with 0 warnings
+
+Next:
+  packwrite prompt deepseek

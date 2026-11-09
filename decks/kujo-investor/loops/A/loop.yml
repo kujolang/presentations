@@ -1,0 +1,18 @@
+objective: "Verify documented capability boundaries, source dates, model arithmetic and authentic evidence hashes."
+max_iterations: 3
+max_no_progress: 2
+max_consecutive_failures: 2
+allowed_actions:
+  - read_files
+  - edit_files
+  - run_tests
+blocked_actions:
+  - deploy
+  - destructive_cleanup
+eval_gates:
+  - id: evidence_and_review
+    command: "python3 scripts/gate.py A"
+    required: true
+commit:
+  enabled: false
+  push: false

@@ -1,0 +1,8 @@
+PackWrite doctor
+  cwd:             /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/decks/kujo-investor
+  provider:        local
+  model:           gemma4:31b-cloud
+  endpoint:        http://localhost:11434/v1/chat/completions
+  api key:         present (from environment)
+  prompt file:     MEGA_PROMPT.md (found)
+  output dir:      agent/ (present)

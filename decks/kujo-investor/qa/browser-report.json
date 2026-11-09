@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-09",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1920,
+      "height": 1080,
+      "slides": 18,
+      "appendix": true
+    },
+    {
+      "name": "laptop",
+      "width": 1366,
+      "height": 768,
+      "slides": 18,
+      "appendix": true
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "slides": 18,
+      "appendix": true
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "slides": 18,
+      "appendix": true
+    }
+  ],
+  "checks": [
+    "keyboard Home/End/arrows and pointer previous",
+    "fullscreen entry, navigation and exit",
+    "architecture details",
+    "inline evidence detail",
+    "presenter notes import and slide navigation",
+    "reading edition 18 headings",
+    "print route 18 slides and PDF",
+    "six evidence artifact panels",
+    "funding, market, invalid-input controls",
+    "assumptions export",
+    "reduced motion navigation",
+    "keyboard focus"
+  ],
+  "errors": [],
+  "axe": [
+    {
+      "route": "1/",
+      "violations": []
+    },
+    {
+      "route": "2/",
+      "violations": []
+    },
+    {
+      "route": "3/",
+      "violations": []
+    },
+    {
+      "route": "4/",
+      "violations": []
+    },
+    {
+      "route": "5/",
+      "violations": []
+    },
+    {
+      "route": "6/",
+      "violations": []
+    },
+    {
+      "route": "7/",
+      "violations": []
+    },
+    {
+      "route": "8/",
+      "violations": []
+    },
+    {
+      "route": "9/",
+      "violations": []
+    },
+    {
+      "route": "10/",
+      "violations": []
+    },
+    {
+      "route": "11/",
+      "violations": []
+    },
+    {
+      "route": "12/",
+      "violations": []
+    },
+    {
+      "route": "13/",
+      "violations": []
+    },
+    {
+      "route": "14/",
+      "violations": []
+    },
+    {
+      "route": "15/",
+      "violations": []
+    },
+    {
+      "route": "16/",
+      "violations": []
+    },
+    {
+      "route": "17/",
+      "violations": []
+    },
+    {
+      "route": "18/",
+      "violations": []
+    },
+    {
+      "route": "appendix",
+      "violations": []
+    }
+  ],
+  "overflow": [],
+  "pass": true
+}

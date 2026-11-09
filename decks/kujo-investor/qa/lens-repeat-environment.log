@@ -1,0 +1,4 @@
+Lens error: Bridge execution failed after 3 attempt(s): Bridge fatal error: Cannot find module 'playwright-core/package.json'
+Require stack:
+- /Users/robertdevore/2026/Kujolang/kujo-repos/lens/bridge/browser-bridge.js
+

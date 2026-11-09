@@ -1,0 +1,255 @@
+[WebServer] (node:67984) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 33 tests using 2 workers
+
+(node:67998) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67997) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/browser/animation-fallback.spec.js:2:1 › a stalled optional animation releases the navigation lock (7.5s)
+  ✓   2 [chromium] › tests/browser/decks.spec.js:6:3 › reference overview has local assets and accessible semantics (9.2s)
+  ✓   4 [chromium] › tests/browser/decks.spec.js:17:5 › reference/2 direct route, assets, geometry and accessibility (12.7s)
+  ✓   3 [chromium] › tests/browser/decks.spec.js:17:5 › reference/1 direct route, assets, geometry and accessibility (15.1s)
+  ✓   6 [chromium] › tests/browser/decks.spec.js:17:5 › reference/4 direct route, assets, geometry and accessibility (11.2s)
+  ✓   5 [chromium] › tests/browser/decks.spec.js:17:5 › reference/3 direct route, assets, geometry and accessibility (12.8s)
+  ✓   8 [chromium] › tests/browser/decks.spec.js:17:5 › reference/6 direct route, assets, geometry and accessibility (12.7s)
+  ✘   7 [chromium] › tests/browser/decks.spec.js:17:5 › reference/5 direct route, assets, geometry and accessibility (11.4s)
+  ✓   9 [chromium] › tests/browser/decks.spec.js:17:5 › reference/7 direct route, assets, geometry and accessibility (15.0s)
+(node:69015) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [chromium] › tests/browser/decks.spec.js:17:5 › reference/9 direct route, assets, geometry and accessibility (20.8s)
+  ✓  11 [chromium] › tests/browser/decks.spec.js:17:5 › reference/8 direct route, assets, geometry and accessibility (18.5s)
+  ✓  12 [chromium] › tests/browser/decks.spec.js:6:3 › field-notes overview has local assets and accessible semantics (11.3s)
+  ✓  13 [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/1 direct route, assets, geometry and accessibility (10.8s)
+  ✓  14 [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/2 direct route, assets, geometry and accessibility (11.0s)
+  ✓  15 [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/3 direct route, assets, geometry and accessibility (14.4s)
+  ✓  17 [chromium] › tests/browser/decks.spec.js:63:3 › touch navigation › horizontal swipes navigate both ways with authored motion (18.0s)
+  ✓  16 [chromium] › tests/browser/decks.spec.js:42:1 › native keyboard navigation, reload, history, endpoints and focus guards (32.5s)
+  ✓  18 [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 390x844 › fixed composition, readable transcript and navigation (13.9s)
+  ✓  19 [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 844x390 › fixed composition, readable transcript and navigation (13.1s)
+  ✓  20 [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 768x1024 › fixed composition, readable transcript and navigation (14.9s)
+  ✓  22 [chromium] › tests/browser/decks.spec.js:148:1 › overview visual artifact and reduced motion (15.1s)
+  ✓  21 [chromium] › tests/browser/decks.spec.js:103:1 › fullscreen keeps the slide, navigation, and browser history together (39.9s)
+  ✘  24 [chromium] › tests/browser/decks.spec.js:156:3 › live-talk purpose starter fits and stays accessible (12.0s)
+(node:72083) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  23 [chromium] › tests/browser/decks.spec.js:156:3 › investor purpose starter fits and stays accessible (1.2m)
+  ✓  26 [chromium] › tests/browser/extended.spec.js:5:1 › Arabic controls, RTL composition, font loading and print pages (30.4s)
+  ✓  25 [chromium] › tests/browser/decks.spec.js:156:3 › sales purpose starter fits and stays accessible (1.7m)
+  ✘  27 [chromium] › tests/browser/extended.spec.js:23:1 › presenter notes remain local; navigation, audience window and timer work (16.8s)
+(node:75906) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  28 [chromium] › tests/browser/hosting.spec.js:3:1 › static hosting supports a mounted deck, MIME types, revalidation and CSP (13.7s)
+  ✘  29 [chromium] › tests/browser/motion.spec.js:4:1 › first load plays the entrance and queues keyboard navigation without replay (12.9s)
+  ✓  30 [chromium] › tests/browser/motion.spec.js:32:1 › Motion presets animate static slides; toggle, reload and history stay usable (27.9s)
+(node:76798) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  32 [chromium] › tests/browser/motion.spec.js:60:1 › reduced motion, disabled decks and failed optional module preserve navigation (13.7s)
+  ✓  33 [chromium] › tests/browser/motion.spec.js:104:1 › cinematic entrances finish cleanly when motion is disabled mid-flight (7.8s)
+  ✘  31 [chromium] › tests/browser/motion.spec.js:78:1 › cinematic presets choreograph content and restore authored markup (12.2s)
+
+
+  1) [chromium] › tests/browser/decks.spec.js:17:5 › reference/5 direct route, assets, geometry and accessibility 
+
+    Error: expect(locator).not.toHaveAttribute(expected) failed
+
+    Locator:  locator('html')
+    Expected: not "true"
+    Received: "true"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "not toHaveAttribute" with timeout 5000ms
+      - waiting for locator('html')
+        6 × locator resolved to <html lang="en" dir="ltr" data-theme="kujo-light" data-viewer-ready="true" data-transitioning="true">…</html>
+          - unexpected value "true"
+
+
+       at helpers.js:14
+
+      12 |   if (await page.locator('.p-viewer').count()) {
+      13 |     await expect(page.locator('html')).toHaveAttribute('data-viewer-ready', 'true');
+    > 14 |     await expect(page.locator('html')).not.toHaveAttribute('data-transitioning', 'true');
+         |                                            ^
+      15 |   }
+      16 |   await page.evaluate(async () => {
+      17 |     await document.fonts.ready;
+        at openPage (/Users/robertdevore/2026/Kujolang/kujo-repos/presentations/tests/browser/helpers.js:14:44)
+        at /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/tests/browser/decks.spec.js:21:7
+
+    Error Context: .build/investor-browser-results/decks-reference-5-direct-r-f0ef1--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    .build/investor-browser-results/decks-reference-5-direct-r-f0ef1--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace .build/investor-browser-results/decks-reference-5-direct-r-f0ef1--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/browser/decks.spec.js:156:3 › live-talk purpose starter fits and stays accessible 
+
+    Error: expect(locator).not.toHaveAttribute(expected) failed
+
+    Locator:  locator('html')
+    Expected: not "true"
+    Received: "true"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "not toHaveAttribute" with timeout 5000ms
+      - waiting for locator('html')
+        13 × locator resolved to <html lang="en" dir="ltr" data-theme="kujo-light" data-viewer-ready="true" data-transitioning="true">…</html>
+           - unexpected value "true"
+
+
+       at helpers.js:14
+
+      12 |   if (await page.locator('.p-viewer').count()) {
+      13 |     await expect(page.locator('html')).toHaveAttribute('data-viewer-ready', 'true');
+    > 14 |     await expect(page.locator('html')).not.toHaveAttribute('data-transitioning', 'true');
+         |                                            ^
+      15 |   }
+      16 |   await page.evaluate(async () => {
+      17 |     await document.fonts.ready;
+        at openPage (/Users/robertdevore/2026/Kujolang/kujo-repos/presentations/tests/browser/helpers.js:14:44)
+        at /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/tests/browser/decks.spec.js:158:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    .build/investor-browser-results/decks-live-talk-purpose-starter-fits-and-stays-accessible-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: .build/investor-browser-results/decks-live-talk-purpose-starter-fits-and-stays-accessible-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    .build/investor-browser-results/decks-live-talk-purpose-starter-fits-and-stays-accessible-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace .build/investor-browser-results/decks-live-talk-purpose-starter-fits-and-stays-accessible-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests/browser/extended.spec.js:23:1 › presenter notes remain local; navigation, audience window and timer work 
+
+    Error: expect(locator).not.toHaveText(expected) failed
+
+    Locator:  locator('[data-timer]')
+    Expected: not "00:00"
+    Received: "00:00"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "not toHaveText" with timeout 5000ms
+      - waiting for locator('[data-timer]')
+        4 × locator resolved to <output data-timer="">00:00</output>
+          - unexpected value "00:00"
+
+
+      34 |  expect(await audience.content()).not.toContain(secret);
+      35 |  expect(requests.some(x=>x.includes(secret))).toBe(false);
+    > 36 |  await page.locator('[data-timer-toggle]').click();await expect(page.locator('[data-timer]')).not.toHaveText('00:00');
+         |                                                                                                   ^
+      37 |  await page.locator('[data-timer-reset]').click();await expect(page.locator('[data-timer]')).toHaveText('00:00');
+      38 |  await page.locator('[data-clear]').click();await expect(page.locator('[data-notes]')).toBeEmpty();
+      39 |  await page.reload();await expect(page.locator('[data-notes]')).toBeEmpty();
+        at /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/tests/browser/extended.spec.js:36:99
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    .build/investor-browser-results/extended-presenter-notes-r-ef62f-ience-window-and-timer-work-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    .build/investor-browser-results/extended-presenter-notes-r-ef62f-ience-window-and-timer-work-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: .build/investor-browser-results/extended-presenter-notes-r-ef62f-ience-window-and-timer-work-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    .build/investor-browser-results/extended-presenter-notes-r-ef62f-ience-window-and-timer-work-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace .build/investor-browser-results/extended-presenter-notes-r-ef62f-ience-window-and-timer-work-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › tests/browser/motion.spec.js:4:1 › first load plays the entrance and queues keyboard navigation without replay 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/reference\/2\/$/
+    Received string:  "http://127.0.0.1:8087/reference/1/"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        14 × locator resolved to <html lang="en" dir="ltr" data-theme="kujo-light" data-viewer-ready="true" data-transitioning="true">…</html>
+           - unexpected value "http://127.0.0.1:8087/reference/1/"
+
+
+      19 |   } finally { releaseModule(); }
+      20 |   await expect.poll(()=>page.evaluate(()=>window.entrancePoses.some(style=>style?.includes('translateY')))).toBe(true);
+    > 21 |   await expect(page).toHaveURL(/\/reference\/2\/$/);
+         |                      ^
+      22 |   await expect(page.locator('html')).not.toHaveAttribute('data-transitioning','true');
+      23 |   await expect(page.locator('.p-counter')).toHaveText('2 / 9');
+      24 |   await expect(page.locator('h1')).not.toHaveAttribute('style',/opacity|transform|clip-path/);
+        at /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/tests/browser/motion.spec.js:21:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    .build/investor-browser-results/motion-first-load-plays-th-242d5-d-navigation-without-replay-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: .build/investor-browser-results/motion-first-load-plays-th-242d5-d-navigation-without-replay-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    .build/investor-browser-results/motion-first-load-plays-th-242d5-d-navigation-without-replay-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace .build/investor-browser-results/motion-first-load-plays-th-242d5-d-navigation-without-replay-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › tests/browser/motion.spec.js:78:1 › cinematic presets choreograph content and restore authored markup 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    - Expected  - 2
+    + Received  + 2
+
+    - <header class="p-header"><span>FORM / MEDIA</span><span>A new perspective</span><span dir="ltr">1 / 9</span></header><div class="p-heading"><h1 style="opacity: 0; transform: translateY(40px); clip-path: inset(100% 0px 0px);">Innovating media
+    - for a digital age</h1><p style="opacity: 0; transform: translateY(16px);">We connect bold ideas with curious audiences. Independent thinking. Meaningful stories. Made for the way the world moves.</p></div><dl class="p-metrics"><div class="p-metric" style="opacity: 0; transform: translateY(30px);"><dt>Original stories every month</dt><dd>150+</dd></div><div class="p-metric" style="opacity: 0; transform: translateY(30px);"><dt>Creative collaborators</dt><dd>78</dd></div><div class="p-metric" style="opacity: 0; transform: translateY(30px);"><dt>People in our community</dt><dd>80k</dd></div></dl><div class="p-images"><figure class="sk-image p-image p-image-0" style="clip-path: inset(0px 100% 0px 0px);"><img src="../assets/deck/city.webp" alt="An imagined city at dusk with illuminated windows and a red facade" loading="eager" decoding="async" style="object-position: 50% 50%; transform: scale(1.15);"></figure><figure class="sk-image p-image p-image-1" style="clip-path: inset(0px 100% 0px 0px);"><img src="../assets/deck/collaboration.webp" alt="Three fictional media producers review storyboards in a daylight studio" loading="eager" decoding="async" style="object-position: 50% 50%; transform: scale(1.15);"></figure></div><div class="p-accent" aria-hidden="true" style="opacity: 0; transform: scale(0.3);"><svg class="p-accent-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><use href="../assets/sitekit/icons/tabler.svg#arrow-up-right"></use></svg></div>
+    + <header class="p-header"><span>FORM / MEDIA</span><span>A new perspective</span><span dir="ltr">1 / 9</span></header><div class="p-heading"><h1>Innovating media
+    + for a digital age</h1><p>We connect bold ideas with curious audiences. Independent thinking. Meaningful stories. Made for the way the world moves.</p></div><dl class="p-metrics"><div class="p-metric"><dt>Original stories every month</dt><dd>150+</dd></div><div class="p-metric"><dt>Creative collaborators</dt><dd>78</dd></div><div class="p-metric"><dt>People in our community</dt><dd>80k</dd></div></dl><div class="p-images"><figure class="sk-image p-image p-image-0"><img src="../assets/deck/city.webp" alt="An imagined city at dusk with illuminated windows and a red facade" loading="eager" decoding="async" style="object-position:50% 50%"></figure><figure class="sk-image p-image p-image-1"><img src="../assets/deck/collaboration.webp" alt="Three fictional media producers review storyboards in a daylight studio" loading="eager" decoding="async" style="object-position:50% 50%"></figure></div><div class="p-accent" aria-hidden="true"><svg class="p-accent-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><use href="../assets/sitekit/icons/tabler.svg#arrow-up-right"></use></svg></div>
+      <footer class="p-footer"><span>Form Media / Strategy &amp; vision / Demo edition</span><span></span><span>1</span></footer>
+
+      89 |     await expect(page.locator('html')).not.toHaveAttribute('data-transitioning','true');
+      90 |     const result=await page.evaluate(()=>{window.observer.disconnect();return {before:window.before,after:document.querySelector('.p-canvas').innerHTML,poses:window.poses};});
+    > 91 |     expect(result.after).toBe(result.before);
+         |                          ^
+      92 |     expect(result.poses.some(p=>p.tag==='H1'&&p.css?.includes('transform'))).toBe(true);
+      93 |     expect(result.poses.some(p=>p.tag==='IMG'&&p.css?.includes('scale'))).toBe(true);
+      94 |     expect(JSON.stringify(result.poses)).toContain(effect==='editorial'?'clip-path':effect==='focus'?'blur':'rotate');
+        at /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/tests/browser/motion.spec.js:91:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    .build/investor-browser-results/motion-cinematic-presets-c-ac032-and-restore-authored-markup-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: .build/investor-browser-results/motion-cinematic-presets-c-ac032-and-restore-authored-markup-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    .build/investor-browser-results/motion-cinematic-presets-c-ac032-and-restore-authored-markup-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace .build/investor-browser-results/motion-cinematic-presets-c-ac032-and-restore-authored-markup-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5 failed
+    [chromium] › tests/browser/decks.spec.js:17:5 › reference/5 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:156:3 › live-talk purpose starter fits and stays accessible 
+    [chromium] › tests/browser/extended.spec.js:23:1 › presenter notes remain local; navigation, audience window and timer work 
+    [chromium] › tests/browser/motion.spec.js:4:1 › first load plays the entrance and queues keyboard navigation without replay 
+    [chromium] › tests/browser/motion.spec.js:78:1 › cinematic presets choreograph content and restore authored markup 
+  28 passed (7.1m)

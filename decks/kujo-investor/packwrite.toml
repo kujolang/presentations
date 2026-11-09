@@ -1,0 +1,12 @@
+[prompt]
+file = "MEGA_PROMPT.md"
+[output]
+dir = "agent"
+[model]
+provider = "local"
+model = "gemma4:31b-cloud"
+endpoint = "http://localhost:11434/v1/chat/completions"
+timeout = 600
+[pack]
+min_phases = 7
+max_phases = 9

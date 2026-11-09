@@ -1,0 +1,5 @@
+
+## gate: evidence_and_review
+$ python3 scripts/gate.py E
+Loop E: deterministic evidence checks passed. Qualitative judgment is in E-review.md; this gate does not automate investor judgment.
+gate evidence_and_review: pass

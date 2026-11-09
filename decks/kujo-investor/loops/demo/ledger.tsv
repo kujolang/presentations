@@ -1,0 +1,3 @@
+iteration	action	verdict	progress	evidence	justification
+1	advance-toward-goal	fail	1	iterations/001/eval.log	continue demo loop
+2	advance-toward-goal	pass	2	iterations/002/eval.log	demo success threshold reached

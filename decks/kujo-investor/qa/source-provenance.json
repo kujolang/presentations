@@ -1,0 +1,58 @@
+[
+  {
+    "project": "kujo",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "dispatch",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "workcell",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "eval",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "spec",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "runledger",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "shipcheck",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "casefile",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "watchdog",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "kennel",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "mcp",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "packwrite",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "kujo-workflows",
+    "readmeMatchesCommit": true
+  },
+  {
+    "project": "presentations",
+    "readmeMatchesCommit": true
+  }
+]

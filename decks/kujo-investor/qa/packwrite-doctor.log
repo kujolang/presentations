@@ -1,0 +1,11 @@
+PackWrite doctor
+  cwd:             /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/decks/kujo-investor
+  provider:        deepseek
+  model:           deepseek-v4-pro
+  endpoint:        https://api.deepseek.com/chat/completions
+  api key:         missing (set PACKWRITE_API_KEY or a provider key)
+  prompt file:     MEGA_PROMPT.md (found)
+  output dir:      agent/ (absent)
+
+doctor: 1 blocking issue(s) found (strict mode):
+  - no API key in the environment (set PACKWRITE_API_KEY or a provider key)

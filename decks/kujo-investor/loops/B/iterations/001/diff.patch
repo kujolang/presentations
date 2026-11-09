@@ -1,0 +1,381 @@
+diff --git a/deck.schema.json b/deck.schema.json
+index b231483..864e22b 100644
+--- a/deck.schema.json
++++ b/deck.schema.json
+@@ -587,6 +587,348 @@
+               }
+             }
+           },
++          {
++            "properties": {
++              "layout": {
++                "const": "ki-architecture"
++              },
++              "title": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 90
++              },
++              "copy": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 260
++              },
++              "images": {
++                "maxItems": 0
++              },
++              "metrics": {
++                "maxItems": 3
++              },
++              "features": {
++                "maxItems": 3,
++                "items": {
++                  "properties": {
++                    "copy": {
++                      "type": "string",
++                      "minLength": 1,
++                      "maxLength": 180
++                    }
++                  }
++                }
++              },
++              "chart": {
++                "maxItems": 0
++              }
++            }
++          },
++          {
++            "properties": {
++              "layout": {
++                "const": "ki-close"
++              },
++              "title": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 90
++              },
++              "copy": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 260
++              },
++              "images": {
++                "maxItems": 0
++              },
++              "metrics": {
++                "maxItems": 3
++              },
++              "features": {
++                "maxItems": 3,
++                "items": {
++                  "properties": {
++                    "copy": {
++                      "type": "string",
++                      "minLength": 1,
++                      "maxLength": 180
++                    }
++                  }
++                }
++              },
++              "chart": {
++                "maxItems": 0
++              }
++            }
++          },
++          {
++            "properties": {
++              "layout": {
++                "const": "ki-cover"
++              },
++              "title": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 90
++              },
++              "copy": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 260
++              },
++              "images": {
++                "maxItems": 0
++              },
++              "metrics": {
++                "maxItems": 3
++              },
++              "features": {
++                "maxItems": 3,
++                "items": {
++                  "properties": {
++                    "copy": {
++                      "type": "string",
++                      "minLength": 1,
++                      "maxLength": 180
++                    }
++                  }
++                }
++              },
++              "chart": {
++                "maxItems": 0
++              }
++            }
++          },
++          {
++            "properties": {
++              "layout": {
++                "const": "ki-demo"
++              },
++              "title": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 90
++              },
++              "copy": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 260
++              },
++              "images": {
++                "maxItems": 0
++              },
++              "metrics": {
++                "maxItems": 3
++              },
++              "features": {
++                "maxItems": 3,
++                "items": {
++                  "properties": {
++                    "copy": {
++                      "type": "string",
++                      "minLength": 1,
++                      "maxLength": 180
++                    }
++                  }
++                }
++              },
++              "chart": {
++                "maxItems": 0
++              }
++            }
++          },
++          {
++            "properties": {
++              "layout": {
++                "const": "ki-flow"
++              },
++              "title": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 90
++              },
++              "copy": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 260
++              },
++              "images": {
++                "maxItems": 0
++              },
++              "metrics": {
++                "maxItems": 3
++              },
++              "features": {
++                "maxItems": 3,
++                "items": {
++                  "properties": {
++                    "copy": {
++                      "type": "string",
++                      "minLength": 1,
++                      "maxLength": 180
++                    }
++                  }
++                }
++              },
++              "chart": {
++                "maxItems": 0
++              }
++            }
++          },
++          {
++            "properties": {
++              "layout": {
++                "const": "ki-funding"
++              },
++              "title": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 90
++              },
++              "copy": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 260
++              },
++              "images": {
++                "maxItems": 0
++              },
++              "metrics": {
++                "maxItems": 3
++              },
++              "features": {
++                "maxItems": 3,
++                "items": {
++                  "properties": {
++                    "copy": {
++                      "type": "string",
++                      "minLength": 1,
++                      "maxLength": 180
++                    }
++                  }
++                }
++              },
++              "chart": {
++                "maxItems": 0
++              }
++            }
++          },
++          {
++            "properties": {
++              "layout": {
++                "const": "ki-lifecycle"
++              },
++              "title": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 90
++              },
++              "copy": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 260
++              },
++              "images": {
++                "maxItems": 0
++              },
++              "metrics": {
++                "maxItems": 3
++              },
++              "features": {
++                "maxItems": 3,
++                "items": {
++                  "properties": {
++                    "copy": {
++                      "type": "string",
++                      "minLength": 1,
++                      "maxLength": 180
++                    }
++                  }
++                }
++              },
++              "chart": {
++                "maxItems": 0
++              }
++            }
++          },
++          {
++            "properties": {
++              "layout": {
++                "const": "ki-metrics"
++              },
++              "title": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 90
++              },
++              "copy": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 260
++              },
++              "images": {
++                "maxItems": 0
++              },
++              "metrics": {
++                "maxItems": 3
++              },
++              "features": {
++                "maxItems": 3,
++                "items": {
++                  "properties": {
++                    "copy": {
++                      "type": "string",
++                      "minLength": 1,
++                      "maxLength": 180
++                    }
++                  }
++                }
++              },
++              "chart": {
++                "maxItems": 0
++              }
++            }
++          },
++          {
++            "properties": {
++              "layout": {
++                "const": "ki-split"
++              },
++              "title": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 90
++              },
++              "copy": {
++                "type": "string",
++                "minLength": 1,
++                "maxLength": 260
++              },
++              "images": {
++                "maxItems": 0
++              },
++              "metrics": {
++                "maxItems": 3
++              },
++              "features": {
++                "maxItems": 3,
++                "items": {
++                  "properties": {
++                    "copy": {
++                      "type": "string",
++                      "minLength": 1,
++                      "maxLength": 180
++                    }
++                  }
++                }
++              },
++              "chart": {
++                "maxItems": 0
++              }
++            }
++          },
+           {
+             "properties": {
+               "layout": {
+diff --git a/docs/authoring.md b/docs/authoring.md
+index 21fe782..554da09 100644
+--- a/docs/authoring.md
++++ b/docs/authoring.md
+@@ -118,3 +118,10 @@ into SiteKit. Themes/templates are trusted source and must be reviewed as code.
+ Configure optional [Motion transitions](transitions.md) in `deck.json`. Choose
+ an effect, timing, intensity, and stagger for the deck or individual slides.
+ Viewers can turn motion off; system reduced-motion preferences take precedence.
++
++Trusted custom layouts can use `{{assetPrefix}}` to reference deck assets across
++slide, overview and print routes, for example
++`href="{{assetPrefix}}assets/deck/appendix.html"`. This is the escaped,
++builder-supplied route prefix; it is not authored HTML from deck content.
++The `ki-*` layouts support the source-backed Kujo investor deck in
++`decks/kujo-investor/`; its appendix stays outside the 18-slide navigation.
+diff --git a/src/render.kujo b/src/render.kujo
+index 0bf1772..6f0f423 100644
+--- a/src/render.kujo
++++ b/src/render.kujo
+@@ -49,7 +49,7 @@ func accent_icon(source) {
+ export func slide_html(deck, slide, number, prefix, thumbnail) {
+     layout := read_file("layouts/" + slide["layout"] + ".html")
+     # Only replace explicit slots once: content cannot introduce template instructions.
+-    slots := {"title": text(slide["title"]), "copy": text(field(slide, "copy", "")), "eyebrow": text(field(slide, "eyebrow", "")), "metrics": metrics(slide), "features": features(slide), "images": images(slide, prefix, thumbnail), "chart": chart(slide), "note": text(field(slide, "note", "")), "iconArrowUpRight": accent_icon(prefix + "assets/sitekit/icons/tabler.svg#arrow-up-right"), "iconPlus": accent_icon(prefix + "assets/presentation/icons/tabler.svg#plus")}
++    slots := {"assetPrefix": text(prefix), "title": text(slide["title"]), "copy": text(field(slide, "copy", "")), "eyebrow": text(field(slide, "eyebrow", "")), "metrics": metrics(slide), "features": features(slide), "images": images(slide, prefix, thumbnail), "chart": chart(slide), "note": text(field(slide, "note", "")), "iconArrowUpRight": accent_icon(prefix + "assets/sitekit/icons/tabler.svg#arrow-up-right"), "iconPlus": accent_icon(prefix + "assets/presentation/icons/tabler.svg#plus")}
+     parts := split(layout, "{{")
+     body := parts[0]
+     i := 1

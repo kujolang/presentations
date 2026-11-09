@@ -1,0 +1,117 @@
+[
+  {
+    "url": "https://docs.github.com/en/actions",
+    "status": 200,
+    "final": "https://docs.github.com/en/actions"
+  },
+  {
+    "url": "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github",
+    "status": 200,
+    "final": "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github"
+  },
+  {
+    "url": "https://docs.kujolang.ai/ecosystem/releases/",
+    "status": 200,
+    "final": "https://docs.kujolang.ai/ecosystem/releases/"
+  },
+  {
+    "url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+    "status": 200,
+    "final": "https://docs.langchain.com/oss/python/langgraph/persistence"
+  },
+  {
+    "url": "https://github.com/kujolang/casefile/blob/92e1d9bee2faaba322476e82dcea7510850885e0/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/casefile/blob/92e1d9bee2faaba322476e82dcea7510850885e0/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/dispatch/blob/18b5c737a73904ae942f0bd1c3baa1f77c2bfb40/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/dispatch/blob/18b5c737a73904ae942f0bd1c3baa1f77c2bfb40/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/eval/blob/c1b263a10702c2fa8ab61ed507029a6bfec2e03d/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/eval/blob/c1b263a10702c2fa8ab61ed507029a6bfec2e03d/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/kennel/blob/6e2fc20560037970df5202e1b1ca8f61c3395570/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/kennel/blob/6e2fc20560037970df5202e1b1ca8f61c3395570/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/kujo-workflows/blob/d766eae4fd9a131e51c34796d029fd3bc6974689/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/kujo-workflows/blob/d766eae4fd9a131e51c34796d029fd3bc6974689/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/kujo/blob/7a13207019a51e61d3db448bc13f59d5b0e332e5/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/kujo/blob/7a13207019a51e61d3db448bc13f59d5b0e332e5/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/mcp/blob/77180a3a6c104f0c5b185cefa1f6d0835edb704b/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/mcp/blob/77180a3a6c104f0c5b185cefa1f6d0835edb704b/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/packwrite/blob/b8467535c74263abc59fd3f48028b67d42cd7e68/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/packwrite/blob/b8467535c74263abc59fd3f48028b67d42cd7e68/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/presentations/blob/879211bbf3707ec1ec6a9e19bb9ce2b1f9691bfa/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/presentations/blob/879211bbf3707ec1ec6a9e19bb9ce2b1f9691bfa/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/runledger/blob/ab0ec5d2edb7ffd913f48d092aa6fc17cab58d13/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/runledger/blob/ab0ec5d2edb7ffd913f48d092aa6fc17cab58d13/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/shipcheck/blob/7eedd9e02d8730d65e06e16f4984d909d23539bc/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/shipcheck/blob/7eedd9e02d8730d65e06e16f4984d909d23539bc/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/spec/blob/36da0d7216587809e32dedb91dee3cf4b9e50af1/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/spec/blob/36da0d7216587809e32dedb91dee3cf4b9e50af1/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/watchdog/blob/7a0bd9a63d68421831ed66d6eed29805c48e1b24/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/watchdog/blob/7a0bd9a63d68421831ed66d6eed29805c48e1b24/README.md"
+  },
+  {
+    "url": "https://github.com/kujolang/workcell/blob/189d7ab6e975301a0e5100b65e8ad3fe4a584573/README.md",
+    "status": 200,
+    "final": "https://github.com/kujolang/workcell/blob/189d7ab6e975301a0e5100b65e8ad3fe4a584573/README.md"
+  },
+  {
+    "url": "https://kujolang.ai",
+    "status": 200,
+    "final": "https://kujolang.ai"
+  },
+  {
+    "url": "https://opentelemetry.io/docs/",
+    "status": 200,
+    "final": "https://opentelemetry.io/docs/"
+  },
+  {
+    "url": "https://robertdevore.com/about/",
+    "status": 200,
+    "final": "https://robertdevore.com/about/"
+  },
+  {
+    "url": "https://robertdevore.com/contact/",
+    "status": 200,
+    "final": "https://robertdevore.com/contact/"
+  },
+  {
+    "url": "https://survey.stackoverflow.co/2026/ai",
+    "status": 200,
+    "final": "https://survey.stackoverflow.co/2026/ai"
+  }
+]
