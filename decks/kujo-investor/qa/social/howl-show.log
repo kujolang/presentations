@@ -1,0 +1,48 @@
+id:       slide-01
+title:    Trust at the speed of AI.
+tagline:  Programming language and accountability infrastructure.
+file:     deck.json
+language: kujo
+
+--- code preview ---
+{
+  "id": "kujo-investor",
+  "title": "KUJO \u2014 Trust at the speed of AI.",
+  "brand": "KUJO",
+  "description": "18-slide investor briefing with source evidence, recorded execution and editable planning assumptions.",
+  "footer": "KUJO / Investor briefing",
+  "lang": "en",
+  "transitions": {
+    "enabled": true,
+    "effect": "fade",
+    "duration": 0.22
+  },
+  "slides": [
+    {
+      "layout": "ki-cover",
+      "title": "Trust at the\nspeed of AI.",
+      "copy": "The programming language and accountability infrastructure for agent-driven development.",
+      "eyebrow": "Investor briefing / November 2026",
+      "inverse": true
+    },
+    {
+      "layout": "ki-split",
+      "title": "Software production is outpacing verification.",
+      "copy": "Agents can report completion. Teams still need a reviewable chain from requested work to release decision.",
+      "eyebrow": "02 / The accountability problem",
+      "note": "Thesis \u00b7 existing agent controls acknowledged",
+      "inverse": false,
+      "features": [
+        {
+          "title": "The claim",
+          "copy": "\u201cTests passed. Ready to merge.\u201d An illustrative agent statement."
+        },
+        {
+          "title": "The evidence",
+          "copy": "Command, exit code, changed revision, environment and retained failure output."
+        },
+        {
+          "title": "The gap",
+          "copy": "Useful logs already exist. Connecting them across tools and review boundaries remains work."
+        }
+... (truncated)

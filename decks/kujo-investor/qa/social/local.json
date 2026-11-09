@@ -1,0 +1,251 @@
+{
+  "mode": "local",
+  "userAgent": null,
+  "dnsOverride": null,
+  "pages": 24,
+  "uniqueImages": 24,
+  "checks": [
+    {
+      "route": "/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-01.5cca734f0156.png",
+      "bytes": 246365,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "5cca734f015620f877f8efdba4fcc1743d4a47539fda0681dd6fb7970979f6a0",
+      "status": "pass"
+    },
+    {
+      "route": "/404.html",
+      "image": "https://invest.kujolang.ai/assets/deck/social/not-found.e3221178b0ef.png",
+      "bytes": 241266,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "e3221178b0ef8442128812a5842cd4af98ac7fd94b227d894cc272d372ed2d51",
+      "status": "pass"
+    },
+    {
+      "route": "/reading/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/reading.00a62e21291e.png",
+      "bytes": 243718,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "00a62e21291ee0a562ba3a99bf74669713252ed4289b0a428202a00d0c10a477",
+      "status": "pass"
+    },
+    {
+      "route": "/presenter/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/presenter.e95c913411af.png",
+      "bytes": 243245,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "e95c913411af0a9cfc5e34dd963c7d8aa2838307485760f6b6bf6dc5576d6fa1",
+      "status": "pass"
+    },
+    {
+      "route": "/18/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-18.1c4635908501.png",
+      "bytes": 243150,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "1c46359085014ce05b9fda37c9b609cc4ca1b7c26831c8247729abd0c8010c69",
+      "status": "pass"
+    },
+    {
+      "route": "/9/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-09.6fef2e5f778a.png",
+      "bytes": 245616,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "6fef2e5f778af81a0aae19733bf92b1a6e5ecb6da49220d6024697d841c3d518",
+      "status": "pass"
+    },
+    {
+      "route": "/11/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-11.b085c2ec3708.png",
+      "bytes": 244600,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "b085c2ec37086749329b0ad2fd4423b3db94fd14789dd9b4df4507835a3ae781",
+      "status": "pass"
+    },
+    {
+      "route": "/7/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-07.6b96174113d6.png",
+      "bytes": 243850,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "6b96174113d6eff1569147ecb1fc3c86d53c1e897a49687fec8447d5e8cdc329",
+      "status": "pass"
+    },
+    {
+      "route": "/16/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-16.afbf3a0c3773.png",
+      "bytes": 245658,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "afbf3a0c3773d84722ad5aa0089666beaff3bf44ec4017c59192f6ea7753e486",
+      "status": "pass"
+    },
+    {
+      "route": "/6/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-06.89d08670d3e8.png",
+      "bytes": 242994,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "89d08670d3e836f8e594a1d9a39b1b28693ec448e7e735bed5a47938cb4c197a",
+      "status": "pass"
+    },
+    {
+      "route": "/17/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-17.25c2724cf7b2.png",
+      "bytes": 247573,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "25c2724cf7b29488c745f6bfc12e16ce073f38d201b2bdeb25e9c7de3c46fd83",
+      "status": "pass"
+    },
+    {
+      "route": "/10/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-10.a5dd2b27208b.png",
+      "bytes": 245680,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "a5dd2b27208b9a312dd3140521a8e07c3037ba04d74d0141a8238bf3a097d5d1",
+      "status": "pass"
+    },
+    {
+      "route": "/8/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-08.ab604babae59.png",
+      "bytes": 245009,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "ab604babae59147cfaf8e057b4aed62011c05a740d152af3a2838f894ce1b9b4",
+      "status": "pass"
+    },
+    {
+      "route": "/print/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/print.788e508bd2d2.png",
+      "bytes": 244291,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "788e508bd2d2e8eb984c9fbe6d953a918fa0fef8b33ccd2d7d0a52f69dbf17ce",
+      "status": "pass"
+    },
+    {
+      "route": "/overview/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/overview.f2e3f1b36e7d.png",
+      "bytes": 243354,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "f2e3f1b36e7d240b40854a867e5c3d6cabf01227a29779da978fddd8fde947fd",
+      "status": "pass"
+    },
+    {
+      "route": "/assets/deck/appendix.html",
+      "image": "https://invest.kujolang.ai/assets/deck/social/appendix.4b9459b91a1c.png",
+      "bytes": 246239,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "4b9459b91a1c2758fc2bb391a5625547e1de4d605cd0ee76791b64ca2b13ffb2",
+      "status": "pass"
+    },
+    {
+      "route": "/4/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-04.e18de47ebe2f.png",
+      "bytes": 243422,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "e18de47ebe2f6a6cb0867df834427694f828c2089f50d4ae0d5dae7106c69fd8",
+      "status": "pass"
+    },
+    {
+      "route": "/15/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-15.9be408507bff.png",
+      "bytes": 243711,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "9be408507bff5e1cb1191f6f6a98573911133600b94a06273cc86ac8b09b1c1f",
+      "status": "pass"
+    },
+    {
+      "route": "/3/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-03.3e0cd45562f8.png",
+      "bytes": 245763,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "3e0cd45562f822c08ed3bcd4b08d8028d2d05cd7973b8c919e77ed9ff0d2e4e4",
+      "status": "pass"
+    },
+    {
+      "route": "/12/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-12.28a2ae1fdbc7.png",
+      "bytes": 245582,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "28a2ae1fdbc793d9d6958928304519adc231949d6cc2a584c7a459620dcc9138",
+      "status": "pass"
+    },
+    {
+      "route": "/2/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-02.734a2a11bf1d.png",
+      "bytes": 245879,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "734a2a11bf1dcfbb9aa1a394ed796d4fa0ae94abfd577d4e6413f375d53fef9d",
+      "status": "pass"
+    },
+    {
+      "route": "/13/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-13.ba2c0d0da48c.png",
+      "bytes": 247101,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "ba2c0d0da48c2a53b520d577d865282a51bc45f818a3d0041bab9c3d5124f40f",
+      "status": "pass"
+    },
+    {
+      "route": "/5/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-05.ff0bfe41f516.png",
+      "bytes": 243573,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "ff0bfe41f51658f7cb73faacd65a4a870c07522be647554b125adc08225eacaf",
+      "status": "pass"
+    },
+    {
+      "route": "/14/",
+      "image": "https://invest.kujolang.ai/assets/deck/social/slide-14.7e6c4c972022.png",
+      "bytes": 244857,
+      "width": 1200,
+      "height": 630,
+      "mime": "image/png",
+      "sha256": "7e6c4c972022b6f8584cb0200c8188977a84f4503ce8ea2ac89cf691202800d0",
+      "status": "pass"
+    }
+  ],
+  "pass": true,
+  "limits": "Crawler-UA check is not a live Facebook/LinkedIn/X preview-cache purge or proof of provider-IP access."
+}

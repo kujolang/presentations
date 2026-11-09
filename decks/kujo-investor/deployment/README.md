@@ -50,3 +50,13 @@ the successfully deployed arrow-free presentation. See dated audit receipts.
 Final successful publication for this update:
 `https://06359401.kujo-investor.pages.dev`. Custom-domain touch, keyboard and
 arrow-free appearance passed in `raw/live-verified-interactions.json` in the audit.
+
+## Howl social previews — 2026-11-09
+
+The Pages build now runs `scripts/build-investor-social.mjs` before the native deck
+build. It requires the installed sibling Howl/Kujo tools and Chrome (overrides
+listed in `../social/README.md`). `../howl.json` owns the 24 social-card definitions.
+Every published HTML page receives a matching content-hashed 1200×630 PNG URL,
+Open Graph image fields and Twitter large-image metadata. SVG source, PNG assets,
+reproduction instructions and live verification are retained in the deck.
+Latest deployment for social previews: `https://c0fb0cce.kujo-investor.pages.dev`.
