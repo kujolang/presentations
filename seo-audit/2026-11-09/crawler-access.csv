@@ -1,0 +1,26 @@
+phase,user_agent,url,final_status,evidence,limitations
+after,Googlebot,https://invest.kujolang.ai/,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,Googlebot,https://invest.kujolang.ai/robots.txt,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,Googlebot,https://invest.kujolang.ai/sitemap.xml,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,Googlebot,https://invest.kujolang.ai/reading/,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,Googlebot,https://invest.kujolang.ai/assets/deck/appendix,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,bingbot,https://invest.kujolang.ai/,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,bingbot,https://invest.kujolang.ai/robots.txt,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,bingbot,https://invest.kujolang.ai/sitemap.xml,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,bingbot,https://invest.kujolang.ai/reading/,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,bingbot,https://invest.kujolang.ai/assets/deck/appendix,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,OAI-SearchBot,https://invest.kujolang.ai/,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,OAI-SearchBot,https://invest.kujolang.ai/robots.txt,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,OAI-SearchBot,https://invest.kujolang.ai/sitemap.xml,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,OAI-SearchBot,https://invest.kujolang.ai/reading/,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,OAI-SearchBot,https://invest.kujolang.ai/assets/deck/appendix,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,GPTBot,https://invest.kujolang.ai/,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,GPTBot,https://invest.kujolang.ai/robots.txt,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,GPTBot,https://invest.kujolang.ai/sitemap.xml,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,GPTBot,https://invest.kujolang.ai/reading/,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,GPTBot,https://invest.kujolang.ai/assets/deck/appendix,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,ChatGPT-User,https://invest.kujolang.ai/,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,ChatGPT-User,https://invest.kujolang.ai/robots.txt,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,ChatGPT-User,https://invest.kujolang.ai/sitemap.xml,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,ChatGPT-User,https://invest.kujolang.ai/reading/,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.
+after,ChatGPT-User,https://invest.kujolang.ai/assets/deck/appendix,200,raw/production-probes.json,Spoofed user agent from audit IP; not proof of crawler-IP access. Existing permissive robots policy preserved.

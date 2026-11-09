@@ -1,0 +1,4 @@
+phase,url,src,alt,width,height,loading
+after,https://invest.kujolang.ai/,https://invest.kujolang.ai/assets/deck/kujo-logomark.svg,Kujo,256,256,eager
+after,https://invest.kujolang.ai/print/,https://invest.kujolang.ai/assets/deck/kujo-logomark.svg,Kujo,256,256,eager
+after,https://invest.kujolang.ai/overview/,https://invest.kujolang.ai/assets/deck/kujo-logomark.svg,Kujo,256,256,eager

@@ -41,3 +41,12 @@ No-JavaScript readers can use the overview or text edition from that menu.
 Full audit, source changes, immutable baseline, screenshots and production
 verification: `seo-audit/2026-11-09/` at repository root. Existing original deployment
 receipts remain historical; the dated audit contains the newest deployment log.
+The custom domain briefly retained the prior audience stylesheet after a Pages
+update. A single-URL dashboard cache purge of
+`https://invest.kujolang.ai/assets/deck/public-view.css` refreshed it. Do not purge
+the entire zone or change unrelated cache policy. An attempted fingerprinted
+publication was reverted after provider publishing errors; current source matches
+the successfully deployed arrow-free presentation. See dated audit receipts.
+Final successful publication for this update:
+`https://06359401.kujo-investor.pages.dev`. Custom-domain touch, keyboard and
+arrow-free appearance passed in `raw/live-verified-interactions.json` in the audit.

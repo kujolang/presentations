@@ -1,0 +1,3772 @@
+{
+  "phase": "final",
+  "base": "http://127.0.0.1:8107",
+  "errors": [],
+  "views": [
+    {
+      "name": "desktop",
+      "n": 1,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5329,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 127833,
+          "duration": 25.200000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 9187,
+          "duration": 25.300000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 17410,
+          "duration": 27.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 2336,
+          "duration": 26.40000000037253
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/kujo-logomark.svg",
+          "bytes": 1195,
+          "duration": 29.09999999962747
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 12318,
+          "duration": 29.800000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 10111,
+          "duration": 11.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 22796,
+          "duration": 57.40000000037253
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 390,
+          "duration": 4.300000000745058
+        }
+      ],
+      "ttfb": 118.19999999925494
+    },
+    {
+      "name": "desktop",
+      "n": 2,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5953,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 9.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 10
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 12.900000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 10.399999998509884
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 13.699999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 9.699999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 5.699999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 5.099999999627471
+        }
+      ],
+      "ttfb": 59
+    },
+    {
+      "name": "desktop",
+      "n": 3,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5697,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 9.399999998509884
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 6.800000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 7.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 10.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 16.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 7
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 5.300000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 8.700000001117587
+        }
+      ],
+      "ttfb": 84.40000000037253
+    },
+    {
+      "name": "desktop",
+      "n": 4,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5588,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 5.400000000372529
+        }
+      ],
+      "ttfb": 27.5
+    },
+    {
+      "name": "desktop",
+      "n": 5,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 6459,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 6.600000001490116
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 7.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 9.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 11.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 12.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 5.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 7.599999999627471
+        }
+      ],
+      "ttfb": 4.100000001490116
+    },
+    {
+      "name": "desktop",
+      "n": 6,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5928,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 4.099999999627471
+        }
+      ],
+      "ttfb": 4.900000000372529
+    },
+    {
+      "name": "desktop",
+      "n": 7,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5885,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 10.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 11.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 12.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 13.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 14
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 14.900000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 12.800000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 5.099999999627471
+        }
+      ],
+      "ttfb": 4.100000001490116
+    },
+    {
+      "name": "desktop",
+      "n": 8,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 6216,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.599999999627471
+        }
+      ],
+      "ttfb": 48.59999999962747
+    },
+    {
+      "name": "desktop",
+      "n": 9,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5935,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 8
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 11
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 10.100000001490116
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 11.800000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 13.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 11.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 6.300000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 4.300000000745058
+        }
+      ],
+      "ttfb": 4.900000000372529
+    },
+    {
+      "name": "desktop",
+      "n": 10,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5950,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.099999999627471
+        }
+      ],
+      "ttfb": 3.399999998509884
+    },
+    {
+      "name": "desktop",
+      "n": 11,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5940,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.099999999627471
+        }
+      ],
+      "ttfb": 6.5
+    },
+    {
+      "name": "desktop",
+      "n": 12,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5777,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 8.899999998509884
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 10.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 13.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 12.200000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 14.100000001490116
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 14.100000001490116
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 11.200000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 7
+        }
+      ],
+      "ttfb": 4.099999999627471
+    },
+    {
+      "name": "desktop",
+      "n": 13,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 6085,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 3.900000000372529
+        }
+      ],
+      "ttfb": 5.300000000745058
+    },
+    {
+      "name": "desktop",
+      "n": 14,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5956,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 14.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 11.900000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 21
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 23.200000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 27.399999998509884
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 5.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 4.399999998509884
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 4.400000000372529
+        }
+      ],
+      "ttfb": 3.900000000372529
+    },
+    {
+      "name": "desktop",
+      "n": 15,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5912,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.199999999254942
+        }
+      ],
+      "ttfb": 3.099999999627471
+    },
+    {
+      "name": "desktop",
+      "n": 16,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 6041,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 7.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 8.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 14.700000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 16
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 25.699999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 4.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 7
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 4.299999998882413
+        }
+      ],
+      "ttfb": 57.90000000037253
+    },
+    {
+      "name": "desktop",
+      "n": 17,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5866,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.1000000014901161
+        }
+      ],
+      "ttfb": 4.400000000372529
+    },
+    {
+      "name": "desktop",
+      "n": 18,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1920,
+      "nav": false,
+      "htmlBytes": 5348,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 9.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 10
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 12.799999998882413
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 14.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 15.300000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 9.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 4.299999998882413
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 4.799999998882413
+        }
+      ],
+      "ttfb": 7.799999998882413
+    },
+    {
+      "name": "laptop",
+      "n": 1,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5329,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/kujo-logomark.svg",
+          "bytes": 300,
+          "duration": 3.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 3.5
+        }
+      ],
+      "ttfb": 4.899999998509884
+    },
+    {
+      "name": "laptop",
+      "n": 2,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5953,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 11.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 21.700000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 17.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 15.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 19.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 4.100000001490116
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 4.800000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 4.400000000372529
+        }
+      ],
+      "ttfb": 4.200000001117587
+    },
+    {
+      "name": "laptop",
+      "n": 3,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5697,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 5.5
+        }
+      ],
+      "ttfb": 4.600000001490116
+    },
+    {
+      "name": "laptop",
+      "n": 4,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5588,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 13
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 15.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 17.700000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 23.300000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 27.90000000037253
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 7.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 4.300000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 10.599999999627471
+        }
+      ],
+      "ttfb": 3.100000001490116
+    },
+    {
+      "name": "laptop",
+      "n": 5,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 6459,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.799999998882413
+        }
+      ],
+      "ttfb": 3.900000000372529
+    },
+    {
+      "name": "laptop",
+      "n": 6,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5928,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 0.900000000372529
+        }
+      ],
+      "ttfb": 39.899999998509884
+    },
+    {
+      "name": "laptop",
+      "n": 7,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5885,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 6.300000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 8.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 11.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 14.799999998882413
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 15.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 8.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 4
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 5.799999998882413
+        }
+      ],
+      "ttfb": 3.5
+    },
+    {
+      "name": "laptop",
+      "n": 8,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 6216,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 4.900000000372529
+        }
+      ],
+      "ttfb": 3.899999998509884
+    },
+    {
+      "name": "laptop",
+      "n": 9,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5935,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 7
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 7.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 12.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 14.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 15.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 0.900000000372529
+        }
+      ],
+      "ttfb": 46.09999999962747
+    },
+    {
+      "name": "laptop",
+      "n": 10,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5950,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.300000000745058
+        }
+      ],
+      "ttfb": 6.300000000745058
+    },
+    {
+      "name": "laptop",
+      "n": 11,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5940,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.200000001117587
+        }
+      ],
+      "ttfb": 10.300000000745058
+    },
+    {
+      "name": "laptop",
+      "n": 12,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5777,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 8.800000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 12.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 9.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 13.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 14.699999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 9.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 13.699999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 10
+        }
+      ],
+      "ttfb": 8.599999999627471
+    },
+    {
+      "name": "laptop",
+      "n": 13,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 6085,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 2.299999998882413
+        }
+      ],
+      "ttfb": 6.199999999254942
+    },
+    {
+      "name": "laptop",
+      "n": 14,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5956,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.099999999627471
+        }
+      ],
+      "ttfb": 2.599999999627471
+    },
+    {
+      "name": "laptop",
+      "n": 15,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5912,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 11.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 9.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 8.900000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 10.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 10.899999998509884
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 14.200000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 11
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 3.199999999254942
+        }
+      ],
+      "ttfb": 3.200000001117587
+    },
+    {
+      "name": "laptop",
+      "n": 16,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 6041,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.5
+        }
+      ],
+      "ttfb": 4.300000000745058
+    },
+    {
+      "name": "laptop",
+      "n": 17,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5866,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 4.099999999627471
+        }
+      ],
+      "ttfb": 2.599999999627471
+    },
+    {
+      "name": "laptop",
+      "n": 18,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1366,
+      "nav": false,
+      "htmlBytes": 5348,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 3.300000000745058
+        }
+      ],
+      "ttfb": 2.700000001117587
+    },
+    {
+      "name": "tablet",
+      "n": 1,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5329,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/kujo-logomark.svg",
+          "bytes": 300,
+          "duration": 2.600000001490116
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 0.8999999985098839
+        }
+      ],
+      "ttfb": 10.099999999627471
+    },
+    {
+      "name": "tablet",
+      "n": 2,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5953,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 2.699999999254942
+        }
+      ],
+      "ttfb": 3
+    },
+    {
+      "name": "tablet",
+      "n": 3,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5697,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 8.799999998882413
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 9.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 9.700000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 11.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 10.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 11
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 9.799999998882413
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1
+        }
+      ],
+      "ttfb": 4.400000000372529
+    },
+    {
+      "name": "tablet",
+      "n": 4,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5588,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.6000000014901161
+        }
+      ],
+      "ttfb": 2.5
+    },
+    {
+      "name": "tablet",
+      "n": 5,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 6459,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 4.599999999627471
+        }
+      ],
+      "ttfb": 6.900000000372529
+    },
+    {
+      "name": "tablet",
+      "n": 6,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5928,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.199999999254942
+        }
+      ],
+      "ttfb": 3.400000000372529
+    },
+    {
+      "name": "tablet",
+      "n": 7,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5885,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 0.900000000372529
+        }
+      ],
+      "ttfb": 2.699999999254942
+    },
+    {
+      "name": "tablet",
+      "n": 8,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 6216,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.400000000372529
+        }
+      ],
+      "ttfb": 5.599999999627471
+    },
+    {
+      "name": "tablet",
+      "n": 9,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5935,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 13.200000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 6.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 6.799999998882413
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 7.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 14.800000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 3.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 3.899999998509884
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 3.800000000745058
+        }
+      ],
+      "ttfb": 38.100000001490116
+    },
+    {
+      "name": "tablet",
+      "n": 10,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5950,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 0.900000000372529
+        }
+      ],
+      "ttfb": 2.400000000372529
+    },
+    {
+      "name": "tablet",
+      "n": 11,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5940,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 4.400000000372529
+        }
+      ],
+      "ttfb": 3.800000000745058
+    },
+    {
+      "name": "tablet",
+      "n": 12,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5777,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 2.400000000372529
+        }
+      ],
+      "ttfb": 4
+    },
+    {
+      "name": "tablet",
+      "n": 13,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 6085,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.400000000372529
+        }
+      ],
+      "ttfb": 2.599999999627471
+    },
+    {
+      "name": "tablet",
+      "n": 14,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5956,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 2
+        }
+      ],
+      "ttfb": 8
+    },
+    {
+      "name": "tablet",
+      "n": 15,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5912,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 14.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 8.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 9.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 11.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 16.699999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 4.099999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 11.799999998882413
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.200000001117587
+        }
+      ],
+      "ttfb": 2.5
+    },
+    {
+      "name": "tablet",
+      "n": 16,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 6041,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.200000001117587
+        }
+      ],
+      "ttfb": 2.600000001490116
+    },
+    {
+      "name": "tablet",
+      "n": 17,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5866,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 5.199999999254942
+        }
+      ],
+      "ttfb": 3.300000000745058
+    },
+    {
+      "name": "tablet",
+      "n": 18,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 768,
+      "nav": false,
+      "htmlBytes": 5348,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.799999998882413
+        }
+      ],
+      "ttfb": 3.400000000372529
+    },
+    {
+      "name": "mobile",
+      "n": 1,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5329,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/kujo-logomark.svg",
+          "bytes": 300,
+          "duration": 6.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1
+        }
+      ],
+      "ttfb": 14.099999999627471
+    },
+    {
+      "name": "mobile",
+      "n": 2,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5953,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 6.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 7.300000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 8.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 7.699999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 9.5
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 8.800000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 8.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.400000000372529
+        }
+      ],
+      "ttfb": 28.799999998882413
+    },
+    {
+      "name": "mobile",
+      "n": 3,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5697,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.199999999254942
+        }
+      ],
+      "ttfb": 10
+    },
+    {
+      "name": "mobile",
+      "n": 4,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5588,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 0.900000000372529
+        }
+      ],
+      "ttfb": 3
+    },
+    {
+      "name": "mobile",
+      "n": 5,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 6459,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 0.7999999988824129
+        }
+      ],
+      "ttfb": 3.599999999627471
+    },
+    {
+      "name": "mobile",
+      "n": 6,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5928,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 11.5
+        }
+      ],
+      "ttfb": 2.800000000745058
+    },
+    {
+      "name": "mobile",
+      "n": 7,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5885,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 2.5
+        }
+      ],
+      "ttfb": 3.100000001490116
+    },
+    {
+      "name": "mobile",
+      "n": 8,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 6216,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 7
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 7.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 8
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 9.200000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 10.899999998509884
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 3.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 3.700000001117587
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 4.099999999627471
+        }
+      ],
+      "ttfb": 2.800000000745058
+    },
+    {
+      "name": "mobile",
+      "n": 9,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5935,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.299999998882413
+        }
+      ],
+      "ttfb": 2.399999998509884
+    },
+    {
+      "name": "mobile",
+      "n": 10,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5950,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.400000000372529
+        }
+      ],
+      "ttfb": 3.699999999254942
+    },
+    {
+      "name": "mobile",
+      "n": 11,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5940,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.1000000014901161
+        }
+      ],
+      "ttfb": 3.099999999627471
+    },
+    {
+      "name": "mobile",
+      "n": 12,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5777,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 300,
+          "duration": 3.900000000372529
+        }
+      ],
+      "ttfb": 3.599999999627471
+    },
+    {
+      "name": "mobile",
+      "n": 13,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 6085,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.199999999254942
+        }
+      ],
+      "ttfb": 33.40000000037253
+    },
+    {
+      "name": "mobile",
+      "n": 14,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5956,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 2
+        }
+      ],
+      "ttfb": 37.40000000037253
+    },
+    {
+      "name": "mobile",
+      "n": 15,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5912,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 300,
+          "duration": 7.799999998882413
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 300,
+          "duration": 8.400000000372529
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 300,
+          "duration": 7.699999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 300,
+          "duration": 6.599999999627471
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 300,
+          "duration": 10.800000000745058
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 300,
+          "duration": 5.199999999254942
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 300,
+          "duration": 8.100000001490116
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 2
+        }
+      ],
+      "ttfb": 3.900000000372529
+    },
+    {
+      "name": "mobile",
+      "n": 16,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 6041,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1
+        }
+      ],
+      "ttfb": 3.299999998882413
+    },
+    {
+      "name": "mobile",
+      "n": 17,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5866,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1.900000000372529
+        }
+      ],
+      "ttfb": 4.199999999254942
+    },
+    {
+      "name": "mobile",
+      "n": 18,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 390,
+      "nav": false,
+      "htmlBytes": 5348,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:8107/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/public-view.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "http://127.0.0.1:8107/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 1
+        }
+      ],
+      "ttfb": 21.299999998882413
+    }
+  ],
+  "checks": []
+}

@@ -1,0 +1,7 @@
+id,phase,category,severity,affected_urls,affected_count,evidence,expected_benefit,confidence,difficulty,recommended_action,owner,status
+UI-01,before/after,presentation,P1,/,1,raw/baseline-desktop-1.png; baseline-site.tar.gz,Immediate slide experience,High,Medium,Open at first slide; full-width canvas; unobstructed touch swipes and keyboard navigation,Repository maintainer,resolved
+SEO-01,before/after,metadata/schema,P2,/assets/deck/appendix,1,baseline.csv,Accurate interpretation and canonical identity,High,Low,Add factual metadata and WebPage JSON-LD,Repository maintainer,resolved
+SEO-02,before/after,discovery,P2,/assets/deck/appendix,1,baseline-site.tar.gz sitemap.xml,Discover evidence page,High,Low,Include clean canonical appendix route in sitemap,Repository maintainer,resolved
+UI-02,before/after,accessibility/media,P2,cover instances,3,image-audit.csv; baseline.csv,Explicit intrinsic logo aspect ratio,High,Low,Add width and height to native cover logo,Repository maintainer,resolved
+DATA-01,before/after,measurement,P2,sitewide,24,data-availability.md,Establish actual search and AI outcomes,High,Owner access,Owner supplies authorized reports for later comparison,Site owner,recommendation/access required
+SOCIAL-01,before/after,sharing,P3,sitewide,21,metadata-audit.csv,Richer social previews,Medium,Low,Optional approved 1200x630 share card; current text summary cards valid,Site owner,recommendation

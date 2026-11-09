@@ -1,0 +1,276 @@
+{
+  "phase": "baseline",
+  "base": "https://invest.kujolang.ai",
+  "errors": [],
+  "views": [
+    {
+      "name": "desktop",
+      "n": 1,
+      "width": 1920,
+      "docWidth": 1920,
+      "frameWidth": 1642.65625,
+      "nav": true,
+      "htmlBytes": 8481,
+      "resources": [
+        {
+          "url": "https://invest.kujolang.ai/assets/sitekit/sitekit.css",
+          "bytes": 15895,
+          "duration": 197.5
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/theme.css",
+          "bytes": 2618,
+          "duration": 156.09999999962747
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/presentation.css",
+          "bytes": 4340,
+          "duration": 182.59999999962747
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/kujo-logomark.svg",
+          "bytes": 801,
+          "duration": 129.59999999962747
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/viewer.js",
+          "bytes": 4036,
+          "duration": 360.2000000011176
+        },
+        {
+          "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+          "bytes": 0,
+          "duration": 267.1000000014901
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/motion/motion-mini.js",
+          "bytes": 4372,
+          "duration": 170.7000000011176
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 22796,
+          "duration": 480.59999999962747
+        },
+        {
+          "url": "https://invest.kujolang.ai/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyVHJ1c3QlMjBhdCUyMHRoZSU1Q25zcGVlZCUyMG9mJTIwQUkuJTIwJUUyJTgwJTk0JTIwS1VKTyUyMCVFMiU4MCU5NCUyMFRydXN0JTIwYXQlMjB0aGUlMjBzcGVlZCUyMG9mJTIwQUkuJTIyJTJDJTIyeCUyMiUzQTAuNDk3NTU2MzQ2MzU0NDEwMTUlMkMlMjJ3JTIyJTNBMTkyMCUyQyUyMmglMjIlM0ExMDgwJTJDJTIyaiUyMiUzQTEwODAlMkMlMjJlJTIyJTNBMTkyMCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmludmVzdC5rdWpvbGFuZy5haSUyRjElMkYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTI0JTJDJTIybiUyMiUzQSUyMlVURi04JTIyJTJDJTIybyUyMiUzQTMwMCUyQyUyMnElMjIlM0ElNUIlNUQlN0Q=",
+          "bytes": 2708,
+          "duration": 65.80000000074506
+        },
+        {
+          "url": "https://invest.kujolang.ai/cdn-cgi/rum?",
+          "bytes": 300,
+          "duration": 63.40000000037253
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/favicon.svg",
+          "bytes": 374,
+          "duration": 179.39999999850988
+        }
+      ],
+      "ttfb": 342.7000000011176
+    },
+    {
+      "name": "laptop",
+      "n": 1,
+      "width": 1366,
+      "docWidth": 1366,
+      "frameWidth": 1088,
+      "nav": true,
+      "htmlBytes": 8477,
+      "resources": [
+        {
+          "url": "https://invest.kujolang.ai/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/kujo-logomark.svg",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyVHJ1c3QlMjBhdCUyMHRoZSU1Q25zcGVlZCUyMG9mJTIwQUkuJTIwJUUyJTgwJTk0JTIwS1VKTyUyMCVFMiU4MCU5NCUyMFRydXN0JTIwYXQlMjB0aGUlMjBzcGVlZCUyMG9mJTIwQUkuJTIyJTJDJTIyeCUyMiUzQTAuMjU0MzMwNjY5MzAxNTcxOSUyQyUyMnclMjIlM0ExMzY2JTJDJTIyaCUyMiUzQTc2OCUyQyUyMmolMjIlM0E3NjglMkMlMjJlJTIyJTNBMTM2NiUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmludmVzdC5rdWpvbGFuZy5haSUyRjElMkYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTI0JTJDJTIybiUyMiUzQSUyMlVURi04JTIyJTJDJTIybyUyMiUzQTMwMCUyQyUyMnElMjIlM0ElNUIlNUQlN0Q=",
+          "bytes": 2693,
+          "duration": 106.40000000037253
+        },
+        {
+          "url": "https://invest.kujolang.ai/cdn-cgi/rum?",
+          "bytes": 300,
+          "duration": 82.30000000074506
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 0.7999999988824129
+        }
+      ],
+      "ttfb": 229.90000000037253
+    },
+    {
+      "name": "tablet",
+      "n": 1,
+      "width": 768,
+      "docWidth": 768,
+      "frameWidth": 712,
+      "nav": true,
+      "htmlBytes": 8466,
+      "resources": [
+        {
+          "url": "https://invest.kujolang.ai/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/kujo-logomark.svg",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyVHJ1c3QlMjBhdCUyMHRoZSU1Q25zcGVlZCUyMG9mJTIwQUkuJTIwJUUyJTgwJTk0JTIwS1VKTyUyMCVFMiU4MCU5NCUyMFRydXN0JTIwYXQlMjB0aGUlMjBzcGVlZCUyMG9mJTIwQUkuJTIyJTJDJTIyeCUyMiUzQTAuNDI4ODUzOTEyOTM5MDY5MDUlMkMlMjJ3JTIyJTNBNzY4JTJDJTIyaCUyMiUzQTEwMjQlMkMlMjJqJTIyJTNBMTAyNCUyQyUyMmUlMjIlM0E3NjglMkMlMjJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZpbnZlc3Qua3Vqb2xhbmcuYWklMkYxJTJGJTIyJTJDJTIyciUyMiUzQSUyMiUyMiUyQyUyMmslMjIlM0EyNCUyQyUyMm4lMjIlM0ElMjJVVEYtOCUyMiUyQyUyMm8lMjIlM0EzMDAlMkMlMjJxJTIyJTNBJTVCJTVEJTdE",
+          "bytes": 2693,
+          "duration": 79.90000000037253
+        },
+        {
+          "url": "https://invest.kujolang.ai/cdn-cgi/rum?",
+          "bytes": 300,
+          "duration": 56.5
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 2.399999998509884
+        }
+      ],
+      "ttfb": 261
+    },
+    {
+      "name": "mobile",
+      "n": 1,
+      "width": 390,
+      "docWidth": 390,
+      "frameWidth": 374,
+      "nav": true,
+      "htmlBytes": 8462,
+      "resources": [
+        {
+          "url": "https://invest.kujolang.ai/assets/sitekit/sitekit.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/presentation.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/theme.css",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/kujo-logomark.svg",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/viewer.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/motion/motion-mini.js",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/deck/DepartureMono-Regular.woff2",
+          "bytes": 0,
+          "duration": 0
+        },
+        {
+          "url": "https://invest.kujolang.ai/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyVHJ1c3QlMjBhdCUyMHRoZSU1Q25zcGVlZCUyMG9mJTIwQUkuJTIwJUUyJTgwJTk0JTIwS1VKTyUyMCVFMiU4MCU5NCUyMFRydXN0JTIwYXQlMjB0aGUlMjBzcGVlZCUyMG9mJTIwQUkuJTIyJTJDJTIyeCUyMiUzQTAuNjgyMDY0NDE4MDM2MTY4JTJDJTIydyUyMiUzQTM5MCUyQyUyMmglMjIlM0E4NDQlMkMlMjJqJTIyJTNBODQ0JTJDJTIyZSUyMiUzQTM5MCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmludmVzdC5rdWpvbGFuZy5haSUyRjElMkYlMjIlMkMlMjJyJTIyJTNBJTIyJTIyJTJDJTIyayUyMiUzQTI0JTJDJTIybiUyMiUzQSUyMlVURi04JTIyJTJDJTIybyUyMiUzQTMwMCUyQyUyMnElMjIlM0ElNUIlNUQlN0Q=",
+          "bytes": 2708,
+          "duration": 64.90000000037253
+        },
+        {
+          "url": "https://invest.kujolang.ai/cdn-cgi/rum?",
+          "bytes": 300,
+          "duration": 166.09999999962747
+        },
+        {
+          "url": "https://invest.kujolang.ai/assets/presentation/favicon.svg",
+          "bytes": 0,
+          "duration": 0.599999999627471
+        }
+      ],
+      "ttfb": 190.89999999850988
+    }
+  ],
+  "checks": []
+}

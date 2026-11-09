@@ -1,0 +1,16 @@
+
+ ⛅️ wrangler 4.151.3 (update available 4.159.0)
+───────────────────────────────────────────────
+Uploading... (108/108)
+✨ Success! Uploaded 0 files (108 already uploaded) (0.40 sec)
+
+✨ Uploading _headers
+✨ Uploading _redirects
+🌎 Deploying...
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mDeployment failed![0m
+
+  	Failed to publish your Function. Got error: Unknown internal error occurred.
+
+
+🪵  Logs were written to "/Users/robertdevore/Library/Preferences/.wrangler/logs/wrangler-2026-11-09_15-54-48_976.log"

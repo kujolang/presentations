@@ -1,0 +1,15 @@
+Valid deck: kujo-investor
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 18
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/kujo-investor/site
+  Build time: 0.39218598200000004s
+
+
+Presentation built: output/kujo-investor/index.html
+Pages artifact: .build/investor-pages

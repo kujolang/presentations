@@ -1,0 +1,12 @@
+phase,source_url,source_variant,http_status,target_url,chain_length,final_status,canonical_target,query_preserved,verification,issues
+after,http://invest.kujolang.ai/,host/path/query,301,https://invest.kujolang.ai/,1,200,https://invest.kujolang.ai,N/A,curl; DNS override for canonical host; valid TLS,
+after,https://invest.kujolang.ai/1,host/path/query,301,https://invest.kujolang.ai/,1,200,https://invest.kujolang.ai,N/A,curl; DNS override for canonical host; valid TLS,
+after,https://invest.kujolang.ai/1/,host/path/query,301,https://invest.kujolang.ai/,1,200,https://invest.kujolang.ai,N/A,curl; DNS override for canonical host; valid TLS,
+after,https://invest.kujolang.ai/1/?utm_source=audit,host/path/query,301,https://invest.kujolang.ai/?utm_source=audit,1,200,https://invest.kujolang.ai,True,curl; DNS override for canonical host; valid TLS,
+after,https://invest.kujolang.ai/2,host/path/query,308,https://invest.kujolang.ai/2/,1,200,https://invest.kujolang.ai,N/A,curl; DNS override for canonical host; valid TLS,
+after,https://invest.kujolang.ai/2/?utm_source=audit,host/path/query,200,https://invest.kujolang.ai/2/?utm_source=audit,0,200,https://invest.kujolang.ai,True,curl; DNS override for canonical host; valid TLS,
+after,https://invest.kujolang.ai/assets/deck/appendix.html,host/path/query,308,https://invest.kujolang.ai/assets/deck/appendix,1,200,https://invest.kujolang.ai,N/A,curl; DNS override for canonical host; valid TLS,
+after,https://invest.kujolang.ai/missing-audit-route,host/path/query,404,https://invest.kujolang.ai/missing-audit-route,0,404,https://invest.kujolang.ai,N/A,curl; DNS override for canonical host; valid TLS,
+after,https://www.invest.kujolang.ai/,host/path/query,ERROR,https://www.invest.kujolang.ai/,0,000,https://invest.kujolang.ai,N/A,curl; DNS override for canonical host; valid TLS,"curl: (6) Could not resolve host: www.invest.kujolang.ai
+"
+after,https://kujo-investor.pages.dev/,host/path/query,200,https://kujo-investor.pages.dev/,0,200,https://invest.kujolang.ai,N/A,curl; DNS override for canonical host; valid TLS,

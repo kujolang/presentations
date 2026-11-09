@@ -1,0 +1,212 @@
+[
+  {
+    "ua": "Googlebot",
+    "url": "https://invest.kujolang.ai/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:29 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ZhjeRp0K9b0Au8duK%2BoMwFCw4GM%2BlvOvgj7ij82HBYt%2B4XxH2o2Kejowg05ivAVifv25YwGJvgWe%2Fnk6PSzU83m%2BELmfBncdagV2YIjroBVx%2FqKUHTAWh4YXyn%2FmWGY2fNJ7lZI%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df353ea1414ba-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/ 0",
+    "error": ""
+  },
+  {
+    "ua": "Googlebot",
+    "url": "https://invest.kujolang.ai/robots.txt",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:29 GMT\ncontent-type: text/plain; charset=utf-8\ncontent-length: 2748\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nIAZEXJtd%2B%2Fv%2FaleZB%2FokV9gfsUqIzpHqo8bNFl9f%2FOmOg2cgvm9zezDpQW06KBcNw9E0spze0D4TOynLvTAAK879cowddm%2F2MSqrexs53uEO6eL6Mf9NCTLKnovqfhYW8H0a3U%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=14400, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\ncf-cache-status: REVALIDATED\nserver: cloudflare\ncf-ray: a57df3540f858ce1-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/robots.txt 0",
+    "error": ""
+  },
+  {
+    "ua": "Googlebot",
+    "url": "https://invest.kujolang.ai/sitemap.xml",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:29 GMT\ncontent-type: application/xml\ncontent-length: 1216\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=4sSz%2B38VPoDtB1vRnK35AzwveXglSezGcBq6%2BVBb8ENFBpMEsceDn4SzNHRA0N3BpOm%2BM1AclGJgoRKmVwPpGID1jt3FQvDiz10TMUC3MXem6V%2FVfYLoCi21N7Ohc1XKF%2FGMvxk%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\netag: \"1a60e35130f8a997e8223a470947ab3d\"\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3575d1aeaf8-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/sitemap.xml 0",
+    "error": ""
+  },
+  {
+    "ua": "Googlebot",
+    "url": "https://invest.kujolang.ai/reading/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:29 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xOf2AAjU%2FOxiviwToDOjf0Vd3LtGFdvFJeskYyP4ICHeOAbPimivHuqKaC8jNBIqNfus1sOhyP7kkhsNX49Yuy94krCoa4m16IFkSFwiDdUuyyRh8WRhSNzNkysY6JXPgMJNg0I%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df354894fed86-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/reading/ 0",
+    "error": ""
+  },
+  {
+    "ua": "Googlebot",
+    "url": "https://invest.kujolang.ai/assets/deck/appendix",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:29 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0s1KZHwDZegJUhfPJfhZHjzHE4RhguIPaWyixVlOoOznuCBHff2mVryBy9H%2Fm6WWn6P0t9H0Wl5CwSI1w1M63IrSxGZyyx98Pz5s5imqtx44EiisNrO%2FbKCNNXjTt%2F1SZWFOsNA%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3551b0beabf-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/assets/deck/appendix 0",
+    "error": ""
+  },
+  {
+    "ua": "bingbot",
+    "url": "https://invest.kujolang.ai/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:29 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=clwoshLF2hlTN%2BUSa3LNL%2BZWYOrO2cMI7cLfuudGhAsWVfAZJE7Xxo6SqCguraf8qmc%2FBa1BHlHeEpfUGYpBgoGT0T%2Bq4eihmsXspHt2ZHb2xjseh%2BDUAoVqD4J5asbOyw3%2BSB4%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3562b809327-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/ 0",
+    "error": ""
+  },
+  {
+    "ua": "bingbot",
+    "url": "https://invest.kujolang.ai/robots.txt",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:29 GMT\ncontent-type: text/plain; charset=utf-8\ncontent-length: 2748\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xuVQnS%2FK5dkBEpNy2v5ZVhTGTBm5uHKx5WLZhanbi8RgUQT%2BvAj44WcwhudpzkJt%2BPUq4cwGXMcK5ejEhTmdzfSI1STt3IQLKo6O1EDdsJ18jc%2Bj8uImVK44sN8YyVKzAlXlwmQ%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=14400, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\ncf-cache-status: REVALIDATED\nserver: cloudflare\ncf-ray: a57df357fa99eb0c-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/robots.txt 0",
+    "error": ""
+  },
+  {
+    "ua": "bingbot",
+    "url": "https://invest.kujolang.ai/sitemap.xml",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:29 GMT\ncontent-type: application/xml\ncontent-length: 1216\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=SYsXsm27jObbJN8d8XGgm0PmxxUg19UzaUWjjhxuk5yLHP0kwhg%2Blvli9wpjvVf8a9CL8No%2FPVcpzaW9UWPG7oR859vnIf3fQQpDBRKiOj2abBSHpodQZjh%2FUgSYwKmFsI0vyZ4%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\netag: \"1a60e35130f8a997e8223a470947ab3d\"\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3577b754527-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/sitemap.xml 0",
+    "error": ""
+  },
+  {
+    "ua": "bingbot",
+    "url": "https://invest.kujolang.ai/reading/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:29 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=H2MG0ChrnfKiUiVkK%2FQ4ezq7jMCQBc62BkdUxNerlIUGNA0bU8BMkxTf2Z03Bumz%2BZfewJGguh4AglCElbYirYXBZ2%2BYHvkceGMctDQWHNBZbEjSIlEc7t%2Fv1Q08wQQeI75912M%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3585d8953ee-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/reading/ 0",
+    "error": ""
+  },
+  {
+    "ua": "bingbot",
+    "url": "https://invest.kujolang.ai/assets/deck/appendix",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:30 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9KEs2e5mZi9Sug6OPpZ48%2F%2FWfwoaMs3NI1HFDZKSeJU2aYafUekNDM7Ap28Tnr3AVS%2B%2FQ%2B9hEvVLWLgZ%2F1MHQc66dqRXv4tn6SMJhBbmR%2B2xSjnipKKd%2FGBnc4ywWlLAs6IYud4%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3597f0ceb62-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/assets/deck/appendix 0",
+    "error": ""
+  },
+  {
+    "ua": "OAI-SearchBot",
+    "url": "https://invest.kujolang.ai/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:30 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tC%2BreZglf4aSBKGzd%2FK8S0eQp%2FLE1%2FPnnJFfeUVIVtE%2F6T2WBH6y%2FHw5CW9NmL1AOJJDt2X47HlqEwCdx1QqNDiW1aDmY0QwjSnk022LZ1dY%2Ba7B1wtb44dwxmA4EUXzOuGN5vE%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df35a5e54dab0-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/ 0",
+    "error": ""
+  },
+  {
+    "ua": "OAI-SearchBot",
+    "url": "https://invest.kujolang.ai/robots.txt",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:30 GMT\ncontent-type: text/plain; charset=utf-8\ncontent-length: 2748\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nIAZEXJtd%2B%2Fv%2FaleZB%2FokV9gfsUqIzpHqo8bNFl9f%2FOmOg2cgvm9zezDpQW06KBcNw9E0spze0D4TOynLvTAAK879cowddm%2F2MSqrexs53uEO6eL6Mf9NCTLKnovqfhYW8H0a3U%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=14400, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\ncf-cache-status: REVALIDATED\nserver: cloudflare\ncf-ray: a57df35a89cdae13-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/robots.txt 0",
+    "error": ""
+  },
+  {
+    "ua": "OAI-SearchBot",
+    "url": "https://invest.kujolang.ai/sitemap.xml",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:30 GMT\ncontent-type: application/xml\ncontent-length: 1216\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=0Iukj36VtUnk2obWI%2Bgo2pJUEo7YGtamh7s8AqZUy%2B%2BDywjVIy7uT6aNvZOe4KdVYNENZJLl39yng8ly0cjnldRatnMHcNFOUho6pBeddNXkN6t9GUOH%2F7wWMcrbxayA8eMH%2Fhg%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\netag: \"1a60e35130f8a997e8223a470947ab3d\"\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df35b3e10ef30-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/sitemap.xml 0",
+    "error": ""
+  },
+  {
+    "ua": "OAI-SearchBot",
+    "url": "https://invest.kujolang.ai/reading/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:30 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=e7e3oIl1FSLwe8yp1sim3zRh74K9EQh%2ByXel1pWobELLuhmP0A9uTiqu11A6QdrSZCTa0Ce7d3pxsHl1QyQf9fOpR%2B71MzygFtDgMEKsnG9ef1BYEBGIDDs%2BwwTLAezDntM%2FSPk%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df35babc0e826-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/reading/ 0",
+    "error": ""
+  },
+  {
+    "ua": "OAI-SearchBot",
+    "url": "https://invest.kujolang.ai/assets/deck/appendix",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:30 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=p09yr5H95xNDDMBnFzRCNHyCli2eV%2BDVuvmk%2FTxYVqQVPQjmMw9mL6LR6jfU6%2BbRMAp7B2xBuTJphjsReo2TtyxdN9xprJjI7KkK0XOaNj3mjF%2Baeat1fMN2bdvPrkinDfcEGHA%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df35c7cc9b5ff-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/assets/deck/appendix 0",
+    "error": ""
+  },
+  {
+    "ua": "GPTBot",
+    "url": "https://invest.kujolang.ai/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:30 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aP0xvq0IL8k1Yvsgt1NWkccXgnINzjluXddvEgUDvsuqBPtSP4WAD44uqK6dONcoRr%2FTtkKAQe%2F3NXTFvQ1VAXc%2FfuSrel9XK3ihMLvoS4q0%2BEz%2FVTULWErKgd9CZS1l0O6HGSQ%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df35e6b261045-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/ 0",
+    "error": ""
+  },
+  {
+    "ua": "GPTBot",
+    "url": "https://invest.kujolang.ai/robots.txt",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:30 GMT\ncontent-type: text/plain; charset=utf-8\ncontent-length: 2748\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nIAZEXJtd%2B%2Fv%2FaleZB%2FokV9gfsUqIzpHqo8bNFl9f%2FOmOg2cgvm9zezDpQW06KBcNw9E0spze0D4TOynLvTAAK879cowddm%2F2MSqrexs53uEO6eL6Mf9NCTLKnovqfhYW8H0a3U%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=14400, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\ncf-cache-status: REVALIDATED\nserver: cloudflare\ncf-ray: a57df35deb3289e0-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/robots.txt 0",
+    "error": ""
+  },
+  {
+    "ua": "GPTBot",
+    "url": "https://invest.kujolang.ai/sitemap.xml",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:30 GMT\ncontent-type: application/xml\ncontent-length: 1216\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dQvOSyA0ZH2C67rPScmYvtajziQLH6ssZ06XlVs7AOfn%2FyGV9V3PenX3G1iGbkcOawSSOlU6fxVv%2BoA3vpbGKP5xhR75CIdWASE33sLHJqXlf0XdRaOKHwlQqSkWsM42WAut4LI%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\netag: \"1a60e35130f8a997e8223a470947ab3d\"\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df35f5f0b8c00-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/sitemap.xml 0",
+    "error": ""
+  },
+  {
+    "ua": "GPTBot",
+    "url": "https://invest.kujolang.ai/reading/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:31 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dICmiInnFdGN%2FkS33%2Fm1DC%2FKsIvQMv%2BIdM9ghhBAoUEs2VQh9PqIvs452lT2UMRnzh9ghVi2Cn1dPfut622cqc%2B6B1Yrtt0a3kcbcpA%2BufsN%2BeULXIuMQZOVRv43uNWe%2BnftmNg%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3600ad03f19-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/reading/ 0",
+    "error": ""
+  },
+  {
+    "ua": "GPTBot",
+    "url": "https://invest.kujolang.ai/assets/deck/appendix",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:31 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2BrbFJ%2BgJMae1UzF7ts8icRECVP1TTdZw9Hhcxg7sqzPFGSOq68wtMseNYY%2FLqRg55WyYqO1GsQ7lL0l8nmkrtOdimnKYaWHajwfXAO6d1X2EpsicJTqURhKVNixPgMxjG%2BTal20%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3611f26a0b6-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/assets/deck/appendix 0",
+    "error": ""
+  },
+  {
+    "ua": "ChatGPT-User",
+    "url": "https://invest.kujolang.ai/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:31 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1B3zlYtvkwgXCedrNygN7drz3XoyEQHkIlSFFvvKK8%2BYxKlBzot94gTK%2FmSq4LMYZdZ4%2FkBsnEVqj36A1ZYAtj1aKi97FkG3NqN3%2BeJl7qgdau%2BGNFemLFXoEgNd7pDxj0dukQA%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3619cac457b-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/ 0",
+    "error": ""
+  },
+  {
+    "ua": "ChatGPT-User",
+    "url": "https://invest.kujolang.ai/robots.txt",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:31 GMT\ncontent-type: text/plain; charset=utf-8\ncontent-length: 2748\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=nIAZEXJtd%2B%2Fv%2FaleZB%2FokV9gfsUqIzpHqo8bNFl9f%2FOmOg2cgvm9zezDpQW06KBcNw9E0spze0D4TOynLvTAAK879cowddm%2F2MSqrexs53uEO6eL6Mf9NCTLKnovqfhYW8H0a3U%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=14400, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\ncf-cache-status: REVALIDATED\nserver: cloudflare\ncf-ray: a57df3641ff1d825-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/robots.txt 0",
+    "error": ""
+  },
+  {
+    "ua": "ChatGPT-User",
+    "url": "https://invest.kujolang.ai/sitemap.xml",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:31 GMT\ncontent-type: application/xml\ncontent-length: 1216\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=mx%2BVO%2Br1O%2BBWFaJP%2BHJX1pwXRpNrPTOJ0nXMe23xcXX89iId8GnW%2FHHFh%2BW%2F4QKL3k4Tm%2F%2BUasmgY41W8IPdN08Gla056Z6N6ch8PLKYjWerDRfWkpnfHb542zYKr81Qv0EExcE%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\netag: \"1a60e35130f8a997e8223a470947ab3d\"\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3636e41dba4-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/sitemap.xml 0",
+    "error": ""
+  },
+  {
+    "ua": "ChatGPT-User",
+    "url": "https://invest.kujolang.ai/reading/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:31 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=p3HNkORL4nCN946ztvFxO55dJLxrvgLfE%2F85eG4lbFGXOcFjRN19ciQ9zjTbdZpgGXcOTiFwmFW2Gnh4Z8%2FFs51f20%2F3RyVr3qiqHSydMn4g%2BuISmVveiwz4Hc1irS5cbe%2FUvhQ%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df364dc17eb5c-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/reading/ 0",
+    "error": ""
+  },
+  {
+    "ua": "ChatGPT-User",
+    "url": "https://invest.kujolang.ai/assets/deck/appendix",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:32 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=YBFNXhDIBB8or2uELv8wNzZ4lvQRtBP1GbzgDou5b3WGW%2BYGqt89MpQrNJ48jkUEbYLW%2FMCkVQtbAwqZKAZoeoPLJbm8%2FwVzkFAJ3wRP4AVJbdscmO3mpHVTrGlwUiKbVZG49RA%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3681832baf2-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/assets/deck/appendix 0",
+    "error": ""
+  },
+  {
+    "ua": "KujoAudit/1.0",
+    "url": "http://invest.kujolang.ai/",
+    "receipt": "HTTP/1.1 301 Moved Permanently\nDate: Mon, 09 Nov 2026 15:46:31 GMT\nContent-Type: text/html; charset=UTF-8\nTransfer-Encoding: chunked\nConnection: keep-alive\nLocation: https://invest.kujolang.ai/\nReport-To: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jfo45ARjJRwlfMjBjuL8pdh78u618RqEPlzVa8gKfdR2l%2FeFe8JQ%2Be0UirkoXpxWY0FBZCUDcqRedEzLN3w3IrPK33i1Jzbb93DEG5UlmmVgMKu961sAMBhY5xohip5TCPj9UlY%3D\"}]}\nNel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\nServer: cloudflare\nCF-RAY: a57df365dab3bc77-ATL\nalt-svc: h3=\":443\"; ma=86400\n\nHTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:33 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=b%2F1LBZPBc2UTslkD20DaOJ8aXnrzNvTLfsZbVRmimWHNW7%2Bz2zI1vpoyAmuoj6sATcL0AH2I59zILQ77rTPKnuHWharwLEvdHdQSc0X8nu8rmCNQ%2Brpti8RtZH842KN85YTw1n4%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36e6dbfd8c6-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/ 1",
+    "error": ""
+  },
+  {
+    "ua": "KujoAudit/1.0",
+    "url": "https://invest.kujolang.ai/1",
+    "receipt": "HTTP/2 301 \ndate: Mon, 09 Nov 2026 15:46:32 GMT\ncontent-type: text/plain;charset=UTF-8\ncontent-length: 16\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Il%2FYBUPoW9i9rXQ%2B2yMAx9bQgz61Ux09bu0PgKKjFzrQC3xYDTbaMsqRwOKgiTb9O0dFYvMBnHx8RwjPVsQKtvMIimMIJFoV71rAzZ11QhMbYi%2F1qPl56rDAxh3tdR03IHRYOq4%3D\"}]}\nlocation: /\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36899c7b0be-ATL\nalt-svc: h3=\":443\"; ma=86400\n\nHTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:32 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kHopVgFxhZjrnm2qjXNVdpmsdmsYX4UVMx5eJhr1EHHRnw6or0ODikJXXG4loewww%2Fmafp%2BcZyIXniosB24idS2uUdFQtAZDxJy5HrKuBA94Tmk3AuO%2F3IchRRJqBdAdsbNyJEA%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df3695a3db0be-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/ 1",
+    "error": ""
+  },
+  {
+    "ua": "KujoAudit/1.0",
+    "url": "https://invest.kujolang.ai/1/",
+    "receipt": "HTTP/2 301 \ndate: Mon, 09 Nov 2026 15:46:32 GMT\ncontent-type: text/plain;charset=UTF-8\ncontent-length: 16\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=lKHA1h7eklUL9dyPZr51GQMoTCJMTek3GtTKW9fmq9cAhcR9NRkkErhtH2AnNopzxOqTwmSyGyHKeZQj6xBpRxCqSSXDjQgY5UtqUS4tYHVQVTak7BcqwyjWMszlh9HEXhDr4Nc%3D\"}]}\nlocation: /\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df369dcbf5839-ATL\nalt-svc: h3=\":443\"; ma=86400\n\nHTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:32 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uh3p9Sm62DnwbUSbABbHgNwlAZw1tlXVXIqONk0EmoSrjoAJQR9d7ffM1dBNtAKi2lNXldcO4ndsxJxnBSkb91BcF4kfNYNVMPXvp%2FVbkzUqVqR6ICWzY%2Fp5s4xnmnspRbO2LNw%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36aaf405839-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/ 1",
+    "error": ""
+  },
+  {
+    "ua": "KujoAudit/1.0",
+    "url": "https://invest.kujolang.ai/1/?utm_source=audit",
+    "receipt": "HTTP/2 301 \ndate: Mon, 09 Nov 2026 15:46:32 GMT\ncontent-type: text/plain;charset=UTF-8\ncontent-length: 33\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=uNAEGD2bQz9VdYOk14wC3K5uJCA%2BoSwUTK%2Bb%2F2dclY62E409l2kGKtyXbnBdEunAz4Do8CDI0dlnfsTb2b3Qf2z6jW3rdr2WjrnQYVqypxeUckRMCVF8u%2FSO%2FdM%2ByU0hOVM%2B2is%3D\"}]}\nlocation: /?utm_source=audit\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36abf7244d3-ATL\nalt-svc: h3=\":443\"; ma=86400\n\nHTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:32 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Z%2BFtM%2BSz5BTDJHSQR4VoevLrmtFLBG6h57ne7mwh4akg7t6qyBe9etf%2B%2Fyulx0DTEZNU5HocXbSlW1CiT%2FMyEMZNNwRC0TG62yci%2FnBmZTO1d1sOCSVmhWsitFbuXsfGeTdvrUw%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36b7ff944d3-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/?utm_source=audit 1",
+    "error": ""
+  },
+  {
+    "ua": "KujoAudit/1.0",
+    "url": "https://invest.kujolang.ai/2",
+    "receipt": "HTTP/2 308 \ndate: Mon, 09 Nov 2026 15:46:33 GMT\ncontent-length: 0\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=j3SxdEd3GnTvMVHQ8Jt8dthsUaNGc6fMPBIVrAljVvR8lIT5AkkOeEaBp3akVgFIYXSQdbRVfucv%2FlP5XaM5fDv0J5Qa7y9C171BEH27Lx0d0RixclpelnW7LLDxJeJgh0KX%2F14%3D\"}]}\nlocation: /2/\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36c4b2ce80c-ORD\nalt-svc: h3=\":443\"; ma=86400\n\nHTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:33 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=sbNGyDwzpI%2FmtjRwxmjlJtg73V%2FKyAQw3n7wn60S%2F4RDvKKtme6BxXbbQ61Fu0KbxY6HEKyfS7F1aAogt8GnY05LkQtcjUx3AYxPP9cFSrAeQr4JXedu4L7zxm2%2B3RaFFA0Uvco%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36d1e25e80c-ORD\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/2/ 1",
+    "error": ""
+  },
+  {
+    "ua": "KujoAudit/1.0",
+    "url": "https://invest.kujolang.ai/2/?utm_source=audit",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:33 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=WMb9YMSB6BKU5K7z8mW%2FfoM1T8oMHFYVp434c4siTyhgeUoPYSdB6I2yJjlRMw8aI754EYpZmxol6zfQwq6yVWXACXwNNvOQFtIlkCDG50oyn7g%2BaE3IifZGdhhLhRuXhbr6f04%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36dff80b01c-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/2/?utm_source=audit 0",
+    "error": ""
+  },
+  {
+    "ua": "KujoAudit/1.0",
+    "url": "https://invest.kujolang.ai/assets/deck/appendix.html",
+    "receipt": "HTTP/2 308 \ndate: Mon, 09 Nov 2026 15:46:33 GMT\ncontent-length: 0\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=QsUFwz7m0PNZEPuzXReK7WlVNylyloiGxsReE3%2F892a%2Bv5X0UM5LZpveVwlMxplzuXjJkjmz%2BqxbsNfeYE9rlOOTmSaoE9BrnS%2BZQ4JRbFuKM8l9Wx%2BgJBu4mHMChA%2FMES2LCLU%3D\"}]}\nlocation: /assets/deck/appendix\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36e5f6706f8-ATL\nalt-svc: h3=\":443\"; ma=86400\n\nHTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:33 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MMmYpaSspQ0XgqvWcxDEhBQj9yy7XxjAlfmx37Ih9QVZ81oaUlljbftnRmn0I2XtDCJ4xXA4ZjBjBs7lFj8BZRiWvkhVwjUHfIIyTIpPycZBSivKCkXMikLsbvtI41ZZM%2FKCHMo%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36f1fd106f8-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://invest.kujolang.ai/assets/deck/appendix 1",
+    "error": ""
+  },
+  {
+    "ua": "KujoAudit/1.0",
+    "url": "https://invest.kujolang.ai/missing-audit-route",
+    "receipt": "HTTP/2 404 \ndate: Mon, 09 Nov 2026 15:46:33 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qIS4dQrZY%2FMrb6Ov2H2d0rywqkcLTomH5nfyELcAEdvd72gv0OuZ6kxJH8f1IRtlkK1ijRbwzZKHdO%2BFVwfxMGjeaR3JwcNqyIq2JvaUlkc0nXuAL9bKhTgrrVPmkXnVanjrypg%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: no-store\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a57df36f2dabaddc-ATL\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 404 https://invest.kujolang.ai/missing-audit-route 0",
+    "error": ""
+  },
+  {
+    "ua": "KujoAudit/1.0",
+    "url": "https://www.invest.kujolang.ai/",
+    "receipt": "\nRESULT 000 https://www.invest.kujolang.ai/ 0",
+    "error": "curl: (6) Could not resolve host: www.invest.kujolang.ai\n"
+  },
+  {
+    "ua": "KujoAudit/1.0",
+    "url": "https://kujo-investor.pages.dev/",
+    "receipt": "HTTP/2 200 \ndate: Mon, 09 Nov 2026 15:46:34 GMT\ncontent-type: text/html; charset=utf-8\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\nreferrer-policy: strict-origin-when-cross-origin\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=IgJr2OiLhDEHu7UMsgwbVWMNVrVLt3bwgomA%2BWxzPPTRm2wWD7%2FBG5FiZfSmNGAQQAAUY5vsf0Hj52rXGWiwYADdx%2F7j2sJiR00tTK1xZcnaT96r6kSO3S88Xsig1oAaiAiJ3a5xcyzK%2BfSDgwSrfy7kSLtm8w%3D%3D\"}]}\nserver: cloudflare\ncf-ray: a57df3728f9c23b7-CLE\nalt-svc: h3=\":443\"; ma=86400\n\n\nRESULT 200 https://kujo-investor.pages.dev/ 0",
+    "error": ""
+  }
+]

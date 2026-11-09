@@ -1,0 +1,20 @@
+{
+  "pages": 24,
+  "indexable": 21,
+  "missing_titles": 0,
+  "duplicate_titles": 0,
+  "missing_descriptions": 0,
+  "duplicate_descriptions": 0,
+  "missing_canonicals": 1,
+  "h1_problems": 2,
+  "orphans": 1,
+  "deep_pages": 0,
+  "missing_alt": 0,
+  "missing_dimensions": 0,
+  "schema_parse_errors": 0,
+  "schema_coverage": 23,
+  "broken_internal": 0,
+  "broken_external": 0,
+  "unique_link_destinations": 90,
+  "field_performance": "NOT AVAILABLE \u2014 DATA ACCESS REQUIRED"
+}

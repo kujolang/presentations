@@ -1,0 +1,25 @@
+phase,url,types,parse_errors,alignment,rich_result
+after,https://invest.kujolang.ai/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/404.html,,0,No structured data,No eligibility claim
+after,https://invest.kujolang.ai/reading/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/presenter/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/18/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/9/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/11/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/7/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/16/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/6/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/17/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/10/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/8/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/print/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/overview/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/assets/deck/appendix,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/4/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/15/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/3/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/12/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/2/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/13/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/5/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim
+after,https://invest.kujolang.ai/14/,WebPage,0,WebPage metadata matches visible deck,No eligibility claim

@@ -1,0 +1,38 @@
+{
+  "phase": "final",
+  "base": "http://127.0.0.1:8107",
+  "errors": [],
+  "views": [],
+  "checks": [
+    "no visible arrows; keyboard Home/End",
+    "menu and fullscreen without overlay arrows",
+    {
+      "route": "/",
+      "axe": []
+    },
+    {
+      "route": "/5/",
+      "axe": []
+    },
+    {
+      "route": "/8/",
+      "axe": []
+    },
+    {
+      "route": "/reading/",
+      "axe": []
+    },
+    {
+      "route": "/overview/",
+      "axe": []
+    },
+    {
+      "route": "/assets/deck/appendix",
+      "axe": []
+    },
+    "reading print presenter notes",
+    "six evidence panels",
+    "Chrome touch-input swipes forward/back",
+    "reduced motion"
+  ]
+}
