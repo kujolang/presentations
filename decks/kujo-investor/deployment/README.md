@@ -27,3 +27,17 @@ The build uses canonical origin `https://invest.kujolang.ai`, copies only the fi
 The first `wrangler pages project create` unexpectedly delegated to Workers and inherited the repository-root Worker assets/hostname, creating an unintended `kujo-investor` Worker bound to `presentations.kujolang.ai`. The original `kujo-presentations` Worker was immediately redeployed from its own configuration and its custom-domain association verified through the API. The unintended Worker was then deleted after confirming it owned no domains. The correct Pages project was created with the Pages API and deployed with `pages deploy` from the deck directory. No lingering alternate Worker is part of this deployment. Original failed/recovery logs are retained for provenance. Avoid the CLI project-create command in a repository with an unrelated Worker config; use the explicit Pages API or dashboard for creation.
 
 Final state (2026-11-09): Cloudflare reports **active**, with SSL enabled; see `domain-final.json` and `cloudflare-active.png`. Public Cloudflare and Google resolvers return the proxied address. All 106 files and expected 404 pass over the custom hostname with normal certificate validation using the observed public DNS answer (`http-verification.json`); the Pages hostname also passes (`pages-http-verification.json`). The in-app browser confirmed Pages slide navigation. Its custom-hostname attempt retained a negative DNS cache during this session, so custom-hostname browser rendering was not claimed. The deployment is active; resolver caches may need time to expire. No security warning was bypassed.
+
+## Audience entry update — 2026-11-09
+
+The publication adapter now serves slide one at `/`, preserves the native gallery
+at `/overview/`, and redirects `/1` and `/1/` permanently to `/` (query retained).
+The published view fills the screen width. At the owner's final request, visible
+arrow controls and the bottom navigation overlay are removed. Swipe horizontally
+on touch devices; use Left/Right, Space, Home/End on keyboards. The top-right
+options menu retains reading, print, fullscreen, motion and presenter access.
+No-JavaScript readers can use the overview or text edition from that menu.
+
+Full audit, source changes, immutable baseline, screenshots and production
+verification: `seo-audit/2026-11-09/` at repository root. Existing original deployment
+receipts remain historical; the dated audit contains the newest deployment log.

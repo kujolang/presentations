@@ -1,0 +1,18 @@
+/* Audience-only publication skin. Native reading, print and presenter stay intact. */
+.ki-public-view{background:#f9f9f9}.ki-public-view:has(.p-inverse){background:#060606}
+.ki-public-view .p-viewer{padding:0;min-height:100dvh;width:100%;overflow-x:clip}
+.ki-public-view .p-stage{width:100%;min-height:100dvh}
+.ki-public-view .p-stage .p-frame{width:100%;max-width:none}
+.ki-public-view .p-help{display:none}
+.ki-public-view .p-progress{position:fixed;bottom:0;left:0;width:100%;height:3px;margin:0;z-index:25;accent-color:#888}
+/* Native hrefs remain available to the keyboard and touch navigation handler,
+   but no arrow controls or bottom rail cover the audience's slide. */
+.ki-navigation{display:none}
+.ki-menu{position:fixed;right:10px;top:10px;z-index:35;color:white;font:14px Arial}
+.ki-menu summary{list-style:none;width:44px;height:32px;display:grid;place-items:center;background:#111;border:1px solid #777;border-radius:4px;cursor:pointer;font-size:24px;line-height:1}
+.ki-menu summary::-webkit-details-marker{display:none}.ki-menu nav{position:absolute;right:0;top:38px;width:220px;max-height:80dvh;overflow:auto;display:flex;flex-direction:column;background:#111;padding:10px;border:1px solid #777;border-radius:4px;box-shadow:0 8px 24px #0004}
+.ki-menu nav :is(a,button){text-align:left;color:white!important;background:#111!important;font:14px Arial!important;padding:12px!important;text-decoration:none;min-height:44px;border:0}
+.ki-menu nav [hidden]{display:none!important}.ki-public-view :is(a,button,summary):focus-visible{outline:3px solid #777;outline-offset:3px}
+:root:fullscreen .ki-public-view .p-stage .p-frame{width:100%}
+@media(max-width:900px){.ki-menu{top:8px;right:8px}:root:not(:fullscreen) .ki-public-view .p-stage .p-frame{width:100%}:root:not(:fullscreen) .ki-public-view .p-canvas{min-height:100dvh}.ki-public-view .p-header{padding-right:38px}.ki-public-view .p-stage{align-items:start}}
+@media print{.ki-navigation,.ki-menu{display:none!important}.ki-public-view .p-stage{min-height:0;padding:0}}
