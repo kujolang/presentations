@@ -13,6 +13,15 @@
   try { disabled = sessionStorage.getItem(preferenceKey) === 'off'; } catch {}
   const wantsMotion = () => Boolean(viewer()?.dataset.motion) && !disabled && !reduced.matches;
   const finishAnimation = () => { activeAnimation?.complete(); };
+  // Optional animation completion must never hold the navigation lock forever.
+  async function settleAnimation(controls, duration) {
+    let timer;
+    try {
+      await Promise.race([Promise.resolve(controls), new Promise(resolve => {
+        timer = setTimeout(() => { try { controls?.complete(); } catch {} resolve(); }, Math.max(1200, duration * 1000 + 500));
+      })]);
+    } finally { clearTimeout(timer); }
+  }
   async function animateSlide(main, entering, direction) {
     if (!wantsMotion()) return;
     let cleanup = () => {};
@@ -26,7 +35,7 @@
           intensity: Number(main.dataset.intensity), spacing: Number(main.dataset.stagger), easing: main.dataset.easing});
         cleanup = result.cleanup;
         activeAnimation = result.controls;
-        await activeAnimation;
+        await settleAnimation(activeAnimation, Number(main.dataset.duration));
         return;
       }
       motionModule ||= import(moduleURL);
@@ -37,11 +46,19 @@
       const keyframes = { opacity: entering ? [0, 1] : [1, 0] };
       if (effect !== 'fade' && !cinematic(effect)) keyframes.transform = entering ? [transform, 'none'] : ['none', transform];
       activeAnimation = animate(frame, keyframes, { duration: Number(main.dataset.duration) * (cinematic(effect) ? 0.2 : 0.5), ease: main.dataset.easing });
-      await activeAnimation;
+      await settleAnimation(activeAnimation, Number(main.dataset.duration));
       frame.style.removeProperty('opacity');
       frame.style.removeProperty('transform');
     } catch { /* A blocked optional module never prevents navigation. */ }
-    finally { await cleanup(); activeAnimation = null; }
+    finally {
+      // Cleanup can schedule post-render work; release navigation even if the
+      // browser suspends that callback (for example in a background tab).
+      await settleAnimation(cleanup(), 0);
+      const frame = main.querySelector('.p-frame');
+      frame?.style.removeProperty('opacity');
+      frame?.style.removeProperty('transform');
+      activeAnimation = null;
+    }
   }
   const status = message => { const node = document.querySelector('[data-status]'); if (node) node.textContent = message; };
   const enhance = () => {

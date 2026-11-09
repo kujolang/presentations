@@ -49,7 +49,7 @@ func accent_icon(source) {
 export func slide_html(deck, slide, number, prefix, thumbnail) {
     layout := read_file("layouts/" + slide["layout"] + ".html")
     # Only replace explicit slots once: content cannot introduce template instructions.
-    slots := {"title": text(slide["title"]), "copy": text(field(slide, "copy", "")), "eyebrow": text(field(slide, "eyebrow", "")), "metrics": metrics(slide), "features": features(slide), "images": images(slide, prefix, thumbnail), "chart": chart(slide), "note": text(field(slide, "note", "")), "iconArrowUpRight": accent_icon(prefix + "assets/sitekit/icons/tabler.svg#arrow-up-right"), "iconPlus": accent_icon(prefix + "assets/presentation/icons/tabler.svg#plus")}
+    slots := {"assetPrefix": text(prefix), "title": text(slide["title"]), "copy": text(field(slide, "copy", "")), "eyebrow": text(field(slide, "eyebrow", "")), "metrics": metrics(slide), "features": features(slide), "images": images(slide, prefix, thumbnail), "chart": chart(slide), "note": text(field(slide, "note", "")), "iconArrowUpRight": accent_icon(prefix + "assets/sitekit/icons/tabler.svg#arrow-up-right"), "iconPlus": accent_icon(prefix + "assets/presentation/icons/tabler.svg#plus")}
     parts := split(layout, "{{")
     body := parts[0]
     i := 1
@@ -62,7 +62,10 @@ export func slide_html(deck, slide, number, prefix, thumbnail) {
     tone := ""
     if field(slide, "inverse", false) == true { tone = " p-inverse" }
     hidden := ""
-    if thumbnail { hidden = " aria-hidden=\"true\"" }
+    if thumbnail {
+        hidden = " aria-hidden=\"true\" inert"
+        body = replace(replace(body, "<a ", "<span "), "</a>", "</span>")
+    }
     return "<div class=\"p-frame\"" + hidden + "><article class=\"p-canvas p-layout-" + slide["layout"] + tone + "\"><header class=\"p-header\"><span>" + text(deck["brand"]) + "</span><span>" + text(field(slide, "eyebrow", deck["title"])) + "</span><span dir=\"ltr\">" + to_string(number) + " / " + to_string(len(deck["slides"])) + "</span></header>" + body + "<footer class=\"p-footer\"><span>" + text(field(deck, "footer", deck["brand"])) + "</span><span>" + text(field(slide, "note", "")) + "</span><span>" + to_string(number) + "</span></footer></article></div>"
 }
 export func control(href, label, key, enabled) {
