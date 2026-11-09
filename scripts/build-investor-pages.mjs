@@ -1,6 +1,9 @@
 import {execFileSync} from 'node:child_process';
 import {cp,mkdir,rm,writeFile,readFile,readdir} from 'node:fs/promises';
 const origin='https://invest.kujolang.ai';
+execFileSync(process.execPath,['scripts/build-investor-social.mjs'],{stdio:'inherit'});
+const socialImages=JSON.parse(await readFile('decks/kujo-investor/social/images.json','utf8'));
+const escapeAttribute=value=>value.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
 execFileSync(process.execPath,['scripts/deck.mjs','build','--deck','decks/kujo-investor','--site-url',origin],{stdio:'inherit'});
 const dir='.build/investor-pages';await rm(dir,{recursive:true,force:true});await mkdir(dir,{recursive:true});await cp('output/kujo-investor',dir,{recursive:true});
 // Publication adapter: preserve the native renderer, slide markup and viewer.
@@ -33,6 +36,12 @@ async function walk(folder){for(const e of await readdir(folder,{withFileTypes:t
    return `<nav class="ki-navigation" aria-label="Slide navigation">${arrow(previous,'previous','←')}${counter}${arrow(next,'next','→')}</nav><details class="ki-menu"><summary aria-label="Presentation options">⋯</summary><nav aria-label="Presentation editions">${extras}<a href="/presenter/">Presenter</a></nav></details>`;
   });
  }
+ const slide=rel.match(/^\/(\d+)\/index\.html$/)?.[1];
+ const id=isRoot?'slide-01':slide?`slide-${slide.padStart(2,'0')}`:isOverview?'overview':rel==='/404.html'?'not-found':rel==='/assets/deck/appendix.html'?'appendix':rel.split('/')[1];
+ const image=socialImages[id];if(!image)throw new Error(`Missing social card for ${rel}`);
+ const imageURL=origin+image.path,alt=escapeAttribute(image.alt);
+ html=html.replace(/<meta (?:property|name)="(?:og:image(?::[^" ]+)?|twitter:image(?::[^" ]+)?|twitter:card)"[^>]*>/g,'');
+ html=html.replace('</head>',`<meta property="og:image" content="${imageURL}"><meta property="og:image:secure_url" content="${imageURL}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${alt}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="${imageURL}"><meta name="twitter:image:alt" content="${alt}"></head>`);
  await writeFile(file,html);
 }}}await walk(dir);
 await rm(`${dir}/1`,{recursive:true,force:true});

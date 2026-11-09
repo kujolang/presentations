@@ -1,0 +1,170 @@
+{
+  "slide-01": {
+    "path": "/assets/deck/social/slide-01.5cca734f0156.png",
+    "alt": "KUJO — Trust at the speed of AI.. Programming language and accountability infrastructure.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-02": {
+    "path": "/assets/deck/social/slide-02.734a2a11bf1d.png",
+    "alt": "KUJO — The accountability problem. Software production is outpacing verification.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-03": {
+    "path": "/assets/deck/social/slide-03.3e0cd45562f8.png",
+    "alt": "KUJO — Structural shift. Greater autonomy requires stronger accountability.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-04": {
+    "path": "/assets/deck/social/slide-04.e18de47ebe2f.png",
+    "alt": "KUJO — Why now. AI use is broad. Trust remains conditional.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-05": {
+    "path": "/assets/deck/social/slide-05.ff0bfe41f516.png",
+    "alt": "KUJO — The Kujo system. Build with clarity. Operate with control.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-06": {
+    "path": "/assets/deck/social/slide-06.89d08670d3e8.png",
+    "alt": "KUJO — Lifecycle. Accountability spans the whole task.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-07": {
+    "path": "/assets/deck/social/slide-07.6b96174113d6.png",
+    "alt": "KUJO — Engineering proof. The foundation is already being built.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-08": {
+    "path": "/assets/deck/social/slide-08.ab604babae59.png",
+    "alt": "KUJO — Recorded demonstration. A claim becomes inspectable evidence.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-09": {
+    "path": "/assets/deck/social/slide-09.6fef2e5f778a.png",
+    "alt": "KUJO — Adoption without migration. Adopt the ecosystem before the language.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-10": {
+    "path": "/assets/deck/social/slide-10.a5dd2b27208b.png",
+    "alt": "KUJO — Initial customer. Start with teams already delegating engineering work.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-11": {
+    "path": "/assets/deck/social/slide-11.b085c2ec3708.png",
+    "alt": "KUJO — Business model. Open tooling can lead to a commercial operating layer.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-12": {
+    "path": "/assets/deck/social/slide-12.28a2ae1fdbc7.png",
+    "alt": "KUJO — Market model. A focused entry market can support a meaningful business.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-13": {
+    "path": "/assets/deck/social/slide-13.ba2c0d0da48c.png",
+    "alt": "KUJO — Position and defensibility. Accountability requires more than generating code.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-14": {
+    "path": "/assets/deck/social/slide-14.7e6c4c972022.png",
+    "alt": "KUJO — Distribution. Meet developers inside their existing workflows.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-15": {
+    "path": "/assets/deck/social/slide-15.9be408507bff.png",
+    "alt": "KUJO — Momentum. Execution is visible. Demand still needs proof.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-16": {
+    "path": "/assets/deck/social/slide-16.afbf3a0c3773.png",
+    "alt": "KUJO — Founder and team. Built through sustained open-source engineering.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-17": {
+    "path": "/assets/deck/social/slide-17.25c2724cf7b2.png",
+    "alt": "KUJO — Investment and milestones. Capital turns a technical foundation into an adopted platform.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "slide-18": {
+    "path": "/assets/deck/social/slide-18.1c4635908501.png",
+    "alt": "KUJO — The vision. Agents will build more software.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "overview": {
+    "path": "/assets/deck/social/overview.f2e3f1b36e7d.png",
+    "alt": "KUJO — Investor overview. 18 slides. Trust at the speed of AI.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "reading": {
+    "path": "/assets/deck/social/reading.00a62e21291e.png",
+    "alt": "KUJO — Read the briefing. The complete Kujo investor presentation.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "print": {
+    "path": "/assets/deck/social/print.788e508bd2d2.png",
+    "alt": "KUJO — Print the briefing. The Kujo investor presentation, ready to print.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "presenter": {
+    "path": "/assets/deck/social/presenter.e95c913411af.png",
+    "alt": "KUJO — Presenter console. Present the Kujo investor briefing.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "appendix": {
+    "path": "/assets/deck/social/appendix.4b9459b91a1c.png",
+    "alt": "KUJO — Investor appendix. Technical scope, execution artifacts and editable assumptions.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  },
+  "not-found": {
+    "path": "/assets/deck/social/not-found.e3221178b0ef.png",
+    "alt": "KUJO — KUJO. Trust at the speed of AI.",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png"
+  }
+}
