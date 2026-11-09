@@ -1,0 +1,25 @@
+{
+  "sourceCommit": "8be2fd5e848557b221989de3829fcc0840c40590",
+  "sourceDeck": "decks/kujo-investor/deck.json",
+  "capturedSlideCount": 18,
+  "files": {
+    "assets/slides/01.png": "f54f84c46222bdfe761fdb3248405a1daee676e1b6fb191ddace942b224c5e06",
+    "assets/slides/02.png": "a81f890dc6d912bca99175367e70330240c4220e0b69aa769808b273f4131d82",
+    "assets/slides/03.png": "919076864bb7dde22fc974055975fafb23f16e24ca47b7761dd24c5f69d3c800",
+    "assets/slides/04.png": "6fd50876d8dd35565373c5956ac2d6ed8e90e2234a85b373432750e33793c59d",
+    "assets/slides/05.png": "20bb2f8d5eb6a64e5dfd53fbdbae77b8ad6a3ff891324dac512824f67226e0a1",
+    "assets/slides/06.png": "f4f4b847974745bfd3227a4f683f194b24b3d5ab8a2f879df87ff08bf70f6915",
+    "assets/slides/07.png": "1ec11969ac001af1b78238f111f78e65c8f10979669f7cd7c3a338c187f1d86f",
+    "assets/slides/08.png": "7762e62bcaab68548f38549bfd1c292902b9d6817e8173be48936fdf7e2a9d2b",
+    "assets/slides/09.png": "d03a5570bfbfa82be05376add6a72fb9d2cd78b9a81dedf27d1e23d3777100c1",
+    "assets/slides/10.png": "2137eb0aab07b736c7987de74a86d1703ed28c7d8161f909e023861cf85c408b",
+    "assets/slides/11.png": "a6750d3beda69969f1f613a29ebea466019833750a2b9cf2efd64162d68621c9",
+    "assets/slides/12.png": "7716d60452dc9779245302ae9469eb1432b3a4fc714a763a35f76a5eeca6450a",
+    "assets/slides/13.png": "65e8bcd81e8cbe1796b86ce376f0b3c91f771abf4ebbb69b39da4f01087ac41e",
+    "assets/slides/14.png": "5dda639511f697fb77e8956cf6b267cb566f799b0393ae2aab879a13fd87299f",
+    "assets/slides/15.png": "b367fec0517b8cb922a0f9b49fd9bf805a38471fefb48ca5f64be333dc7f9a3d",
+    "assets/slides/16.png": "e4b5a4924ef38fcce84c8b96596c6bea1cb5c5cd8924d16896d14dca7d8d5e82",
+    "assets/slides/17.png": "ba5e52685832e7e92aabffb30ffe1760874e9f9f13928a2a3283967ae478f170",
+    "assets/slides/18.png": "82bfb48995a140f125c71d3871cb0cf634bf2656fddaa6abd014da8b04f21ad3"
+  }
+}

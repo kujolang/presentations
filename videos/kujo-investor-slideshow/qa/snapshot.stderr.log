@@ -1,0 +1,271 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+◆  Capturing review frames (beats, seams, phone) from kujo-investor-slideshow
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Intel)" renderer="ANGLE (Intel, ANGLE Metal Renderer: Intel(R) UHD Graphics 630, Unspecified Version)")
+   Review: 36 beat(s) and 17 seam(s) within 0–144s
+   ⚠ cleared 144 stills from an earlier run in /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots
+[hyperframes] snapshot: frame 1/121 at 0.3s
+[hyperframes] snapshot: frame 2/121 at 4s
+[hyperframes] snapshot: frame 3/121 at 8.3s
+[hyperframes] snapshot: frame 4/121 at 12s
+[hyperframes] snapshot: frame 5/121 at 16.3s
+[hyperframes] snapshot: frame 6/121 at 20s
+[hyperframes] snapshot: frame 7/121 at 24.3s
+[hyperframes] snapshot: frame 8/121 at 28s
+[hyperframes] snapshot: frame 9/121 at 32.3s
+[hyperframes] snapshot: frame 10/121 at 36s
+[hyperframes] snapshot: frame 11/121 at 40.3s
+[hyperframes] snapshot: frame 12/121 at 44s
+[hyperframes] snapshot: frame 13/121 at 48.3s
+[hyperframes] snapshot: frame 14/121 at 52s
+[hyperframes] snapshot: frame 15/121 at 56.3s
+[hyperframes] snapshot: frame 16/121 at 60s
+[hyperframes] snapshot: frame 17/121 at 64.3s
+[hyperframes] snapshot: frame 18/121 at 68s
+[hyperframes] snapshot: frame 19/121 at 72.3s
+[hyperframes] snapshot: frame 20/121 at 76s
+[hyperframes] snapshot: frame 21/121 at 80.3s
+[hyperframes] snapshot: frame 22/121 at 84s
+[hyperframes] snapshot: frame 23/121 at 88.3s
+[hyperframes] snapshot: frame 24/121 at 92s
+[hyperframes] snapshot: frame 25/121 at 96.3s
+[hyperframes] snapshot: frame 26/121 at 100s
+[hyperframes] snapshot: frame 27/121 at 104.3s
+[hyperframes] snapshot: frame 28/121 at 108s
+[hyperframes] snapshot: frame 29/121 at 112.3s
+[hyperframes] snapshot: frame 30/121 at 116s
+[hyperframes] snapshot: frame 31/121 at 120.3s
+[hyperframes] snapshot: frame 32/121 at 124s
+[hyperframes] snapshot: frame 33/121 at 128.3s
+[hyperframes] snapshot: frame 34/121 at 132s
+[hyperframes] snapshot: frame 35/121 at 136.3s
+[hyperframes] snapshot: frame 36/121 at 140s
+[hyperframes] snapshot: frame 37/121 at 7.8s
+[hyperframes] snapshot: frame 38/121 at 7.9s
+[hyperframes] snapshot: frame 39/121 at 8s
+[hyperframes] snapshot: frame 40/121 at 8.1s
+[hyperframes] snapshot: frame 41/121 at 8.2s
+[hyperframes] snapshot: frame 42/121 at 15.8s
+[hyperframes] snapshot: frame 43/121 at 15.9s
+[hyperframes] snapshot: frame 44/121 at 16s
+[hyperframes] snapshot: frame 45/121 at 16.1s
+[hyperframes] snapshot: frame 46/121 at 16.2s
+[hyperframes] snapshot: frame 47/121 at 23.8s
+[hyperframes] snapshot: frame 48/121 at 23.9s
+[hyperframes] snapshot: frame 49/121 at 24s
+[hyperframes] snapshot: frame 50/121 at 24.1s
+[hyperframes] snapshot: frame 51/121 at 24.2s
+[hyperframes] snapshot: frame 52/121 at 31.8s
+[hyperframes] snapshot: frame 53/121 at 31.9s
+[hyperframes] snapshot: frame 54/121 at 32s
+[hyperframes] snapshot: frame 55/121 at 32.1s
+[hyperframes] snapshot: frame 56/121 at 32.2s
+[hyperframes] snapshot: frame 57/121 at 39.8s
+[hyperframes] snapshot: frame 58/121 at 39.9s
+[hyperframes] snapshot: frame 59/121 at 40s
+[hyperframes] snapshot: frame 60/121 at 40.1s
+[hyperframes] snapshot: frame 61/121 at 40.2s
+[hyperframes] snapshot: frame 62/121 at 47.8s
+[hyperframes] snapshot: frame 63/121 at 47.9s
+[hyperframes] snapshot: frame 64/121 at 48s
+[hyperframes] snapshot: frame 65/121 at 48.1s
+[hyperframes] snapshot: frame 66/121 at 48.2s
+[hyperframes] snapshot: frame 67/121 at 55.8s
+[hyperframes] snapshot: frame 68/121 at 55.9s
+[hyperframes] snapshot: frame 69/121 at 56s
+[hyperframes] snapshot: frame 70/121 at 56.1s
+[hyperframes] snapshot: frame 71/121 at 56.2s
+[hyperframes] snapshot: frame 72/121 at 63.8s
+[hyperframes] snapshot: frame 73/121 at 63.9s
+[hyperframes] snapshot: frame 74/121 at 64s
+[hyperframes] snapshot: frame 75/121 at 64.1s
+[hyperframes] snapshot: frame 76/121 at 64.2s
+[hyperframes] snapshot: frame 77/121 at 71.8s
+[hyperframes] snapshot: frame 78/121 at 71.9s
+[hyperframes] snapshot: frame 79/121 at 72s
+[hyperframes] snapshot: frame 80/121 at 72.1s
+[hyperframes] snapshot: frame 81/121 at 72.2s
+[hyperframes] snapshot: frame 82/121 at 79.8s
+[hyperframes] snapshot: frame 83/121 at 79.9s
+[hyperframes] snapshot: frame 84/121 at 80s
+[hyperframes] snapshot: frame 85/121 at 80.1s
+[hyperframes] snapshot: frame 86/121 at 80.2s
+[hyperframes] snapshot: frame 87/121 at 87.8s
+[hyperframes] snapshot: frame 88/121 at 87.9s
+[hyperframes] snapshot: frame 89/121 at 88s
+[hyperframes] snapshot: frame 90/121 at 88.1s
+[hyperframes] snapshot: frame 91/121 at 88.2s
+[hyperframes] snapshot: frame 92/121 at 95.8s
+[hyperframes] snapshot: frame 93/121 at 95.9s
+[hyperframes] snapshot: frame 94/121 at 96s
+[hyperframes] snapshot: frame 95/121 at 96.1s
+[hyperframes] snapshot: frame 96/121 at 96.2s
+[hyperframes] snapshot: frame 97/121 at 103.8s
+[hyperframes] snapshot: frame 98/121 at 103.9s
+[hyperframes] snapshot: frame 99/121 at 104s
+[hyperframes] snapshot: frame 100/121 at 104.1s
+[hyperframes] snapshot: frame 101/121 at 104.2s
+[hyperframes] snapshot: frame 102/121 at 111.8s
+[hyperframes] snapshot: frame 103/121 at 111.9s
+[hyperframes] snapshot: frame 104/121 at 112s
+[hyperframes] snapshot: frame 105/121 at 112.1s
+[hyperframes] snapshot: frame 106/121 at 112.2s
+[hyperframes] snapshot: frame 107/121 at 119.8s
+[hyperframes] snapshot: frame 108/121 at 119.9s
+[hyperframes] snapshot: frame 109/121 at 120s
+[hyperframes] snapshot: frame 110/121 at 120.1s
+[hyperframes] snapshot: frame 111/121 at 120.2s
+[hyperframes] snapshot: frame 112/121 at 127.8s
+[hyperframes] snapshot: frame 113/121 at 127.9s
+[hyperframes] snapshot: frame 114/121 at 128s
+[hyperframes] snapshot: frame 115/121 at 128.1s
+[hyperframes] snapshot: frame 116/121 at 128.2s
+[hyperframes] snapshot: frame 117/121 at 135.8s
+[hyperframes] snapshot: frame 118/121 at 135.9s
+[hyperframes] snapshot: frame 119/121 at 136s
+[hyperframes] snapshot: frame 120/121 at 136.1s
+[hyperframes] snapshot: frame 121/121 at 136.2s
+   Revision: none (inputs-changed)
+   State: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/.hyperframes/video-state.json
+
+◇  121 snapshots saved to /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-01-at-0.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-02-at-4s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-03-at-8.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-04-at-12s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-05-at-16.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-06-at-20s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-07-at-24.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-08-at-28s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-09-at-32.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-10-at-36s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-11-at-40.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-12-at-44s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-13-at-48.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-14-at-52s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-15-at-56.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-16-at-60s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-17-at-64.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-18-at-68s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-19-at-72.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-20-at-76s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-21-at-80.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-22-at-84s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-23-at-88.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-24-at-92s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-25-at-96.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-26-at-100s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-27-at-104.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-28-at-108s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-29-at-112.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-30-at-116s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-31-at-120.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-32-at-124s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-33-at-128.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-34-at-132s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-35-at-136.3s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/beat-36-at-140s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-01-1-at-7.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-01-2-at-7.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-01-3-at-8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-01-4-at-8.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-01-5-at-8.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-02-1-at-15.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-02-2-at-15.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-02-3-at-16s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-02-4-at-16.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-02-5-at-16.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-03-1-at-23.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-03-2-at-23.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-03-3-at-24s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-03-4-at-24.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-03-5-at-24.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-04-1-at-31.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-04-2-at-31.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-04-3-at-32s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-04-4-at-32.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-04-5-at-32.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-05-1-at-39.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-05-2-at-39.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-05-3-at-40s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-05-4-at-40.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-05-5-at-40.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-06-1-at-47.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-06-2-at-47.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-06-3-at-48s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-06-4-at-48.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-06-5-at-48.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-07-1-at-55.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-07-2-at-55.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-07-3-at-56s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-07-4-at-56.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-07-5-at-56.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-08-1-at-63.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-08-2-at-63.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-08-3-at-64s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-08-4-at-64.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-08-5-at-64.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-09-1-at-71.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-09-2-at-71.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-09-3-at-72s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-09-4-at-72.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-09-5-at-72.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-10-1-at-79.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-10-2-at-79.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-10-3-at-80s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-10-4-at-80.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-10-5-at-80.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-11-1-at-87.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-11-2-at-87.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-11-3-at-88s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-11-4-at-88.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-11-5-at-88.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-12-1-at-95.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-12-2-at-95.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-12-3-at-96s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-12-4-at-96.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-12-5-at-96.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-13-1-at-103.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-13-2-at-103.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-13-3-at-104s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-13-4-at-104.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-13-5-at-104.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-14-1-at-111.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-14-2-at-111.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-14-3-at-112s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-14-4-at-112.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-14-5-at-112.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-15-1-at-119.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-15-2-at-119.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-15-3-at-120s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-15-4-at-120.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-15-5-at-120.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-16-1-at-127.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-16-2-at-127.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-16-3-at-128s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-16-4-at-128.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-16-5-at-128.2s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-17-1-at-135.8s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-17-2-at-135.9s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-17-3-at-136s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-17-4-at-136.1s.png
+   /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/seam-17-5-at-136.2s.png
+   Beat sheet (settled frame per scene): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-beats-1.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-beats-2.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-beats-3.jpg
+     0.3s slide-01 · 4s slide-01 mid · 8.3s slide-02 · 12s slide-02 mid · 16.3s slide-03 · 20s slide-03 mid · 24.3s slide-04 · 28s slide-04 mid · 32.3s slide-05 · 36s slide-05 mid · 40.3s slide-06 · 44s slide-06 mid · 48.3s slide-07 · 52s slide-07 mid · 56.3s slide-08 · 60s slide-08 mid · 64.3s slide-09 · 68s slide-09 mid · 72.3s slide-10 · 76s slide-10 mid · 80.3s slide-11 · 84s slide-11 mid · 88.3s slide-12 · 92s slide-12 mid · 96.3s slide-13 · 100s slide-13 mid · 104.3s slide-14 · 108s slide-14 mid · 112.3s slide-15 · 116s slide-15 mid · 120.3s slide-16 · 124s slide-16 mid · 128.3s slide-17 · 132s slide-17 mid · 136.3s slide-18 · 140s slide-18 mid
+   Seam 1 at 8s (slide-01 -> slide-02): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-01.jpg
+   Seam 2 at 16s (slide-02 -> slide-03): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-02.jpg
+   Seam 3 at 24s (slide-03 -> slide-04): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-03.jpg
+   Seam 4 at 32s (slide-04 -> slide-05): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-04.jpg
+   Seam 5 at 40s (slide-05 -> slide-06): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-05.jpg
+   Seam 6 at 48s (slide-06 -> slide-07): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-06.jpg
+   Seam 7 at 56s (slide-07 -> slide-08): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-07.jpg
+   Seam 8 at 64s (slide-08 -> slide-09): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-08.jpg
+   Seam 9 at 72s (slide-09 -> slide-10): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-09.jpg
+   Seam 10 at 80s (slide-10 -> slide-11): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-10.jpg
+   Seam 11 at 88s (slide-11 -> slide-12): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-11.jpg
+   Seam 12 at 96s (slide-12 -> slide-13): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-12.jpg
+   Seam 13 at 104s (slide-13 -> slide-14): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-13.jpg
+   Seam 14 at 112s (slide-14 -> slide-15): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-14.jpg
+   Seam 15 at 120s (slide-15 -> slide-16): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-15.jpg
+   Seam 16 at 128s (slide-16 -> slide-17): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-16.jpg
+   Seam 17 at 136s (slide-17 -> slide-18): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-seam-17.jpg
+   Phone sheet (beats at 360 px wide): /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-phone-1.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-phone-2.jpg, /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/videos/kujo-investor-slideshow/qa/snapshots/review-phone-3.jpg
