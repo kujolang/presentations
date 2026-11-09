@@ -86,10 +86,13 @@
     busy = true;
     document.documentElement.dataset.transitioning = 'true';
     enhance();
-    const url = new URL(href, location.href);
+    let url = new URL(href, location.href);
     try {
       const response = await fetch(url, { signal: AbortSignal.timeout(8000) });
       if (!response.ok) throw new Error('Navigation failed');
+      // Publication routes may redirect (for example slide one to the root).
+      // Resolve resources and browser history against the actual document URL.
+      url = new URL(response.url);
       const next = new DOMParser().parseFromString(await response.text(), 'text/html');
       const main = next.querySelector('.p-viewer');
       if (!main) { location.assign(url); return; }
