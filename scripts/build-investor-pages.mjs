@@ -1,3 +1,4 @@
+import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {cp,mkdir,rm,writeFile,readFile,readdir} from 'node:fs/promises';
 const origin='https://invest.kujolang.ai';
@@ -5,6 +6,9 @@ execFileSync(process.execPath,['scripts/deck.mjs','build','--deck','decks/kujo-i
 const dir='.build/investor-pages';await rm(dir,{recursive:true,force:true});await mkdir(dir,{recursive:true});await cp('output/kujo-investor',dir,{recursive:true});
 // Publication adapter: preserve the native renderer, slide markup and viewer.
 // The audience entry point is slide one; overview remains a separate edition.
+const publicCSS=await readFile(`${dir}/assets/deck/public-view.css`);
+const publicStyle=`public-view.${createHash('sha256').update(publicCSS).digest('hex').slice(0,12)}.css`;
+await writeFile(`${dir}/assets/deck/${publicStyle}`,publicCSS);
 const overview=await readFile(`${dir}/index.html`,'utf8');
 await mkdir(`${dir}/overview`,{recursive:true});await writeFile(`${dir}/overview/index.html`,overview);
 await writeFile(`${dir}/index.html`,await readFile(`${dir}/1/index.html`,'utf8'));
@@ -23,7 +27,7 @@ async function walk(folder){for(const e of await readdir(folder,{withFileTypes:t
  if(isRoot)html=html.replaceAll(origin+'/1/',origin+'/');
  if(isOverview){html=html.replaceAll(origin+'/',origin+'/overview/');html=html.replace('<title>','<title>Overview — ');}
  if(html.includes('class="p-viewer"')){
-  html=html.replace('<body>','<body class="ki-public-view">').replace('</head>','<link rel="stylesheet" href="/assets/deck/public-view.css"></head>');
+  html=html.replace('<body>','<body class="ki-public-view">').replace('</head>',`<link rel="stylesheet" href="/assets/deck/${publicStyle}"></head>`);
   html=html.replace(/<nav class="p-nav sk-cluster"[\s\S]*?<\/nav>/,nav=>{
    const previous=nav.match(/<a[^>]*data-nav="previous"[^>]*>[\s\S]*?<\/a>/)?.[0];
    const next=nav.match(/<a[^>]*data-nav="next"[^>]*>[\s\S]*?<\/a>/)?.[0];
