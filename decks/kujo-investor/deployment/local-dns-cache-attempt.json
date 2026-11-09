@@ -1,0 +1,649 @@
+{
+  "base": "https://invest.kujolang.ai",
+  "dnsOverride": null,
+  "pass": false,
+  "checks": [
+    {
+      "path": "/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/404.html",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/robots.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/reading/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/presenter/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/18/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/9/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/11/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/7/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/16/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/6/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/17/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/1/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/10/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/8/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/print/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/css/fonts.css",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/sitekit-manifest.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/LICENSE",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/sitekit.css",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/README.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/sitekit.js",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/icons/README.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/icons/tabler.svg",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/icons/LICENSE.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/fonts/DepartureMono-Regular.woff2",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/fonts/DepartureMono-Regular.woff",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/sitekit/fonts/DepartureMono-LICENSE.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/fonts/bree-serif-latin-400.woff2",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/fonts/inter-latin-400.woff2",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/fonts/inter-latin-700.woff2",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/presentation.css",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/presenter.js",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/viewer.js",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/motion-presets.js",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/favicon.svg",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/licenses/Inter-OFL.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/licenses/BreeSerif-OFL.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/motion/LICENSE.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/motion/LICENSE-framer-motion.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/motion/README.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/motion/motion-mini.js",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/icons/README.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/icons/tabler.svg",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/presentation/icons/LICENSE.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/theme.css",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/kujo-logomark.svg",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/appendix.js",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/DepartureMono-Regular.woff2",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/assumptions.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence-paths.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/appendix.html",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/appendix.css",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/test.mjs",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/ownership.mjs",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/commands.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/manifest.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/REQUEST.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/DECISION.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/environment.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/change.patch",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/last_run.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/summary.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/history.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/evaluation-result.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/eval-report.md.cache.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/artifact-manifest.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/last_failures.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/cli-summary.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/eval-report.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/badge.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/git-diff-stat.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/case.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/stderr.log",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/git-recent-commits.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/git-status.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/stdout.log",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/combined.log",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/reproduction.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/environment.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/handoff.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/case.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/command.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/git-diff-stat.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/case.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/stderr.log",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/git-recent-commits.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/git-status.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/stdout.log",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/combined.log",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/reproduction.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/environment.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/handoff.md",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/case.json",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/command.txt",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/4/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/15/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/3/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/12/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/2/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/13/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/5/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    },
+    {
+      "path": "/14/",
+      "status": 0,
+      "bytes": 0,
+      "type": ""
+    }
+  ],
+  "missingRoute": {
+    "path": "/no-such-investor-slide-qa/",
+    "status": 0,
+    "bytes": 0,
+    "type": ""
+  }
+}

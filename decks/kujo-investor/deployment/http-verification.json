@@ -1,0 +1,649 @@
+{
+  "base": "https://invest.kujolang.ai",
+  "dnsOverride": "invest.kujolang.ai:443:104.21.61.127",
+  "pass": true,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 26726,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/404.html",
+      "status": 200,
+      "bytes": 1381,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 1140,
+      "type": "application/xml"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 2748,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "bytes": 253,
+      "type": "image/svg+xml"
+    },
+    {
+      "path": "/reading/",
+      "status": 200,
+      "bytes": 15979,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/presenter/",
+      "status": 200,
+      "bytes": 2773,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/18/",
+      "status": 200,
+      "bytes": 5024,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/9/",
+      "status": 200,
+      "bytes": 5604,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/11/",
+      "status": 200,
+      "bytes": 5606,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/7/",
+      "status": 200,
+      "bytes": 5554,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/16/",
+      "status": 200,
+      "bytes": 5708,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/6/",
+      "status": 200,
+      "bytes": 5610,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/17/",
+      "status": 200,
+      "bytes": 5539,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/1/",
+      "status": 200,
+      "bytes": 4985,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/10/",
+      "status": 200,
+      "bytes": 5616,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/8/",
+      "status": 200,
+      "bytes": 5891,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/print/",
+      "status": 200,
+      "bytes": 24537,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/assets/css/fonts.css",
+      "status": 200,
+      "bytes": 936,
+      "type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/assets/sitekit/sitekit-manifest.json",
+      "status": 200,
+      "bytes": 1170,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/sitekit/LICENSE",
+      "status": 200,
+      "bytes": 1077,
+      "type": "application/octet-stream"
+    },
+    {
+      "path": "/assets/sitekit/sitekit.css",
+      "status": 200,
+      "bytes": 127533,
+      "type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/assets/sitekit/README.md",
+      "status": 200,
+      "bytes": 675,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/sitekit/sitekit.js",
+      "status": 200,
+      "bytes": 40406,
+      "type": "application/javascript"
+    },
+    {
+      "path": "/assets/sitekit/icons/README.md",
+      "status": 200,
+      "bytes": 736,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/sitekit/icons/tabler.svg",
+      "status": 200,
+      "bytes": 4135,
+      "type": "image/svg+xml"
+    },
+    {
+      "path": "/assets/sitekit/icons/LICENSE.txt",
+      "status": 200,
+      "bytes": 1073,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/sitekit/fonts/DepartureMono-Regular.woff2",
+      "status": 200,
+      "bytes": 22496,
+      "type": "font/woff2"
+    },
+    {
+      "path": "/assets/sitekit/fonts/DepartureMono-Regular.woff",
+      "status": 200,
+      "bytes": 25256,
+      "type": "font/woff"
+    },
+    {
+      "path": "/assets/sitekit/fonts/DepartureMono-LICENSE.txt",
+      "status": 200,
+      "bytes": 4357,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/fonts/bree-serif-latin-400.woff2",
+      "status": 200,
+      "bytes": 10348,
+      "type": "font/woff2"
+    },
+    {
+      "path": "/assets/fonts/inter-latin-400.woff2",
+      "status": 200,
+      "bytes": 111268,
+      "type": "font/woff2"
+    },
+    {
+      "path": "/assets/fonts/inter-latin-700.woff2",
+      "status": 200,
+      "bytes": 114840,
+      "type": "font/woff2"
+    },
+    {
+      "path": "/assets/presentation/presentation.css",
+      "status": 200,
+      "bytes": 17110,
+      "type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/assets/presentation/presenter.js",
+      "status": 200,
+      "bytes": 3634,
+      "type": "application/javascript"
+    },
+    {
+      "path": "/assets/presentation/viewer.js",
+      "status": 200,
+      "bytes": 11827,
+      "type": "application/javascript"
+    },
+    {
+      "path": "/assets/presentation/motion-presets.js",
+      "status": 200,
+      "bytes": 3969,
+      "type": "application/javascript"
+    },
+    {
+      "path": "/assets/presentation/favicon.svg",
+      "status": 200,
+      "bytes": 90,
+      "type": "image/svg+xml"
+    },
+    {
+      "path": "/assets/presentation/licenses/Inter-OFL.txt",
+      "status": 200,
+      "bytes": 4377,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/presentation/licenses/BreeSerif-OFL.txt",
+      "status": 200,
+      "bytes": 4411,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/presentation/motion/LICENSE.md",
+      "status": 200,
+      "bytes": 1100,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/presentation/motion/LICENSE-framer-motion.md",
+      "status": 200,
+      "bytes": 1078,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/presentation/motion/README.md",
+      "status": 200,
+      "bytes": 785,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/presentation/motion/motion-mini.js",
+      "status": 200,
+      "bytes": 9811,
+      "type": "application/javascript"
+    },
+    {
+      "path": "/assets/presentation/icons/README.md",
+      "status": 200,
+      "bytes": 527,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/presentation/icons/tabler.svg",
+      "status": 200,
+      "bytes": 260,
+      "type": "image/svg+xml"
+    },
+    {
+      "path": "/assets/presentation/icons/LICENSE.txt",
+      "status": 200,
+      "bytes": 1073,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/theme.css",
+      "status": 200,
+      "bytes": 8887,
+      "type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/kujo-logomark.svg",
+      "status": 200,
+      "bytes": 895,
+      "type": "image/svg+xml"
+    },
+    {
+      "path": "/assets/deck/appendix.js",
+      "status": 200,
+      "bytes": 2845,
+      "type": "application/javascript"
+    },
+    {
+      "path": "/assets/deck/DepartureMono-Regular.woff2",
+      "status": 200,
+      "bytes": 22496,
+      "type": "font/woff2"
+    },
+    {
+      "path": "/assets/deck/assumptions.json",
+      "status": 200,
+      "bytes": 1054,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence-paths.json",
+      "status": 200,
+      "bytes": 281,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/appendix.html",
+      "status": 200,
+      "bytes": 26691,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/appendix.css",
+      "status": 200,
+      "bytes": 2660,
+      "type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/test.mjs",
+      "status": 200,
+      "bytes": 220,
+      "type": "application/javascript"
+    },
+    {
+      "path": "/assets/deck/evidence/ownership.mjs",
+      "status": 200,
+      "bytes": 80,
+      "type": "application/javascript"
+    },
+    {
+      "path": "/assets/deck/evidence/commands.json",
+      "status": 200,
+      "bytes": 3103,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/manifest.json",
+      "status": 200,
+      "bytes": 4606,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/REQUEST.md",
+      "status": 200,
+      "bytes": 521,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/DECISION.md",
+      "status": 200,
+      "bytes": 314,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/eval.json",
+      "status": 200,
+      "bytes": 467,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/environment.json",
+      "status": 200,
+      "bytes": 193,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/change.patch",
+      "status": 200,
+      "bytes": 297,
+      "type": "application/octet-stream"
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/last_run.json",
+      "status": 200,
+      "bytes": 1220,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/summary.json",
+      "status": 200,
+      "bytes": 214,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/history.json",
+      "status": 200,
+      "bytes": 103,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/evaluation-result.json",
+      "status": 200,
+      "bytes": 1834,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/eval-report.md.cache.json",
+      "status": 200,
+      "bytes": 462,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/artifact-manifest.json",
+      "status": 200,
+      "bytes": 716,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/last_failures.json",
+      "status": 200,
+      "bytes": 2,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/cli-summary.json",
+      "status": 200,
+      "bytes": 471,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/eval-report.md",
+      "status": 200,
+      "bytes": 852,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/badge.json",
+      "status": 200,
+      "bytes": 74,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/git-diff-stat.txt",
+      "status": 200,
+      "bytes": 69,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/case.md",
+      "status": 200,
+      "bytes": 1469,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/stderr.log",
+      "status": 200,
+      "bytes": 0,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/git-recent-commits.txt",
+      "status": 200,
+      "bytes": 33,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/git-status.txt",
+      "status": 200,
+      "bytes": 31,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/stdout.log",
+      "status": 200,
+      "bytes": 50,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/combined.log",
+      "status": 200,
+      "bytes": 50,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/reproduction.md",
+      "status": 200,
+      "bytes": 251,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/environment.json",
+      "status": 200,
+      "bytes": 571,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/handoff.md",
+      "status": 200,
+      "bytes": 517,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/case.json",
+      "status": 200,
+      "bytes": 1946,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/command.txt",
+      "status": 200,
+      "bytes": 13,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/git-diff-stat.txt",
+      "status": 200,
+      "bytes": 0,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/case.md",
+      "status": 200,
+      "bytes": 1383,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/stderr.log",
+      "status": 200,
+      "bytes": 664,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/git-recent-commits.txt",
+      "status": 200,
+      "bytes": 33,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/git-status.txt",
+      "status": 200,
+      "bytes": 0,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/stdout.log",
+      "status": 200,
+      "bytes": 0,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/combined.log",
+      "status": 200,
+      "bytes": 664,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/reproduction.md",
+      "status": 200,
+      "bytes": 251,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/environment.json",
+      "status": 200,
+      "bytes": 571,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/handoff.md",
+      "status": 200,
+      "bytes": 474,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/case.json",
+      "status": 200,
+      "bytes": 1862,
+      "type": "application/json"
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/command.txt",
+      "status": 200,
+      "bytes": 13,
+      "type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/4/",
+      "status": 200,
+      "bytes": 5257,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/15/",
+      "status": 200,
+      "bytes": 5578,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/3/",
+      "status": 200,
+      "bytes": 5369,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/12/",
+      "status": 200,
+      "bytes": 5446,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/2/",
+      "status": 200,
+      "bytes": 5626,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/13/",
+      "status": 200,
+      "bytes": 5756,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/5/",
+      "status": 200,
+      "bytes": 6128,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/14/",
+      "status": 200,
+      "bytes": 5632,
+      "type": "text/html; charset=utf-8"
+    }
+  ],
+  "missingRoute": {
+    "path": "/no-such-investor-slide-qa/",
+    "status": 404,
+    "bytes": 1381,
+    "type": "text/html; charset=utf-8"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "result": {
+    "id": "276b6e54-f795-4f00-a621-60c6714577ec",
+    "domain_id": "276b6e54-f795-4f00-a621-60c6714577ec",
+    "name": "invest.kujolang.ai",
+    "status": "active",
+    "verification_data": {
+      "status": "active"
+    },
+    "validation_data": {
+      "status": "active",
+      "method": "http"
+    },
+    "certificate_authority": "google",
+    "zone_tag": "5fc366de746779beb8fdfc0377dcf1ea",
+    "created_on": "2026-11-09T15:18:54.173161Z"
+  },
+  "success": true,
+  "errors": [],
+  "messages": []
+}
