@@ -1,0 +1,1 @@
+Accept this one-line correction for the three retained tests. CaseFile records execution; Eval runs the configured test gate. RunLedger is only a session receipt. No production release or efficiency claim.

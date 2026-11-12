@@ -1,0 +1,8 @@
+test_below_threshold (test_checkout.CheckoutTests) ... ok
+test_discount_keeps_free_shipping (test_checkout.CheckoutTests) ... ok
+test_full_price_threshold (test_checkout.CheckoutTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

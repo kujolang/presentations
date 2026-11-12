@@ -1,0 +1,16 @@
+test_below_threshold (test_checkout.CheckoutTests) ... ok
+test_discount_keeps_free_shipping (test_checkout.CheckoutTests) ... FAIL
+test_full_price_threshold (test_checkout.CheckoutTests) ... ok
+
+======================================================================
+FAIL: test_discount_keeps_free_shipping (test_checkout.CheckoutTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-checkout-qyoywb2j/test_checkout.py", line 13, in test_discount_keeps_free_shipping
+    self.assertEqual(total(5000, 10), 4500)
+AssertionError: 5099 != 4500
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)

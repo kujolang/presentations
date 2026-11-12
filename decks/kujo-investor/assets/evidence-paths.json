@@ -1,8 +1,8 @@
 {
-  "request": "evidence/REQUEST.md",
-  "diff": "evidence/change.patch",
-  "before": "evidence/casefile/2026-11-09-091944-before/case.json",
-  "after": "evidence/casefile/2026-11-09-091948-after/case.json",
-  "eval": "evidence/commands.json",
-  "decision": "evidence/DECISION.md"
+  "request": "checkout-evidence/REQUEST.md",
+  "diff": "checkout-evidence/change.patch",
+  "before": "checkout-evidence/casefile/2026-11-11-205536-before/case.json",
+  "after": "checkout-evidence/casefile/2026-11-11-205547-after/case.json",
+  "eval": "checkout-evidence/commands.json",
+  "decision": "checkout-evidence/DECISION.md"
 }

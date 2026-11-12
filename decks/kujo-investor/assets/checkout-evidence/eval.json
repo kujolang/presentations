@@ -1,0 +1,14 @@
+{
+  "name": "checkout-regression",
+  "version": "1.0.0",
+  "output_dir": "eval-results",
+  "tests": [
+    {
+      "name": "unchanged checkout tests",
+      "check": "command_succeeds",
+      "params": {
+        "command": "python3 -m unittest -v"
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "case": {
+    "created_at": 1794448545796,
+    "id": "2026-11-11-205536-before",
+    "mode": "command",
+    "name": "before",
+    "path": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-checkout-qyoywb2j/.casefile/2026-11-11-205536-before"
+  },
+  "classification": {
+    "keywords": [
+      "error",
+      "failed",
+      "failure",
+      "traceback",
+      "assertion"
+    ],
+    "severity": "medium",
+    "signals": [
+      "command-exit-nonzero",
+      "failure-keywords-detected",
+      "source-files-changed"
+    ],
+    "status": "failed"
+  },
+  "command": {
+    "argv": [
+      "python3",
+      "-m",
+      "unittest",
+      "-v"
+    ],
+    "display": "python3 -m unittest -v",
+    "duration_ms": 174,
+    "exit_code": 1
+  },
+  "environment": {
+    "arch": "x86_64",
+    "ci": null,
+    "composer": "Composer version 2.6-dev+c7bbd606216d2a5ceea93e6a536c39f6636a1f90 (2.6-dev) 2023-06-21 11:58:42",
+    "cwd": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-checkout-qyoywb2j",
+    "go": "go version go1.27.3 darwin/amd64",
+    "node": "v26.12.1",
+    "npm": "11.20.0",
+    "os": "Darwin",
+    "package_manager": null,
+    "php": "PHP 8.4.7 (cli) (built: May  6 2025 12:31:58) (NTS)",
+    "pnpm": "11.25.0",
+    "pytest": "pytest 8.4.1",
+    "python": "Python 3.10.5",
+    "shell": "zsh",
+    "yarn": null
+  },
+  "logs": {
+    "combined": "combined.log",
+    "stderr": "stderr.log",
+    "stdout": "stdout.log",
+    "truncated": false
+  },
+  "recommendations": {
+    "next_checks": [
+      "Re-run the captured command: python3 -m unittest -v",
+      "Review changed files listed in git-diff-stat.txt and case.md"
+    ]
+  },
+  "repository": {
+    "branch": "main",
+    "changed_files": [
+      {
+        "path": "__pycache__/",
+        "status": "??"
+      }
+    ],
+    "head": "579cde15300340924084d654a7cb0ffe11056f70",
+    "is_git_repo": true,
+    "root": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-checkout-qyoywb2j"
+  },
+  "security": {
+    "redaction_count": 0,
+    "redaction_enabled": true
+  },
+  "version": "1.0.2"
+}

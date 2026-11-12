@@ -8,7 +8,7 @@
     {
       "id": "slide-01",
       "title": "Trust at the speed of AI.",
-      "tagline": "Programming language and accountability infrastructure.",
+      "tagline": "Kujo makes agent-driven engineering work inspectable, repeatable and accountable across existing workflows.",
       "label": "Investor briefing / 01",
       "url": "invest.kujolang.ai/",
       "caption": "Trust at the speed of AI.",
@@ -16,12 +16,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Trust at the speed of AI.. Programming language and accountability infrastructure."
+      "alt": "Trust at the speed of AI. Kujo makes agent-driven engineering work inspectable, repeatable and accountable across existing workflows."
     },
     {
       "id": "slide-02",
-      "title": "The accountability problem",
-      "tagline": "Software production is outpacing verification.",
+      "title": "Software production is outpacing verification.",
+      "tagline": "Agents can report completion. Teams still need a reviewable chain from requested work to release decision.",
       "label": "Investor briefing / 02",
       "url": "invest.kujolang.ai/2/",
       "caption": "Software production is outpacing verification.",
@@ -29,12 +29,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 The accountability problem. Software production is outpacing verification."
+      "alt": "Software production is outpacing verification. Agents can report completion. Teams still need a reviewable chain from requested work to release decision."
     },
     {
       "id": "slide-03",
-      "title": "Structural shift",
-      "tagline": "Greater autonomy requires stronger accountability.",
+      "title": "Agents now work across the repository.",
+      "tagline": "GitHub documents agents that plan changes, edit code and review pull requests. More delegated work makes the execution record part of t",
       "label": "Investor briefing / 03",
       "url": "invest.kujolang.ai/3/",
       "caption": "Greater autonomy requires stronger accountability.",
@@ -42,12 +42,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Structural shift. Greater autonomy requires stronger accountability."
+      "alt": "Agents now work across the repository. GitHub documents agents that plan changes, edit code and review pull requests. More delegated work makes the execution record part of the review."
     },
     {
       "id": "slide-04",
-      "title": "Why now",
-      "tagline": "AI use is broad. Trust remains conditional.",
+      "title": "A passing summary can hide a failed checkout.",
+      "tagline": "A coupon changes a $50 cart to $50.99 instead of $45. The reviewer needs the failing test, exact change and unchanged checks.",
       "label": "Investor briefing / 04",
       "url": "invest.kujolang.ai/4/",
       "caption": "AI use is broad. Trust remains conditional.",
@@ -55,12 +55,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Why now. AI use is broad. Trust remains conditional."
+      "alt": "A passing summary can hide a failed checkout. A coupon changes a $50 cart to $50.99 instead of $45. The reviewer needs the failing test, exact change and unchanged checks."
     },
     {
       "id": "slide-05",
-      "title": "The Kujo system",
-      "tagline": "Build with clarity. Operate with control.",
+      "title": "Build with clarity. Operate with control.",
+      "tagline": "The language is the long-term foundation. Existing tools offer an earlier route into engineering workflows.",
       "label": "Investor briefing / 05",
       "url": "invest.kujolang.ai/5/",
       "caption": "Build with clarity. Operate with control.",
@@ -68,12 +68,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 The Kujo system. Build with clarity. Operate with control."
+      "alt": "Build with clarity. Operate with control. The language is the long-term foundation. Existing tools offer an earlier route into engineering workflows."
     },
     {
       "id": "slide-06",
-      "title": "Lifecycle",
-      "tagline": "Accountability spans the whole task.",
+      "title": "Accountability spans the whole task.",
+      "tagline": "Each component owns a specific responsibility. A reviewable workflow composes their artifacts explicitly.",
       "label": "Investor briefing / 06",
       "url": "invest.kujolang.ai/6/",
       "caption": "Accountability spans the whole task.",
@@ -81,12 +81,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Lifecycle. Accountability spans the whole task."
+      "alt": "Accountability spans the whole task. Each component owns a specific responsibility. A reviewable workflow composes their artifacts explicitly."
     },
     {
       "id": "slide-07",
-      "title": "Engineering proof",
-      "tagline": "The foundation is already being built.",
+      "title": "A working foundation precedes this raise.",
+      "tagline": "The language, execution tools and integration adapters are inspectable in public source.",
       "label": "Investor briefing / 07",
       "url": "invest.kujolang.ai/7/",
       "caption": "The foundation is already being built.",
@@ -94,12 +94,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Engineering proof. The foundation is already being built."
+      "alt": "A working foundation precedes this raise. The language, execution tools and integration adapters are inspectable in public source."
     },
     {
       "id": "slide-08",
-      "title": "Recorded demonstration",
-      "tagline": "A claim becomes inspectable evidence.",
+      "title": "Keep the failure. Verify the correction.",
+      "tagline": "A reproducible checkout regression: a coupon must preserve free shipping. The original tests fail, a one-line correction passes them.",
       "label": "Investor briefing / 08",
       "url": "invest.kujolang.ai/8/",
       "caption": "A claim becomes inspectable evidence.",
@@ -107,12 +107,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Recorded demonstration. A claim becomes inspectable evidence."
+      "alt": "Keep the failure. Verify the correction. A reproducible checkout regression: a coupon must preserve free shipping. The original tests fail, a one-line correction passes them."
     },
     {
       "id": "slide-09",
-      "title": "Adoption without migration",
-      "tagline": "Adopt the ecosystem before the language.",
+      "title": "Adopt the ecosystem before the language.",
+      "tagline": "Keep application code in its existing language. Introduce accountability at the workflow boundary.",
       "label": "Investor briefing / 09",
       "url": "invest.kujolang.ai/9/",
       "caption": "Adopt the ecosystem before the language.",
@@ -120,12 +120,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Adoption without migration. Adopt the ecosystem before the language."
+      "alt": "Adopt the ecosystem before the language. Keep application code in its existing language. Introduce accountability at the workflow boundary."
     },
     {
       "id": "slide-10",
-      "title": "Initial customer",
-      "tagline": "Start with teams already delegating engineering work.",
+      "title": "Start with the platform engineering lead.",
+      "tagline": "Initial buyer hypothesis: a team operating coding agents across repositories and reconstructing failures during review.",
       "label": "Investor briefing / 10",
       "url": "invest.kujolang.ai/10/",
       "caption": "Start with teams already delegating engineering work.",
@@ -133,12 +133,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Initial customer. Start with teams already delegating engineering work."
+      "alt": "Start with the platform engineering lead. Initial buyer hypothesis: a team operating coding agents across repositories and reconstructing failures during review."
     },
     {
       "id": "slide-11",
-      "title": "Business model",
-      "tagline": "Open tooling can lead to a commercial operating layer.",
+      "title": "Open tools today. A team service to validate.",
+      "tagline": "Primary paid wedge: shared agent-run evidence and review for engineering teams. Application code stays in its existing language.",
       "label": "Investor briefing / 11",
       "url": "invest.kujolang.ai/11/",
       "caption": "Open tooling can lead to a commercial operating layer.",
@@ -146,12 +146,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Business model. Open tooling can lead to a commercial operating layer."
+      "alt": "Open tools today. A team service to validate. Primary paid wedge: shared agent-run evidence and review for engineering teams. Application code stays in its existing language."
     },
     {
       "id": "slide-12",
-      "title": "Market model",
-      "tagline": "A focused entry market can support a meaningful business.",
+      "title": "One team subscription. Explicit revenue milestones.",
+      "tagline": "Base pricing hypothesis: $500 per team per month. Customer counts below are scenarios, not forecasts or achieved revenue.",
       "label": "Investor briefing / 12",
       "url": "invest.kujolang.ai/12/",
       "caption": "A focused entry market can support a meaningful business.",
@@ -159,12 +159,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Market model. A focused entry market can support a meaningful business."
+      "alt": "One team subscription. Explicit revenue milestones. Base pricing hypothesis: $500 per team per month. Customer counts below are scenarios, not forecasts or achieved revenue."
     },
     {
       "id": "slide-13",
-      "title": "Position and defensibility",
-      "tagline": "Accountability requires more than generating code.",
+      "title": "Portable evidence across existing workflows.",
+      "tagline": "GitHub integrates agents and review. LangGraph persists workflow state. Kujo composes local execution artifacts with explicit evaluatio",
       "label": "Investor briefing / 13",
       "url": "invest.kujolang.ai/13/",
       "caption": "Accountability requires more than generating code.",
@@ -172,12 +172,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Position and defensibility. Accountability requires more than generating code."
+      "alt": "Portable evidence across existing workflows. GitHub integrates agents and review. LangGraph persists workflow state. Kujo composes local execution artifacts with explicit evaluation."
     },
     {
       "id": "slide-14",
-      "title": "Distribution",
-      "tagline": "Meet developers inside their existing workflows.",
+      "title": "Turn a first evidence run into a retained team.",
+      "tagline": "Integration-led distribution: one useful repository workflow, then a buyer conversation about shared review.",
       "label": "Investor briefing / 14",
       "url": "invest.kujolang.ai/14/",
       "caption": "Meet developers inside their existing workflows.",
@@ -185,12 +185,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Distribution. Meet developers inside their existing workflows."
+      "alt": "Turn a first evidence run into a retained team. Integration-led distribution: one useful repository workflow, then a buyer conversation about shared review."
     },
     {
       "id": "slide-15",
-      "title": "Momentum",
-      "tagline": "Execution is visible. Demand still needs proof.",
+      "title": "Public engineering and distribution are visible.",
+      "tagline": "Technical momentum is independently inspectable. Commercial validation is the next milestone.",
       "label": "Investor briefing / 15",
       "url": "invest.kujolang.ai/15/",
       "caption": "Execution is visible. Demand still needs proof.",
@@ -198,12 +198,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Momentum. Execution is visible. Demand still needs proof."
+      "alt": "Public engineering and distribution are visible. Technical momentum is independently inspectable. Commercial validation is the next milestone."
     },
     {
       "id": "slide-16",
-      "title": "Founder and team",
-      "tagline": "Built through sustained open-source engineering.",
+      "title": "A founder with a public shipping record.",
+      "tagline": "Robert DeVore builds commercial web software and the Kujo language ecosystem.",
       "label": "Investor briefing / 16",
       "url": "invest.kujolang.ai/16/",
       "caption": "Built through sustained open-source engineering.",
@@ -211,12 +211,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Founder and team. Built through sustained open-source engineering."
+      "alt": "A founder with a public shipping record. Robert DeVore builds commercial web software and the Kujo language ecosystem."
     },
     {
       "id": "slide-17",
-      "title": "Investment and milestones",
-      "tagline": "Capital turns a technical foundation into an adopted platform.",
+      "title": "Fund commercialization with staged commitments.",
+      "tagline": "Proposed $6M raise: a 24-month operating plan with $900K reserve. Release hiring against validation, paid pilots and retention.",
       "label": "Investor briefing / 17",
       "url": "invest.kujolang.ai/17/",
       "caption": "Capital turns a technical foundation into an adopted platform.",
@@ -224,12 +224,12 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Investment and milestones. Capital turns a technical foundation into an adopted platform."
+      "alt": "Fund commercialization with staged commitments. Proposed $6M raise: a 24-month operating plan with $900K reserve. Release hiring against validation, paid pilots and retention."
     },
     {
       "id": "slide-18",
-      "title": "The vision",
-      "tagline": "Agents will build more software.",
+      "title": "Discuss the raise. Inspect the evidence.",
+      "tagline": "Proposed $6M financing conversation. Start with a technical diligence walkthrough and the team-service thesis.",
       "label": "Investor briefing / 18",
       "url": "invest.kujolang.ai/18/",
       "caption": "Agents will build more software.",
@@ -237,7 +237,7 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 The vision. Agents will build more software."
+      "alt": "Discuss the raise. Inspect the evidence. Proposed $6M financing conversation. Start with a technical diligence walkthrough and the team-service thesis."
     },
     {
       "id": "overview",
@@ -249,7 +249,7 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Investor overview. 18 slides. Trust at the speed of AI."
+      "alt": "KUJO — Investor overview. 18 slides. Trust at the speed of AI."
     },
     {
       "id": "reading",
@@ -261,7 +261,7 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Read the briefing. The complete Kujo investor presentation."
+      "alt": "KUJO — Read the briefing. The complete Kujo investor presentation."
     },
     {
       "id": "print",
@@ -273,7 +273,7 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Print the briefing. The Kujo investor presentation, ready to print."
+      "alt": "KUJO — Print the briefing. The Kujo investor presentation, ready to print."
     },
     {
       "id": "presenter",
@@ -285,7 +285,7 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Presenter console. Present the Kujo investor briefing."
+      "alt": "KUJO — Presenter console. Present the Kujo investor briefing."
     },
     {
       "id": "appendix",
@@ -297,7 +297,7 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 Investor appendix. Technical scope, execution artifacts and editable assumptions."
+      "alt": "KUJO — Investor appendix. Technical scope, execution artifacts and editable assumptions."
     },
     {
       "id": "not-found",
@@ -309,7 +309,7 @@
       "variant": "social",
       "font_file": "assets/DepartureMono-Regular.woff2",
       "background_image": "social/background.svg",
-      "alt": "KUJO \u2014 KUJO. Trust at the speed of AI."
+      "alt": "KUJO — KUJO. Trust at the speed of AI."
     }
   ]
 }

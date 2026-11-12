@@ -1,0 +1,172 @@
+# Evidence register
+
+As-of 2026-11-11 local; HTTP and execution receipts carry exact UTC timestamps, sometimes 2026-11-12. Source pins and worktree dirty flags: evidence/source-provenance.json. Existing T01–T14 pinned snapshots remain in decks/kujo-investor/research/. VERIFIED means the stated scope only.
+
+| Claim | Exact wording proposed | Evidence/source | As-of date | Status | Confidence | Publicly defensible? | Slide | Action / limit |
+|---|---|---|---|---|---|---|---|---|
+| T01 | VM-first bytecode runtime, compiler and CLI | https://github.com/kujolang/kujo/blob/7a13207019a51e61d3db448bc13f59d5b0e332e5/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | No complete language safety or live-provider certification claim. |
+| T02 | Persisted workflow state, approval gates, retries and recovery | https://github.com/kujolang/dispatch/blob/18b5c737a73904ae942f0bd1c3baa1f77c2bfb40/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Trusted local host; effect assurance beta and participant interoperability alpha are experimental. |
+| T03 | Disposable Git workspace, Docker/Podman resource bounds, declared exports, receipt verification | https://github.com/kujolang/workcell/blob/189d7ab6e975301a0e5100b65e8ad3fe4a584573/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Requires pinned runtime and supported host; no compromised-host protection. Remote adapters alpha, not certified here. |
+| T04 | Deterministic checks and machine-readable evaluation results | https://github.com/kujolang/eval/blob/c1b263a10702c2fa8ab61ed507029a6bfec2e03d/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Only configured checks; no proof of semantic correctness or independent attestation. |
+| T05 | Task contracts and acceptance criteria | https://github.com/kujolang/spec/blob/36da0d7216587809e32dedb91dee3cf4b9e50af1/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | A contract does not enforce all runtime boundaries. |
+| T06 | Local JSON run receipts, supplied commands/results and Git facts | https://github.com/kujolang/runledger/blob/ab0ec5d2edb7ffd913f48d092aa6fc17cab58d13/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Does not execute or independently prove recorded tests. |
+| T07 | Explicit release-readiness scans and CI gates | https://github.com/kujolang/shipcheck/blob/7eedd9e02d8730d65e06e16f4984d909d23539bc/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Not release certification; a human decides to ship. |
+| T08 | Capture executed command output and exit code into debugging bundles | https://github.com/kujolang/casefile/blob/92e1d9bee2faaba322476e82dcea7510850885e0/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Trusted local host, bounded/redacted logs; successful capture can contain failed command. |
+| T09 | OpenAI-compatible proxy and local telemetry database/dashboard | https://github.com/kujolang/watchdog/blob/7a0bd9a63d68421831ed66d6eed29805c48e1b24/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Estimated costs are not invoices. Authentication/TLS/retention are deployment responsibilities. |
+| T10 | Kujo package manifests, resolution and installation | https://github.com/kujolang/kennel/blob/6e2fc20560037970df5202e1b1ca8f61c3395570/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Package distribution is not adoption evidence. |
+| T11 | Kujo MCP server framework and guarded repo scaffolding | https://github.com/kujolang/mcp/blob/77180a3a6c104f0c5b185cefa1f6d0835edb704b/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Remote deployments need ingress/auth/capacity review; not blanket agent integration. |
+| T12 | Compiles prompt/context into validated agent execution packs | https://github.com/kujolang/packwrite/blob/b8467535c74263abc59fd3f48028b67d42cd7e68/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Does not implement the project. Provider availability depends on credentials/model. |
+| T13 | Portable bounded execution/evaluation workflow harness | https://github.com/kujolang/kujo-workflows/blob/d766eae4fd9a131e51c34796d029fd3bc6974689/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Bash harness records/gates actions; editorial judgment is performed by this assistant, not a built-in investor judge. |
+| T14 | Kujo SSG/SiteKit static deck rendering, notes console, print/read editions | https://github.com/kujolang/presentations/blob/879211bbf3707ec1ec6a9e19bb9ce2b1f9691bfa/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, with tool boundaries | 5–9 | Preview APIs may change; fixed 16:9 canvas needs reading edition on small screens. |
+| I01 | kujo-cmd: documented integration; source and host-version-specific verification | https://github.com/kujolang/kujo-cmd/blob/7dedc530ea004c414c561325f91d63f6c4925ee9/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, documented only | 7,9 | No fresh host-platform matrix run in this session. |
+| I02 | kujo-hermes: documented integration; source and host-version-specific verification | https://github.com/kujolang/kujo-hermes/blob/bfa94add10a73d5bda6455dda54c36cb56d8f14c/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, documented only | 7,9 | No fresh host-platform matrix run in this session. |
+| I03 | kujo-opencode: documented integration; source and host-version-specific verification | https://github.com/kujolang/kujo-opencode/blob/818f70a9bdbfe753dac38d3feeda5bf208ebc1c4/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, documented only | 7,9 | No fresh host-platform matrix run in this session. |
+| I04 | kujo-pi: documented integration; source and host-version-specific verification | https://github.com/kujolang/kujo-pi/blob/fe15c9ac0c8a4d854833730e833b698a78127604/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes, documented only | 7,9 | No fresh host-platform matrix run in this session. |
+| E01 | Kujolang.ai MCP is listed in GitHub MCP Registry | https://github.com/mcp/kujolang/kujolang-mcp | 2026-11-11 | VERIFIED | High | Yes | 15 | Listing is distribution access, not active usage or endorsement. |
+| F01 | Founder biography describes more than 20 years building software | https://robertdevore.com/about/ | 2026-11-11 | SUPPORTED WITH LIMITATIONS | Medium | Yes, attributed self-report | 16 | No independent tenure verification. |
+| F02 | WebDevStudios reported adopting Robert DeVore plugins on July 3, 2025 | https://webdevstudios.com/2025/07/03/exciting-webdevstudios-wordpress-news/ | 2026-11-11 | VERIFIED | High | Yes | 16 | Do not infer 21 plugins, installed usage or Kujo adoption. |
+| F03 | Reported leadership team size and exactly 21 plugins | User megaprompt; public searches did not substantiate exact numbers | 2026-11-11 | UNVERIFIED | Low | No | Excluded | Founder must provide employer/title/dates/team-size and exact adoption source. |
+| D01 | Checkout test fails before and all three unchanged tests pass after a one-line correction | decks/kujo-investor/assets/checkout-evidence/commands.json; environment.json; manifest.json | 2026-11-11 | VERIFIED | High | Yes, controlled fixture | 4,8 | Driver repair, local host trust, no customer incident. |
+| FIN01 | $500/team/month; 17/167/1000 teams imply $102K/$1.002M/$6M ARR | financial-model.json; commercial-strategy.md; user scenario | 2026-11-11 | FUTURE PLAN | High arithmetic; low demand | Yes, labeled scenario | 11,12 | No achieved ARR. Enterprise separate. |
+| FIN02 | $6M proposed raise, $30M proposed post-money SAFE cap, $5.1M spend plus $900K reserve | financial-model.json; user discussion inputs | 2026-11-11 | FUTURE PLAN | High arithmetic | Yes, proposed only | 17,18 | Founder/counsel approval; no agreed terms. |
+| C01 | GitHub documents agentic repository tasks and review | https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-on-github | 2026-11-11 | VERIFIED | High | Yes | 3,13 | Category capability is not Kujo demand. |
+| C02 | LangGraph documents checkpoints, recovery and human intervention | https://docs.langchain.com/oss/python/langgraph/persistence | 2026-11-11 | VERIFIED | High | Yes | 13 | Documentation comparison, no parity benchmark. |
+| C03 | CI can run repository checks | https://docs.github.com/en/actions | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes | 13 | Existing alternative, not Kujo exclusivity. |
+| C04 | OpenTelemetry supplies telemetry signals | https://opentelemetry.io/docs/ | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes | 13 | Existing alternative, not superiority evidence. |
+| B01 | Source retained evidence for 100 scripted contributors, not 100 LLM engineers | https://github.com/kujolang/source/blob/34b11f634271cae47163c8943e531f3a4be0a05d/docs/videos/source-100-agents/README.md | 2026-11-11 | SUPPORTED WITH LIMITATIONS | High | Yes with methodology | Appendix | Private-load limits, distinct sections, retained failed run; not rerun here. |
+
+## Investigation coverage
+
+Claude Code and Cursor: generic MCP/skills interoperability is not an end-to-end tested adapter claim. No dedicated current host run verified; excluded from available-now headlines. Public GitHub API receipts retained in evidence/*-github.response, with retrieval status in http-research.json. Stars/forks/contributors/downloads are not users; no headline count used. Unique active users, installs, clones, commercial products sold, pilots and revenue: NOT AVAILABLE — DATA ACCESS REQUIRED. No negative revenue balance is inferred from missing access. Test/contract counts vary with HEAD and methodology; no stale count promoted. Kujo source documents v1.9.0 while HEAD is ahead of its release tag; no equivalence asserted.
+
+Searches for founder leadership returned name collisions and did not establish exact employment/team size. Only the linked biography and WebDevStudios primary statement are admitted. General AI adoption survey percentages were removed from the buyer-pain slide; buyer cost remains a hypothesis. Prior T06 wording about supplied commands is narrowed: RunLedger CLI does not populate reserved commands/tests arrays or execute tests.
+
+
+# Commercial strategy — proposed, 2026-11-11
+
+Decision recommendation: sell shared agent evidence and review to platform engineering leads at teams already operating coding agents across several repositories. This is a commercial hypothesis, not an available hosted SKU or demonstrated demand.
+
+The purchase trigger is a consequential agent regression whose review requires reconstructing commands, revisions and failures across tools. Augment developer productivity/CI or incident-investigation budgets. Do not assume a compliance mandate or that logs are absent today. GitHub and LangGraph already retain useful history; interviews must establish an unmet operational need.
+
+The first paid product must include repository/commit-bound evidence intake, searchable retained runs, team access controls, reviewer decisions, export/delete, retention settings, onboarding and documented support. Before accepting production customer data: tenant isolation, authentication, backup/recovery, retention/privacy terms and service ownership must be verified. Execution hosting is excluded from initial scope to limit cost and security surface. No active pilot or purchasable Kujo service was verified.
+
+Open source is the entry path: a host adapter or MCP catalog leads to a first local failure/correction evidence run, then repeat weekly use, a budget-owner interview and a qualified design partner. Keep application languages unchanged. GitHub listing, releases and stars are distribution signals, not active users. Track consented cohorts rather than raw clones.
+
+Primary price hypothesis: $500 per team per month, $6,000 annualized; a team workspace, not 1,000 individual developers paying premium subscriptions. This interpretation requires founder approval. Initial support/retention caps must be costed with design partners. Enterprise at $24,000/year is a separate deployment/support hypothesis, excluded from base revenue. The older 100 × $24K = $2.4M case is retained only as enterprise sensitivity; neither case is achieved traction.
+
+ARR = retained paying teams × monthly price × 12. At $500/month, 17 teams = $102K ARR; 167 = $1.002M; 1,000 = $6M. First milestone: 12 buyer interviews, 3 qualified partners, 2 paid pilots, then 17 retained teams. These are gates, not promises. A proposed base trajectory reaches 17 by month 12 and 60 by month 24 ($360K ARR); $1M/$6M require later acquisition and retention proof.
+
+Planning funnel: 100 qualified activations/month × 10% trial interest × 25% paid conversion = 2.5 gross adds/month once established. At 1.5% monthly logo churn, 60 teams lose 0.9/month; at 1,000, replace 15/month just to hold ARR. Reaching 1,000 requires a materially larger funnel, not extrapolating the starting one. Sales-cycle assumption: 1–3 months after activation; first paid revenue months 4–6. No pipeline currently substantiates these dates.
+
+Assumed 75% gross margin implies $125 monthly COGS/team and $375 gross profit. At assumed $3,000 fully loaded CAC, payback is 8 months; simple gross-profit lifetime value at 1.5% monthly churn is $25K. These are diagnostic sensitivities, not measured unit economics; small cohorts cannot establish lifetime value. Cloud/model use, support time and refunds need invoices and workload data. Acquisition spend includes founder/customer-development time.
+
+Retention hypothesis: weekly review of consequential runs, searchable history and usable exports. Measure time to first evidence run, four-week active teams, paid conversion, investigator effort and renewal. Interview assets are in customer-validation-plan.md.
+
+Invalidation: fewer than 4 of 12 buyers can identify a recent costly reconstruction incident; no budget owner among 3 partners; no willingness to pay after demonstrated use; or support/compute exceeds $125/team/month without a justified price. Stop growth hiring, narrow to an integration/service engagement or evidence-export feature, and rerun discovery. Do not silently switch to enterprise revenue to rescue the base case.
+
+
+# Financial model — proposed, USD, 2026-11-11
+
+Canonical machine-readable inputs: financial-model.json; quarterly-budget.csv is the cash schedule. No revenue offsets, investment commitments, validated valuation, or promised hiring rates.
+
+## Resolve compensation before agreeing terms
+The earlier source used $150K annual cash base: $300K over two years, plus illustrative 25% burden = $375K employer cost. The new discussion input says $375K total over two years but does not specify cash versus fully loaded cost. Those are not equivalent. For sensitivity only, this budget uses $375K founder cash over two years ($15,625/month); overhead is separately budgeted. If $375K means fully loaded cost, $300K cash plus $75K burden is the alternative, freeing $75K from this cash scenario before any overhead reconciliation. Neither is approved. Confirm cash, benefits, payroll jurisdiction and total employer cost explicitly.
+
+## 24-month spending schedule
+All cells below are USD. Revenue is zero for runway purposes. Reserve is not counted as an expense. Total operating envelope $5.1M; reserve $900K. Operating average $212,500/month; actual burn ramps by quarter. Runway is a funded 24-month model, not an assurance against cost overruns.
+
+| Category | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 | Q7 | Q8 | Total |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Founder total cash | 46,875 | 46,875 | 46,875 | 46,875 | 46,875 | 46,875 | 46,875 | 46,875 | 375,000 |
+| Engineering | 75,000 | 100,000 | 150,000 | 180,000 | 210,000 | 235,000 | 250,000 | 300,000 | 1,500,000 |
+| Product and developer experience | 20,000 | 40,000 | 60,000 | 75,000 | 85,000 | 90,000 | 90,000 | 90,000 | 550,000 |
+| Customer development and distribution | 25,000 | 50,000 | 75,000 | 100,000 | 130,000 | 150,000 | 180,000 | 630,000 | 1,340,000 |
+| Employer and contractor overhead | 15,000 | 25,000 | 40,000 | 50,000 | 60,000 | 70,000 | 80,000 | 85,000 | 425,000 |
+| Cloud and model usage | 10,000 | 20,000 | 30,000 | 40,000 | 50,000 | 65,000 | 80,000 | 105,000 | 400,000 |
+| Legal security compliance | 25,000 | 25,000 | 35,000 | 40,000 | 40,000 | 40,000 | 45,000 | 50,000 | 300,000 |
+| Operations | 10,000 | 15,000 | 20,000 | 25,000 | 30,000 | 35,000 | 35,000 | 40,000 | 210,000 |
+| Total spend | 226,875 | 321,875 | 456,875 | 556,875 | 651,875 | 731,875 | 806,875 | 1,346,875 | 5,100,000 |
+| Cash remaining | 5,773,125 | 5,451,250 | 4,994,375 | 4,437,500 | 3,785,625 | 3,053,750 | 2,246,875 | 900,000 | — |
+
+## Hiring and release gates
+Q1: founder, one execution/reliability engineer, fractional design/DX and customer discovery. Q2: add a second engineer only after repeat local activation and qualified buyer incidents. Q3–4: expand integration/DX and customer engineering after 3 design partners and 2 paid pilots; security review before sensitive customer data. Q5–8: add commercial and support capacity only after retention and measured support costs. Role counts are conditional; quarterly envelopes, not employment offers, govern spend.
+
+Engineering envelope covers staged international hiring and contracting. $50K–$60K annual roles are unvalidated discussion inputs, not assumed offers or compensation promises. Use jurisdiction-specific competitive salary quotes, employment classification, benefits, payroll/EOR and legal costs before hiring. Overhead is a separate cash envelope, not automatically 25% of every vendor invoice. Product/DX and customer development receive explicit allocations rather than treating engineering as the entire company.
+
+## Revenue sensitivities, separate from cash runway
+| Case | Price/month | Teams at month 24 | ARR | Monthly churn | Gross margin | First revenue | Sales cycle |
+|---|---:|---:|---:|---:|---:|---|---|
+| Conservative | $300 | 25 | $90K | 3% | 60% | month 9 | 2–4 months |
+| Base | $500 | 60 | $360K | 1.5% | 75% | month 6 | 1–3 months |
+| Upside | $500 | 200 | $1.2M | 1% | 80% | month 4 | 1–2 months |
+
+All assumptions need customer evidence. Trial/paid conversion sensitivities are in JSON. Monthly teams = prior teams × (1 − churn) + gross additions. ARR = active teams × monthly price × 12; annualized run rate is not recognized revenue. Enterprise 100 × $24K = $2.4M is a separate hypothetical business, excluded above. 1,000 × $500 × 12 = $6M is a later scale case, not base month-24 revenue.
+
+## Financing alternatives and dilution
+| Raise | Post-money priced valuation or modeled cap | Simple ratio |
+|---|---:|---:|
+| $2M | $15M | 13.33% |
+| $3M | $20M | 15% |
+| $6M | $20M | 30% |
+| $6M | $30M | 20% |
+| $6M | $40M | 15% |
+
+For a priced $6M round at $30M post-money, pre-money is $24M and simple new ownership is 20% before other dilution. A $30M post-money SAFE cap is a conversion term, not a priced valuation; actual ownership depends on the signed instrument, other securities and option-pool treatment. This is scenario arithmetic, not legal advice or negotiated terms. Counsel must model definitive documents. A further 20% dilution takes a 20% holding to 16%.
+
+Recommendation: keep $6M as a proposed full commercialization plan while testing a $2M–$3M milestone round. A $2M envelope could reserve $300K and fund $1.7M operating spend over 18 months (~$94K/month); $3M could reserve $450K and fund $2.55M over 24 months (~$106K/month). Both require a smaller team, one evidence workflow and sequential rather than parallel commercial/integration work; neither simply funds the $6M schedule. $6M buys commercial, DX, security and integration capacity alongside engineering. Technical achievement alone does not establish a $30M cap. Compare dilution, financing risk and evidence needed for the next raise; founder selects terms.
+
+
+# Reproducible checkout review
+Controlled local integration demo derived from kujolang/kujo-hermes at bfa94add10a73d5bda6455dda54c36cb56d8f14c. It is not a production incident or autonomous model repair. A deterministic driver applies the disclosed one-line correction.
+
+From the Presentations repository with Kujo, Python 3, Git and sibling casefile/eval checkouts:
+
+```sh
+export KUJO_ECOSYSTEM=/absolute/path/to/kujo-repos
+python3 docs/investor/demo/record.py /tmp/new-checkout-evidence
+```
+
+Output must not exist. It includes initial Git revision, platform/runtime, commands, before source, unchanged tests, patch, CaseFile bundles, Eval results and SHA-256 manifest. Inspect command records and the child command exit in case.json: CaseFile capture itself can succeed while its child fails.
+
+Task: a $50 original subtotal qualifies for free shipping; a 10% coupon should yield $45. Before: 2 passing tests, 1 failing assertion (5099 vs 4500 cents). Change shipping eligibility from discounted to original subtotal. After: same 3 tests pass. Eval reruns the unchanged test command. RunLedger records this session and is not proof that commands executed.
+
+Controlled comparison: the driver first executes the same failing unittest command without CaseFile, retaining stdout/stderr/exit through Python. CaseFile adds its structured bundle and Git/environment context. Both can preserve evidence; a custom wrapper can do the same. No time-saving percentage or superiority is inferred. Measure reviewer reconstruction time with randomized reviewer order and equivalent artifact access only in a future study.
+
+Capture plan: show task and pinned revision, terminal failure, one-line diff, unchanged tests passing, then before/after case.json and Eval report. Keep the controlled-demo label visible. Capture desktop at 1920×1080 and phone reading view; avoid terminal home paths if making a public video. Narration: “The coupon changed shipping eligibility. Here is the failed assertion, the exact correction, and the same tests passing. The reviewer can inspect both runs without relying on the agent’s summary.” The deck carries all necessary proof without video.
+
+
+# Customer validation — proposed 90-day plan
+Owner: founder until a named customer-development lead is hired. No interviews, outreach, quotes, pilots or testimonials have been completed by this session. Outreach copy below is prepared, not sent.
+
+Recruit 12 interviews: 7 platform/engineering leaders running coding agents, 3 engineering managers responsible for review/CI and 2 security or compliance stakeholders involved in repository controls. Favor recent real incidents and identifiable budget authority; include teams happy with existing tools.
+
+Ask: What was the last agent-created change you investigated? Walk through the incident and tools. Which evidence was missing? How long did reconstruction take, and who participated? Show the actual artifacts if authorized. What was the business consequence? Which review/audit obligations were real? What do you use now? What does it cost? Who owns the budget? How would a purchase get approved? What would make you refuse this service? Only after discovery, show the demo and ask what it fails to solve. Do not lead with an expected savings claim or preferred price.
+
+Notes template: date; participant role and consent; company segment without unnecessary personal data; incident date; exact permitted quote; observed artifact vs recollection; reconstruction time and denominator; current workaround; budget/process; objections; willingness-to-pay evidence; next consented step. Classify each entry observed / participant-reported / hypothesis; never promote a quote into verified economics. Keep private interview records outside public deck assets.
+
+Design partner offer: a scoped four-week evidence-review pilot on one approved repository, onboarding and weekly review. Qualify actual agent usage, budget owner, meaningful recurring reviews, data permission and willingness to share measured outcomes. No production customer data before service readiness gates. Price discussion: proposed $500/month team subscription; any free pilot and conversion date documented explicitly. Success: complete evidence for agreed runs, repeat weekly reviewer use, measured reconstruction effort against the team's own baseline and an explicit paid renewal decision. Record failures and unchanged outcomes too.
+
+Days 1–30: 12 interviews; at least 4 recent costly incidents with inspectable evidence and 3 qualified partners. Days 31–60: onboard 3 scoped pilots after readiness checks, compare evidence completeness and review effort, record support/compute costs. Days 61–90: seek 2 paid conversions, four-week active use and at least one renewal decision; if not reached, stop hiring expansion and revise the wedge. These are proposed gates, not completed milestones.
+
+Outreach draft: “I’m researching how engineering teams review agent-driven repository changes. Could we spend 25 minutes walking through a recent investigation and the tools you already use? I’m interested in what worked as much as what was missing. With your permission I can then show a short evidence workflow.” Follow-up draft: “Here is my factual summary of the incident and gaps you described. Please correct it. May we agree a scoped evaluation with explicit data boundaries and a review date?” Do not send without authorization.
+
+
+# Investor diligence and founder decisions
+As of 2026-11-11. This is a review draft; no deployment in this revision. Existing public contact page is retained, not a newly approved fundraising route. The final acceptance condition of an approved investment ask remains open.
+
+| Decision | Proposed treatment | Evidence / approval needed |
+|---|---|---|
+| Paid wedge | Shared team evidence/review | Founder selection and buyer validation; no hosted SKU verified |
+| Base price | $500/team/month; enterprise separate | Willingness to pay, cost and package boundaries |
+| Raise / instrument | $6M; discuss $30M post-money SAFE cap | Founder selection, counsel and investor negotiations; no close date |
+| Founder compensation | Model $375K cash over 24 months as sensitivity | Confirm cash versus fully loaded; prior $150K/year cash differs |
+| Available products | Open local tools and scoped adapters | Pinned source matrix; no blanket enterprise readiness |
+| Traction | Engineering and directory listing only | No verified customer/revenue/retention metrics supplied |
+| First six months | Staged reliability, DX and discovery | Jurisdictional cost quotes and evidence gates |
+| Contact / timing | Existing public founder contact; diligence walkthrough | Confirm fundraising-specific route and timing before distribution |
+
+Risks: unvalidated buyer need, new-language adoption, fragmented integration contracts, incumbent bundling, editable local evidence, hosted custody/tenant isolation, founder concentration, unknown acquisition costs and financing risk. A repository release is not a paying customer. Public stats are noisy and time-specific. Source’s “100-agent” record uses scripted Node contributors, not 100 autonomous LLM engineers; same-file distinct sections, private-load limits, retained failed attempt and baseline differences apply. Do not generalize it into coding productivity or production capacity.
+
+Founder: public biography is self-reported. WebDevStudios’ July 3, 2025 announcement independently supports plugin adoption, but does not substantiate exactly 21 plugins or a particular engineering team size. Those counts remain excluded pending source evidence. Leadership title, employer, dates and team size need confirmation.
+
+Verification: build with `node scripts/build-investor-pages.mjs`; run `npm test`; reproduce checkout per demo-runbook.md; inspect claims in evidence-register.md and raw provenance in evidence/. SEO evidence is under seo-audit/2026-11-11. All checks must be interpreted with recorded environment and any blockers. Safe publication requires founder approval; push of this feature branch is not approval to deploy.

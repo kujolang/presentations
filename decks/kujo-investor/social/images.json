@@ -1,126 +1,126 @@
 {
   "slide-01": {
-    "path": "/assets/deck/social/slide-01.5cca734f0156.png",
-    "alt": "KUJO — Trust at the speed of AI.. Programming language and accountability infrastructure.",
+    "path": "/assets/deck/social/slide-01.30724ed13b79.png",
+    "alt": "Trust at the speed of AI. Kujo makes agent-driven engineering work inspectable, repeatable and accountable across existing workflows.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-02": {
-    "path": "/assets/deck/social/slide-02.734a2a11bf1d.png",
-    "alt": "KUJO — The accountability problem. Software production is outpacing verification.",
+    "path": "/assets/deck/social/slide-02.4bfa85180c7a.png",
+    "alt": "Software production is outpacing verification. Agents can report completion. Teams still need a reviewable chain from requested work to release decision.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-03": {
-    "path": "/assets/deck/social/slide-03.3e0cd45562f8.png",
-    "alt": "KUJO — Structural shift. Greater autonomy requires stronger accountability.",
+    "path": "/assets/deck/social/slide-03.c0f66ba0a704.png",
+    "alt": "Agents now work across the repository. GitHub documents agents that plan changes, edit code and review pull requests. More delegated work makes the execution record part of the review.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-04": {
-    "path": "/assets/deck/social/slide-04.e18de47ebe2f.png",
-    "alt": "KUJO — Why now. AI use is broad. Trust remains conditional.",
+    "path": "/assets/deck/social/slide-04.a9cc21dfba1a.png",
+    "alt": "A passing summary can hide a failed checkout. A coupon changes a $50 cart to $50.99 instead of $45. The reviewer needs the failing test, exact change and unchanged checks.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-05": {
-    "path": "/assets/deck/social/slide-05.ff0bfe41f516.png",
-    "alt": "KUJO — The Kujo system. Build with clarity. Operate with control.",
+    "path": "/assets/deck/social/slide-05.d1f19bece56c.png",
+    "alt": "Build with clarity. Operate with control. The language is the long-term foundation. Existing tools offer an earlier route into engineering workflows.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-06": {
-    "path": "/assets/deck/social/slide-06.89d08670d3e8.png",
-    "alt": "KUJO — Lifecycle. Accountability spans the whole task.",
+    "path": "/assets/deck/social/slide-06.d39c3bdc7147.png",
+    "alt": "Accountability spans the whole task. Each component owns a specific responsibility. A reviewable workflow composes their artifacts explicitly.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-07": {
-    "path": "/assets/deck/social/slide-07.6b96174113d6.png",
-    "alt": "KUJO — Engineering proof. The foundation is already being built.",
+    "path": "/assets/deck/social/slide-07.fccc036372fc.png",
+    "alt": "A working foundation precedes this raise. The language, execution tools and integration adapters are inspectable in public source.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-08": {
-    "path": "/assets/deck/social/slide-08.ab604babae59.png",
-    "alt": "KUJO — Recorded demonstration. A claim becomes inspectable evidence.",
+    "path": "/assets/deck/social/slide-08.6221cdb2e251.png",
+    "alt": "Keep the failure. Verify the correction. A reproducible checkout regression: a coupon must preserve free shipping. The original tests fail, a one-line correction passes them.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-09": {
-    "path": "/assets/deck/social/slide-09.6fef2e5f778a.png",
-    "alt": "KUJO — Adoption without migration. Adopt the ecosystem before the language.",
+    "path": "/assets/deck/social/slide-09.ccd9b1b3045a.png",
+    "alt": "Adopt the ecosystem before the language. Keep application code in its existing language. Introduce accountability at the workflow boundary.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-10": {
-    "path": "/assets/deck/social/slide-10.a5dd2b27208b.png",
-    "alt": "KUJO — Initial customer. Start with teams already delegating engineering work.",
+    "path": "/assets/deck/social/slide-10.fbd5d46ad6c0.png",
+    "alt": "Start with the platform engineering lead. Initial buyer hypothesis: a team operating coding agents across repositories and reconstructing failures during review.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-11": {
-    "path": "/assets/deck/social/slide-11.b085c2ec3708.png",
-    "alt": "KUJO — Business model. Open tooling can lead to a commercial operating layer.",
+    "path": "/assets/deck/social/slide-11.44f413bfc5b8.png",
+    "alt": "Open tools today. A team service to validate. Primary paid wedge: shared agent-run evidence and review for engineering teams. Application code stays in its existing language.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-12": {
-    "path": "/assets/deck/social/slide-12.28a2ae1fdbc7.png",
-    "alt": "KUJO — Market model. A focused entry market can support a meaningful business.",
+    "path": "/assets/deck/social/slide-12.f104d08d98e0.png",
+    "alt": "One team subscription. Explicit revenue milestones. Base pricing hypothesis: $500 per team per month. Customer counts below are scenarios, not forecasts or achieved revenue.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-13": {
-    "path": "/assets/deck/social/slide-13.ba2c0d0da48c.png",
-    "alt": "KUJO — Position and defensibility. Accountability requires more than generating code.",
+    "path": "/assets/deck/social/slide-13.f11a007e9a9e.png",
+    "alt": "Portable evidence across existing workflows. GitHub integrates agents and review. LangGraph persists workflow state. Kujo composes local execution artifacts with explicit evaluation.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-14": {
-    "path": "/assets/deck/social/slide-14.7e6c4c972022.png",
-    "alt": "KUJO — Distribution. Meet developers inside their existing workflows.",
+    "path": "/assets/deck/social/slide-14.a58cc4dff0b9.png",
+    "alt": "Turn a first evidence run into a retained team. Integration-led distribution: one useful repository workflow, then a buyer conversation about shared review.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-15": {
-    "path": "/assets/deck/social/slide-15.9be408507bff.png",
-    "alt": "KUJO — Momentum. Execution is visible. Demand still needs proof.",
+    "path": "/assets/deck/social/slide-15.e13ab8dcffcd.png",
+    "alt": "Public engineering and distribution are visible. Technical momentum is independently inspectable. Commercial validation is the next milestone.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-16": {
-    "path": "/assets/deck/social/slide-16.afbf3a0c3773.png",
-    "alt": "KUJO — Founder and team. Built through sustained open-source engineering.",
+    "path": "/assets/deck/social/slide-16.eed9145c06ba.png",
+    "alt": "A founder with a public shipping record. Robert DeVore builds commercial web software and the Kujo language ecosystem.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-17": {
-    "path": "/assets/deck/social/slide-17.25c2724cf7b2.png",
-    "alt": "KUJO — Investment and milestones. Capital turns a technical foundation into an adopted platform.",
+    "path": "/assets/deck/social/slide-17.884e29570477.png",
+    "alt": "Fund commercialization with staged commitments. Proposed $6M raise: a 24-month operating plan with $900K reserve. Release hiring against validation, paid pilots and retention.",
     "width": 1200,
     "height": 630,
     "type": "image/png"
   },
   "slide-18": {
-    "path": "/assets/deck/social/slide-18.1c4635908501.png",
-    "alt": "KUJO — The vision. Agents will build more software.",
+    "path": "/assets/deck/social/slide-18.69151df90639.png",
+    "alt": "Discuss the raise. Inspect the evidence. Proposed $6M financing conversation. Start with a technical diligence walkthrough and the team-service thesis.",
     "width": 1200,
     "height": 630,
     "type": "image/png"

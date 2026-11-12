@@ -1,8 +1,8 @@
 {
   "id": "kujo-investor",
-  "title": "KUJO \u2014 Trust at the speed of AI.",
+  "title": "KUJO — Trust at the speed of AI.",
   "brand": "KUJO",
-  "description": "18-slide investor briefing with source evidence, recorded execution and editable planning assumptions.",
+  "description": "Kujo investor briefing: verified engineering, a proposed team evidence service, commercial validation and financing scenarios.",
   "footer": "KUJO / Investor briefing",
   "lang": "en",
   "transitions": {
@@ -14,7 +14,7 @@
     {
       "layout": "ki-cover",
       "title": "Trust at the\nspeed of AI.",
-      "copy": "The programming language and accountability infrastructure for agent-driven development.",
+      "copy": "Kujo makes agent-driven engineering work inspectable, repeatable and accountable across existing workflows.",
       "eyebrow": "Investor briefing / November 2026",
       "inverse": true
     },
@@ -23,12 +23,12 @@
       "title": "Software production is outpacing verification.",
       "copy": "Agents can report completion. Teams still need a reviewable chain from requested work to release decision.",
       "eyebrow": "02 / The accountability problem",
-      "note": "Thesis \u00b7 existing agent controls acknowledged",
+      "note": "Thesis · existing agent controls acknowledged",
       "inverse": false,
       "features": [
         {
           "title": "The claim",
-          "copy": "\u201cTests passed. Ready to merge.\u201d An illustrative agent statement."
+          "copy": "“Tests passed. Ready to merge.” An illustrative agent statement."
         },
         {
           "title": "The evidence",
@@ -42,45 +42,45 @@
     },
     {
       "layout": "ki-flow",
-      "title": "Greater autonomy requires stronger accountability.",
-      "copy": "The cost of an unverified action grows as agents gain authority.",
+      "title": "Agents now work across the repository.",
+      "copy": "GitHub documents agents that plan changes, edit code and review pull requests. More delegated work makes the execution record part of the review.",
       "eyebrow": "03 / Structural shift",
-      "note": "Conceptual progression; not a measured adoption curve",
+      "note": "C01 · current GitHub documentation; category context, not Kujo demand",
       "inverse": false,
       "features": [
         {
-          "title": "Suggest code",
-          "copy": "Human selects the change \u2192 diff review"
+          "title": "More scope",
+          "copy": "Agents move from suggestions to repository tasks."
         },
         {
-          "title": "Complete a task",
-          "copy": "Agent edits and runs commands \u2192 execution records"
+          "title": "More handoffs",
+          "copy": "The reviewer needs the revision, executed checks and retained failures."
         },
         {
-          "title": "Operate a workflow",
-          "copy": "Retries and external effects \u2192 boundaries, recovery and approval"
+          "title": "Why now",
+          "copy": "Existing platforms establish the workflow; Kujo proposes a portable evidence layer."
         }
       ]
     },
     {
-      "layout": "ki-metrics",
-      "title": "AI use is broad. Trust remains conditional.",
-      "copy": "Adoption of AI assistance is not evidence of autonomous production deployment.",
+      "layout": "ki-split",
+      "title": "A passing summary can hide a failed checkout.",
+      "copy": "A coupon changes a $50 cart to $50.99 instead of $45. The reviewer needs the failing test, exact change and unchanged checks.",
       "eyebrow": "04 / Why now",
-      "note": "M03\u2013M04 \u00b7 Stack Overflow Developer Survey 2026",
+      "note": "D01 · controlled checkout regression; buyer cost remains a hypothesis",
       "inverse": true,
-      "metrics": [
+      "features": [
         {
-          "value": "65.9%",
-          "label": "use coding assistants or coding agents at work"
+          "title": "Reconstruct",
+          "copy": "Find the task, revision, environment and actual command result."
         },
         {
-          "value": "26.2%",
-          "label": "use AI agents or automated workflows at work"
+          "title": "Correct",
+          "copy": "Fix shipping eligibility without weakening the test."
         },
         {
-          "value": "48%",
-          "label": "trust AI when answers are easy to validate"
+          "title": "Review",
+          "copy": "Compare before and after evidence. Measure buyer investigation time in pilots."
         }
       ]
     },
@@ -89,7 +89,7 @@
       "title": "Build with clarity. Operate with control.",
       "copy": "The language is the long-term foundation. Existing tools offer an earlier route into engineering workflows.",
       "eyebrow": "05 / The Kujo system",
-      "note": "T01\u2013T14 \u00b7 tool boundaries remain distinct",
+      "note": "T01–T14 · tool boundaries remain distinct",
       "inverse": false,
       "features": [
         {
@@ -115,60 +115,60 @@
       "inverse": false,
       "features": [
         {
-          "title": "Instruction \u2192 Context",
-          "copy": "Spec / PackWrite \u2192 MCP and repository context"
+          "title": "Instruction → Context",
+          "copy": "Spec / PackWrite → MCP and repository context"
         },
         {
-          "title": "Execution \u2192 Evaluation",
-          "copy": "Dispatch / Workcell \u2192 Eval result artifacts"
+          "title": "Execution → Evaluation",
+          "copy": "Dispatch / Workcell → Eval result artifacts"
         },
         {
-          "title": "Evidence \u2192 Review \u2192 Release",
-          "copy": "CaseFile / RunLedger \u2192 reviewer \u2192 ShipCheck gate"
+          "title": "Evidence → Review → Release",
+          "copy": "CaseFile / RunLedger → reviewer → ShipCheck gate"
         }
       ]
     },
     {
       "layout": "ki-split",
-      "title": "The foundation is already being built.",
-      "copy": "Inspect the implementation and its limits, then reproduce the smallest useful proof.",
+      "title": "A working foundation precedes this raise.",
+      "copy": "The language, execution tools and integration adapters are inspectable in public source.",
       "eyebrow": "07 / Engineering proof",
-      "note": "T01, T03, T08, T14 \u00b7 release documentation \u2260 all HEAD features",
+      "note": "T01–T14, I01–I04 · documented scope; demo tools rerun locally",
       "inverse": false,
       "features": [
         {
           "title": "Language and VM",
-          "copy": "Kujo 1.9.0 is documented; a local 1.9.0 binary executes the recorded fixture tooling."
+          "copy": "Kujo v1.9.0 release documentation; compiler and VM source pinned for diligence."
         },
         {
-          "title": "Bounded execution",
-          "copy": "Workcell 1.3 documents Docker/Podman limits, explicit exports and receipt verification."
+          "title": "Workflow tooling",
+          "copy": "CaseFile captures commands. Eval runs checks. Workcell documents bounded execution."
         },
         {
-          "title": "Reviewable artifact",
-          "copy": "This presentation uses the native Kujo builder. Its demo retains a failing command, correction and evaluation."
+          "title": "Existing entry points",
+          "copy": "Command Code, Hermes, OpenCode and Pi adapters have documented releases and scoped verification."
         }
       ]
     },
     {
       "layout": "ki-demo",
-      "title": "A claim becomes inspectable evidence.",
-      "copy": "Recorded local coding fixture: correct a post-money ownership calculation. Inspect what failed, what changed and what passed.",
+      "title": "Keep the failure. Verify the correction.",
+      "copy": "A reproducible checkout regression: a coupon must preserve free shipping. The original tests fail, a one-line correction passes them.",
       "eyebrow": "08 / Recorded demonstration",
-      "note": "Assistant-authored seeded fixture \u00b7 CaseFile + Eval \u00b7 local host",
+      "note": "D01 · controlled fixture; driver applies correction, no autonomous-repair claim",
       "inverse": false,
       "features": [
         {
-          "title": "Request",
-          "copy": "Return 20% for $6M raised at $30M post-money."
+          "title": "Before",
+          "copy": "Python test fails: 5099 cents returned instead of 4500."
         },
         {
-          "title": "Execution",
-          "copy": "CaseFile captures real Node assertion failure and corrected execution."
+          "title": "Correction",
+          "copy": "Check the original subtotal for shipping eligibility."
         },
         {
-          "title": "Decision",
-          "copy": "Eval checks the correction. Accept this fixture; no production release."
+          "title": "After",
+          "copy": "The same three tests pass. CaseFile retains both runs; Eval reruns the gate."
         }
       ]
     },
@@ -177,7 +177,7 @@
       "title": "Adopt the ecosystem before the language.",
       "copy": "Keep application code in its existing language. Introduce accountability at the workflow boundary.",
       "eyebrow": "09 / Adoption without migration",
-      "note": "T02\u2013T04, T08 \u00b7 tools have their own runtime dependencies",
+      "note": "T02–T04, T08 · tools have their own runtime dependencies",
       "inverse": false,
       "features": [
         {
@@ -196,186 +196,186 @@
     },
     {
       "layout": "ki-split",
-      "title": "Start with teams already delegating engineering work.",
-      "copy": "Proposed beachhead: agent-platform builders shipping repeatable engineering workflows.",
+      "title": "Start with the platform engineering lead.",
+      "copy": "Initial buyer hypothesis: a team operating coding agents across repositories and reconstructing failures during review.",
       "eyebrow": "10 / Initial customer",
-      "note": "Proposed segment; no customer interviews or demand validation",
+      "note": "Buyer, demand and willingness to pay remain unvalidated",
       "inverse": false,
       "features": [
         {
-          "title": "Buyer / user",
-          "copy": "Platform engineering lead / engineers operating coding-agent harnesses."
+          "title": "Purchase trigger",
+          "copy": "An agent regression crosses a review boundary and the team must reconstruct what ran."
         },
         {
-          "title": "Immediate pain",
-          "copy": "Failed runs are expensive to reconstruct. Review spans commits, logs and agent transcripts."
+          "title": "What we know",
+          "copy": "Local evidence tools work; integration adapters and a public catalog are available."
         },
         {
-          "title": "Purchase hypothesis",
-          "copy": "Pay for retained evidence, controlled execution and team review if they reduce investigation time."
+          "title": "What we are testing",
+          "copy": "Whether shared evidence saves review effort and earns a recurring team budget."
         }
       ]
     },
     {
       "layout": "ki-flow",
-      "title": "Open tooling can lead to a commercial operating layer.",
-      "copy": "Earn developer trust through useful local tools. Charge for shared operational responsibilities.",
+      "title": "Open tools today. A team service to validate.",
+      "copy": "Primary paid wedge: shared agent-run evidence and review for engineering teams. Application code stays in its existing language.",
       "eyebrow": "11 / Business model",
-      "note": "Hosted offerings and pricing are proposals, not available SKUs",
+      "note": "No paid service or active pilot verified; proposed packaging",
       "inverse": false,
       "features": [
         {
-          "title": "Available foundation",
-          "copy": "Open repositories and local developer tooling."
+          "title": "Available now · open source",
+          "copy": "Local CLI tools and documented host integrations; no Kujo subscription required."
         },
         {
-          "title": "Proposed team service",
-          "copy": "Hosted evidence, retention, shared review and execution capacity."
+          "title": "Planned · team service",
+          "copy": "Proposed $500/month: evidence intake, retention, access controls, review and export."
         },
         {
-          "title": "Proposed enterprise tier",
-          "copy": "Organization policy, deployment controls, support and governance."
+          "title": "Planned · enterprise",
+          "copy": "Separate $24K/year hypothesis for deployment, policy and support. Excluded from the base case."
         }
       ]
     },
     {
       "layout": "ki-metrics",
-      "title": "A focused entry market can support a meaningful business.",
-      "copy": "Illustrative bottom-up model. Organization counts and annual contracts are assumptions to validate.",
+      "title": "One team subscription. Explicit revenue milestones.",
+      "copy": "Base pricing hypothesis: $500 per team per month. Customer counts below are scenarios, not forecasts or achieved revenue.",
       "eyebrow": "12 / Market model",
-      "note": "Planning only \u00b7 editable assumptions in appendix",
+      "note": "FIN01 · ARR = active paying teams × $500 × 12; enterprise excluded",
       "inverse": false,
       "metrics": [
         {
-          "value": "2,000",
-          "label": "initial target organizations \u00d7 $24K ACV"
+          "value": "17 teams",
+          "label": "$102K ARR · first repeatable revenue milestone"
         },
         {
-          "value": "$48M",
-          "label": "illustrative annual serviceable revenue pool"
+          "value": "167 teams",
+          "label": "$1.002M ARR · requires retained paid cohorts"
         },
         {
-          "value": "$2.4M",
-          "label": "100 customers \u00d7 $24K; milestone scenario, not forecast"
+          "value": "1,000 teams",
+          "label": "$6M ARR · long-term sensitivity, not a 24-month promise"
         }
       ]
     },
     {
       "layout": "ki-split",
-      "title": "Accountability requires more than generating code.",
-      "copy": "Existing platforms are strong. Kujo must win on useful evidence and the cost of operating reliable workflows.",
+      "title": "Portable evidence across existing workflows.",
+      "copy": "GitHub integrates agents and review. LangGraph persists workflow state. Kujo composes local execution artifacts with explicit evaluation.",
       "eyebrow": "13 / Position and defensibility",
-      "note": "C01\u2013C02, T01\u2013T14 \u00b7 no exclusivity or benchmark superiority",
+      "note": "C01–C04 · documentation comparison; no measured superiority",
       "inverse": false,
       "features": [
         {
-          "title": "Coding agents / GitHub",
-          "copy": "Generation, repository context and review are already integrated into major developer surfaces."
+          "title": "Demonstrated",
+          "copy": "Before/after command bundles, unchanged checks and an inspectable patch in the checkout demo."
         },
         {
-          "title": "Orchestration / LangGraph",
-          "copy": "Persistence, recovery and human review are established capabilities."
+          "title": "Interoperable",
+          "copy": "Existing application languages and documented host adapters; exports stay reviewable outside a chat."
         },
         {
-          "title": "Kujo opportunity",
-          "copy": "Connect explicit contracts, bounded work and inspectable artifacts. Prove adoption before claiming a moat."
+          "title": "To earn",
+          "copy": "A reliable shared service, useful integrations and retained buyer usage. Competitive parity is not a benchmark."
         }
       ]
     },
     {
       "layout": "ki-flow",
-      "title": "Meet developers inside their existing workflows.",
-      "copy": "The planned December 2026 open-source campaign should produce repeat usage and customer learning.",
+      "title": "Turn a first evidence run into a retained team.",
+      "copy": "Integration-led distribution: one useful repository workflow, then a buyer conversation about shared review.",
       "eyebrow": "14 / Distribution",
-      "note": "Campaign and partnerships planned; measure cohorts, not raw impressions",
+      "note": "Proposed 30/60/90-day plan; no completed interviews or pilots claimed",
       "inverse": false,
       "features": [
         {
-          "title": "Discovery",
-          "copy": "GitHub releases, technical demos, docs and reproducible fixtures \u2192 qualified visits."
+          "title": "Discover → activate",
+          "copy": "Docs, MCP catalog and host adapters → first captured failure and passing rerun."
         },
         {
-          "title": "Activation",
-          "copy": "Agent harness recipes and MCP tooling \u2192 first successful evidence run."
+          "title": "Validate → pilot",
+          "copy": "Interview 12 buyers; qualify design partners against an actual incident and budget owner."
         },
         {
-          "title": "Retention \u2192 revenue",
-          "copy": "Repeat weekly runs \u2192 design-partner discussions \u2192 paid pilots and renewal evidence."
+          "title": "Convert → retain",
+          "copy": "Offer a scoped paid pilot after readiness checks; measure weekly use, review time and renewal."
         }
       ]
     },
     {
       "layout": "ki-split",
-      "title": "Execution is visible. Demand still needs proof.",
-      "copy": "Engineering output, external adoption and commercial traction are different measures.",
+      "title": "Public engineering and distribution are visible.",
+      "copy": "Technical momentum is independently inspectable. Commercial validation is the next milestone.",
       "eyebrow": "15 / Momentum",
-      "note": "Unavailable is not zero; no invented traction",
+      "note": "E01 · listing is distribution access, not customer adoption",
       "inverse": false,
       "features": [
         {
-          "title": "Engineering output",
-          "copy": "Public repositories, documented releases and the locally reproduced evidence fixture."
+          "title": "Engineering",
+          "copy": "Kujo runtime and tools have pinned public source; this deck includes a rerun checkout regression."
         },
         {
-          "title": "External adoption",
-          "copy": "Verified outside usage, retention and independent integrations: data not supplied."
+          "title": "Distribution",
+          "copy": "Kujolang.ai MCP is listed in the GitHub MCP Registry, observed November 11, 2026."
         },
         {
-          "title": "Commercial traction",
-          "copy": "Design partners, paying customers and revenue: data not supplied. Complete before investor distribution."
+          "title": "Commercial stage",
+          "copy": "No verified paying customers or revenue in the reviewed evidence. Pilot and retention validation remain ahead."
         }
       ]
     },
     {
       "layout": "ki-split",
-      "title": "Built through sustained open-source engineering.",
-      "copy": "Robert DeVore connects open-web product work with a growing language and developer-tooling ecosystem.",
+      "title": "A founder with a public shipping record.",
+      "copy": "Robert DeVore builds commercial web software and the Kujo language ecosystem.",
       "eyebrow": "16 / Founder and team",
-      "note": "F01 \u00b7 first-person source; no invented tenure, team or security credentials",
+      "note": "F01–F03 · third-party adoption verified; exact team-leadership scope unverified",
       "inverse": false,
       "features": [
         {
-          "title": "Background",
-          "copy": "Public biography describes years of WordPress, WooCommerce, plugins and publishing systems."
+          "title": "Independent shipping",
+          "copy": "Public biography describes more than 20 years building software; tenure is self-reported."
         },
         {
-          "title": "Current work",
-          "copy": "Language/runtime infrastructure, orchestration, evaluation, telemetry and evidence workflows."
+          "title": "Third-party adoption",
+          "copy": "WebDevStudios reported adopting his plugins in July 2025. No unsupported plugin count is used."
         },
         {
-          "title": "Team enabled by capital",
-          "copy": "Proposed hires in runtime, execution reliability and developer experience; later customer engineering."
+          "title": "Team to build",
+          "copy": "Stage execution reliability, product design, developer experience and customer development hires."
         }
       ]
     },
     {
       "layout": "ki-funding",
-      "title": "Capital turns a technical foundation into an adopted platform.",
-      "copy": "Working seed scenario. Financing terms and hiring pace remain assumptions.",
+      "title": "Fund commercialization with staged commitments.",
+      "copy": "Proposed $6M raise: a 24-month operating plan with $900K reserve. Release hiring against validation, paid pilots and retention.",
       "eyebrow": "17 / Investment and milestones",
-      "note": "20% simplified ownership before further dilution \u00b7 $150K founder annual base",
+      "note": "FIN02 · proposed terms; $30M post-money SAFE cap ≠ a priced valuation",
       "inverse": true,
       "metrics": [
         {
           "value": "$6M",
-          "label": "target raise"
+          "label": "proposed raise · founder confirmation pending"
         },
         {
           "value": "$30M",
-          "label": "post-money valuation or SAFE cap assumption"
+          "label": "proposed post-money SAFE cap · negotiable"
         },
         {
           "value": "24 mo",
-          "label": "planned runway, including reserve"
+          "label": "modeled spend horizon · no revenue offsets"
         }
       ]
     },
     {
       "layout": "ki-close",
-      "title": "Agents will build more software.",
-      "copy": "The organizations deploying it will still be accountable for what it does.",
+      "title": "Discuss the raise. Inspect the evidence.",
+      "copy": "Proposed $6M financing conversation. Start with a technical diligence walkthrough and the team-service thesis.",
       "eyebrow": "18 / The vision",
-      "note": "KUJO \u00b7 Trust at the speed of AI.",
+      "note": "Next step: contact Robert through the existing public contact page. Terms subject to agreement.",
       "inverse": true
     }
   ]

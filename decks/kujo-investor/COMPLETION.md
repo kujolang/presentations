@@ -1,3 +1,7 @@
+# Historical record — superseded for current revision
+
+This describes November 9 only. See `docs/investor/revision-report.md` at repository root for current results and open approvals.
+
 # KUJO investor presentation — completion record
 
 Research and verification date: 2026-11-09. Artifact delivered for founder review; commercial diligence placeholders must be completed before investor distribution. No production site was published.

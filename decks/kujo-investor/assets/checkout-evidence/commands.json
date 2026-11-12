@@ -1,0 +1,136 @@
+[
+  {
+    "command": [
+      "git",
+      "init",
+      "-q"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.name",
+      "Controlled demo"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "config",
+      "user.email",
+      "demo@example.invalid"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "add",
+      "."
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "commit",
+      "-qm",
+      "Checkout regression fixture"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit": 0,
+    "stdout": "579cde15300340924084d654a7cb0ffe11056f70\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "-v"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "test_below_threshold (test_checkout.CheckoutTests) ... ok\ntest_discount_keeps_free_shipping (test_checkout.CheckoutTests) ... FAIL\ntest_full_price_threshold (test_checkout.CheckoutTests) ... ok\n\n======================================================================\nFAIL: test_discount_keeps_free_shipping (test_checkout.CheckoutTests)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-checkout-qyoywb2j/test_checkout.py\", line 13, in test_discount_keeps_free_shipping\n    self.assertEqual(total(5000, 10), 4500)\nAssertionError: 5099 != 4500\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nFAILED (failures=1)\n"
+  },
+  {
+    "command": [
+      "/Users/robertdevore/.local/bin/kujo",
+      "run",
+      "/Users/robertdevore/2026/Kujolang/kujo-repos/casefile/casefile.kujo",
+      "--",
+      "capture",
+      "--name",
+      "before",
+      "--",
+      "python3",
+      "-m",
+      "unittest",
+      "-v"
+    ],
+    "exit": 0,
+    "stdout": "CaseFile captured failure\n\nCase: 2026-11-11-205536-before\nPath: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-checkout-qyoywb2j/.casefile/2026-11-11-205536-before\nCommand: python3 -m unittest -v\nExit code: 1\nSeverity: medium\n\nArtifacts:\n- case.md\n- case.json\n- combined.log\n- reproduction.md\n- handoff.md\n\nNext:\n1. Open /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-checkout-qyoywb2j/.casefile/2026-11-11-205536-before/case.md\n2. Re-run: python3 -m unittest -v\n3. Send handoff.md to the next reviewer or agent\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff"
+    ],
+    "exit": 0,
+    "stdout": "diff --git a/checkout.py b/checkout.py\nindex 69f50e8..d897155 100644\n--- a/checkout.py\n+++ b/checkout.py\n@@ -1,5 +1,5 @@\n \"\"\"Checkout totals in integer cents. Free shipping starts at a $50 original subtotal.\"\"\"\n def total(subtotal_cents, discount_percent):\n     discounted = subtotal_cents * (100 - discount_percent) // 100\n-    shipping = 0 if discounted >= 5000 else 599\n+    shipping = 0 if subtotal_cents >= 5000 else 599\n     return discounted + shipping\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/robertdevore/.local/bin/kujo",
+      "run",
+      "/Users/robertdevore/2026/Kujolang/kujo-repos/casefile/casefile.kujo",
+      "--",
+      "capture",
+      "--name",
+      "after",
+      "--",
+      "python3",
+      "-m",
+      "unittest",
+      "-v"
+    ],
+    "exit": 0,
+    "stdout": "CaseFile captured failure\n\nCase: 2026-11-11-205547-after\nPath: /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-checkout-qyoywb2j/.casefile/2026-11-11-205547-after\nCommand: python3 -m unittest -v\nExit code: 0\nSeverity: low\n\nArtifacts:\n- case.md\n- case.json\n- combined.log\n- reproduction.md\n- handoff.md\n\nNext:\n1. Open /private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-checkout-qyoywb2j/.casefile/2026-11-11-205547-after/case.md\n2. Re-run: python3 -m unittest -v\n3. Send handoff.md to the next reviewer or agent\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/robertdevore/.local/bin/kujo",
+      "run",
+      "/Users/robertdevore/2026/Kujolang/kujo-repos/eval/main.kujo",
+      "--",
+      "run",
+      "eval.json"
+    ],
+    "exit": 0,
+    "stdout": "Running eval suite: eval.json\n\n[PASS] unchanged checkout tests\n# Eval Report: checkout-regression\n\n## Summary\n\n| Metric | Value |\n|--------|-------|\n| Suite | checkout-regression |\n| Version | 1.0.0 |\n| Total Tests | 1 |\n| Passed | 1 |\n| Failed | 0 |\n| Duration | 292ms |\n| Parallel Requested | false |\n| Parallel Used | false |\n| Parallel Mode | serial |\n| Parallel Workers | 1 |\n| Pass Rate | 100% |\n\n### Result: \u2705 ALL PASSED\n\n## Test Results\n\n| # | Status | Test | Check | Message |\n|---|--------|------|-------|---------|\n| 1 | \u2705 | unchanged checkout tests | command_succeeds | Command succeeded (exit 0) |\n\n## Failed Test Details\n\nNo failures! \ud83c\udf89\n\n---\n*Report generated by Eval*\n\n",
+    "stderr": ""
+  }
+]

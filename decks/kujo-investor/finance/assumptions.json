@@ -1,48 +1,38 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-11",
   "currency": "USD",
-  "status": "Illustrative assumptions, unvalidated",
+  "status": "PROPOSED \u2014 founder approval required",
   "postMoney": 30000000,
   "months": 24,
-  "founderAnnualBase": 150000,
+  "founderAnnualBase": 187500,
   "market": {
-    "initialOrganizations": 2000,
-    "annualContract": 24000,
-    "attainableCustomers": 100,
-    "expansionOrganizations": 10000,
-    "expansionAnnualContract": 60000
+    "initialOrganizations": 1000,
+    "annualContract": 6000,
+    "attainableCustomers": 60
   },
   "scenarios": [
     {
+      "raise": 2000000,
+      "engineering": 0.25,
+      "infrastructure": 0.06666666666666667,
+      "distribution": 0.22333333333333333,
+      "operations": 0.30999999999999994,
+      "reserves": 0.15
+    },
+    {
       "raise": 3000000,
-      "engineering": 0.55,
-      "infrastructure": 0.1,
-      "distribution": 0.1,
-      "operations": 0.1,
+      "engineering": 0.25,
+      "infrastructure": 0.06666666666666667,
+      "distribution": 0.22333333333333333,
+      "operations": 0.30999999999999994,
       "reserves": 0.15
     },
     {
       "raise": 6000000,
-      "engineering": 0.55,
-      "infrastructure": 0.1,
-      "distribution": 0.1,
-      "operations": 0.1,
-      "reserves": 0.15
-    },
-    {
-      "raise": 8000000,
-      "engineering": 0.55,
-      "infrastructure": 0.1,
-      "distribution": 0.1,
-      "operations": 0.1,
-      "reserves": 0.15
-    },
-    {
-      "raise": 10000000,
-      "engineering": 0.55,
-      "infrastructure": 0.1,
-      "distribution": 0.1,
-      "operations": 0.1,
+      "engineering": 0.25,
+      "infrastructure": 0.06666666666666667,
+      "distribution": 0.22333333333333333,
+      "operations": 0.30999999999999994,
       "reserves": 0.15
     }
   ]

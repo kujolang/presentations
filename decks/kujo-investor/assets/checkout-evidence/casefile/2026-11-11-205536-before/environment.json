@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "ci": null,
+  "composer": "Composer version 2.6-dev+c7bbd606216d2a5ceea93e6a536c39f6636a1f90 (2.6-dev) 2023-06-21 11:58:42",
+  "cwd": "/private/var/folders/wb/0cck3lgd08n55g_8ly9qmf_00000gn/T/kujo-checkout-qyoywb2j",
+  "go": "go version go1.27.3 darwin/amd64",
+  "node": "v26.12.1",
+  "npm": "11.20.0",
+  "os": "Darwin",
+  "package_manager": null,
+  "php": "PHP 8.4.7 (cli) (built: May  6 2025 12:31:58) (NTS)",
+  "pnpm": "11.25.0",
+  "project_hints": [],
+  "pytest": "pytest 8.4.1",
+  "python": "Python 3.10.5",
+  "shell": "zsh",
+  "yarn": null
+}
