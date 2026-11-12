@@ -1,0 +1,11 @@
+PackWrite doctor
+  cwd:             /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/docs/investor/workflow
+  provider:        local
+  model:           gemma4:31b-cloud
+  endpoint:        http://localhost:11434/v1/chat/completions
+  api key:         missing (set PACKWRITE_API_KEY or a provider key)
+  prompt file:     MEGA_PROMPT.md (found)
+  output dir:      agent/ (present)
+
+doctor: 1 blocking issue(s) found (strict mode):
+  - no API key in the environment (set PACKWRITE_API_KEY or a provider key)

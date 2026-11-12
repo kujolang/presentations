@@ -1,0 +1,10 @@
+file:///Users/robertdevore/2026/Kujolang/kujo-repos/presentations/node_modules/@axe-core/playwright/dist/index.mjs:218
+      throw new Error(
+            ^
+
+Error: Please use browser.newContext()
+ Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md
+    at AxeBuilder.analyze (file:///Users/robertdevore/2026/Kujolang/kujo-repos/presentations/node_modules/@axe-core/playwright/dist/index.mjs:218:13)
+    at async file:///Users/robertdevore/2026/Kujolang/kujo-repos/presentations/docs/investor/scripts/public-qa.mjs:3:430
+
+Node.js v26.12.1

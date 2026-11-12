@@ -1,0 +1,41 @@
+# Context
+
+- objective: Verify investor revision source, financial model, checkout evidence and static SEO; retain approval and provider blockers separately.
+- git_head: 40af624
+- changed_files:
+  - decks/kujo-investor/BRIEF.md
+  - decks/kujo-investor/COMPLETION.md
+  - decks/kujo-investor/INVESTOR_NOTES.md
+  - decks/kujo-investor/README.md
+  - decks/kujo-investor/assets/appendix.html
+  - decks/kujo-investor/assets/appendix.js
+  - decks/kujo-investor/assets/assumptions.json
+  - decks/kujo-investor/assets/evidence-paths.json
+  - decks/kujo-investor/deck.json
+  - decks/kujo-investor/finance/MODEL.md
+  - decks/kujo-investor/finance/assumptions.json
+  - decks/kujo-investor/finance/scenarios.csv
+  - decks/kujo-investor/howl.json
+  - decks/kujo-investor/investor-notes.json
+  - decks/kujo-investor/scripts/appendix.py
+  - decks/kujo-investor/scripts/author.py
+  - decks/kujo-investor/social/generated/slide-01.svg
+  - decks/kujo-investor/social/generated/slide-02.svg
+  - decks/kujo-investor/social/generated/slide-03.svg
+  - decks/kujo-investor/social/generated/slide-04.svg
+  - decks/kujo-investor/social/generated/slide-05.svg
+  - decks/kujo-investor/social/generated/slide-06.svg
+  - decks/kujo-investor/social/generated/slide-07.svg
+  - decks/kujo-investor/social/generated/slide-08.svg
+  - decks/kujo-investor/social/generated/slide-09.svg
+  - decks/kujo-investor/social/generated/slide-10.svg
+  - decks/kujo-investor/social/generated/slide-11.svg
+  - decks/kujo-investor/social/generated/slide-12.svg
+  - decks/kujo-investor/social/generated/slide-13.svg
+  - decks/kujo-investor/social/generated/slide-14.svg
+  - decks/kujo-investor/social/generated/slide-15.svg
+  - decks/kujo-investor/social/generated/slide-16.svg
+  - decks/kujo-investor/social/generated/slide-17.svg
+  - decks/kujo-investor/social/generated/slide-18.svg
+  - decks/kujo-investor/social/images.json
+  - layouts/ki-demo.html

@@ -1,0 +1,19 @@
+
+## gate: investor_contracts
+$ node docs/investor/scripts/verify.mjs
+PASS: deck/notes, placeholder gate, quarterly budget, ARR arithmetic, immutable demo hashes and child exits, appendix schema.
+gate investor_contracts: pass
+
+## gate: deck_ready
+$ node scripts/deck.mjs check --deck decks/kujo-investor --ready
+Valid deck: kujo-investor
+gate deck_ready: pass
+
+## gate: static_audit
+$ python3 docs/investor/scripts/audit.py after .build/investor-pages
+{"pages": 24, "indexable_pages": 21, "missing_titles": 0, "duplicate_titles": 0, "missing_descriptions": 0, "duplicate_descriptions": 0, "missing_canonicals": 0, "h1_problems": 1, "broken_internal_links": 0, "orphans_indexable": 0, "deeper_than_three": 0, "missing_alt": 0, "missing_dimensions": 0, "schema_parse_errors": 0, "schema_coverage": 21, "sitemap_noindex": 0, "field_performance": "NOT AVAILABLE \u2014 DATA ACCESS REQUIRED", "rankings": "NOT AVAILABLE \u2014 DATA ACCESS REQUIRED", "AI_citations": "NOT AVAILABLE \u2014 DATA ACCESS REQUIRED", "scores": "Not assigned: no platform performance or citation access"}
+gate static_audit: pass
+
+## gate: diff_check
+$ git diff --check
+gate diff_check: pass

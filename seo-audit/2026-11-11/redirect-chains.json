@@ -1,0 +1,50 @@
+[
+  [
+    {
+      "url": "http://invest.kujolang.ai/?audit=1",
+      "status": 301,
+      "location": "https://invest.kujolang.ai/?audit=1"
+    },
+    {
+      "url": "https://invest.kujolang.ai/?audit=1",
+      "status": 200,
+      "location": ""
+    }
+  ],
+  [
+    {
+      "url": "https://invest.kujolang.ai/1/?audit=1",
+      "status": 301,
+      "location": "/?audit=1"
+    },
+    {
+      "url": "https://invest.kujolang.ai/?audit=1",
+      "status": 200,
+      "location": ""
+    }
+  ],
+  [
+    {
+      "url": "https://invest.kujolang.ai/2",
+      "status": 308,
+      "location": "/2/"
+    },
+    {
+      "url": "https://invest.kujolang.ai/2/",
+      "status": 200,
+      "location": ""
+    }
+  ],
+  [
+    {
+      "url": "https://invest.kujolang.ai/assets/deck/appendix.html",
+      "status": 308,
+      "location": "/assets/deck/appendix"
+    },
+    {
+      "url": "https://invest.kujolang.ai/assets/deck/appendix",
+      "status": 200,
+      "location": ""
+    }
+  ]
+]

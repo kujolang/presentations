@@ -1,0 +1,36 @@
+PackWrite init: starting
+[1/8] Resolving mega prompt...
+[2/8] Checking output directory safety...
+[3/8] Collecting repository context...
+[4/8] Building distillation prompt...
+[5/8] Requesting model output from local/gemma4:31b-cloud...
+[6/8] Parsing and validating the returned manifest...
+[7/8] Writing pack files to agent/...
+Generated files:
+    agent/MASTER.md
+    agent/TODO.md
+    agent/HANDOFF.md
+    agent/DECISIONS.md
+    agent/DEEPSEEK_START.md
+    agent/CODEX_REVIEW_PROMPT.md
+    agent/REVIEW_CHECKLIST.md
+    agent/phases/00-audit.md
+    agent/phases/01-strategy.md
+    agent/phases/02-finance.md
+    agent/phases/03-demo.md
+    agent/phases/04-deck.md
+    agent/phases/05-verification.md
+    agent/phases/06-handoff.md
+[8/8] Running pack validation...
+PackWrite generated an agent pack.
+
+  Output:     agent/
+  Provider:   fake
+  Model:      fake
+  Files:      14
+  Phases:     7
+  Validation: passed with 1 warnings
+  ! CODEX_REVIEW_PROMPT.md does not clearly ask for a score and a repair checklist
+
+Next:
+  packwrite prompt deepseek

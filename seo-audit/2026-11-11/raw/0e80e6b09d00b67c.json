@@ -1,0 +1,27 @@
+{
+  "url": "https://invest.kujolang.ai/robots.txt",
+  "user_agent": "ChatGPT-User",
+  "date": "2026-11-12T02:03:21.667039+00:00",
+  "receipt": "0e80e6b09d00b67c",
+  "status": 200,
+  "final_url": "https://invest.kujolang.ai/robots.txt",
+  "headers": {
+    "Date": "Thu, 12 Nov 2026 02:03:22 GMT",
+    "Content-Type": "text/plain; charset=utf-8",
+    "Content-Length": "2748",
+    "Connection": "close",
+    "X-Content-Type-Options": "nosniff",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=oxPOVO%2FwyVVbr%2FwEGwyo4BNzRznpCIbRT0fNiHzpTA7HD7ntF%2F9Oe5bKBb78bDtsUjlfXc06h5akxptRyZEOlbFsmhKWORAvkf%2FcgUEkj7jjHBQR0%2BjIS1U8VDBXpBLFoAkmeHI%3D\"}]}",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Access-Control-Allow-Origin": "*",
+    "Cache-Control": "public, max-age=14400, must-revalidate",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Server-Timing": "cfCacheStatus;desc=\"REVALIDATED\"",
+    "Server": "cloudflare",
+    "Age": "0",
+    "Cf-Cache-Status": "REVALIDATED",
+    "Vary": "accept-encoding",
+    "CF-RAY": "a591f5b69989c32d-EWR",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  }
+}

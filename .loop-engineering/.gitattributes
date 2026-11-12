@@ -1,0 +1,3 @@
+# Exact iteration snapshots and command output preserve original whitespace.
+*.patch -diff
+*.log -diff

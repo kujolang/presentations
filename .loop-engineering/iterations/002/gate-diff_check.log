@@ -1,0 +1,10 @@
+decks/kujo-investor/INVESTOR_NOTES.md:7: trailing whitespace.
++Kujo makes agent-driven engineering work inspectable, repeatable and accountable across existing workflows. 
+decks/kujo-investor/finance/scenarios.csv:1: trailing whitespace.
++raise,post_money_cap,simple_ownership,status
+decks/kujo-investor/finance/scenarios.csv:2: trailing whitespace.
++2000000,30000000,0.06666666666666667,proposed
+decks/kujo-investor/finance/scenarios.csv:3: trailing whitespace.
++3000000,30000000,0.1,proposed
+decks/kujo-investor/finance/scenarios.csv:4: trailing whitespace.
++6000000,30000000,0.2,proposed

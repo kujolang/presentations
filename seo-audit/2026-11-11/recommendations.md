@@ -1,0 +1,6 @@
+# Measurement schedule
+After founder approval and a separately authorized deployment: verify artifact content, canonical root, /1 redirects including query preservation, nested slide, reading, appendix, robots, sitemap, error route and social assets. Reprobe all host variants and real crawler access with logs. Owner decides whether www.invest should resolve; do not create DNS without authorization.
+
+Day 7: inspect index coverage, sitemap processing, crawler errors and published content/metadata. Day 28: same branded/problem query panel, impressions/clicks/CTR and AI referral baseline, cohort activation. Day 60: repeat controlled six-question AI benchmark on same platforms/models/locales; record mentions, citations, URLs and factual accuracy; compare buyer incidents and pilot conversion. Day 90: compare equal windows, field CWV when available, retained team cohorts, paid renewals and acquisition cost. Keep raw receipts and report denominator/seasonality changes. No promised search uplift.
+
+Investor SEO should favor accurate evidence and navigability over keyword expansion. Incumbent docs demonstrate established review/persistence capabilities; these are product comparisons, not observed SERP competitors. Search-result competitor ranking remains unavailable.

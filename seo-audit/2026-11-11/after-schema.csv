@@ -1,0 +1,25 @@
+phase,url,types,parse_errors,assessment
+after,https://invest.kujolang.ai/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/404.html,[],[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/reading/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/presenter/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/18/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/9/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/11/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/7/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/16/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/6/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/17/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/10/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/8/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/print/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/overview/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/assets/deck/appendix,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/4/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/15/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/3/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/12/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/2/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/13/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/5/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied
+after,https://invest.kujolang.ai/14/,"[""WebPage""]",[],WebPage is appropriate; rich-result eligibility not implied

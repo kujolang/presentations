@@ -1,0 +1,25 @@
+{
+  "url": "https://invest.kujolang.ai/404.html",
+  "user_agent": "Mozilla/5.0",
+  "date": "2026-11-12T02:03:20.443772+00:00",
+  "receipt": "750a7afd834c191c",
+  "status": 308,
+  "final_url": "https://invest.kujolang.ai/404.html",
+  "headers": {
+    "Date": "Thu, 12 Nov 2026 02:03:20 GMT",
+    "Content-Length": "0",
+    "Connection": "close",
+    "x-content-type-options": "nosniff",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gvDMYaI3zOzIZKZ6M4iS5xp4scCU6cYIsZzCzPXI65EdZEk2Lp%2BpGOBvJwsYvLwMKLQ8WAxV%2F9tRE7uiazRitUG6uw2174j56IfUNaWpLLYCazTGAjxgHvnRytQK81HgfVVzy4A%3D\"}]}",
+    "Location": "/404",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Access-Control-Allow-Origin": "*",
+    "Cache-Control": "public, max-age=0, must-revalidate",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "Server-Timing": "cfCacheStatus;desc=\"DYNAMIC\"",
+    "Server": "cloudflare",
+    "cf-cache-status": "DYNAMIC",
+    "CF-RAY": "a591f5aeda593453-EWR",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  }
+}

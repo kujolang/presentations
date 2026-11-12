@@ -1,0 +1,28 @@
+{
+  "url": "https://opentelemetry.io/docs/",
+  "user_agent": "Mozilla/5.0",
+  "date": "2026-11-12T02:03:21.179450+00:00",
+  "receipt": "4a8495077b5c2840",
+  "status": 200,
+  "final_url": "https://opentelemetry.io/docs/",
+  "headers": {
+    "Accept-Ranges": "bytes",
+    "Age": "14596",
+    "Cache-Control": "public,max-age=0,must-revalidate",
+    "Cache-Status": "\"Netlify Edge\"; hit; ttl=31521404",
+    "Content-Length": "407136",
+    "Content-Security-Policy": "frame-ancestors 'self';",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 12 Nov 2026 02:03:21 GMT",
+    "Etag": "\"eccff0156155bb99458a7a134e5f480d-ssl\"",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Server": "Netlify",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Vary": "Accept-Encoding",
+    "X-Asset-Fetch-Ga-Info": "none",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Nf-Request-Id": "01M76QXK3SSMW6A3VE47JXSBDS",
+    "Connection": "close"
+  }
+}

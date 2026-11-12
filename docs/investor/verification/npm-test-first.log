@@ -1,0 +1,1128 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> kujo-presentations@0.3.1 test
+> npm run build && npm run build:starters && npm run build:site && node tests/contracts.mjs && npm run prepare:browser && node --test tests/*.test.mjs && node tests/start-smoke.mjs && playwright test
+
+npm warn Unknown env config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> kujo-presentations@0.3.1 build
+> kujo run build.kujo && kujo run build.kujo -- --deck examples/field-notes && kujo run build.kujo -- --deck examples/arabic
+
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 9
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/reference/site
+  Build time: 0.07431452s
+
+
+Presentation built: output/reference/index.html
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 3
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/field-notes/site
+  Build time: 0.044491608999999994s
+
+
+Presentation built: output/field-notes/index.html
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 2
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/arabic/site
+  Build time: 0.043008824s
+
+
+Presentation built: output/arabic/index.html
+npm warn Unknown env config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> kujo-presentations@0.3.1 build:starters
+> node scripts/build-starters.mjs
+
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 9
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/investor/site
+  Build time: 0.07145436599999999s
+
+
+Presentation built: output/investor/index.html
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 7
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/live-talk/site
+  Build time: 0.065637861s
+
+
+Presentation built: output/live-talk/index.html
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 7
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/sales/site
+  Build time: 0.058354777999999996s
+
+
+Presentation built: output/sales/index.html
+npm warn Unknown env config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> kujo-presentations@0.3.1 build:site
+> node scripts/build-site.mjs
+
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 9
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/reference/site
+  Build time: 0.070606842s
+
+
+Presentation built: output/reference/index.html
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 9
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/kujo-demo-investor/site
+  Build time: 0.076566885s
+
+
+Presentation built: output/kujo-demo-investor/index.html
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 9
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/kujo-demo-sales/site
+  Build time: 0.06964838799999999s
+
+
+Presentation built: output/kujo-demo-sales/index.html
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 9
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/kujo-demo-talk/site
+  Build time: 0.07111734800000001s
+
+
+Presentation built: output/kujo-demo-talk/index.html
+Public showcase built: .build/public-site (4 decks, 45 indexed routes)
+Static contracts, escaping, variable deck length and invalid content checks passed.
+npm warn Unknown env config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> kujo-presentations@0.3.1 prepare:browser
+> node scripts/prepare-firefox.mjs
+
+Prepared Firefox with channel identity fix: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/firefox-transport/darwin-x64-0cd832e08748e251/browser/Contents/MacOS/firefox
+✔ deck assets reject symlinks, cycles, hidden files and special files before publication (1302.308976ms)
+✔ failed and conflicting builds preserve output; interrupted publication is recovered (5863.500397ms)
+Basic-motion output omits 55335 bytes of unused hybrid JavaScript.
+✔ native build preserves plain text, language and reading notes; ships only needed motion (12636.199354ms)
+✔ Firefox channel identity prevents a new commit being mistaken for an old start event (11.909931ms)
+✔ Firefox keeps duplicate suppression when the same channel rebinds to a new actor (17.930345ms)
+✔ Firefox does not deliver an old asynchronous response to a replacement channel (3.48025ms)
+✔ Firefox preparation fails closed and changes only the reviewed source in a private copy (318.49116ms)
+✔ host checker rejects public private-deck routes and unsafe caching (1396.243881ms)
+✔ machine catalog and schema cover every reusable layout and starter (452.283371ms)
+✔ scaffold independently, retain supplied brief, refuse overwrite, and enforce readiness (1416.628574ms)
+✔ bad input fails before scaffold; doctor has structured output (1034.243712ms)
+✔ every purpose starter validates and its generated pages exist (836.403175ms)
+✔ public showcase stages four complete decks behind a collection landing page (5.206703ms)
+✔ search routes, metadata and utility exclusions remain consistent (17.930259ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12918.96703
+PASS one-command start: scaffold → cached setup → native build → HTTP preview.
+[WebServer] (node:41727) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 99 tests using 2 workers
+
+(node:41732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41731) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   1 [chromium] › tests/browser/animation-fallback.spec.js:2:1 › a stalled optional animation releases the navigation lock (5ms)
+  ✘   2 [chromium] › tests/browser/decks.spec.js:6:3 › reference overview has local assets and accessible semantics (6ms)
+(node:41735) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41738) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   3 [chromium] › tests/browser/decks.spec.js:17:5 › reference/1 direct route, assets, geometry and accessibility (6ms)
+  ✘   4 [chromium] › tests/browser/decks.spec.js:17:5 › reference/2 direct route, assets, geometry and accessibility (6ms)
+(node:41747) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41749) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   5 [chromium] › tests/browser/decks.spec.js:17:5 › reference/3 direct route, assets, geometry and accessibility (4ms)
+  ✘   6 [chromium] › tests/browser/decks.spec.js:17:5 › reference/4 direct route, assets, geometry and accessibility (6ms)
+(node:41751) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41754) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   7 [chromium] › tests/browser/decks.spec.js:17:5 › reference/5 direct route, assets, geometry and accessibility (5ms)
+  ✘   8 [chromium] › tests/browser/decks.spec.js:17:5 › reference/6 direct route, assets, geometry and accessibility (4ms)
+(node:41766) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41774) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   9 [chromium] › tests/browser/decks.spec.js:17:5 › reference/7 direct route, assets, geometry and accessibility (7ms)
+  ✘  10 [chromium] › tests/browser/decks.spec.js:17:5 › reference/8 direct route, assets, geometry and accessibility (6ms)
+(node:41789) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41805) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  11 [chromium] › tests/browser/decks.spec.js:17:5 › reference/9 direct route, assets, geometry and accessibility (12ms)
+  ✘  12 [chromium] › tests/browser/decks.spec.js:6:3 › field-notes overview has local assets and accessible semantics (25ms)
+(node:41833) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41835) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  13 [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/1 direct route, assets, geometry and accessibility (11ms)
+  ✘  14 [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/2 direct route, assets, geometry and accessibility (7ms)
+(node:41861) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41862) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  15 [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/3 direct route, assets, geometry and accessibility (5ms)
+  ✘  16 [chromium] › tests/browser/decks.spec.js:42:1 › native keyboard navigation, reload, history, endpoints and focus guards (10ms)
+(node:41867) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  17 [chromium] › tests/browser/decks.spec.js:63:3 › touch navigation › horizontal swipes navigate both ways with authored motion (5ms)
+  ✘  18 [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 390x844 › fixed composition, readable transcript and navigation (4ms)
+(node:41887) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41888) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  19 [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 844x390 › fixed composition, readable transcript and navigation (6ms)
+  ✘  20 [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 768x1024 › fixed composition, readable transcript and navigation (6ms)
+(node:41894) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41895) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  21 [chromium] › tests/browser/decks.spec.js:103:1 › fullscreen keeps the slide, navigation, and browser history together (8ms)
+  ✘  22 [chromium] › tests/browser/decks.spec.js:148:1 › overview visual artifact and reduced motion (7ms)
+(node:41906) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41907) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  23 [chromium] › tests/browser/decks.spec.js:156:3 › investor purpose starter fits and stays accessible (11ms)
+  ✘  24 [chromium] › tests/browser/decks.spec.js:156:3 › live-talk purpose starter fits and stays accessible (10ms)
+(node:41925) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41930) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  25 [chromium] › tests/browser/decks.spec.js:156:3 › sales purpose starter fits and stays accessible (6ms)
+  ✘  26 [chromium] › tests/browser/extended.spec.js:5:1 › Arabic controls, RTL composition, font loading and print pages (6ms)
+(node:41934) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41936) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  27 [chromium] › tests/browser/hosting.spec.js:3:1 › static hosting supports a mounted deck, MIME types, revalidation and CSP (6ms)
+  ✘  28 [chromium] › tests/browser/extended.spec.js:23:1 › presenter notes remain local; navigation, audience window and timer work (8ms)
+(node:41946) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  29 [chromium] › tests/browser/motion.spec.js:4:1 › first load plays the entrance and queues keyboard navigation without replay (7ms)
+  ✘  30 [chromium] › tests/browser/motion.spec.js:32:1 › Motion presets animate static slides; toggle, reload and history stay usable (10ms)
+(node:41965) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41966) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  31 [chromium] › tests/browser/motion.spec.js:60:1 › reduced motion, disabled decks and failed optional module preserve navigation (6ms)
+  ✘  32 [chromium] › tests/browser/motion.spec.js:78:1 › cinematic presets choreograph content and restore authored markup (7ms)
+(node:41986) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41987) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  33 [chromium] › tests/browser/motion.spec.js:104:1 › cinematic entrances finish cleanly when motion is disabled mid-flight (6ms)
+(node:42009) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  34 [firefox] › tests/browser/animation-fallback.spec.js:2:1 › a stalled optional animation releases the navigation lock (9.7s)
+  ✓  35 [firefox] › tests/browser/decks.spec.js:6:3 › reference overview has local assets and accessible semantics (12.9s)
+  ✓  36 [firefox] › tests/browser/decks.spec.js:17:5 › reference/1 direct route, assets, geometry and accessibility (7.5s)
+  ✓  37 [firefox] › tests/browser/decks.spec.js:17:5 › reference/2 direct route, assets, geometry and accessibility (7.0s)
+  ✓  38 [firefox] › tests/browser/decks.spec.js:17:5 › reference/3 direct route, assets, geometry and accessibility (6.6s)
+  ✓  39 [firefox] › tests/browser/decks.spec.js:17:5 › reference/4 direct route, assets, geometry and accessibility (6.2s)
+  ✓  40 [firefox] › tests/browser/decks.spec.js:17:5 › reference/5 direct route, assets, geometry and accessibility (6.9s)
+  ✓  41 [firefox] › tests/browser/decks.spec.js:17:5 › reference/6 direct route, assets, geometry and accessibility (7.7s)
+  ✓  42 [firefox] › tests/browser/decks.spec.js:17:5 › reference/7 direct route, assets, geometry and accessibility (7.8s)
+  ✓  43 [firefox] › tests/browser/decks.spec.js:17:5 › reference/8 direct route, assets, geometry and accessibility (7.0s)
+  ✓  44 [firefox] › tests/browser/decks.spec.js:17:5 › reference/9 direct route, assets, geometry and accessibility (6.7s)
+  ✓  45 [firefox] › tests/browser/decks.spec.js:6:3 › field-notes overview has local assets and accessible semantics (4.3s)
+  ✓  46 [firefox] › tests/browser/decks.spec.js:17:5 › field-notes/1 direct route, assets, geometry and accessibility (4.5s)
+  ✓  47 [firefox] › tests/browser/decks.spec.js:17:5 › field-notes/2 direct route, assets, geometry and accessibility (5.7s)
+  ✓  48 [firefox] › tests/browser/decks.spec.js:17:5 › field-notes/3 direct route, assets, geometry and accessibility (6.5s)
+  ✓  50 [firefox] › tests/browser/decks.spec.js:63:3 › touch navigation › horizontal swipes navigate both ways with authored motion (6.4s)
+  ✓  49 [firefox] › tests/browser/decks.spec.js:42:1 › native keyboard navigation, reload, history, endpoints and focus guards (13.1s)
+  ✓  51 [firefox] › tests/browser/decks.spec.js:90:5 › no JavaScript 390x844 › fixed composition, readable transcript and navigation (5.7s)
+  ✓  52 [firefox] › tests/browser/decks.spec.js:90:5 › no JavaScript 844x390 › fixed composition, readable transcript and navigation (3.1s)
+  ✓  53 [firefox] › tests/browser/decks.spec.js:90:5 › no JavaScript 768x1024 › fixed composition, readable transcript and navigation (4.3s)
+  -  54 [firefox] › tests/browser/decks.spec.js:103:1 › fullscreen keeps the slide, navigation, and browser history together
+  ✓  55 [firefox] › tests/browser/decks.spec.js:148:1 › overview visual artifact and reduced motion (3.7s)
+  ✓  57 [firefox] › tests/browser/decks.spec.js:156:3 › live-talk purpose starter fits and stays accessible (36.3s)
+  ✓  56 [firefox] › tests/browser/decks.spec.js:156:3 › investor purpose starter fits and stays accessible (42.4s)
+  ✓  59 [firefox] › tests/browser/extended.spec.js:5:1 › Arabic controls, RTL composition, font loading and print pages (17.9s)
+  ✓  60 [firefox] › tests/browser/extended.spec.js:23:1 › presenter notes remain local; navigation, audience window and timer work (13.8s)
+  ✓  61 [firefox] › tests/browser/hosting.spec.js:3:1 › static hosting supports a mounted deck, MIME types, revalidation and CSP (6.2s)
+  ✓  62 [firefox] › tests/browser/motion.spec.js:4:1 › first load plays the entrance and queues keyboard navigation without replay (5.6s)
+  ✓  58 [firefox] › tests/browser/decks.spec.js:156:3 › sales purpose starter fits and stays accessible (53.2s)
+  ✓  64 [firefox] › tests/browser/motion.spec.js:60:1 › reduced motion, disabled decks and failed optional module preserve navigation (6.4s)
+  ✓  63 [firefox] › tests/browser/motion.spec.js:32:1 › Motion presets animate static slides; toggle, reload and history stay usable (11.7s)
+  ✓  66 [firefox] › tests/browser/motion.spec.js:104:1 › cinematic entrances finish cleanly when motion is disabled mid-flight (3.8s)
+(node:44033) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  65 [firefox] › tests/browser/motion.spec.js:78:1 › cinematic presets choreograph content and restore authored markup (11.4s)
+(node:44159) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  67 [webkit] › tests/browser/animation-fallback.spec.js:2:1 › a stalled optional animation releases the navigation lock (6.3s)
+  ✓  68 [webkit] › tests/browser/decks.spec.js:6:3 › reference overview has local assets and accessible semantics (6.9s)
+  ✓  69 [webkit] › tests/browser/decks.spec.js:17:5 › reference/1 direct route, assets, geometry and accessibility (6.2s)
+  ✓  70 [webkit] › tests/browser/decks.spec.js:17:5 › reference/2 direct route, assets, geometry and accessibility (5.5s)
+  ✓  71 [webkit] › tests/browser/decks.spec.js:17:5 › reference/3 direct route, assets, geometry and accessibility (5.6s)
+  ✓  72 [webkit] › tests/browser/decks.spec.js:17:5 › reference/4 direct route, assets, geometry and accessibility (5.6s)
+  ✓  73 [webkit] › tests/browser/decks.spec.js:17:5 › reference/5 direct route, assets, geometry and accessibility (5.2s)
+  ✓  74 [webkit] › tests/browser/decks.spec.js:17:5 › reference/6 direct route, assets, geometry and accessibility (4.9s)
+  ✓  75 [webkit] › tests/browser/decks.spec.js:17:5 › reference/7 direct route, assets, geometry and accessibility (5.3s)
+  ✓  76 [webkit] › tests/browser/decks.spec.js:17:5 › reference/8 direct route, assets, geometry and accessibility (5.1s)
+  ✓  77 [webkit] › tests/browser/decks.spec.js:17:5 › reference/9 direct route, assets, geometry and accessibility (5.1s)
+  ✓  78 [webkit] › tests/browser/decks.spec.js:6:3 › field-notes overview has local assets and accessible semantics (4.0s)
+  ✓  79 [webkit] › tests/browser/decks.spec.js:17:5 › field-notes/1 direct route, assets, geometry and accessibility (4.1s)
+  ✓  80 [webkit] › tests/browser/decks.spec.js:17:5 › field-notes/2 direct route, assets, geometry and accessibility (3.8s)
+  ✓  81 [webkit] › tests/browser/decks.spec.js:17:5 › field-notes/3 direct route, assets, geometry and accessibility (3.9s)
+  ✓  83 [webkit] › tests/browser/decks.spec.js:63:3 › touch navigation › horizontal swipes navigate both ways with authored motion (4.7s)
+  ✓  84 [webkit] › tests/browser/decks.spec.js:90:5 › no JavaScript 390x844 › fixed composition, readable transcript and navigation (1.6s)
+  ✓  85 [webkit] › tests/browser/decks.spec.js:90:5 › no JavaScript 844x390 › fixed composition, readable transcript and navigation (2.0s)
+  ✓  86 [webkit] › tests/browser/decks.spec.js:90:5 › no JavaScript 768x1024 › fixed composition, readable transcript and navigation (1.5s)
+  ✓  82 [webkit] › tests/browser/decks.spec.js:42:1 › native keyboard navigation, reload, history, endpoints and focus guards (11.3s)
+  -  87 [webkit] › tests/browser/decks.spec.js:103:1 › fullscreen keeps the slide, navigation, and browser history together
+  ✓  88 [webkit] › tests/browser/decks.spec.js:148:1 › overview visual artifact and reduced motion (2.1s)
+  ✓  89 [webkit] › tests/browser/decks.spec.js:156:3 › investor purpose starter fits and stays accessible (35.1s)
+  ✓  90 [webkit] › tests/browser/decks.spec.js:156:3 › live-talk purpose starter fits and stays accessible (33.6s)
+  ✓  92 [webkit] › tests/browser/extended.spec.js:5:1 › Arabic controls, RTL composition, font loading and print pages (6.4s)
+  ✓  93 [webkit] › tests/browser/extended.spec.js:23:1 › presenter notes remain local; navigation, audience window and timer work (16.6s)
+  ✓  94 [webkit] › tests/browser/hosting.spec.js:3:1 › static hosting supports a mounted deck, MIME types, revalidation and CSP (4.1s)
+  ✓  91 [webkit] › tests/browser/decks.spec.js:156:3 › sales purpose starter fits and stays accessible (29.2s)
+  ✓  95 [webkit] › tests/browser/motion.spec.js:4:1 › first load plays the entrance and queues keyboard navigation without replay (3.8s)
+  ✓  97 [webkit] › tests/browser/motion.spec.js:60:1 › reduced motion, disabled decks and failed optional module preserve navigation (4.4s)
+  ✓  96 [webkit] › tests/browser/motion.spec.js:32:1 › Motion presets animate static slides; toggle, reload and history stay usable (11.5s)
+  ✓  99 [webkit] › tests/browser/motion.spec.js:104:1 › cinematic entrances finish cleanly when motion is disabled mid-flight (3.5s)
+  ✓  98 [webkit] › tests/browser/motion.spec.js:78:1 › cinematic presets choreograph content and restore authored markup (10.6s)
+
+
+  1) [chromium] › tests/browser/animation-fallback.spec.js:2:1 › a stalled optional animation releases the navigation lock 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/animation-fallback-a-stall-4dd61-eleases-the-navigation-lock-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/animation-fallback-a-stall-4dd61-eleases-the-navigation-lock-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/animation-fallback-a-stall-4dd61-eleases-the-navigation-lock-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/browser/decks.spec.js:6:3 › reference overview has local assets and accessible semantics 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-reference-overview-h-93666-ts-and-accessible-semantics-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-reference-overview-h-93666-ts-and-accessible-semantics-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-reference-overview-h-93666-ts-and-accessible-semantics-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests/browser/decks.spec.js:17:5 › reference/1 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-reference-1-direct-r-6aa58--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-reference-1-direct-r-6aa58--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-reference-1-direct-r-6aa58--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › tests/browser/decks.spec.js:17:5 › reference/2 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-reference-2-direct-r-2ce27--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-reference-2-direct-r-2ce27--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-reference-2-direct-r-2ce27--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › tests/browser/decks.spec.js:17:5 › reference/3 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-reference-3-direct-r-b72c8--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-reference-3-direct-r-b72c8--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-reference-3-direct-r-b72c8--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [chromium] › tests/browser/decks.spec.js:17:5 › reference/4 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-reference-4-direct-r-04765--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-reference-4-direct-r-04765--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-reference-4-direct-r-04765--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [chromium] › tests/browser/decks.spec.js:17:5 › reference/5 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-reference-5-direct-r-f0ef1--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-reference-5-direct-r-f0ef1--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-reference-5-direct-r-f0ef1--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [chromium] › tests/browser/decks.spec.js:17:5 › reference/6 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-reference-6-direct-r-3f86e--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-reference-6-direct-r-3f86e--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-reference-6-direct-r-3f86e--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [chromium] › tests/browser/decks.spec.js:17:5 › reference/7 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-reference-7-direct-r-70ca1--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-reference-7-direct-r-70ca1--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-reference-7-direct-r-70ca1--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [chromium] › tests/browser/decks.spec.js:17:5 › reference/8 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-reference-8-direct-r-3ddb5--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-reference-8-direct-r-3ddb5--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-reference-8-direct-r-3ddb5--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [chromium] › tests/browser/decks.spec.js:17:5 › reference/9 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-reference-9-direct-r-476b8--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-reference-9-direct-r-476b8--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-reference-9-direct-r-476b8--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [chromium] › tests/browser/decks.spec.js:6:3 › field-notes overview has local assets and accessible semantics 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-field-notes-overview-84e89-ts-and-accessible-semantics-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-field-notes-overview-84e89-ts-and-accessible-semantics-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-field-notes-overview-84e89-ts-and-accessible-semantics-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  13) [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/1 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-field-notes-1-direct-139a1--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-field-notes-1-direct-139a1--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-field-notes-1-direct-139a1--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14) [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/2 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-field-notes-2-direct-2a600--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-field-notes-2-direct-2a600--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-field-notes-2-direct-2a600--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  15) [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/3 direct route, assets, geometry and accessibility 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-field-notes-3-direct-9921a--geometry-and-accessibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-field-notes-3-direct-9921a--geometry-and-accessibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-field-notes-3-direct-9921a--geometry-and-accessibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  16) [chromium] › tests/browser/decks.spec.js:42:1 › native keyboard navigation, reload, history, endpoints and focus guards 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-native-keyboard-navi-f5768--endpoints-and-focus-guards-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-native-keyboard-navi-f5768--endpoints-and-focus-guards-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-native-keyboard-navi-f5768--endpoints-and-focus-guards-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  17) [chromium] › tests/browser/decks.spec.js:63:3 › touch navigation › horizontal swipes navigate both ways with authored motion 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-touch-navigation-hor-e63cf-h-ways-with-authored-motion-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-touch-navigation-hor-e63cf-h-ways-with-authored-motion-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-touch-navigation-hor-e63cf-h-ways-with-authored-motion-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  18) [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 390x844 › fixed composition, readable transcript and navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-no-JavaScript-390x84-71a49-e-transcript-and-navigation-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-no-JavaScript-390x84-71a49-e-transcript-and-navigation-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-no-JavaScript-390x84-71a49-e-transcript-and-navigation-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  19) [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 844x390 › fixed composition, readable transcript and navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-no-JavaScript-844x39-abaeb-e-transcript-and-navigation-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-no-JavaScript-844x39-abaeb-e-transcript-and-navigation-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-no-JavaScript-844x39-abaeb-e-transcript-and-navigation-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  20) [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 768x1024 › fixed composition, readable transcript and navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-no-JavaScript-768x10-66a9e-e-transcript-and-navigation-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-no-JavaScript-768x10-66a9e-e-transcript-and-navigation-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-no-JavaScript-768x10-66a9e-e-transcript-and-navigation-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  21) [chromium] › tests/browser/decks.spec.js:103:1 › fullscreen keeps the slide, navigation, and browser history together 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-fullscreen-keeps-the-caa98-nd-browser-history-together-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-fullscreen-keeps-the-caa98-nd-browser-history-together-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-fullscreen-keeps-the-caa98-nd-browser-history-together-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  22) [chromium] › tests/browser/decks.spec.js:148:1 › overview visual artifact and reduced motion ─
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-overview-visual-artifact-and-reduced-motion-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-overview-visual-artifact-and-reduced-motion-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-overview-visual-artifact-and-reduced-motion-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  23) [chromium] › tests/browser/decks.spec.js:156:3 › investor purpose starter fits and stays accessible 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-investor-purpose-starter-fits-and-stays-accessible-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-investor-purpose-starter-fits-and-stays-accessible-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-investor-purpose-starter-fits-and-stays-accessible-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  24) [chromium] › tests/browser/decks.spec.js:156:3 › live-talk purpose starter fits and stays accessible 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-live-talk-purpose-starter-fits-and-stays-accessible-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-live-talk-purpose-starter-fits-and-stays-accessible-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-live-talk-purpose-starter-fits-and-stays-accessible-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  25) [chromium] › tests/browser/decks.spec.js:156:3 › sales purpose starter fits and stays accessible 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/decks-sales-purpose-starter-fits-and-stays-accessible-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/decks-sales-purpose-starter-fits-and-stays-accessible-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/decks-sales-purpose-starter-fits-and-stays-accessible-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  26) [chromium] › tests/browser/extended.spec.js:5:1 › Arabic controls, RTL composition, font loading and print pages 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/extended-Arabic-controls-R-a9fe4-ont-loading-and-print-pages-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/extended-Arabic-controls-R-a9fe4-ont-loading-and-print-pages-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/extended-Arabic-controls-R-a9fe4-ont-loading-and-print-pages-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  27) [chromium] › tests/browser/extended.spec.js:23:1 › presenter notes remain local; navigation, audience window and timer work 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/extended-presenter-notes-r-ef62f-ience-window-and-timer-work-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/extended-presenter-notes-r-ef62f-ience-window-and-timer-work-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/extended-presenter-notes-r-ef62f-ience-window-and-timer-work-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  28) [chromium] › tests/browser/hosting.spec.js:3:1 › static hosting supports a mounted deck, MIME types, revalidation and CSP 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/hosting-static-hosting-sup-fec37--types-revalidation-and-CSP-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/hosting-static-hosting-sup-fec37--types-revalidation-and-CSP-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/hosting-static-hosting-sup-fec37--types-revalidation-and-CSP-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  29) [chromium] › tests/browser/motion.spec.js:4:1 › first load plays the entrance and queues keyboard navigation without replay 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/motion-first-load-plays-th-242d5-d-navigation-without-replay-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/motion-first-load-plays-th-242d5-d-navigation-without-replay-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/motion-first-load-plays-th-242d5-d-navigation-without-replay-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  30) [chromium] › tests/browser/motion.spec.js:32:1 › Motion presets animate static slides; toggle, reload and history stay usable 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/motion-Motion-presets-anim-dc22a-oad-and-history-stay-usable-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/motion-Motion-presets-anim-dc22a-oad-and-history-stay-usable-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/motion-Motion-presets-anim-dc22a-oad-and-history-stay-usable-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  31) [chromium] › tests/browser/motion.spec.js:60:1 › reduced motion, disabled decks and failed optional module preserve navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/motion-reduced-motion-disa-2bde7--module-preserve-navigation-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/motion-reduced-motion-disa-2bde7--module-preserve-navigation-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/motion-reduced-motion-disa-2bde7--module-preserve-navigation-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  32) [chromium] › tests/browser/motion.spec.js:78:1 › cinematic presets choreograph content and restore authored markup 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/motion-cinematic-presets-c-ac032-and-restore-authored-markup-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/motion-cinematic-presets-c-ac032-and-restore-authored-markup-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/motion-cinematic-presets-c-ac032-and-restore-authored-markup-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  33) [chromium] › tests/browser/motion.spec.js:104:1 › cinematic entrances finish cleanly when motion is disabled mid-flight 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/robertdevore/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-x64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/motion-cinematic-entrances-97ed9-tion-is-disabled-mid-flight-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/motion-cinematic-entrances-97ed9-tion-is-disabled-mid-flight-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/motion-cinematic-entrances-97ed9-tion-is-disabled-mid-flight-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  33 failed
+    [chromium] › tests/browser/animation-fallback.spec.js:2:1 › a stalled optional animation releases the navigation lock 
+    [chromium] › tests/browser/decks.spec.js:6:3 › reference overview has local assets and accessible semantics 
+    [chromium] › tests/browser/decks.spec.js:17:5 › reference/1 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:17:5 › reference/2 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:17:5 › reference/3 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:17:5 › reference/4 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:17:5 › reference/5 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:17:5 › reference/6 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:17:5 › reference/7 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:17:5 › reference/8 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:17:5 › reference/9 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:6:3 › field-notes overview has local assets and accessible semantics 
+    [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/1 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/2 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:17:5 › field-notes/3 direct route, assets, geometry and accessibility 
+    [chromium] › tests/browser/decks.spec.js:42:1 › native keyboard navigation, reload, history, endpoints and focus guards 
+    [chromium] › tests/browser/decks.spec.js:63:3 › touch navigation › horizontal swipes navigate both ways with authored motion 
+    [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 390x844 › fixed composition, readable transcript and navigation 
+    [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 844x390 › fixed composition, readable transcript and navigation 
+    [chromium] › tests/browser/decks.spec.js:90:5 › no JavaScript 768x1024 › fixed composition, readable transcript and navigation 
+    [chromium] › tests/browser/decks.spec.js:103:1 › fullscreen keeps the slide, navigation, and browser history together 
+    [chromium] › tests/browser/decks.spec.js:148:1 › overview visual artifact and reduced motion ───
+    [chromium] › tests/browser/decks.spec.js:156:3 › investor purpose starter fits and stays accessible 
+    [chromium] › tests/browser/decks.spec.js:156:3 › live-talk purpose starter fits and stays accessible 
+    [chromium] › tests/browser/decks.spec.js:156:3 › sales purpose starter fits and stays accessible 
+    [chromium] › tests/browser/extended.spec.js:5:1 › Arabic controls, RTL composition, font loading and print pages 
+    [chromium] › tests/browser/extended.spec.js:23:1 › presenter notes remain local; navigation, audience window and timer work 
+    [chromium] › tests/browser/hosting.spec.js:3:1 › static hosting supports a mounted deck, MIME types, revalidation and CSP 
+    [chromium] › tests/browser/motion.spec.js:4:1 › first load plays the entrance and queues keyboard navigation without replay 
+    [chromium] › tests/browser/motion.spec.js:32:1 › Motion presets animate static slides; toggle, reload and history stay usable 
+    [chromium] › tests/browser/motion.spec.js:60:1 › reduced motion, disabled decks and failed optional module preserve navigation 
+    [chromium] › tests/browser/motion.spec.js:78:1 › cinematic presets choreograph content and restore authored markup 
+    [chromium] › tests/browser/motion.spec.js:104:1 › cinematic entrances finish cleanly when motion is disabled mid-flight 
+  2 skipped
+  64 passed (5.8m)

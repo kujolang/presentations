@@ -1,0 +1,3 @@
+# Preserve immutable HTTP response/header bytes for audit reproduction.
+*.body -diff
+*.headers -diff

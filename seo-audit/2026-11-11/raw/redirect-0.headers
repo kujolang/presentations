@@ -1,0 +1,12 @@
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 12 Nov 2026 02:11:33 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Location: https://invest.kujolang.ai/?audit=1
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GvaP0IZSzwSjYKN2UbO2Lij%2FM3b32vWXNr1uE3rtLp2F%2B6%2FxQNSjx2PycKmULmEHXflBsArKv9fKkAyO6t%2FTvs7hcuEQGA%2BLERBOxZtMmvWf31srJ00S%2F5HTJTVg7m8AboHz0Fc%3D"}]}
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Server: cloudflare
+CF-RAY: a59201b3c9e00f7c-EWR
+alt-svc: h3=":443"; ma=86400
+

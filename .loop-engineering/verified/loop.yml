@@ -1,0 +1,36 @@
+objective: "Verify investor revision source, financial model, checkout evidence and static SEO; retain approval and provider blockers separately."
+max_iterations: 2
+max_no_progress: 1
+max_consecutive_failures: 2
+allowed_actions:
+  - read_files
+  - edit_files
+  - run_tests
+  - commit_local_changes
+blocked_actions:
+  - deploy
+  - destructive_cleanup
+  - production_config_change
+eval_gates:
+  - id: investor_contracts
+    command: "node docs/investor/scripts/verify.mjs"
+    required: true
+  - id: deck_ready
+    command: "node scripts/deck.mjs check --deck decks/kujo-investor --ready"
+    required: true
+  - id: static_audit
+    command: "python3 docs/investor/scripts/audit.py after .build/investor-pages"
+    required: true
+  - id: diff_check
+    command: "git diff --check"
+    required: true
+commit:
+  enabled: false
+  strategy: small_meaningful
+  push: false
+memory:
+  enabled: true
+  provider: strata
+  project: "Agent Notes"
+  mode: consolidate
+  retrieval_tests: true

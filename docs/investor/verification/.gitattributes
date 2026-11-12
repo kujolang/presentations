@@ -1,0 +1,2 @@
+# Command receipts retain exact output, including terminal progress characters.
+*.log -diff

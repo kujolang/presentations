@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "path": "agent/MASTER.md",
+      "content": "# Investor revision\nExecute MEGA_PROMPT.md in presentations. Preserve baseline and immutable provenance. Commercial and financing choices are proposals pending founder approval. No production deployment.\n"
+    },
+    {
+      "path": "agent/TODO.md",
+      "content": "# Work checklist\n- [ ] [audit](phases/00-audit.md)\n- [ ] [strategy](phases/01-strategy.md)\n- [ ] [finance](phases/02-finance.md)\n- [ ] [demo](phases/03-demo.md)\n- [ ] [deck](phases/04-deck.md)\n- [ ] [verification](phases/05-verification.md)\n- [ ] [handoff](phases/06-handoff.md)\n"
+    },
+    {
+      "path": "agent/HANDOFF.md",
+      "content": "# Handoff\n## Current Status\nExecution underway.\n## Completed Phases\nSee revision-report.md.\n## Known Issues\nModel provider failed twice; this manifest is assistant-authored and compiled through the documented offline seam.\n## Next Agent Notes\nVerify actual artifacts; do not equate pack validation with task success.\n"
+    },
+    {
+      "path": "agent/DECISIONS.md",
+      "content": "# Decisions\n## Confirmed\nReview branch, no deploy; retain truthful limitations.\n## Open\nFinancing, compensation, paid wedge, pricing and hiring require founder approval.\n## Log\n2026-11-11: Recommend $500/month team service as proposed base, enterprise separate.\n"
+    },
+    {
+      "path": "agent/DEEPSEEK_START.md",
+      "content": "# Implementation prompt\nWork autonomously through all phases of MEGA_PROMPT.md. Read MASTER.md and TODO.md. Preserve evidence, never invent claims, run checks and record blockers. Do not deploy.\n"
+    },
+    {
+      "path": "agent/CODEX_REVIEW_PROMPT.md",
+      "content": "# Review prompt\nReview implementation against MEGA_PROMPT.md and REVIEW_CHECKLIST.md. Check evidence, financial formulas, all slides, SEO before/after and actual command results. Independent review is not claimed until performed.\n"
+    },
+    {
+      "path": "agent/REVIEW_CHECKLIST.md",
+      "content": "# Review\n## Claims\n- [ ] Each material assertion sourced or labeled.\n- [ ] No invented traction.\n## Product\n- [ ] Pricing coherent.\n- [ ] Founder decisions explicit.\n## Quality\n- [ ] Build and tests recorded.\n- [ ] Desktop and mobile inspected.\n- [ ] SEO baseline preserved and after compared.\n"
+    },
+    {
+      "path": "agent/phases/00-audit.md",
+      "content": "# audit\n## Goal\nPreserve untouched generated and live baseline; inspect all slides and pinned sources.\n## Read before starting\nMEGA_PROMPT.md and repository AGENTS.md.\n## Scope\nPreserve untouched generated and live baseline; inspect all slides and pinned sources.\n## Out of scope\nDeployment, invented facts, external messages.\n## Implementation notes\nUse current source and retained receipts; preserve historical evidence.\n## Acceptance criteria\n- [ ] Required artifacts exist and can be reopened.\n- [ ] Checks support claims or blockers are explicit.\n## Suggested checks\nUse commands in revision-report.md and scoped Loop Engineering gates.\n## Handoff requirements\nRecord evidence paths, results and open decisions.\n"
+    },
+    {
+      "path": "agent/phases/01-strategy.md",
+      "content": "# strategy\n## Goal\nChoose a proposed team evidence service, distinguish hypotheses and create validation plan.\n## Read before starting\nMEGA_PROMPT.md and repository AGENTS.md.\n## Scope\nChoose a proposed team evidence service, distinguish hypotheses and create validation plan.\n## Out of scope\nDeployment, invented facts, external messages.\n## Implementation notes\nUse current source and retained receipts; preserve historical evidence.\n## Acceptance criteria\n- [ ] Required artifacts exist and can be reopened.\n- [ ] Checks support claims or blockers are explicit.\n## Suggested checks\nUse commands in revision-report.md and scoped Loop Engineering gates.\n## Handoff requirements\nRecord evidence paths, results and open decisions.\n"
+    },
+    {
+      "path": "agent/phases/02-finance.md",
+      "content": "# finance\n## Goal\nReconcile pricing and compensation; model quarterly spend and dilution without invented traction.\n## Read before starting\nMEGA_PROMPT.md and repository AGENTS.md.\n## Scope\nReconcile pricing and compensation; model quarterly spend and dilution without invented traction.\n## Out of scope\nDeployment, invented facts, external messages.\n## Implementation notes\nUse current source and retained receipts; preserve historical evidence.\n## Acceptance criteria\n- [ ] Required artifacts exist and can be reopened.\n- [ ] Checks support claims or blockers are explicit.\n## Suggested checks\nUse commands in revision-report.md and scoped Loop Engineering gates.\n## Handoff requirements\nRecord evidence paths, results and open decisions.\n"
+    },
+    {
+      "path": "agent/phases/03-demo.md",
+      "content": "# demo\n## Goal\nReproduce the checkout failure, correction and unchanged checks with CaseFile and Eval.\n## Read before starting\nMEGA_PROMPT.md and repository AGENTS.md.\n## Scope\nReproduce the checkout failure, correction and unchanged checks with CaseFile and Eval.\n## Out of scope\nDeployment, invented facts, external messages.\n## Implementation notes\nUse current source and retained receipts; preserve historical evidence.\n## Acceptance criteria\n- [ ] Required artifacts exist and can be reopened.\n- [ ] Checks support claims or blockers are explicit.\n## Suggested checks\nUse commands in revision-report.md and scoped Loop Engineering gates.\n## Handoff requirements\nRecord evidence paths, results and open decisions.\n"
+    },
+    {
+      "path": "agent/phases/04-deck.md",
+      "content": "# deck\n## Goal\nUpdate 18 slides, appendix, notes and social claims; preserve logo and viewer behavior.\n## Read before starting\nMEGA_PROMPT.md and repository AGENTS.md.\n## Scope\nUpdate 18 slides, appendix, notes and social claims; preserve logo and viewer behavior.\n## Out of scope\nDeployment, invented facts, external messages.\n## Implementation notes\nUse current source and retained receipts; preserve historical evidence.\n## Acceptance criteria\n- [ ] Required artifacts exist and can be reopened.\n- [ ] Checks support claims or blockers are explicit.\n## Suggested checks\nUse commands in revision-report.md and scoped Loop Engineering gates.\n## Handoff requirements\nRecord evidence paths, results and open decisions.\n"
+    },
+    {
+      "path": "agent/phases/05-verification.md",
+      "content": "# verification\n## Goal\nBuild, test, inspect desktop/mobile, audit metadata/links and record external blockers.\n## Read before starting\nMEGA_PROMPT.md and repository AGENTS.md.\n## Scope\nBuild, test, inspect desktop/mobile, audit metadata/links and record external blockers.\n## Out of scope\nDeployment, invented facts, external messages.\n## Implementation notes\nUse current source and retained receipts; preserve historical evidence.\n## Acceptance criteria\n- [ ] Required artifacts exist and can be reopened.\n- [ ] Checks support claims or blockers are explicit.\n## Suggested checks\nUse commands in revision-report.md and scoped Loop Engineering gates.\n## Handoff requirements\nRecord evidence paths, results and open decisions.\n"
+    },
+    {
+      "path": "agent/phases/06-handoff.md",
+      "content": "# handoff\n## Goal\nCommit and push review branch, finalize RunLedger, consolidate Strata; no deployment.\n## Read before starting\nMEGA_PROMPT.md and repository AGENTS.md.\n## Scope\nCommit and push review branch, finalize RunLedger, consolidate Strata; no deployment.\n## Out of scope\nDeployment, invented facts, external messages.\n## Implementation notes\nUse current source and retained receipts; preserve historical evidence.\n## Acceptance criteria\n- [ ] Required artifacts exist and can be reopened.\n- [ ] Checks support claims or blockers are explicit.\n## Suggested checks\nUse commands in revision-report.md and scoped Loop Engineering gates.\n## Handoff requirements\nRecord evidence paths, results and open decisions.\n"
+    }
+  ]
+}

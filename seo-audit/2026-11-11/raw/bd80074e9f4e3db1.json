@@ -1,0 +1,27 @@
+{
+  "url": "https://survey.stackoverflow.co/2026/ai",
+  "user_agent": "Mozilla/5.0",
+  "date": "2026-11-12T02:03:21.239704+00:00",
+  "receipt": "bd80074e9f4e3db1",
+  "status": 200,
+  "final_url": "https://survey.stackoverflow.co/2026/ai",
+  "headers": {
+    "Accept-Ranges": "bytes",
+    "Age": "44150",
+    "Cache-Control": "public,max-age=0,must-revalidate",
+    "Cache-Status": "\"Netlify Edge\"; hit; ttl=31491850",
+    "Content-Length": "94720",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Thu, 12 Nov 2026 02:03:21 GMT",
+    "Etag": "\"60f2c888d31071623f9d3a22db4c2e09-ssl\"",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Server": "Netlify",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "Vary": "Accept-Encoding",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "X-Nf-Request-Id": "01M76QXK6PH6PM9313DMGXNT0B",
+    "Connection": "close"
+  }
+}
