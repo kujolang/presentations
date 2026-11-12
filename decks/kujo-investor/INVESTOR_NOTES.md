@@ -36,8 +36,8 @@ Initial buyer hypothesis: a team operating coding agents across repositories and
 ## 11 — Open tools today. A team service to validate.
 Primary paid wedge: shared agent-run evidence and review for engineering teams. Application code stays in its existing language. No paid service or active pilot verified; proposed packaging
 
-## 12 — One team subscription. Explicit revenue milestones.
-Base pricing hypothesis: $500 per team per month. Customer counts below are scenarios, not forecasts or achieved revenue. FIN01 · ARR = active paying teams × $500 × 12; enterprise excluded
+## 12 — A clear path from team adoption to recurring revenue.
+Illustrative revenue milestones at a proposed $500/team/month. These are active paying-team scenarios, not achieved revenue or a 24-month forecast. Enterprise revenue is excluded.
 
 ## 13 — Portable evidence across existing workflows.
 GitHub integrates agents and review. LangGraph persists workflow state. Kujo composes local execution artifacts with explicit evaluation. C01–C04 · documentation comparison; no measured superiority
@@ -54,5 +54,5 @@ Robert DeVore builds commercial web software and the Kujo language ecosystem. F0
 ## 17 — Fund commercialization with staged commitments.
 Proposed $6M raise: a 24-month operating plan with $900K reserve. Release hiring against validation, paid pilots and retention. FIN02 · proposed terms; $30M post-money SAFE cap ≠ a priced valuation
 
-## 18 — Discuss the raise. Inspect the evidence.
-Proposed $6M financing conversation. Start with a technical diligence walkthrough and the team-service thesis. Next step: contact Robert through the existing public contact page. Terms subject to agreement.
+## 18 — Build the accountability layer for AI.
+Close on the investment thesis: $6M to commercialize Kujo’s evidence and review platform. Financing terms remain for founder confirmation; invite a diligence conversation through the existing contact route.

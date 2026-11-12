@@ -240,23 +240,23 @@
     },
     {
       "layout": "ki-metrics",
-      "title": "One team subscription. Explicit revenue milestones.",
-      "copy": "Base pricing hypothesis: $500 per team per month. Customer counts below are scenarios, not forecasts or achieved revenue.",
-      "eyebrow": "12 / Market model",
-      "note": "FIN01 · ARR = active paying teams × $500 × 12; enterprise excluded",
+      "title": "A clear path from team adoption to recurring revenue.",
+      "copy": "One team subscription at $500 per month. Scale revenue through retained teams and repeatable adoption.",
+      "eyebrow": "12 / Revenue model",
+      "note": "Illustrative ARR · Paying teams × $500 × 12 · Enterprise revenue excluded",
       "inverse": false,
       "metrics": [
         {
           "value": "17 teams",
-          "label": "$102K ARR · first repeatable revenue milestone"
+          "label": "$102K ARR"
         },
         {
           "value": "167 teams",
-          "label": "$1.002M ARR · requires retained paid cohorts"
+          "label": "$1.002M ARR"
         },
         {
           "value": "1,000 teams",
-          "label": "$6M ARR · long-term sensitivity, not a 24-month promise"
+          "label": "$6M ARR"
         }
       ]
     },
@@ -372,10 +372,10 @@
     },
     {
       "layout": "ki-close",
-      "title": "Discuss the raise. Inspect the evidence.",
-      "copy": "Proposed $6M financing conversation. Start with a technical diligence walkthrough and the team-service thesis.",
-      "eyebrow": "18 / The vision",
-      "note": "Next step: contact Robert through the existing public contact page. Terms subject to agreement.",
+      "title": "Build the accountability layer for AI.",
+      "copy": "$6M to bring Kujo’s agent evidence and review platform to engineering teams.",
+      "eyebrow": "18 / The investment",
+      "note": "Investment proposal · Technical diligence and founder conversations",
       "inverse": true
     }
   ]

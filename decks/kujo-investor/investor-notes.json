@@ -12,12 +12,12 @@
     "Keep application code in its existing language. Introduce accountability at the workflow boundary. T02–T04, T08 · tools have their own runtime dependencies",
     "Initial buyer hypothesis: a team operating coding agents across repositories and reconstructing failures during review. Buyer, demand and willingness to pay remain unvalidated",
     "Primary paid wedge: shared agent-run evidence and review for engineering teams. Application code stays in its existing language. No paid service or active pilot verified; proposed packaging",
-    "Base pricing hypothesis: $500 per team per month. Customer counts below are scenarios, not forecasts or achieved revenue. FIN01 · ARR = active paying teams × $500 × 12; enterprise excluded",
+    "Illustrative revenue milestones at a proposed $500/team/month. These are active paying-team scenarios, not achieved revenue or a 24-month forecast. Enterprise revenue is excluded.",
     "GitHub integrates agents and review. LangGraph persists workflow state. Kujo composes local execution artifacts with explicit evaluation. C01–C04 · documentation comparison; no measured superiority",
     "Integration-led distribution: one useful repository workflow, then a buyer conversation about shared review. Proposed 30/60/90-day plan; no completed interviews or pilots claimed",
     "Technical momentum is independently inspectable. Commercial validation is the next milestone. E01 · listing is distribution access, not customer adoption",
     "Robert DeVore builds commercial web software and the Kujo language ecosystem. F01–F03 · third-party adoption verified; exact team-leadership scope unverified",
     "Proposed $6M raise: a 24-month operating plan with $900K reserve. Release hiring against validation, paid pilots and retention. FIN02 · proposed terms; $30M post-money SAFE cap ≠ a priced valuation",
-    "Proposed $6M financing conversation. Start with a technical diligence walkthrough and the team-service thesis. Next step: contact Robert through the existing public contact page. Terms subject to agreement."
+    "Close on the investment thesis: $6M to commercialize Kujo’s evidence and review platform. Financing terms remain for founder confirmation; invite a diligence conversation through the existing contact route."
   ]
 }
