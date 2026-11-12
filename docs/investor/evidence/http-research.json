@@ -1,0 +1,218 @@
+[
+  {
+    "name": "live",
+    "url": "https://invest.kujolang.ai/",
+    "status": 200,
+    "final": "https://invest.kujolang.ai/",
+    "bytes": 6468,
+    "retrieved_utc": "2026-11-12T01:53:57.307022+00:00"
+  },
+  {
+    "name": "website",
+    "url": "https://kujolang.ai/",
+    "status": 200,
+    "final": "https://kujolang.ai/",
+    "bytes": 43273,
+    "retrieved_utc": "2026-11-12T01:53:57.329410+00:00"
+  },
+  {
+    "name": "founder",
+    "url": "https://robertdevore.com/about/",
+    "status": 200,
+    "final": "https://robertdevore.com/about/",
+    "bytes": 61239,
+    "retrieved_utc": "2026-11-12T01:53:57.411466+00:00"
+  },
+  {
+    "name": "wds",
+    "url": "https://webdevstudios.com/2025/07/03/exciting-webdevstudios-wordpress-news/",
+    "status": 200,
+    "final": "https://webdevstudios.com/2025/07/03/exciting-webdevstudios-wordpress-news/",
+    "bytes": 161917,
+    "retrieved_utc": "2026-11-12T01:53:57.777672+00:00"
+  },
+  {
+    "name": "directory",
+    "url": "https://github.com/mcp/kujolang/kujolang-mcp",
+    "status": 200,
+    "final": "https://github.com/mcp/kujolang/kujolang-mcp",
+    "bytes": 203923,
+    "retrieved_utc": "2026-11-12T01:53:57.761225+00:00"
+  },
+  {
+    "name": "google-ai",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features",
+    "status": 200,
+    "final": "https://developers.google.com/search/docs/appearance/ai-features",
+    "bytes": 180296,
+    "retrieved_utc": "2026-11-12T01:53:57.710449+00:00"
+  },
+  {
+    "name": "google-canonical",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "status": 200,
+    "final": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "bytes": 195341,
+    "retrieved_utc": "2026-11-12T01:53:57.736580+00:00"
+  },
+  {
+    "name": "openai-bots",
+    "url": "https://developers.openai.com/api/docs/bots",
+    "status": 200,
+    "final": "https://developers.openai.com/api/docs/bots",
+    "bytes": 381143,
+    "retrieved_utc": "2026-11-12T01:53:57.555141+00:00"
+  },
+  {
+    "name": "bing",
+    "url": "https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a",
+    "status": 200,
+    "final": "https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a",
+    "bytes": 126600,
+    "retrieved_utc": "2026-11-12T01:53:58.206841+00:00"
+  },
+  {
+    "name": "schema",
+    "url": "https://schema.org/WebPage",
+    "status": 200,
+    "final": "https://schema.org/WebPage",
+    "bytes": 220500,
+    "retrieved_utc": "2026-11-12T01:53:58.021414+00:00"
+  },
+  {
+    "name": "kujo-github",
+    "url": "https://api.github.com/repos/kujolang/kujo",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/kujo",
+    "bytes": 5988,
+    "retrieved_utc": "2026-11-12T01:53:57.952512+00:00"
+  },
+  {
+    "name": "dispatch-github",
+    "url": "https://api.github.com/repos/kujolang/dispatch",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/dispatch",
+    "bytes": 6215,
+    "retrieved_utc": "2026-11-12T01:53:58.041302+00:00"
+  },
+  {
+    "name": "casefile-github",
+    "url": "https://api.github.com/repos/kujolang/casefile",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/casefile",
+    "bytes": 6188,
+    "retrieved_utc": "2026-11-12T01:53:58.167615+00:00"
+  },
+  {
+    "name": "eval-github",
+    "url": "https://api.github.com/repos/kujolang/eval",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/eval",
+    "bytes": 6004,
+    "retrieved_utc": "2026-11-12T01:53:58.231208+00:00"
+  },
+  {
+    "name": "workcell-github",
+    "url": "https://api.github.com/repos/kujolang/workcell",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/workcell",
+    "bytes": 6182,
+    "retrieved_utc": "2026-11-12T01:53:58.285676+00:00"
+  },
+  {
+    "name": "runledger-github",
+    "url": "https://api.github.com/repos/kujolang/runledger",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/runledger",
+    "bytes": 6235,
+    "retrieved_utc": "2026-11-12T01:53:58.261396+00:00"
+  },
+  {
+    "name": "shipcheck-github",
+    "url": "https://api.github.com/repos/kujolang/shipcheck",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/shipcheck",
+    "bytes": 6223,
+    "retrieved_utc": "2026-11-12T01:53:58.450688+00:00"
+  },
+  {
+    "name": "spec-github",
+    "url": "https://api.github.com/repos/kujolang/spec",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/spec",
+    "bytes": 6012,
+    "retrieved_utc": "2026-11-12T01:53:58.523854+00:00"
+  },
+  {
+    "name": "packwrite-github",
+    "url": "https://api.github.com/repos/kujolang/packwrite",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/packwrite",
+    "bytes": 6270,
+    "retrieved_utc": "2026-11-12T01:53:58.539880+00:00"
+  },
+  {
+    "name": "kujo-cmd-github",
+    "url": "https://api.github.com/repos/kujolang/kujo-cmd",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/kujo-cmd",
+    "bytes": 6257,
+    "retrieved_utc": "2026-11-12T01:53:58.649613+00:00"
+  },
+  {
+    "name": "kujo-hermes-github",
+    "url": "https://api.github.com/repos/kujolang/kujo-hermes",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/kujo-hermes",
+    "bytes": 6310,
+    "retrieved_utc": "2026-11-12T01:53:58.758520+00:00"
+  },
+  {
+    "name": "kujo-opencode-github",
+    "url": "https://api.github.com/repos/kujolang/kujo-opencode",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/kujo-opencode",
+    "bytes": 6466,
+    "retrieved_utc": "2026-11-12T01:53:58.777084+00:00"
+  },
+  {
+    "name": "kujo-pi-github",
+    "url": "https://api.github.com/repos/kujolang/kujo-pi",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/kujo-pi",
+    "bytes": 6106,
+    "retrieved_utc": "2026-11-12T01:53:58.777639+00:00"
+  },
+  {
+    "name": "source-github",
+    "url": "https://api.github.com/repos/kujolang/source",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/source",
+    "bytes": 6098,
+    "retrieved_utc": "2026-11-12T01:53:58.777437+00:00"
+  },
+  {
+    "name": "mcp-github",
+    "url": "https://api.github.com/repos/kujolang/mcp",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/mcp",
+    "bytes": 5934,
+    "retrieved_utc": "2026-11-12T01:53:58.986319+00:00"
+  },
+  {
+    "name": "kujo-skills-github",
+    "url": "https://api.github.com/repos/kujolang/kujo-skills",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/kujo-skills",
+    "bytes": 6315,
+    "retrieved_utc": "2026-11-12T01:53:58.986615+00:00"
+  },
+  {
+    "name": "kujolang-mcp-github",
+    "url": "https://api.github.com/repos/kujolang/kujolang-mcp",
+    "status": 200,
+    "final": "https://api.github.com/repos/kujolang/kujolang-mcp",
+    "bytes": 6407,
+    "retrieved_utc": "2026-11-12T01:53:58.986807+00:00"
+  }
+]

@@ -1,0 +1,218 @@
+# Kujo CMD
+
+[![Version](https://img.shields.io/badge/version-0.3.1-black)](https://github.com/kujolang/kujo-cmd/releases/tag/v0.3.1)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
+[![built with Kujo](https://img.shields.io/badge/built%20with-Kujo-white.svg)](https://github.com/kujolang/kujo)
+
+Run Kujo tools and Agent Skills inside [Command Code](https://commandcode.ai/).
+Kujo CMD installs everything in your own environment and connects it to the
+current project through one local MCP server.
+
+```bash
+cd /path/to/your/project
+npx @kujolang/kujo-cmd setup
+command-code
+```
+
+No Kujo account or hosted Kujo service is required. The first setup downloads
+the pinned Kujo tools and runtime. After that, normal use is local and works
+offline. Lens browser checks additionally require the optional Chromium install
+described below; flow validation does not.
+
+## Install as a Command Code mod
+
+The same package supports the mods directory. Install from npm:
+
+```sh
+cmd mods add @kujolang/kujo-cmd
+```
+
+Use `/kujo` for help and `/kujo status` for current-session tool visibility.
+To connect the full Ability catalog, run the installed package's CLI with
+`setup --mod-mode package`, then restart Command Code. This explicit setup
+preserves the existing MCP approval and receipt system and prevents a duplicate
+project bridge. No setup runs automatically when the mod loads.
+
+See [installation, migration, and directory submission](docs/mods-directory.md)
+for exact instructions, including package-mode setup.
+
+## What it adds to Command Code
+
+Kujo CMD exposes canonical Kujo products as portable Abilities. Command Code
+discovers them as MCP tools, so a new Ability can appear without a new host
+adapter or another npm package.
+
+| Kujo product | What Command Code can do |
+|---|---|
+| Ability | Discover the active catalog and inspect receipts |
+| Scout | Inspect a repository and create a bounded context report |
+| Scent | Build a redacted, token-budgeted handoff pack |
+| PatchBrief | Summarize changed files, risk, and review guidance |
+| ChangeBucket | Measure change size and blast-radius signals |
+| ShipCheck | Scan release readiness |
+| Fence | Check architecture boundaries |
+| Spec | Validate a task contract |
+| Eval | Run a deterministic evaluation suite |
+| RunLedger | Read reports and optionally record correlated Command Code runs |
+| Dispatch | Validate or execute an agent workflow under approval |
+| RAG | Query or ingest a local Kujo index with citations |
+| Watchdog | Check the local service or submit metadata-only correlated telemetry |
+| CaseFile | Capture a redacted evidence bundle from an existing failure log |
+| Concord | Scan repository artifacts for drift |
+| Muzzle | Run a repository workflow with enforced policy and bounded output |
+| Kennel | Validate a package project or install its declared dependencies |
+| Redact | Scan or sanitize documents under an explicit privacy policy |
+| VersionSeal | Validate durable version records without minting authority |
+| PackWrite | Validate, summarize, or generate portable agent execution packs |
+| Tribunal | Validate proposals or run deterministic offline decision hearings |
+| Dossier | Validate and report local claim and evidence ledgers |
+| Howl | Validate or render deterministic showcase artifacts and galleries |
+| Lens | Validate browser flows or collect evidence from a real rendered page |
+
+Each call keeps its Ability identity, declared effects, policy decision,
+invocation ID, receipt ID, and any supplied session, run, agent, or model IDs.
+Kujo still owns the tool logic; Kujo CMD only installs and projects it.
+
+## Choose how much Command Code sees
+
+Setup installs the full supported catalog, but the active profile controls what
+Command Code sees. The default **Essentials** profile exposes five tools.
+
+| Profile | Tools | Adds |
+|---|---:|---|
+| Essentials | 5 | Catalog, receipts, Scout, PatchBrief, ShipCheck |
+| Review | 18 | ChangeBucket, Fence, Spec, Scent, Concord, VersionSeal, PackWrite, Tribunal, Dossier, Howl, Lens flow checks |
+| Ship | 29 | Eval, RunLedger lifecycle, Redact, offline Tribunal review, Howl rendering, Lens browser QA, CaseFile, Watchdog telemetry |
+| Full | 38 | Dispatch execution, PackWrite generation, RAG ingest, Muzzle, Kennel, and all installed tools |
+
+```bash
+kujo-cmd profiles
+kujo-cmd profile kujo.profile.review
+kujo-cmd abilities
+kujo-cmd enable kujo.rag.knowledge.query
+kujo-cmd disable kujo.scout.repository.inspect
+```
+
+Profiles change exposure, not permissions. Restart Command Code after changing
+the active profile.
+
+## Use it
+
+Ask Command Code to use Kujo by name:
+
+> Use Kujo PatchBrief to summarize my current changes, then run Kujo
+> ShipCheck. Report the policy decision and receipt ID for each call.
+
+For a broader release review:
+
+> Use the Kujo Ability catalog. Measure this change with ChangeBucket,
+> validate the task Spec, run ShipCheck, and cite every receipt ID. Do not
+> report success if any check fails.
+
+- [Watch the 26-second Command Code launch demo](https://github.com/kujolang/mcp/blob/main/demos/command-code-ollama-live-proof/command-code-ollama-kujo-live-polished.mp4)
+- [Watch the 56-second Ability walkthrough](https://github.com/kujolang/mcp/blob/main/demos/command-code-ability-walkthrough/renders/command-code-ability-walkthrough_2026-09-13_19-28-55.mp4)
+- [Read the Kujo CMD integration guide](https://docs.kujolang.ai/tools/kujo-cmd/)
+
+## Approvals and receipts
+
+Read-only Abilities run under local policy. An Ability with `write`, `delete`,
+or `external` effects stops first and returns `ability_approval_required` plus
+an exact approval command. Run that command, then retry the same input and
+invocation ID with the returned `_kujo.approvalId`.
+
+Approvals expire after five minutes. Each approval is bound to the principal,
+Ability digest, invocation, and input, and can be used once. Command Code's own
+tool permission prompt remains a separate outer check.
+
+Receipts are returned as structured MCP content and stored at
+`~/.local/share/kujo/cmd/receipts.jsonl` by default. Use
+`kujo_ability_receipts` or `kujo-cmd status` to find and inspect them.
+
+## Manage the installation
+
+```bash
+kujo-cmd doctor --json
+kujo-cmd status
+kujo-cmd repair
+kujo-cmd update
+kujo-cmd browser status             # optional Lens Chromium runtime
+kujo-cmd browser install
+kujo-cmd services start watchdog   # optional; loopback only
+kujo-cmd services status watchdog
+kujo-cmd uninstall                 # keep shared sources and receipts
+kujo-cmd uninstall --purge         # remove shared Kujo CMD data
+```
+
+Setup writes `.mcp.json`, `.kujo/cmd.json`, and the relevant links under
+`.agents/skills`. By default it also projects a trust-gated Command Code mod and seven
+scoped agents under `.commandcode/`. In `--mod-mode package`, the mod installer owns the bridge and setup only
+projects the agents. Their MCP allowlists are explicit and do
+not replace Kujo's request-bound approvals. The seven agents declare
+`permissionMode: dont-ask` at the Command Code layer. This does not grant
+approval to mutating Kujo Abilities: the Kujo runtime still requires a human
+approval bound to the exact request, consumes it once, and records a receipt.
+An agent's tool allowlist or permission mode cannot bypass that runtime gate.
+Shared sources and receipts default to
+`~/.local/share/kujo/cmd`. Set `KUJO_CMD_HOME` to move that data root.
+
+`kujo-cmd browser install` installs Lens's exact lockfile dependencies and its
+pinned headless Chromium build into the Lens source/cache locations. It is an
+explicit networked step rather than a hidden setup side effect. When the Ship
+or Full profile exposes browser checks, `kujo-cmd doctor` verifies that runtime.
+
+The mod records metadata-only session, subagent, and Kujo tool correlation
+only in projects with a valid `.kujo/cmd.json` (written by setup). Installing
+the mod globally does not send telemetry or create `.kujo/` in unconfigured
+projects. Set `KUJO_CMD_WATCHDOG=1` to explicitly enable recording without
+setup, or `KUJO_CMD_WATCHDOG=0` to disable it even in configured projects.
+Missing, unreadable, or malformed configuration disables recording by default.
+
+Records go to loopback Watchdog. Retryable delivery failures create a bounded
+queue of at most 100 batches under `.kujo/watchdog-spool/`; successful delivery
+does not create that directory. Setup, update, and repair add the narrow
+`/.kujo/watchdog-spool/` rule to the project's `.gitignore`, preserving existing
+rules. If opting in without setup, add that rule yourself. Pending batches
+are replayed only while recording is enabled. Uninstall retains the ignore
+rule so any remaining spool files stay ignored. It applies a one-shot
+Jidoka continuation when a Kujo MCP call fails. Set `KUJO_CMD_JIDOKA=0` to
+disable that gate or `KUJO_CMD_WATCHDOG_URL` to select another HTTPS or
+loopback endpoint. Set `KUJO_CMD_RUNLEDGER=1` to opt into automatic local
+RunLedger start/finish records; it is off by default because it writes project
+run evidence. `WDG_API_AUTH_TOKEN` is read only at delivery time and is never
+written to telemetry or spool files.
+
+Kujo CMD does not choose or proxy your model. Command Code can use any provider
+it supports, including Ollama. The live demos use `ollama/glm-5.3:cloud`.
+
+## Troubleshooting
+
+If the tools do not appear, run `kujo-cmd doctor`, check `.mcp.json`, and
+restart Command Code. Plan mode hides MCP tools. When a call fails, read its
+structured error and receipt before retrying a mutating operation.
+
+The active receipt log rotates at 8 MiB and keeps three archives. Receipt
+queries return summaries unless `include_result: true` is set. Idempotency keys
+are bounded retry controls, not permanent storage.
+
+## Development
+
+Repository development can use existing Kujo checkouts without a download:
+
+```bash
+npm run build
+node bin/kujo-cmd.mjs setup --source-root /path/to/kujo-repos
+npm test
+npm run test:e2e
+COMMAND_CODE_EXPECTED_VERSION=1.75.1 npm run test:command-code
+```
+
+Set `KUJO_CMD_LIVE_MODEL` to include a real model-driven Command Code MCP call
+in the host check. Without it, the check still verifies that the installed
+Command Code version accepts the generated MCP configuration and discovers the
+projected Kujo skills.
+
+The release contains a generated snapshot of the generic Ability host runtime.
+`.generated/BUILD.json` pins its canonical source commit, path, and SHA-256
+digest. `npm run build` verifies that snapshot before tests or publication.
+Command Code-specific code handles setup, configuration, profiles, skills,
+diagnostics, and projection only.

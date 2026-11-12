@@ -1,0 +1,243 @@
+# Kujolang.ai MCP Server
+
+[![Version](https://img.shields.io/badge/version-0.2.0-black)](https://github.com/kujolang/kujolang-mcp)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
+[![built with Kujo](https://img.shields.io/badge/built%20with-Kujo-white.svg)](https://github.com/kujolang/kujo)
+
+Version **0.2.0** is the hardened preview of this read-only catalog server. The source release and hosted catalog have independent revisions; inspect `/health` and the generated provenance receipts for the current catalog. Existing operational and interoperability limitations remain in the linked review documents.
+
+`kujolang-mcp` is a read-only Model Context Protocol server for discovering Kujo projects, primitives, tooling, showcases, agent skills, workflows, and reviewed installation guidance. The native runtime and catalog generator are written in Kujo. The generated Cloudflare adapter includes JavaScript for hosting and aggregate telemetry.
+
+This repository is the Kujolang.ai catalog server, not the reusable [`kujolang/mcp`](https://github.com/kujolang/mcp) framework. It follows that framework's conventions while remaining independently deployable and product-specific.
+
+## Readiness
+
+The repository contains the native reference server and a generated Cloudflare Worker target. The public MCP catalog interface is bounded, stateless, deterministic, and read-only. The hosted adapter separately maintains daily aggregate analytics counters. The Worker is generated from Kujo definitions and the reviewed catalog; Cloudflare executes the generated JavaScript artifact, not Kujo source directly. This is not a claim of formal enterprise certification.
+
+The public URL is `https://mcp.kujolang.ai/mcp` and health is `https://mcp.kujolang.ai/health` once deployment verification passes. Local use is always available.
+
+## What agents can do
+
+- Understand Kujo and the current public catalog.
+- List and search projects, primitives, tooling, showcases, skills, and workflows.
+- Retrieve exact records with source links, install text, versions, and scope notes.
+- Receive small deterministic stack recommendations for concrete work.
+- Inspect default, grouped, and complete installer profiles without executing them.
+- Discover WebOps capabilities without unrelated search results consuming the result limit.
+
+All seven tools are read-only, deterministic, and idempotent. There is no write tool, arbitrary URL fetcher, filesystem-path input, shell input, package installer, deployment action, or secret-reading capability.
+
+## Quick start
+
+### Run locally
+
+Use a Kujo runtime with `run`, `test`, and the HTTP standard library:
+
+```bash
+cd /path/to/kujolang-mcp
+kujo run server.kujo -- --self-check
+kujo run server.kujo
+```
+
+The local endpoint is `http://127.0.0.1:8941/mcp`; `/mcp/v1` is a compatibility alias and `/health` is the health endpoint.
+
+For a local Streamable HTTP client:
+
+```json
+{
+  "mcpServers": {
+    "kujolang": {
+      "type": "http",
+      "url": "http://127.0.0.1:8941/mcp"
+    }
+  }
+}
+```
+
+The server advertises MCP `2026-07-28` and handshake-era `2025-06-18`. Production configuration enables strict `Mcp-Method` and `Mcp-Name` binding for 2026 requests.
+
+### Quick install via GitHub MCP Registry
+
+Kujolang.ai MCP is [listed in the GitHub MCP Registry](https://github.com/mcp/kujolang/kujolang-mcp). For a quick connection to the hosted service, open the listing, select **Install MCP server**, and follow the instructions for your supported client.
+
+For manual setup, add a remote MCP server in your client with:
+
+- **Name:** `kujolang`
+- **Transport:** Streamable HTTP
+- **URL:** `https://mcp.kujolang.ai/mcp`
+
+The hosted catalog requires no client credentials or local package installation. Use the local instructions above to run the server on your own machine.
+
+## MCP Registry publication
+
+[`server.json`](server.json) describes the hosted service for the official MCP
+Registry as `io.github.kujolang/kujolang-mcp`. It is separate from the native
+runtime configuration in `mcp-server.json` and the Kujo manifest in
+`mcp.manifest.json`.
+
+The [registry entry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.kujolang%2Fkujolang-mcp/versions/latest)
+is independent of this source metadata. Validate and publish each reviewed release
+to update the registry; committing this file does not publish it. The metadata
+points to `https://mcp.kujolang.ai/mcp`.
+
+From this directory, install the official publisher and validate the metadata:
+
+```bash
+brew install mcp-publisher
+mcp-publisher validate
+```
+
+To publish, authenticate with a GitHub account that owns the `kujolang`
+organization, then publish the reviewed metadata:
+
+```bash
+mcp-publisher login github
+mcp-publisher publish
+```
+
+The hosted MCP catalog requires no client credentials or local package installation.
+For subsequent releases, update the metadata version to match the server release
+and validate before publishing. Publisher credentials must stay out of Git.
+Publication in this registry does not guarantee inclusion at `github.com/mcp`;
+GitHub's listing request is a separate step.
+
+## MCP surface
+
+| Tool | Purpose |
+|---|---|
+| `get_kujo_overview` | Explain Kujo, catalog counts, discovery flow, and the trust boundary |
+| `list_ecosystem` | Filter projects, skills, and workflows by kind or category |
+| `search_kujo_catalog` | Search released public catalog metadata |
+| `get_catalog_item` | Retrieve one exact item and its source-backed guidance |
+| `recommend_kujo_stack` | Return a compact deterministic match set for a task |
+| `get_installation` | Return default, core, AI, quality, showcase, operating, or complete install guidance |
+| `list_webops_capabilities` | Search only the WebOps capability collection |
+
+Six resources expose overview, project, skill, workflow, installation, and safety data. Three prompts guide stack selection, adoption planning, and WebOps discovery.
+
+## Repository layout
+
+```text
+server.kujo                         Thin stable launcher
+src/runtime.kujo                    Configuration, modes, and HTTP routing
+src/http_security.kujo              Transport guards and security headers
+src/protocol.kujo                   JSON-RPC and MCP dispatch
+src/registry.kujo                   Tools, resources, and prompts
+src/catalog.kujo                    Catalog validation, indexing, and search
+data/catalog.json                   Reviewed deterministic catalog snapshot
+scripts/sync_catalog.kujo           Kujo-only catalog synchronization
+scripts/generate_worker.kujo        Kujo-only Worker generation
+dist/worker.js                      Reviewed generated Cloudflare Worker
+wrangler.jsonc                      Free-tier Worker deployment configuration
+benchmarks/search_benchmark.kujo    Kujo-only search benchmark
+tests/                              Kujo test suites and snapshots
+```
+
+Root-level manifests, policy, configuration, license, documentation, and the thin launcher remain at the root because package managers, operators, and repository hosts discover them there. Application implementation lives under `src/`.
+
+## Catalog integrity and synchronization
+
+The bundled catalog is validated at startup for schema, item shape, unique slugs, counts, and a SHA-256 content digest. Production requests never read a sibling website checkout or fetch remote URLs.
+
+Regenerate or verify it from a reviewed Kujolang.ai checkout:
+
+```bash
+kujo run scripts/sync_catalog.kujo -- --site /path/to/kujolang.ai
+kujo run scripts/sync_catalog.kujo -- --site /path/to/kujolang.ai --check
+```
+
+The synchronizer rejects duplicate or malformed slugs and unexpected source URL schemes. Installer profile membership is parsed from the website's public installer instead of duplicated by hand. The catalog revision covers both records and installation profiles; it detects accidental snapshot corruption but is not a substitute for signed releases or human review.
+
+The current snapshot contains 57 projects, 135 skills, and 45 workflow records (237 records total; 44 kits plus the Publishing House Operator). There is no authoritative standalone agent catalog in the source; agent-related projects, SDKs, skills, and workflows remain discoverable under their actual source kinds rather than being presented as invented agent records.
+
+For the autonomous weekly agent prompt that reviews source accuracy, updates GitHub, deploys through the configured hosting workflow, and verifies the live catalog, see [`docs/WEEKLY_REFRESH.md`](docs/WEEKLY_REFRESH.md).
+
+## Security and performance controls
+
+- Search fields are length-bounded and normalized query terms are deduplicated and capped before catalog work.
+- Search text and identity fields are indexed once when the catalog loads.
+- Host is mandatory and allowlisted; browser Origin is exact-allowlisted when present.
+- JSON requests require `application/json`, bounded body configuration, validated envelopes, object parameters, and deterministic errors.
+- Responses include defensive no-store, no-sniff, frame, referrer, resource, and content security headers.
+- Local rate limiting uses bounded peer-IP buckets and serial handler admission to avoid counter races; health checks do not consume the quota but share overload admission.
+- Non-loopback startup fails unless trusted ingress limits are explicitly acknowledged, and public listeners refuse the application-local limiter because public quotas and overall overload must be enforced at ingress.
+
+Kujo 1.9.0 bounds transport buffering at 8 MiB; the catalog enforces its smaller 128 KiB UTF-8 byte limit afterward. Public native ingress must enforce the smaller cap before forwarding. The Worker bounds streamed bytes before parsing. See [production hardening](docs/PRODUCTION_HARDENING.md) for current limits, compatibility changes, and unverified deployment gates.
+
+## Verification
+
+```bash
+kujo run scripts/sync_catalog.kujo -- --site /path/to/kujolang.ai --check
+kujo run server.kujo -- --self-check
+kujo run tests/run_all.kujo
+kujo run benchmarks/search_benchmark.kujo
+kujo run scripts/generate_worker.kujo -- --framework /path/to/mcp
+node --check dist/worker.js
+```
+
+## Production deployment contract
+
+Select the production configuration explicitly:
+
+```bash
+KUJOLANG_MCP_CONFIG=mcp-server.production.example.json \
+  kujo run server.kujo
+```
+
+The trusted ingress must:
+
+- terminate TLS and be the only network peer allowed to reach the Kujo listener;
+- enforce body bytes, connection/read timeouts, per-client throttling, and a global overload ceiling before proxying;
+- overwrite or discard spoofable client identity headers;
+- forward only `/mcp` and `/health` with the exact public Host;
+- provide access/error metrics, alerting, capacity limits, and incident-response routing.
+
+The public catalog intentionally requires no user credentials. If private or tenant data, remote fetching, writes, or execution are ever introduced, this authority model must be redesigned and authentication becomes mandatory.
+
+See [`SECURITY.md`](SECURITY.md) for the complete boundary and [`docs/NEXT_SESSION_REVIEW.md`](docs/NEXT_SESSION_REVIEW.md) for the next production-readiness work list.
+
+## License
+
+MIT
+
+## Release freshness
+
+The catalog's `version` and `latest_release_url` identify a published component
+release when one exists. `scope_note` distinguishes later default-branch work,
+preview support, and operator requirements. The catalog's `source_version` is
+**the website version**, not the Kujo runtime version; the `kujo` item records
+the current runtime. Private projects retain empty public source/install fields.
+
+The September 9 review covers all 86 public organization repositories, the 135
+released skill records, and all 44 workflows in the 0.6.0 distribution. Its
+source inventory is in `evidence/ecosystem-refresh-2026-09-09/`.
+
+Use Kujo 1.9.0 for native catalog generation and assertion tests. Node verifies
+the generated JavaScript Worker and its parity with the native implementation;
+it is not a runtime dependency of the hosted read-only catalog. Neither server
+installs or executes commands returned in catalog content.
+
+After deploying, run `node tests/production_catalog_test.mjs` to compare all public catalog records and installer profiles with the reviewed generated Worker. Set `RECEIPT_PATH` to retain a JSON receipt. This sends read-only MCP queries and never executes installation commands.
+
+The Kujo runtime entry identifies the published 1.9.0 release across Linux x64/arm64, macOS x64/arm64 and Windows x64, including runtime npm packages. Wave C beta and Wave D alpha remain experimental; participant SDK packages remain private/unpublished. The catalog remains read-only and grants no replay authority.
+
+The September 29 companion refresh identifies Workcell, Ability and MCP 1.2.0. Preservation, controlled application/STDIO execution and Git correlation retain their documented experimental boundaries. Dispatch publication is separate.
+
+The September 29 SSG refresh records [SSG 1.1.0](https://github.com/kujolang/ssg/releases/tag/v1.1.0), default-on experimental public WebMCP, and the independently versioned local Ability pack 1.0.0. It also synchronizes the website's reviewed Kennel install guidance. The catalog remains read-only; it does not execute SSG builds or deploy sites.
+
+The October 7 Tribunal refresh records [Tribunal 1.0.2](https://github.com/kujolang/tribunal/releases/tag/v1.0.2), its local/operator-controlled hardening and exact tagged installation command. It preserves deployment-certification boundaries and the catalog’s read-only behavior.
+
+The October 8 Agent City addition records [Agent City 0.2.0](https://github.com/kujolang/agent-city/releases/tag/v0.2.0), its standalone installer, local operating scope, and source links. Use `get_catalog_item` with `slug: "agent-city"` to retrieve the record. The catalog does not submit missions or execute its install command. The [Howl showcase bundle](docs/agent-city-showcase/) provides a source-grounded offline preview.
+
+The October 22 Commerce refresh records [Commerce 0.5.1](https://github.com/kujolang/commerce/releases/tag/v0.5.1), optional PostgreSQL processing and Square payment/recovery modules, and the exact versioned npm installation command. Advanced features retain their acceptance gates. The MCP catalog provides discovery only; it does not execute payments or install packages.
+
+## Telemetry
+
+The hosted service collects daily aggregate usage counters, without raw queries or visitor identities. See the [telemetry notice](https://mcp.kujolang.ai/telemetry) for details, retention, and opt-out instructions.
+
+## Website Cloner discovery
+
+The Website Cloner 0.1.1 record links to its local application installer and public preview release. It exports editable Kujo SSG projects from public WordPress sites, with no AI required by default. The catalog only returns guidance; it does not crawl sites, install the application, call models or publish clones. Website Cloner is not a native Kennel package.
+
+
+The November 10 Source refresh records [Source 0.2.0](https://github.com/kujolang/source/releases/tag/v0.2.0), its Git/npm installation and experimental Node.js scope. Source supports candidate integration, secondary remotes and authenticated PostgreSQL submission recovery. The catalog remains read-only and does not submit code, synchronize repositories or execute installation commands. Source is not a Kennel-installable package.

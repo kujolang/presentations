@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-11",
+  "status": "PROPOSED \u2014 founder approval required",
+  "currency": "USD",
+  "raise": 6000000,
+  "postMoneyCap": 30000000,
+  "months": 24,
+  "founderCash24Months": 375000,
+  "founderAlternativeCash24Months": 300000,
+  "quarterlyCosts": {
+    "Founder total cash": [
+      46875,
+      46875,
+      46875,
+      46875,
+      46875,
+      46875,
+      46875,
+      46875
+    ],
+    "Engineering": [
+      75000,
+      100000,
+      150000,
+      180000,
+      210000,
+      235000,
+      250000,
+      300000
+    ],
+    "Product and developer experience": [
+      20000,
+      40000,
+      60000,
+      75000,
+      85000,
+      90000,
+      90000,
+      90000
+    ],
+    "Customer development and distribution": [
+      25000,
+      50000,
+      75000,
+      100000,
+      130000,
+      150000,
+      180000,
+      630000
+    ],
+    "Employer and contractor overhead": [
+      15000,
+      25000,
+      40000,
+      50000,
+      60000,
+      70000,
+      80000,
+      85000
+    ],
+    "Cloud and model usage": [
+      10000,
+      20000,
+      30000,
+      40000,
+      50000,
+      65000,
+      80000,
+      105000
+    ],
+    "Legal security compliance": [
+      25000,
+      25000,
+      35000,
+      40000,
+      40000,
+      40000,
+      45000,
+      50000
+    ],
+    "Operations": [
+      10000,
+      15000,
+      20000,
+      25000,
+      30000,
+      35000,
+      35000,
+      40000
+    ]
+  },
+  "reserve": 900000,
+  "revenueOffset": 0,
+  "revenueScenarios": [
+    {
+      "name": "conservative",
+      "monthlyPrice": 300,
+      "teamsMonth24": 25,
+      "monthlyChurn": 0.03,
+      "grossMargin": 0.6,
+      "salesCycleMonths": "2\u20134",
+      "firstRevenueMonth": 9,
+      "activationToTrial": 0.05,
+      "trialToPaid": 0.15
+    },
+    {
+      "name": "base",
+      "monthlyPrice": 500,
+      "teamsMonth24": 60,
+      "monthlyChurn": 0.015,
+      "grossMargin": 0.75,
+      "salesCycleMonths": "1\u20133",
+      "firstRevenueMonth": 6,
+      "activationToTrial": 0.1,
+      "trialToPaid": 0.25
+    },
+    {
+      "name": "upside",
+      "monthlyPrice": 500,
+      "teamsMonth24": 200,
+      "monthlyChurn": 0.01,
+      "grossMargin": 0.8,
+      "salesCycleMonths": "1\u20132",
+      "firstRevenueMonth": 4,
+      "activationToTrial": 0.15,
+      "trialToPaid": 0.3
+    }
+  ]
+}
