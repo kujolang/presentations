@@ -1,0 +1,19 @@
+{
+  "mode": "CONSOLIDATE",
+  "project": "Agent Notes",
+  "saved": [
+    {
+      "id": "39e826b5-d76d-472d-9421-c0be0e73a889",
+      "type": "handoff with current-state and timeline",
+      "scope": "kujolang/presentations investor/evidence-commercial-20261111",
+      "content": "Review-branch state; proposed pricing/model and compensation distinction; demo/claim boundaries; verification and RunLedger pointers; open founder/publication/data-access decisions; next start."
+    }
+  ],
+  "merged": 0,
+  "superseded": 0,
+  "duplicate_active_notes_created": 0,
+  "exact_retrieval": "passed",
+  "conceptual_query": "Kujo investor commercial revision",
+  "conceptual_retrieval": "passed",
+  "signalbox": "no captures warranted"
+}
