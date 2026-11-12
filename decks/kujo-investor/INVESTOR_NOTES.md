@@ -54,5 +54,5 @@ Robert DeVore builds commercial web software and the Kujo language ecosystem. F0
 ## 17 — Fund commercialization with staged commitments.
 Proposed $6M raise: a 24-month operating plan with $900K reserve. Release hiring against validation, paid pilots and retention. FIN02 · proposed terms; $30M post-money SAFE cap ≠ a priced valuation
 
-## 18 — Build the accountability layer for AI.
-Close on the investment thesis: $6M to commercialize Kujo’s evidence and review platform. Financing terms remain for founder confirmation; invite a diligence conversation through the existing contact route.
+## 18 — Help build the accountability layer for AI.
+Invite investors to help fund commercialization: $6M to bring Kujo’s evidence and review platform to engineering teams. The Kujo team builds the product; investors fund the next stage. Financing terms remain for founder confirmation.

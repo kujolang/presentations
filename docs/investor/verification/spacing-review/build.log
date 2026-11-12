@@ -1,0 +1,18 @@
+ok: decks/kujo-investor/howl.json is valid (24 card(s))
+rendered 24 card(s) -> decks/kujo-investor/social/generated/ (24 files)
+Rasterized 24 Howl social cards (1200×630 PNG).
+Valid deck: kujo-investor
+╔════════════════════════════════════════════════╗
+║        Kujo Static Site Generator              ║
+╚════════════════════════════════════════════════╝
+
+Loaded configuration from kujo-ssg.json
+Build complete
+  Posts generated: 18
+  Pages generated: 3
+  Output directory: /Users/robertdevore/2026/Kujolang/kujo-repos/presentations/.build/kujo-investor/site
+  Build time: 0.15713725s
+
+
+Presentation built: output/kujo-investor/index.html
+Pages artifact: .build/investor-pages

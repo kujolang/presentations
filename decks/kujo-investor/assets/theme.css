@@ -47,3 +47,10 @@
 }
 .ki-foundation{position:absolute;left:5cqw;right:5cqw;bottom:15cqw;border-top:1px solid #aaa;border-bottom:1px solid #aaa;padding:.8cqw 0;display:flex;justify-content:space-between;gap:2cqw;font-size:1cqw}.ki-foundation span{color:#555;font-family:Departure;font-size:.8cqw}.p-layout-ki-architecture .p-features li{border-left:1px solid #aaa;padding-left:1cqw}.p-layout-ki-lifecycle .p-features li+li:before{content:'→';position:absolute;margin-left:-2.5cqw;font-size:1.8cqw}
 @media screen and (max-width:900px){:root:not(:fullscreen) .p-viewer .ki-foundation{position:static;display:block;font-size:14px;margin-top:24px;padding:12px 0}:root:not(:fullscreen) .p-viewer .ki-foundation span{display:block;font-size:11px;margin:10px 0}}
+
+/* Give revenue milestones breathing room below their introduction. */
+.p-layout-ki-metrics .p-metrics{padding-top:3cqw}
+@media screen and (max-width:900px){:root:not(:fullscreen) .p-viewer .p-layout-ki-metrics .p-metrics{padding-top:24px}}
+
+/* Separate funding figures from the milestone rules below them. */
+.p-layout-ki-funding .ki-milestones{bottom:9cqw}
