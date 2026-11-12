@@ -1,0 +1,1581 @@
+{
+  "origin": "https://invest.kujolang.ai",
+  "verified_utc": "2026-11-12T02:55:17.540841+00:00",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/",
+      "bytes": 6647,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/404.html",
+      "skipped": "error template; missing route checked separately"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/sitemap.xml",
+      "bytes": 1216,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/robots.txt",
+      "bytes": 2748,
+      "matches": true,
+      "edge_note": "Cloudflare Managed content is prepended; origin directives retained",
+      "pass": true
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/favicon.svg",
+      "bytes": 253,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/reading/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/reading/",
+      "bytes": 17753,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/presenter/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/presenter/",
+      "bytes": 3835,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/18/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/18/",
+      "bytes": 6666,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/9/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/9/",
+      "bytes": 7173,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/11/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/11/",
+      "bytes": 7447,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/7/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/7/",
+      "bytes": 7118,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/16/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/16/",
+      "bytes": 7083,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/6/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/6/",
+      "bytes": 7185,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/17/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/17/",
+      "bytes": 7408,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/10/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/10/",
+      "bytes": 7316,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/8/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/8/",
+      "bytes": 7621,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/print/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/print/",
+      "bytes": 26107,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/overview/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/overview/",
+      "bytes": 28481,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/css/fonts.css",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/css/fonts.css",
+      "bytes": 936,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/sitekit-manifest.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/sitekit-manifest.json",
+      "bytes": 1170,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/LICENSE",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/LICENSE",
+      "bytes": 1077,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/sitekit.css",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/sitekit.css",
+      "bytes": 127533,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/README.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/README.md",
+      "bytes": 675,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/sitekit.js",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/sitekit.js",
+      "bytes": 40406,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/icons/README.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/icons/README.md",
+      "bytes": 736,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/icons/tabler.svg",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/icons/tabler.svg",
+      "bytes": 4135,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/icons/LICENSE.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/icons/LICENSE.txt",
+      "bytes": 1073,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/fonts/DepartureMono-Regular.woff2",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/fonts/DepartureMono-Regular.woff2",
+      "bytes": 22496,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/fonts/DepartureMono-Regular.woff",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/fonts/DepartureMono-Regular.woff",
+      "bytes": 25256,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/sitekit/fonts/DepartureMono-LICENSE.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/sitekit/fonts/DepartureMono-LICENSE.txt",
+      "bytes": 4357,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/fonts/bree-serif-latin-400.woff2",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/fonts/bree-serif-latin-400.woff2",
+      "bytes": 10348,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/fonts/inter-latin-400.woff2",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/fonts/inter-latin-400.woff2",
+      "bytes": 111268,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/fonts/inter-latin-700.woff2",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/fonts/inter-latin-700.woff2",
+      "bytes": 114840,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/presentation.css",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/presentation.css",
+      "bytes": 17110,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/presenter.js",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/presenter.js",
+      "bytes": 3634,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/viewer.js",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/viewer.js",
+      "bytes": 12018,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/motion-presets.js",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/motion-presets.js",
+      "bytes": 3969,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/favicon.svg",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/favicon.svg",
+      "bytes": 90,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/licenses/Inter-OFL.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/licenses/Inter-OFL.txt",
+      "bytes": 4377,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/licenses/BreeSerif-OFL.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/licenses/BreeSerif-OFL.txt",
+      "bytes": 4411,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/motion/LICENSE.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/motion/LICENSE.md",
+      "bytes": 1100,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/motion/LICENSE-framer-motion.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/motion/LICENSE-framer-motion.md",
+      "bytes": 1078,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/motion/README.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/motion/README.md",
+      "bytes": 785,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/motion/motion-mini.js",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/motion/motion-mini.js",
+      "bytes": 9811,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/icons/README.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/icons/README.md",
+      "bytes": 527,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/icons/tabler.svg",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/icons/tabler.svg",
+      "bytes": 260,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/presentation/icons/LICENSE.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/presentation/icons/LICENSE.txt",
+      "bytes": 1073,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/theme.css",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/theme.css",
+      "bytes": 9247,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/kujo-logomark.svg",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/kujo-logomark.svg",
+      "bytes": 895,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/appendix.js",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/appendix.js",
+      "bytes": 2923,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/DepartureMono-Regular.woff2",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/DepartureMono-Regular.woff2",
+      "bytes": 22496,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/assumptions.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/assumptions.json",
+      "bytes": 957,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence-paths.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence-paths.json",
+      "bytes": 336,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/appendix",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/appendix",
+      "bytes": 24931,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/diligence.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/diligence.txt",
+      "bytes": 28571,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/public-view.css",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/public-view.css",
+      "bytes": 2036,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/appendix.css",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/appendix.css",
+      "bytes": 2660,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/test.mjs",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/test.mjs",
+      "bytes": 220,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/ownership.mjs",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/ownership.mjs",
+      "bytes": 80,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/commands.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/commands.json",
+      "bytes": 3103,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/manifest.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/manifest.json",
+      "bytes": 4606,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/REQUEST.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/REQUEST.md",
+      "bytes": 521,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/DECISION.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/DECISION.md",
+      "bytes": 314,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval.json",
+      "bytes": 467,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/environment.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/environment.json",
+      "bytes": 193,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/change.patch",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/change.patch",
+      "bytes": 297,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/last_run.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval-results/last_run.json",
+      "bytes": 1220,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/summary.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval-results/summary.json",
+      "bytes": 214,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/history.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval-results/history.json",
+      "bytes": 103,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/evaluation-result.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval-results/evaluation-result.json",
+      "bytes": 1834,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/eval-report.md.cache.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval-results/eval-report.md.cache.json",
+      "bytes": 462,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/artifact-manifest.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval-results/artifact-manifest.json",
+      "bytes": 716,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/last_failures.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval-results/last_failures.json",
+      "bytes": 2,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/cli-summary.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval-results/cli-summary.json",
+      "bytes": 471,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/eval-report.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval-results/eval-report.md",
+      "bytes": 852,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/eval-results/badge.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/eval-results/badge.json",
+      "bytes": 74,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/git-diff-stat.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/git-diff-stat.txt",
+      "bytes": 69,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/case.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/case.md",
+      "bytes": 1469,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/stderr.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/stderr.log",
+      "bytes": 0,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/git-recent-commits.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/git-recent-commits.txt",
+      "bytes": 33,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/git-status.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/git-status.txt",
+      "bytes": 31,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/stdout.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/stdout.log",
+      "bytes": 50,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/combined.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/combined.log",
+      "bytes": 50,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/reproduction.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/reproduction.md",
+      "bytes": 251,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/environment.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/environment.json",
+      "bytes": 571,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/handoff.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/handoff.md",
+      "bytes": 517,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/case.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/case.json",
+      "bytes": 1946,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091948-after/command.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091948-after/command.txt",
+      "bytes": 13,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/git-diff-stat.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/git-diff-stat.txt",
+      "bytes": 0,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/case.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/case.md",
+      "bytes": 1383,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/stderr.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/stderr.log",
+      "bytes": 664,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/git-recent-commits.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/git-recent-commits.txt",
+      "bytes": 33,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/git-status.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/git-status.txt",
+      "bytes": 0,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/stdout.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/stdout.log",
+      "bytes": 0,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/combined.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/combined.log",
+      "bytes": 664,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/reproduction.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/reproduction.md",
+      "bytes": 251,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/environment.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/environment.json",
+      "bytes": 571,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/handoff.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/handoff.md",
+      "bytes": 474,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/case.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/case.json",
+      "bytes": 1862,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/evidence/casefile/2026-11-09-091944-before/command.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/evidence/casefile/2026-11-09-091944-before/command.txt",
+      "bytes": 13,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-10.fbd5d46ad6c0.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-10.fbd5d46ad6c0.png",
+      "bytes": 250332,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-09.ccd9b1b3045a.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-09.ccd9b1b3045a.png",
+      "bytes": 250046,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-14.a58cc4dff0b9.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-14.a58cc4dff0b9.png",
+      "bytes": 251009,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-06.89d08670d3e8.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-06.89d08670d3e8.png",
+      "bytes": 242994,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-09.6fef2e5f778a.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-09.6fef2e5f778a.png",
+      "bytes": 245616,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-01.5cca734f0156.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-01.5cca734f0156.png",
+      "bytes": 246365,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-16.afbf3a0c3773.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-16.afbf3a0c3773.png",
+      "bytes": 245658,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-03.c0f66ba0a704.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-03.c0f66ba0a704.png",
+      "bytes": 251543,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/not-found.e3221178b0ef.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/not-found.e3221178b0ef.png",
+      "bytes": 241266,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-15.9be408507bff.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-15.9be408507bff.png",
+      "bytes": 243711,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-18.1c4635908501.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-18.1c4635908501.png",
+      "bytes": 243150,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-01.30724ed13b79.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-01.30724ed13b79.png",
+      "bytes": 248685,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-14.7e6c4c972022.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-14.7e6c4c972022.png",
+      "bytes": 244857,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-18.69151df90639.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-18.69151df90639.png",
+      "bytes": 251384,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-18.a74793cbe135.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-18.a74793cbe135.png",
+      "bytes": 250459,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-07.6b96174113d6.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-07.6b96174113d6.png",
+      "bytes": 243850,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-12.55c9d5dd9c95.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-12.55c9d5dd9c95.png",
+      "bytes": 251837,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-04.e18de47ebe2f.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-04.e18de47ebe2f.png",
+      "bytes": 243422,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-05.d1f19bece56c.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-05.d1f19bece56c.png",
+      "bytes": 250113,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-03.3e0cd45562f8.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-03.3e0cd45562f8.png",
+      "bytes": 245763,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-13.ba2c0d0da48c.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-13.ba2c0d0da48c.png",
+      "bytes": 247101,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-06.d39c3bdc7147.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-06.d39c3bdc7147.png",
+      "bytes": 250714,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-12.f104d08d98e0.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-12.f104d08d98e0.png",
+      "bytes": 250884,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-02.4bfa85180c7a.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-02.4bfa85180c7a.png",
+      "bytes": 251006,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-07.fccc036372fc.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-07.fccc036372fc.png",
+      "bytes": 250031,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/print.788e508bd2d2.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/print.788e508bd2d2.png",
+      "bytes": 244291,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-02.734a2a11bf1d.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-02.734a2a11bf1d.png",
+      "bytes": 245879,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/overview.f2e3f1b36e7d.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/overview.f2e3f1b36e7d.png",
+      "bytes": 243354,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/presenter.e95c913411af.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/presenter.e95c913411af.png",
+      "bytes": 243245,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/reading.00a62e21291e.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/reading.00a62e21291e.png",
+      "bytes": 243718,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-13.f11a007e9a9e.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-13.f11a007e9a9e.png",
+      "bytes": 252157,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-16.eed9145c06ba.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-16.eed9145c06ba.png",
+      "bytes": 249795,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-05.ff0bfe41f516.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-05.ff0bfe41f516.png",
+      "bytes": 243573,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-17.884e29570477.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-17.884e29570477.png",
+      "bytes": 250895,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-10.a5dd2b27208b.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-10.a5dd2b27208b.png",
+      "bytes": 245680,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-12.28a2ae1fdbc7.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-12.28a2ae1fdbc7.png",
+      "bytes": 245582,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-17.25c2724cf7b2.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-17.25c2724cf7b2.png",
+      "bytes": 247573,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-08.6221cdb2e251.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-08.6221cdb2e251.png",
+      "bytes": 251116,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-08.ab604babae59.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-08.ab604babae59.png",
+      "bytes": 245009,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-11.44f413bfc5b8.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-11.44f413bfc5b8.png",
+      "bytes": 251405,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-18.fdd1ae2c8f2b.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-18.fdd1ae2c8f2b.png",
+      "bytes": 250846,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/appendix.4b9459b91a1c.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/appendix.4b9459b91a1c.png",
+      "bytes": 246239,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-11.b085c2ec3708.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-11.b085c2ec3708.png",
+      "bytes": 244600,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-04.a9cc21dfba1a.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-04.a9cc21dfba1a.png",
+      "bytes": 251631,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/social/slide-15.e13ab8dcffcd.png",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/social/slide-15.e13ab8dcffcd.png",
+      "bytes": 250831,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/before.py",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/before.py",
+      "bytes": 281,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/commands.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/commands.json",
+      "bytes": 5224,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/checkout.py",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/checkout.py",
+      "bytes": 285,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/manifest.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/manifest.json",
+      "bytes": 4695,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/REQUEST.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/REQUEST.md",
+      "bytes": 155,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/DECISION.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/DECISION.md",
+      "bytes": 206,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval.json",
+      "bytes": 266,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/environment.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/environment.json",
+      "bytes": 437,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/test_checkout.py",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/test_checkout.py",
+      "bytes": 495,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/change.patch",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/change.patch",
+      "bytes": 460,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval-results/last_run.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval-results/last_run.json",
+      "bytes": 1206,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval-results/summary.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval-results/summary.json",
+      "bytes": 211,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval-results/history.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval-results/history.json",
+      "bytes": 100,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval-results/evaluation-result.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval-results/evaluation-result.json",
+      "bytes": 1834,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval-results/eval-report.md.cache.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval-results/eval-report.md.cache.json",
+      "bytes": 462,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval-results/artifact-manifest.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval-results/artifact-manifest.json",
+      "bytes": 713,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval-results/last_failures.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval-results/last_failures.json",
+      "bytes": 2,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval-results/cli-summary.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval-results/cli-summary.json",
+      "bytes": 468,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval-results/eval-report.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval-results/eval-report.md",
+      "bytes": 627,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/eval-results/badge.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/eval-results/badge.json",
+      "bytes": 74,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/git-diff-stat.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/git-diff-stat.txt",
+      "bytes": 67,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/case.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/case.md",
+      "bytes": 1527,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/stderr.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/stderr.log",
+      "bytes": 290,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/git-recent-commits.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/git-recent-commits.txt",
+      "bytes": 35,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/git-status.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/git-status.txt",
+      "bytes": 45,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/stdout.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/stdout.log",
+      "bytes": 0,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/combined.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/combined.log",
+      "bytes": 290,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/reproduction.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/reproduction.md",
+      "bytes": 260,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/environment.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/environment.json",
+      "bytes": 571,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/handoff.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/handoff.md",
+      "bytes": 538,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/case.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/case.json",
+      "bytes": 2062,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/command.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205547-after/command.txt",
+      "bytes": 22,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/git-diff-stat.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/git-diff-stat.txt",
+      "bytes": 0,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/case.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/case.md",
+      "bytes": 1521,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/stderr.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/stderr.log",
+      "bytes": 783,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/git-recent-commits.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/git-recent-commits.txt",
+      "bytes": 35,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/git-status.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/git-status.txt",
+      "bytes": 16,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/stdout.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/stdout.log",
+      "bytes": 0,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/combined.log",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/combined.log",
+      "bytes": 783,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/reproduction.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/reproduction.md",
+      "bytes": 260,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/environment.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/environment.json",
+      "bytes": 571,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/handoff.md",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/handoff.md",
+      "bytes": 513,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/case.json",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/case.json",
+      "bytes": 2083,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/command.txt",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/assets/deck/checkout-evidence/casefile/2026-11-11-205536-before/command.txt",
+      "bytes": 22,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/4/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/4/",
+      "bytes": 7316,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/15/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/15/",
+      "bytes": 7215,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/3/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/3/",
+      "bytes": 7421,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/12/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/12/",
+      "bytes": 6975,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/2/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/2/",
+      "bytes": 7221,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/13/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/13/",
+      "bytes": 7524,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/5/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/5/",
+      "bytes": 7717,
+      "matches": true,
+      "pass": true
+    },
+    {
+      "path": "/14/",
+      "status": 200,
+      "final_url": "https://invest.kujolang.ai/14/",
+      "bytes": 7319,
+      "matches": true,
+      "pass": true
+    }
+  ],
+  "missing_status": 404,
+  "pass": true
+}

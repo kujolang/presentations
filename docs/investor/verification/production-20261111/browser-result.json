@@ -1,0 +1,22 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "slide": 12,
+      "title": "A clear path from team adoption to recurring revenue.",
+      "status": "pass"
+    },
+    {
+      "slide": 17,
+      "title": "Fund commercialization with staged commitments.",
+      "status": "pass"
+    },
+    {
+      "slide": 18,
+      "title": "Help build the accountability layer for AI.",
+      "status": "pass"
+    }
+  ],
+  "keyboard": "pass",
+  "mobile": "pass"
+}

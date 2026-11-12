@@ -1,5 +1,10 @@
 # Investor Pages deployment
 
+## Current publication — 2026-11-11
+
+Founder-authorized investor revision is live at https://invest.kujolang.ai from main commit `278557a`. Deployment: https://ed632764.kujo-investor.pages.dev. Current build, deployment, HTTP and browser receipts: `docs/investor/verification/production-20261111/`. Sections below retain historical deployment evidence.
+
+
 Public URL: https://invest.kujolang.ai/ — native overview and launch links. Direct presentation: https://invest.kujolang.ai/1/.
 
 Cloudflare Pages project: `kujo-investor`; production branch `main`; Pages fallback https://kujo-investor.pages.dev. This is an actual Pages deployment (not a Worker facade). Production deployment: `df9a94d1-8f8a-44e8-b558-993c2e6b254f`. DNS: proxied CNAME `invest` → `kujo-investor.pages.dev`, TTL Auto. Custom domain was registered through the Pages API and DNS created in the authenticated dashboard after the owner signed in. The CLI OAuth token can manage Pages but cannot edit DNS.

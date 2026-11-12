@@ -1,0 +1,13 @@
+npm warn Unknown user config "python". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+ ⛅️ wrangler 4.151.3 (update available 4.160.1)
+───────────────────────────────────────────────
+Uploading... (195/197)
+Uploading... (196/197)
+Uploading... (197/197)
+✨ Success! Uploaded 2 files (195 already uploaded) (1.11 sec)
+
+✨ Uploading _headers
+✨ Uploading _redirects
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://ed632764.kujo-investor.pages.dev
