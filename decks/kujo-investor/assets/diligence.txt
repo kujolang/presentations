@@ -152,7 +152,7 @@ Outreach draft: “I’m researching how engineering teams review agent-driven r
 
 
 # Investor diligence and founder decisions
-As of 2026-11-11. This is a review draft; no deployment in this revision. Existing public contact page is retained, not a newly approved fundraising route. The final acceptance condition of an approved investment ask remains open.
+As of 2026-11-11. Published investor briefing. The founder authorized publication of this presentation; commercial packaging, compensation and financing terms remain proposals, not executed agreements. The existing public founder contact page is retained.
 
 | Decision | Proposed treatment | Evidence / approval needed |
 |---|---|---|
@@ -169,4 +169,4 @@ Risks: unvalidated buyer need, new-language adoption, fragmented integration con
 
 Founder: public biography is self-reported. WebDevStudios’ July 3, 2025 announcement independently supports plugin adoption, but does not substantiate exactly 21 plugins or a particular engineering team size. Those counts remain excluded pending source evidence. Leadership title, employer, dates and team size need confirmation.
 
-Verification: build with `node scripts/build-investor-pages.mjs`; run `npm test`; reproduce checkout per demo-runbook.md; inspect claims in evidence-register.md and raw provenance in evidence/. SEO evidence is under seo-audit/2026-11-11. All checks must be interpreted with recorded environment and any blockers. Safe publication requires founder approval; push of this feature branch is not approval to deploy.
+Verification: build with `node scripts/build-investor-pages.mjs`; run `npm test`; reproduce checkout per demo-runbook.md; inspect claims in evidence-register.md and raw provenance in evidence/. SEO evidence is under seo-audit/2026-11-11. All checks must be interpreted with recorded environment and any blockers. Publication was explicitly authorized by the founder after reviewing the revised slides. Financing agreements and commercial commitments require their own confirmation.

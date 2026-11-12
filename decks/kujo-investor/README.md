@@ -1,6 +1,6 @@
 # Current revision — 2026-11-11
 
-Founder-review branch; no deployment in this revision. Read [revision report](../../docs/investor/revision-report.md) from the repository docs/investor directory, including pending terms and compensation. Build with `node scripts/build-investor-pages.mjs`; publication artifact `.build/investor-pages`. Use `python3 docs/investor/scripts/preview.py .build/investor-pages 8095` for local review.
+Merged to main and publication authorized by the founder on 2026-11-11. Current production evidence is in docs/investor/verification/production-20261111/. Read [revision report](../../docs/investor/revision-report.md) from the repository docs/investor directory, including pending terms and compensation. Build with `node scripts/build-investor-pages.mjs`; publication artifact `.build/investor-pages`. Use `python3 docs/investor/scripts/preview.py .build/investor-pages 8095` for local review.
 
 Canonical slide/notes files are edited directly. `scripts/author.py` is retired. `scripts/appendix.py` reads current docs/investor files; finance inputs are in docs/investor/financial-model.json. New checkout reproduction: `python3 docs/investor/demo/record.py /tmp/new-checkout-evidence`. Old evidence and completion reports below describe the November 9 version only.
 

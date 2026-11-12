@@ -1,5 +1,7 @@
 # Investor revision report — 2026-11-11
 
+Publication update: after visual review, the founder explicitly authorized merging to main and updating invest.kujolang.ai. Deployment receipts and live verification are in verification/production-20261111/. Statements below about pending publication describe the original handoff; business and financing assumptions remain proposals.
+
 Result: founder-review draft implemented; publication and approved financing ask remain gated. Branch `investor/evidence-commercial-20261111`, baseline `40af624181b8d82b157095070e3e62c2d60789b0`. No deployment, external outreach or DNS/CDN mutation performed. Existing production site remains the November 9 version.
 
 ## Narrative and artifacts
