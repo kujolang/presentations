@@ -21,5 +21,7 @@ def check(p):
 rows=list(concurrent.futures.ThreadPoolExecutor(6).map(check,files))
 # curl verifies the error route; Python urllib's default user agent receives an edge 403.
 missing=int(subprocess.check_output(['curl','-sS','--max-time','30','-o',str(out/'missing.html'),'-D',str(out/'missing-headers.txt'),'-w','%{http_code}',base+'/missing-investor-page-20261111/'],text=True))
+headers=out/'missing-headers.txt'
+headers.write_text('\n'.join(line.rstrip() for line in headers.read_text().splitlines()).rstrip()+'\n')
 report={'origin':base,'verified_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'checks':rows,'missing_status':missing,'pass':all(x.get('pass',False) or 'skipped' in x for x in rows) and missing==404}
 (out/'http-result.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({'pass':report['pass'],'files':len(rows),'failures':[x for x in rows if not x.get('pass') and 'skipped' not in x],'missing':missing},indent=2));assert report['pass']
